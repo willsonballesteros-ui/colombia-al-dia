@@ -2,9 +2,171 @@
   "brand": "Colombia al Día | Resumen de Noticias",
   "editionDate": "2026-11-02",
   "editedAtBogota": "2026-11-02 21:40",
-  "siteVersion": "2.0",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-b8e2273af101bd14",
+      "date": "2026-11-02",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Qué se sabe de la dramática caída de un avión privado en Florida que dejó 9 muertos",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/ckvg7l4dp0n8o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T22:31-05:00"
+    },
+    {
+      "id": "rss-20b9bc3654e7eb8e",
+      "date": "2026-11-02",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Los empleos bien pagados en Colombia que la IA podría transformar más rápido",
+      "summary": "Titular difundido por Blu Radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Blu Radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ3pTd3ZQLXVKanZraGFVOEE3eFRfWGRMeWlhZDBfSzlqamJJaGFhVlJlWFFHZS1xMVBpRXVGSjlSUVg0MjZTUHpWbHd5U3A2bUp1WVhjYlRnWnY1TTZ5aXZnVTYtNWZsd0dqOFlfNFBFTzNJQTVnajBNVngxci1CQzMweGtDYXhVS1JlY3A0dXVGMmNld2lRZnN4amNZVnpwUHMwNlR3SHVFeHJJ0gG6AUFVX3lxTE9kUjVkeXZ1eTMyeDBMd3hMMnRKQldhVnVjYXZiRURrV3c4ZC03cHhsWTBKcWhleWUtc0VNdTlIZmltWmNiQ2pIa05JRGdlV0YtTFp3dGhaT3FUbzR1czJkdjF2TkdfQ2JGLXpmUHNzNVdxcVdzRnRhSXpDYkdGM3dtU0FHNFAwNUZFTzhPUm1PaGg3TlJHdzYza3B4c2tMU0lYcGkyLTR1SFl3ZF81N0RQUk03dTFxS0h5QQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T22:28-05:00"
+    },
+    {
+      "id": "rss-8f4c7ed01271de1a",
+      "date": "2026-11-02",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Deutsche Bank mejora nota a tecnológicas",
+      "summary": "Titular difundido por El Economista a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Economista · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWHVOT1NFMDJPUVQ4REE3clhQVjhkM3ZEVzRQWWFtc2o5TXhMb3BIRWFYTWJfbXlLdWRJVUc1dm9FRFhlNGF5a3JUQWtfWHYyck1Wa05wWTdKYzl1cjhfQ1JCTWV0TU9qQURtRHVZT3ptNHA5Q0U4T05kX3B2MF9Tam9SLWVVSTduZGlENWFmSllyM2xkV0c0VnI0MjB2UldG0gGmAUFVX3lxTE92OFYxakw0bktqQU1TbTg5Q1c2MWd6MDFkNXRSbHNBRFh3a2tIN3RhWF9yczhxWFkxRGpOcmh4MXZBU0k0aWtaZzkyV1Vobi0tUm90b0xGLVE4R0ZxWFhRYVJuUkNyT1BhTVZwSjJYN09LcHBzcFZmcHdDVHZMbC1iY05Sd0dkdUtHSTlXU3pYWHAzTzhiVlU2eWhBUk1vV0NpRm9JZVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T22:27-05:00"
+    },
+    {
+      "id": "rss-97641cd634928f14",
+      "date": "2026-11-02",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El DevFest lleva a debate el futuro de la tecnología",
+      "summary": "Titular difundido por La Región a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Región · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOExGTmRPTWQyd1BNZ1dSdlpER2xFT29wdmtwQnZWdmE3N2p3TlEzNEhaakVBNTRaUG9wS2NRejN4STE5Z0NLQ0ZvX3ZHblJXTVhKOGtPenpmVm9vdXhZWlgxZzB5c3I4R3hmbkg2UUhtWXlzN3ExcU9lZ2p5OXhqZFFLc3RybW01Vzc2eXlrNVByQW1jcG1nNnB3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T22:20-05:00"
+    },
+    {
+      "id": "rss-3f457747a87cfb44",
+      "date": "2026-11-02",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Hijo de exjugador argentino de Real Cartagena convocado a la Selección Colombia Sub-19",
+      "summary": "Titular difundido por PrimerTiempo.CO a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "PrimerTiempo.CO · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcFNOaWZlRTlXbmVhVllPbEhBNlJKZGJLTWxhZG5ES09YUkJuUjZXMC1QYXNVWU9HV0JabDJBUVlVUF9DZTloNTR3NFJRSENNdnV6WkdHZDQ3eXZJZlFSbTAzay16bDZRNDRYMWlYRmhQMkRldlVhUDhMLTdSdDBsWUZZN0hsRm5uVEtGVUFiTWI1cVd4cXJIYWM0X0hBU1FlQWxIU0lnVXA0VjYwWGVpblhBSjAxWWZsY3c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T22:04-05:00"
+    },
+    {
+      "id": "rss-7d77ccafd5454ebe",
+      "date": "2026-11-02",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Salario y autonomía hacen felices o infelices a los trabajadores en Colombia, la comunicación también influye",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeW5TamVudzVSMENjaEdoLXNCaXFUU3RaMkQ4Smc0RF9qT3ZGV3NaVGZmLWhvaFE1RkRUV1hoY0VsZXIzbE1RbFZ2QzFTVjZhQW1IV1JSNDgyYjdkQnRxWEZaRHlSOW5PZG9Zako2MUdSeFRxaHB6MmtRdnVScXZ0UEEzbWpOZFI3bVd0WmRLdFhKLVRwZ1BXQUg4RG9LWGNMTE43TFVaNkQyVVRtd3QzSFFBSDlBWGpTekJ3MWdwYUNCeW8tbWpublV6dXV0RU4xdFR4Y0t5X0QzWV9VOEw0RkZfUjUyeXZhUzFVZ19PYVTSAfYBQVVfeXFMT0ZuS09abUR0QXBXRU01LVItM1BVOXJXQjZyUU9WRVhsWE51Wi1BcGFGRGpSM3JXbzQydy1LalVYNE8tb3pYRC1aalAyUUwtS0hSWWd3UXpBUUJ0ZVZhN1QwaF9FS2xIVGU0ajd5WUMyRUdJUWxmNVdGX0JhajdVcVNjYTBqTmQ3bTlHa2R5UktwSzdwNnpzWWMzaEdWbWw3N1k0Tm9KR1ZUeExXVWtNNWFtR01SNVZkUHRpYzZkcFpQcW44TUY0NjcxMFJMVWg5RHZ0alhwQXJ3R2hzZnJqamc2UnJuVm1mdzlOSmQwd3Z5V08yTjRB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T21:56-05:00"
+    },
+    {
+      "id": "rss-17e3f262a69b2311",
+      "date": "2026-11-02",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Era como si cayera un misil\": 9 muertos al estrellarse un avión privado en un vecindario de Florida",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/c61m4yyjyrrxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T20:52-05:00"
+    },
+    {
+      "id": "rss-b2f0a0cf89923531",
+      "date": "2026-11-02",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La carrera de obstáculos hacia el 6 %: ¿cuánto puede crecer la economía colombiana?",
+      "summary": "Titular difundido por El Espectador a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Espectador · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSkhmMDNPRkdxek9GMnFIeVVHWFpBcXQ1cDB4RFF5NkNqYk9EWXZrU3BkNE9IbE5XYkZaSHJVYXBheGdQclVNWVctam9Qb1F6MFBGcUpxQXREMm9CWlZIMVB0ZU9vbzlRRDdvcXBnVW8yajAxVkFQTXAtMU5HYUVLMmx2V09ncngxY1NXNXZFc0tYclVTNngzNThsNlNaazVSVU5hN1dwWEdiRTNnWTNwcnpBaVI3SF9Z?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T20:00-05:00"
+    },
+    {
+      "id": "rss-d690000afa7b07ef",
+      "date": "2026-11-02",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Representa un paso significativo\": FMI sobre ley fiscal que radicó Gobierno De la Espriella",
+      "summary": "Titular difundido por El Espectador a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Espectador · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOM0UyNlRoWUVsSkxFdnphU0Nqa2JJekE3V1FhZkhxTmVZdTh1T0QwcHQtbjhlMzNNNnRBTy1HSE1LLUpWZFRYb0E2d3RiUl9GRmxBWFowYWJnemU3LWpHX3pjMHJ6Uk1wTkpRWHc3VVZjYnVSNzJzMjdHNWlTb2p6TlVhWThUaV96UmtORWxJcjNkeEJpYkNOTWVGTlNsWnl0RXR4YXI5a1AwQ1AyZlRleDM2N1E5dExQZ1lhaWdaWmxsbm1ZbDVj?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-02T18:46-05:00"
+    },
     {
       "id": "20261102-ai-energia",
       "date": "2026-11-02",
@@ -137,5 +299,9 @@
         }
       ]
     }
-  ]
+  ],
+  "autoSyncCheckedAtBogota": "2026-11-02T22:42-05:00",
+  "lastNewSourceAtBogota": "2026-11-02T22:42-05:00",
+  "autoSyncOkSources": 4,
+  "autoSyncFailedSources": 0
 }
