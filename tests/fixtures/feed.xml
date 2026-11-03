@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Prueba editorial</title>
+<item><title>Reporte público de prueba sobre tecnología colombiana</title><link>https://example.org/noticias/reporte-tecnologia</link><pubDate>Mon, 02 Nov 2026 23:30:00 GMT</pubDate></item>
+<item><title>Informe anterior no debe aparecer</title><link>https://example.org/noticias/antiguo</link><pubDate>Mon, 20 Oct 2026 18:00:00 GMT</pubDate></item>
+</channel></rss>
