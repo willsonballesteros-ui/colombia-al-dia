@@ -1,0 +1,46 @@
+
+name: Actualizar titulares Colombia al Dia
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13,17,23 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: noticias-auto
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Incorporar titulares
+        run: python scripts/sync_sources.py --data noticias.json
+
+      - name: Validar noticias
+        run: python scripts/validate_news.py noticias.json
+
+      - name: Guardar actualizaciones
+        run: |
+          if ! git diff --quiet -- noticias.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add noticias.json
+            git commit -m 'Actualizar titulares'
+            git push
+          else
+            echo 'Sin noticias nuevas'
+          fi
