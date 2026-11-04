@@ -1,5 +1,5 @@
 
-name: Preparar noticias ORBIUNO (Bogota)
+name: Preparar noticias Colombia al Día (Bogotá)
 
 on:
   workflow_dispatch:
