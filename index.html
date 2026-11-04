@@ -175,6 +175,7 @@ const updateSpeechControls=()=>{
  document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
   const current=speakingId===btn.dataset.ttsId && !!speakingUtterance;
   btn.textContent=current?(speechPaused?'▶ Reanudar':'Ⅱ Pausar'):'▶ Escuchar resumen';
+  btn.setAttribute('aria-label',(current?(speechPaused?'Reanudar':'Pausar'):'Escuchar')+' resumen de esta noticia');
   btn.setAttribute('aria-pressed',current && !speechPaused?'true':'false');
   btn.disabled=!canSpeak;
   if(!canSpeak)btn.title='La lectura en voz alta no está disponible en este navegador';
@@ -228,6 +229,8 @@ const playSpeech=id=>{
    speakingUtterance=null;speakingId=null;speechPaused=false;updateSpeechControls();
   }
  };
+ const player=el('boletin-player');
+ if(player && !player.paused)player.pause(); // Evitar superponer dos voces.
  try{synth.speak(utterance);}
  catch(error){stopSpeech();}
  updateSpeechControls();
@@ -240,6 +243,7 @@ el('cards').addEventListener('click',event=>{
  else playSpeech(id);
 });
 window.addEventListener('pagehide',stopSpeech);
+if(el('boletin-player'))el('boletin-player').addEventListener('play',stopSpeech);
 el('date').addEventListener('change',()=>{selectedDate=el('date').value;render();});el('search').addEventListener('input',render);
 render();updateVideo();
 // Cuando se despliega junto a noticias.json en un servidor público, el navegador consulta
