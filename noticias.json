@@ -1,8 +1,8 @@
 {
-  "brand": "Colombia al Día",
+  "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
   "editedAtBogota": "2026-11-04 05:55",
-  "siteVersion": "3.0",
+  "siteVersion": "6.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
@@ -3083,14 +3083,14 @@
   "lastNewSourceAtBogota": "2026-11-04T08:27-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
+  "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
   "editorialFormat": "Titular, resumen ejecutivo de hasta dos líneas visibles y fuente; audio TTS accesible en la web.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
-    "name": "Colombia al Día",
-    "monogram": "CA",
+    "name": "ORBIUNO",
+    "monogram": "OU",
     "website": "https://colombia-al-dia.pages.dev/",
-    "note": "Identidad tipográfica de Colombia al Día; sin avatares ni ilustraciones de hechos."
+    "note": "ORBIUNO es la marca del noticiero Colombia al Día. Noticias concisas, fuentes y TTS."
   },
   "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía."
 }
