@@ -1,0 +1,11 @@
+{
+  "editionDate": "2026-11-04",
+  "fingerprint": "dbcece7e3777138de8ceede230b1db1c9ce191c7f9f548b57e2d13dd8ebb5212",
+  "voice": "ef_dora",
+  "narrationMode": "static_visuals_with_synthetic_narration",
+  "hasTalkingAvatar": false,
+  "hasRealLipSync": false,
+  "scenes": 11,
+  "video": "boletin-narrado.mp4",
+  "sha256": "16c506ad94a9b05f8957f6ac991fd72cf8ec4e8f3745ed03d839373513301674"
+}
