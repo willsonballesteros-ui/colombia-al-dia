@@ -6,6 +6,7 @@ on:
     paths:
       - 'noticias.json'
       - 'scripts/build_carousel.py'
+      - 'scripts/build_caption.py'
       - 'scripts/prepare_site.py'
       - '.github/workflows/generar-carrusel.yml'
 
@@ -33,6 +34,8 @@ jobs:
         run: python scripts/validate_news.py noticias.json
       - name: Renderizar portada y diez láminas
         run: python scripts/build_carousel.py
+      - name: Generar copy y primer comentario con enlace aislado
+        run: python scripts/build_caption.py
       - name: Validar diez imágenes de Instagram más portada de Reel
         run: |
           python - <<'PY'
@@ -46,7 +49,11 @@ jobs:
           for file in slides:
               with Image.open(file) as im:
                   assert im.size==(1080,1350), (file,im.size)
-          print("Validado: diez noticias para Instagram y portada para Reel (11 archivos).")
+          assert (p/"instagram-caption.txt").is_file()
+          assert (p/"instagram-primer-comentario.txt").is_file()
+          text=(p/"instagram-caption.txt").read_text(encoding="utf-8")
+          assert "\\n🌐 https://colombia-al-dia.pages.dev/" in text
+          print("Validado: 10 imágenes, portada y links del copy.")
           PY
       - name: Publicar imágenes sobre la última versión de main
         run: |
@@ -58,6 +65,7 @@ jobs:
             git reset --hard origin/main
             python scripts/validate_news.py noticias.json
             python scripts/build_carousel.py
+            python scripts/build_caption.py
             # Eliminar exclusivamente recursos de los formatos obsoletos.
             DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
             git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
@@ -71,7 +79,7 @@ jobs:
             if git diff --cached --quiet; then
               echo 'Imágenes ya sincronizadas'; exit 0
             fi
-            git commit -m 'ORBIUNO: renovar 11 láminas breves con fuente original'
+            git commit -m 'ORBIUNO: láminas breves, favicon de fuente y copy con enlace limpio'
             if git push origin HEAD:main; then exit 0; fi
             sleep $((i * 3))
           done
