@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-01d9687cba3d437e",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Pérez Iglesias cree que la IA y otras tecnologías digitales \"darán paso a un nuevo paradigma en la universidad\"",
+      "summary": "Titular difundido por Europa Press a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Europa Press · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQXzlQRXBlVU5QSFNRd055WTNfanV5Q2xGT2RtbHpwTWNNWHNIbWU3emxOV3NLX2tZRWpWdDZxbXFzaDZZOXBoOEZRVGlrc2xmX1FYUFhMZVkxb1VYRUc1amszWFdZbzRaUF8td3B5LS1wNllucXNYUGdkeE4wTzdGallJMl9saFZXM3d1ZlpzajVkdnF0QXVSVENIcmFxUlBOTFFIT1pYTDhjQ1ZpUEREOFhzYjRZZ2ppUFNrd1kxYjc1S2hMaHlJaTI4YjU2ZVdXYWswNUI0TWdtTTRSa0kxVk5hUlRPaVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-1950dcc415a1957b",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Rumanía ocupa el último lugar en la UE en la adopción de la IA. Solo el 5,2% de las empresas utilizan esta tecnología",
+      "summary": "Titular difundido por Informat.ro a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Informat.ro · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZDZ2NkxSa3Zxei1XcEItMjVnb0RrWmVId1BINmlwcEdIV3YtV0ZXTENUZUpwcnhhVS1oNktscGtoUmpoYVZLUzVEeEJibWs4NXVhZ3ZPcVlCNTFEQkNoc0tWNUdRYWE1M1JvT3dFQ05SLXBfS3dTMFBfLVpqLUVrNFlxQXVqMEU1NmIzRnRqUm5sVzRVNzhRSl9WODRSTWZUQlhPOGg4V1dMdlBqWmc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:08-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-89b014f27a0aec43",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -2632,8 +2670,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T07:11-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T07:11-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T07:13-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T07:13-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
