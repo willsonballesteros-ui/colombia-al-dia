@@ -27,6 +27,17 @@ def check(data):
             assert len(x['audioFullTextEs']) > len(x.get('executiveSummary') or ''), 'Audio ampliado demasiado corto'
         if x.get('audioFullTextEn'):
             assert x.get('englishAudioRightsVerified') is True, 'No reproducir texto extranjero sin derechos comprobados'
+        # Leer íntegramente un artículo de un tercero exige autorización
+        # de reproducción y, si se traduce del inglés, permiso de traducción.
+        if x.get('fullArticleTextEs') or x.get('fullArticleRightsVerified'):
+            assert x.get('verification') == 'editorial_verified', 'Artículo completo requiere edición'
+            assert isinstance(x.get('fullArticleTextEs'), str) and len(x['fullArticleTextEs'].strip()) >= 300, 'Texto completo insuficiente'
+            assert x.get('fullArticleRightsVerified') is True, 'No hay autorización de reproducción del artículo íntegro'
+            assert x.get('fullArticleIsVerbatimSource') is True, 'El modo completo exige el texto original autorizado'
+            assert x.get('fullArticleLicense'), 'Falta licencia documentada'
+            assert x.get('fullArticleSourceUrl') in [s['url'] for s in x['sources']], 'No coincide la fuente del artículo completo'
+            if x.get('sourceLanguage') == 'en':
+                assert x.get('fullArticleTranslationAuthorized') is True, 'Traducción íntegra no autorizada'
         # Protección editorial: nada generado ni sin atribución documental.
         if x.get('imageUrl') or x.get('imageType'):
             assert x.get('imageType') in {
