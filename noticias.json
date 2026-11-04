@@ -709,7 +709,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 1
+      "priority": 1,
+      "imageUrl": "./media/2026-11-04/visual-01.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-02",
@@ -731,7 +733,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 2
+      "priority": 2,
+      "imageUrl": "./media/2026-11-04/visual-02.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-03",
@@ -749,7 +753,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 3
+      "priority": 3,
+      "imageUrl": "./media/2026-11-04/visual-03.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-04",
@@ -767,7 +773,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 4
+      "priority": 4,
+      "imageUrl": "./media/2026-11-04/visual-04.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-05",
@@ -789,7 +797,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 5
+      "priority": 5,
+      "imageUrl": "./media/2026-11-04/visual-05.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-06",
@@ -811,7 +821,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 6
+      "priority": 6,
+      "imageUrl": "./media/2026-11-04/visual-06.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-07",
@@ -829,7 +841,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 7
+      "priority": 7,
+      "imageUrl": "./media/2026-11-04/visual-07.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-08",
@@ -847,7 +861,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 8
+      "priority": 8,
+      "imageUrl": "./media/2026-11-04/visual-08.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-09",
@@ -865,7 +881,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 9
+      "priority": 9,
+      "imageUrl": "./media/2026-11-04/visual-09.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "20261104-editorial-10",
@@ -883,7 +901,9 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 10
+      "priority": 10,
+      "imageUrl": "./media/2026-11-04/visual-10.png",
+      "imageType": "ilustracion_editorial"
     },
     {
       "id": "rss-07ce29318ee99881",
