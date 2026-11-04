@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-2ecbde8a6197fdc8",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Minuto de Dios tendrá su propia plataforma de inteligencia artificial (para no depender de los gigantes tecnológicos)",
+      "summary": "Titular difundido por UNIMINUTO Radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "UNIMINUTO Radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQbF8zQmRzVFc3TDk4bEpfNnJuaklDUUhIYmxMSnpwbGpfSy1vUHRxcm1uSndiSDE3RzV0Y2JkdE1XRm9pYTlCLWxZb3JsQW9KVEpGTGpCRnhodkpxWURjaXhQLUlkdGNyV1JyZ3NkOFF6TVVIM0xpa3A4cTh4ZWlRN085VGs5NTFMblc5eVBRNFNpYjl4cERidlFRdUwyVXRGbmZLNGRzSE03X2RhRldzUVRwRXVLV0tiVjFqRXp6SXJpc1hGVXdKU3BkNGN4dExxWjdxY1ZlTFE2V0NUQUVLdmU5a2xiRjVl?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T16:41-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-16a7dbb0038d8a25",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El debate legal que viene: quién responde por las decisiones de la inteligencia artificial",
+      "summary": "Titular difundido por El Observador Argentina a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Observador Argentina · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWVdrTDBFeTlsblo0MUdENVk3UlYzWWs2NklDSkVsRzN6alpRNmFQaVQtNnJmV2RoNVVkZ1BiVFdxUWVzRnd0a0UzU2xRenNXdy02cjhGRzJFc3R0VzR3d2ZxVFBpQkZsSWM3MDh6S1lRSGFZQWpsTkthM0VnaFVERWExWkNscTdFaHUyNDdGR0xMelVKSWZNcVRGeUVMYlFsSF9MR2p3TGJaUnJLQjJDSGVGV0JGaExvelhidmgxUmRNX1dZbFVELXhoNW5sYkZjdU1XRWJJZ0IzUdIB3wFBVV95cUxPRXctQzJPaldlcTBTUkRTRUtoQVh2dHpzVWlIWmRfcFR2OEk5SUlkTG5jejZmd0hxTWo3bExvbzdNVVhpcmZDR1hveDl3cW11LXU0OGJBaldObXdSa1gyT0RuT2FLUVJUNEt2akFiZS14M1dRVFpydmkxOUtZNU9KWmtTRHFQckx2Mmtqdy1JbzZRRHBiQkZHRXF1Tm4tYTdBb3dQb21iLTdpMDZDaVFiZXZud0FRaFB4d1ItMkI3NUM0R245SmFBZlpMSmd5NkxLWlBzdGRoZ0tkSW9VNmdJ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T16:35-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-994d91dbb8f5ad19",
       "date": "2026-11-04",
       "category": "Colombia",
