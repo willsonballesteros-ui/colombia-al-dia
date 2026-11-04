@@ -3,7 +3,6 @@
 import json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
-import qrcode
 
 W,H=1080,1350
 NAVY="#071b46"
@@ -70,7 +69,9 @@ def draw_card(item,num,day,out):
 
 
 def draw_story(day,out,url):
-    """Historia vertical con QR real que abre la web, sin fingir sticker clicable."""
+    """Historia vertical limpia. El sticker Enlace se añade dentro de Instagram.
+    No usar QR ni dibujar botones que aparenten ser clicables.
+    """
     w,h=1080,1920
     im=Image.new("RGB",(w,h),NAVY)
     d=ImageDraw.Draw(im)
@@ -79,22 +80,20 @@ def draw_story(day,out,url):
     d.rectangle((0,43,w,58),fill="#e63145")
     d.ellipse((690,-235,1340,405),outline="#1c438c",width=38)
     d.text((76,130),"ORBIUNO",font=f(122,True),fill="white")
-    d.text((82,270),"COLOMBIA • MUNDO • IA",font=f(32,True),fill=YELLOW)
-    sy=block(d,"Las noticias más importantes de Colombia y el mundo, en un solo lugar",78,410,f(55,True),"white",920,5,18)
-    d.rounded_rectangle((76,sy+68,1000,sy+230),radius=42,fill="#194293")
-    d.text((114,sy+101),"10 NOTICIAS VERIFICADAS",font=f(39,True),fill="white")
-    d.text((116,sy+164),day[8:10]+"/"+day[5:7]+"/"+day[:4],font=f(28),fill="#f2f5fd")
-    qr=qrcode.QRCode(version=None,error_correction=qrcode.constants.ERROR_CORRECT_H,box_size=14,border=2)
-    qr.add_data(url)
-    qr.make(fit=True)
-    qr_image=qr.make_image(fill_color="#081f4c",back_color="white").convert("RGB").resize((470,470))
-    qr_x,qr_y=305,920
-    d.rounded_rectangle((qr_x-22,qr_y-22,qr_x+492,qr_y+492),radius=35,fill="white")
-    im.paste(qr_image,(qr_x,qr_y))
-    d.text((185,1470),"ESCANEA PARA LEER LAS FUENTES",font=f(32,True),fill=YELLOW)
-    d.text((158,1565),"colombia-al-dia.pages.dev",font=f(39,True),fill="white")
-    d.text((154,1668),"Noticias · contexto · enlaces originales",font=f(25),fill="#d9e4ff")
-    d.text((210,1800),"@resumen.noticias",font=f(33,True),fill="#f0f3ff")
+    d.text((82,270),"COLOMBIA · MUNDO · IA",font=f(32,True),fill=YELLOW)
+    sy=block(d,"Las noticias más importantes de Colombia y el mundo, en un solo lugar",78,405,f(56,True),"white",920,5,17)
+    d.rounded_rectangle((76,sy+70,1000,sy+245),radius=35,fill="#194293")
+    d.text((108,sy+108),"10 NOTICIAS VERIFICADAS",font=f(40,True),fill="white")
+    d.text((110,sy+173),day[8:10]+"/"+day[5:7]+"/"+day[:4],font=f(30),fill="#f2f5fd")
+    d.text((100,1150),"LEE LAS 10 NOTICIAS",font=f(48,True),fill="white")
+    d.text((100,1225),"Y COMPRUEBA SUS FUENTES",font=f(34,True),fill=YELLOW)
+    d.line((103,1320,974,1320),fill="#91abd8",width=3)
+    d.text((102,1375),"Enlace en nuestra biografía",font=f(39,True),fill="white")
+    d.text((102,1442),"@resumen.noticias",font=f(34),fill="#d9e4ff")
+    d.text((103,1510),"colombia-al-dia.pages.dev",font=f(31,True),fill="#e9f0ff")
+    # Reservar espacio libre para que Instagram agregue sticker Enlace REAL.
+    d.rounded_rectangle((98,1640,982,1790),radius=35,outline="#7b9ed5",width=3)
+    d.text((180,1680),"ESPACIO PARA STICKER ENLACE",font=f(28,True),fill="#e8efff")
     im.save(out,optimize=True)
 
 def main():
