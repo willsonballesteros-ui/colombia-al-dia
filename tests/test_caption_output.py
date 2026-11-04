@@ -14,6 +14,8 @@ class CaptionTests(unittest.TestCase):
         text=self.out["caption"]
         self.assertLess(len(text),500)
         self.assertIn("\n🌐 "+URL+"\n",text)
+        self.assertIn("🎧 Las noticias también se escuchan en nuestra web.",text)
+        self.assertIn("Elige voz en español, tono y velocidad",text)
         self.assertNotIn("1. ",text)
         self.assertNotIn("QUÉ PASÓ",text.upper())
         self.assertNotIn("POR QUÉ IMPORTA",text.upper())
