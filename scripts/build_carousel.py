@@ -128,7 +128,7 @@ def cover(day, out):
     d.line((70, 830, 1010, 830), fill=GOLD, width=5)
     paragraph(d, "¿Cuál de estas noticias te impacta más?",
               70, 886, font(39, True), NAVY, 930, 3, 18)
-    d.text((73, 1138), "Desliza para conocer los hechos y sus fuentes.", font=font(24), MUTED)
+    d.text((73, 1138), "Desliza para conocer los hechos y sus fuentes.", font=font(24), fill=MUTED)
     im.save(out, optimize=True)
 
 
