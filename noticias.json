@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-13a7206960f0f46b",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial chocó con las urnas en las elecciones de EEUU",
+      "summary": "Titular difundido por BAE Negocios a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BAE Negocios · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQUliUl9wQS00SWVHeHo2N0QyVXd3VzhvY19SaXRBV2VNMXVDMFpGS3lPdHB4cWFheE1yVjhFUzlLdUszTDl6T2duaWE5RUVsZkFOcWFNb3hxdzlkY1N0MTF6ZVM1MjM1akEwREZlSUtBMy1BVTBJc0ZkRDlpUm9EMXd6aHU0LXJ6Wm5rdEZJMkpSN1o5a2lvN0ZyU2VUaVgzYjloZWpUaG9WLVJpSmZ0QmY5U0VtLUtueUEzdVFKbURkQmY3SXF6VHBNOG9WUdIBywFBVV95cUxQaXZHTndoeVowdkhST3Y1Z3J5YVo4aDVrNFc3bWQyWURQeVpwNm8ybkxadmhJckYwdjVtdmlaa1FqUVFaSmxlTFVfbVYxTDQ0Q1ZiVHNfQ3otWUE4YzVVQVhvaWZhLWV0SWFpVm5ObktyVlY0X1R2YzBTVXlsOVkySlA4cFpiNjB6TnQ3dXZscnIyNV91X2haQi13MEc3R1pwR05rTHZIYjBYVHdLc2FUOVRaMEJKWl9lejJ4Z0wxSXZQd2E5c2NBNnZIcw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T16:00-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-4bbce66879d7588f",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial para aliviar la carga laboral: qué tareas puede automatizar y cómo aprovecharla",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOMnZmNDdDYTExeXk1Ni00YXhIVkNIMHUySkFsQWRNNHFac2Qxd3AwT085NTZFNk84UDRXMVFRd1N6MVBTZlE0cUZMS3d4ZXNKamVaVE1fT2M4WmdvbEljVzY5S3czdF9GQ21CN1BEMVc2NmZ3Q1lXYlQxck5vX05RUGRFYzY5cEY4bVNhTnEzTUYtTkg2UnMzQnlUQ1hhU3ZsajlSd0Q5MFZyQlJzc2xoaGZRTXEtVXhxZGlyQ2w5czZJRDEyV1NQUHJxWTJINkRTOXJDUWpiRTlxdWlzTTVFUXV4OTVLYlExNlc0eDI5RUFta0tsWU9CdmtFdEJGdmvSAYQCQVVfeXFMTlJlYmpKekRpbHhwUFNGNFdBLWdCT19Zb1VyelE3OWx3aE9TSTRZTjFkRDhvcFVsOVJHcjBiNWdjXzhTNVJTRThoUEhFdXp3LW1abm9wc3o1OXhwdHVsYllabDZJU0lQdFNHYnNMOVV0cThnX3AwU1lBQjRUeDlWWTk2SFRFTlBlWEtTMWFCeUNBcmpOYUFqN2dSeU5WSzJlUzg1MEk1WXY5aElsWVhGem02Ym5EenRaNUx0dGh5QzZERVpFVzhmRWszQXBOZjZIT2ZjcjI0VElRYkxzMG1paTRqZWtiX2o5d0JCakFKOHhjWWsxN0dyNGdzWkhSYjJTWDhzOHk?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T13:23-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-547eacc1ab24b27b",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -6572,8 +6610,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T18:33-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T18:33-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T18:34-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T18:34-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
