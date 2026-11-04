@@ -48,6 +48,18 @@ jobs:
       - name: Actualizar portada HTML accesible
         run: python scripts/prepare_site.py
 
+      - name: Verificar sintaxis del frontend y botón de escucha
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          raw=Path('index.html').read_text(encoding='utf-8')
+          scripts=re.findall(r'<script(?:\\s+[^>]*)?>(.*?)</script>',raw,re.S)
+          assert scripts and 'SpeechSynthesisUtterance' in scripts[-1], 'TTS frontend ausente'
+          Path('/tmp/orbiuno-frontend.js').write_text(scripts[-1], encoding='utf-8')
+          PY
+          node --check /tmp/orbiuno-frontend.js
+
       - name: Crear RSS con fuentes y enlaces originales
         run: python scripts/build_feed.py
 
