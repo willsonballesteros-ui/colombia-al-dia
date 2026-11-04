@@ -496,11 +496,11 @@ const acquisition=(()=>{
 const articleAudioMode=item=>hasAuthorizedFullArticle(item)?'complete_licensed':
  hasOriginalOrbiunoArticle(item)?'complete_orbiuno':'summary';
 const trackAudio=(event,item)=>{
- if(!item||!['audio_play','audio_finished','audio_paused','audio_resumed'].includes(event))return;
+ if(!item||!['landing_view','audio_play','audio_finished','audio_paused','audio_resumed'].includes(event))return;
  const details={
   event,articleId:String(item.id||'').slice(0,120),
   speed:speechRates[speechRateIndex],tone:selectedTone,
-  mode:articleAudioMode(item),source:acquisition.source,
+  mode:event==='landing_view'?'landing':articleAudioMode(item),source:acquisition.source,
   medium:acquisition.medium,campaign:acquisition.campaign};
  try{
   const json=JSON.stringify(details);
@@ -519,6 +519,17 @@ const trackAudio=(event,item)=>{
    window.zaraz.track(event,details);
  }catch(error){/* El audio funciona aunque analítica falle o esté bloqueada. */}
 };
+// Visita atribuida desde Instagram, una vez por sesión/campaña.
+const trackLanding=()=>{
+ if(acquisition.source!=='instagram')return;
+ const key='orbiuno-land-'+acquisition.medium+'-'+acquisition.campaign;
+ try{
+  if(window.sessionStorage.getItem(key)==='yes')return;
+  window.sessionStorage.setItem(key,'yes');
+ }catch(error){/* Sin almacenamiento privado, no bloquear el conteo. */}
+ trackAudio('landing_view',{id:'landing'});
+};
+trackLanding();
 const playSpeech=id=>{
  if(!canSpeak)return;
  const synth=window.speechSynthesis;
