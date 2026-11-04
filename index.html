@@ -21,6 +21,7 @@
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid #e3e9f4;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.card-head{padding:22px 23px 16px;border-top:5px solid #ffce27}.card.top-story{border-color:#a8bfe8;box-shadow:0 15px 45px #0e255420}.card.top-story .card-head{border-top-color:#225bd8}.editorial-tag{font-size:11px;border-radius:40px;padding:4px 10px;background:#ffedac;color:#5a4200;font-weight:800}.chiprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}.tag{font-size:11px;background:#e9f0ff;color:#1241a2;border-radius:40px;padding:4px 10px;font-weight:800}.status{font-size:11px;background:#f1f3f7;color:#596779;border-radius:40px;padding:4px 10px;font-weight:650}.date{color:var(--muted);font-size:12px;white-space:nowrap;margin-left:auto}.card h3{font-size:21px;line-height:1.24;letter-spacing:-.55px;margin:0}.item{padding:0 23px 14px}.item b{display:block;color:#19387c;margin:3px 0 2px;font-size:13px}.item p{font-size:14px;margin:0;color:#3d4961}.card-bottom{border-top:1px solid #e5eaf3;background:#f9fbff;padding:13px 23px 18px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.source{display:inline-flex;border-radius:8px;border:1px solid #a8bfe8;color:#194592;background:#fff;text-decoration:none;font-size:12px;font-weight:750;padding:8px 11px}.source:hover{background:#eff5ff}.empty{padding:45px 20px;text-align:center;border:1px dashed #9badc9;border-radius:17px;background:#fff;color:var(--muted)}.foot{background:var(--navy);color:white;padding:35px 0}.foot-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}.foot a{color:#f6d059}.small{font-size:12px;color:#c6d1e9;max-width:670px}.top-btn{display:inline-block;text-decoration:none;background:var(--yellow);color:#071b46;border-radius:8px;padding:10px 15px;font-weight:850;font-size:13px}.count{font-size:13px;color:var(--muted);margin:0 0 20px}
 @media(max-width:720px){.wrap{padding:0 15px}.top-inner{min-height:72px;gap:8px}.brand h1{font-size:20px}.brand small{font-size:10px}.mark{width:39px;height:39px}.top nav{gap:13px;font-size:12px}.hero{padding:42px 0}.hero h2{letter-spacing:-1px}.hero p{font-size:15px}.toolbar{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.card-head,.item{padding-left:17px;padding-right:17px}.card-bottom{padding-left:17px;padding-right:17px}.card h3{font-size:19px}.date{margin-left:0}}
 
+.news-image.brand-visual{object-fit:contain;padding:55px;background:#12386e}
 /* ORBIUNO UX móvil: portada limpia y tarjetas visuales compactas. */
 .hero{padding:42px 0 46px}
 .hero h2{max-width:810px;margin:15px 0 0}
@@ -93,17 +94,48 @@ const updateVideo=async()=>{
   el('boletin-video').hidden=false;
  }catch(e){el('boletin-video').hidden=true;}
 };
+const imagePath=x=>{
+ const url=String(x.imageUrl||'');
+ return /^\.\/media\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/visual-[0-9]{2}\.png$/.test(url)
+  ?url:'./branding/orbiuno-icono.svg';
+};
+const cardHTML=x=>{
+ const isTop=x.verification==='editorial_verified';
+ const src=imagePath(x), isBrand=src.startsWith('./branding/');
+ const sources=Array.isArray(x.sources)?x.sources.filter(s=>String(s.url||'').startsWith('https://')):[];
+ const main=sources[0];
+ const other=sources.slice(1).map(s=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">Otra fuente: '+esc(s.name)+'</a>').join('');
+ const mainLink=main?'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(main.url)+'">Ver fuente: '+esc(main.name)+'</a>':'';
+ const tag=isTop?'Top 10 · '+esc(x.category):'En seguimiento · '+esc(x.category);
+ const details='<details class="news-more"><summary>Leer resumen completo</summary>'
+  +'<div class="explain"><strong>QUÉ PASÓ</strong><p>'+esc(x.summary)+'</p></div>'
+  +'<div class="explain"><strong>POR QUÉ IMPORTA</strong><p>'+esc(x.why)+'</p></div>'
+  +'<div class="explain"><strong>QUÉ SIGUE</strong><p>'+esc(x.next)+'</p></div>'+other+'</details>';
+ return '<article id="noticia-'+esc(x.id)+'" class="card">'
+  +'<img class="news-image'+(isBrand?' brand-visual':'')+'" loading="lazy" width="1080" height="600" src="'+esc(src)+'" alt="'+(isBrand?'ORBIUNO, imagen de referencia':'Ilustración editorial temática, no fotografía del hecho')+'">'
+  +'<div class="news-body"><div class="news-meta"><span class="news-chip">'+tag+'</span><time datetime="'+esc(x.date)+'">'+esc(fmt(x.date))+'</time></div>'
+  +'<h3>'+esc(x.title)+'</h3>'+mainLink+details+'</div></article>';
+};
 const render=()=>{
- const items=db.news.slice().sort((a,b)=>b.date.localeCompare(a.date)||(Number(b.verification==='editorial_verified')-Number(a.verification==='editorial_verified'))||((a.priority||999)-(b.priority||999)));const dates=[...new Set(items.map(x=>x.date))];const selected=selectedDate;const query=el('search').value.trim().toLocaleLowerCase('es');
- el('latest-date').textContent='Última edición revisada por la redacción: '+fmt(db.editionDate);
- const newest=db.news.reduce((a,x)=>x.date>a?x.date:a,db.editionDate);el('freshness').textContent=newest===today()?'Hay titulares de hoy':'No hay novedades de hoy';el('auto-feed').textContent=db.autoSyncCheckedAtBogota?'Última consulta automática: '+db.autoSyncCheckedAtBogota.replace('T',' ').slice(0,16)+' (Bogotá)':'Aún sin sincronización automática';
- el('foot-date').textContent='Última edición revisada: '+fmt(db.editionDate)+'. Titulares importados automáticamente se señalan como PENDIENTES y se atribuyen a su fuente.';
- el('date').innerHTML='<option value="all">Todas las fechas del historial</option>'+dates.map(d=>'<option value="'+d+'">'+esc(fmt(d))+'</option>').join('');el('date').value=dates.includes(selected)?selected:'all';selectedDate=el('date').value;
- const cats=['Todas',...new Set(items.map(x=>x.category))];el('filters').innerHTML=cats.map(c=>'<button type="button" class="filt'+(c===category?' active':'')+'" data-cat="'+esc(c)+'">'+esc(c)+'</button>').join('');
- const match=items.filter(x=>{const hay=JSON.stringify([x.title,x.summary,x.category,x.why,x.next]).toLocaleLowerCase('es');const okSearch=!query||(query.length<=2?hay.split(/[^\p{L}\p{N}]+/u).includes(query):hay.includes(query));return (selectedDate==='all'||x.date===selectedDate)&&(category==='Todas'||x.category===category)&&okSearch;});
- el('count').textContent=match.length+' noticia'+(match.length===1?'':'s')+' con fuente original';el('subtitle').textContent='';
- el('cards').innerHTML=match.map(x=>'<article id="noticia-'+esc(x.id)+'" class="card'+(x.verification==='editorial_verified'?' top-story':'')+'"><div class="card-head"><div class="chiprow">'+(x.verification==='editorial_verified'?'<span class="editorial-tag">Top 10 · '+esc(String(x.priority||''))+'</span>':'')+'<span class="tag">'+esc(x.category)+'</span><span class="status">'+esc(x.level)+'</span><span class="date">'+esc(fmt(x.date))+'</span></div><h3>'+esc(x.title)+'</h3></div><div class="item"><b>QUÉ PASÓ</b><p>'+esc(x.summary)+'</p></div><div class="item"><b>POR QUÉ IMPORTA</b><p>'+esc(x.why)+'</p></div><div class="item"><b>QUÉ SIGUE</b><p>'+esc(x.next)+'</p></div><div class="card-bottom">'+x.sources.map(s=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">Ver fuente: '+esc(s.name)+' ↗</a>').join('')+'</div></article>').join('');
- el('empty').hidden=!!match.length;
+ const items=db.news.slice().sort((a,b)=>b.date.localeCompare(a.date)||
+ (Number(b.verification==='editorial_verified')-Number(a.verification==='editorial_verified'))||
+ ((a.priority||999)-(b.priority||999)));
+ const dates=[...new Set(items.map(x=>x.date))];
+ const query=el('search').value.trim().toLocaleLowerCase('es');
+ el('foot-date').textContent='Última edición revisada: '+fmt(db.editionDate)+'. Las ilustraciones no son fotografías de los acontecimientos.';
+ el('date').innerHTML='<option value="all">Todas las fechas del historial</option>'+dates.map(d=>'<option value="'+d+'">'+esc(fmt(d))+'</option>').join('');
+ el('date').value=dates.includes(selectedDate)?selectedDate:'all';
+ selectedDate=el('date').value;
+ const cats=['Todas',...new Set(items.map(x=>x.category))];
+ el('filters').innerHTML=cats.map(c=>'<button type="button" class="filt'+(c===category?' active':'')+'" data-cat="'+esc(c)+'">'+esc(c)+'</button>').join('');
+ const matching=items.filter(x=>{
+  const hay=JSON.stringify([x.title,x.summary,x.category,x.why,x.next]).toLocaleLowerCase('es');
+  return (selectedDate==='all'||x.date===selectedDate)&&(category==='Todas'||x.category===category)&&(!query||hay.includes(query));
+ });
+ el('count').textContent=matching.length+' noticias y titulares';
+ el('subtitle').textContent='';
+ el('cards').innerHTML=matching.map(cardHTML).join('');
+ el('empty').hidden=matching.length>0;
  document.querySelectorAll('.filt').forEach(b=>b.onclick=()=>{category=b.dataset.cat;render();});
 };
 el('date').addEventListener('change',()=>{selectedDate=el('date').value;render();});el('search').addEventListener('input',render);
