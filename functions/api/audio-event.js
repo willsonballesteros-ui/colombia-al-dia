@@ -6,9 +6,9 @@
  * Sin binding devuelve recorded:false; jamás finge haber almacenado un evento.
  * No guardar dirección IP, User-Agent ni identificadores individuales.
  */
-const VALID_EVENTS=new Set(["audio_play","audio_finished","audio_paused","audio_resumed"]);
+const VALID_EVENTS=new Set(["landing_view","audio_play","audio_finished","audio_paused","audio_resumed"]);
 const VALID_SPEED=new Set([1,1.25,1.5,2]);
-const VALID_MODE=new Set(["complete_orbiuno","complete_licensed","summary"]);
+const VALID_MODE=new Set(["landing","complete_orbiuno","complete_licensed","summary"]);
 const VALID_TONE=new Set(["dulce","juvenil","natural"]);
 const SAFE_ID=/^[a-z0-9_-]{1,120}$/i;
 const SAFE_ATTR=/^[a-z0-9_-]{0,75}$/i;
