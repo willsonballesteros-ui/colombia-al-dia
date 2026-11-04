@@ -59,6 +59,28 @@ def make_part(input_path,out_path,seconds=None,still=False):
     run(*args)
 
 
+def make_photo_intro(photo, narration, out_path):
+    """Fallback honesto: foto autorizada + voz + onda animada, NO lip-sync."""
+    run(
+        "ffmpeg","-hide_banner","-loglevel","error","-nostdin","-y",
+        "-loop","1","-framerate","24","-i",str(photo),
+        "-i",str(narration),
+        "-filter_complex",
+        "[0:v]scale=900:1600:force_original_aspect_ratio=increase,"
+        "crop=720:1280,zoompan=z='min(zoom+0.0006,1.07)':d=1:"
+        "s=720x1280:fps=24,format=yuv420p[portrait];"
+        "[1:a]asplit=2[voice][waveaudio];"
+        "[waveaudio]showwaves=s=560x70:mode=line:rate=24:colors=white,"
+        "format=rgba[wave];"
+        "[portrait][wave]overlay=(W-w)/2:H-h-105:shortest=1[v]",
+        "-map","[v]","-map","[voice]","-shortest",
+        "-c:v","libx264","-preset","fast","-crf","25",
+        "-c:a","aac","-b:a","128k","-pix_fmt","yuv420p",
+        "-movflags","+faststart",str(out_path)
+    )
+
+
+
 def main():
     db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=db["editionDate"]
@@ -73,24 +95,37 @@ def main():
     daydir=ROOT/"media"/day
     intro=daydir/"presentadora-intro.mp4"
     rights=daydir/"presentadora-intro.json"
-    if not intro.is_file() or not rights.is_file():
-        raise RuntimeError(
-            "Falta clip real y autorizado de presentadora. No simular voz ni rostro."
-        )
+    fallback_photo=daydir/"presentadora-foto.jpg"
+    fallback_audio=daydir/"presentadora-voz.wav"
+    fallback_rights=daydir/"presentadora-foto.json"
+    photo_mode=not intro.is_file()
+    if photo_mode:
+        if not all(x.is_file() for x in (fallback_photo,fallback_audio,fallback_rights)):
+            raise RuntimeError("Falta video o foto y audio autorizados. No simular presentadora.")
+        rights=fallback_rights
+    elif not rights.is_file():
+        raise RuntimeError("Falta manifiesto de derechos para el video de apertura")
     meta=json.loads(rights.read_text(encoding="utf-8"))
     required=["rightsVerified","consentVerified","voiceAuthorized",
               "scriptChecked","speaksAllTenHeadlines"]
+    if photo_mode:
+        required.append("imageRightsVerified")
     if not all(meta.get(k) is True for k in required):
-        raise RuntimeError("El material de presentadora no acredita derechos, consentimiento y guion")
+        raise RuntimeError("Presentadora o locución sin derechos, consentimiento o guion verificados")
     if not str(meta.get("source","")).strip():
-        raise RuntimeError("Falta identificación del proveedor o autor del video")
-    info=probe(intro)
-    if not has_audio_video(info) or float(info.get("format",{}).get("duration",0))<8:
-        raise RuntimeError("La introducción requiere video, audio y al menos 8 segundos")
+        raise RuntimeError("No se identificó proveedor o autor de la presentadora")
+    if not photo_mode:
+        info=probe(intro)
+        if not has_audio_video(info) or float(info.get("format",{}).get("duration",0))<8:
+            raise RuntimeError("El video de la presentadora requiere audio real y duración mínima")
+    else:
+        audio_info=probe(fallback_audio)
+        if ("audio" not in {s.get("codec_type") for s in audio_info.get("streams",[])}) or float(audio_info.get("format",{}).get("duration",0))<8:
+            raise RuntimeError("El audio del fallback debe incluir los titulares completos")
     slides=make_slides(daydir)
-    # Checksum prevents duplicate renders for exactly the same script and media.
+    media_fingerprint=(fallback_photo.read_bytes()+fallback_audio.read_bytes()) if photo_mode else intro.read_bytes()
     checksum=hashlib.sha256(
-        intro.read_bytes()+rights.read_bytes()+
+        media_fingerprint+rights.read_bytes()+
         "\n".join(str(n.get("executiveSummary") or "") for n in notes).encode("utf-8")
     ).hexdigest()
     out=daydir/"reel-presentadora.mp4"
@@ -104,7 +139,10 @@ def main():
         tmp=Path(folder)
         parts=[]
         p=tmp/"000.mp4"
-        make_part(intro,p)
+        if photo_mode:
+            make_photo_intro(fallback_photo,fallback_audio,p)
+        else:
+            make_part(intro,p)
         parts.append(p)
         for i,slide in enumerate(slides,1):
             p=tmp/f"{i:03d}.mp4"
@@ -125,7 +163,9 @@ def main():
         "presenterRightsChecked":True,
         "speaksAllTenHeadlines":True,
         "scenes":11,
-        "visualFormat":"talking_presenter_then_10_news",
+        "visualFormat":"photo_narrated_waveform_then_10_news" if photo_mode else "talking_presenter_then_10_news",
+        "hasRealLipSync":False if photo_mode else bool(meta.get("realLipSync",False)),
+        "presenterIntroType":"photo_with_voice_and_waveform" if photo_mode else "video_talking_presenter",
         "fingerprint":checksum,
         "video":"reel-presentadora.mp4",
         "durationSec":round(float(result["format"]["duration"]),2)
