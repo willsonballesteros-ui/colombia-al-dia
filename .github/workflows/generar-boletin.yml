@@ -39,7 +39,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends ffmpeg espeak-ng libsndfile1
-          python -m pip install --disable-pip-version-check 'kokoro-onnx==0.6.1' soundfile 'misaki-fork[en]'
+          python -m pip install --disable-pip-version-check 'kokoro-onnx==0.6.1' soundfile 'misaki-fork[en]' 'pillow==12.0.0'
       - name: Descargar modelo abierto Kokoro Apache-2.0
         env:
           BASE: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1
