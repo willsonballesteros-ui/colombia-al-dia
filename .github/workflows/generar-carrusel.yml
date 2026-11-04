@@ -8,6 +8,7 @@ on:
       - 'scripts/build_carousel.py'
       - 'scripts/build_caption.py'
       - 'scripts/prepare_site.py'
+      - 'scripts/validate_news.py'
       - '.github/workflows/generar-carrusel.yml'
 
 permissions:
@@ -51,6 +52,9 @@ jobs:
                   assert im.size==(1080,1350), (file,im.size)
           assert (p/"instagram-caption.txt").is_file()
           assert (p/"instagram-primer-comentario.txt").is_file()
+          manifest=json.loads((p/"instagram-publicacion.json").read_text(encoding="utf-8"))
+          assert manifest["publicationReady"] is True, (
+              "No despachar: "+",".join(manifest.get("blockers",[])))
           text=(p/"instagram-caption.txt").read_text(encoding="utf-8")
           assert "\n🌐 https://colombia-al-dia.pages.dev/" in text
           print("Validado: 10 imágenes, portada y links del copy.")
