@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-17621d62c96c461b",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "HPE y NVIDIA impulsan agentes de inteligencia artificial más seguros para las empresas",
+      "summary": "Titular difundido por ITSitio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ITSitio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMThpYVlVTzQtX2F4emw1bGpTbUg3VktaQ096cGVJYWZfN24yUmtCUi1GYlliLVc5MXN1aXkwTklGeVdWdDV5LXJHQ0dRWU9pWWpPU0tIRUFjQUlBLWNRSV9GSnhQMDZpaTNwVjAzamY5LW80Zm1ha2FyMjBBbEYtWTRTRDZPckdDRHRDZXNycVR6MllSdXc5Nl9reG1fVTBJU3pMQ1JVeXdTNlJUTjE1czMtaTZMa0FJLTFMeUJmRmNTM3JMNkE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:25-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f2e737670a4c9473",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nace la Alianza Iberoamericana de Inteligencia Artificial: una “tercera vía digital”",
+      "summary": "Titular difundido por DPL News a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "DPL News · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mOTI0TW5JTjh4VnNZYmZfbUc0U3A2TUxVbE9ld2dLNzdHNzRZcmdrWndzdy1qZTJaR0o2dWtCN09adVhONTR5UzNiY3pjOW1lQU9aTWo1TW8tcEtRN0JNODZNUVRJS0xJWFZlc3hyaHhZYXRoUXpWYWZZT3A?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:07-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-e569c833fed25221",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -3592,8 +3630,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:50-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:50-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:51-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:51-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
