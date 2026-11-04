@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-eb25bb8f81931e80",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IA privada: la apuesta de las empresas para proteger sus datos al usar inteligencia artificial",
+      "summary": "Titular difundido por Revista C-Level a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista C-Level · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMUs1Q3VRLVNLaVZaTWVJc0p6elM3TkFmREpBQk82cG9IMktzdTMxcmJPMXZubzZlR1Npa0lONDdYck9JMG5jazJxWVNuRlU4enVKb0pYUkJVZkwyTEI5SkNyRHFubVJYM1NyLWVVUmRJVGVRLWxITEVGbFhLRmNxeTBjU2JOZkVzUjBHanEwYXZyV2VOcWotTG5tOThzdnBBelhQb1RHdldHZW5jS0xjakplYUd6cWdHdDFj?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:28-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-36a2cc9efee5d620",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La autoridad de pagos de India, NPCI, crea una filial para impulsar la inteligencia artificial y la tecnología 'blockchain'",
+      "summary": "Titular difundido por MarketScreener España a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MarketScreener España · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZkQ5MkR3QS1DZWRUd3hPMW1laUVEVXhib2xkblJaVlVNSFE0SFVORUd6Rjk3eUdncUM1SEF4ZEY0Vlk0MDJWbUVzWFh3UnE5U0FvUjRiWDM4NUFiMm5hU3R6NlZ5SHU4c25wME5ORGdFNVotV2t0WlJWVmV0TjNLRTV5YVdHem5zRWFXWlpxYUlTdzFuVWR2QmpadDMxTlc2aGhIV2JGbTZEUlMtYzNTemVDenR0cXctRUFkOVNvVnZ5UDFBWUgzRGVIaXdXQ2RlVFZYVEp1RlZibEFVdTQ0SEpKbnRfeVN2?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:04-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-6cfbbdab02d8a791",
       "date": "2026-11-04",
       "category": "Mundo",
@@ -3269,8 +3307,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:30-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:30-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:31-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:31-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
