@@ -1,43 +1,38 @@
-# Directriz editorial obligatoria — Colombia al Día
+# ORBIUNO · Colombia al Día — Directiva editorial y técnica vigente
 
-**Vigencia: 4 de noviembre de 2026.** Estas reglas sustituyen las instrucciones anteriores de presentadoras virtuales, avatares, lip-sync y dibujos inventados.
+**4 de noviembre de 2026. Sustituye la directriz anterior de textos largos y prohibición absoluta de presentadoras digitales.**
 
-## 1. Identidad
+## Identidad y noticias
 
-Medio serio, elegante, directo y útil para la audiencia. Evitar dramatización, exageración, apodos, presunción de culpabilidad, frases clickbait y afirmaciones sin respaldo. El sitio oficial es https://colombia-al-dia.pages.dev/ y el canal operativo de Instagram es @resumen.noticias. El nombre de visualización del perfil se cambia solo cuando la plataforma lo permita y se verifique; no declarar que se cambió su usuario.
+Noticiero de Colombia y el mundo: información seria, sobria, comprensible y breve. Cada una de las diez noticias debe llevar **titular**, **resumen ejecutivo de hasta dos líneas visibles** y **fuente original con enlace HTTPS**. El campo `executiveSummary` almacena esa síntesis (idealmente 100 a 145 caracteres). No publicar en la interfaz ni en las láminas las etiquetas «Qué pasó», «Por qué importa» o «Qué sigue». El archivo histórico puede conservar observaciones internas, pero no se muestran al público.
 
-## 2. Verificación de noticias
+Priorizar economía, tecnología/IA, infraestructura, seguridad y panorama global, con hechos contrastados e incertidumbre atribuida. No elevar RSS `source_only` a noticia `editorial_verified` sin comprobación.
 
-Elegir diez noticias relevantes de Colombia y el mundo, priorizando economía, infraestructura, tecnología/IA, seguridad, políticas públicas, riesgos y hechos que afecten directamente a los ciudadanos. Para cada una conservar:
+## Sitio web
 
-1. **Titular** claro y factual.
-2. **Qué pasó:** síntesis propia de una o dos frases.
-3. **Por qué importa:** impacto directo verificable.
-4. **Qué sigue:** hechos previstos, actuaciones o incertidumbre; no asegurar resultados futuros.
-5. **Fuente original:** nombre, fecha, enlace HTTPS directo. Agregar segunda fuente cuando sea posible.
+- Encabezado mínimo «ORBIUNO | Colombia al Día» y texto corto, sin cajas de fecha ni avisos llamativos.
+- Tarjetas de lectura rápida, con máximo dos líneas visibles de `executiveSummary`, fuente original clicable y audio gratuito del navegador.
+- TTS de `window.speechSynthesis` mediante clic expreso del lector; ▶️ Escuchar resumen / Pausar / Reanudar / Detener. No se afirma una voz natural idéntica en todos los dispositivos.
+- Las advertencias de atribución y metodología se mantienen en el pie, no sobre los titulares.
 
-Diferenciar planes de medidas aprobadas, declaraciones de hechos corroborados, denuncias de condenas, rumores de información oficial y ediciones históricas de las últimas noticias. Las entradas RSS `source_only` nunca son `editorial_verified` automáticamente.
+## Imágenes reales y marcas
 
-## 3. Fotografías y licencias
+Para noticias, priorizar fotografía real con derechos de reproducción confirmados. Campos: `imageUrl`, `imageType` (`official_photo`, `licensed_press_photo`, `official_document`), `imageCredit`, `imageLicense`, `imageRightsVerified=true`, `imageSourceUrl`. Sin esos datos, usar bloque tipográfico con **nombre de la fuente**, no simular una foto ni inventar el logotipo de Reuters, EFE, etc. La presentadora virtual solicitada debe identificarse y tener derechos de uso y autorización de voz verificables; nunca afirmar que una foto inventada documenta un hecho.
 
-Solo publicar fotografías de prensa permitidas o contenido institucional real, identificado con créditos y URL original. Verificar derechos de reproducción además de atribuir la fuente. **No** usar capturas de pantallas de periódicos como alternativa para eludir sus derechos. Sin permiso o imagen válida, usar texto bien compuesto, sin dibujos, pictogramas que pretendan representar el hecho, caras generadas ni imágenes sintéticas.
+## Dos formatos sociales diferentes
 
-El formato de datos opcional requiere `imageUrl`, `imageType` (`official_photo`, `licensed_press_photo` o `official_document`), `imageSourceUrl`, `imageCredit`, `imageLicense` e `imageRightsVerified=true`. La bandera de derechos es una declaración **manual responsable**, no un valor inferido del URL.
+- **Reel vertical:** once escenas de video: **presentadora virtual femenina de apariencia natural** en escena inicial, narrando los diez titulares en español claro, seguida de diez láminas. Debe existir y verificarse el MP4 de la presentadora y su autorización; no sustituir por una foto estática como si hablara.
+- **Carrusel Instagram:** máximo **diez** láminas de noticias (límite de la plataforma). El recurso adicional `portada.png` sirve para portada de Reel, previsualización o historia, **NO como una undécima foto en el carrusel**. Así se conservan las diez noticias sin incumplir Instagram.
+- Cada lámina: fuente visible, titular dominante y síntesis de dos o tres líneas en móvil. No simular botones clicables sobre las imágenes. Fuente y detalle verdaderamente clicables desde la web; los stickers de enlace, encuesta y cuestionario son nativos de historias y pueden requerir publicación manual.
 
-## 4. Web
+## Automatización y comprobaciones
 
-Header limpio, titulares, resumen de dos líneas, un botón que abre la fuente, un botón local de escucha del resumen y bloques de detalle contraídos. El botón de voz utiliza `speechSynthesis` del navegador y habla con la voz disponible en el dispositivo, sin reproducir el audio del periódico. No colocar textos técnicos prominentes ni banners falsamente interactivos; conservar metodologías en el pie de página. Si no hay foto autorizada, omitirla por completo (no colocar placeholder ilustrado).
+La rutina editorial conserva las franjas **08:00, 12:00 y 18:00** en `America/Bogota`. GitHub Actions prepara titulares a las 07:30/11:30/17:30 y genera recursos; las comprobaciones periodísticas y la publicación requieren una herramienta conectada que opere en ese momento.
 
-## 5. Instagram y material multimedia
+GitHub Actions **no dispone de credenciales de publicación Metricool**. Según la documentación oficial vigente, la API directa de Metricool requiere Advanced/Custom; no activar un plan de pago sin autorización. La conexión de Metricool en ChatGPT puede crear o cambiar posts mediante acciones autorizadas; verificar **PUBLISHED y URL real**, y detectar duplicados. No prometer autonomía 100 % ni videos no creados. Si la presentadora está pendiente, continuar con noticias web y carrusel textual sin presentar Reel ficticio como realizado.
 
-Crear un carrusel con **12 láminas**: portada que invite a participar, diez noticias individuales y cierre con el sitio y perfil. Cada noticia incluye titular, qué pasó, por qué importa, qué sigue, la fuente y la URL de la página que contiene las fuentes originales. Se conserva contraste alto, azul noche, blanco y detalles dorados discretos. Las láminas contienen únicamente texto o fotografías autorizadas.
+## Pipeline audiovisual
 
-**Stickers:** para Historias, sugerir un sticker de enlace hacia https://colombia-al-dia.pages.dev/, encuesta o pregunta. El editor debe agregarlo desde el editor nativo de Instagram y verificar su funcionamiento. No afirmar que un carrusel publicado por Metricool incluye stickers ni presentar un dibujo de botón como si se pudiera tocar. El enlace en el pie de una imagen tampoco es clicable.
+`scripts/assemble_reel.py` y `.github/workflows/reel-presentadora.yml` solo generan Reel cuando existe un `media/AAAA-MM-DD/presentadora-intro.mp4` con audio, derechos aprobados y su manifest `presentadora-intro.json`. Los cinco controles de autorización requeridos son `rightsVerified`, `consentVerified`, `voiceAuthorized`, `scriptChecked` y `speaksAllTenHeadlines` junto a `source` no vacío. Si no hay intro o no hay consentimiento, falla de forma segura; nunca marca como publicado un MP4 no generado.
 
-## 6. Publicación y comprobación
-
-Conservar las franjas 08:00, 12:00 y 18:00 de Bogotá. Preparar antes, contrastar fuentes y comprobar duplicados. Crear/progamar con Metricool solo cuando hay material válido y no se duplica el tema; exigir respuesta `PUBLISHED` y URL real antes de informar como publicado. La cuenta puede conservar contenidos históricos de otro estilo: eso no autoriza nuevas publicaciones con avatares. No gastar en APIs externas sin autorización.
-
-## 7. Control de calidad
-
-Mantener pruebas de que las fuentes son HTTPS, que las diez noticias son distintas, que ningún `imageUrl` de ilustración entra a producción, que las láminas son 1080×1350 y que el carrusel es de 12 piezas. Una salida fallida no puede anunciarse como publicación exitosa.
+Pruebas en CI: 10 noticias editoriales, fuentes HTTPS, no imágenes ficticias presentadas como fotografías, TTS nativo y 10 láminas para Instagram + recurso de portada.
