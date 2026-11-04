@@ -52,7 +52,7 @@ def build(db):
     story_link=tracked_url(day,"story",slot)
     caption=(
         "ORBIUNO | "+display+"\n\n"
-        "Diez noticias de Colombia y el mundo, claras y directas.\n\n"
+        "Edición de la noche de Bogotá · 10 noticias verificadas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
         "Elige voz en español, tono y velocidad a tu gusto.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
@@ -82,8 +82,11 @@ def build(db):
         "publicationVerified":False,
         "media":[
             "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
+            +day+"/portada.png"
+        ]+[
+            "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
             +day+"/top10-"+str(i).zfill(2)+".png"
-            for i in range(1,11)
+            for i in range(1,10)
         ],
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
