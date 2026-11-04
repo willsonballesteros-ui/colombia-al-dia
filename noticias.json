@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-eaf57c818ccc6c77",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia Artificial y educación: ¿estamos aprendiendo o simplemente copiando respuestas?",
+      "summary": "Titular difundido por Radio UNR a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio UNR · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMUl1WFQ5MjZkZ0VVSzJJcVhGTHJtQXRSNXF2RHlLb1pYRDFSUUdNcmlGVkU1cFFDeVhsOE8za3JfTjVTRHJQZ2RNWWxoeFp2dl9ZNEYtNm1DakIwRkhWSFo4OEpUamhzSmZVbWdKR1hhYnMtNFJCOGsyenBSaTRoTmlTVUtZRW1kcW9hYVZpX1M3SVpreUdKT2h0ZThyOWtYMWJqSUw2YVp3dTVobjllcHpEM3F3ZU9GZWFhbUxtSXAzU2k3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T12:47-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-03396ab0c8b25207",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Compañía Nothing lanzará dispositivo de inteligencia artificial en diciembre",
+      "summary": "Titular difundido por Diario El Mundo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario El Mundo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ29nN2gycE5NY3F5Sm9DLWYxQjNZdjdjV0tqSmpzMFlyOU5abnhNektCZlVpclpCU2RCM2k5Zk53dS1WRzhCeWFzZk10QWd4d3Awc0s4MFVEWVd5VGVtcV84RVAyd1ppcjlfRi1TQW1Ud01vUDVUR2RKc0xxN2hVaEhBcHl3WjIxTXNJZW9hU1NhVko3YzVSUDBfaE1MOXo5eDVNand0Q3k4VU5Ha3gxSWpSVVVCRlJCdWp6aDBQWlhUank30gG7AUFVX3lxTE4wV3Z5T2ViQWZwMlk0RjN0VFJJS1dpMVJwd0FSVUpVWVRQRFJHOUpqWEM0amM0ektkd3VJTzJ3MVk3eWJGSk56dWdrYi1hUTB2NGNIYVBPNjZGdjFmMEl6Q0lBazlTRUpWWlFxR3hOem5NSjJHbnc3Z0o0dHZWaFJRZXpISndzaDlCRjdNTVNkWXBZNlBwSkMxZHFTbEhRTVdMWEYwakl1N0d6R2daNkJPdmVxaXNRRGNRUUk?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T12:44-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-13a7206960f0f46b",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
