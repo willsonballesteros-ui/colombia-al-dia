@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Video ORBIUNO con voz femenina local (Kokoro) y 10 láminas, SIN avatar ni lip-sync.
+"""Boletín ORBIUNO: escena inicial de presentadora animada + diez láminas.
 
 No se afirma que una imagen hable. Requiere diez noticias editorial_verified
 de la fecha ACTUAL de Bogotá, imágenes generadas, modelos Kokoro Apache 2.0
@@ -15,6 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import soundfile as sf
+from presenter_engines import render_presenter, valid_clip
 from kokoro_onnx import Kokoro
 from misaki.espeak import EspeakG2P
 
@@ -35,18 +36,21 @@ def first_words(text: str, limit: int) -> str:
 
 
 def narration(news):
-    headlines = ". ".join(first_words(n["title"], 12) for n in news)
+    # Diez pistas breves en una apertura; no cortar una locución a la mitad.
+    # Cada nueva edición puede aportar openingCue para una lectura más natural.
+    cues = [
+        str(n.get("openingCue") or first_words(n["title"], 3)).strip().rstrip(".")
+        for n in news
+    ]
     intro = (
-        "ORBIUNO. Boletín narrado del día. Estas son las diez noticias más importantes "
-        "de Colombia y el mundo. " + headlines + ". "
-        "Ahora el detalle de cada noticia."
+        "ORBIUNO. Las diez noticias de hoy: "
+        + "; ".join(cues) + "."
     )
     details = [
         "Noticia número {}. {}. {}".format(i, n["title"], first_words(n["summary"], 25))
         for i, n in enumerate(news, 1)
     ]
     return [intro, *details]
-
 
 def make_segment(image_path: Path, audio_path: Path, output_path: Path):
     # 720x1280 es 9:16. El fondo acolcha láminas 1080x1350 sin recortar texto.
@@ -82,7 +86,10 @@ def main():
     if not MODEL.is_file() or not VOICES.is_file():
         raise RuntimeError("Faltan los pesos locales de Kokoro; no generar audio falso")
     script = narration(news)
-    fingerprint = hashlib.sha256(json.dumps(news, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
+    fingerprint = hashlib.sha256(
+        json.dumps({"news": news, "renderVersion": 2, "presenter": "animated_envelope"},
+                   sort_keys=True, ensure_ascii=False).encode("utf-8")
+    ).hexdigest()
     output = day_dir / "boletin-narrado.mp4"
     manifest = day_dir / "boletin-narrado.json"
     if output.exists() and manifest.exists():
@@ -96,15 +103,29 @@ def main():
     with tempfile.TemporaryDirectory(prefix="orbiuno-") as directory:
         tmp = Path(directory)
         pieces = []
+        presenter_result = {"engine": "static_visuals_with_synthetic_narration",
+                            "talkingPresenter": False, "realLipSync": False,
+                            "presenterType": "none"}
         for i, (text, image) in enumerate(zip(script, images)):
             phonemes, _ = g2p(text)
             if not phonemes:
                 raise RuntimeError(f"Sin fonemas en escena {i}")
-            audio, sample_rate = kokoro.create(phonemes, VOICE, speed=1.07, is_phonemes=True)
+            audio, sample_rate = kokoro.create(phonemes, VOICE, speed=1.13 if i == 0 else 1.07, is_phonemes=True)
             wav_path = tmp / f"scene-{i:02d}.wav"
             sf.write(str(wav_path), audio, sample_rate, subtype="PCM_16")
             clip = tmp / f"scene-{i:02d}.mp4"
-            make_segment(image, wav_path, clip)
+            if i == 0:
+                try:
+                    presenter_result = render_presenter(wav_path, clip, label="ORBIUNO · " + day)
+                    if not valid_clip(clip):
+                        raise RuntimeError("Clip de presentadora no superó validación")
+                except Exception as error:
+                    # Nunca abortar la edición si la ruta ilustrada falla.
+                    clip.unlink(missing_ok=True)
+                    print("Respaldo audiovisual estático:", type(error).__name__, flush=True)
+                    make_segment(image, wav_path, clip)
+            else:
+                make_segment(image, wav_path, clip)
             pieces.append(clip)
             print("Escena renderizada:", i, flush=True)
         concat_file = tmp / "concat.txt"
@@ -123,9 +144,12 @@ def main():
         "editionDate": day,
         "fingerprint": fingerprint,
         "voice": VOICE,
-        "narrationMode": "static_visuals_with_synthetic_narration",
-        "hasTalkingAvatar": False,
-        "hasRealLipSync": False,
+        "narrationMode": "animated_illustrated_presenter_plus_news",
+        "openingEngine": presenter_result["engine"],
+        "openingDurationSec": presenter_result.get("durationSec"),
+        "hasTalkingAvatar": presenter_result["talkingPresenter"],
+        "presenterType": presenter_result["presenterType"],
+        "hasRealLipSync": presenter_result["realLipSync"],
         "scenes": 11,
         "video": output.name,
         "sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
