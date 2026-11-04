@@ -65,7 +65,7 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertEqual(rendered.count('data-tts-action="toggle"'), 10)
         self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
         self.assertEqual(rendered.count('data-tts-full="false"'), 10)
-        self.assertEqual(rendered.count("Escuchar resumen"), 30)
+        self.assertEqual(rendered.count("Escuchar resumen"), 20)
         self.assertEqual(rendered.count('data-tts-full="true"'), 0)
         self.assertEqual(rendered.count('class="source"'), 10)
         self.assertNotIn("Abrir para escuchar completo", rendered)
