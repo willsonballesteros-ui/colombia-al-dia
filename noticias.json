@@ -1546,7 +1546,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 1,
-      "openingCue": "Congreso estadounidense"
+      "openingCue": "Congreso estadounidense",
+      "executiveSummary": "Reuters y AP proyectan mayorías demócratas en ambas cámaras tras las elecciones legislativas de EE. UU. del 3 de noviembre."
     },
     {
       "id": "20261104-editorial-02",
@@ -1569,7 +1570,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 2,
-      "openingCue": "sometimiento a la justicia"
+      "openingCue": "sometimiento a la justicia",
+      "executiveSummary": "El Congreso aprobó la ley de sometimiento a la justicia. Falta la sanción presidencial; aún no entra en vigor."
     },
     {
       "id": "20261104-editorial-03",
@@ -1588,7 +1590,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 3,
-      "openingCue": "impuestos en Colombia"
+      "openingCue": "impuestos en Colombia",
+      "executiveSummary": "Una propuesta tributaria podría reducir unos $969.000 mensuales el ingreso de un salario de $25 millones, según La República."
     },
     {
       "id": "20261104-editorial-04",
@@ -1607,7 +1610,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 4,
-      "openingCue": "energía ucraniana"
+      "openingCue": "energía ucraniana",
+      "executiveSummary": "Rusia atacó instalaciones eléctricas de Ucrania con misiles y drones, según Reuters, antes de conversaciones previstas en Abu Dabi."
     },
     {
       "id": "20261104-editorial-05",
@@ -1630,7 +1634,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 5,
-      "openingCue": "Nvidia y China"
+      "openingCue": "Nvidia y China",
+      "executiveSummary": "Según Financial Times, Nvidia exigiría a socios de nube destinar al menos el 51 % de sus servicios a clientes no chinos."
     },
     {
       "id": "20261104-editorial-06",
@@ -1653,7 +1658,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 6,
-      "openingCue": "salario mínimo"
+      "openingCue": "salario mínimo",
+      "executiveSummary": "Las propuestas divulgadas para el salario mínimo de 2027 oscilan entre el 8 % y el 38,5 %. No existe aumento aprobado."
     },
     {
       "id": "20261104-editorial-07",
@@ -1672,7 +1678,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 7,
-      "openingCue": "buques en Ormuz"
+      "openingCue": "buques en Ormuz",
+      "executiveSummary": "Irán afirmó que cuatro petroleros se incendiaron cerca de Ormuz. Reuters recogió la declaración sin verificación independiente."
     },
     {
       "id": "20261104-editorial-08",
@@ -1691,7 +1698,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 8,
-      "openingCue": "acuerdos de AMD"
+      "openingCue": "acuerdos de AMD",
+      "executiveSummary": "AMD reportó un cargo contable cercano a US$1.070 millones por acuerdos de chips con OpenAI y Meta, según Reuters."
     },
     {
       "id": "20261104-editorial-09",
@@ -1710,7 +1718,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 9,
-      "openingCue": "ayuda a Israel"
+      "openingCue": "ayuda a Israel",
+      "executiveSummary": "Trump dijo que buscaría suspender la ayuda anual de EE. UU. a Israel después de 2026; no anunció una modificación formal."
     },
     {
       "id": "20261104-editorial-10",
@@ -1729,7 +1738,8 @@
       ],
       "verification": "editorial_verified",
       "priority": 10,
-      "openingCue": "seguridad de agentes de inteligencia artificial"
+      "openingCue": "seguridad de agentes de inteligencia artificial",
+      "executiveSummary": "Apple advirtió de riesgos de agentes de IA que actúen fuera de sus permisos y causen errores o pérdidas, según EFE."
     },
     {
       "id": "rss-07ce29318ee99881",
@@ -2884,16 +2894,7 @@
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
-  "editorialFormat": {
-    "total": 10,
-    "cols": {
-      "Colombia": 3,
-      "Mundo": 4,
-      "Tecnología e IA": 3
-    },
-    "selection": "actualidad e interés público; tendencia de búsqueda cuando hay evidencia",
-    "editionLabel": "Edición global de 10 noticias"
-  },
+  "editorialFormat": "Titular, resumen ejecutivo de hasta dos líneas visibles y fuente; audio TTS accesible en la web.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
     "name": "Colombia al Día",
