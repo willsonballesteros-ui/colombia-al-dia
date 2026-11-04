@@ -212,8 +212,6 @@ const hasAuthorizedFullArticle=x=>{
   &&urls.includes(x.fullArticleSourceUrl)
   &&(x.sourceLanguage!=='en'||x.fullArticleTranslationAuthorized===true);
 };
-const speechArticleLabel=x=>hasAuthorizedFullArticle(x)?'Escuchar toda la noticia'
- :(x.audioFullTextEs?'Escuchar versión ampliada':'Escuchar resumen');
 const cardHTML=x=>{
  const sources=Array.isArray(x.sources)?x.sources.filter(s=>String(s.url||'').startsWith('https://')):[];
  const main=sources[0];
@@ -266,8 +264,7 @@ let speechRateIndex=0;
 let speakingId=null, speakingUtterance=null, speechPaused=false;
 let speechSegments=[], speechSegmentIndex=0, speechSession=0;
 const speedLabel=()=>speechRates[speechRateIndex]+'x';
-const speechLabel=btn=>btn.dataset.ttsFull==='true'?'Escuchar toda la noticia':
- (btn.dataset.ttsFull==='editorial'?'Escuchar versión ampliada':'Escuchar resumen');
+const speechLabel=btn=>'Escuchar toda la noticia';
 const updateSpeechControls=()=>{
  document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
   const current=speakingId===btn.dataset.ttsId;
@@ -371,8 +368,8 @@ if(canSpeak){
 const buildSpeechSegments=news=>{
  // Una narración de origen inglés se ofrece en español con redacción editorial.
  // Si no hay audioFullTextEs, decir con precisión "Escuchar resumen".
- const licensed=hasAuthorizedFullArticle(news);
- const longVersion=String(licensed?news.fullArticleTextEs:(news.audioFullTextEs||news.executiveSummary||news.summary||'')).trim();
+ if(!hasAuthorizedFullArticle(news))return [];
+ const longVersion=String(news.fullArticleTextEs).trim();
  const sentences=longVersion.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑ¿¡])/u).map(s=>s.trim()).filter(Boolean);
  return [news.title,...sentences].filter(Boolean);
 };
@@ -418,7 +415,7 @@ const playSpeech=id=>{
   return;
  }
  const item=db.news.find(news=>news.id===id);
- if(!item)return;
+ if(!item||!hasAuthorizedFullArticle(item))return;
  stopSpeech();
  const player=el('boletin-player');
  if(player&&!player.paused)player.pause();
