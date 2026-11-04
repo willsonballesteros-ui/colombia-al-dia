@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b7043c3ee6703b80",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Fórmula 1: ¿Cuándo será y cuánto cuestan los boletos para el Gran Premio de México 2027? Lista de precios",
+      "summary": "Titular difundido por Claro Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Claro Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdGtYem9MRDl4Zmd6SnAwMWczVEZETWtPVzVNd2ZqYVRQTGxzU2lheUcyN09oUGFab3dhckhXRFRQSk1YbWoyQm5scDNOMHV0QVBjWm96MncyaHlBZ0tmb0FaVklmS2NORTJfSGJ6X3I1NHBJdVg4Q2o0YTdwMXlwdDZ6aFBpZ2NZNWF1N0VHQ2lMd1ZiUGtEZ040ZGxGejFCLXlIeXlLVWZudDlvcjJHTkxsNzV5WnZxeGZOVF9WX24xMGtEak92ZTY1b2V3XzBWTlllWVJWdGstX2ZfTldvNw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:22-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-2197044d1634b696",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Por qué no juega Luis Díaz en Atlético de Madrid vs. Bayern Múnich por la Champions League?",
+      "summary": "Titular difundido por Bolavip México a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Bolavip México · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeHFvbGs0VWV4clZ3cHhiSlM5WjhiclVENUtDUUswQlhDVEIyaElHbUN6ZTFsQVFDUEc4TTlENUhzZGlQNUNWallKTmZWeklNcmlwYlp5NHlMNlNjVGNUOEN2Zm9ic0FJVlQzelNkX2did1J5VTA5bmVkMDRvRkYwUThpZzlMUmtQZmRJNTJ2OWVVS0ptUGlKa01MV1dCMW5lcnZXTkN5a3JhNEpkMVJKZnFyUTE0eDRsRmFralNtWkVmV0hOcWl4adIBzgFBVV95cUxPdHRpenNVQmZJUVplZ3BvbXR6ZHVURGZDd1B0VENKV0tiWW5sWV8wdUtnMGRVeHRmV2dEMkphT0VlM3pUbGlBQUxOZ1hMTW52aXd0X0syYzNjVS10d3lnMHRVMHo2cEgxRE5IZEpfcXAzQS1xaGdoNFNJbW5LaS1mdFhqZXg3ZTNHSDJoTlYydmw1UTJ3bVdhdFBOaElsV1ljUmxFaW1VcUd5alFqT1dET2NZdFNrUTctSDhBbWlVYXFKcG1uNkk5NDZRY0lyQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T11:42-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-6c62fc04e549761c",
       "date": "2026-11-03",
       "category": "Deportes",
@@ -4869,8 +4907,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T10:17-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T10:17-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T10:18-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T10:18-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
