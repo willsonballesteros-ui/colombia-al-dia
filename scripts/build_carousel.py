@@ -3,6 +3,7 @@
 import json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
+import qrcode
 
 W,H=1080,1350
 NAVY="#071b46"
@@ -44,8 +45,8 @@ def draw_card(item,num,day,out):
     d.rectangle((0,0,W,275),NAVY)
     d.rectangle((0,0,W,14),YELLOW)
     d.ellipse((790,-270,1390,330),outline="#235399",width=26)
-    d.text((68,55),"COLOMBIA AL DÍA",font=f(58,True),fill="white")
-    d.text((70,142),"10 NOTICIAS · COLOMBIA Y EL MUNDO",font=f(23,True),fill=YELLOW)
+    d.text((68,55),"ORBIUNO",font=f(74,True),fill="white")
+    d.text((70,151),"LAS NOTICIAS MÁS IMPORTANTES · 10 NOTICIAS",font=f(22,True),fill=YELLOW)
     d.rounded_rectangle((70,215,630,269),radius=22,fill="#17418a")
     d.text((92,226),f"{num:02d} / {item['category'].upper()}",font=f(23,True),fill="white")
     title=item["title"]
@@ -67,6 +68,35 @@ def draw_card(item,num,day,out):
     d.text((855,1270),day[8:10]+"/"+day[5:7]+"/"+day[:4],font=f(16),fill="#d4def7")
     im.save(out,optimize=True)
 
+
+def draw_story(day,out,url):
+    """Historia vertical con QR real que abre la web, sin fingir sticker clicable."""
+    w,h=1080,1920
+    im=Image.new("RGB",(w,h),NAVY)
+    d=ImageDraw.Draw(im)
+    d.rectangle((0,0,w,26),fill=YELLOW)
+    d.rectangle((0,26,w,43),fill="#1680e7")
+    d.rectangle((0,43,w,58),fill="#e63145")
+    d.ellipse((690,-235,1340,405),outline="#1c438c",width=38)
+    d.text((76,130),"ORBIUNO",font=f(122,True),fill="white")
+    d.text((82,270),"COLOMBIA • MUNDO • IA",font=f(32,True),fill=YELLOW)
+    sy=block(d,"Las noticias más importantes de Colombia y el mundo, en un solo lugar",78,410,f(55,True),"white",920,5,18)
+    d.rounded_rectangle((76,sy+68,1000,sy+230),radius=42,fill="#194293")
+    d.text((114,sy+101),"10 NOTICIAS VERIFICADAS",font=f(39,True),fill="white")
+    d.text((116,sy+164),day[8:10]+"/"+day[5:7]+"/"+day[:4],font=f(28),fill="#f2f5fd")
+    qr=qrcode.QRCode(version=None,error_correction=qrcode.constants.ERROR_CORRECT_H,box_size=14,border=2)
+    qr.add_data(url)
+    qr.make(fit=True)
+    qr_image=qr.make_image(fill_color="#081f4c",back_color="white").convert("RGB").resize((470,470))
+    qr_x,qr_y=305,920
+    d.rounded_rectangle((qr_x-22,qr_y-22,qr_x+492,qr_y+492),radius=35,fill="white")
+    im.paste(qr_image,(qr_x,qr_y))
+    d.text((185,1470),"ESCANEA PARA LEER LAS FUENTES",font=f(32,True),fill=YELLOW)
+    d.text((158,1565),"colombia-al-dia.pages.dev",font=f(39,True),fill="white")
+    d.text((154,1668),"Noticias · contexto · enlaces originales",font=f(25),fill="#d9e4ff")
+    d.text((210,1800),"@resumen.noticias",font=f(33,True),fill="#f0f3ff")
+    im.save(out,optimize=True)
+
 def main():
     root=Path(__file__).resolve().parents[1]
     data=json.loads((root/"noticias.json").read_text(encoding="utf-8"))
@@ -80,4 +110,7 @@ def main():
         path=outdir/f"top10-{i:02d}.png"
         draw_card(item,i,day,path)
         print(path.relative_to(root))
+    story=outdir/"historia-orbiuno.png"
+    draw_story(day,story,"https://colombia-al-dia.pages.dev/")
+    print(story.relative_to(root))
 if __name__=="__main__":main()
