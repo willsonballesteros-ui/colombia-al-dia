@@ -53,11 +53,6 @@ def article_html(n):
     if not sources:
         return ""
     source = sources[0]
-    extra = "".join(
-        '<a class="source" target="_blank" rel="noopener noreferrer" href="{}">Otra fuente: {}</a>'.format(
-            esc(s["url"]), esc(s["name"])
-        ) for s in sources[1:]
-    )
     return (
         '<article id="noticia-{id}" class="card">{photo}'
         '<div class="news-body"><div class="news-meta">'
@@ -71,17 +66,12 @@ def article_html(n):
         'data-tts-id="{id}" aria-label="Detener la lectura de esta noticia" hidden>■ Detener</button>'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}">'
         'Ver fuente: {label}</a></div>'
-        '<details class="news-more"><summary>Leer resumen completo</summary>'
-        '<div class="explain"><strong>QUÉ PASÓ</strong><p>{summary}</p></div>'
-        '<div class="explain"><strong>POR QUÉ IMPORTA</strong><p>{why}</p></div>'
-        '<div class="explain"><strong>QUÉ SIGUE</strong><p>{next}</p></div>'
-        '{extra}</details></div></article>'
+        '</div></article>'
     ).format(
         id=esc(n["id"]), photo=image_markup(n),
         cat=esc(n["category"]), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
-        summary=esc(n.get("summary", "")), why=esc(n.get("why", "")),
-        next=esc(n.get("next", "")), extra=extra,
+        summary=esc(n.get("executiveSummary") or n.get("summary", "")),
     )
 
 
