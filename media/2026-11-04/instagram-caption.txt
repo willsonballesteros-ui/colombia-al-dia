@@ -1,10 +1,13 @@
 ORBIUNO | 04/11/2026
 
-Diez noticias de Colombia y el mundo. Titulares y contexto en dos líneas.
+Diez noticias de Colombia y el mundo, claras y directas.
 
-¿Qué noticia te impactó más? Te leemos.
+🎧 Las noticias también se escuchan en nuestra web.
+Elige voz en español, tono y velocidad a tu gusto.
 
-👇 Lee los resúmenes y verifica las fuentes originales:
+👇 Escucha el audio y consulta las fuentes originales:
 🌐 https://colombia-al-dia.pages.dev/
+
+¿Qué noticia te impactó más? Comenta su número.
 
 @resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia
