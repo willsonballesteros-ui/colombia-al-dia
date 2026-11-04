@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7da69f291fc66dc4",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nexus Mods exigirá declarar el uso de inteligencia artificial en nuevos mods",
+      "summary": "Titular difundido por DiarioBitcoin a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "DiarioBitcoin · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaVBNWmNDSnNFcUdIR3AxY2RWR0JDdTNyTF9zR0Z1MnZudnozYml2bUQ2Y1BudnpzUFBwaDdWRFpCcHA1a01LcXJBQUR1OUZkMk9pdlhfbmhzd3ZDWGdEdXhSUlhrS0dwWi1OZ2NfbmdFcTV5NWxBNG0tU0Nwb3lvdjlIUDBQS3M3QXp5ckxqNjJDSmhoMVozSGNGQ1dVUGJRU1Z2Y3NCVmZLekNWOF8wT0NFaFR0ay1kOWc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T21:25-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3f23a4b62291eae6",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Gobierno aprueba el Código de Ética de la Inteligencia Artificial",
+      "summary": "Titular difundido por El Nacional — La voz de todos a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Nacional — La voz de todos · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZEZlelFzQ09iNXhCYWtScENyMnJpNTh5emZoZjZuQVYtLVJFMWpVX09aczNWdWQyNk9uWE5jb3owQmlPWnUwZmU1WEtFbUl6ZnVLUnBYN1JzOFFPR2ZILXZnXzJOaGlxdmxGa3cwV3ZPa1NlazdCMDJseEFZZnR1M2V6cDl6bFViSjZqT2tpdHEycHJKaE1uMmZvWE1QZ2FiMFgyZdIBqgFBVV95cUxPSTdmOVRRZ2VINzh3NWI1SjBwOUcwRXZjNzZkczVmWl9heEFSUnlqNzVfRko0c29HbzJidy1WVjhGN191T0NOTmRyVGFsTkhMQkhYbDBOaWZGcE0zUlIyZ1ZKY1djU1FvQkM3Qjhvd1p6cUsyOUJfRzlFREJiZ1FEdWlvbmc2VkhSbkEwQjdhd3BYdDlLZVZRSktwVDdiallvNGxoc21ocFBSQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T20:45-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-2f120c0687c7d510",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
