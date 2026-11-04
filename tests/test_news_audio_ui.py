@@ -31,6 +31,11 @@ class NewsAudioUITests(unittest.TestCase):
         for item in expected:
             self.assertIn(item.get("executiveSummary") or item.get("summary"), first)
 
+    def test_homepage_defaults_to_ten_verified_stories(self):
+        self.assertIn("selectedDate='today'", self.page)
+        self.assertIn("selectedDate==='today'?x.date===db.editionDate&&x.verification==='editorial_verified'",self.page)
+        self.assertIn("Historial completo",self.page)
+
     def test_source_urls_and_images_are_protected(self):
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
         for n in self.data["news"]:
