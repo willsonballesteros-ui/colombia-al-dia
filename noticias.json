@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-547eacc1ab24b27b",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial redefine el desarrollo de software y acelera la productividad empresarial",
+      "summary": "Titular difundido por La Voz del Interior a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Voz del Interior · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVXVJcUFCWWxYMGZYNzhLQjlJeTFmQUdIeTlCZDFUYWNIcVVEclR0VW1VQ2RWU0MtNTlPMTBBZk9pNlA5dmpTZnVRYzFIVmRvLXZlUEc2Nm5VVUdXeE1LTkFFQ2JyUWd4QmEyRndpYm55YzQ1cEQ5UzBLM0lPSGxtWng1UWVFQXV6bndQVGd4ZVB3UDNKVE9fRWtkS0tCRnlNYTdjOHZWeDJHeVJLM1hfOHRhX2NTOGtlUmF4U1ZMMU9EQ21tTnBMU3BkYlZyUXJWYUl4ZTU3VHl5bmplSUFzdm9n?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T13:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5b362fa0a5c44f75",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Reino Unido ve \"altamente probable\" un ataque con IA contra sus infraestructuras críticas antes de 2028",
+      "summary": "Titular difundido por 20Minutos a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "20Minutos · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVVVqWEdaU05IZ3RGcmhoSF9PYTIzU191WU9QT0F5LTlwTFNadEtVM0J5RG1OcjMyR2hEQ1lwZ3NjQkZoSEk1dTY5UTFfMFIzQmEyT3kzUWRSREVqYUl3TDNUZDVIVkZ4ZllVSTNSR1JQbXlsRTA1Tzh3MTJwRkJwOFpDQ3BIWDRrb2xNZzlCbURlOXNUZ1JlVk5mbzdVTm1qWm10TWlIR2x2Xy1WTmJNNE1TUWNMQkRlblp4REM3Nmk3SzlSOUFFZlRMUGJqNGcySnVJaWRuWGppVzNnbzdQb1hyV0JFd1Zl?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T13:30-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-0967af00e5cfce4f",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -6534,8 +6572,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T18:30-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T18:30-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T18:33-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T18:33-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
