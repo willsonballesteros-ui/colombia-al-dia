@@ -38,6 +38,16 @@ def check(data):
             assert x.get('fullArticleSourceUrl') in [s['url'] for s in x['sources']], 'No coincide la fuente del artículo completo'
             if x.get('sourceLanguage') == 'en':
                 assert x.get('fullArticleTranslationAuthorized') is True, 'Traducción íntegra no autorizada'
+        # Texto completo redactado en ORBIUNO, con fuentes y revisión
+        # verificables. No equivale a transcribir íntegramente el periódico.
+        if x.get('originalArticleTextEs') or x.get('originalArticleReviewed'):
+            assert x.get('verification') == 'editorial_verified', 'Artículo ORBIUNO necesita verificación editorial'
+            assert x.get('originalArticleByline') == 'Redacción ORBIUNO', 'Autor propio no identificado'
+            assert x.get('originalArticleReviewed') is True, 'Reportaje no revisado'
+            assert isinstance(x.get('originalArticleTextEs'), str) and len(x['originalArticleTextEs'].strip()) >= 1000, 'Artículo completo ORBIUNO insuficiente'
+            assert isinstance(x.get('originalArticleSourceUrls'), list) and x['originalArticleSourceUrls'], 'Reportaje sin enlaces a fuentes'
+            assert all(url in [s['url'] for s in x['sources']] for url in x['originalArticleSourceUrls']), 'Fuente de artículo propio no coincide'
+            assert x.get('originalArticleIsPublisherVerbatim') is False, 'No presentar copia periodística como propia'
         # Protección editorial: nada generado ni sin atribución documental.
         if x.get('imageUrl') or x.get('imageType'):
             assert x.get('imageType') in {
