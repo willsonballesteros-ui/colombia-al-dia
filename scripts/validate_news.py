@@ -19,6 +19,17 @@ def check(data):
         for s in x['sources']:
             u = urlsplit(s['url'])
             assert u.scheme == 'https' and u.netloc, f"URL de fuente no segura: {s['url']}"
+        # Protección editorial: nada generado ni sin atribución documental.
+        if x.get('imageUrl') or x.get('imageType'):
+            assert x.get('imageType') in {
+                'official_photo', 'licensed_press_photo', 'official_document'
+            }, f"Tipo de imagen no editorial: {x.get('id')}"
+            assert x.get('imageRightsVerified') is True, 'Derechos de imagen sin verificar'
+            assert x.get('imageCredit'), 'Imagen sin crédito'
+            assert x.get('imageLicense'), 'Imagen sin licencia'
+            assert str(x.get('imageSourceUrl', '')).startswith('https://'), 'Sin enlace de procedencia'
+            assert (str(x.get('imageUrl','')).startswith('https://') or
+                    str(x.get('imageUrl','')).startswith('./media/')), 'Ruta de imagen no válida'
         if x.get('verification') == 'source_only':
             assert 'Pendiente' in x['level'], 'La importación automática jamás equivale a noticia editorialmente verificada'
     return True
