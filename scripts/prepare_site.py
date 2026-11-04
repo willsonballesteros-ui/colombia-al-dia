@@ -117,7 +117,7 @@ def article_html(n):
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
-        full="true" if complete else "false",
+        full="true" if complete else ("editorial" if n.get("audioFullTextEs") else "false"),
         listen=esc(narration_label),
         spanish='<span class="tts-lang" title="Narración editorial en español de una fuente publicada en inglés" lang="es">ES</span>' if n.get("sourceLanguage") == "en" and n.get("audioFullTextEs") else "",
     )
