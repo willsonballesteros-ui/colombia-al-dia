@@ -115,7 +115,7 @@ def source_panel(image,note):
         image.paste(icon,(x,y),icon)
         d=ImageDraw.Draw(image)
     d.text((126,472),"FUENTE PERIODÍSTICA",font=font(22,True),fill=GOLD)
-    paragraph(d,note["sources"][0]["name"],124,519,font=font(48,True),WHITE,840,2,10)
+    paragraph(d,note["sources"][0]["name"],124,519,font(48,True),WHITE,840,2,10)
     # En caso de no estar accesible un favicon, el nombre verídico de la fuente
     # sigue visible y NO se simula ninguna fotografía.
 
@@ -131,11 +131,11 @@ def news_card(note,num,day,out):
                             method=Image.Resampling.LANCZOS),(60,207))
         d=ImageDraw.Draw(image)
         d.rounded_rectangle((70,621,1010,676),radius=8,fill=NAVY)
-        paragraph(d,"FOTO: "+str(note["imageCredit"]),83,635,font=font(19),WHITE,906,1,0)
+        paragraph(d,"FOTO: "+str(note["imageCredit"]),83,635,font(19),WHITE,906,1,0)
     else:
         source_panel(image,note)
     d=ImageDraw.Draw(image)
-    paragraph(d,note["title"],65,729,font=font(47,True),INK,943,3,10)
+    paragraph(d,note["title"],65,729,font(47,True),INK,943,3,10)
     d.line((68,970,1011,970),fill="#D4DFEF",width=3)
     summary=note.get("executiveSummary") or note.get("summary","")
     shortface=font_for_lines(d,summary,947,2,preferred=33,minimum=23)
@@ -181,8 +181,8 @@ def combined_sports_card(a,b,out):
         d.rounded_rectangle((60,y,1020,y+385),radius=18,fill="#E7EFFA")
         d.rounded_rectangle((84,y+20,996,y+79),radius=10,fill=NAVY)
         d.text((105,y+30),f"{9+i:02d}  CHAMPIONS LEAGUE",font=font(25,True),fill=GOLD)
-        paragraph(d,n["title"],102,y+110,font=font(45,True),INK,856,3,10)
-        paragraph(d,n["executiveSummary"],102,y+262,font=font(26),INK,856,2,10)
+        paragraph(d,n["title"],102,y+110,font(45,True),INK,856,3,10)
+        paragraph(d,n["executiveSummary"],102,y+262,font(26),INK,856,2,10)
     d.rectangle((0,1215,W,H),fill=NAVY)
     d.text((65,1240),"FUENTES: AS / CARACOL · VER ENLACES EN ORBIUNO",
            font(22,True),fill=WHITE)
