@@ -19,6 +19,14 @@ def check(data):
         for s in x['sources']:
             u = urlsplit(s['url'])
             assert u.scheme == 'https' and u.netloc, f"URL de fuente no segura: {s['url']}"
+        # La narración ampliada es síntesis propia y nunca una copia del medio.
+        if x.get('audioFullTextEs'):
+            assert x.get('verification') == 'editorial_verified', 'Audio ampliado requiere revisión editorial'
+            assert x.get('sourceLanguage') in ('en', 'es'), 'Idioma de origen sin identificar'
+            assert x.get('audioIsFullPublisherArticle') is False, 'Prohibido almacenar artículo íntegro de prensa como audio propio'
+            assert len(x['audioFullTextEs']) > len(x.get('executiveSummary') or ''), 'Audio ampliado demasiado corto'
+        if x.get('audioFullTextEn'):
+            assert x.get('englishAudioRightsVerified') is True, 'No reproducir texto extranjero sin derechos comprobados'
         # Protección editorial: nada generado ni sin atribución documental.
         if x.get('imageUrl') or x.get('imageType'):
             assert x.get('imageType') in {
