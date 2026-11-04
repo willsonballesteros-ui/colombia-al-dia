@@ -48,6 +48,27 @@ def build(data: dict, page: str) -> str:
     page, count = re.subn(marker, lambda m: m.group(1) + encoded + m.group(2), page, count=1, flags=re.S)
     if count != 1:
         raise ValueError("No se localizó #initial-news")
+    # Mostrar el video como HTML inicial cuando el MP4 ya existe.
+    # No depender del JavaScript para que el lector vea el reproductor.
+    day = data["editionDate"]
+    video = ROOT / "media" / day / "boletin-narrado.mp4"
+    if 'id="boletin-video"' in page:
+        if video.is_file():
+            page = page.replace('id="boletin-video" hidden', 'id="boletin-video"')
+        else:
+            page = page.replace('id="boletin-video" style', 'id="boletin-video" hidden style')
+        page = re.sub(
+            r'<span id="boletin-date">[^<]*</span>',
+            '<span id="boletin-date">' + day + '</span>', page, count=1
+        )
+        def set_video(m):
+            source = re.sub(r'\\s(?:src|poster)="[^"]*"', '', m.group(0))
+            if video.is_file():
+                source = source.replace(
+                    '<video ', f'<video src="./media/{day}/boletin-narrado.mp4" poster="./media/{day}/historia-orbiuno.png" ', 1
+                )
+            return source
+        page = re.sub(r'<video[^>]*id="boletin-player"[^>]*></video>', set_video, page, count=1)
     return page
 
 
