@@ -1,11 +1,14 @@
 {
   "editionDate": "2026-11-04",
-  "fingerprint": "7cc77796f6ff569c8563bb16b858e5dcbf2ea050585669526ace27397b78c1a5",
+  "fingerprint": "a69c35b7dedf2c43d41bd1a60b8605edb7e3da5c1cb360a7b2fc2f643052dff7",
   "voice": "ef_dora",
-  "narrationMode": "static_visuals_with_synthetic_narration",
-  "hasTalkingAvatar": false,
+  "narrationMode": "animated_illustrated_presenter_plus_news",
+  "openingEngine": "local_audio_envelope_illustration",
+  "openingDurationSec": 14.9,
+  "hasTalkingAvatar": true,
+  "presenterType": "illustrated",
   "hasRealLipSync": false,
   "scenes": 11,
   "video": "boletin-narrado.mp4",
-  "sha256": "f6c2e668e647946179a957668ecc616d51d11e667e3ec3058b7db04ed0db44cf"
+  "sha256": "5db7f5e908cb406a7193c516b213ecc4c881a769519c67fb5a94be960a9ff3d8"
 }
