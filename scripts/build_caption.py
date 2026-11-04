@@ -5,11 +5,31 @@ Genera archivos para entregar a Metricool. NO afirma que un comentario esté
 publicado ni coloca enlaces falsamente clicables sobre diapositivas.
 """
 import json
+import os
+from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlencode
+from zoneinfo import ZoneInfo
 
 ROOT=Path(__file__).resolve().parents[1]
 URL="https://colombia-al-dia.pages.dev/"
 HANDLE="@resumen.noticias"
+
+
+def edition_slot():
+    requested=os.getenv("ORBIUNO_EDITION_SLOT","").lower()
+    if requested in ("8am","12m","6pm"):
+        return requested
+    hour=datetime.now(ZoneInfo("America/Bogota")).hour
+    return "8am" if hour<11 else "12m" if hour<17 else "6pm"
+
+
+def tracked_url(day,medium,slot):
+    assert medium in {"bio","caption","comment","story"}
+    args={"utm_source":"instagram","utm_medium":medium,
+          "utm_campaign":"edicion_"+day.replace("-","")+"_"+slot}
+    return URL+"?"+urlencode(args)
+
 
 
 def build(db):
@@ -22,13 +42,18 @@ def build(db):
     for n in news:
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
+    slot=edition_slot()
+    caption_link=tracked_url(day,"caption",slot)
+    comment_link=tracked_url(day,"comment",slot)
+    bio_link=tracked_url(day,"bio",slot)
+    story_link=tracked_url(day,"story",slot)
     caption=(
         "ORBIUNO | "+display+"\n\n"
         "Diez noticias de Colombia y el mundo, claras y directas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
         "Elige voz en español, tono y velocidad a tu gusto.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
-        "🌐 "+URL+"\n\n"
+        "🌐 "+caption_link+"\n\n"
         "¿Qué noticia te impactó más? Comenta su número.\n\n"
         + HANDLE+"  #ORBIUNO #NoticiasColombia #ResumenDelDia"
     )
@@ -36,13 +61,16 @@ def build(db):
         "🎧 Las noticias también se escuchan en ORBIUNO.\n"
         "Escoge la voz y la velocidad desde nuestra página.\n"
         "👇 Escucha y verifica las fuentes originales:\n"
-        "🌐 "+URL
+        "🌐 "+comment_link
     )
-    assert "\n🌐 "+URL in caption
-    assert first_comment.endswith("\n🌐 "+URL)
+    assert "\n🌐 "+caption_link in caption
+    assert first_comment.endswith("\n🌐 "+comment_link)
     return {
         "editionDate":day,
         "brand":"ORBIUNO",
+        "editionSlot":slot,
+        "utmCampaign":"edicion_"+day.replace("-","")+"_"+slot,
+        "links":{"bio":bio_link,"story":story_link,"caption":caption_link,"firstComment":comment_link},
         "caption":caption,
         "firstComment":first_comment,
         "publicationVerified":False,
@@ -64,6 +92,12 @@ def main():
     (out/"instagram-caption.txt").write_text(payload["caption"]+"\n",encoding="utf-8")
     (out/"instagram-primer-comentario.txt").write_text(
         payload["firstComment"]+"\n",encoding="utf-8")
+    (out/"instagram-enlaces-utm.txt").write_text(
+        "BIO: "+payload["links"]["bio"]+"\n"
+        "HISTORIA: "+payload["links"]["story"]+"\n"
+        "DESCRIPCIÓN: "+payload["links"]["caption"]+"\n"
+        "PRIMER COMENTARIO: "+payload["links"]["firstComment"]+"\n",
+        encoding="utf-8")
     (out/"instagram-publicacion.json").write_text(
         json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Copy",len(payload["caption"]),"caracteres; primer comentario preparado.")
