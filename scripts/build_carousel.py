@@ -8,6 +8,8 @@ La portada está destinada al Reel/preview, no se publica como diapositiva azul.
 import io
 import json
 from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from urllib.parse import urlsplit, quote
 from urllib.request import Request, urlopen
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -152,8 +154,12 @@ def cover(day, news, out):
     """Apertura: resumen legible de los diez titulares en una sola pantalla."""
     image=base()
     d=ImageDraw.Draw(image)
-    d.text((65,181),"EDICIÓN DE LA NOCHE · 18:00 BOGOTÁ",font=font(29,True),fill=NAVY)
-    d.text((65,241),"ESTAS SON LAS 10 NOTICIAS",font=font(43,True),fill=INK)
+    hour=datetime.now(ZoneInfo("America/Bogota")).hour
+    slot=("MAÑANA · 08:00" if hour<11 else
+          "MEDIODÍA · 12:00" if hour<17 else
+          "NOCHE · 18:00")
+    d.text((65,181),"EDICIÓN DE "+slot+" BOGOTÁ",font=font(29,True),fill=NAVY)
+    d.text((65,241),f"ESTAS SON LAS {len(news)} NOTICIAS",font=font(43,True),fill=INK)
     d.line((66,310,1012,310),fill=GOLD,width=5)
     for i, item in enumerate(news, 1):
         y=335+(i-1)*83
