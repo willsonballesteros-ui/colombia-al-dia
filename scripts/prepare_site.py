@@ -88,38 +88,43 @@ def article_html(n):
         return ""
     source = sources[0]
     complete = article_original_authorized(n)
-    narration_label = "Escuchar toda la noticia" if complete else (
-        "Escuchar versión ampliada" if n.get("audioFullTextEs") else "Escuchar resumen"
-    )
-    thumbnail = image_markup(n)
-    if not thumbnail:
-        thumbnail = source_thumbnail(n)
+    thumbnail = image_markup(n) or source_thumbnail(n)
+    if complete:
+        player_controls = (
+            '<button type="button" class="listen-btn" data-tts-action="toggle" '
+            'data-tts-id="{id}" data-tts-full="true" aria-pressed="false" '
+            'aria-label="Escuchar toda la noticia" title="Reproducir el artículo íntegro autorizado">'
+            '▶ Escuchar toda la noticia</button>'
+            '<button type="button" class="speed-btn" data-tts-action="speed" '
+            'data-tts-id="{id}" aria-label="Cambiar velocidad. Actual: 1x" '
+            'title="Velocidad de lectura">1x</button>'
+            '<button type="button" class="stop-btn" data-tts-action="stop" '
+            'data-tts-id="{id}" aria-label="Detener lectura" hidden>■</button>'
+        ).format(id=esc(n["id"]))
+    else:
+        # No fingir lectura íntegra de una síntesis: abrir el artículo original.
+        player_controls = (
+            '<a class="listen-source-link" target="_blank" '
+            'rel="noopener noreferrer" href="{url}" '
+            'aria-label="Abrir artículo original de {label} para escucharlo completo" '
+            'title="Abre el artículo original; en Safari usa Menú de página y Escuchar lectura del contenido">'
+            '▶ Abrir para escuchar completo ↗</a>'
+        ).format(url=esc(source["url"]), label=esc(source["name"]))
     return (
         '<article id="noticia-{id}" class="card compact-card">'
         '<div class="visual-frame">{thumbnail}</div>'
         '<div class="news-body"><div class="news-meta">'
         '<span class="news-chip">{cat}</span><time datetime="{date}">{date}</time>'
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
-        '<div class="news-actions">'
-        '<button type="button" class="listen-btn" data-tts-action="toggle" '
-        'data-tts-id="{id}" data-tts-full="{full}" aria-pressed="false" '
-        'aria-label="{listen}" title="{listen}">▶ {listen}</button>'
-        '<button type="button" class="speed-btn" data-tts-action="speed" data-tts-id="{id}" '
-        'aria-label="Cambiar velocidad de lectura. Actual: 1x" title="Cambiar velocidad">1x</button>'
-        '<button type="button" class="stop-btn" data-tts-action="stop" '
-        'data-tts-id="{id}" aria-label="Detener lectura" title="Detener lectura" hidden>■</button>'
-        '{spanish}'
+        '<div class="news-actions">{controls}'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
-        'title="Abrir el artículo original completo en {label}">Artículo completo ↗</a>'
+        'title="Abrir fuente original: {label}">Fuente ↗</a>'
         '</div></div></article>'
     ).format(
-        id=esc(n["id"]), thumbnail=thumbnail,
+        id=esc(n["id"]), thumbnail=thumbnail, controls=player_controls,
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
-        full="true" if complete else ("editorial" if n.get("audioFullTextEs") else "false"),
-        listen=esc(narration_label),
-        spanish='<span class="tts-lang" title="Narración editorial en español de una fuente publicada en inglés" lang="es">ES</span>' if n.get("sourceLanguage") == "en" and n.get("audioFullTextEs") else "",
     )
 
 
