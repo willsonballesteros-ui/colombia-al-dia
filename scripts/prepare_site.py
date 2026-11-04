@@ -129,6 +129,12 @@ def article_html(n):
              else "Reproducir artículo íntegro de la fuente con licencia" if complete
              else "Escuchar narración original de ORBIUNO sin salir de la página"),
     )
+    report = str(n.get("audioFullTextEs") or "").strip()
+    transcript = (
+        '<details class="news-transcript"><summary>Leer noticia desarrollada</summary>'
+        '<p>' + esc(report) + '</p></details>'
+        if n.get("verification") == "editorial_verified" and len(report.split()) >= 110 else ""
+    )
     return (
         '<article id="noticia-{id}" class="card compact-card">'
         '<div class="visual-frame">{thumbnail}</div>'
@@ -138,8 +144,9 @@ def article_html(n):
         '<div class="news-actions">{controls}{article_tag}'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
         'title="Abrir fuente original: {label}">Fuente ↗</a>'
-        '</div></div></article>'
+        '</div>{transcript}</div></article>'
     ).format(
+        transcript=transcript,
         id=esc(n["id"]), thumbnail=thumbnail, controls=player_controls,
         article_tag='<span class="original-full-tag" title="Artículo completo redactado por ORBIUNO; fuente enlazada aparte">ORBIUNO</span>' if authored else "",
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
