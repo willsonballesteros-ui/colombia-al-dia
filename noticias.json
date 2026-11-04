@@ -2,9 +2,47 @@
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
   "editedAtBogota": "2026-11-04 05:55",
-  "siteVersion": "6.0",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-6c4f9923de4ec00a",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Hoy no te puedes permitir ser un analfabeto informático\": los mayores de Cartagena se alían con la inteligencia artificial",
+      "summary": "Titular difundido por Cadena SER a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Cadena SER · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxORzZLQ09jNHZLX2lmWkxadXRSdUZRdDF5ZHExTEJkalpEallFQU9pUEc3dlkyZ2RlUXlzMUJKUFBGSGNPNnF5N3NmdXMxN1hVZ3ZPVjc2S2pwb3hQX0xfV3I5Znd1aTZZZU9nVGpmajlfZ05zNlFueUs1WllMTmVMNk9ybGRvajlRd1dia1FpSDNkOTlyMU8xakllbVZ0VE5oWEFFdkR5dGFXMzF3OUlTWW5HcXZwMzBfdXB3MDJPTzdMbV9kZEJOdW9Yb2psRmRnVlVxQkhfX0dXRmE2VkVYSV9IeTlnck5Pa284ajkyNXRiN0ZBNFVUQmZzUXV5NjdVVDlKRGh0YmrSAZwCQVVfeXFMT0M2ZVJWMGFQVFZvRENwOXJxdzhtRl82OENSMmdzeTZuRnhKQnZ1ZFkyTlUwRlFzVndNa1loNGcta25PZmxDazZOU0RJWjRuZ1FSaEZzNkJRLTBLRFpVVXowQnVFSk40U3hKYjQxVTE2WWVUUUJlSHl0Y0NxYjNLMnFyM1Z1UTBDTmpLOUh6Y2V6dlFoM29uMHpIdHl2eU1xTFpad3RyY1F5OFREb0dvdWcxSHU0Wm9SYnZ6RkZDT2RadksxeEc2YVd0eVlzWEFVQUNZSEFVbG1XNWpsMUNJa3pWMDIzUkxVenh2VFJYYlUzeV9BdUhGZzRsV3pIZVZVLTRIYk4tckJKazZ0UHFSRjJaelBLekxjaV9ON3Q?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:53-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-74e177e9dc236186",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Dos empresas de A Coruña llevan a Madrid una tecnología capaz de crear gemelos humanos digitales",
+      "summary": "Titular difundido por La Opinión A Coruña a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Opinión A Coruña · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSnNHeHBXdXQxZmNKejNxU3h4TnFfTklqVGx6Z2tvdHlQdkI5c0RuM2Nud21qWmo5ck5TaU1seUF6TkNNaGxsUDZDNTBQWl9UQ0hZUTBsUUZteWxfT2NHUkpoWjRXTWt0dW8zbUpiTmdFMWI3NlA2bzlyckFSSENSV1lHWndySEtmZnN4YkdtYjRkVVdtaGRaVWxTbjFvd2t4b2VhMElFUzgwcmNjUlQ1YzFPSEpXWXZ6X3BtMmRZMV9VdkxM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:19-05:00",
+      "relevanceScore": 5
+    },
     {
       "id": "rss-b97d1cbafb0beb1c",
       "date": "2026-11-04",
@@ -3079,8 +3117,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:27-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:27-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:28-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:28-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
