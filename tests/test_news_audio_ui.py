@@ -33,7 +33,10 @@ class NewsAudioUITests(unittest.TestCase):
             if n.get("verification") != "editorial_verified" or n.get("date") != self.data["editionDate"]:
                 continue
             self.assertIn('id="noticia-{}"'.format(n["id"]), rendered)
-            self.assertIn(n["imageUrl"], rendered)
+            if n.get("imageRightsVerified") and n.get("imageUrl"):
+                self.assertIn(n["imageUrl"], rendered)
+            else:
+                self.assertNotIn('src="./media/'+n["date"]+'/visual-', rendered)
         self.assertIn('rel="noopener noreferrer"', rendered)
 
     def test_speech_api_is_user_initiated_and_free(self):
