@@ -27,7 +27,7 @@ def main():
     root = Element("rss", {"version": "2.0"})
     channel = SubElement(root, "channel")
     for tag, value in (
-        ("title", "ORBIUNO | Colombia y el mundo"),
+        ("title", "Colombia al Día | Noticias verificadas"),
         ("link", BASE),
         ("description", "Diez noticias contrastadas con sus fuentes originales y fecha de edición."),
         ("language", "es-CO"),
