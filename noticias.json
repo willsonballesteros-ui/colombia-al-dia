@@ -1,10 +1,206 @@
 {
   "brand": "ORBIUNO",
-  "editionDate": "2026-11-03",
-  "editedAtBogota": "2026-11-03 21:55",
-  "siteVersion": "3.0",
+  "editionDate": "2026-11-04",
+  "editedAtBogota": "2026-11-04 05:55",
+  "siteVersion": "4.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261104-editorial-01",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Mundo",
+      "title": "Demócratas recuperan Senado y Cámara en las elecciones de EE. UU.",
+      "summary": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero.",
+      "why": "El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales.",
+      "next": "Seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
+      "sources": [
+        {
+          "name": "Reuters · 4 nov",
+          "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+        },
+        {
+          "name": "Associated Press · 4 nov",
+          "url": "https://apnews.com/article/ef6199e25927a9ac9f4c18eae0e497cd"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 1
+    },
+    {
+      "id": "20261104-editorial-02",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Colombia",
+      "title": "Congreso aprueba la ley de sometimiento; falta la sanción presidencial",
+      "summary": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor.",
+      "why": "La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad.",
+      "next": "Verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
+      "sources": [
+        {
+          "name": "El Espectador · 3 nov",
+          "url": "https://www.elespectador.com/politica/ley-de-sometimiento-de-de-la-espriella-termina-tramite-en-congreso-y-va-a-sancion/"
+        },
+        {
+          "name": "El Heraldo · 4 nov",
+          "url": "https://www.elheraldo.co/politica/2026/11/04/la-falsa-paz-total-llego-a-su-fin-de-la-espriella-celebra-aprobacion-de-la-ley-de-sometimiento-en-el-congreso/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 2
+    },
+    {
+      "id": "20261104-editorial-03",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Colombia",
+      "title": "Reforma tributaria: estiman mayor carga para algunos salarios altos",
+      "summary": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente.",
+      "why": "El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares.",
+      "next": "Seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
+      "sources": [
+        {
+          "name": "La República · 4 nov",
+          "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 3
+    },
+    {
+      "id": "20261104-editorial-04",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Mundo",
+      "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
+      "summary": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi.",
+      "why": "La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional.",
+      "next": "Contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
+      "sources": [
+        {
+          "name": "Reuters · 3 nov",
+          "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 4
+    },
+    {
+      "id": "20261104-editorial-05",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Tecnología e IA",
+      "title": "Nvidia impone a socios de nube nuevas condiciones vinculadas a China, según FT",
+      "summary": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre.",
+      "why": "La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial.",
+      "next": "Esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
+      "sources": [
+        {
+          "name": "Financial Times · 3 nov",
+          "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+        },
+        {
+          "name": "La República · 4 nov",
+          "url": "https://www.larepublica.co/globoeconomia/nvidia-exige-a-socios-de-la-nube-reducir-50-exposicion-de-datos-con-china-4517026"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 5
+    },
+    {
+      "id": "20261104-editorial-06",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Colombia",
+      "title": "Salario mínimo de 2027: propuestas van del 8 % al 38,5 %",
+      "summary": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado.",
+      "why": "La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027.",
+      "next": "Esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
+      "sources": [
+        {
+          "name": "La República · 4 nov",
+          "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
+        },
+        {
+          "name": "El Colombiano · 4 nov",
+          "url": "https://www.elcolombiano.com/amp/negocios/salario-minimo-2027-fechas-negociacion-propuestas-aumento-AO43098190"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 6
+    },
+    {
+      "id": "20261104-editorial-07",
+      "date": "2026-11-04",
+      "level": "Declaración atribuida; falta corroboración independiente",
+      "category": "Mundo",
+      "title": "Irán afirma que cuatro petroleros ardieron tras tocar minas cerca de Ormuz",
+      "summary": "La Guardia Revolucionaria iraní afirmó que cuatro petroleros se incendiaron tras chocar con minas en una ruta próxima al estrecho de Ormuz y dijo haber retenido otros dos barcos. Reuters recogió la declaración; los detalles no estaban verificados de manera independiente.",
+      "why": "Ormuz es estratégico para el comercio energético mundial; cualquier incidente puede modificar riesgos de navegación y precios.",
+      "next": "Confirmar identidad de buques, eventuales víctimas y reportes independientes de autoridades marítimas.",
+      "sources": [
+        {
+          "name": "Reuters · 4 nov, declaración atribuida",
+          "url": "https://www.reuters.com/world/middle-east/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-near-strait-hormuz-2026-11-04/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 7
+    },
+    {
+      "id": "20261104-editorial-08",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Tecnología e IA",
+      "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
+      "summary": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente.",
+      "why": "Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes.",
+      "next": "Revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
+      "sources": [
+        {
+          "name": "Reuters · 4 nov",
+          "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 8
+    },
+    {
+      "id": "20261104-editorial-09",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Mundo",
+      "title": "Trump anuncia que buscará terminar la ayuda anual a Israel después de 2026",
+      "summary": "Donald Trump dijo que Estados Unidos dejaría de entregar alrededor de US$4.000 millones anuales en asistencia a Israel después de 2026, según Reuters. El acuerdo bilateral vigente cubre un periodo posterior y no se anunció un mecanismo formal de modificación.",
+      "why": "Un cambio efectivo en esa relación financiera tendría repercusiones diplomáticas y militares en Oriente Medio.",
+      "next": "Comprobar las decisiones legales y presupuestales y la posición oficial israelí.",
+      "sources": [
+        {
+          "name": "Reuters · 3 nov",
+          "url": "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 9
+    },
+    {
+      "id": "20261104-editorial-10",
+      "date": "2026-11-04",
+      "level": "Información contrastada; ver fuentes",
+      "category": "Tecnología e IA",
+      "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
+      "summary": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre.",
+      "why": "La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción.",
+      "next": "Seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
+      "sources": [
+        {
+          "name": "EFE · 4 nov",
+          "url": "https://efe.com/ciencia-y-tecnologia/2026-11-04/apple-riesgos-ia-autorizacion-anticiparse/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 10
+    },
     {
       "id": "rss-07ce29318ee99881",
       "date": "2026-11-03",
