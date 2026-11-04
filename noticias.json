@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-99cef5f666e95666",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La tecnología combinada con la IA crea nuevo valor para las empresas.",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSjcwTGFsSUoyVVBiOTIwNmcwdUswLUw2ZjNEYjBEQ3QxbmJ4bHB0UjdEeDdQcERRUWhTcUhJb1BaeTVQNXRNSmdhR2c4cEY4dDZNa1F2OHU3eDVIY3dfUjdKdnQzRUdKWTBaWG1meHc5aE1KQkZsOFVqQ2RHZnRYdEQ5SmdMYm9QaVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T21:56-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0194944ee35892dc",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial: el capital frente a su prueba decisiva",
+      "summary": "Titular difundido por El Ojo Digital a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Ojo Digital · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb25jZ1hORFdBTGVMTTF4RXBLTTZuMmxJVmVaNE11SHYtMmo1YTMzeFdSQmN6U2JRVHhpMG9fNGtsaTJUaFNtMmZBSUdBWFhMUTdoQUJnTl9DUEZpckhPWm85Y0ZYeFRhb3RBMXVpeTYwV1kyVzZEVEE5c2s1dmJQM0F3VFV0bVhNNHVHQUxma2NTM0lsbjgwMGRna05HVVVGWm5GNWpUMUM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T20:19-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-7da69f291fc66dc4",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -2462,8 +2500,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:47-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:47-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:50-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:50-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
