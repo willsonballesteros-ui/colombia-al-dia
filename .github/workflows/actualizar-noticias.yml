@@ -38,12 +38,15 @@ jobs:
           python -m unittest discover -s tests -p 'test_*.py'
           python scripts/validate_news.py noticias.json
 
+      - name: Actualizar portada HTML accesible
+        run: python scripts/prepare_site.py
+
       - name: Guardar actualizaciones
         run: |
-          if ! git diff --quiet -- noticias.json; then
+          if ! git diff --quiet -- noticias.json index.html; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add noticias.json
+            git add noticias.json index.html
             git commit -m 'Actualizar titulares'
             # El render de carruseles puede escribir en main al mismo tiempo.
             # Rebasar y reintentar evita fallos transitorios por avances del remoto.
