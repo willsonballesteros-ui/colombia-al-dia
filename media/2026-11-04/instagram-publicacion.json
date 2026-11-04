@@ -1,19 +1,19 @@
 {
   "editionDate": "2026-11-04",
   "brand": "ORBIUNO",
-  "editionSlot": "8am",
-  "verifiedSports": 0,
+  "editionSlot": "12m",
+  "verifiedSports": 2,
   "publicationReady": true,
   "blockers": [],
-  "utmCampaign": "edicion_20261104_8am",
+  "utmCampaign": "edicion_20261104_12m",
   "links": {
-    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261104_8am",
-    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261104_8am",
-    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_8am",
-    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_8am"
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261104_12m",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261104_12m",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m"
   },
-  "caption": "ORBIUNO | 04/11/2026\n\nDiez noticias de Colombia y el mundo, claras y directas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_8am\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
-  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_8am",
+  "caption": "ORBIUNO | 04/11/2026\n\nDiez noticias de Colombia y el mundo, claras y directas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m",
   "publicationVerified": false,
   "media": [
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-01.png",
@@ -41,6 +41,10 @@
       "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
     },
     {
+      "title": "PSG aplasta 6-0 al Villarreal y marca récord de goles en Champions",
+      "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+    },
+    {
       "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
       "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
     },
@@ -53,16 +57,12 @@
       "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
     },
     {
-      "title": "Irán afirma que cuatro petroleros ardieron tras tocar minas cerca de Ormuz",
-      "url": "https://www.reuters.com/world/middle-east/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-near-strait-hormuz-2026-11-04/"
+      "title": "Champions hoy: Real Madrid y Liverpool juegan en la cuarta jornada",
+      "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
     },
     {
       "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
       "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
-    },
-    {
-      "title": "Trump anuncia que buscará terminar la ayuda anual a Israel después de 2026",
-      "url": "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/"
     },
     {
       "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
