@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-ea9a654704a67aa7",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Davinson Sánchez EN VIVO: asistencia y estadísticas ante Stuttgart por Champions",
+      "summary": "Titular difundido por 365Scores a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "365Scores · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lWVVoWUR0dWpVOGRnZlYtWUZPZE5vbDB6MGp0cDdsRmZNZmxHWGpxOENqcUtaZ0EtR2JtTVZ2VFBiaDlIcE01YWwyc1lYN1hULWJyblljOHZXWU5pMEhDdmx2VHVoYWFWTmZNa2ZZM0FxMXBYeENVS1p1SVRXZGc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T15:01-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-d46cb71d567878b6",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Champions League: horarios y dónde ver en Colombia los partidos del Real Madrid, Barcelona y los clubes más importantes de Europa",
+      "summary": "Titular difundido por ELHERALDO.CO a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ELHERALDO.CO · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPSzZ4OGhwQ3dQa1ZDNVpKU0phWWc3UTlUakRpNDhNeHFjRDZ3OWJLb3J0R1BDb0U1cnNhTll2WnRCLUpDS2ZVLURBN2Q5eGpJcGRDd2dSemxsZUp1WjNCYVllanNFT0M5bG4xY0VScHFVbzB5NS1KcENPQzEtakhBMHQwMkpjaGlCbDdITmV5clVZYkdDNmlwUFpBSmRwQjhPWUZha0xaZU9ENXhIQnNyXzd6RFA4bUtaT1MwSlNGOTJOdVdhOWRNZDVtY212UnFHeFdnSjZ0dTBMeTNCdmZOTzlfRHlDX3ZtcGhuaVhxVGVHZUlhNl9Vak01aVlmSVg2dUlB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T14:46-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-60092047719eb370",
       "date": "2026-11-03",
       "category": "Deportes",
@@ -4793,8 +4831,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T10:16-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T10:16-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T10:17-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T10:17-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
