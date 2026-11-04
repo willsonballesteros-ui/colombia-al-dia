@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-fdc74feabb9cdb47",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Las empresas vietnamitas se están convirtiendo en proveedores clave de inteligencia artificial y computación en la nube.",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeEhaamFmQThaSE5VNkZVLTVCaEE5UlRPaEpoYlJIbFNUS2lmdGR0dXRhTF8xVEw2OGM1NGI1WDMxTWFLS1VaTjNBdkJjQzNBcGhLeVBtUFBFcENkWE91Qzl4OXRaeVVnLUNOTzN4Z3d1QzB5cVcyWW9lQmdoTkd0YWtxUzVjMFN6TTZwMFh3Yi1tR0E3dEN2SlZLUWFqbXA5MFZyY21ZczJnVGNHaE5QWVFmZDVYQjlCdWxn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T03:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-63273a4bf989ed78",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Y si Apple tenía razón? SpaceX y OpenAI están racionando el uso de su propia IA por miedo a sus altos costes de funcionamiento",
+      "summary": "Titular difundido por Computer Hoy a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Computer Hoy · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQRmNFLU5nMWZHLVZXMjQzcW9ZcUFnYUNmb2d5TGlTWS1sUXZQSFYxb1pjeFdQYWFjcHJnOFR4XzAwQUJVN3k3SVJTR3A4QkVEQ09rRmxPUHlJZUtiMklOb2ZSTk5iX0ltRlJBaWlVbFNuTERRVVAtVFg4LXlleWFRS3BmUFFnRTNJXzJ2VmRiZXZSTzZuX0hFX3JpQVZXdGpSeFNNRTF5ZTBkNXJZcjJmSGJoS2FDa05fcVg1VHdhVmRPajluSjNNRExVUHNmY2dMN3hqaDI3ZlhON2V3dkRhbGVHTGk3c0cyazdSYzB1MFRvOVJXbm9ncW5kdi1WZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T00:27-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c0a32e0bd3e47d00",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Reportan sismo de magnitud 5,6 en Colombia",
+      "summary": "Titular difundido por CNN en Español a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "CNN en Español · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOEpLcWZBeV9MZ0NKS21IRlZ4YmlKTWhhMEpYUW5XRHRJaFRqVG9Kc01vLVdGaV95enAzcHVxeTAxb1dMV1p2NWFlbnJNUW92Ujk1a3BXWHNfX3RleTQwckZkOW40UUdlNzhXVzhfZ2k3RWY0SjFaZEdsc1VjR2FQbXhlenB1UQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T08:18-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7bf69dade3e06e65",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Sismo de magnitud 5,6 en Colombia: Servicio Geológico Colombiano confirmó cinco réplicas durante la madrugada",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQbWtKakJfN2FvUlh5YjRYSS03Y255QXE2RVYyNzhQb3lNWnhSMlF4MHR5VmhRb01FTkNsZVJkekdYZGNrRTF1ek42czE3V3ppdmNFYk5OTGtzT1puNW1tRUU0bnhZMGtzUUMwZW1ac3RPSnNBQ0EwLVFzSlpUd1pFQTd3djZvdUR4X292ck5RQ1Bvenl6WmowakdWVktRLUhUV3BhMXlMQUw0MXlhMXVrMWlaa0J0andoX09HZTZjSjk1MWJUQ0lCVkU3UWpkX3ZLMlRoLXNSR1VXZ3Z6WU9URWVBMkx6Z2FncjdHZktPWU02TDDSAfgBQVVfeXFMT3VQeFhtTW5xZEtDX0Rqcm5xRVZ6am9KN2lfRk5wM2RJemZ2NUc1b1pSYVZUNDJ2bjRxdXlpYjFYaWc2c2pUZmgyQkdKWm5GRXE3clpxNm1ubkhpUERFUC1WUTlTeGlCazlhcWU5UmRKMmdnNEJKZEt4YXR6bGN3TElSUTFJSTFFSWdPeGROYy1OX0Njc2lYWDExS0FOWGlFSlB0V1BvLUVndVNsTGdKMnFyXzZyb3FXTkVCN0xBVVRQeXNDWGdpV0Zua1kycmxTSUxnWUM2MHRPS1hSZ3JQX2lybFlwUHhacGJFbWFxN2U4X2dBbGlJbFE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T07:22-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-b27c3c624cc6a502",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
