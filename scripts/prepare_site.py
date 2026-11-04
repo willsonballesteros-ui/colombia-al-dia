@@ -89,27 +89,22 @@ def article_html(n):
     source = sources[0]
     complete = article_original_authorized(n)
     thumbnail = image_markup(n) or source_thumbnail(n)
-    if complete:
-        player_controls = (
-            '<button type="button" class="listen-btn" data-tts-action="toggle" '
-            'data-tts-id="{id}" data-tts-full="true" aria-pressed="false" '
-            'aria-label="Escuchar toda la noticia" title="Reproducir el artículo íntegro autorizado">'
-            '▶ Escuchar toda la noticia</button>'
-            '<button type="button" class="speed-btn" data-tts-action="speed" '
-            'data-tts-id="{id}" aria-label="Cambiar velocidad. Actual: 1x" '
-            'title="Velocidad de lectura">1x</button>'
-            '<button type="button" class="stop-btn" data-tts-action="stop" '
-            'data-tts-id="{id}" aria-label="Detener lectura" hidden>■</button>'
-        ).format(id=esc(n["id"]))
-    else:
-        # No fingir lectura íntegra de una síntesis: abrir el artículo original.
-        player_controls = (
-            '<a class="listen-source-link" target="_blank" '
-            'rel="noopener noreferrer" href="{url}" '
-            'aria-label="Abrir artículo original de {label} para escucharlo completo" '
-            'title="Abre el artículo original; en Safari usa Menú de página y Escuchar lectura del contenido">'
-            '▶ Abrir para escuchar completo ↗</a>'
-        ).format(url=esc(source["url"]), label=esc(source["name"]))
+    # El audio SIEMPRE se queda en ORBIUNO: íntegro licenciado o resumen.
+    label = "Escuchar completo" if complete else "Escuchar resumen"
+    player_controls = (
+        '<button type="button" class="listen-btn" data-tts-action="toggle" '
+        'data-tts-id="{id}" data-tts-full="{authorized}" aria-pressed="false" '
+        'aria-label="{label}" title="{tip}">▶ {label}</button>'
+        '<button type="button" class="speed-btn" data-tts-action="speed" '
+        'data-tts-id="{id}" aria-label="Cambiar velocidad. Actual: 1x" '
+        'title="Velocidad de lectura">1x</button>'
+        '<button type="button" class="stop-btn" data-tts-action="stop" '
+        'data-tts-id="{id}" aria-label="Detener lectura" hidden>■</button>'
+    ).format(
+        id=esc(n["id"]), authorized="true" if complete else "false",
+        label=label,
+        tip="Reproducir artículo íntegro autorizado" if complete else "Escuchar el resumen de ORBIUNO sin salir de la página",
+    )
     return (
         '<article id="noticia-{id}" class="card compact-card">'
         '<div class="visual-frame">{thumbnail}</div>'
