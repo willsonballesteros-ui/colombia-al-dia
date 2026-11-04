@@ -1,4 +1,4 @@
-"""Pruebas de regresión del diseño compacto y el control accesible de lectura."""
+"""Regresión del diseño ultra-compacto y lectura por voz nativa."""
 import json
 import re
 import unittest
@@ -24,8 +24,12 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertEqual(first.count('data-tts-action="toggle"'), 10)
         self.assertEqual(first.count('data-tts-action="stop"'), 10)
         self.assertEqual(first.count('class="news-preview"'), 10)
-        self.assertEqual(first.count('<details class="news-more">'), 10)
-        self.assertNotIn('<details class="news-more" open', first)
+        self.assertNotIn('<details class="news-more">', first)
+        self.assertNotIn("QUÉ PASÓ", first)
+        self.assertNotIn("POR QUÉ IMPORTA", first)
+        self.assertNotIn("QUÉ SIGUE", first)
+        for item in expected:
+            self.assertIn(item.get("executiveSummary") or item.get("summary"), first)
 
     def test_source_urls_and_images_are_protected(self):
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
