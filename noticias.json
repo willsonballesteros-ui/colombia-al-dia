@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7f8b48591ab026c6",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿La inteligencia artificial impulsa la productividad de las empresas?",
+      "summary": "Titular difundido por The Conversation a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "The Conversation · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLXktSkhlcTdKQUtfSW1GVWZzNjNBLVhveUI3ZnJXUUxCQ19Rc3NXMVFwNzVkdWp3UEVyVVRWNUo4dlFnc19WMVFmLXVmNEo1aGtZNlRuWDl3M1V4VHNQZFpiMHZTWEE1LXRKMXFoTzRHOURhZHNJNEtVd3ptQVAtaVBCT1BwaUg3Sk11QzFzeTlMVkhHR01GVklpdWlzZFRRblZSUg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T12:16-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f6edacfd5c2b099c",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Pantallas, inteligencia artificial y fotografía: la nueva apuesta de TCL para conquistar a los usuarios colombianos",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQUDU3bGEzLWdyNG01UnF3THRDN183cVhFUXIyZlVndGtETVc2Y0syV3duRk56dS13Qi1MVno4VXB3dWV5ckFucDNnSzloSlpyTE1DdUgyMjVXNkZMSHFWUHFTeGJzV2hQWmF3UUVlMUFCYlRVRFNnUEd5Ykt6eHI0RVpOZC1QbHlEWW1aQU5KeXlWMV9iQjM2QnlieDU1RmJaZ0FTWmtILVliX1c5TmJRRVY1QXFOSklhb2dKODhnV3lydDRNZ3FYUi1lbmphZGVqcGtzTV9ObXNISVhKN0p1b2ppMHJ4WTl3Ui0yZGtYTVFTRjhlQlhJUTZwWjDSAYICQVVfeXFMT2ktZWRWeTJadmVVV2dKZVVQejZPbENPTm1mRFlsVDlRWTR0NVpiWEJST1kwWlhRLUZxYm1KOHFBOUE5OTdvMXBjX2twZks5STZKcWhXTFJNMENKcl9aUVc3VHNFX1p2VDhUYXB0enl4U2tSZ1AxY0JnOTlUZ0NoMXJHUEV0dlJhWU9GWFV0bE1INW05c2xFV0FwY2JXT2FuQk00NVE2Q3NCZGpRZVRjNTNtQ25OT3lpU0NxVFZKUFBQYU9yc1R1NkZSMHFTdnZya29LNE9jdmhHaHRaek15ckt5bldESGVjaFNwa2tpMjFTYm9Zdk9IZFA1MnoxQWhmenJn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T12:01-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-55c09fbee097c2c2",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
