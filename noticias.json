@@ -2,190 +2,204 @@
   "brand": "Colombia al Día | Resumen de Noticias",
   "editionDate": "2026-11-03",
   "editedAtBogota": "2026-11-03 20:42",
-  "siteVersion": "3.1",
+  "siteVersion": "3.2",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
       "id": "20261103-editorial-01",
       "date": "2026-11-03",
-      "category": "Tecnología e IA",
-      "level": "Informe de adopción · II trimestre de 2026",
-      "title": "Microsoft: el uso de IA generativa llega al 25,9 % en Colombia",
-      "summary": "Según Microsoft AI Diffusion, el 25,9 % de la población colombiana en edad laboral utilizó IA generativa durante el segundo trimestre de 2026. La estimación no mide adopción empresarial.",
-      "why": "El dato muestra el avance del uso individual de IA y la necesidad de formación digital.",
-      "next": "Seguir las siguientes mediciones y las iniciativas de capacitación, sin confundir usuarios individuales con empresas.",
+      "category": "Colombia",
+      "level": "Tendencia de búsqueda · fuente oficial",
+      "title": "Sismo de 5,6 en Chaparral: una de las búsquedas más fuertes del día",
+      "summary": "El Servicio Geológico Colombiano registró a las 4:13 a. m. un sismo de magnitud 5,6 con epicentro en Chaparral, Tolima. La cifra fue actualizada tras el primer reporte.",
+      "why": "La preocupación por posibles afectaciones impulsó numerosas búsquedas en Colombia; Google Trends registró más de un millón de consultas relacionadas.",
+      "next": "Consultar reportes del SGC y balances oficiales de atención; un sismo no permite predecir nuevos eventos.",
       "sources": [
         {
-          "name": "Microsoft · fuente original",
-          "url": "https://news.microsoft.com/source/emea/2026/09/microsoft-ai-diffusion-report-evolucion-uso-ia/?lang=es"
+          "name": "Servicio Geológico Colombiano",
+          "url": "https://www2.sgc.gov.co/Noticias/Paginas/El-SGC-registra-sismo-con-epicentro-en-Chaparral-Tolima-este-3-de-noviembre-de-2026.aspx"
+        },
+        {
+          "name": "Google Trends Colombia · tendencias",
+          "url": "https://trends.google.com/trending?geo=CO"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 1
     },
     {
       "id": "20261103-editorial-02",
       "date": "2026-11-03",
-      "category": "Colombia",
-      "level": "Comunicado oficial · 1 nov",
-      "title": "MinEnergía levanta la limitación temporal de gas natural",
-      "summary": "El Ministerio de Minas y Energía anunció el levantamiento de una limitación programada de gas tras superar una contingencia en la instalación SPEC LNG de Cartagena.",
-      "why": "El funcionamiento del suministro de gas es fundamental para generación de electricidad, industrias y hogares.",
-      "next": "Monitorear los reportes de operación y prevención de incidentes en instalaciones críticas.",
+      "category": "Mundo",
+      "level": "Elecciones · 3 nov",
+      "title": "Estados Unidos vota por el control del Congreso",
+      "summary": "La jornada electoral de mitad de mandato renueva los 435 escaños de la Cámara de Representantes y disputa 35 del Senado. El escrutinio y los resultados de algunos estados pueden prolongarse.",
+      "why": "La composición del Congreso condicionará las políticas de Washington y decisiones con impacto internacional.",
+      "next": "Seguir los resultados oficiales y las proyecciones atribuidas a AP, sin adelantar ganadores en estados no definidos.",
       "sources": [
         {
-          "name": "Ministerio de Minas y Energía · comunicado",
-          "url": "https://minenergia.gov.co/es/sala-de-prensa/noticias-index/ministerio-de-minas-y-energia-levanta-limitacion-programada-de-gas-natural-tras-superar-contingencia-en-spec-lng/"
+          "name": "Associated Press · elecciones",
+          "url": "https://apnews.com/article/9dae62cdd7d776a20a26eab6fbd9b12c"
+        },
+        {
+          "name": "CBS News · cobertura en vivo",
+          "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 2
     },
     {
       "id": "20261103-editorial-03",
       "date": "2026-11-03",
-      "category": "Colombia",
-      "level": "Reporte de autoridad · 1 nov",
-      "title": "Armada reporta incautación de 2.250 kilos de cocaína en el Pacífico",
-      "summary": "La Armada reportó la incautación de 2.250 kilogramos de cocaína en el Pacífico sur y la captura de tres personas, según la cobertura periodística.",
-      "why": "La operación afecta rutas marítimas usadas por organizaciones de narcotráfico; los capturados conservan sus garantías procesales.",
-      "next": "Continuará el procedimiento judicial de las personas detenidas.",
+      "category": "Tecnología e IA",
+      "level": "Innovación anunciada · 3 nov",
+      "title": "CrowdStrike lanza un interruptor para detener agentes de IA fuera de control",
+      "summary": "La compañía de ciberseguridad presentó AI Kill Switch en Falcon Guardian: permite a administradores detener un agente, bloquear su reinicio y restringir su conexión a redes corporativas.",
+      "why": "Los agentes autónomos pueden actuar sobre archivos, servicios y sistemas reales; las empresas buscan controles eficaces y supervisión humana.",
+      "next": "Comprobar su aplicación en organizaciones y la evolución de mecanismos de auditoría y autorización.",
       "sources": [
         {
-          "name": "Caracol Radio · información de Armada",
-          "url": "https://caracol.com.co/2026/11/01/la-armada-incauto-mas-de-dos-toneladas-de-cocaina-en-el-pacifico-sur-que-serian-enviadas-a-mexico/"
+          "name": "CrowdStrike · comunicado oficial",
+          "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-introduces-ai-kill-switch-for-ai-safety/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 3
     },
     {
       "id": "20261103-editorial-04",
       "date": "2026-11-03",
-      "category": "Economía",
-      "level": "Encuesta sectorial · septiembre",
-      "title": "Fenalco: 34 % de comerciantes encuestados reportó más ventas en septiembre",
-      "summary": "Según la encuesta comercial de Fenalco, 34 % de encuestados reportó mayores ventas, 41 % resultados similares y 25 % menores ventas. No significa que el comercio nacional creciera 34 %.",
-      "why": "El balance permite observar la percepción de los comerciantes antes de la temporada de fin de año.",
-      "next": "Contrastar próximos balances del gremio con las cifras oficiales de ventas e inflación.",
+      "category": "Colombia",
+      "level": "Noticia colombiana · 3 nov",
+      "title": "Una colombiana figura entre las nueve víctimas del accidente de un jet privado en Florida",
+      "summary": "Ana María Ramírez Cetina, colombiana que trabajaba como niñera, falleció con otras ocho personas en un accidente de Learjet ocurrido el 1 de noviembre en Palm Beach, Florida. Investigadores examinan las circunstancias de la caída.",
+      "why": "El caso reúne impacto humano y preguntas relevantes sobre seguridad aérea, sin que exista una causa definitiva del accidente.",
+      "next": "Esperar las conclusiones de investigación de la NTSB y los informes oficiales.",
       "sources": [
         {
-          "name": "Fenalco · Bitácora Económica",
-          "url": "https://www.fenalco.com.co/blog/economico-3/bitacora-economica-octubre-2026-9236"
+          "name": "Caracol Radio · identificación de víctima colombiana",
+          "url": "https://caracol.com.co/2026/11/03/una-colombiana-entre-las-nueve-victimas-del-accidente-de-un-jet-privado-en-florida/"
+        },
+        {
+          "name": "Associated Press · investigación del accidente",
+          "url": "https://apnews.com/article/233076d167e2f48eaef7965376dd8ee0"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 4
     },
     {
       "id": "20261103-editorial-05",
       "date": "2026-11-03",
       "category": "Mundo",
-      "level": "Cobertura periodística · 2 y 3 nov",
-      "title": "Ciberataques afectan refrigeración de supermercados de Europa",
-      "summary": "AFP informó inicialmente sobre incidentes de refrigeración en supermercados de cinco países europeos. Reportes posteriores ampliaron la afectación a al menos nueve países; la investigación continúa.",
-      "why": "Los sistemas industriales conectados pueden sufrir incidentes que comprometen bienes físicos y cadenas de suministro.",
-      "next": "Las empresas y autoridades investigarán el alcance, las vulnerabilidades y la autoría, aún no confirmada.",
+      "level": "España · 3 nov",
+      "title": "Ministro de Transportes de España anuncia su renuncia tras choque ferroviario",
+      "summary": "Óscar Puente anunció su decisión de renunciar tras el accidente ferroviario del 28 de octubre, que dejó 69 fallecidos. La investigación sobre las causas del choque sigue abierta.",
+      "why": "El hecho plantea preguntas sobre la seguridad de los sistemas ferroviarios y la responsabilidad política por accidentes graves.",
+      "next": "Seguir las investigaciones técnicas y la ejecución de medidas de seguridad anunciadas.",
       "sources": [
         {
-          "name": "AFP vía El Colombiano",
-          "url": "https://www.elcolombiano.com/internacional/ciberataques-supermercados-europa-frigorificos-aumento-temperaturas-KP43086509"
-        },
-        {
-          "name": "Euronews · actualización 3 nov",
-          "url": "https://es.euronews.com/2026/11/03/presunto-ciberataque-a-frigorificos-de-supermercados-en-9-paises-europeos"
+          "name": "Reuters · 3 noviembre",
+          "url": "https://www.reuters.com/world/europe/spains-transport-minister-says-he-will-resign-after-latest-deadly-train-crash-2026-11-03/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 5
     },
     {
       "id": "20261103-editorial-06",
       "date": "2026-11-03",
-      "category": "Colombia",
-      "level": "Hallazgos preliminares · no condena",
-      "title": "MinCiencias traslada hallazgos preliminares de $9.800 millones",
-      "summary": "El Ministerio de Ciencia reportó presuntas irregularidades por más de $9.800 millones en contratos asociados a investigación y trasladó hallazgos a organismos de control. Estos señalamientos no constituyen una sentencia.",
-      "why": "Es importante conocer cómo se utilizan los recursos destinados a la investigación pública, garantizando el debido proceso.",
-      "next": "Fiscalía, Contraloría y demás autoridades evaluarán posibles responsabilidades.",
+      "category": "Tecnología e IA",
+      "level": "Innovación · India · 3 nov",
+      "title": "Google lleva Dreambeans a India: historias personalizadas con IA",
+      "summary": "Google Labs anunció el lanzamiento de Dreambeans para mayores de 18 años en India. La aplicación crea colecciones de historias personalizadas usando, con selección del usuario, datos de aplicaciones como Calendar, Gmail, Fotos y Gemini.",
+      "why": "Muestra nuevas formas de integrar IA a servicios personales, junto con interrogantes sobre privacidad y uso de datos.",
+      "next": "Examinar controles de privacidad, disponibilidad y la recepción de usuarios; el lanzamiento no implica disponibilidad en Colombia.",
       "sources": [
         {
-          "name": "Caracol Radio · MinCiencias",
-          "url": "https://caracol.com.co/2026/11/02/minciencias-denuncia-presuntas-irregularidades-por-9800-millones-en-contratos-del-gobierno-pasado/"
+          "name": "Google · anuncio original, 3 nov",
+          "url": "https://blog.google/intl/en-in/products/dreambeans-is-now-available-to-everyone-in-india/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 6
     },
     {
       "id": "20261103-editorial-07",
       "date": "2026-11-03",
-      "category": "Tecnología e IA",
-      "level": "Acuerdo anunciado · 2 nov",
-      "title": "ADNOC, G42 y OpenAI anuncian alianza para aplicar IA en el sector energético",
-      "summary": "ADNOC anunció una alianza con OpenAI y G42 para explorar aplicaciones avanzadas de inteligencia artificial en sus operaciones industriales y energéticas.",
-      "why": "La IA está extendiéndose a sectores industriales complejos, aunque los beneficios anunciados requieren medición posterior.",
-      "next": "Desarrollar los casos de uso y evaluar sus efectos operativos.",
+      "category": "Mundo",
+      "level": "Seguridad aérea europea · 3 nov",
+      "title": "Amenazas falsas de bomba alteran vuelos en Europa",
+      "summary": "Al menos siete vuelos en Europa recibieron amenazas de bomba que provocaron desvíos, inspecciones y cierres temporales. Las autoridades no hallaron explosivos en los aviones revisados.",
+      "why": "Los incidentes afectaron viajeros y operaciones aeroportuarias sin que se haya identificado públicamente a los responsables.",
+      "next": "Continuar las investigaciones policiales y verificar eventuales nuevas alertas con autoridades aeroportuarias.",
       "sources": [
         {
-          "name": "ADNOC · comunicado",
-          "url": "https://www.adnoc.ae/media-center/news/2026/11/ADNOC-Signs-Landmark-Partnership-Agreement-with-OpenAI"
-        },
-        {
-          "name": "Reuters · 2 nov",
-          "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/"
+          "name": "Reuters · 3 noviembre",
+          "url": "https://www.reuters.com/business/aerospace-defense/bomb-threats-reported-two-passenger-planes-warsaw-both-land-2026-11-03/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 7
     },
     {
       "id": "20261103-editorial-08",
       "date": "2026-11-03",
       "category": "Colombia",
-      "level": "Servicio Geológico Colombiano · 3 nov",
-      "title": "Sismo de magnitud 5,6 en Chaparral, Tolima",
-      "summary": "El Servicio Geológico Colombiano reportó un sismo de magnitud 5,6 el 3 de noviembre de 2026, con epicentro en Chaparral (Tolima). La magnitud inicial fue ajustada tras la primera medición.",
-      "why": "Los informes de las autoridades ayudan a dimensionar el evento y atender sus efectos, sin que sea posible predecir réplicas a partir de la noticia.",
-      "next": "Seguir la información oficial y los balances locales de gestión del riesgo.",
+      "level": "Gobernación del Tolima · balance preliminar",
+      "title": "Planadas: autoridades reportan cuatro muertos y 18 heridos por explosiones",
+      "summary": "Las autoridades departamentales informaron que las explosiones del 1 de noviembre en Planadas, Tolima, dejaron cuatro fallecidos y 18 heridos; también reportaron 177 viviendas afectadas.",
+      "why": "Los daños a viviendas y servicios de salud exigen atención humanitaria y esclarecimiento judicial; el balance puede actualizarse.",
+      "next": "Seguir los comunicados de Gobernación, Defensoría y autoridades de investigación.",
       "sources": [
         {
-          "name": "Servicio Geológico Colombiano · fuente original",
-          "url": "https://www2.sgc.gov.co/Noticias/Paginas/El-SGC-registra-sismo-con-epicentro-en-Chaparral-Tolima-este-3-de-noviembre-de-2026.aspx"
+          "name": "Gobernación del Tolima · comunicado oficial",
+          "url": "https://tolima.gov.co/noticias/noticias-de-la-secretaria-de-convivencia-seguridad-y-orden-publico/10294-lo-de-planadas-es-terrorismo-puro-y-duro-de-las-mafias-de-la-mineria-ilegal-y-la-droga-que-se-disfrazan-con-brazaletes-de-revolucionarios-gobernadora-adriana-matiz"
+        },
+        {
+          "name": "Defensoría del Pueblo · 2 nov",
+          "url": "https://www.defensoria.gov.co/web/guest/w/solicitamos-atencion-urgente-a-las-victimas-y-recuperacion-del-hospital-de-planadas-tolima-tras-ataque-con-explosivos?redirect=%2F"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 8
     },
     {
       "id": "20261103-editorial-09",
       "date": "2026-11-03",
-      "category": "Colombia",
-      "level": "Proyecto en consulta · 3 nov",
-      "title": "MinTIC publica proyecto de Agenda Regulatoria 2027",
-      "summary": "El Ministerio TIC publicó un proyecto de Agenda Regulatoria 2027 y habilitó información para consulta pública. No se trata de una norma ya aprobada.",
-      "why": "La propuesta permite a ciudadanos y sectores interesados conocer prioridades regulatorias y participar.",
-      "next": "Revisar el documento y las oportunidades de comentarios en SUCOP.",
+      "category": "Tecnología e IA",
+      "level": "Regulación de IA · 3 nov",
+      "title": "Tribunal europeo estudia si respuestas de Gemini afectan derechos de autor",
+      "summary": "Un abogado general del tribunal superior de la UE planteó que ciertos usos de artículos periodísticos por un chatbot de IA podrían infringir derechos de autor, por ejemplo si reproducen expresiones protegidas o sortean barreras técnicas. Su criterio no es una sentencia.",
+      "why": "El caso puede influir en cómo los buscadores y asistentes de IA reutilizan contenidos periodísticos, y en la sostenibilidad de los medios.",
+      "next": "Esperar la decisión judicial; distinguir la opinión no vinculante del fallo definitivo.",
       "sources": [
         {
-          "name": "MinTIC · fuente oficial",
-          "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/442390%3AMinTIC-publica-proyecto-de-Agenda-Regulatoria-2027"
-        },
-        {
-          "name": "SUCOP · agenda",
-          "url": "https://www.sucop.gov.co/entidades/mintic/Agenda?IDAgenda=34475"
+          "name": "Reuters · análisis judicial",
+          "url": "https://www.reuters.com/world/googles-use-press-by-ai-chatbot-may-infringe-copyright-rules-eu-court-adviser-2026-11-03/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 9
     },
     {
       "id": "20261103-editorial-10",
       "date": "2026-11-03",
       "category": "Mundo",
-      "level": "Reporte Reuters · 3 nov",
-      "title": "Ataques a la red energética provocan cortes de electricidad en Ucrania",
-      "summary": "Reuters reportó ataques a infraestructura energética ucraniana con interrupciones del suministro en distintas regiones, según autoridades y operadores.",
-      "why": "La falta de electricidad compromete servicios básicos durante los meses fríos.",
-      "next": "Continuarán las reparaciones y el seguimiento a la situación humanitaria.",
+      "level": "Oriente Medio · economía global",
+      "title": "Tensión entre EE. UU. e Irán mantiene la atención sobre el petróleo",
+      "summary": "Reuters informó de movimientos del precio del crudo asociados a nuevas gestiones diplomáticas y episodios militares en torno a Irán. El Brent cerró cerca de 103,60 dólares por barril el 3 de noviembre.",
+      "why": "Las tensiones en torno al estrecho de Ormuz importan para transporte, inflación y comercio internacional.",
+      "next": "Seguir negociaciones y acontecimientos confirmados, sin presentar un acuerdo de paz como concluido.",
       "sources": [
         {
-          "name": "Reuters · 3 nov",
-          "url": "https://www.reuters.com/business/energy/russian-strikes-knock-out-power-swathes-ukraine-kyiv-hits-russian-refinery-2026-11-03/"
+          "name": "Reuters · mercados petroleros, 3 nov",
+          "url": "https://www.reuters.com/markets/commodities/oil-rises-after-report-us-strike-irans-qeshm-island-2026-11-03/"
         }
       ],
-      "verification": "editorial_verified"
+      "verification": "editorial_verified",
+      "priority": 10
     },
     {
       "id": "rss-7ca4fbd372cacf8b",
@@ -972,5 +986,15 @@
   "lastNewSourceAtBogota": "2026-11-03T18:36-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición revisada del 3 de noviembre de 2026. Algunos sucesos originales corresponden a fechas anteriores y se identifican por fuente. Titulares RSS automatizados siguen marcados pendientes de verificación."
+  "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
+  "editorialFormat": {
+    "total": 10,
+    "cols": {
+      "Colombia": 3,
+      "Mundo": 4,
+      "Tecnología e IA": 3
+    },
+    "selection": "actualidad e interés público; tendencia de búsqueda cuando hay evidencia",
+    "editionLabel": "Edición global de 10 noticias"
+  }
 }
