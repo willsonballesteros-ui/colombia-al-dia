@@ -1,10 +1,276 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
-  "editedAtBogota": "2026-11-04 13:13",
+  "editedAtBogota": "2026-11-04 18:13",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261104-noche-01",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Carro bomba en Patía, Cauca: emergencia en la vía Panamericana",
+      "summary": "Una volqueta con explosivos detonó cerca de una estación de Policía en El Estrecho. Las autoridades reportan víctimas y afectaciones a la movilidad; el balance es preliminar.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Una explosión cerca de la estación de Policía de El Estrecho afectó la Panamericana; víctimas y movilidad siguen bajo evaluación.",
+      "sources": [
+        {
+          "name": "Caracol Radio · 4 nov",
+          "url": "https://caracol.com.co/2026/11/04/atentado-con-carro-bomba-causa-cierre-de-la-via-panamericana-en-patia-sur-del-cauca/"
+        },
+        {
+          "name": "Fuente adicional",
+          "url": "https://amp.noticiasrcn.com/emisiones/emision-noticias-rcn-12-30-p-m-miercoles-4-de-noviembre-de-2026-1078551"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 1,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Una volqueta con explosivos detonó cerca de una estación de Policía en El Estrecho. Las autoridades reportan víctimas y afectaciones a la movilidad; el balance es preliminar. Una explosión cerca de la estación de Policía de El Estrecho afectó la Panamericana; víctimas y movilidad siguen bajo evaluación. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-02",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Accidente de bus en Rosas, Cauca, deja dos muertos y diez heridos",
+      "summary": "Un autobús de servicio interdepartamental que cubría Popayán–Ipiales volcó en el municipio de Rosas. Bomberos y autoridades atendieron a los heridos y trabajan en recuperar la movilidad.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Un bus que viajaba de Popayán a Ipiales se volcó en Rosas; el balance preliminar es de dos fallecidos y diez heridos.",
+      "sources": [
+        {
+          "name": "Caracol Radio · 4 nov",
+          "url": "https://caracol.com.co/2026/11/04/accidente-de-bus-en-la-via-panamericana-deja-dos-muertos-y-diez-heridos-en-cauca/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 2,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Un autobús de servicio interdepartamental que cubría Popayán–Ipiales volcó en el municipio de Rosas. Bomberos y autoridades atendieron a los heridos y trabajan en recuperar la movilidad. Un bus que viajaba de Popayán a Ipiales se volcó en Rosas; el balance preliminar es de dos fallecidos y diez heridos. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-03",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Alejandro Ordóñez asume el Ministerio del Interior",
+      "summary": "Alejandro Ordóñez se posesionó como ministro del Interior de Colombia. También asumió Viviane Morales como comisionada de Paz, según informó Noticias Caracol.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Alejandro Ordóñez asumió Interior y Viviane Morales fue posesionada como comisionada de Paz, según Noticias Caracol.",
+      "sources": [
+        {
+          "name": "Noticias Caracol · 4 nov",
+          "url": "https://www.noticiascaracol.com/politica/alejandro-ordonez-se-posesiona-como-ministro-del-interior-y-viviane-morales-como-comisionada-de-paz-rg10"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 3,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Alejandro Ordóñez se posesionó como ministro del Interior de Colombia. También asumió Viviane Morales como comisionada de Paz, según informó Noticias Caracol. Alejandro Ordóñez asumió Interior y Viviane Morales fue posesionada como comisionada de Paz, según Noticias Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-04",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Operativo de seguridad en Cúcuta: más de cien capturas",
+      "summary": "El Espectador informó de un amplio operativo en Cúcuta contra presuntos integrantes de varias estructuras delictivas. Las autoridades presentaron un balance que permanece sujeto a ajustes.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Un operativo en Cúcuta dejó más de cien capturas, según el reporte de las autoridades recogido por El Espectador.",
+      "sources": [
+        {
+          "name": "El Espectador · 4 nov",
+          "url": "https://www.elespectador.com/judicial/operativo-en-cucuta-deja-109-capturados-de-la-espriella-anuncia-nueva-estrategia-militar/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 4,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "El Espectador informó de un amplio operativo en Cúcuta contra presuntos integrantes de varias estructuras delictivas. Las autoridades presentaron un balance que permanece sujeto a ajustes. Un operativo en Cúcuta dejó más de cien capturas, según el reporte de las autoridades recogido por El Espectador. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-05",
+      "date": "2026-11-04",
+      "category": "Mundo",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Corea del Norte realiza nuevos ensayos de misiles",
+      "summary": "Corea del Norte informó de pruebas de un nuevo sistema de defensa antiaérea y de un ejercicio con misiles de crucero. Seúl y Washington siguen los lanzamientos, según Reuters y AP.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Corea del Norte reportó pruebas antiaéreas y de misiles de crucero; Corea del Sur y Estados Unidos siguen los lanzamientos.",
+      "sources": [
+        {
+          "name": "Reuters · 4 nov",
+          "url": "https://www.reuters.com/world/asia-pacific/north-korea-test-fires-new-air-defence-missile-system-kcna-reports-2026-11-04/"
+        },
+        {
+          "name": "Fuente adicional",
+          "url": "https://apnews.com/article/036aa8b36ae8401f3c1b3bbb81e9b2ed"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 5,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Corea del Norte informó de pruebas de un nuevo sistema de defensa antiaérea y de un ejercicio con misiles de crucero. Seúl y Washington siguen los lanzamientos, según Reuters y AP. Corea del Norte reportó pruebas antiaéreas y de misiles de crucero; Corea del Sur y Estados Unidos siguen los lanzamientos. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-06",
+      "date": "2026-11-04",
+      "category": "Mundo",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Ucrania informa 40 muertos tras ataque ruso a centro de ayuda",
+      "summary": "Autoridades ucranianas elevaron a 40 los muertos y reportaron 59 desaparecidos después del ataque del lunes a un centro de ayuda en Zaporiyia. Rusia sostiene que su objetivo era militar.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Ucrania reporta 40 muertos y 59 desaparecidos tras un ataque a un centro de ayuda; Rusia afirma haber atacado objetivos militares.",
+      "sources": [
+        {
+          "name": "Reuters · 4 nov",
+          "url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 6,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Autoridades ucranianas elevaron a 40 los muertos y reportaron 59 desaparecidos después del ataque del lunes a un centro de ayuda en Zaporiyia. Rusia sostiene que su objetivo era militar. Ucrania reporta 40 muertos y 59 desaparecidos tras un ataque a un centro de ayuda; Rusia afirma haber atacado objetivos militares. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-07",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Japón estudia exigir alertas anticipadas sobre vulnerabilidades",
+      "summary": "Según Nikkei, citado por Reuters, Japón quiere recibir antes información sobre fallas informáticas no divulgadas de empresas tecnológicas extranjeras para reforzar su ciberseguridad.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Japón estudia recibir alertas de fallas de software antes de que sean públicas, según Nikkei citado por Reuters.",
+      "sources": [
+        {
+          "name": "Reuters / Nikkei · 4 nov",
+          "url": "https://www.reuters.com/legal/litigation/japan-seek-software-vulnerability-data-us-ai-firms-amid-cyberattack-surge-nikkei-2026-11-04/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 7,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Según Nikkei, citado por Reuters, Japón quiere recibir antes información sobre fallas informáticas no divulgadas de empresas tecnológicas extranjeras para reforzar su ciberseguridad. Japón estudia recibir alertas de fallas de software antes de que sean públicas, según Nikkei citado por Reuters. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-08",
+      "date": "2026-11-04",
+      "category": "Economía",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Wall Street sube con fuerza y cae el petróleo tras las elecciones",
+      "summary": "AP informa que el Dow Jones avanzó cerca de 1.569 puntos, mientras el Brent cayó por debajo de 95 dólares. Los mercados reaccionaron a los resultados legislativos de Estados Unidos.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "El Dow Jones subió alrededor de 1.569 puntos y el Brent bajó de US$95, según AP, tras las elecciones en EE. UU.",
+      "sources": [
+        {
+          "name": "Associated Press · 4 nov",
+          "url": "https://apnews.com/article/4d12764c0b3ce38ffde3077712811182"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 8,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "AP informa que el Dow Jones avanzó cerca de 1.569 puntos, mientras el Brent cayó por debajo de 95 dólares. Los mercados reaccionaron a los resultados legislativos de Estados Unidos. El Dow Jones subió alrededor de 1.569 puntos y el Brent bajó de US$95, según AP, tras las elecciones en EE. UU. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-09",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Real Madrid gana 3-2 en Atenas por la Champions",
+      "summary": "El Real Madrid venció 3-2 al AEK Atenas en la cuarta jornada de la fase liga de la Champions League 2026/27, según el marcador final publicado por AS y Caracol.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Real Madrid derrotó 3-2 al AEK en Atenas en la cuarta fecha de Champions; resultado final reportado por AS y Caracol.",
+      "sources": [
+        {
+          "name": "AS / Caracol · 4 nov",
+          "url": "https://as.com/futbol/champions/clasificacion-de-fase-liga-de-la-champions-league-2026202-jornada-4-f202611-n/"
+        },
+        {
+          "name": "Fuente adicional",
+          "url": "https://caracol.com.co/resultados/futbol/champions/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 9,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "El Real Madrid venció 3-2 al AEK Atenas en la cuarta jornada de la fase liga de la Champions League 2026/27, según el marcador final publicado por AS y Caracol. Real Madrid derrotó 3-2 al AEK en Atenas en la cuarta fecha de Champions; resultado final reportado por AS y Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "20261104-noche-10",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Noticia contrastada · edición noche",
+      "title": "Fenerbahçe sorprende al Liverpool: victoria 3-2",
+      "summary": "Fenerbahçe superó 3-2 al Liverpool en Turquía, en la jornada de Champions de este miércoles. AS y Caracol reportan el marcador como finalizado.",
+      "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
+      "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
+      "executiveSummary": "Fenerbahçe ganó 3-2 al Liverpool en Estambul en la jornada de Champions del miércoles, según AS y Caracol.",
+      "sources": [
+        {
+          "name": "AS / Caracol · 4 nov",
+          "url": "https://caracol.com.co/resultados/futbol/champions/"
+        },
+        {
+          "name": "Fuente adicional",
+          "url": "https://as.com/futbol/champions/clasificacion-de-fase-liga-de-la-champions-league-2026202-jornada-4-f202611-n/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourcePublishedAtBogota": "2026-11-04T15:00-05:00",
+      "priority": 10,
+      "originalArticleReviewed": false,
+      "audioFullTextEs": "Fenerbahçe superó 3-2 al Liverpool en Turquía, en la jornada de Champions de este miércoles. AS y Caracol reportan el marcador como finalizado. Fenerbahçe ganó 3-2 al Liverpool en Estambul en la jornada de Champions del miércoles, según AS y Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
+      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false
+    },
     {
       "id": "rss-87abc812855465c6",
       "date": "2026-11-04",
@@ -137,62 +403,6 @@
       "verification": "source_only",
       "sourcePublishedAtBogota": "2026-11-04T12:00-05:00",
       "relevanceScore": 5
-    },
-    {
-      "id": "20261104-mediodia-deportes-01",
-      "date": "2026-11-04",
-      "category": "Deportes",
-      "level": "Noticia verificada · Champions League",
-      "title": "PSG aplasta 6-0 al Villarreal y marca récord de goles en Champions",
-      "summary": "El Paris Saint-Germain venció 6-0 al Villarreal en la cuarta jornada de la Champions League. Reuters reportó que se convirtió en el equipo más rápido en anotar cuatro tantos en un partido de esta competición: lo logró en 16 minutos y dos segundos, según datos de Opta. UEFA confirma el resultado oficial.",
-      "why": "La goleada y el récord de anotación resaltan el rendimiento ofensivo del PSG en la fase de liga europea.",
-      "next": "Consultar el calendario y los siguientes resultados oficiales de la Champions antes de hacer balances definitivos.",
-      "executiveSummary": "El PSG goleó 6-0 al Villarreal y marcó cuatro goles en 16 minutos y dos segundos, un récord de Champions según Reuters y Opta.",
-      "sources": [
-        {
-          "name": "UEFA · 4 nov",
-          "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
-        },
-        {
-          "name": "Reuters · 3 nov",
-          "url": "https://www.reuters.com/sports/soccer/paris-st-germain-set-champions-league-record-fastest-side-score-four-goals-2026-11-03/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "sourceLanguage": "es",
-      "sourcePublishedAtBogota": "2026-11-03T16:01-05:00",
-      "priority": 3.5,
-      "originalArticleReviewed": false,
-      "editorialNote": "Datos contrastados con UEFA (marcador) y Reuters (récord). No usar foto con derechos no comprobados.",
-      "audioFullTextEs": "El Paris Saint-Germain venció 6-0 al Villarreal en la cuarta jornada de la Champions League. Reuters reportó que se convirtió en el equipo más rápido en anotar cuatro tantos en un partido de esta competición: lo logró en 16 minutos y dos segundos, según datos de Opta. UEFA confirma el resultado oficial. La goleada y el récord de anotación resaltan el rendimiento ofensivo del PSG en la fase de liga europea. Los siguientes aspectos requieren seguimiento. Consultar el calendario y los siguientes resultados oficiales de la Champions antes de hacer balances definitivos.",
-      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-mediodia-deportes-02",
-      "date": "2026-11-04",
-      "category": "Deportes",
-      "level": "Agenda verificada · Champions League",
-      "title": "Champions hoy: Real Madrid y Liverpool juegan en la cuarta jornada",
-      "summary": "La UEFA confirmó nueve partidos para este miércoles 4 de noviembre en la fase de liga de la Champions 2026/27. Entre los encuentros programados figuran AEK Atenas contra Real Madrid y Fenerbahçe contra Liverpool; también están Borussia Dortmund-Real Betis y Leipzig-Manchester City. Los resultados pueden cambiar durante la jornada.",
-      "why": "La cuarta jornada modifica el panorama competitivo de los equipos europeos antes de las siguientes fechas de la fase de liga.",
-      "next": "Seguir el marcador oficial de UEFA; no anunciar ganadores antes de la conclusión de cada partido.",
-      "executiveSummary": "La UEFA confirma nueve partidos de Champions hoy, entre ellos AEK-Real Madrid, Fenerbahçe-Liverpool y Leipzig-Manchester City.",
-      "sources": [
-        {
-          "name": "UEFA · calendario oficial",
-          "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "sourceLanguage": "es",
-      "sourcePublishedAtBogota": "2026-11-04T08:00-05:00",
-      "priority": 6.5,
-      "originalArticleReviewed": false,
-      "editorialNote": "Agenda oficial de UEFA, no narrar los marcadores como resultados finales hasta confirmarlos.",
-      "audioFullTextEs": "La UEFA confirmó nueve partidos para este miércoles 4 de noviembre en la fase de liga de la Champions 2026/27. Entre los encuentros programados figuran AEK Atenas contra Real Madrid y Fenerbahçe contra Liverpool; también están Borussia Dortmund-Real Betis y Leipzig-Manchester City. Los resultados pueden cambiar durante la jornada. La cuarta jornada modifica el panorama competitivo de los equipos europeos antes de las siguientes fechas de la fase de liga. Los siguientes aspectos requieren seguimiento. Seguir el marcador oficial de UEFA; no anunciar ganadores antes de la conclusión de cada partido.",
-      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
     },
     {
       "id": "rss-a15f31c3d56fcc47",
@@ -3805,166 +4015,6 @@
       "relevanceScore": 5
     },
     {
-      "id": "20261104-editorial-01",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Mundo",
-      "title": "Demócratas recuperan Senado y Cámara en las elecciones de EE. UU.",
-      "summary": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero.",
-      "why": "El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales.",
-      "next": "Seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
-      "sources": [
-        {
-          "name": "Reuters · 4 nov",
-          "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
-        },
-        {
-          "name": "Associated Press · 4 nov",
-          "url": "https://apnews.com/article/ef6199e25927a9ac9f4c18eae0e497cd"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 1,
-      "openingCue": "Congreso estadounidense",
-      "executiveSummary": "Reuters y AP proyectan mayorías demócratas en ambas cámaras tras las elecciones legislativas de EE. UU. del 3 de noviembre.",
-      "sourceLanguage": "en",
-      "audioFullTextEs": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero. El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales. Respecto a los próximos pasos: seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-editorial-02",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Colombia",
-      "title": "Congreso aprueba la ley de sometimiento; falta la sanción presidencial",
-      "summary": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor.",
-      "why": "La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad.",
-      "next": "Verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
-      "sources": [
-        {
-          "name": "El Espectador · 3 nov",
-          "url": "https://www.elespectador.com/politica/ley-de-sometimiento-de-de-la-espriella-termina-tramite-en-congreso-y-va-a-sancion/"
-        },
-        {
-          "name": "El Heraldo · 4 nov",
-          "url": "https://www.elheraldo.co/politica/2026/11/04/la-falsa-paz-total-llego-a-su-fin-de-la-espriella-celebra-aprobacion-de-la-ley-de-sometimiento-en-el-congreso/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 2,
-      "openingCue": "sometimiento a la justicia",
-      "executiveSummary": "El Congreso aprobó la ley de sometimiento a la justicia. Falta la sanción presidencial; aún no entra en vigor.",
-      "sourceLanguage": "es",
-      "audioFullTextEs": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor. La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad. Respecto a los próximos pasos: verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-editorial-03",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Colombia",
-      "title": "Reforma tributaria: estiman mayor carga para algunos salarios altos",
-      "summary": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente.",
-      "why": "El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares.",
-      "next": "Seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
-      "sources": [
-        {
-          "name": "La República · 4 nov",
-          "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 3,
-      "openingCue": "impuestos en Colombia",
-      "executiveSummary": "Una propuesta tributaria podría reducir unos $969.000 mensuales el ingreso de un salario de $25 millones, según La República.",
-      "sourceLanguage": "es",
-      "audioFullTextEs": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente. El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares. Respecto a los próximos pasos: seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-editorial-04",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Mundo",
-      "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
-      "summary": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi.",
-      "why": "La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional.",
-      "next": "Contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
-      "sources": [
-        {
-          "name": "Reuters · 3 nov",
-          "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 4,
-      "openingCue": "energía ucraniana",
-      "executiveSummary": "Rusia atacó instalaciones eléctricas de Ucrania con misiles y drones, según Reuters, antes de conversaciones previstas en Abu Dabi.",
-      "sourceLanguage": "en",
-      "audioFullTextEs": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi. La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional. Respecto a los próximos pasos: contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-editorial-05",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Tecnología e IA",
-      "title": "Nvidia impone a socios de nube nuevas condiciones vinculadas a China, según FT",
-      "summary": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre.",
-      "why": "La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial.",
-      "next": "Esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
-      "sources": [
-        {
-          "name": "Financial Times · 3 nov",
-          "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
-        },
-        {
-          "name": "La República · 4 nov",
-          "url": "https://www.larepublica.co/globoeconomia/nvidia-exige-a-socios-de-la-nube-reducir-50-exposicion-de-datos-con-china-4517026"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 5,
-      "openingCue": "Nvidia y China",
-      "executiveSummary": "Según Financial Times, Nvidia exigiría a socios de nube destinar al menos el 51 % de sus servicios a clientes no chinos.",
-      "sourceLanguage": "en",
-      "audioFullTextEs": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre. La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial. Respecto a los próximos pasos: esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
-      "id": "20261104-editorial-06",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Colombia",
-      "title": "Salario mínimo de 2027: propuestas van del 8 % al 38,5 %",
-      "summary": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado.",
-      "why": "La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027.",
-      "next": "Esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
-      "sources": [
-        {
-          "name": "La República · 4 nov",
-          "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
-        },
-        {
-          "name": "El Colombiano · 4 nov",
-          "url": "https://www.elcolombiano.com/amp/negocios/salario-minimo-2027-fechas-negociacion-propuestas-aumento-AO43098190"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 6,
-      "openingCue": "salario mínimo",
-      "executiveSummary": "Las propuestas divulgadas para el salario mínimo de 2027 oscilan entre el 8 % y el 38,5 %. No existe aumento aprobado.",
-      "sourceLanguage": "es",
-      "audioFullTextEs": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado. La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027. Respecto a los próximos pasos: esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
       "id": "20261104-editorial-07",
       "date": "2026-11-04",
       "level": "Declaración atribuida; falta corroboración independiente",
@@ -3990,30 +4040,6 @@
       "editorialNote": "Sustituida para la edición deportiva del mediodía; no cuenta entre las diez noticias activas."
     },
     {
-      "id": "20261104-editorial-08",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Tecnología e IA",
-      "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
-      "summary": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente.",
-      "why": "Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes.",
-      "next": "Revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
-      "sources": [
-        {
-          "name": "Reuters · 4 nov",
-          "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 8,
-      "openingCue": "acuerdos de AMD",
-      "executiveSummary": "AMD reportó un cargo contable cercano a US$1.070 millones por acuerdos de chips con OpenAI y Meta, según Reuters.",
-      "sourceLanguage": "en",
-      "audioFullTextEs": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente. Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes. Respecto a los próximos pasos: revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
-    },
-    {
       "id": "20261104-editorial-09",
       "date": "2026-11-04",
       "level": "Información contrastada; ver fuentes",
@@ -4037,30 +4063,6 @@
       "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
       "audioIsFullPublisherArticle": false,
       "editorialNote": "Sustituida para la edición deportiva del mediodía; no cuenta entre las diez noticias activas."
-    },
-    {
-      "id": "20261104-editorial-10",
-      "date": "2026-11-04",
-      "level": "Información contrastada; ver fuentes",
-      "category": "Tecnología e IA",
-      "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
-      "summary": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre.",
-      "why": "La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción.",
-      "next": "Seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
-      "sources": [
-        {
-          "name": "EFE · 4 nov",
-          "url": "https://efe.com/ciencia-y-tecnologia/2026-11-04/apple-riesgos-ia-autorizacion-anticiparse/"
-        }
-      ],
-      "verification": "editorial_verified",
-      "priority": 10,
-      "openingCue": "seguridad de agentes de inteligencia artificial",
-      "executiveSummary": "Apple advirtió de riesgos de agentes de IA que actúen fuera de sus permisos y causen errores o pérdidas, según EFE.",
-      "sourceLanguage": "es",
-      "audioFullTextEs": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre. La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción. Respecto a los próximos pasos: seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
-      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
     },
     {
       "id": "rss-07ce29318ee99881",
@@ -5254,7 +5256,7 @@
   "lastNewSourceAtBogota": "2026-11-04T13:14-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición especial de mediodía: incluye dos deportes confirmados con UEFA/Reuters; reemplaza dos noticias de la mañana sin eliminar su historial. La programación no equivale a publicación Instagram.",
+  "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
   "editorialFormat": "Titular, resumen ejecutivo de hasta dos líneas visibles y fuente; audio TTS accesible en la web.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
@@ -5264,5 +5266,277 @@
     "note": "ORBIUNO es la marca del noticiero Colombia al Día. Noticias concisas, fuentes y TTS."
   },
   "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía.",
-  "audioPolicy": "audioFullTextEs contiene una narración ampliada original de ORBIUNO en español, NO el artículo íntegro de la prensa; sourceLanguage indica idioma de la fuente y el usuario puede escuchar el resumen propio en español."
+  "audioPolicy": "audioFullTextEs contiene una narración ampliada original de ORBIUNO en español, NO el artículo íntegro de la prensa; sourceLanguage indica idioma de la fuente y el usuario puede escuchar el resumen propio en español.",
+  "previousDayEditions": [
+    {
+      "date": "2026-11-04",
+      "slot": "8am/12m",
+      "news": [
+        {
+          "id": "20261104-mediodia-deportes-01",
+          "date": "2026-11-04",
+          "category": "Deportes",
+          "level": "Noticia verificada · Champions League",
+          "title": "PSG aplasta 6-0 al Villarreal y marca récord de goles en Champions",
+          "summary": "El Paris Saint-Germain venció 6-0 al Villarreal en la cuarta jornada de la Champions League. Reuters reportó que se convirtió en el equipo más rápido en anotar cuatro tantos en un partido de esta competición: lo logró en 16 minutos y dos segundos, según datos de Opta. UEFA confirma el resultado oficial.",
+          "why": "La goleada y el récord de anotación resaltan el rendimiento ofensivo del PSG en la fase de liga europea.",
+          "next": "Consultar el calendario y los siguientes resultados oficiales de la Champions antes de hacer balances definitivos.",
+          "executiveSummary": "El PSG goleó 6-0 al Villarreal y marcó cuatro goles en 16 minutos y dos segundos, un récord de Champions según Reuters y Opta.",
+          "sources": [
+            {
+              "name": "UEFA · 4 nov",
+              "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+            },
+            {
+              "name": "Reuters · 3 nov",
+              "url": "https://www.reuters.com/sports/soccer/paris-st-germain-set-champions-league-record-fastest-side-score-four-goals-2026-11-03/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "sourceLanguage": "es",
+          "sourcePublishedAtBogota": "2026-11-03T16:01-05:00",
+          "priority": 3.5,
+          "originalArticleReviewed": false,
+          "editorialNote": "Datos contrastados con UEFA (marcador) y Reuters (récord). No usar foto con derechos no comprobados.",
+          "audioFullTextEs": "El Paris Saint-Germain venció 6-0 al Villarreal en la cuarta jornada de la Champions League. Reuters reportó que se convirtió en el equipo más rápido en anotar cuatro tantos en un partido de esta competición: lo logró en 16 minutos y dos segundos, según datos de Opta. UEFA confirma el resultado oficial. La goleada y el récord de anotación resaltan el rendimiento ofensivo del PSG en la fase de liga europea. Los siguientes aspectos requieren seguimiento. Consultar el calendario y los siguientes resultados oficiales de la Champions antes de hacer balances definitivos.",
+          "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-mediodia-deportes-02",
+          "date": "2026-11-04",
+          "category": "Deportes",
+          "level": "Agenda verificada · Champions League",
+          "title": "Champions hoy: Real Madrid y Liverpool juegan en la cuarta jornada",
+          "summary": "La UEFA confirmó nueve partidos para este miércoles 4 de noviembre en la fase de liga de la Champions 2026/27. Entre los encuentros programados figuran AEK Atenas contra Real Madrid y Fenerbahçe contra Liverpool; también están Borussia Dortmund-Real Betis y Leipzig-Manchester City. Los resultados pueden cambiar durante la jornada.",
+          "why": "La cuarta jornada modifica el panorama competitivo de los equipos europeos antes de las siguientes fechas de la fase de liga.",
+          "next": "Seguir el marcador oficial de UEFA; no anunciar ganadores antes de la conclusión de cada partido.",
+          "executiveSummary": "La UEFA confirma nueve partidos de Champions hoy, entre ellos AEK-Real Madrid, Fenerbahçe-Liverpool y Leipzig-Manchester City.",
+          "sources": [
+            {
+              "name": "UEFA · calendario oficial",
+              "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "sourceLanguage": "es",
+          "sourcePublishedAtBogota": "2026-11-04T08:00-05:00",
+          "priority": 6.5,
+          "originalArticleReviewed": false,
+          "editorialNote": "Agenda oficial de UEFA, no narrar los marcadores como resultados finales hasta confirmarlos.",
+          "audioFullTextEs": "La UEFA confirmó nueve partidos para este miércoles 4 de noviembre en la fase de liga de la Champions 2026/27. Entre los encuentros programados figuran AEK Atenas contra Real Madrid y Fenerbahçe contra Liverpool; también están Borussia Dortmund-Real Betis y Leipzig-Manchester City. Los resultados pueden cambiar durante la jornada. La cuarta jornada modifica el panorama competitivo de los equipos europeos antes de las siguientes fechas de la fase de liga. Los siguientes aspectos requieren seguimiento. Seguir el marcador oficial de UEFA; no anunciar ganadores antes de la conclusión de cada partido.",
+          "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-01",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Mundo",
+          "title": "Demócratas recuperan Senado y Cámara en las elecciones de EE. UU.",
+          "summary": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero.",
+          "why": "El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales.",
+          "next": "Seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
+          "sources": [
+            {
+              "name": "Reuters · 4 nov",
+              "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+            },
+            {
+              "name": "Associated Press · 4 nov",
+              "url": "https://apnews.com/article/ef6199e25927a9ac9f4c18eae0e497cd"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 1,
+          "openingCue": "Congreso estadounidense",
+          "executiveSummary": "Reuters y AP proyectan mayorías demócratas en ambas cámaras tras las elecciones legislativas de EE. UU. del 3 de noviembre.",
+          "sourceLanguage": "en",
+          "audioFullTextEs": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero. El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales. Respecto a los próximos pasos: seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-02",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Colombia",
+          "title": "Congreso aprueba la ley de sometimiento; falta la sanción presidencial",
+          "summary": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor.",
+          "why": "La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad.",
+          "next": "Verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
+          "sources": [
+            {
+              "name": "El Espectador · 3 nov",
+              "url": "https://www.elespectador.com/politica/ley-de-sometimiento-de-de-la-espriella-termina-tramite-en-congreso-y-va-a-sancion/"
+            },
+            {
+              "name": "El Heraldo · 4 nov",
+              "url": "https://www.elheraldo.co/politica/2026/11/04/la-falsa-paz-total-llego-a-su-fin-de-la-espriella-celebra-aprobacion-de-la-ley-de-sometimiento-en-el-congreso/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 2,
+          "openingCue": "sometimiento a la justicia",
+          "executiveSummary": "El Congreso aprobó la ley de sometimiento a la justicia. Falta la sanción presidencial; aún no entra en vigor.",
+          "sourceLanguage": "es",
+          "audioFullTextEs": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor. La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad. Respecto a los próximos pasos: verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-03",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Colombia",
+          "title": "Reforma tributaria: estiman mayor carga para algunos salarios altos",
+          "summary": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente.",
+          "why": "El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares.",
+          "next": "Seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
+          "sources": [
+            {
+              "name": "La República · 4 nov",
+              "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 3,
+          "openingCue": "impuestos en Colombia",
+          "executiveSummary": "Una propuesta tributaria podría reducir unos $969.000 mensuales el ingreso de un salario de $25 millones, según La República.",
+          "sourceLanguage": "es",
+          "audioFullTextEs": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente. El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares. Respecto a los próximos pasos: seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-04",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Mundo",
+          "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
+          "summary": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi.",
+          "why": "La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional.",
+          "next": "Contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
+          "sources": [
+            {
+              "name": "Reuters · 3 nov",
+              "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 4,
+          "openingCue": "energía ucraniana",
+          "executiveSummary": "Rusia atacó instalaciones eléctricas de Ucrania con misiles y drones, según Reuters, antes de conversaciones previstas en Abu Dabi.",
+          "sourceLanguage": "en",
+          "audioFullTextEs": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi. La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional. Respecto a los próximos pasos: contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-05",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Tecnología e IA",
+          "title": "Nvidia impone a socios de nube nuevas condiciones vinculadas a China, según FT",
+          "summary": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre.",
+          "why": "La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial.",
+          "next": "Esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
+          "sources": [
+            {
+              "name": "Financial Times · 3 nov",
+              "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+            },
+            {
+              "name": "La República · 4 nov",
+              "url": "https://www.larepublica.co/globoeconomia/nvidia-exige-a-socios-de-la-nube-reducir-50-exposicion-de-datos-con-china-4517026"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 5,
+          "openingCue": "Nvidia y China",
+          "executiveSummary": "Según Financial Times, Nvidia exigiría a socios de nube destinar al menos el 51 % de sus servicios a clientes no chinos.",
+          "sourceLanguage": "en",
+          "audioFullTextEs": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre. La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial. Respecto a los próximos pasos: esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-06",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Colombia",
+          "title": "Salario mínimo de 2027: propuestas van del 8 % al 38,5 %",
+          "summary": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado.",
+          "why": "La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027.",
+          "next": "Esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
+          "sources": [
+            {
+              "name": "La República · 4 nov",
+              "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
+            },
+            {
+              "name": "El Colombiano · 4 nov",
+              "url": "https://www.elcolombiano.com/amp/negocios/salario-minimo-2027-fechas-negociacion-propuestas-aumento-AO43098190"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 6,
+          "openingCue": "salario mínimo",
+          "executiveSummary": "Las propuestas divulgadas para el salario mínimo de 2027 oscilan entre el 8 % y el 38,5 %. No existe aumento aprobado.",
+          "sourceLanguage": "es",
+          "audioFullTextEs": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado. La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027. Respecto a los próximos pasos: esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-08",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Tecnología e IA",
+          "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
+          "summary": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente.",
+          "why": "Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes.",
+          "next": "Revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
+          "sources": [
+            {
+              "name": "Reuters · 4 nov",
+              "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 8,
+          "openingCue": "acuerdos de AMD",
+          "executiveSummary": "AMD reportó un cargo contable cercano a US$1.070 millones por acuerdos de chips con OpenAI y Meta, según Reuters.",
+          "sourceLanguage": "en",
+          "audioFullTextEs": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente. Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes. Respecto a los próximos pasos: revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        },
+        {
+          "id": "20261104-editorial-10",
+          "date": "2026-11-04",
+          "level": "Información contrastada; ver fuentes",
+          "category": "Tecnología e IA",
+          "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
+          "summary": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre.",
+          "why": "La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción.",
+          "next": "Seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
+          "sources": [
+            {
+              "name": "EFE · 4 nov",
+              "url": "https://efe.com/ciencia-y-tecnologia/2026-11-04/apple-riesgos-ia-autorizacion-anticiparse/"
+            }
+          ],
+          "verification": "editorial_verified",
+          "priority": 10,
+          "openingCue": "seguridad de agentes de inteligencia artificial",
+          "executiveSummary": "Apple advirtió de riesgos de agentes de IA que actúen fuera de sus permisos y causen errores o pérdidas, según EFE.",
+          "sourceLanguage": "es",
+          "audioFullTextEs": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre. La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción. Respecto a los próximos pasos: seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
+          "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+          "audioIsFullPublisherArticle": false
+        }
+      ]
+    }
+  ]
 }
