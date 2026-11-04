@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-856c8ba3344a563d",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Champions League hoy: partidos y horarios del miércoles 4 de noviembre",
+      "summary": "Titular difundido por Radio Nacional de Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio Nacional de Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaTZ2Z2lQU3hsRVM5R2ZSTU1ySjNZeGVrSFdfc2RjYmZhRjdHT1lNdlA2YnpKYmFzdzJ4bzN6cTNrY1NjcHJ5c0NHUmJ5eXVmdVhvaVViZ1c1SENka1BJOWNxUkNUMHdvXzczU25XMkVPQ2tGS0RwREZ4eDJCMDk4RGUwazFoN00?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:35-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-604deb834f1414aa",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Liverpool, Manchester City y Como saldrán a la cancha por la fecha 4 de la Champions League: la agenda de la jornada",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNRzZYa3JyVTF4WTJYYnd0Nk5XckttVUpUY2VyakxiZy12UWRzX2ZhU3UtbEtKTjJIZVB5dVpKdENsbGU1ODVJcVJldmY5aFJaaldTUVdhckpXQm9yZEJYUmN6S0Jab0Rqd3hDLXJTakh1U1VhSV93cDFRMUg5R2xkSU96MXlNdld1ZUs0MlZIRm9DdFEwRlVXSTRQN2JzM1ktVkxIZ09UNGtSdDJLU0JVcEc1YXhac0FQNkZ6UE9EcHNUa1U1VUFCXy1QQWlQanlDenNmeC1tMk85U0JKTW5qMUpGRU9pV3hSWHBaNUtIdzJmSUV3eDREeS1DTUZFNWxicWFmU2FLMUZBVzTSAYsCQVVfeXFMTUc2WGtyclUxeFkyWGJ3dDZOV3JLbVVKVGNlcmpMYmctdlFkc19mYVN1LWxLSk4ySGVQeXVaSnRDbGxlNTg1SXFSZXZmOWhSWmpXU1FXYXJKV0JvcmRCWFJjektCWm9Eand4Qy1yU2pIdVNVYUlfd3AxUTFIOUdsZElPejF5TXZXdWVLNDJWSEZvQ3RRMEZVV0k0UDdiczNZLVZMSGdPVDRrUnQyS1NCVXBHNWF4WnNBUDZGelBPRHBzVGtVNVVBQl8tUEFpUGp5Q3pzZngtbTJPOVNCSk1uajFKRkVPaVd4UlhwWjVLSHcyZklFd3g0RHktQ01GRTVsYnFhZlNhSzFGQVc0?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T05:07-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-4786b44a882879dd",
       "date": "2026-11-03",
       "category": "Deportes",
@@ -4489,8 +4527,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T10:09-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T10:09-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T10:11-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T10:11-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
