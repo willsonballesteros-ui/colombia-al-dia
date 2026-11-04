@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://colombia-al-dia.pages.dev/sitemap.xml
