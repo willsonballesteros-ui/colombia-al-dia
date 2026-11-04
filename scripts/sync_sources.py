@@ -30,9 +30,11 @@ RSS = [
     ("Google Noticias — Colombia", "Colombia", "https://news.google.com/rss/search?q=Colombia+when%3A1d&hl=es-419&gl=CO&ceid=CO%3Aes-419"),
     ("Google Noticias — Tecnología e IA", "Tecnología e IA", "https://news.google.com/rss/search?q=inteligencia+artificial+tecnologia+when%3A1d&hl=es-419&gl=CO&ceid=CO%3Aes-419"),
     ("Google Noticias — Economía", "Economía", "https://news.google.com/rss/search?q=economia+colombiana+when%3A1d&hl=es-419&gl=CO&ceid=CO%3Aes-419"),
+    ("Google Noticias — Deportes Colombia", "Deportes", "https://news.google.com/rss/search?q=selecci%C3%B3n+colombia+futbol+deportes+when%3A1d&hl=es-419&gl=CO&ceid=CO%3Aes-419"),
+    ("Google Noticias — F1 Champions Colombianos", "Deportes", "https://news.google.com/rss/search?q=Champions+League+Formula+1+colombianos+when%3A1d&hl=es-419&gl=CO&ceid=CO%3Aes-419"),
 ]
 MAX_ITEMS_PER_RUN = 9
-PER_CATEGORY = {"Colombia": 3, "Tecnología e IA": 2, "Economía": 2, "Mundo": 2}
+PER_CATEGORY = {"Colombia": 3, "Tecnología e IA": 2, "Economía": 2, "Mundo": 2, "Deportes": 2}
 MAX_AGE_HOURS = 36
 USER_AGENT = "ColombiaAlDiaNoticias/1.0 (portal de enlaces y atribuciones; sin extraccion integral)"
 
@@ -141,6 +143,9 @@ RELEVANT_TOPICS = (
      "energia", "tecnologia", "robotica", "transporte masivo"),
     ("guerra", "crisis humanitaria", "acuerdo de paz", "onu", "sanciones",
      "sismo", "terremoto", "huracan", "inundacion", "seguridad nacional"),
+    ("seleccion colombia", "champions", "liga de campeones", "formula 1", "gran premio",
+     "f1", "mundial", "colombianos en el exterior", "liga betplay", "copa libertadores",
+     "colombia femen", "ciclismo", "tenis", "nba", "piloto colombiano"),
 )
 LOW_PRIORITY_TOPICS = ("horoscopo", "celebridad", "reality", "loteria", "novela", "chisme")
 
@@ -159,6 +164,9 @@ def sync(db: dict, feeds: list, now: datetime, fixture=None) -> tuple[dict, dict
     now = now.astimezone(TZ)
     known = {x.get("id") for x in db.get("news", [])}
     seen_title = {norm_text(x.get("title", "")) for x in db.get("news", [])}
+    # En edición de mediodía (Bogotá), priorizar 1-2 candidatos deportivos.
+    # Titulares de RSS son siempre source_only: no se publican como confirmados.
+    is_midday=11 <= now.hour < 15
     candidates = []
     ok_sources = 0
     failures = []
@@ -187,7 +195,13 @@ def sync(db: dict, feeds: list, now: datetime, fixture=None) -> tuple[dict, dict
         raise RuntimeError("Ninguna fuente RSS respondió: NO cambiar la página pública. " + " | ".join(failures))
     counts = {k: 0 for k in PER_CATEGORY}
     added = []
-    for _, _, item in sorted(candidates, key=lambda x: (x[0], x[1]), reverse=True):
+    ordered=sorted(candidates, key=lambda x: (x[0], x[1]), reverse=True)
+    if is_midday:
+        # Reserva de hasta dos huecos para noticias deportivas en seguimiento.
+        # Ninguna se etiqueta editorial_verified sin validación de redacción.
+        sport=[c for c in ordered if c[2].get("category")=="Deportes"][:2]
+        ordered=sport+[c for c in ordered if c not in sport]
+    for _, _, item in ordered:
         cat = item["category"]
         title_norm = norm_text(item["title"])
         if len(added) >= MAX_ITEMS_PER_RUN or counts.get(cat, 0) >= PER_CATEGORY.get(cat, 1):
@@ -207,7 +221,10 @@ def sync(db: dict, feeds: list, now: datetime, fixture=None) -> tuple[dict, dict
     db["autoSyncOkSources"] = ok_sources
     db["autoSyncFailedSources"] = len(failures)
     db["siteVersion"] = "3.0"
-    return db, {"added": len(added), "total": len(db["news"]), "feeds_ok": ok_sources, "feed_errors": failures}
+    return db, {"added": len(added), "total": len(db["news"]),
+                "sports_candidates_midday": sum(n.get("category")=="Deportes" for n in added) if is_midday else 0,
+                "midday_sports_pending_verification": is_midday and sum(n.get("category")=="Deportes" for n in added)<1,
+                "feeds_ok": ok_sources, "feed_errors": failures}
 
 
 def main():
