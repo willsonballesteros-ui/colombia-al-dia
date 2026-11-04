@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-2e040106a8585b7e",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Globant impulsa una nueva era de negocios con inteligencia artificial",
+      "summary": "Titular difundido por Agroempresario a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Agroempresario · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWjE4ZExudXBXSGFxZzI2NGlCVjY5aFBUaFNPOURmbU5wcmRMWURMU0hxTFl1X1dCRG5SRjUxNWpYOTVrSzBrRVEtWXFHTzlUNHZqM3g1WGU0Wl9qMTQtc2E3aUl3VTFCcnN3R0gxSkNVcDBfSE9sQ25GTmtnZFlRY0ZEeXFMSUs5WktpakxwanBYRjRyZmJpTXg4Ml9LWm00TTVLNEl3NlN1YzRTYWp4NkNIdWVDZlE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T10:03-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b918c415aa37a2c3",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "F1: los horarios y el cronograma completo del GP de Brasil",
+      "summary": "Titular difundido por TyC Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "TyC Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORUJpUC01RVFMQXFDRXBsNXV2Xy1sT05KaS1pWXYyTVFBaUFVVXVXMW5CeEtmU2Q2MElqSG4wT0R4TW1SMVRCZW8wUXRQbHVmaGwxdTBDT1NickN3cjFBemh6THMyejdDM1F3OHRzZlhMcWQ0aDhTMDdFNzNKeEhXZjZaS05oYkN5NzNoUXBxSjZic1k0TUE1Q1E0QXc3UVEzdjk0T1FiUWF5UDR6MVdTOQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T20:55-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-a6af497b6d80d878",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Champions League: resultados, colombianos y tabla de posiciones",
+      "summary": "Titular difundido por Radio Nacional de Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio Nacional de Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTSGM2YUdDRHJycU1OUmgxZzg1YVBLZW1MS3hnU3ByM01oSWpSUWIwM2RxNktKa05pYmVGaFl2QUJhMExDTzI1M0NXYXNoa2ZJWGJrQ2V2YkdZM3dqZldKZnJLM2pBRnVnMHlrc2FYMDhjVm5haGw0?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T20:46-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-c4884f51fe216ab2",
       "date": "2026-11-03",
       "category": "Deportes",
@@ -4641,8 +4698,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T10:13-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T10:13-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T10:14-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T10:14-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
