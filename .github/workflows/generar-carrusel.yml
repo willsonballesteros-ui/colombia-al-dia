@@ -1,4 +1,4 @@
-name: Generar carrusel documental Colombia al Día
+name: Generar carrusel ORBIUNO 11 láminas
 on:
   workflow_dispatch:
   push:
@@ -31,9 +31,9 @@ jobs:
         run: python -m pip install --disable-pip-version-check pillow==12.0.0
       - name: Verificar noticias
         run: python scripts/validate_news.py noticias.json
-      - name: Renderizar diez láminas
+      - name: Renderizar portada y diez láminas
         run: python scripts/build_carousel.py
-      - name: Validar formato 12 láminas sin avatares
+      - name: Validar formato compacto de 11 láminas
         run: |
           python - <<'PY'
           import json
@@ -41,14 +41,12 @@ jobs:
           from PIL import Image
           day=json.loads(Path("noticias.json").read_text(encoding="utf-8"))["editionDate"]
           p=Path("media")/day
-          slides=[p/"portada.png"]+[p/f"top10-{i:02d}.png" for i in range(1,11)]+[p/"cierre.png"]
-          assert len(slides)==12
+          slides=[p/"portada.png"]+[p/f"top10-{i:02d}.png" for i in range(1,11)]
+          assert len(slides)==11
           for file in slides:
               with Image.open(file) as im:
                   assert im.size==(1080,1350), (file,im.size)
-          with Image.open(p/"historia.png") as im: assert im.size==(1080,1920)
-          assert (p/"sugerencias-stickers.json").is_file()
-          print("Validado: 12 láminas limpias + historia; ningún avatar")
+          print("Validado: 11 láminas + 10 fuentes originales")
           PY
       - name: Publicar imágenes sobre la última versión de main
         run: |
@@ -60,17 +58,20 @@ jobs:
             git reset --hard origin/main
             python scripts/validate_news.py noticias.json
             python scripts/build_carousel.py
-            # Eliminar todos los dibujos y clips de avatar de la edición activa.
+            # Eliminar exclusivamente recursos de los formatos obsoletos.
             DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
             git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
               "media/$DAY/historia-orbiuno.png" \
               "media/$DAY/boletin-narrado.mp4" \
-              "media/$DAY/boletin-narrado.json"
+              "media/$DAY/boletin-narrado.json" \
+              "media/$DAY/cierre.png" \
+              "media/$DAY/historia.png" \
+              "media/$DAY/sugerencias-stickers.json"
             git add -A media
             if git diff --cached --quiet; then
               echo 'Imágenes ya sincronizadas'; exit 0
             fi
-            git commit -m 'ORBIUNO: renovar ilustraciones y carrusel editorial'
+            git commit -m 'ORBIUNO: renovar 11 láminas breves con fuente original'
             if git push origin HEAD:main; then exit 0; fi
             sleep $((i * 3))
           done
