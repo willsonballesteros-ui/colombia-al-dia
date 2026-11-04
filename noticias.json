@@ -2858,12 +2858,10 @@
   },
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
-    "name": "ORBIUNO",
-    "monogram": "OU",
-    "logo": "/branding/orbiuno-logo.svg",
-    "icon": "/branding/orbiuno-icono.svg",
+    "name": "Colombia al Día",
+    "monogram": "CA",
     "website": "https://colombia-al-dia.pages.dev/",
-    "note": "La marca pública del sitio es ORBIUNO; el dominio histórico se conserva para preservar enlaces."
+    "note": "Identidad tipográfica de Colombia al Día; sin avatares ni ilustraciones de hechos."
   },
   "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía."
 }
