@@ -43,6 +43,9 @@ def build(db):
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
     slot=edition_slot()
+    verified_sports=sum(n.get("category")=="Deportes" for n in news)
+    sports_ready=slot!="12m" or 1<=verified_sports<=2
+    blockers=[] if sports_ready else ["edicion_mediodia_requiere_1_o_2_deportes_verificados"]
     caption_link=tracked_url(day,"caption",slot)
     comment_link=tracked_url(day,"comment",slot)
     bio_link=tracked_url(day,"bio",slot)
@@ -69,6 +72,9 @@ def build(db):
         "editionDate":day,
         "brand":"ORBIUNO",
         "editionSlot":slot,
+        "verifiedSports":verified_sports,
+        "publicationReady":sports_ready,
+        "blockers":blockers,
         "utmCampaign":"edicion_"+day.replace("-","")+"_"+slot,
         "links":{"bio":bio_link,"story":story_link,"caption":caption_link,"firstComment":comment_link},
         "caption":caption,
