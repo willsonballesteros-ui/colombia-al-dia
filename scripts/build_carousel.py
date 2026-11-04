@@ -3,6 +3,7 @@
 import json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
+from build_visuals import visual
 
 W,H=1080,1350
 NAVY="#071b46"
@@ -38,33 +39,27 @@ def block(d,txt,x,y,ft,fill,width,max_lines,spacing=12):
         y+=ft.size+spacing
     return y
 
-def draw_card(item,num,day,out):
+def draw_card(item,num,day,out,visual_path):
+    """Diseño editorial visual: ilustración, titular breve y fuente."""
+    from PIL import ImageOps
     im=Image.new("RGB",(W,H),PAPER)
     d=ImageDraw.Draw(im)
-    d.rectangle((0,0,W,275),NAVY)
-    d.rectangle((0,0,W,14),YELLOW)
-    d.ellipse((790,-270,1390,330),outline="#235399",width=26)
-    d.text((68,55),"ORBIUNO",font=f(74,True),fill="white")
-    d.text((70,151),"LAS NOTICIAS MÁS IMPORTANTES · 10 NOTICIAS",font=f(22,True),fill=YELLOW)
-    d.rounded_rectangle((70,215,630,269),radius=22,fill="#17418a")
-    d.text((92,226),f"{num:02d} / {item['category'].upper()}",font=f(23,True),fill="white")
-    title=item["title"]
-    ty=block(d,title,70,325,f(52,True),INK,945,5,16)
-    d.line((70,ty+15,1000,ty+15),fill="#a7bce3",width=3)
-    y=ty+53
-    d.text((70,y),"QUÉ PASÓ",font=f(24,True),fill=BLUE)
-    y+=42
-    # Taller summaries are clamped to preserve room for source footer.
-    y=block(d,item["summary"],70,y,f(28),INK,945,5,11)
-    y+=23
-    d.text((70,y),"POR QUÉ IMPORTA",font=f(24,True),fill=BLUE)
-    y+=42
-    block(d,item["why"],70,y,f(28),INK,945,4,11)
-    d.rounded_rectangle((52,1154,1028,1312),radius=25,fill=NAVY)
-    d.text((76,1182),"FUENTE PRINCIPAL",font=f(20,True),fill=YELLOW)
-    block(d,item["sources"][0]["name"],76,1215,f(23),"white",915,2,5)
-    d.text((76,1271),"colombia-al-dia.pages.dev",font=f(19,True),fill="#d4def7")
-    d.text((855,1270),day[8:10]+"/"+day[5:7]+"/"+day[:4],font=f(16),fill="#d4def7")
+    d.rectangle((0,0,W,188),NAVY)
+    d.rectangle((0,0,W,13),YELLOW)
+    d.text((55,44),"ORBIUNO",font=f(77,True),fill="white")
+    d.text((61,133),f"{num:02d} / 10  ·  {item['category'].upper()}",font=f(23,True),fill=YELLOW)
+    with Image.open(visual_path) as img:
+        art=ImageOps.fit(img.convert("RGB"),(960,505),method=Image.Resampling.LANCZOS)
+        im.paste(art,(60,216))
+    d=ImageDraw.Draw(im)
+    title_end=block(d,item["title"],63,754,f(48,True),INK,948,4,11)
+    summary_y=max(945,title_end+12)
+    d.text((64,summary_y),"EN BREVE",font=f(23,True),fill=BLUE)
+    block(d,item["summary"],64,summary_y+37,f(25),INK,947,3,8)
+    d.rounded_rectangle((51,1183,1028,1320),radius=20,fill=NAVY)
+    d.text((76,1202),"FUENTE",font=f(20,True),fill=YELLOW)
+    block(d,item["sources"][0]["name"],76,1233,f(23),"white",907,2,5)
+    d.text((76,1290),"Detalle y fuentes: colombia-al-dia.pages.dev",font=f(18,True),fill="#D3E6F7")
     im.save(out,optimize=True)
 
 
@@ -105,8 +100,10 @@ def main():
     outdir.mkdir(parents=True,exist_ok=True)
     for i,item in enumerate(chosen,1):
         assert item.get("sources") and item["sources"][0].get("url","").startswith("https://")
+        picture=outdir/f"visual-{i:02d}.png"
+        visual(item,i,picture)
         path=outdir/f"top10-{i:02d}.png"
-        draw_card(item,i,day,path)
+        draw_card(item,i,day,path,picture)
         print(path.relative_to(root))
     story=outdir/"historia-orbiuno.png"
     draw_story(day,story,"https://colombia-al-dia.pages.dev/")
