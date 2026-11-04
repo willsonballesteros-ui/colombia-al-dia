@@ -33,7 +33,7 @@ Para noticias, priorizar fotografía real con derechos de reproducción confirma
 ## Dos formatos sociales diferentes
 
 - **Reel vertical:** once escenas de video: **presentadora virtual femenina de apariencia natural** en escena inicial, narrando los diez titulares en español claro, seguida de diez láminas. Debe existir y verificarse el MP4 de la presentadora y su autorización; no sustituir por una foto estática como si hablara.
-- **Carrusel Instagram:** **diez** láminas de noticias para el flujo conectado con Metricool. El recurso adicional `portada.png` sirve para portada de Reel, previsualización o historia, **NO como una undécima foto en el carrusel**. Así se conservan las diez noticias sin incumplir Instagram.
+- **Carrusel Instagram, formato editorial actualizado:** **cinco** láminas recomendadas: `portada.png` con el resumen visual de la edición, seguida de `grupo-01.png` a `grupo-04.png` con noticias agrupadas de forma ejecutiva (hoy 3+3+2+2). Los `top10-01..10.png` individuales continúan como recursos audiovisuales auxiliares, no como obligación de una lámina por noticia. Priorizar ocho a diez noticias verificadas, sin inventar para llenar una cuota.
 - Cada lámina: miniatura/favicón real del medio o fotografía licenciada, fuente visible, titular dominante y síntesis de máximo dos líneas completas (fuente tipográfica adaptable). No simular botones clicables sobre las imágenes. Fuente y detalle verdaderamente clicables desde la web; los stickers de enlace, encuesta y cuestionario son nativos de historias y pueden requerir publicación manual.
 
 ## Automatización y comprobaciones
@@ -51,3 +51,11 @@ GitHub Actions **no dispone de credenciales de publicación Metricool**. Según 
 Los cinco controles de autorización requeridos son `rightsVerified`, `consentVerified`, `voiceAuthorized`, `scriptChecked` y `speaksAllTenHeadlines` junto a `source` no vacío. Si no hay intro o no hay consentimiento, falla de forma segura; nunca marca como publicado un MP4 no generado.
 
 Pruebas en CI: 10 noticias editoriales, fuentes HTTPS, no imágenes ficticias presentadas como fotografías, TTS nativo y 10 láminas para Instagram + recurso de portada.
+
+## Ajuste de narración del 4 de noviembre de 2026
+
+- Cada noticia con datos suficientes debe tener un **guion original entre 130 y 250 palabras**, objetivo **1–2 minutos a velocidad 1x**, basado en hechos contrastados; sin opiniones, juicios, inventos, rellenos ni reproducción literal de artículos ajenos.
+- El campo `audioFullTextEs` se reproduce con `speechSynthesis`; `executiveSummary` queda exclusivamente como vista previa de dos líneas. La lectura menciona expresamente al medio original antes de cada noticia y conserva los vínculos HTTPS. Los textos fuente extranjeros se resumen en español sin copiar traducciones completas no autorizadas.
+- El botón principal **Escuchar todas** inicia primero una presentación breve y después lee las diez noticias por orden, con sus fuentes. Si no hay guion sustantivo para una noticia, no fingir duración ni difundir cifras sin verificar.
+- **Instagram:** el carrusel compacto incluye portada-resumen y grupos de noticias; **las imágenes PNG no contienen sonido**. Si el contenido necesita audio en Instagram, crear y validar un **video real** con locución y derechos comprobados. Metricool solo autopublica clips de **hasta 60 segundos por elemento del carrusel**, por lo que un boletín narrado de 10–15 minutos debe entregarse como **Reel separado**, no atribuirse a una foto muda.
+- **Estado de publicación:** la existencia de guiones, PNG y archivos en GitHub o de una web actualizada no implica que haya Reel nuevo en Instagram. La confirmación se hace únicamente por `PUBLISHED` más URL pública de Metricool.
