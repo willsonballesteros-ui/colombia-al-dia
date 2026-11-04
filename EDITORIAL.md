@@ -16,6 +16,16 @@ Priorizar economía, tecnología/IA, infraestructura, seguridad y panorama globa
 - TTS de `window.speechSynthesis` mediante clic expreso del lector; ▶️ Escuchar resumen / Pausar / Reanudar / Detener. No se afirma una voz natural idéntica en todos los dispositivos.
 - Las advertencias de atribución y metodología se mantienen en el pie, no sobre los titulares.
 
+## Reproductor de audio y derechos de artículos completos
+
+El lector puede elegir **voz en español** desde un selector discreto situado encima de las tarjetas. La lista procede de las voces reales que ofrece el dispositivo mediante `speechSynthesis.getVoices()`; se prefiere una voz femenina/neuronal de buena claridad cuando el nombre la identifica, sin inventar voces ausentes. Se memoriza la selección en el navegador cuando su almacenamiento local está disponible. Velocidad: 1x, 1,25x, 1,5x y 2x; si cambia mientras escucha, se reinicia solo la frase actual. El audio se reproduce sin expandir las noticias.
+
+**No presentar resúmenes como artículos íntegros.** `audioFullTextEs` contiene una narración editorial AMPLIADA redactada por ORBIUNO, no el texto completo de Reuters, EFE, Financial Times, etc. Su botón se llama `Escuchar versión ampliada`, independientemente de su longitud. `Escuchar toda la noticia` es exclusivo de `fullArticleTextEs` cuando se haya verificado la licencia original para reproducir el artículo entero, la URL exacta de su fuente y, si se traduce del inglés al español, el derecho de traducción.
+
+Campos obligatorios para habilitar artículo original completo: `fullArticleTextEs` (traducción íntegra autorizada si corresponde), `fullArticleRightsVerified=true`, `fullArticleIsVerbatimSource=true`, `fullArticleLicense`, `fullArticleSourceUrl` coincidente con un enlace de `sources` y `fullArticleTranslationAuthorized=true` para fuentes `sourceLanguage=en`. Los validadores bloquean cualquier entrada incompleta. No automatizar scraping/republicación íntegra de sitios comerciales sin convenio de distribución.
+
+Para los medios sin permiso de reproducción, mostrar `Artículo completo ↗` con el vínculo original y permitir escuchar la **versión ampliada de ORBIUNO en español**. El navegador no puede acceder y leer íntegramente un sitio ajeno mediante JavaScript por restricciones de origen y derechos. El usuario puede activar la lectura de página nativa desde su navegador, cuando la página de origen lo permita.
+
 ## Imágenes reales y marcas
 
 Para noticias, priorizar fotografía real con derechos de reproducción confirmados. Campos: `imageUrl`, `imageType` (`official_photo`, `licensed_press_photo`, `official_document`), `imageCredit`, `imageLicense`, `imageRightsVerified=true`, `imageSourceUrl`. Sin esos datos, se puede consultar el **favicon real del dominio de la fuente** y mostrar su nombre en una tarjeta. El favicon identifica al medio, NO representa una foto del hecho, y no se inventan marcas ni logotipos. La presentadora virtual solicitada debe identificarse y tener derechos de uso y autorización de voz verificables; nunca afirmar que una foto inventada documenta un hecho.
