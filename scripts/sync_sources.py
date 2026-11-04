@@ -131,6 +131,30 @@ def safe_article(item, category: str, now: datetime, is_aggregator: bool):
     }
 
 
+# Matriz orientativa de relevancia; NO constituye verificación periodística.
+RELEVANT_TOPICS = (
+    ("eleccion", "congreso", "senado", "gobierno nacional", "presidencia",
+     "inflacion", "desempleo", "pib", "banco central", "tasa de interes",
+     "reforma tributaria", "presupuesto nacional", "arancel", "recesion"),
+    ("inteligencia artificial", "ciberseguridad", "semiconductores", "openai",
+     "nvidia", "gemini", "infraestructura", "aeropuerto", "ferrocarril",
+     "energia", "tecnologia", "robotica", "transporte masivo"),
+    ("guerra", "crisis humanitaria", "acuerdo de paz", "onu", "sanciones",
+     "sismo", "terremoto", "huracan", "inundacion", "seguridad nacional"),
+)
+LOW_PRIORITY_TOPICS = ("horoscopo", "celebridad", "reality", "loteria", "novela", "chisme")
+
+
+def relevance_score(title: str, category: str) -> int:
+    """Puntaje reproducible de titulares; no representa hechos contrastados ni vistas."""
+    s = norm_text(title)
+    matches = sum(any(word in s for word in group) for group in RELEVANT_TOPICS)
+    score = (5 if matches else 0) + 2 * max(0, matches - 1)
+    if any(word in s for word in LOW_PRIORITY_TOPICS):
+        score -= 8
+    return max(0, score)
+
+
 def sync(db: dict, feeds: list, now: datetime, fixture=None) -> tuple[dict, dict]:
     now = now.astimezone(TZ)
     known = {x.get("id") for x in db.get("news", [])}
@@ -153,14 +177,17 @@ def sync(db: dict, feeds: list, now: datetime, fixture=None) -> tuple[dict, dict
             for row in parsed:
                 item = safe_article(row, category, now, "news.google.com" in url)
                 if item:
-                    candidates.append((row[2].timestamp(), item))
+                    score = relevance_score(item["title"], item["category"])
+                    if score >= 5:
+                        item["relevanceScore"] = score
+                        candidates.append((score, row[2].timestamp(), item))
         except (ValueError, OSError, ET.ParseError, UnicodeError, TimeoutError) as e:
             failures.append(f"{name}: {e}")
     if not ok_sources:
         raise RuntimeError("Ninguna fuente RSS respondió: NO cambiar la página pública. " + " | ".join(failures))
     counts = {k: 0 for k in PER_CATEGORY}
     added = []
-    for _, item in sorted(candidates, key=lambda x: x[0], reverse=True):
+    for _, _, item in sorted(candidates, key=lambda x: (x[0], x[1]), reverse=True):
         cat = item["category"]
         title_norm = norm_text(item["title"])
         if len(added) >= MAX_ITEMS_PER_RUN or counts.get(cat, 0) >= PER_CATEGORY.get(cat, 1):
