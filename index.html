@@ -81,6 +81,55 @@
 .news-preview{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;max-height:3.15em}
 .news-actions{margin-bottom:0!important}
 .news-more,.explain{display:none!important}
+
+/* ORBIUNO: fuente real como miniatura; la miniatura NO representa el acontecimiento. */
+.card.compact-card{display:grid;grid-template-columns:132px minmax(0,1fr);align-items:stretch}
+.compact-card .visual-frame{min-height:170px;background:#eaf0f8;display:grid;place-items:center;overflow:hidden}
+.compact-card .source-thumbnail{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:14px}
+.compact-card .source-thumbnail img{width:68px;height:68px;object-fit:contain}
+.compact-card .source-thumbnail-name{max-width:110px;font-size:11px;line-height:1.24;color:#173c7a;font-weight:750;overflow-wrap:anywhere}
+.compact-card .news-photo{width:100%;height:100%}
+.compact-card .news-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto}
+.compact-card .news-photo figcaption{display:none}
+.compact-card .news-body{min-width:0;padding:12px 15px!important;display:flex;flex-direction:column;justify-content:center}
+.compact-card .news-meta{margin:0 0 5px}
+.compact-card .news-chip{font-size:10px;padding:3px 7px;background:#eef3fc;border-radius:5px}
+.compact-card .news-meta time{font-size:10px}
+.compact-card .news-body h3{font-size:16px;line-height:1.19;letter-spacing:-.2px;margin:0 0 7px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.compact-card .news-preview{font-size:12px;line-height:1.32;margin:0 0 8px;max-height:2.65em}
+.compact-card .news-actions{margin:0;gap:6px;align-items:center}
+.compact-card .listen-btn,.compact-card .stop-btn{min-width:34px;min-height:32px;padding:4px 8px;border-radius:7px;font-size:14px}
+.compact-card .news-actions .source{font-size:11px;min-height:32px;padding:5px 8px;border-color:#d5e0f1;background:#f6f9fe}
+.compact-card .listen-label{font-size:11px}
+@media(max-width:720px){
+ .top-inner{min-height:53px!important}
+ .top nav{display:none}
+ .brand small{display:none}
+ .mark-text{width:32px!important;height:32px!important}
+ .hero{padding:8px 0!important}
+ .hero h2{font-size:19px!important}
+ .main{padding-top:12px}
+ .toolbar{grid-template-columns:1fr 140px!important;gap:6px;margin-bottom:8px}
+ .search,.select{padding:9px 8px;border-radius:8px;font-size:12px}
+ .filters{display:none}
+ .count{display:none}
+ .section-label{font-size:16px;margin:9px 0 10px}
+ .cards{grid-template-columns:1fr;gap:8px}
+ .card.compact-card{grid-template-columns:106px minmax(0,1fr);min-height:152px;border-radius:12px;box-shadow:0 2px 12px #0e25540a}
+ .compact-card .visual-frame{min-height:152px}
+ .compact-card .source-thumbnail{padding:8px;gap:8px}
+ .compact-card .source-thumbnail img{width:60px;height:60px}
+ .compact-card .source-thumbnail-name{max-width:94px;font-size:9.5px}
+ .compact-card .news-body{padding:9px 10px!important}
+ .compact-card .news-meta{margin-bottom:3px}
+ .compact-card .news-meta time{display:none}
+ .compact-card .news-chip{font-size:9px;padding:2px 5px}
+ .compact-card .news-body h3{font-size:13.5px;line-height:1.16;margin-bottom:4px;-webkit-line-clamp:3}
+ .compact-card .news-preview{font-size:11.3px;line-height:1.22;max-height:2.46em;margin-bottom:5px}
+ .compact-card .listen-btn,.compact-card .stop-btn{min-width:31px;min-height:30px;font-size:13px}
+ .compact-card .news-actions .source{min-height:30px;font-size:10.5px}
+ .compact-card .listen-label{display:none}
+}
 </style>
 </head><body>
 <header class="top" id="inicio"><div class="wrap top-inner"><a class="brand" href="#inicio"><span class="mark-text" aria-hidden="true">OU</span><span><h1>ORBI<span>UNO</span></h1><small>COLOMBIA AL DÍA · NOTICIAS</small></span></a><nav><a href="#noticias">Noticias</a><a href="#archivo">Historial</a><a href="#fuentes">Fuentes</a></nav></div></header>
@@ -109,20 +158,33 @@ const editorialImage=x=>{
  return '<figure class="news-photo"><img src="'+esc(url)+'" alt="'+esc(x.imageAlt||x.title)+'" loading="lazy" width="1080" height="600">'
   +'<figcaption>Imagen: <a href="'+esc(x.imageSourceUrl)+'" target="_blank" rel="noopener noreferrer">'+esc(x.imageCredit)+'</a> · '+esc(x.imageLicense)+'</figcaption></figure>';
 };
+const sourceVisualHTML=x=>{
+ const approved=editorialImage(x);
+ if(approved)return '<div class="visual-frame">'+approved+'</div>';
+ const source=Array.isArray(x.sources)?x.sources.find(s=>String(s.url||'').startsWith('https://')):null;
+ if(!source)return '<div class="visual-frame"></div>';
+ let host='';
+ try{host=new URL(source.url).hostname.toLowerCase();}catch(error){return '<div class="visual-frame"></div>';}
+ if(!/^[a-z0-9.-]+$/.test(host))return '<div class="visual-frame"></div>';
+ const icon='https://www.google.com/s2/favicons?domain='+encodeURIComponent(host)+'&sz=128';
+ return '<div class="visual-frame"><div class="source-thumbnail">'
+  +'<img src="'+esc(icon)+'" alt="Icono del sitio de '+esc(source.name)+'; no es fotografía del hecho" width="64" height="64" loading="lazy">'
+  +'<span class="source-thumbnail-name">'+esc(source.name)+'</span>'
+  +'</div></div>';
+};
 const cardHTML=x=>{
  const isTop=x.verification==='editorial_verified';
-
  const sources=Array.isArray(x.sources)?x.sources.filter(s=>String(s.url||'').startsWith('https://')):[];
  const main=sources[0];
- const mainLink=main?'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(main.url)+'">Ver fuente: '+esc(main.name)+'</a>':'';
- const tag=isTop?'Top 10 · '+esc(x.category):'En seguimiento · '+esc(x.category);
- return '<article id="noticia-'+esc(x.id)+'" class="card">'
-  +editorialImage(x)
+ const mainLink=main?'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(main.url)+'" title="Abrir fuente original: '+esc(main.name)+'">Fuente ↗</a>':'';
+ const tag=esc(x.category||'Noticias');
+ return '<article id="noticia-'+esc(x.id)+'" class="card compact-card">'
+  +sourceVisualHTML(x)
   +'<div class="news-body"><div class="news-meta"><span class="news-chip">'+tag+'</span><time datetime="'+esc(x.date)+'">'+esc(fmt(x.date))+'</time></div>'
   +'<h3>'+esc(x.title)+'</h3>'
   +'<p class="news-preview">'+esc(x.executiveSummary||x.summary||'')+'</p>'
-  +'<div class="news-actions"><button class="listen-btn" type="button" data-tts-action="toggle" data-tts-id="'+esc(x.id)+'" aria-label="Escuchar resumen de esta noticia" aria-pressed="false">▶ Escuchar resumen</button>'
-  +'<button class="stop-btn" type="button" data-tts-action="stop" data-tts-id="'+esc(x.id)+'" aria-label="Detener la lectura de esta noticia" hidden>■ Detener</button>'
+  +'<div class="news-actions"><button class="listen-btn" type="button" data-tts-action="toggle" data-tts-id="'+esc(x.id)+'" aria-label="Escuchar resumen" aria-pressed="false" title="Escuchar resumen">▶</button>'
+  +'<button class="stop-btn" type="button" data-tts-action="stop" data-tts-id="'+esc(x.id)+'" aria-label="Detener" title="Detener" hidden>■</button>'
   +mainLink+'</div></div></article>';
 };
 const render=()=>{
@@ -155,7 +217,7 @@ let speakingId=null, speakingUtterance=null, speechPaused=false;
 const updateSpeechControls=()=>{
  document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
   const current=speakingId===btn.dataset.ttsId && !!speakingUtterance;
-  btn.textContent=current?(speechPaused?'▶ Reanudar':'Ⅱ Pausar'):'▶ Escuchar resumen';
+  btn.textContent=current?(speechPaused?'▶':'Ⅱ'):'▶';
   btn.setAttribute('aria-label',(current?(speechPaused?'Reanudar':'Pausar'):'Escuchar')+' resumen de esta noticia');
   btn.setAttribute('aria-pressed',current && !speechPaused?'true':'false');
   btn.disabled=!canSpeak;
