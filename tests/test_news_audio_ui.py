@@ -93,6 +93,10 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("voiceschanged",self.page)
         self.assertIn("utterance.voice=voice",self.page)
         self.assertIn("restartCurrentSentence()",self.page)
+        self.assertIn('id="tone-select"',self.page)
+        self.assertIn("tonePitches={dulce:1.1,juvenil:1.18,natural:1}",self.page)
+        self.assertIn("utterance.pitch=tonePitches[selectedTone]",self.page)
+        self.assertIn("window.localStorage.setItem('orbiuno-tone'",self.page)
 
     def test_full_article_requires_source_rights_and_translation(self):
         from copy import deepcopy
