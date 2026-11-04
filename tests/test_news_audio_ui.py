@@ -36,6 +36,13 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("selectedDate==='today'?x.date===db.editionDate&&x.verification==='editorial_verified'",self.page)
         self.assertIn("Historial completo",self.page)
 
+    def test_mobile_cards_are_horizontal_and_dense(self):
+        self.assertIn("grid-template-columns:106px minmax(0,1fr)",self.page)
+        self.assertIn("class=\"card compact-card\"",self.out)
+        self.assertIn("class=\"visual-frame\"",self.out)
+        self.assertIn("www.google.com/s2/favicons?domain=",self.out)
+        self.assertIn("source-thumbnail-name",self.out)
+
     def test_source_urls_and_images_are_protected(self):
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
         for n in self.data["news"]:
