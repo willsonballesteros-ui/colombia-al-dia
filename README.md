@@ -35,4 +35,13 @@
 
 No incluir contraseñas/tokens en GitHub. No activar cuotas de pago sin consentimiento explícito.
 
+## Cuatro mejoras técnicas aprobadas
+
+- **Redacción ampliada original:** `scripts/generate_full_reports.py` y workflow manual `generar-reportajes-extendidos.yml` (opt-in, puede facturar API). Los textos generados quedan como borradores hasta revisión.
+- **Respaldo audiovisual local:** `scripts/assemble_reel.py` + `scripts/prepare_presenter_voice.py` (Edge-TTS opcional con derechos de imagen, consentimiento y términos comerciales verificados; no simula lip-sync).
+- **Deportes 12:00:** fuentes de Selección, Champions, F1 y colombianos; `publicationReady=false` si no hay una o dos noticias deportivas verificadas.
+- **Instagram→web→audio:** UTM diferenciados para bio, historia, caption y comentario; `index.html` emite `landing_view`, `audio_play` y finalización. `functions/api/audio-event.js` registra en Cloudflare Analytics Engine **solamente si el binding `ANALYTICS_ENGINE` está configurado**.
+
+**Guía de implementación y pendientes:** [IMPLEMENTACION_APROBADA_2026-11-04.md](IMPLEMENTACION_APROBADA_2026-11-04.md).
+
 Ver política exacta en [EDITORIAL.md](EDITORIAL.md).
