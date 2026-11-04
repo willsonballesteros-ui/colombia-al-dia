@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c1d2c69c01eca3cb",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IA on device: qué es y por qué esta tecnología mejora la privacidad de los celulares",
+      "summary": "Titular difundido por La Nación a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Nación · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWHZCRWoydTdIYWdaTFB5ekZrdVFMdkczeTJ0WVZCbUZBVnBMRUpndkg5eXJxcUIyYU9ER0ZaN2tlNklnWXRnaEI4dWR3UC1yU0ZaWDlXU1FsM3g3SWdiOGYwN0tMMGxRSWU2SlBuSXpMZWlpdmtfbVJTQXdTWTNhUG9CUmxOUF9NWjEwR2JtUm0wN3JjUzNpMmxXalN1aUxtQlktdlBHYnduZzJNaEdIclBLT1lxU1RRcmFpWG0xdnUtTHRRbXB0WHlQZEdmdG9y?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:11-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f314332d415c5ad1",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Apple advierte en su informe a la SEC sobre riesgos de que sistemas de inteligencia artificial actúen sin autorización",
+      "summary": "Titular difundido por Ñanduti a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Ñanduti · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTNYZjBFNWZYMEhyUlVjbUU0dFBzbm4xT3JFTUVIUFNPQ3RETFVUZVppR2FlN0hIdi1HSHUxVzZNRkgwWXVFMVE1ZFREcDhEVkNnc3poTWtTZ05HbUc0NnZuRWFUeXZoN24zSjZwNDhlTkFrelBybHV2T25mWFVUMVRQQWcxQWM3c3o5d0VUaXozZ3JXWEhLb2p2aHlkbUwxM01qXzNjbXRFY1E5QkNzNHpNa3RFREdxVzVKYXZuOV84UF9YUThNcERXRmJFUVRyNlBlNFV1anM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T04:45-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-01d9687cba3d437e",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -2670,8 +2708,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T07:13-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T07:13-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T07:14-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T07:14-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
