@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-e684dffc43774636",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Una inteligencia artificial anda suelta",
+      "summary": "Titular difundido por La Tribuna de Talavera a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Tribuna de Talavera · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPU2FiejhyUUhpdkozVTNBVnVkT0l3NDNzdTVnalhwcEM1bHI5bmRpQWpkVk5BN2VhdEhyQkVNT192c1MzWldEc3BGXzdTd05NdEVDMDNNTDQ0Z29laUNPYVhPNVB3ZmhVNEt5bGZqbUpvZEMwMnptdGk2QTVhX3dNQV9YOVVzdW9FMTY1TmxvVms0RFFfZnNwR1lxTGVKdzVJYm45Z0ktdVQ0dDltUXFLTlFoZzg2U0NPR3pfamJLMXM3emNl?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T23:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-d15c46cf69bb5f2e",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Adif recurrirá a la inteligencia artificial y a un doble controlador humano tras la tragedia de Urda (Toledo)",
+      "summary": "Titular difundido por heraldo.es a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "heraldo.es · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOTWhubzc3M1BBNnlyTVVXYkx5NzFUYy1fVjJLU0pSZkhWOTlmcFo0TUUwQVQzcWd3V1Y1UnBucHpkRHBvRkx5cUYzdTRjOXhtQ09tR1E2NlZOMXRjVlp4RklBbUFwY1FocXJJVmEycTI2dDJNb0Vtd3R4SWdQbVAyc2RTRGdyOXpHWFpuZy03TGEyNWs5SnVJSTktTjBxN2E2LTRQeHpfblFFNlFGdldHY0ROeHlrNGJ3eWpPUW5kZjR5YzZHVzRMZDJaUDA2V1V1TnYyVjdqcWpnV1RzOFEwZUR6UU5xRnU1S1ZWMTRNUVI1ZlF6?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T23:00-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-785a2096eab94dbd",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
