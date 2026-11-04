@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Colombia al Día: carrusel sobrio, 12 láminas, SIN avatares ni dibujos.
+"""ORBIUNO: 11 láminas (portada + 10), lectura en ~3 segundos.
 
-1 portada + 10 noticias + 1 cierre. Usa fotos reales sólo si el registro
-editorial demuestra crédito, fuente, licencia y derechos verificados.
-En ausencia de estos requisitos, láminas 100% tipográficas.
+Nunca inventa imágenes de los hechos: foto con licencia y crédito o
+sección visual tipográfica de la fuente claramente identificada.
+Un Reel hablado debe generarse por el pipeline audiovisual independiente.
 """
 import json
 from pathlib import Path
@@ -11,185 +11,116 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from prepare_site import image_verified
 
 W, H = 1080, 1350
-NAVY = "#0C2966"
-INK = "#1F2A40"
-WHITE = "#FFFFFF"
-CREAM = "#F8F9FC"
-GOLD = "#E7BF65"
-MUTED = "#546178"
-FONT_DIR = "/usr/share/fonts/truetype/dejavu"
+NAVY, INK, PAPER, GOLD, MUTED = "#081D49", "#1E293C", "#FBFCFE", "#E3B45C", "#59677B"
+ROOT = Path(__file__).resolve().parents[1]
+FONTS = Path("/usr/share/fonts/truetype/dejavu")
 
 
 def font(size, bold=False):
-    name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
-    return ImageFont.truetype(str(Path(FONT_DIR) / name), size)
+    return ImageFont.truetype(str(FONTS / ("DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf")), size)
 
 
-def lines(draw, content, face, max_width, limit):
-    words = str(content or "").split()
-    result, current = [], ""
-    for word in words:
-        next_line = (current + " " + word).strip()
-        if draw.textbbox((0, 0), next_line, font=face)[2] <= max_width:
-            current = next_line
+def fit_lines(d, text, face, width, limit):
+    out, current = [], ""
+    for word in str(text or "").split():
+        trial = (current + " " + word).strip()
+        if d.textbbox((0, 0), trial, font=face)[2] <= width:
+            current = trial
         else:
-            if current:
-                result.append(current)
+            if current: out.append(current)
             current = word
-    if current:
-        result.append(current)
-    if len(result) > limit:
-        result = result[:limit]
-        while result[-1] and draw.textbbox((0, 0), result[-1] + "…", font=face)[2] > max_width:
-            result[-1] = result[-1][:-1]
-        result[-1] += "…"
-    return result
+    if current: out.append(current)
+    if len(out) > limit:
+        out = out[:limit]
+        while out[-1] and d.textbbox((0, 0), out[-1]+"…", font=face)[2] > width:
+            out[-1] = out[-1][:-1]
+        out[-1] += "…"
+    return out
 
 
-def paragraph(d, text, x, y, face, color, width=940, max_lines=4, gap=10):
-    for line in lines(d, text, face, width, max_lines):
+def paragraph(d, text, x, y, face, color, width=930, max_lines=4, gap=9):
+    for line in fit_lines(d, text, face, width, max_lines):
         d.text((x, y), line, font=face, fill=color)
         y += face.size + gap
     return y
 
 
-def base(day, n=None, category=None):
-    im = Image.new("RGB", (W, H), CREAM)
+def bg():
+    im = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(im)
-    d.rectangle((0, 0, W, 218), fill=NAVY)
-    d.rectangle((0, 0, W, 7), fill=GOLD)
-    d.text((58, 43), "COLOMBIA AL DÍA", font=font(57, True), fill=WHITE)
-    d.text((61, 136), "COLOMBIA  ·  MUNDO  ·  TECNOLOGÍA", font=font(22, True), fill=GOLD)
-    d.text((800, 185), day[8:10]+"/"+day[5:7]+"/"+day[:4], font=font(19), fill=WHITE)
-    if n is not None:
-        d.text((62, 250), f"NOTICIA {n:02d} / 10", font=font(24, True), fill=NAVY)
-        paragraph(d, category or "", 700, 250, font(22), MUTED, 330, 1)
+    d.rectangle((0, 0, W, 180), fill=NAVY)
+    d.rectangle((0, 0, W, 10), fill=GOLD)
+    d.text((66, 30), "ORBIUNO", font=font(66, True), fill="white")
+    d.text((70, 122), "COLOMBIA AL DÍA  ·  NOTICIAS", font=font(22, True), fill=GOLD)
     return im
 
 
-def verified_photo(item, root):
-    if not image_verified(item):
-        return None
-    # No descargar ni hotlinkear a la prensa sin comprobación documental.
-    # Las fotos oficiales autorizadas deben existir ya en el repositorio.
-    url = str(item["imageUrl"])
-    if not url.startswith("./media/"):
-        return None
-    path = root / url[2:]
-    if path.is_file() and path.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp"):
-        return path
-    return None
+def photo_path(note):
+    if not image_verified(note): return None
+    url = str(note["imageUrl"])
+    if not url.startswith("./media/"): return None
+    path = ROOT / url[2:]
+    return path if path.is_file() and path.suffix.lower() in (".png",".jpg",".jpeg",".webp") else None
 
 
-def news_card(item, index, day, root, output):
-    im = base(day, index, item["category"])
+def news_card(note, i, day, output):
+    im = bg()
     d = ImageDraw.Draw(im)
-    title_end = paragraph(d, item["title"], 63, 322, font(46, True), INK, 952, 4, 14)
-    d.line((64, 580, 1015, 580), fill="#CFD8E4", width=3)
-    picture = verified_photo(item, root)
+    d.text((70, 219), f"{i:02d} / 10     {note['category'].upper()}", font=font(24, True), fill=MUTED)
+    picture = photo_path(note)
     if picture:
-        with Image.open(picture) as photo:
-            fitted = ImageOps.fit(photo.convert("RGB"), (945, 243), method=Image.Resampling.LANCZOS)
-            im.paste(fitted, (67, 606))
+        with Image.open(picture) as src:
+            im.paste(ImageOps.fit(src.convert("RGB"), (946, 340), method=Image.Resampling.LANCZOS), (66, 284))
         d = ImageDraw.Draw(im)
-        d.text((70, 862), "Foto: " + str(item["imageCredit"])[:55], font=font(17), fill=MUTED)
-        sections = [
-            (888, "QUÉ PASÓ", item.get("summary", ""), 2),
-            (1011, "POR QUÉ IMPORTA", item.get("why", ""), 2),
-            (1136, "QUÉ SIGUE", item.get("next", ""), 1),
-        ]
-        desc_size = 20
+        paragraph(d, "FOTO: "+str(note["imageCredit"]), 70, 632, font(17), MUTED, 900, 1, 0)
     else:
-        sections = [
-            (625, "QUÉ PASÓ", item.get("summary", ""), 4),
-            (818, "POR QUÉ IMPORTA", item.get("why", ""), 4),
-            (1008, "QUÉ SIGUE", item.get("next", ""), 3),
-        ]
-        desc_size = 26
-    for start, heading, body, count in sections:
-        d.text((67, start), heading, font=font(23, True), fill=NAVY)
-        paragraph(d, body, 67, start+37, font(desc_size), INK, 943, count, 8)
-    d.rectangle((0, 1268, W, H), fill=NAVY)
-    main = item["sources"][0]
-    source_name = str(main["name"])
-    source_text = "FUENTE: " + source_name
-    paragraph(d, source_text, 60, 1282, font(20, True), WHITE, 955, 1, 0)
-    d.text((63, 1319), "Fuentes y enlaces completos en colombia-al-dia.pages.dev", font=font(16), fill=GOLD)
+        # Identificación tipográfica de procedencia, NO logotipo oficial ni
+        # fotografía sintética; se deja claro qué medio reportó la noticia.
+        d.rounded_rectangle((66, 282, 1014, 622), radius=18, fill="#E8EFF8")
+        d.text((102, 333), "INFORMACIÓN REPORTADA POR", font=font(24, True), fill=MUTED)
+        paragraph(d, note["sources"][0]["name"], 101, 411, font(54, True), NAVY, 866, 3, 16)
+    end = paragraph(d, note["title"], 72, 704, font(50, True), INK, 925, 4, 13)
+    d.line((74, 973, 1008, 973), fill="#DCE4EE", width=2)
+    paragraph(d, note.get("executiveSummary") or note.get("summary") or "", 74, 1003,
+              font(30), INK, 930, 3, 13)
+    d.rectangle((0, 1244, W, H), fill=NAVY)
+    paragraph(d, "FUENTE: "+str(note["sources"][0]["name"]), 65, 1261, font(21, True), "white", 950, 1, 0)
+    d.text((65, 1303), "Fuente original: colombia-al-dia.pages.dev", font=font(18), fill=GOLD)
     im.save(output, optimize=True)
 
 
-def cover(day, out):
-    im = base(day)
+def cover(day, output):
+    im = bg()
     d = ImageDraw.Draw(im)
-    d.text((66, 333), "10 NOTICIAS", font=font(84, True), fill=NAVY)
-    d.text((69, 465), "EN UN SOLO LUGAR", font=font(44, True), fill=INK)
-    paragraph(d, "Los hechos esenciales de Colombia y el mundo, explicados sin rodeos.",
-              70, 605, font(38), INK, 910, 4, 16)
-    d.line((70, 830, 1010, 830), fill=GOLD, width=5)
-    paragraph(d, "¿Cuál de estas noticias te impacta más?",
-              70, 886, font(39, True), NAVY, 930, 3, 18)
-    d.text((73, 1138), "Desliza para conocer los hechos y sus fuentes.", font=font(24), fill=MUTED)
-    im.save(out, optimize=True)
-
-
-def closing(day, out):
-    im = base(day)
-    d = ImageDraw.Draw(im)
-    d.text((70, 355), "INFORMACIÓN", font=font(66, True), fill=NAVY)
-    d.text((70, 452), "CON FUENTES.", font=font(66, True), fill=NAVY)
-    paragraph(d, "Consulta los enlaces originales y el detalle de cada noticia.",
-              72, 640, font(35), INK, 915, 4, 15)
-    d.line((71, 845, 1009, 845), fill=GOLD, width=5)
-    d.text((74, 905), "ENLACE EN LA BIOGRAFÍA", font=font(35, True), fill=NAVY)
-    d.text((74, 983), "colombia-al-dia.pages.dev", font=font(31), fill=INK)
-    d.text((74, 1087), "@resumen.noticias", font=font(26), fill=MUTED)
-    d.text((74, 1236), "¿Qué tema quieres que sigamos?", font=font(24, True), fill=NAVY)
-    im.save(out, optimize=True)
+    paragraph(d, "10 NOTICIAS", 69, 343, font(90, True), NAVY, 930, 2, 12)
+    paragraph(d, "en menos tiempo.", 72, 492, font(50, True), INK, 920, 2, 12)
+    d.line((73, 672, 1006, 672), fill=GOLD, width=5)
+    paragraph(d, "Colombia, economía, inteligencia artificial y mundo.", 74, 727, font(35), INK, 915, 3, 16)
+    paragraph(d, "Desliza y consulta las fuentes originales.", 74, 1084, font(30, True), NAVY, 920, 2, 14)
+    d.text((74, 1249), day[8:10]+"/"+day[5:7]+"/"+day[:4]+"  ·  @resumen.noticias",
+           font=font(24), fill=MUTED)
+    im.save(output, optimize=True)
 
 
 def main():
-    root = Path(__file__).resolve().parents[1]
-    data = json.loads((root/"noticias.json").read_text(encoding="utf-8"))
-    day = data["editionDate"]
-    selected = sorted((n for n in data["news"]
-                      if n.get("date") == day and n.get("verification") == "editorial_verified"),
-                      key=lambda x: x.get("priority", 999))
-    if len(selected) != 10 or len({n["id"] for n in selected}) != 10:
-        raise RuntimeError("Se requieren diez noticias editoriales distintas")
-    for n in selected:
-        if not n.get("sources") or not n["sources"][0]["url"].startswith("https://"):
-            raise RuntimeError("Cada noticia requiere una URL original real")
-    out = root/"media"/day
-    out.mkdir(parents=True, exist_ok=True)
-    cover(day, out/"portada.png")
-    for i, item in enumerate(selected, 1):
-        news_card(item, i, day, root, out/f"top10-{i:02d}.png")
-    closing(day, out/"cierre.png")
-    # Historia informativa, sin iconografía inventada ni sticker falso.
-    story = Image.new("RGB", (1080,1920), NAVY)
-    d = ImageDraw.Draw(story)
-    d.rectangle((0, 0, 1080, 14), fill=GOLD)
-    d.text((76, 195), "COLOMBIA AL DÍA", font=font(70, True), fill=WHITE)
-    d.text((78, 425), "10 NOTICIAS DEL DÍA", font=font(52, True), fill=GOLD)
-    paragraph(d, "Datos, contexto y fuentes originales.",
-              79, 625, font(45), WHITE, 925, 4, 18)
-    d.text((80, 1280), "Consulta las fuentes en la web", font=font(36, True), fill=WHITE)
-    d.text((80, 1370), "colombia-al-dia.pages.dev", font=font(34), fill=GOLD)
-    story.save(out/"historia.png", optimize=True)
-    suggested = {
-        "date": day, "publishedStickers": False,
-        "note": "Sugerencias editoriales únicamente. Los stickers nativos deben añadirse y verificarse en la app de Instagram; Metricool no los inserta.",
-        "stories": [
-            {"sticker": "Enlace", "url": "https://colombia-al-dia.pages.dev/", "slide": "Portada"},
-            {"sticker": "Encuesta", "question": "¿Qué noticia te impactó más?", "options": ["Colombia", "Mundo"]},
-            {"sticker": "Cuestionario", "question": "¿Cuál tema seguimos?", "options": ["Economía", "IA", "Infraestructura"]},
-        ],
-    }
-    (out/"sugerencias-stickers.json").write_text(
-        json.dumps(suggested, ensure_ascii=False, indent=2)+"\n", encoding="utf-8"
-    )
-    print("Carrusel:", 12, "piezas (portada, 10 noticias, cierre); historia y guía de stickers.")
+    db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
+    day=db["editionDate"]
+    news=sorted((x for x in db["news"] if x.get("date")==day and
+                 x.get("verification")=="editorial_verified"),key=lambda x:x.get("priority",999))
+    if len(news)!=10 or len({x["id"] for x in news})!=10:
+        raise RuntimeError("Se requieren diez hechos distintos contrastados")
+    for x in news:
+        if not x.get("sources") or not x["sources"][0]["url"].startswith("https://"):
+            raise RuntimeError("Falta fuente original HTTPS")
+    out=ROOT/"media"/day
+    out.mkdir(parents=True,exist_ok=True)
+    cover(day,out/"portada.png")
+    for i,n in enumerate(news,1):
+        news_card(n,i,day,out/f"top10-{i:02d}.png")
+    # No se crea un video de una persona que no existe.
+    # La portada de imagen queda separada del Reel con presentadora real/renderizada.
+    print("11 láminas: portada + 10 noticias. Sin imágenes ficticias.")
 
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
