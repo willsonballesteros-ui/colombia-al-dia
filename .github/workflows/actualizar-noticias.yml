@@ -9,6 +9,7 @@ on:
     paths:
       - 'scripts/*.py'
       - 'tests/test_*.py'
+      - 'index.html'
       - '.github/workflows/actualizar-noticias.yml'
   schedule:
     # GitHub Actions usa UTC; Bogotá (UTC-5) no cambia por horario de verano.
