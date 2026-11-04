@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-6f08697e60a55507",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Tu profesión está en la lista? Estudio revela qué trabajos están más expuestos a la inteligencia artificial en Chile",
+      "summary": "Titular difundido por El Observatodo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Observatodo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdUkyOVp4c0lJeEJZaG9ER29fUE1SZGdZT0FlMGVGWjE5aUhfUW5qNGFFWGZPVHBQazFXWFFOOWZWQlYwWnlBYzhpS2Q5US1BenpsNXItdW1KcmZkb3loQXo2WHJwNFpoNHl6YkpmbXBQdDVmM0lZQTE2X2lXQmswX0x0djZvbExWVEVJQW5vWVF4YzY4LU41cG1rVlZ3UHdIdmVhTTZMdk50WjFlRXRzX0o0UWMtRVUwQ0VDMk5tRHpKQjhXSkJGTg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:46-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7c22d67e11fbce39",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "EP. 71 ¿Nos va a aniquilar la Inteligencia Artificial?",
+      "summary": "Titular difundido por El Economista a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Economista · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPek1VR2RNaFlTQ0h6TUhiSmJ0NDRsVk1lYjVjX0RHNjRiY0VIVmFLb3Qya000N2cyNU9QczVQZzM0RHBnWjFreFlIMjRaczY4VnFpTWliOGZsX3c4alJ3RG5QZUhMUFdSb0RhaUNWa1hnR01KR0ZwTkpoWksxVF8xNlprRENUSndNZG82azdvdjh6aWNNbFJub0F5N2xhRWs1Yy00UkxmT3HSAagBQVVfeXFMT3pNVUdkTWhZU0NIek1IYkpidDQ0bFZNZWI1Y19ERzY0YmNFSFZhS290MmtNNDdnMjVPUHM1UGczNERwZ1oxa3hZSDI0WnM2OFZxaU1pYjhmbF93OGpSd0RuUGVITFBXUm9EYWlDVmtYZ0dNSkdGcE5KaFpLMVRfMTZaa0RDVEp3TWRvNms3b3Y4emljTWxSbm9BeTdsYUVrNWMtNFJMZk9x?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T18:33-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-2ecbde8a6197fdc8",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -2841,8 +2879,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T07:16-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T07:16-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T07:17-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T07:17-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
