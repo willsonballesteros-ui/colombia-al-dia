@@ -177,6 +177,34 @@ def cover(day, news, out):
     image.save(out,optimize=True)
 
 
+def grouped_card(notes, first_number, group_index, total_groups, out):
+    """Carrusel compacto: 2 o 3 titulares contrastados por lámina."""
+    image=base()
+    d=ImageDraw.Draw(image)
+    d.text((65,182),f"EDICIÓN DE HOY  ·  BLOQUE {group_index} DE {total_groups}",font=font(29,True),fill=NAVY)
+    d.line((65,239,1015,239),fill=GOLD,width=5)
+    block_height=315 if len(notes)==3 else 445
+    for i,n in enumerate(notes):
+        y=265+i*(block_height+14)
+        d.rounded_rectangle((61,y,1018,y+block_height),radius=16,fill="#E8F0FA" if i%2==0 else "#F2F5FB")
+        d.rounded_rectangle((79,y+18,146,y+78),radius=9,fill=NAVY)
+        d.text((94,y+29),f"{first_number+i:02d}",font=font(27,True),fill=WHITE)
+        d.text((165,y+29),str(n.get("category","NOTICIAS")).upper()[:28],font=font(20,True),fill=BLUE)
+        title=str(n["title"])
+        y_title=y+94
+        title_ft=font_for_lines(d,title,890,2,preferred=36,minimum=26)
+        y_summary=paragraph(d,title,87,y_title,title_ft,INK,891,2,8)+12
+        summary=str(n.get("executiveSummary") or n.get("summary",""))
+        summary_ft=font_for_lines(d,summary,885,2,preferred=24,minimum=19)
+        paragraph(d,summary,87,y_summary,summary_ft,INK,885,2,7)
+        source=str(n["sources"][0]["name"])
+        d.text((88,y+block_height-48),"FUENTE: "+source[:58],font=font(18,True),fill=BLUE)
+    d.rectangle((0,1240,W,H),fill=NAVY)
+    d.text((65,1257),"🎧".replace("🎧","AUDIO")+" · ESCUCHA EL REPORTAJE EN LA WEB",font=font(23,True),fill=GOLD)
+    d.text((65,1300),"colombia-al-dia.pages.dev  ·  @resumen.noticias",font=font(19),fill=WHITE)
+    image.save(out,optimize=True)
+
+
 def combined_sports_card(a,b,out):
     """Lámina combinada para cubrir 10 noticias en 10 medios con portada."""
     image=base()
@@ -213,7 +241,21 @@ def main():
     for i,n in enumerate(news,1):
         news_card(n,i,day,out/f"top10-{i:02d}.png")
     combined_sports_card(news[8],news[9],out/"top10-09.png")
-    print("Generadas portada-resumen, 8 noticias individuales y 1 doble deportes.")
+    # Arte nuevo para publicaciones compactas: portada inicial y 4 bloques (3+3+2+2).
+    blocks=[news[:3],news[3:6],news[6:8],news[8:10]]
+    start=1
+    for i,group in enumerate(blocks,1):
+        grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png")
+        start+=len(group)
+    compact={
+       "editionDate":day,"format":"compact_carousel",
+       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,5)],
+       "newsCounts":[len(group) for group in blocks],
+       "fullAudioInImages":False,
+       "note":"Los PNG no incluyen audio. Para Instagram se debe producir un video narrado autorizado; la lectura completa ya existe en la web."
+    }
+    (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    print("Generadas portada-resumen, 4 laminas compactas (3+3+2+2) y recursos por noticia.")
 
 
 if __name__=="__main__":
