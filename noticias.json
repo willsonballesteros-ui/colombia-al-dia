@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-2f120c0687c7d510",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Elon Musk planea lanzar un millón de satélites para llevar la inteligencia artificial",
+      "summary": "Titular difundido por HSB Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "HSB Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSklUNDBQTzk1aUxqaEtqX3Q4bGFSY2wzZXUzbmZsbjFCMGRNQklvQzR1YW1uX3R3cEc1N3NoODdCTFpPNUNUQ19fanNFM1BSLXZ2azR2TVU2QzlzQjNpdTQ3U29ZSjV0QzB3amF2ZzBjUmFlZGZUMlRBa3dXQkwtZF9ZallWWkFnUmhwblAxb0V1YjVucVhkOWwtVF95Nm4zRk9DUUpxdmUxSzFGQmYxX1RHNTJ5UjhfZWc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:03-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ea93cc71b36dfa58",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Jóvenes peruanos acceden a mil becas con certificación internacional en inteligencia artificial y tecnología",
+      "summary": "Titular difundido por Radio Nacional a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio Nacional · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPZGFOUkdDZGd1RW5GeVJxX0lNUXoyUUhTdTZDZEg1YWJ5UjU1VU9KRkVBV3pZOGprYy05bHF0UjBnNGIxTExLVkFKRzd6dHdRTmdMWFdJYm43cWhZUEVwd29fVFFLWWR4Z19KbnVheDR4OEgtWTNENlpzN2hHOGZEbDlKTDBsYWdVZm9Cb281VmF3OTAtV2Z5V1RmTjE1OF9NbUNOeUVBbWg1RXdpWEl3cjk1cmU2U3BVbFkzQ21ZOS1rWGduRnVONkxrWUtWeGhOV0M4RmVRX0N6dWxudmtBdGEycVVqRmxNNGMzTXFVQVdRdWM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T21:28-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-5253a86b49a517b8",
       "date": "2026-11-04",
       "category": "Colombia",
@@ -2386,8 +2424,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:46-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:46-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:47-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:47-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
