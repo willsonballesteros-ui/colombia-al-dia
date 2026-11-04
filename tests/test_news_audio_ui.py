@@ -55,10 +55,35 @@ class NewsAudioUITests(unittest.TestCase):
                 self.assertNotIn('src="./media/'+n["date"]+'/visual-', rendered)
         self.assertIn('rel="noopener noreferrer"', rendered)
 
+    def test_full_narration_button_and_speed_control_are_compact(self):
+        current = [x for x in self.data["news"] if x.get("date") == self.data["editionDate"]
+                   and x.get("verification") == "editorial_verified"]
+        rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
+        self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
+        self.assertEqual(rendered.count('data-tts-full="true"'), 10)
+        self.assertEqual(rendered.count("Escuchar toda la noticia"), 20)
+        self.assertEqual(len(current), 10)
+        self.assertTrue(all(len(x.get("audioFullTextEs", "")) > len(x["executiveSummary"]) for x in current))
+        english = [x for x in current if x.get("sourceLanguage") == "en"]
+        self.assertGreater(len(english), 0)
+        self.assertEqual(rendered.count('class="tts-lang"'), len(english))
+        self.assertNotIn('<details class="news-more">', rendered)
+
+    def test_realtime_speed_switch_restarts_only_current_sentence(self):
+        self.assertIn("speechRates=[1,1.25,1.5,2]", self.page)
+        self.assertIn("utterance.rate=speechRates[speechRateIndex]", self.page)
+        self.assertIn("const changeSpeechRate=()=>", self.page)
+        self.assertIn("speechSession++", self.page)
+        self.assertIn("speechSegmentIndex", self.page)
+        self.assertIn("const buildSpeechSegments=news=>", self.page)
+        self.assertIn("const readSpeechSegment=()=>", self.page)
+        self.assertIn("utterance.lang='es-CO'", self.page)
+        self.assertIn("sourceLanguage==='en'", self.page)
+
     def test_speech_api_is_user_initiated_and_free(self):
         self.assertIn("new window.SpeechSynthesisUtterance", self.page)
         self.assertIn("window.speechSynthesis", self.page)
-        self.assertIn("synth.speak(utterance)", self.page)
+        self.assertIn("window.speechSynthesis.speak(utterance)", self.page)
         self.assertIn("synth.pause()", self.page)
         self.assertIn("synth.resume()", self.page)
         self.assertIn("window.speechSynthesis.cancel()", self.page)
