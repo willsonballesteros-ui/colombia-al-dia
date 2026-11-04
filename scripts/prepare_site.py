@@ -127,7 +127,7 @@ def article_html(n):
         label=label,
         tip=("Escuchar artículo íntegro de la redacción ORBIUNO" if authored
              else "Reproducir artículo íntegro de la fuente con licencia" if complete
-             else "Escuchar el resumen de ORBIUNO sin salir de la página"),
+             else "Escuchar narración original de ORBIUNO sin salir de la página"),
     )
     return (
         '<article id="noticia-{id}" class="card compact-card">'
