@@ -1,0 +1,70 @@
+name: Renderizar boletin narrado ORBIUNO sin avatar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render_narrated.py'
+      - '.github/workflows/generar-boletin.yml'
+  workflow_run:
+    workflows: ['Generar carrusel e historia ORBIUNO']
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: boletin-narrado-orbiuno
+  cancel-in-progress: false
+
+jobs:
+  narracion:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Descargar edición y material gráfico de main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar herramientas locales sin API pagada
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg espeak-ng libsndfile1
+          python -m pip install --disable-pip-version-check 'kokoro-onnx==0.6.1' soundfile 'misaki-fork[en]'
+      - name: Descargar modelo abierto Kokoro Apache-2.0
+        env:
+          BASE: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1
+        run: |
+          curl --fail --location --retry 3 --silent --show-error "$BASE/kokoro-v1.0.onnx" -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 --silent --show-error "$BASE/voices-v1.0.bin" -o /tmp/voices-v1.0.bin
+          test $(stat -c%s /tmp/kokoro-v1.0.onnx) -gt 1000000
+          test $(stat -c%s /tmp/voices-v1.0.bin) -gt 10000
+      - name: Narrar titular general y cada una de diez noticias
+        run: python scripts/render_narrated.py
+      - name: Validar formato final y publicar MP4 en el repositorio
+        run: |
+          DAY=$(TZ=America/Bogota date +%F)
+          VIDEO="media/$DAY/boletin-narrado.mp4"
+          META="media/$DAY/boletin-narrado.json"
+          test -s "$VIDEO"
+          test -s "$META"
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$VIDEO" | grep -qx '720,1280'
+          git add "$VIDEO" "$META"
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "ORBIUNO boletin narrado verificado $DAY (sin avatar)"
+            for i in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep $((i * 3))
+            done
+            exit 1
+          fi
