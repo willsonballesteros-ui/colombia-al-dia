@@ -65,7 +65,10 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertEqual(rendered.count('data-tts-action="toggle"'), 10)
         self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
         self.assertEqual(rendered.count('data-tts-full="false"'), 10)
-        self.assertEqual(rendered.count("Escuchar resumen"), 20)
+        self.assertEqual(rendered.count("Escuchar noticia"), 20)
+        for item in current:
+            self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 130)
+            self.assertLessEqual(len(item["audioFullTextEs"].split()), 250)
         self.assertEqual(rendered.count('data-tts-full="true"'), 0)
         self.assertEqual(rendered.count('class="source"'), 10)
         self.assertNotIn("Abrir para escuchar completo", rendered)
@@ -80,6 +83,8 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("speechSession++", self.page)
         self.assertIn("speechSegmentIndex", self.page)
         self.assertIn("const buildSpeechSegments=news=>", self.page)
+        self.assertIn("news.audioFullTextEs", self.page)
+        self.assertIn("listen-edition", self.page)
         self.assertIn("const readSpeechSegment=()=>", self.page)
         self.assertIn("utterance.lang='es-CO'", self.page)
         self.assertIn("hasAuthorizedFullArticle", self.page)
@@ -123,7 +128,7 @@ class NewsAudioUITests(unittest.TestCase):
         page = __import__("scripts.prepare_site",fromlist=["article_html"]).article_html(candidate)
         self.assertNotIn('data-tts-full="true"',page)
         self.assertIn('data-tts-full="false"', page)
-        self.assertIn('Escuchar resumen', page)
+        self.assertIn('Escuchar noticia', page)
         self.assertIn('Fuente ↗', page)
 
     def test_speech_api_is_user_initiated_and_free(self):
