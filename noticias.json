@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-40b093ab193e2e02",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Oracle refuerza su alianza con OpenAI y su apuesta por los agentes de IA mientras avanza hacia el pago por resultados",
+      "summary": "Titular difundido por Europa Press a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Europa Press · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdnIwenBfdm1maE9BVEFOZGI1NjJ6V2RYYWtnekZvVW9OZjdGbVJFb0E5RUh2bVJqWGVXckY0WXQxMmNRV3pxTkdLTTNPdk9qVHVfYnUwRGFoZzEtalRIeGNtZXRwa0NwVGVSYVU1UXQzaFRLU1dGckthdi1INXFUVGprR3NKemptTUdEaWFrRjl5aGJ1by1Qc2NMc0JDYzdkX2t3ZTRWUHVYQmVDRWZ1YU9ZSVdERTZJeVFlQlZpdzJ5OUJIbDhrQnpXX09MRkZMWllyM1N0bkFBSnVQWS1yOWdiUnNTT1BsTV80?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-34a7e3db6cc0d748",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nace la Alianza Iberoamericana de Inteligencia Artificial",
+      "summary": "Titular difundido por CriptoNoticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "CriptoNoticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUU9PbDJHbGhhSVZReHcwOGRiVmV5TVR3cnJCemd4X3h2cnZOeVR2TzBCNDd3OFo0Y0lZeWdjV0dzQVFfRnlIaEt6MGsydHQyUVZwWWV3WGZMbW9uaHdJYVlKVXNoMGJXNzMxOWp2cFpZQnduV1RCeW04dEFkanRnZ0podHN5alNCM3JlRzNRenlyaGJ3Y0dBN1hR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:53-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-623d6777ad64dca7",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
