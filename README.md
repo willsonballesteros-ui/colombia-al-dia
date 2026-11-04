@@ -8,7 +8,7 @@
 
 - **Portal implementado**: titulares, síntesis visibles en dos líneas, enlaces HTTPS a fuentes y Web Speech API con controles de escucha, pausa, reanudación y detención, sin servicios pagos.
 - **Edición**: diez noticias contrastadas en `noticias.json`. Los registros importados por RSS mantienen `verification=source_only` hasta su verificación editorial. Los textos públicos no muestran las secciones largas «Qué pasó», «Por qué importa», «Qué sigue».
-- **Material social**: `scripts/build_carousel.py` crea diez láminas de noticias (`top10-01.png`…`top10-10.png`) más un `portada.png` para Reel/preview. Instagram admite hasta 10 imágenes por carrusel; no subir 11.
+- **Material social**: `scripts/build_carousel.py` crea diez láminas de noticias (`top10-01.png`…`top10-10.png`) más un `portada.png` para Reel/preview. El flujo de publicación de Metricool se limitará a 10 imágenes por carrusel; reservar portada.png para Reel/Historia.
 - **Escena hablada**: preparada la canalización `scripts/assemble_reel.py` + `.github/workflows/reel-presentadora.yml`, pero requiere un **clip de presentadora generado y autorizado** para montar el Reel. No afirmar que ese video existe si no está en `media/`.
 - **Programación**: 08:00 / 12:00 / 18:00 Bogotá mediante tarea conectada; GitHub Actions realiza preparación a las 07:30 / 11:30 / 17:30 y renderiza las láminas al cambiar la edición. Verificar publicaciones en Metricool antes de confirmarlas.
 - **Límite comercial**: la API directa de Metricool para scripts GitHub Actions necesita acceso Advanced/Custom; este proyecto no tiene configurado token de API ni habilita compras. La conexión de Metricool a ChatGPT es distinta de esa API directa.
