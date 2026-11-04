@@ -2,9 +2,47 @@
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
   "editedAtBogota": "2026-11-04 18:29",
-  "siteVersion": "3.1-audio-ampliado",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-9bdc6a506ce55af1",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Venezuela suscribe la Declaración de Madrid sobre inteligencia artificial",
+      "summary": "Titular difundido por Globovisión a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Globovisión · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVm1iRnJKeG9qSHJEMjVvaXFPY3VOMWdISWlyN2hXbEY3ekZ0TGR1cDR3aHIzT1VOR1lTN25hQUV4WWQ5dERDWFZyOF90NHQwMTNRSWNZM3RNMUQzMHZNSGhQSXg2a29uVXEwUkt5WTc1SG1sQjNkd1N0eFQ1TXV1eFgxRHo1dFllZ25rck50aGZNUVpEdVpvLTg5UlhqSnM4UVZyZ0ZtZHo5WTRCSDFtUS04d2hGUURvTXc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T14:16-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3d3d59e0549146e2",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Netflix prueba AI Discover, una herramienta con inteligencia artificial para buscar contenidos según el est...",
+      "summary": "Titular difundido por Rosario3 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Rosario3 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPRkZ0dmdlenFDb0UxSzh3Y0g3MWQ0RUxxNHJsTmt6N21qNDdVRlU3NzAtR0xONHc0NFdPT2pPU2FHZmQyMWNLeGYxX01sa29mQTRLamNtUkVDWkxMeU4tVzN3TVMzdmpyUl9OQVEyRkwtX1JyYUF0NHZmRkgyTllFZlVla09BOS1EYW9SX0NSbFRmRGxwTjByVTVGQTBqZE5FSXVZdXdsbmlUakR4bC1pdlpIYXBlMm4yY1BWTDlWZ011ZTB0MkY0cXFDUmtvYVI5V0l6cEpra0dsTXhhYnd0SFI3WEFLNEZUc1VrMFF4U1ktZmIwel9yTzExVGtGaTdXY2VB0gGDAkFVX3lxTE9GRnR2Z2V6cUNvRTFLOHdjSDcxZDRFTHE0cmxOa3o3bWo0N1VGVTc3MC1HTE40dzQ0V09Pak9TYUdmZDIxY0t4ZjFfTWxrb2ZBNEtqY21SRUNaTEx5Ti1XM3dNUzN2anJSX05BUTJGTC1fUnJhQXQ0dmZGSDJOWUVmVWVrT0E5LURhb1JfQ1JsVGZEbHBOMHJVNUZBMGpkTkVJdVl1d2xuaVRqRHhsLWl2WkhhcGUybjJjUFZMOVZnTXVlMHQyRjRxcUNSa29hUjlXSXpwSmtrR2xNeGFid3RIUjdYQUs0RlRzVWswUXhTWS1mYjB6X3JPMTFUa0ZpN1djZUE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T14:11-05:00",
+      "relevanceScore": 5
+    },
     {
       "id": "rss-b3bc516f41cc1559",
       "date": "2026-11-04",
@@ -6458,8 +6496,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T18:26-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T18:26-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T18:30-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T18:30-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
