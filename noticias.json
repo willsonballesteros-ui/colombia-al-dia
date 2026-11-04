@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-798cdd0c00b9de22",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "GBM introduce servidor de IBM que acerca la inteligencia artificial a empresas costarricenses",
+      "summary": "Titular difundido por Periódico La República (Costa Rica) a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Periódico La República (Costa Rica) · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdHpPdlByaWdGMTF6Y0xrTnpteHdLVUdoN204Und4MkZrcFd5N1E5aXN6TnZ0NWxjZURFU2xSb0FkMktxVllIMU9WaEFkcVJiVVRVUWJpZ3lCYmRXbUJQSHlEX0VCWDRnTU41Z1prbGN3S01ZLUk4dzVtaXg2YUtxWFhlM2pMd21Ybk9nMGxYMWhENWJBS2FjZFVjNXhVMThCTVVJZVc2clNHSEptcE1jUUs1NHlQX3BqX1FUaE5pYw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-db1bacece5a93d13",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Pérez Iglesias: 'La inteligencia artificial y otras tecnologías digitales darán paso a un nuevo paradigma en la universidad' - Gobierno Vasco",
+      "summary": "Titular difundido por Euskadi.eus a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Euskadi.eus · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNYzA2bEp3WmtYSnNHMFhpZkZaTzg1a2dXLXZhbUNwT1NiQjZlNGRua2VkOWw0VnU4YTFwSmg5TkxvdGVhVTFzNjk3Qld0OUplRnpkYVU2N0xSUjNzZGVEcFFrUC1EWXhLM1cxMy0zS2dBRlljc3p4bUI4bWdRcGtGS1RKbThNN05vUTJxcThQZVBQSHpPbGR0Q1l2UUlMRC1lY3JjNjhUOUhfdDdkaUNBQ09nNFp6QXQ2N3JNanpqcDVkRDMtOWx0bDUzNnNyRmdxQ2EyNVpmR1NGQU9MaHBXY1IxWGEydXRkaUJ5U2xkX3hqX0w0?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:31-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-513678c6f3fd0745",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Hijo de Omar Peréz fue convocado a la Selección Colombia: esta sería la fecha de su debut",
+      "summary": "Titular difundido por Noticias RCN a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias RCN · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYm5TN0h5NllZOFJBeGlqaWF4Y2RXbmdlc3lYSzdUNE42MHVYT0FwZUplRzJkWThqV0FlYV84eEJXUWgwZDBYX21XazNoOFB5bkJYSEJ2VGlVQ1l0eFByV2tyaUszU0dEOENNVXRQajdCNkN2UDlDR2RhOXdicE5mLWoxUTJ1M2N3VnNjbXJxcjFkY09tMkg40gGXAUFVX3lxTE4zOGczY0FFa0pLSEhIM0tRYXdMX3FoUnJkZmRWNHBwd2FiUjVCUXlaX0VqSnphQ3pWa0ZkNDhxc1ZuMGZmRHRscTBBNmYxa3BJSWxtYURpVi1hRU5oUmN1Q1Y4OW5NYURUUEp0cGI1aGoxVmxRR2VjeklobDBvNXQ3bmdPbE16T1hXWDdxbGpycHR4MkVyRGM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T20:17-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-4e46b78939be162d",
       "date": "2026-11-04",
       "category": "Colombia",
@@ -2186,8 +2243,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:21-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:21-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:38-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:38-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
