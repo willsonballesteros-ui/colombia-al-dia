@@ -6,6 +6,25 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-fbce7d868a83b7b0",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Ministerio de Ciencia y Tecnología y Dassault Systèmes están promoviendo la cooperación para el desarrollo de la IA soberana en Vietnam.",
+      "summary": "Titular difundido por شبكة تواصل الإخبارية a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "شبكة تواصل الإخبارية · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBudDlTU1IxeE5CeF9jT2FQbktVSDlGQWczclVnaUVmblFKMDY5dlYxMmw3dzhHS185WjZIQ0psZXE5TUsxcTBUWHROby11Nk9RcndN?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:14-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-74b2b62fa639e5ca",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -4223,8 +4242,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T09:28-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T09:28-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T09:29-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:29-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
