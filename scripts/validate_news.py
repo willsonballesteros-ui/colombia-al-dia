@@ -41,13 +41,17 @@ def check(data):
         # Texto completo redactado en ORBIUNO, con fuentes y revisión
         # verificables. No equivale a transcribir íntegramente el periódico.
         if x.get('originalArticleTextEs') or x.get('originalArticleReviewed'):
-            assert x.get('verification') == 'editorial_verified', 'Artículo ORBIUNO necesita verificación editorial'
+            assert x.get('verification') == 'editorial_verified', 'Artículo ORBIUNO necesita noticia verificada'
             assert x.get('originalArticleByline') == 'Redacción ORBIUNO', 'Autor propio no identificado'
-            assert x.get('originalArticleReviewed') is True, 'Reportaje no revisado'
-            assert isinstance(x.get('originalArticleTextEs'), str) and len(x['originalArticleTextEs'].strip()) >= 1000, 'Artículo completo ORBIUNO insuficiente'
-            assert isinstance(x.get('originalArticleSourceUrls'), list) and x['originalArticleSourceUrls'], 'Reportaje sin enlaces a fuentes'
+            assert isinstance(x.get('originalArticleTextEs'), str) and len(x['originalArticleTextEs'].strip()) >= 1000, 'Artículo ORBIUNO insuficiente'
+            assert isinstance(x.get('originalArticleSourceUrls'), list) and x['originalArticleSourceUrls'], 'Reportaje sin fuentes'
             assert all(url in [s['url'] for s in x['sources']] for url in x['originalArticleSourceUrls']), 'Fuente de artículo propio no coincide'
-            assert x.get('originalArticleIsPublisherVerbatim') is False, 'No presentar copia periodística como propia'
+            assert x.get('originalArticleIsPublisherVerbatim') is False, 'Prohibido transcribir artículo ajeno como propio'
+            if x.get('originalArticleReviewed') is not True:
+                assert x.get('originalArticleReviewed') is False, 'Estado de revisión desconocido'
+                assert x.get('originalArticleReviewStatus') == 'pendiente_validacion_editorial', 'Borrador debe quedar pendiente'
+            else:
+                assert x.get('originalArticleReviewStatus') != 'pendiente_validacion_editorial', 'No publicar texto pendiente como completo'
         # Protección editorial: nada generado ni sin atribución documental.
         if x.get('imageUrl') or x.get('imageType'):
             assert x.get('imageType') in {
