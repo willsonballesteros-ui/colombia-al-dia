@@ -1,21 +1,22 @@
 {
   "editionDate": "2026-11-04",
   "brand": "ORBIUNO",
-  "editionSlot": "12m",
+  "editionSlot": "6pm",
   "verifiedSports": 2,
   "publicationReady": true,
   "blockers": [],
-  "utmCampaign": "edicion_20261104_12m",
+  "utmCampaign": "edicion_20261104_6pm",
   "links": {
-    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261104_12m",
-    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261104_12m",
-    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m",
-    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m"
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261104_6pm",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261104_6pm",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_6pm",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_6pm"
   },
-  "caption": "ORBIUNO | 04/11/2026\n\nDiez noticias de Colombia y el mundo, claras y directas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
-  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m",
+  "caption": "ORBIUNO | 04/11/2026\n\nEdición de la noche de Bogotá · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_6pm\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_6pm",
   "publicationVerified": false,
   "media": [
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/portada.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-01.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-02.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-03.png",
@@ -24,49 +25,48 @@
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-06.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-07.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-08.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-09.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-10.png"
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-09.png"
   ],
   "sourceLinks": [
     {
-      "title": "Demócratas recuperan Senado y Cámara en las elecciones de EE. UU.",
-      "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+      "title": "Carro bomba en Patía, Cauca: emergencia en la vía Panamericana",
+      "url": "https://caracol.com.co/2026/11/04/atentado-con-carro-bomba-causa-cierre-de-la-via-panamericana-en-patia-sur-del-cauca/"
     },
     {
-      "title": "Congreso aprueba la ley de sometimiento; falta la sanción presidencial",
-      "url": "https://www.elespectador.com/politica/ley-de-sometimiento-de-de-la-espriella-termina-tramite-en-congreso-y-va-a-sancion/"
+      "title": "Accidente de bus en Rosas, Cauca, deja dos muertos y diez heridos",
+      "url": "https://caracol.com.co/2026/11/04/accidente-de-bus-en-la-via-panamericana-deja-dos-muertos-y-diez-heridos-en-cauca/"
     },
     {
-      "title": "Reforma tributaria: estiman mayor carga para algunos salarios altos",
-      "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
+      "title": "Alejandro Ordóñez asume el Ministerio del Interior",
+      "url": "https://www.noticiascaracol.com/politica/alejandro-ordonez-se-posesiona-como-ministro-del-interior-y-viviane-morales-como-comisionada-de-paz-rg10"
     },
     {
-      "title": "PSG aplasta 6-0 al Villarreal y marca récord de goles en Champions",
-      "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+      "title": "Operativo de seguridad en Cúcuta: más de cien capturas",
+      "url": "https://www.elespectador.com/judicial/operativo-en-cucuta-deja-109-capturados-de-la-espriella-anuncia-nueva-estrategia-militar/"
     },
     {
-      "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
-      "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
+      "title": "Corea del Norte realiza nuevos ensayos de misiles",
+      "url": "https://www.reuters.com/world/asia-pacific/north-korea-test-fires-new-air-defence-missile-system-kcna-reports-2026-11-04/"
     },
     {
-      "title": "Nvidia impone a socios de nube nuevas condiciones vinculadas a China, según FT",
-      "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+      "title": "Ucrania informa 40 muertos tras ataque ruso a centro de ayuda",
+      "url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/"
     },
     {
-      "title": "Salario mínimo de 2027: propuestas van del 8 % al 38,5 %",
-      "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
+      "title": "Japón estudia exigir alertas anticipadas sobre vulnerabilidades",
+      "url": "https://www.reuters.com/legal/litigation/japan-seek-software-vulnerability-data-us-ai-firms-amid-cyberattack-surge-nikkei-2026-11-04/"
     },
     {
-      "title": "Champions hoy: Real Madrid y Liverpool juegan en la cuarta jornada",
-      "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+      "title": "Wall Street sube con fuerza y cae el petróleo tras las elecciones",
+      "url": "https://apnews.com/article/4d12764c0b3ce38ffde3077712811182"
     },
     {
-      "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
-      "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
+      "title": "Real Madrid gana 3-2 en Atenas por la Champions",
+      "url": "https://as.com/futbol/champions/clasificacion-de-fase-liga-de-la-champions-league-2026202-jornada-4-f202611-n/"
     },
     {
-      "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
-      "url": "https://efe.com/ciencia-y-tecnologia/2026-11-04/apple-riesgos-ia-autorizacion-anticiparse/"
+      "title": "Fenerbahçe sorprende al Liverpool: victoria 3-2",
+      "url": "https://caracol.com.co/resultados/futbol/champions/"
     }
   ],
   "note": "La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo."
