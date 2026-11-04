@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-55c09fbee097c2c2",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Apple comienza a probar su inteligencia artificial en China con modelos de Alibaba",
+      "summary": "Titular difundido por El Aragueño a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Aragueño · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONklMVmota0Q5enowY1hSRWE5MmE0SUhqajg3dklmcUZqcUNnWTc5T1FacTVNUkpRNFpRMGpoaHZ4Z3NnUzdmdWRYaFhuTXE1X2pXUExEOFFfWDhJTXRfQTZIRUtiUlZHaEdOd1lOZGd5cTZNV01sWUVxdDNaN21rWFJjM3M1UlFNdEZnSXIzckR3ZEg2WHFFRk5UZUQxajVvbHIydG00VlVOYmt0Smc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:42-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-23c05b8bdb4a54c3",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Industria latinoamericana adopta Inteligencia Artificial para enfrentar la crisis del agua",
+      "summary": "Titular difundido por Diario del Cauca a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario del Cauca · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbUZ3anFDWnoyQlBnMVhDQ3E2aU9KYWFyY3dfSFhoUkhHaEtBREpndEwxUTNoY0Qta21MUGdmUFVoMTJHaU1oMlhfU3h0QWV4M0o2S0NpVXNfMnRaWm9NVjIyNkV4S1d5anMtNElrWnIteWpWTkY4YUk1eTBQODJfVnYyQndCTTMyczYyX3BWbTlEbk02Yk0zV1pORm1KVkFsZHp4bVI3OEVrQjJqcUZwSDQ4QnViVmJDaXBmZm5MOF9saGNuOGhoVlE2cDdEZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:03-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-7e58b2668154fcad",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -3668,8 +3706,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:55-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:55-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:56-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:56-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
