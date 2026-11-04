@@ -1,10 +1,60 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
-  "editedAtBogota": "2026-11-04 05:55",
+  "editedAtBogota": "2026-11-04 13:13",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261104-mediodia-deportes-01",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Noticia verificada · Champions League",
+      "title": "PSG aplasta 6-0 al Villarreal y marca récord de goles en Champions",
+      "summary": "El Paris Saint-Germain venció 6-0 al Villarreal en la cuarta jornada de la Champions League. Reuters reportó que se convirtió en el equipo más rápido en anotar cuatro tantos en un partido de esta competición: lo logró en 16 minutos y dos segundos, según datos de Opta. UEFA confirma el resultado oficial.",
+      "why": "La goleada y el récord de anotación resaltan el rendimiento ofensivo del PSG en la fase de liga europea.",
+      "next": "Consultar el calendario y los siguientes resultados oficiales de la Champions antes de hacer balances definitivos.",
+      "executiveSummary": "El PSG goleó 6-0 al Villarreal y marcó cuatro goles en 16 minutos y dos segundos, un récord de Champions según Reuters y Opta.",
+      "sources": [
+        {
+          "name": "UEFA · 4 nov",
+          "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+        },
+        {
+          "name": "Reuters · 3 nov",
+          "url": "https://www.reuters.com/sports/soccer/paris-st-germain-set-champions-league-record-fastest-side-score-four-goals-2026-11-03/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sourcePublishedAtBogota": "2026-11-03T16:01-05:00",
+      "priority": 3.5,
+      "originalArticleReviewed": false,
+      "editorialNote": "Datos contrastados con UEFA (marcador) y Reuters (récord). No usar foto con derechos no comprobados."
+    },
+    {
+      "id": "20261104-mediodia-deportes-02",
+      "date": "2026-11-04",
+      "category": "Deportes",
+      "level": "Agenda verificada · Champions League",
+      "title": "Champions hoy: Real Madrid y Liverpool juegan en la cuarta jornada",
+      "summary": "La UEFA confirmó nueve partidos para este miércoles 4 de noviembre en la fase de liga de la Champions 2026/27. Entre los encuentros programados figuran AEK Atenas contra Real Madrid y Fenerbahçe contra Liverpool; también están Borussia Dortmund-Real Betis y Leipzig-Manchester City. Los resultados pueden cambiar durante la jornada.",
+      "why": "La cuarta jornada modifica el panorama competitivo de los equipos europeos antes de las siguientes fechas de la fase de liga.",
+      "next": "Seguir el marcador oficial de UEFA; no anunciar ganadores antes de la conclusión de cada partido.",
+      "executiveSummary": "La UEFA confirma nueve partidos de Champions hoy, entre ellos AEK-Real Madrid, Fenerbahçe-Liverpool y Leipzig-Manchester City.",
+      "sources": [
+        {
+          "name": "UEFA · calendario oficial",
+          "url": "https://es.uefa.com/uefachampionsleague/news/02a8-21767f6df81a-a97aaf2bf581-1000--champions-league-2026-27-calendario-fechas-y-horarios-de-los/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sourcePublishedAtBogota": "2026-11-04T08:00-05:00",
+      "priority": 6.5,
+      "originalArticleReviewed": false,
+      "editorialNote": "Agenda oficial de UEFA, no narrar los marcadores como resultados finales hasta confirmarlos."
+    },
     {
       "id": "rss-a15f31c3d56fcc47",
       "date": "2026-11-04",
@@ -3790,14 +3840,15 @@
           "url": "https://www.reuters.com/world/middle-east/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-near-strait-hormuz-2026-11-04/"
         }
       ],
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "priority": 7,
       "openingCue": "buques en Ormuz",
       "executiveSummary": "Irán afirmó que cuatro petroleros se incendiaron cerca de Ormuz. Reuters recogió la declaración sin verificación independiente.",
       "sourceLanguage": "en",
       "audioFullTextEs": "La Guardia Revolucionaria iraní afirmó que cuatro petroleros se incendiaron tras chocar con minas en una ruta próxima al estrecho de Ormuz y dijo haber retenido otros dos barcos. Reuters recogió la declaración; los detalles no estaban verificados de manera independiente. Ormuz es estratégico para el comercio energético mundial; cualquier incidente puede modificar riesgos de navegación y precios. Respecto a los próximos pasos: confirmar identidad de buques, eventuales víctimas y reportes independientes de autoridades marítimas.",
       "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
+      "audioIsFullPublisherArticle": false,
+      "editorialNote": "Sustituida para la edición deportiva del mediodía; no cuenta entre las diez noticias activas."
     },
     {
       "id": "20261104-editorial-08",
@@ -3838,14 +3889,15 @@
           "url": "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/"
         }
       ],
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "priority": 9,
       "openingCue": "ayuda a Israel",
       "executiveSummary": "Trump dijo que buscaría suspender la ayuda anual de EE. UU. a Israel después de 2026; no anunció una modificación formal.",
       "sourceLanguage": "en",
       "audioFullTextEs": "Donald Trump dijo que Estados Unidos dejaría de entregar alrededor de US$4.000 millones anuales en asistencia a Israel después de 2026, según Reuters. El acuerdo bilateral vigente cubre un periodo posterior y no se anunció un mecanismo formal de modificación. Un cambio efectivo en esa relación financiera tendría repercusiones diplomáticas y militares en Oriente Medio. Respecto a los próximos pasos: comprobar las decisiones legales y presupuestales y la posición oficial israelí.",
       "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
-      "audioIsFullPublisherArticle": false
+      "audioIsFullPublisherArticle": false,
+      "editorialNote": "Sustituida para la edición deportiva del mediodía; no cuenta entre las diez noticias activas."
     },
     {
       "id": "20261104-editorial-10",
@@ -5063,7 +5115,7 @@
   "lastNewSourceAtBogota": "2026-11-04T12:24-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
+  "editorialNote": "Edición especial de mediodía: incluye dos deportes confirmados con UEFA/Reuters; reemplaza dos noticias de la mañana sin eliminar su historial. La programación no equivale a publicación Instagram.",
   "editorialFormat": "Titular, resumen ejecutivo de hasta dos líneas visibles y fuente; audio TTS accesible en la web.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
