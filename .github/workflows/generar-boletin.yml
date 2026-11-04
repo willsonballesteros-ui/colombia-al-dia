@@ -1,4 +1,4 @@
-name: Renderizar boletin narrado ORBIUNO sin avatar
+name: Renderizar noticiero ORBIUNO con presentadora y respaldo
 
 on:
   workflow_dispatch:
@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/render_narrated.py'
+      - 'scripts/presenter_engines.py'
+      - 'scripts/presenter_motion.py'
       - '.github/workflows/generar-boletin.yml'
   workflow_run:
     workflows: ['Generar carrusel e historia ORBIUNO']
@@ -46,7 +48,9 @@ jobs:
           curl --fail --location --retry 3 --silent --show-error "$BASE/voices-v1.0.bin" -o /tmp/voices-v1.0.bin
           test $(stat -c%s /tmp/kokoro-v1.0.onnx) -gt 1000000
           test $(stat -c%s /tmp/voices-v1.0.bin) -gt 10000
-      - name: Narrar titular general y cada una de diez noticias
+      - name: Validar sintaxis de los tres módulos audiovisuales
+        run: python -m py_compile scripts/render_narrated.py scripts/presenter_motion.py scripts/presenter_engines.py
+      - name: Generar presentadora ilustrada con voz y diez noticias
         run: python scripts/render_narrated.py
       - name: Validar formato final y publicar MP4 en el repositorio
         run: |
@@ -55,6 +59,17 @@ jobs:
           META="media/$DAY/boletin-narrado.json"
           test -s "$VIDEO"
           test -s "$META"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          today=os.popen("TZ=America/Bogota date +%F").read().strip()
+          meta=json.loads((Path("media")/today/"boletin-narrado.json").read_text())
+          assert meta["scenes"]==11
+          assert meta["hasTalkingAvatar"] is True, "La presentadora ilustrada no fue generada"
+          assert meta["openingEngine"]=="local_audio_envelope_illustration", meta["openingEngine"]
+          assert meta["hasRealLipSync"] is False, "No afirmar lip-sync fonético"
+          print("Presentadora ilustrada animada validada",meta["openingDurationSec"])
+          PY
           ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$VIDEO" | grep -qx '720,1280'
           git add "$VIDEO" "$META"
           if ! git diff --cached --quiet; then
