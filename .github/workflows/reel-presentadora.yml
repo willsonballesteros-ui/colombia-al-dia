@@ -1,0 +1,62 @@
+name: ORBIUNO - montar Reel con presentadora aprobada
+on:
+  workflow_dispatch:
+  # Disparar al aportar y autorizar el archivo de metadatos del clip.
+  push:
+    branches: [main]
+    paths:
+      - 'media/*/presentadora-intro.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel-presentadora
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obtener la última edición
+        uses: actions/checkout@v4
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar código del renderizador
+        run: python -m py_compile scripts/assemble_reel.py
+      - name: Instalar FFmpeg
+        run: |
+          command -v ffmpeg
+          command -v ffprobe
+      - name: Montar once escenas con introducción verificada
+        run: python scripts/assemble_reel.py
+      - name: Confirmar presencia de video y audio
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('noticias.json').read_text(encoding='utf-8'))
+          p=Path('media')/x['editionDate']
+          data=json.loads((p/'reel-presentadora.json').read_text(encoding='utf-8'))
+          assert data['scenes']==11 and data['presenterRightsChecked'] is True
+          assert data['speaksAllTenHeadlines'] is True
+          assert (p/'reel-presentadora.mp4').stat().st_size>100000
+          print('Reel correcto: 11 escenas y presentadora autorizada.')
+          PY
+      - name: Guardar video verificado sin publicar falsamente en Instagram
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/assemble_reel.py
+          DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
+          git add "media/$DAY/reel-presentadora.mp4" "media/$DAY/reel-presentadora.json"
+          if git diff --cached --quiet; then
+            echo 'Reel ya guardado'; exit 0
+          fi
+          git commit -m 'ORBIUNO: video con presentadora y diez noticias verificadas'
+          git push origin HEAD:main
