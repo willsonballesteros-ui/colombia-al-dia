@@ -52,7 +52,7 @@ def build(db):
     story_link=tracked_url(day,"story",slot)
     caption=(
         "ORBIUNO | "+display+"\n\n"
-        "Edición de la noche de Bogotá · 10 noticias verificadas.\n\n"
+        "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la noche"}[slot]+" · hasta diez noticias verificadas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
         "Elige voz en español, tono y velocidad a tu gusto.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
