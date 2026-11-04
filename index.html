@@ -440,9 +440,9 @@ const buildSpeechSegments=news=>{
  const text=String(licensedOriginal?news.fullArticleTextEs:
    authoredOriginal?news.originalArticleTextEs:narration).trim();
  const source=String(news.sources?.[0]?.name||'la fuente citada').replace(/\\s*[·–-]\\s*\\d+\\s+nov\\b.*$/iu,'').trim();
- const attribution='Según '+source+', ';
+ const attribution='Fuente: '+source+'.';
  const sentences=text.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑ¿¡])/u).map(s=>s.trim()).filter(Boolean);
- return [news.title,attribution+sentences.join(' ')].filter(Boolean);
+ return [news.title, attribution, ...sentences].filter(Boolean);
 };
 const readSpeechSegment=()=>{
  if(!canSpeak||!speakingId||speechPaused)return;
