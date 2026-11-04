@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7e58b2668154fcad",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "CENSA lanza Escuela de Inteligencia Artificial y ofrece cinco cursos gratuitos",
+      "summary": "Titular difundido por La Nación Costa Rica a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Nación Costa Rica · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOUxWWXlmOHczdWFRcXQwbW16alNsOEVERzY2OUJxRmd5YW51TmxjcGc2ZVBPZWFIMGpVekIxNDIySGZEQW01dDRiaVRPVFJ5QmRJREFxM25mMjU3V0lndmlVLWFXTEkzY2M4TGVRdmx3ZnV3OV85UUszWHpVUzhCNmdxbngxb3BHUHBvdUttUXFJekM5Z0REbE5pM0RRakdLYlBKeDdOdlQxc2VteDNJMjNCQnJWaWM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T08:47-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c165eb67066aacd4",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El futuro de la inteligencia artificial: supervivencia o exterminación",
+      "summary": "Titular difundido por Cadena SER a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Cadena SER · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOS1BuUVZjcGo3djJ6eUotU3dDZUd3T0ZQYzk4dFRQNGpEMnRTaVhiNGI5S3pabG40XzNYWkp4YWxfS0d1ZHBsZzZyMDVkREVlT3Jfc2hUdFVpNDFFcHJhMnRfRkh0MnJWYWVscFdoTUJEanNEVnZqckJJR3k1LW9oLUNiRXhHZEFzOGNUdXVmdGJrQWlRb09FQnFaTmtZbW5Na19PZlUzYkFtNkdWTlE5RzBMRkZWUzF2TUxWNEdxeTgwQ3lkZ3F0YVFQYnBmUVNILTdLU2pvOFFGTlp0WkoyT3U5aWVfNF8yTmfSAeoBQVVfeXFMTktQblFWY3BqN3YyenlKLVN3Q2VHd09GUGM5OHRUUDRqRDJ0U2lYYjRiOUt6WmxuNF8zWFpKeGFsX0tHdWRwbGc2cjA1ZERFZU9yX3NoVHRVaTQxRXByYTJ0X0ZIdDJyVmFlbHBXaE1CRGpzRFZ2anJCSUd5NS1vaC1DYkV4R2RBczhjVHV1ZnRia0FpUW9PRUJxWk5rWW1uTWtfT2ZVM2JBbTZHVk5ROUcwTEZGVlMxdk1MVjRHcXk4MEN5ZGdxdGFRUGJwZlFTSC03S1NqbzhRRk5adFpKMk91OWllXzRfMk5n?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T14:48-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-17621d62c96c461b",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -3630,8 +3668,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:51-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:51-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:55-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:55-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
