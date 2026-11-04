@@ -175,7 +175,6 @@ def main():
               79, 625, font(45), WHITE, 925, 4, 18)
     d.text((80, 1280), "Consulta las fuentes en la web", font=font(36, True), fill=WHITE)
     d.text((80, 1370), "colombia-al-dia.pages.dev", font=font(34), fill=GOLD)
-    d.text((81, 1530), "Sticker Enlace: añadir desde Instagram", font=font(20), fill="#CAD9F0")
     story.save(out/"historia.png", optimize=True)
     suggested = {
         "date": day, "publishedStickers": False,
