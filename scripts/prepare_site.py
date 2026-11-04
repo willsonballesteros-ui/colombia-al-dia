@@ -110,7 +110,9 @@ def article_html(n):
     authored = original_article_ready(n)
     thumbnail = image_markup(n) or source_thumbnail(n)
     # El audio SIEMPRE se queda en ORBIUNO: íntegro licenciado o resumen.
-    label = "Escuchar completo" if complete else "Escuchar resumen"
+    label = ("Escuchar completo" if complete else
+             "Escuchar noticia" if len(str(n.get("audioFullTextEs") or "").split()) >= 110
+             else "Escuchar resumen")
     player_controls = (
         '<button type="button" class="listen-btn" data-tts-action="toggle" '
         'data-tts-id="{id}" data-tts-full="{authorized}" aria-pressed="false" '
