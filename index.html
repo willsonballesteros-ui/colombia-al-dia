@@ -58,6 +58,18 @@
  .top nav{font-size:11px;gap:10px}
  .section-label{margin-top:22px}
 }
+
+/* Escucha de titulares con la voz integrada en el dispositivo, sin API externa. */
+.news-preview{font-size:14px;color:#4b596b;line-height:1.55;margin:0 0 14px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;max-height:3.15em}
+.news-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+.news-actions .source{font-size:12px;min-height:40px;align-items:center;padding:9px 12px}
+.listen-btn,.stop-btn{border:1px solid #164eac;background:#164eac;color:white;border-radius:10px;font-size:13px;font-weight:750;padding:9px 12px;min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer;touch-action:manipulation}
+.stop-btn{color:#24436c;background:#f1f4f8;border-color:#c6d1df}
+.stop-btn[hidden]{display:none}
+.listen-btn:focus-visible,.stop-btn:focus-visible{outline:3px solid #ffcc23;outline-offset:2px}
+.listen-btn[aria-pressed="true"]{background:#102e64}
+.listen-btn:disabled,.stop-btn:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:720px){.news-actions{gap:7px}.listen-btn,.stop-btn{font-size:12px}.news-actions .source{font-size:12px}}
 </style>
 </head><body>
 <header class="top" id="inicio"><div class="wrap top-inner"><a class="brand" href="#inicio"><img class="mark" src="./branding/orbiuno-icono.svg" alt="ORBIUNO, logotipo OU"><span><h1>ORBI<span>UNO</span></h1><small>COLOMBIA Y EL MUNDO</small></span></a><nav><a href="#noticias">Noticias</a><a href="#archivo">Historial</a><a href="#fuentes">Fuentes</a></nav></div></header>
@@ -126,7 +138,11 @@ const cardHTML=x=>{
  return '<article id="noticia-'+esc(x.id)+'" class="card">'
   +'<img class="news-image'+(isBrand?' brand-visual':'')+'" loading="lazy" width="1080" height="600" src="'+esc(src)+'" alt="'+(isBrand?'ORBIUNO, imagen de referencia':'Ilustración editorial temática, no fotografía del hecho')+'">'
   +'<div class="news-body"><div class="news-meta"><span class="news-chip">'+tag+'</span><time datetime="'+esc(x.date)+'">'+esc(fmt(x.date))+'</time></div>'
-  +'<h3>'+esc(x.title)+'</h3>'+mainLink+details+'</div></article>';
+  +'<h3>'+esc(x.title)+'</h3>'
+  +'<p class="news-preview">'+esc(x.summary||'')+'</p>'
+  +'<div class="news-actions"><button class="listen-btn" type="button" data-tts-action="toggle" data-tts-id="'+esc(x.id)+'" aria-label="Escuchar resumen de esta noticia" aria-pressed="false">▶ Escuchar resumen</button>'
+  +'<button class="stop-btn" type="button" data-tts-action="stop" data-tts-id="'+esc(x.id)+'" aria-label="Detener la lectura de esta noticia" hidden>■ Detener</button>'
+  +mainLink+'</div>'+details+'</div></article>';
 };
 const render=()=>{
  const items=db.news.slice().sort((a,b)=>b.date.localeCompare(a.date)||
