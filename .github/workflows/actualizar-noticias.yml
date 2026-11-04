@@ -3,6 +3,13 @@ name: Preparar noticias ORBIUNO (Bogota)
 
 on:
   workflow_dispatch:
+  # Ejecutar autoprueba al cambiar código, nunca al crear medios de salida.
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/*.py'
+      - 'tests/test_*.py'
+      - '.github/workflows/actualizar-noticias.yml'
   schedule:
     # GitHub Actions usa UTC; Bogotá (UTC-5) no cambia por horario de verano.
     # Preparación a las 07:30, 11:30 y 17:30 locales.
