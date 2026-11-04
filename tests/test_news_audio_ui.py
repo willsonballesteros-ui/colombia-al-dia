@@ -21,9 +21,9 @@ class NewsAudioUITests(unittest.TestCase):
         ]
         self.assertEqual(len(expected), 10)
         first = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
-        self.assertEqual(first.count('data-tts-action="toggle"'), 0)
-        self.assertEqual(first.count('class="listen-source-link"'), 10)
-        self.assertEqual(first.count('data-tts-action="stop"'), 0)
+        self.assertEqual(first.count('data-tts-action="toggle"'), 10)
+        self.assertEqual(first.count('data-tts-action="speed"'), 10)
+        self.assertEqual(first.count('data-tts-action="stop"'), 10)
         self.assertEqual(first.count('class="news-preview"'), 10)
         self.assertNotIn('<details class="news-more">', first)
         self.assertNotIn("QUÉ PASÓ", first)
@@ -56,19 +56,21 @@ class NewsAudioUITests(unittest.TestCase):
                 self.assertNotIn('src="./media/'+n["date"]+'/visual-', rendered)
         self.assertIn('rel="noopener noreferrer"', rendered)
 
-    def test_only_complete_licensed_articles_get_native_player(self):
+    def test_audio_is_inline_full_if_licensed_else_summary(self):
         current = [x for x in self.data["news"] if x.get("date") == self.data["editionDate"]
                    and x.get("verification") == "editorial_verified"]
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
         self.assertEqual(len(current), 10)
         self.assertTrue(all(not x.get("fullArticleRightsVerified") for x in current))
-        self.assertEqual(rendered.count('class="listen-source-link"'), 10)
-        self.assertEqual(rendered.count("Abrir para escuchar completo"), 10)
-        self.assertEqual(rendered.count('data-tts-action="speed"'), 0)
+        self.assertEqual(rendered.count('data-tts-action="toggle"'), 10)
+        self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
+        self.assertEqual(rendered.count('data-tts-full="false"'), 10)
+        self.assertEqual(rendered.count("Escuchar resumen"), 30)
         self.assertEqual(rendered.count('data-tts-full="true"'), 0)
-        self.assertEqual(rendered.count("Escuchar versión ampliada"), 0)
-        self.assertIn("Menú de página", rendered)
-        self.assertIn("Escuchar lectura del contenido", rendered)
+        self.assertEqual(rendered.count('class="source"'), 10)
+        self.assertNotIn("Abrir para escuchar completo", rendered)
+        self.assertNotIn("Escuchar versión ampliada", rendered)
+        self.assertIn("Fuente ↗", rendered)
         self.assertNotIn('<details class="news-more">', rendered)
 
     def test_realtime_speed_switch_restarts_only_current_sentence(self):
@@ -80,7 +82,7 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("const buildSpeechSegments=news=>", self.page)
         self.assertIn("const readSpeechSegment=()=>", self.page)
         self.assertIn("utterance.lang='es-CO'", self.page)
-        self.assertIn("sourceLanguage!=='en'", self.page)
+        self.assertIn("hasAuthorizedFullArticle", self.page)
         self.assertIn("hasAuthorizedFullArticle",self.page)
 
     def test_voice_selector_offers_real_spanish_device_voices(self):
@@ -107,12 +109,14 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertTrue(article_original_authorized(candidate))
         page = __import__("scripts.prepare_site",fromlist=["article_html"]).article_html(candidate)
         self.assertIn('data-tts-full="true"',page)
-        self.assertIn("Escuchar toda la noticia",page)
+        self.assertIn("Escuchar completo",page)
         candidate["fullArticleRightsVerified"]=False
         self.assertFalse(article_original_authorized(candidate))
         page = __import__("scripts.prepare_site",fromlist=["article_html"]).article_html(candidate)
         self.assertNotIn('data-tts-full="true"',page)
-        self.assertIn('class="listen-source-link"', page)
+        self.assertIn('data-tts-full="false"', page)
+        self.assertIn('Escuchar resumen', page)
+        self.assertIn('Fuente ↗', page)
 
     def test_speech_api_is_user_initiated_and_free(self):
         self.assertIn("new window.SpeechSynthesisUtterance", self.page)
