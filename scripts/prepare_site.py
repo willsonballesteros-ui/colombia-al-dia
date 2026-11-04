@@ -83,10 +83,13 @@ def article_html(n):
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
         '<div class="news-actions">'
         '<button type="button" class="listen-btn" data-tts-action="toggle" '
-        'data-tts-id="{id}" aria-pressed="false" aria-label="Escuchar resumen" '
-        'title="Escuchar resumen">▶ <span class="listen-label">Escuchar</span></button>'
+        'data-tts-id="{id}" data-tts-full="{full}" aria-pressed="false" '
+        'aria-label="{listen}" title="{listen}">▶ {listen}</button>'
+        '<button type="button" class="speed-btn" data-tts-action="speed" data-tts-id="{id}" '
+        'aria-label="Cambiar velocidad de lectura. Actual: 1x" title="Cambiar velocidad">1x</button>'
         '<button type="button" class="stop-btn" data-tts-action="stop" '
         'data-tts-id="{id}" aria-label="Detener lectura" title="Detener lectura" hidden>■</button>'
+        '{spanish}'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
         'title="Abrir la fuente original {label}">Fuente ↗</a>'
         '</div></div></article>'
@@ -95,6 +98,9 @@ def article_html(n):
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
+        full="true" if n.get("audioFullTextEs") else "false",
+        listen="Escuchar toda la noticia" if n.get("audioFullTextEs") else "Escuchar resumen",
+        spanish='<span class="tts-lang" title="Narración editorial en español de una fuente publicada en inglés" lang="es">ES</span>' if n.get("sourceLanguage") == "en" and n.get("audioFullTextEs") else "",
     )
 
 
