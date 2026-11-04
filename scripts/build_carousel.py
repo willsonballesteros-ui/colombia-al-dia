@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ORBIUNO: 11 láminas (portada + 10), lectura en ~3 segundos.
+"""ORBIUNO: portada para Reel + 10 láminas Instagram, lectura en ~3 segundos.
 
 Nunca inventa imágenes de los hechos: foto con licencia y crédito o
 sección visual tipográfica de la fuente claramente identificada.
@@ -118,8 +118,8 @@ def main():
     for i,n in enumerate(news,1):
         news_card(n,i,day,out/f"top10-{i:02d}.png")
     # No se crea un video de una persona que no existe.
-    # La portada de imagen queda separada del Reel con presentadora real/renderizada.
-    print("11 láminas: portada + 10 noticias. Sin imágenes ficticias.")
+    # portada.png NO va en el carrusel: Instagram permite un máximo de 10 elementos.
+    print("10 láminas para carrusel Instagram + portada visual para Reel. Sin imágenes ficticias.")
 
 
 if __name__=="__main__":
