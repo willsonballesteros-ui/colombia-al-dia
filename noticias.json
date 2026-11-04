@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-05a1ce0d9f61fafa",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Áureo Díaz-Carrasco (Fedit): “Tenemos muy buenas oportunidades de desarrollo en energía, robótica, drones y materiales”",
+      "summary": "Titular difundido por COMPUTERWORLD ESPAÑA a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "COMPUTERWORLD ESPAÑA · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNS2ZVbUphNFpBVFMtcVQwS2pacFdzQ3RDWmUzYjdMU0hYalJEc0xibkZJN3FhMjNaU3RyX3ZyZXIyWTJFRl9GUXlMd1lYNzVDeHAzY3RjWDNPb1NLVXpWdk5OcTdxY3BTcko1WDd5QU9iNG1YbGJwSGEtWXlCMlIwdjdDbHJIMmloalFhUXRjYTNMTi1NUVNWX3FucnBSVmZaQUFOMlZId2VGd05wTnN4SHVOeDBwaFI1YlFhSWFxSFQ3LVhyRW9XVEd1bmhxcmRSZVlzZ1p5ZWsxZ0FFVThWZDRlN2tobjBrUWVGYTc3T3ByN1RF?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:09-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-70fc2357ec2d20bf",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Proponen crear un Observatorio de Inteligencia Artificial en Santa Fe para controlar su impacto",
+      "summary": "Titular difundido por Infocielo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infocielo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSkN6djh4RENlQ0I5cy0wZXU2bjZEdEw4bHNKdVJWalQ0d0FSR04ySGQ1cktIc3pkOER6X1RjdUFRUnBBbjNsS3lickVFcWJtRE5aSDBZSmJKQWFjVXdwSm52MDBlblEzUng2aWNfRGk3ZDk1c2VMWWk3c2dKTEtCeVlnSDBfcUVscWIwQkFFZTlkQ20zVExzdEQwM2o5V3JxNkxObEUzdkVCX21uMGxGdE95M1E3YUJ4Z3FqcFFwZEtOUmtYbU5IS3JR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T05:54-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c8acd0d69ab10479",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "GNUDS | Ecos del terremoto: Colombia, dos meses después",
+      "summary": "Titular difundido por United Nations Sustainable Development Group a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "United Nations Sustainable Development Group · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUE9kdV94NHlHaElQcXd5QmRlT0xmWkRDRzRqX3ROMUZmZ1Mta09ENXVkTVBnLWdISERPMnRJcDV0d29oX1NreFZ1S291YTNleDROSGlYdDBGZ3N2dzh1R3VzM0FsQjVmVTd0YWdnX1RMUGxnY1lmT3NzdFBkaWtwWnBrV2ZHUVpHMUhLRFBFemxBS1U?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T14:45-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-fdc74feabb9cdb47",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -2053,8 +2110,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:09-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:09-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:20-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:20-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
