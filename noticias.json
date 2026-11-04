@@ -6,6 +6,25 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-4ceb3061cee821a0",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Diana Morant defiende una gobernanza global de la inteligencia artificial para garantizar que la tecnología esté al servicio del bien común",
+      "summary": "Titular difundido por Ministerio de Ciencia, Innovación y Universidades a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Ministerio de Ciencia, Innovación y Universidades · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVUNtQTh4QmtPUktSdjhZQjdZc3RfelBNZFJLc1V6al82RWpYVVJtQVVUQUxUYXRsV1JCNlo4NHhGV2NxaWo3dzZXWXFUaHhCQWtqanZTVk8yZzIzd2F1dUp1aFhqZVMxRkxncEFBSDdqQnhxSUhlVjNRTE0wRU9qbjQ4a005ZWN5Rjg0Mk1pZGIxd2JqQUVOTUtfUlk2N3J5MTJ5cHlwVkNyNUx5VEVUa25GWDVURjAxVjk5amM5SlllSElFZEhrUGhyY01CeGVVVXNVVDd4bk5GWUVDRW82Y3d6dUxvNkk?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T09:28-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-1bca8ed170876c3c",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -4185,8 +4204,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T09:20-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T09:20-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T09:24-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:24-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
