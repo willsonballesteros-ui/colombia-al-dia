@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7461e4d3b19513e7",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Wall Street cierra con ganancias por el repunte de las empresas de inteligencia artificial",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPQTRxNTNtZjAtcGxzZ1JndnBfUzh5a2NnRnVPOXlicW05NGw2cjZnUi05aDdqMGRyNG4tNExrOUI5MVgyMUJwQnlpWUtrMER0ZjFONTJsQjJfdGt1S3gyZFRmOFNUSmJ6Z2JkRTFfSnVwaHdTcFZMMW5LZE50ZGNBWHgtVVBEcDdweVA1QUt2d09zamhpeFU1cFVpNGJfYVdWNTA5Q09UajJlOGgwTmhobEhyWVpEb09YR1RNZjJQRTNCTjBUdXYzOWhyVVFHZl9GdnVldDlxc0HSAfMBQVVfeXFMTUxuclF1THc5aExRWVA2bkJUX0FEakhYT05OcGdfYUlEeFVpR0JpcVNORlRRTmliQmhkQ3NvcTh0VXZkNjRGRHQwWlBvdHAwcE1XTzdia25CSjZIZVZUdUxQQ3N0WXdkczMwS2tmQ2lDa0tzbHlINW5NbzhBaWRTeF9Qd3hBLVJuRHl4Y1NfMmZkU3pDRi1wVTByRG5Ba000N0pobEs2aW1vWHd5aWdUZ041WWJyZWJRZ25Qd3c0T3BGSFNXWlQ0bmlrT0R5d3BROHdWV25pWks3eURuaXQwZlF2VWVlUURhQTlmT0xqY1V2Ujd3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T16:27-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ab4b21f1725e30ee",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Me avergüenza trabajar en Google\": las renuncias de empleados que rechazan el desarrollo de inteligencia artificial para uso militar",
+      "summary": "Titular difundido por Clarin.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Clarin.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUk5iSUZFcWpHOVk4b2JhcWtBZDVsMVNzOEN6eFJXM1pYX2JyVDVXeHFTMi1fNzFONGNrakl5aEpmaFFTdGR0d0Vtb25nSlpULW5kc3R5SFpWbmhRcVBoZEN2ZWZiTlRwYzkzMnpkTkNkTUtnb0tIWWRiLWUzSC1seWdrU2k1U2o0ZFVZMWJxZzF2OFM5bEpVZHpTZUYzNmJKNk83SndBQjdiNTFyV1M3dlp5SE0zVHQ5QnU1WnhxYnVITlVSbEZrY2JtbFB0SWh0ZFp5Mk5wUmw4aldweF9hNnFXY0ZfUjBlWWc0eDVR0gHzAUFVX3lxTE5MRl9JYVQtRDU3c2RYYXRMTjJxeEpBQXV5Z2tvdGx1UFc4dzFKWVRTd3NBSEZfcFBxVlBGMXpDQlhfWFc3MDcxQkFRNHhuU3YxZ3FuN0NxWkVzek12ZjB1MkdlcUotUkx6VmJZRnBDb0lqMVg1Z2NGMUt3bndzSGJZOFI1b3NUMHRiamlaelo2eUxUZ2NQcHpBZGtOczRFQ3dQMm4wdGk3VF9RYWkzZUExaU5HY0JJZjNDYlNJbXAxd1B3VmJ3ZkxOWi1VMm13U1AwRmhNandENml4NFROSDRjcE8ySFp4bkowLTY1aGhtSkwwYw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T15:28-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-eb25bb8f81931e80",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -3307,8 +3345,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:31-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:31-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:33-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:33-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
