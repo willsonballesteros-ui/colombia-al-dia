@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-0967af00e5cfce4f",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "NVIDIA, Dell y Honeywell llevan la inteligencia artificial a la industria petrolera",
+      "summary": "Titular difundido por ITSitio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ITSitio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOa3NVT3lNLUkxeGpMeXpxRXExZkFXWjBVNEU1emJwb2x1S2Q0LVEydVBxUGJyTzZHQTVNLXVtRDI5bUZTRjNLWXlQek9SenJOQXdWdmNCalpzUDFEMXRvcGNVcVRrTTZuXzBxTFBEUTBXMHRzdFBBX2xGZDBhaXFtQTgzSC1qTUlzdER6N1RiZzYxZ1dyTzVvc3lUR2wtOTV5Wk9tR19wdlJ3S1gyRmI4bmEwU29iMlBZYjh5TzU0ano?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T13:52-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b9499b3dc79dbb6d",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "República Dominicana regula el uso de inteligencia artificial en los servicios públicos",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRV9nbzc3cVphTWpvdW12ZzBTSXk2TE9ieWlYTDNzV1hPTXN6aWtBUm1LSGlHa2kwVXhuMDlMTnhfQVk2SmlvNktVM2NVWmtaN3dBMnJUT0NLQzhkTDhEbC0xZy1HRi01ZGlwRkV3Z3JORnVlMzVHSWMwU0ItQjZva2NkLWc5c3BzaGsyem9kNmZHMDNqUkozZTdkREhaVkM5dHhuUElBY2hvU3FCZ0JaZXlEd0dCWWV4cTZhTEpod0pmLWtxbzQ0VW5xel82UHVUZk1nNllIUXdnNUlN0gH3AUFVX3lxTE9YRlcxWXdKb0dNMWtMbUQxZFQ1SGtkaTRmWkpFcWhBZmFqV2lyUFBZLWRucmJhZUNtdTJyVEswRWpGYkNFeUZISDZyMDdhTzZNRHk0bHZEcDBHZHFmR2FZUWs3a0lZNzk4VGx6OGE5dDNFVkFaaUhGRFJTcVNTNWNUcm1vdzBUcVFCSzNMX0NiLW5rd1VNcmVNTF9lanZPeTVCTlIzaUY4eFoyaUNKV0hjSDBKYUZoODY0Zm1XLUQzOTBmbGVmTVpJekFNSEdGcUItTDlwVU14T1U4RXNKN19fQzFFdDA0MVV4YXF6QnFCMkVXdGxhdHc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T13:46-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-9bdc6a506ce55af1",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
