@@ -1,8 +1,8 @@
 {
-  "brand": "ORBIUNO",
+  "brand": "Colombia al Día",
   "editionDate": "2026-11-04",
   "editedAtBogota": "2026-11-04 05:55",
-  "siteVersion": "3.0",
+  "siteVersion": "5.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
@@ -1261,8 +1261,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 1,
-      "imageUrl": "./media/2026-11-04/visual-01.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "Congreso estadounidense"
     },
     {
@@ -1286,8 +1284,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 2,
-      "imageUrl": "./media/2026-11-04/visual-02.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "sometimiento a la justicia"
     },
     {
@@ -1307,8 +1303,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 3,
-      "imageUrl": "./media/2026-11-04/visual-03.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "impuestos en Colombia"
     },
     {
@@ -1328,8 +1322,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 4,
-      "imageUrl": "./media/2026-11-04/visual-04.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "energía ucraniana"
     },
     {
@@ -1353,8 +1345,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 5,
-      "imageUrl": "./media/2026-11-04/visual-05.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "Nvidia y China"
     },
     {
@@ -1378,8 +1368,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 6,
-      "imageUrl": "./media/2026-11-04/visual-06.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "salario mínimo"
     },
     {
@@ -1399,8 +1387,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 7,
-      "imageUrl": "./media/2026-11-04/visual-07.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "buques en Ormuz"
     },
     {
@@ -1420,8 +1406,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 8,
-      "imageUrl": "./media/2026-11-04/visual-08.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "acuerdos de AMD"
     },
     {
@@ -1441,8 +1425,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 9,
-      "imageUrl": "./media/2026-11-04/visual-09.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "ayuda a Israel"
     },
     {
@@ -1462,8 +1444,6 @@
       ],
       "verification": "editorial_verified",
       "priority": 10,
-      "imageUrl": "./media/2026-11-04/visual-10.png",
-      "imageType": "ilustracion_editorial",
       "openingCue": "seguridad de agentes de inteligencia artificial"
     },
     {
@@ -2637,5 +2617,6 @@
     "icon": "/branding/orbiuno-icono.svg",
     "website": "https://colombia-al-dia.pages.dev/",
     "note": "La marca pública del sitio es ORBIUNO; el dominio histórico se conserva para preservar enlaces."
-  }
+  },
+  "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía."
 }
