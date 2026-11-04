@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-e9632598077b8003",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Implementación piloto a gran escala de plataformas de apoyo a los servicios públicos basadas en inteligencia artificial en ministerios, departamentos y municipios.",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbjhyb1NSSENEb3NzME1DUWs3eGgzVlBfTXV6LUVsQ042TmVVNkU0N0x4dkpfc0FQcEU2Tm9NUEhRMWRJeHVuSUc3MTlLa1FaN0MwclAyUjRWbjdEM2VEV1dLY0JmamdZaENXQW5uY1dvRF9aUkhJVXBsLTRDN0k4UXFPOWgwUDJQSjBteXNzWDhGY0JsUU12TU9vdk92WnM4bFFoTjMwOFh5R21TYVpKWUhB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T03:26-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ab163f7f3bb9bfb8",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Defensa impulsa la evolución de su infraestructura digital con inteligencia artificial y capacidades de nube",
+      "summary": "Titular difundido por Aesmide a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Aesmide · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSFJfdTdSQ1pBeXctWUNaM2s4MHlNS1dNeGpiSTVHSTJkOEVoWXViS1M3ZkNPSmZzY2hrS0dzQ3p3VXc0NEk1SjZUb1BfSWFUTmZoaXZHaWRwelZ3eDAzVC1TdFFEYmtfNHFJOHItaENuMVpJYXE5T0NBT2hSU0xTWUJTQUM1dTIweDRGcm1NY2V4ZEpMY1hLX1FfOW9NYUhkb2tSTWZJbkNMV3Jpa3VaaVlEbFBQNWRkZUw4cUppUzE3WHQ2eFUw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T03:21-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0b98c6d498384e09",
+      "date": "2026-11-04",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Los demócratas recuperan la Cámara y el Senado en una noche triunfal e infligen una \"derrota aplastante\" a Trump y sus aliados",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cv62y9278jz0o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T01:11-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c4b745da4f86f089",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Congreso aprueba la ley de sometimiento del Gobierno de De la Espriella",
+      "summary": "Titular difundido por EL PAÍS a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "EL PAÍS · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdkpVOERacTgxQ05ONDMyMkZIZFZTT3ZKemlvR1U5T0NrRV81b1FCdFF5czlxRXFSUEwxR1J4eGQwSTc4U2R5Ym03OU9VdHNab0JLTHRrXzVBcE56ODBZQVB3SUd5bm5SejJDbG9ROFJjMVlPNDBOU2UwOTA2c2ZWbWtjM0xfTjVuc1FmdnVwMnd5VnpqVjk5RlZHMHpteFFrRkphRjFwSm1BYWJCRlBqcXZValZUUDRBTWhoWGVrN3BwQ2520gHYAUFVX3lxTE9pUG9hR2dmNHU5WDB0YkIyaEJFOExLdS1vYTk4R3VGZkNiTy1DWENmUlNma21QNkxSSXRGRnNTVU9FQWl4OEVQNTItek5McmZDUU1pWWlYakZ4TE1qM2lfYkt5YXhLeHNJaFFOdGR4VHo4VkRkNFlFZDZkazFnOEUwaGwzTmlXbTdQNTFaR1V3Q2Y1cHhyWEpGTmd2QVIyNktERHpTNWY2S25nQ0NEQjlzaVpZQUVoOTV3N0lWOU1adWgtT3ZrVmVWTUZSY3lydUJuSlZlMXZfbA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T23:59-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-893627969db6aa18",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Temblor en Colombia EN VIVO hoy, martes 3 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo, según el SGC",
+      "summary": "Titular difundido por El Comercio Perú a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Comercio Perú · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPV2NFdEw3aE5tU1pha2dmRVhORUdXa3U2Ym9oblpiMjBzM09jNU9RUXNqZFd2WnB5MTN1XzFGZzUxbmpGV2tYd0Z1WHNNekFuU29FSG9vUnZvUVY5RmFwWFY3anRYYng0cVNkOUVNd1pySEVVZlhyWHVfVjlJdl9VN21kbWNkZWlUa0gwRUlpelBmLUMtdzNkWnAyaC1lTVY4MkoySWxBNnluclRnam5tYVhJdTFvMzU0Vy04UDZYa2Fyb05rN3hZUjlNODhJaHBJM1IzdHRIMHZyZXZ0WmkwVE5kVzF1b2ZrY2g3QjBja3psc1BqdmhBNnBuYnJXR2hDT0lJWjFDMGdaY284MXBiVndkMW14d0x5dV8yZUZxb0Jjcnc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:55-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-d601a4b660ecdabd",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Cómo podrían afectar las elecciones de Estados Unidos a Colombia? Le explicamos",
+      "summary": "Titular difundido por City Tv a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "City Tv · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOc3hHeFlfZnhRTEVNbnppeEFYS3VKc0M1QWpnMk55bVZOT0RzVHZvbC1jR0xYOWNQXzRYQTJUdGEyLUl3a2tSUjlQbXZLLTgyNk5HNWdzYnJTeWFySGNVb1Jacnl6cXlKZ0twRHhjaFFjWGhHLWIyZ2ljQVkxVVhwRmxVT0ZzVmJzNmVFUngtNkVvV0dhREFyMzFlTDRWYlRMZTIzSUVwRnVNV3FhT25WNjNEbWNEcVdJUkRVM3lDZHdISzhjMlhXOWw2dGZ6NVI2U1pyd3dJUzFxZ2hu?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:39-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-2eb34345741816cf",
+      "date": "2026-11-03",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "EE.UU. lanza \"ataques defensivos\" contra Irán antes de las elecciones de medio mandato",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cvp8gx0p2elno?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T02:47-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-cafdd2b0cef7a2fd",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -1501,8 +1634,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T05:59-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T05:59-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:01-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:01-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
