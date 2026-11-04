@@ -33,7 +33,7 @@ Para noticias, priorizar fotografía real con derechos de reproducción confirma
 ## Dos formatos sociales diferentes
 
 - **Reel vertical:** once escenas de video: **presentadora virtual femenina de apariencia natural** en escena inicial, narrando los diez titulares en español claro, seguida de diez láminas. Debe existir y verificarse el MP4 de la presentadora y su autorización; no sustituir por una foto estática como si hablara.
-- **Carrusel Instagram:** máximo **diez** láminas de noticias (límite de la plataforma). El recurso adicional `portada.png` sirve para portada de Reel, previsualización o historia, **NO como una undécima foto en el carrusel**. Así se conservan las diez noticias sin incumplir Instagram.
+- **Carrusel Instagram:** **diez** láminas de noticias para el flujo conectado con Metricool. El recurso adicional `portada.png` sirve para portada de Reel, previsualización o historia, **NO como una undécima foto en el carrusel**. Así se conservan las diez noticias sin incumplir Instagram.
 - Cada lámina: miniatura/favicón real del medio o fotografía licenciada, fuente visible, titular dominante y síntesis de máximo dos líneas completas (fuente tipográfica adaptable). No simular botones clicables sobre las imágenes. Fuente y detalle verdaderamente clicables desde la web; los stickers de enlace, encuesta y cuestionario son nativos de historias y pueden requerir publicación manual.
 
 ## Automatización y comprobaciones
