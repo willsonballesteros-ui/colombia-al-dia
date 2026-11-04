@@ -295,7 +295,12 @@ let speechRateIndex=0;
 let speakingId=null, speakingUtterance=null, speechPaused=false;
 let speechSegments=[], speechSegmentIndex=0, speechSession=0;
 const speedLabel=()=>speechRates[speechRateIndex]+'x';
-const speechLabel=btn=>btn.dataset.ttsFull==='true'?'Escuchar completo':'Escuchar resumen';
+const speechLabel=btn=>{
+ if(btn.dataset.ttsFull==='true')return 'Escuchar completo';
+ const item=db.news.find(n=>n.id===btn.dataset.ttsId);
+ return item&&String(item.audioFullTextEs||'').trim().split(/\\s+/u).length>=110
+  ?'Escuchar noticia':'Escuchar resumen';
+};
 const updateSpeechControls=()=>{
  document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
   const current=speakingId===btn.dataset.ttsId;
