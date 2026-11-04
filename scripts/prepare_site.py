@@ -82,12 +82,32 @@ def article_original_authorized(n):
     )
 
 
+def original_article_ready(n):
+    """Un reportaje íntegro de ORBIUNO: texto propio, fuente y revisión."""
+    sources = {s.get("url") for s in n.get("sources", [])}
+    return (
+        n.get("verification") == "editorial_verified"
+        and n.get("originalArticleByline") == "Redacción ORBIUNO"
+        and n.get("originalArticleReviewed") is True
+        and isinstance(n.get("originalArticleTextEs"), str)
+        and len(n["originalArticleTextEs"].strip()) >= 1000
+        and isinstance(n.get("originalArticleSourceUrls"), list)
+        and bool(n["originalArticleSourceUrls"])
+        and all(url in sources for url in n["originalArticleSourceUrls"])
+    )
+
+
+def has_complete_audio(n):
+    return article_original_authorized(n) or original_article_ready(n)
+
+
 def article_html(n):
     sources = [s for s in n.get("sources", []) if str(s.get("url", "")).startswith("https://")]
     if not sources:
         return ""
     source = sources[0]
-    complete = article_original_authorized(n)
+    complete = has_complete_audio(n)
+    authored = original_article_ready(n)
     thumbnail = image_markup(n) or source_thumbnail(n)
     # El audio SIEMPRE se queda en ORBIUNO: íntegro licenciado o resumen.
     label = "Escuchar completo" if complete else "Escuchar resumen"
@@ -103,7 +123,9 @@ def article_html(n):
     ).format(
         id=esc(n["id"]), authorized="true" if complete else "false",
         label=label,
-        tip="Reproducir artículo íntegro autorizado" if complete else "Escuchar el resumen de ORBIUNO sin salir de la página",
+        tip=("Escuchar artículo íntegro de la redacción ORBIUNO" if authored
+             else "Reproducir artículo íntegro de la fuente con licencia" if complete
+             else "Escuchar el resumen de ORBIUNO sin salir de la página"),
     )
     return (
         '<article id="noticia-{id}" class="card compact-card">'
@@ -111,12 +133,13 @@ def article_html(n):
         '<div class="news-body"><div class="news-meta">'
         '<span class="news-chip">{cat}</span><time datetime="{date}">{date}</time>'
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
-        '<div class="news-actions">{controls}'
+        '<div class="news-actions">{controls}{article_tag}'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
         'title="Abrir fuente original: {label}">Fuente ↗</a>'
         '</div></div></article>'
     ).format(
         id=esc(n["id"]), thumbnail=thumbnail, controls=player_controls,
+        article_tag='<span class="original-full-tag" title="Artículo completo redactado por ORBIUNO; fuente enlazada aparte">ORBIUNO</span>' if authored else "",
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
