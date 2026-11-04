@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'media/*/presentadora-intro.json'
+      - 'media/*/presentadora-foto.json'
 
 permissions:
   contents: write
@@ -31,7 +32,7 @@ jobs:
         run: |
           command -v ffmpeg
           command -v ffprobe
-      - name: Montar once escenas con introducción verificada
+      - name: Montar once escenas con video o foto narrada autorizados
         run: python scripts/assemble_reel.py
       - name: Confirmar presencia de video y audio
         run: |
@@ -43,6 +44,7 @@ jobs:
           data=json.loads((p/'reel-presentadora.json').read_text(encoding='utf-8'))
           assert data['scenes']==11 and data['presenterRightsChecked'] is True
           assert data['speaksAllTenHeadlines'] is True
+          assert data['presenterIntroType'] in ('video_talking_presenter','photo_with_voice_and_waveform')
           assert (p/'reel-presentadora.mp4').stat().st_size>100000
           print('Reel correcto: 11 escenas y presentadora autorizada.')
           PY
