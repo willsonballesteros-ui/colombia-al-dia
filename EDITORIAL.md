@@ -11,21 +11,24 @@ Priorizar economía, tecnología/IA, infraestructura, seguridad y panorama globa
 ## Sitio web
 
 - Encabezado mínimo «ORBIUNO | Colombia al Día» y texto corto, sin cajas de fecha ni avisos llamativos.
+- **UX móvil horizontal comprimida:** icono real de la fuente (favicon del dominio) o fotografía licenciada a la izquierda; titular, resumen, ▶ y Fuente a la derecha. Objetivo: visualizar 3 o 4 noticias por desplazamiento de pantalla.
 - Tarjetas de lectura rápida, con máximo dos líneas visibles de `executiveSummary`, fuente original clicable y audio gratuito del navegador.
 - TTS de `window.speechSynthesis` mediante clic expreso del lector; ▶️ Escuchar resumen / Pausar / Reanudar / Detener. No se afirma una voz natural idéntica en todos los dispositivos.
 - Las advertencias de atribución y metodología se mantienen en el pie, no sobre los titulares.
 
 ## Imágenes reales y marcas
 
-Para noticias, priorizar fotografía real con derechos de reproducción confirmados. Campos: `imageUrl`, `imageType` (`official_photo`, `licensed_press_photo`, `official_document`), `imageCredit`, `imageLicense`, `imageRightsVerified=true`, `imageSourceUrl`. Sin esos datos, usar bloque tipográfico con **nombre de la fuente**, no simular una foto ni inventar el logotipo de Reuters, EFE, etc. La presentadora virtual solicitada debe identificarse y tener derechos de uso y autorización de voz verificables; nunca afirmar que una foto inventada documenta un hecho.
+Para noticias, priorizar fotografía real con derechos de reproducción confirmados. Campos: `imageUrl`, `imageType` (`official_photo`, `licensed_press_photo`, `official_document`), `imageCredit`, `imageLicense`, `imageRightsVerified=true`, `imageSourceUrl`. Sin esos datos, se puede consultar el **favicon real del dominio de la fuente** y mostrar su nombre en una tarjeta. El favicon identifica al medio, NO representa una foto del hecho, y no se inventan marcas ni logotipos. La presentadora virtual solicitada debe identificarse y tener derechos de uso y autorización de voz verificables; nunca afirmar que una foto inventada documenta un hecho.
 
 ## Dos formatos sociales diferentes
 
 - **Reel vertical:** once escenas de video: **presentadora virtual femenina de apariencia natural** en escena inicial, narrando los diez titulares en español claro, seguida de diez láminas. Debe existir y verificarse el MP4 de la presentadora y su autorización; no sustituir por una foto estática como si hablara.
 - **Carrusel Instagram:** máximo **diez** láminas de noticias (límite de la plataforma). El recurso adicional `portada.png` sirve para portada de Reel, previsualización o historia, **NO como una undécima foto en el carrusel**. Así se conservan las diez noticias sin incumplir Instagram.
-- Cada lámina: fuente visible, titular dominante y síntesis de dos o tres líneas en móvil. No simular botones clicables sobre las imágenes. Fuente y detalle verdaderamente clicables desde la web; los stickers de enlace, encuesta y cuestionario son nativos de historias y pueden requerir publicación manual.
+- Cada lámina: miniatura/favicón real del medio o fotografía licenciada, fuente visible, titular dominante y síntesis de máximo dos líneas completas (fuente tipográfica adaptable). No simular botones clicables sobre las imágenes. Fuente y detalle verdaderamente clicables desde la web; los stickers de enlace, encuesta y cuestionario son nativos de historias y pueden requerir publicación manual.
 
 ## Automatización y comprobaciones
+
+**Copy + primer comentario:** ejecutar `scripts/build_caption.py` en cada edición. Usar `media/FECHA/instagram-publicacion.json` con campos `caption` y `firstComment`. URL exacta en línea aparte: `🌐 https://colombia-al-dia.pages.dev/`. No copiar la lista de diez titulares dentro del caption. Los enlaces en captions y comentarios de Instagram suelen no ser tocables; el enlace en la biografía y los stickers nativos sí pueden conducir a la web.
 
 La rutina editorial conserva las franjas **08:00, 12:00 y 18:00** en `America/Bogota`. GitHub Actions prepara titulares a las 07:30/11:30/17:30 y genera recursos; las comprobaciones periodísticas y la publicación requieren una herramienta conectada que opere en ese momento.
 
@@ -33,6 +36,8 @@ GitHub Actions **no dispone de credenciales de publicación Metricool**. Según 
 
 ## Pipeline audiovisual
 
-`scripts/assemble_reel.py` y `.github/workflows/reel-presentadora.yml` solo generan Reel cuando existe un `media/AAAA-MM-DD/presentadora-intro.mp4` con audio, derechos aprobados y su manifest `presentadora-intro.json`. Los cinco controles de autorización requeridos son `rightsVerified`, `consentVerified`, `voiceAuthorized`, `scriptChecked` y `speaksAllTenHeadlines` junto a `source` no vacío. Si no hay intro o no hay consentimiento, falla de forma segura; nunca marca como publicado un MP4 no generado.
+`scripts/assemble_reel.py` y `.github/workflows/reel-presentadora.yml` solo generan Reel cuando existe un `media/AAAA-MM-DD/presentadora-intro.mp4` con audio, derechos aprobados y su manifest `presentadora-intro.json`. Fallback condicional sin avatar hablado: `media/FECHA/presentadora-foto.jpg`, `presentadora-voz.wav` y `presentadora-foto.json`. Solo si existen y acreditan derechos, consentimiento, voz autorizada y lectura efectiva de los diez titulares, se crea un video con la foto de la presentadora, movimiento suave y onda sonora visible. Ese caso declara `hasRealLipSync=false`; **nunca se anuncia como labios sincronizados**. El portal sigue funcionando sin estos archivos.
+
+Los cinco controles de autorización requeridos son `rightsVerified`, `consentVerified`, `voiceAuthorized`, `scriptChecked` y `speaksAllTenHeadlines` junto a `source` no vacío. Si no hay intro o no hay consentimiento, falla de forma segura; nunca marca como publicado un MP4 no generado.
 
 Pruebas en CI: 10 noticias editoriales, fuentes HTTPS, no imágenes ficticias presentadas como fotografías, TTS nativo y 10 láminas para Instagram + recurso de portada.
