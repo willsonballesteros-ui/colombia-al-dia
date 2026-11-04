@@ -163,9 +163,83 @@ const render=()=>{
  el('count').textContent=matching.length+' noticias y titulares';
  el('subtitle').textContent='';
  el('cards').innerHTML=matching.map(cardHTML).join('');
+ if(typeof updateSpeechControls==='function')updateSpeechControls();
  el('empty').hidden=matching.length>0;
  document.querySelectorAll('.filt').forEach(b=>b.onclick=()=>{category=b.dataset.cat;render();});
 };
+// Voz integrada en el móvil: nunca se inicia sin un toque del lector.
+const canSpeak=typeof window.speechSynthesis!=='undefined' &&
+ typeof window.SpeechSynthesisUtterance==='function';
+let speakingId=null, speakingUtterance=null, speechPaused=false;
+const updateSpeechControls=()=>{
+ document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
+  const current=speakingId===btn.dataset.ttsId && !!speakingUtterance;
+  btn.textContent=current?(speechPaused?'▶ Reanudar':'Ⅱ Pausar'):'▶ Escuchar resumen';
+  btn.setAttribute('aria-pressed',current && !speechPaused?'true':'false');
+  btn.disabled=!canSpeak;
+  if(!canSpeak)btn.title='La lectura en voz alta no está disponible en este navegador';
+ });
+ document.querySelectorAll('button[data-tts-action="stop"]').forEach(btn=>{
+  btn.hidden=!(speakingId===btn.dataset.ttsId && speakingUtterance);
+ });
+};
+const stopSpeech=()=>{
+ const old=speakingUtterance;
+ speakingUtterance=null;
+ speakingId=null;
+ speechPaused=false;
+ if(canSpeak && old)window.speechSynthesis.cancel();
+ updateSpeechControls();
+};
+const selectSpanishVoice=()=>{
+ const voices=window.speechSynthesis.getVoices();
+ return voices.find(v=>/^es-CO$/i.test(v.lang))||
+        voices.find(v=>/^es-(MX|US|ES)$/i.test(v.lang))||
+        voices.find(v=>/^es([-_]|$)/i.test(v.lang))||null;
+};
+const playSpeech=id=>{
+ if(!canSpeak)return;
+ const synth=window.speechSynthesis;
+ if(speakingId===id && speakingUtterance){
+  if(speechPaused){synth.resume();speechPaused=false;}
+  else {synth.pause();speechPaused=true;}
+  updateSpeechControls();
+  return;
+ }
+ const news=db.news.find(x=>x.id===id);
+ if(!news)return;
+ stopSpeech(); // Se escucha sólo una noticia a la vez.
+ const utterance=new window.SpeechSynthesisUtterance([news.title,news.summary].filter(Boolean).join('. '));
+ utterance.lang='es-CO';
+ utterance.rate=0.96;
+ utterance.pitch=1.04; // La voz exacta depende del sistema del lector.
+ const voice=selectSpanishVoice();
+ if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
+ speakingUtterance=utterance;
+ speakingId=id;
+ speechPaused=false;
+ utterance.onend=()=>{
+  if(speakingUtterance===utterance){
+   speakingUtterance=null;speakingId=null;speechPaused=false;updateSpeechControls();
+  }
+ };
+ utterance.onerror=()=>{
+  if(speakingUtterance===utterance){
+   speakingUtterance=null;speakingId=null;speechPaused=false;updateSpeechControls();
+  }
+ };
+ try{synth.speak(utterance);}
+ catch(error){stopSpeech();}
+ updateSpeechControls();
+};
+el('cards').addEventListener('click',event=>{
+ const btn=event.target.closest('button[data-tts-action]');
+ if(!btn)return;
+ const id=btn.dataset.ttsId;
+ if(btn.dataset.ttsAction==='stop')stopSpeech();
+ else playSpeech(id);
+});
+window.addEventListener('pagehide',stopSpeech);
 el('date').addEventListener('change',()=>{selectedDate=el('date').value;render();});el('search').addEventListener('input',render);
 render();updateVideo();
 // Cuando se despliega junto a noticias.json en un servidor público, el navegador consulta
