@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-e569c833fed25221",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Iberoamérica crea una alianza para impulsar una inteligencia artificial propia",
+      "summary": "Titular difundido por ABC Color a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ABC Color · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRmpHUjlncVE2aHJEUUFzRVBkTVVMU1pPbmxxV1Fod2lYV2k3R0Zza1Eta1pkb3FEdFlNQ0s0aVJjV1d5SnBVWk9ndTFCTVo0ank3SkVHY0JvWlg4dHhIWkJFc2NqcTRzY1V1TENSMzZoWmQxNmE3NW5ja0FOQTlma3EyUzIxMlpSSFNoTy1WcUFFTXJ0VkNmUll4NHpraWhHSHpDQUh2SXBlcS1xeXJHUFcwT2RMUkhPRWY2RDd0TjV2YjFEbjNhQ0xuSzc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:46-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6b0b7a2a30543453",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Experience AI llega a Chile: Google y Raspberry Pi impulsan la enseñanza de inteligencia artificial en las escuelas",
+      "summary": "Titular difundido por ITSitio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ITSitio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOX2cwTjFqYUIyWHRoMWVFTXM4a0ozWEIzRTMzTGpJOVhfT2lhUFJRd3RJeEtRbTlWUThxa3gtR1E5Wk5kYVREa2QwNE5nemdZLVdqbl9uSUFrMXJlaThzSklkY2NQSWtLWV9acGtsRXVMektCMlNBbGRKUHdnYU5xRDIzTHpYVDB0N0hseXlEZjlWRjFIbmpaODlwYnhZT01RSEd0b05laEdjS1BndU9IUG9LejNCc0hERjhaUVN6YjB2bTZRRmxqVnI1U3BjUjNQb3NIdUxxRmhlZ1AyZDljUXlkVDYzXzJrcXJZNnNKei1FdFRqcS02eW13?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T13:22-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-1f28f3ed014763c8",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -3554,8 +3592,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:49-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:49-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:50-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:50-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
