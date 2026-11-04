@@ -2440,7 +2440,11 @@
       "verification": "editorial_verified",
       "priority": 1,
       "openingCue": "Congreso estadounidense",
-      "executiveSummary": "Reuters y AP proyectan mayorías demócratas en ambas cámaras tras las elecciones legislativas de EE. UU. del 3 de noviembre."
+      "executiveSummary": "Reuters y AP proyectan mayorías demócratas en ambas cámaras tras las elecciones legislativas de EE. UU. del 3 de noviembre.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Reuters y AP proyectan que el Partido Demócrata obtuvo mayorías en las dos cámaras del Congreso tras las elecciones de mitad de mandato del 3 de noviembre. El nuevo Congreso se instalará en enero. El resultado puede alterar la agenda legislativa y el control político sobre la administración de Donald Trump, con efectos internacionales. Respecto a los próximos pasos: seguir certificaciones de resultados estatales y la configuración definitiva de mayorías.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-02",
@@ -2464,7 +2468,11 @@
       "verification": "editorial_verified",
       "priority": 2,
       "openingCue": "sometimiento a la justicia",
-      "executiveSummary": "El Congreso aprobó la ley de sometimiento a la justicia. Falta la sanción presidencial; aún no entra en vigor."
+      "executiveSummary": "El Congreso aprobó la ley de sometimiento a la justicia. Falta la sanción presidencial; aún no entra en vigor.",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Las plenarias del Senado y la Cámara aprobaron el 3 de noviembre la iniciativa de sometimiento a la justicia impulsada por el Gobierno. El proyecto pasó a sanción presidencial; la aprobación legislativa no equivale todavía a su entrada en vigor. La reforma propone un marco para los procesos de sometimiento de organizaciones criminales y afecta la política nacional de seguridad. Respecto a los próximos pasos: verificar la sanción, publicación oficial del texto y eventuales controles jurídicos.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-03",
@@ -2484,7 +2492,11 @@
       "verification": "editorial_verified",
       "priority": 3,
       "openingCue": "impuestos en Colombia",
-      "executiveSummary": "Una propuesta tributaria podría reducir unos $969.000 mensuales el ingreso de un salario de $25 millones, según La República."
+      "executiveSummary": "Una propuesta tributaria podría reducir unos $969.000 mensuales el ingreso de un salario de $25 millones, según La República.",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "La República publicó un análisis de la propuesta de Ley de Rescate Económico: según los cálculos reseñados, un salario mensual de 25 millones de pesos podría experimentar una reducción cercana a $969.000 por cambios tributarios y de cotización. Es una propuesta, no una medida vigente. El alcance de la reforma puede modificar el ingreso disponible de trabajadores y el consumo de los hogares. Respecto a los próximos pasos: seguir el texto que debata el Congreso y las modificaciones antes de cualquier aprobación.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-04",
@@ -2504,7 +2516,11 @@
       "verification": "editorial_verified",
       "priority": 4,
       "openingCue": "energía ucraniana",
-      "executiveSummary": "Rusia atacó instalaciones eléctricas de Ucrania con misiles y drones, según Reuters, antes de conversaciones previstas en Abu Dabi."
+      "executiveSummary": "Rusia atacó instalaciones eléctricas de Ucrania con misiles y drones, según Reuters, antes de conversaciones previstas en Abu Dabi.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Reuters informa de ataques con drones y misiles contra centrales y subestaciones de Ucrania, que afectaron servicios públicos. El ataque precede a las conversaciones previstas para el 10 y 11 de noviembre en Abu Dabi. La afectación de la red eléctrica aumenta el riesgo humanitario y complica una negociación de alto impacto regional. Respecto a los próximos pasos: contrastar balances oficiales actualizados, situación de los servicios y avances de las conversaciones.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-05",
@@ -2528,7 +2544,11 @@
       "verification": "editorial_verified",
       "priority": 5,
       "openingCue": "Nvidia y China",
-      "executiveSummary": "Según Financial Times, Nvidia exigiría a socios de nube destinar al menos el 51 % de sus servicios a clientes no chinos."
+      "executiveSummary": "Según Financial Times, Nvidia exigiría a socios de nube destinar al menos el 51 % de sus servicios a clientes no chinos.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Financial Times informó, con base en personas familiarizadas con el asunto, que Nvidia exige a socios de computación en la nube destinar al menos el 51 % de sus servicios a clientes no chinos para contratos futuros. La República recogió la información el 4 de noviembre. La medida reportada puede limitar el acceso de compañías chinas a infraestructura de entrenamiento y ejecución de inteligencia artificial. Respecto a los próximos pasos: esperar confirmaciones formales y evaluar la aplicación real de las condiciones en los nuevos contratos.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-06",
@@ -2552,7 +2572,11 @@
       "verification": "editorial_verified",
       "priority": 6,
       "openingCue": "salario mínimo",
-      "executiveSummary": "Las propuestas divulgadas para el salario mínimo de 2027 oscilan entre el 8 % y el 38,5 %. No existe aumento aprobado."
+      "executiveSummary": "Las propuestas divulgadas para el salario mínimo de 2027 oscilan entre el 8 % y el 38,5 %. No existe aumento aprobado.",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Gremios empresariales han planteado incrementos cercanos al 8 %–9,5 %, mientras sectores sindicales hablan de un ajuste de hasta 38,5 %, según reportes de La República y El Colombiano. No hay un aumento aprobado. La negociación afectará trabajadores, empresas, costos laborales y las expectativas de inflación de 2027. Respecto a los próximos pasos: esperar instalación de la mesa y divulgación de indicadores técnicos de inflación y productividad.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-07",
@@ -2572,7 +2596,11 @@
       "verification": "editorial_verified",
       "priority": 7,
       "openingCue": "buques en Ormuz",
-      "executiveSummary": "Irán afirmó que cuatro petroleros se incendiaron cerca de Ormuz. Reuters recogió la declaración sin verificación independiente."
+      "executiveSummary": "Irán afirmó que cuatro petroleros se incendiaron cerca de Ormuz. Reuters recogió la declaración sin verificación independiente.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "La Guardia Revolucionaria iraní afirmó que cuatro petroleros se incendiaron tras chocar con minas en una ruta próxima al estrecho de Ormuz y dijo haber retenido otros dos barcos. Reuters recogió la declaración; los detalles no estaban verificados de manera independiente. Ormuz es estratégico para el comercio energético mundial; cualquier incidente puede modificar riesgos de navegación y precios. Respecto a los próximos pasos: confirmar identidad de buques, eventuales víctimas y reportes independientes de autoridades marítimas.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-08",
@@ -2592,7 +2620,11 @@
       "verification": "editorial_verified",
       "priority": 8,
       "openingCue": "acuerdos de AMD",
-      "executiveSummary": "AMD reportó un cargo contable cercano a US$1.070 millones por acuerdos de chips con OpenAI y Meta, según Reuters."
+      "executiveSummary": "AMD reportó un cargo contable cercano a US$1.070 millones por acuerdos de chips con OpenAI y Meta, según Reuters.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Reuters reportó un cargo contable de aproximadamente US$1.070 millones en el tercer trimestre por derechos financieros concedidos a OpenAI y Meta en acuerdos relacionados con chips de inteligencia artificial. No se trata de una salida de efectivo equivalente. Muestra cómo la competencia por cómputo de IA está dando lugar a relaciones financieras complejas entre proveedores y clientes. Respecto a los próximos pasos: revisar próximos resultados, envíos de chips y efectos de potenciales diluciones accionarias.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-09",
@@ -2612,7 +2644,11 @@
       "verification": "editorial_verified",
       "priority": 9,
       "openingCue": "ayuda a Israel",
-      "executiveSummary": "Trump dijo que buscaría suspender la ayuda anual de EE. UU. a Israel después de 2026; no anunció una modificación formal."
+      "executiveSummary": "Trump dijo que buscaría suspender la ayuda anual de EE. UU. a Israel después de 2026; no anunció una modificación formal.",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Donald Trump dijo que Estados Unidos dejaría de entregar alrededor de US$4.000 millones anuales en asistencia a Israel después de 2026, según Reuters. El acuerdo bilateral vigente cubre un periodo posterior y no se anunció un mecanismo formal de modificación. Un cambio efectivo en esa relación financiera tendría repercusiones diplomáticas y militares en Oriente Medio. Respecto a los próximos pasos: comprobar las decisiones legales y presupuestales y la posición oficial israelí.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261104-editorial-10",
@@ -2632,7 +2668,11 @@
       "verification": "editorial_verified",
       "priority": 10,
       "openingCue": "seguridad de agentes de inteligencia artificial",
-      "executiveSummary": "Apple advirtió de riesgos de agentes de IA que actúen fuera de sus permisos y causen errores o pérdidas, según EFE."
+      "executiveSummary": "Apple advirtió de riesgos de agentes de IA que actúen fuera de sus permisos y causen errores o pérdidas, según EFE.",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Apple reconoció en documentación regulatoria riesgos de que agentes de inteligencia artificial realicen acciones imprevistas, excedan permisos y generen errores o consecuencias financieras y legales, según un reporte de EFE del 4 de noviembre. La advertencia destaca la necesidad de supervisión, pruebas y mecanismos de seguridad para sistemas de IA con capacidad de acción. Respecto a los próximos pasos: seguir las medidas de control que adopten Apple y otros desarrolladores y los requisitos regulatorios que se anuncien.",
+      "audioEditorialSource": "ORBIUNO · síntesis original en español, elaborada a partir de fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "rss-07ce29318ee99881",
@@ -3795,5 +3835,6 @@
     "website": "https://colombia-al-dia.pages.dev/",
     "note": "ORBIUNO es la marca del noticiero Colombia al Día. Noticias concisas, fuentes y TTS."
   },
-  "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía."
+  "visualPolicy": "Imágenes reales verificadas con autor, URL original y derechos documentados; si faltan, únicamente tipografía.",
+  "audioPolicy": "audioFullTextEs contiene una narración ampliada original de ORBIUNO en español, NO el artículo íntegro de la prensa; sourceLanguage indica idioma de la fuente y el usuario puede escuchar el resumen propio en español."
 }
