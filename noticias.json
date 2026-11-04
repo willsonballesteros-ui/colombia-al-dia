@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-f904691f967cb6f4",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La UNRN será sede del VII Congreso internacional sobre Humanidades Digitales e inteligencia artificial",
+      "summary": "Titular difundido por VDM Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "VDM Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPT05UWXJxWU1sLXdoZmhGNlFyMmxKTVhVMWtocDNob0NhWkpWWHRyQ2laUkt1UlpnQy16d1RoREVuRmxSNWdSdTVUcDlBcjhzM1ltcHd6WjZhZlNKZDdBZm9WN240bDd0WExTUXVsa0dVaTdDWXowLVdGbzdhd1lITW4zdDZ0a1E2VTVNOS1obmhIazdncG50ZEdKMGltS0ZNUW5IblF4NERxRGt5RkE0RTNEQTlMSW9iVm9KNlpZR0VvRTNGZHZaQVJxZkpvTThEd25IUXN4ZnpjQy1uS1VrUEljTENaMWhFV1VNRTRSRjl4RXZSX1YycG1SNFNrUdIB_gFBVV95cUxPT05UWXJxWU1sLXdoZmhGNlFyMmxKTVhVMWtocDNob0NhWkpWWHRyQ2laUkt1UlpnQy16d1RoREVuRmxSNWdSdTVUcDlBcjhzM1ltcHd6WjZhZlNKZDdBZm9WN240bDd0WExTUXVsa0dVaTdDWXowLVdGbzdhd1lITW4zdDZ0a1E2VTVNOS1obmhIazdncG50ZEdKMGltS0ZNUW5IblF4NERxRGt5RkE0RTNEQTlMSW9iVm9KNlpZR0VvRTNGZHZaQVJxZkpvTThEd25IUXN4ZnpjQy1uS1VrUEljTENaMWhFV1VNRTRSRjl4RXZSX1YycG1SNFNrUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:36-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-467f803cc07277d6",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Apple comienza a probar la inteligencia artificial en China, en colaboración con Alibaba.",
+      "summary": "Titular difundido por KOHA.net a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "KOHA.net · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVGNPeDdKRzJZRVVOZWlEMktWM0RZaWhHbXZyTU1fV0xBeEExRDUtVnZ5aUtwUkUtZXZ6V0FvRjR2ZzVPQjZGVFpQb29Edzl4YWJWOFVYZmFOVjkyNy1CcDN4YnVZQldCam1nYXY0Y0NWcTdycWdtaWtMYlRheWtvdGRvR1VhYVlxRFp1dzkwQUlqNnNPdk1ncXdKQ2gyY0hINUM5ZkwwanlOR2JOZXcw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T05:50-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-07c5389399c0d1ba",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
