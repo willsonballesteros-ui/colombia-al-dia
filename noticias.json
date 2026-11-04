@@ -6,6 +6,25 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-74b2b62fa639e5ca",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¡RD APUESTA POR CREAR SU PROPIA TECNOLOGÍA! Anuncian 60 mil becas gratuitas en inteligencia artificial y programación",
+      "summary": "Titular difundido por Cachicha.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Cachicha.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVEZERDVDanN4UnRqX1A0VUhqTHpkbmNWUnJzNDBlZkF4dzRtQ2RTYU9EaHJOOVJ5VzI0OUNjWlBNZFN3R2RDOHBkT2xTMi1xTmZxOVYtWWY5MFVWUUdoT2twd21malZXMGJtTzFMOWxVNGYyTFJReTNtYy1oelp2aTJvZUxQbDFDYjdQUWpzcnBsbmtTcVhfcU9tYzJTNHl1RFc2UzNRWUZUMllEeFg2Q29vd1RUdWVzTmtWamhtUDVkZXZBNkNTLVY4QWxtVEh3aFgyeG1jSHBia0F2UXpCNFVFcw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:27-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-4ceb3061cee821a0",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -4204,8 +4223,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T09:24-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T09:24-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T09:28-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:28-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
