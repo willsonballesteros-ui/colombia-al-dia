@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c4884f51fe216ab2",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Kimi Antonelli, campeón de Fórmula 1 2026: la generación Z hace historia y Colombia sigue sus pasos",
+      "summary": "Titular difundido por Radio Nacional de Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio Nacional de Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE95UDAwbzU2ZjlYZzY4S1hPeWEwY3VmT2txYUtCRUhVOEI3WElZb3huZGdaUEpKZHExNGZqckN2NFZUOE1mdzgtSzVhbVpkTkEzbkhxNW4tbUFvS29OTUtmN0hCbFZLZW5wR01NY2lfM2FDZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:04-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6dbe8c7976797c58",
+      "date": "2026-11-03",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Tabla de posiciones de la Liga BetPlay 2026-II y del descenso, luego de la victoria de Tolima y Pasto: Jaguares, cada vez más cerca del descenso",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOZlJYQkVNUEhtSGNZdzZOZ0dCUHNlbnJydkp6R3gtRnAyVHNiUGlYZWs3NnVxS09MRFgzbWFzcXZ5UmhISzNCbWdiV09fSzlpb3JUZ3U2RGFTS2ZxLVlsMkxPWTVjdUtvWlltWFh4VF9yY1RISlNYMFVmWnAzYUFVMlg2TWFFbG9DZ2wyMkdNWThucXprNl8zVXdYVEtQbDRSRjlieWFJaWhlTF8xVXg2aFlvYWlCRXFrLW56cGIyR2pKVll1ZWJhZUZXNldMQ1VWUWR1d0NCbTQ0ZjFkQlJfeHBGUUgtQmJDM05Tdmo4LTRfYk1nOWNkZE1qZlBOQ0d0dU83WUJOd1hfdk1NMGVPTkhZeVNHcm4zdjRzbHYwcFVtaVcwc2VGNVlDSk9qVjRXaHByeWJnbGxHaEXSAbsCQVVfeXFMTmZSWEJFTVBIbUhjWXc2TmdHQlBzZW5ycnZKekd4LUZwMlRzYlBpWGVrNzZ1cUtPTERYM21hc3F2eVJoSEszQm1nYldPX0s5aW9yVGd1NkRhU0tmcS1ZbDJMT1k1Y3VLb1pZbVhYeFRfcmNUSEpTWDBVZlpwM2FBVTJYNk1hRWxvQ2dsMjJHTVk4bnF6azZfM1V3WFRLUGw0UkY5YnlhSWloZUxfMVV4NmhZb2FpQkVxay1uenBiMkdqSlZZdWViYWVGVzZXTENVVlFkdXdDQm00NGYxZEJSX3hwRlFILUJiQzNOU3ZqOC00X2JNZzljZGRNamZQTkNHdHVPN1lCTndYX3ZNTTBlT05IWXlTR3JuM3Y0c2x2MHBVbWlXMHNlRjVZQ0pPalY0V2hwcnliZ2xsR2hF?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T21:17-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-27a9dafcce104aef",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -4603,8 +4641,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T10:12-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T10:12-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T10:13-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T10:13-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
