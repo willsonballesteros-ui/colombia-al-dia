@@ -8,6 +8,7 @@ import html
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse, quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,28 +49,50 @@ def image_markup(n):
     )
 
 
+def source_thumbnail(n):
+    """Mostrar el favicon real del dominio citado; no es foto del hecho."""
+    sources = [s for s in n.get("sources", []) if str(s.get("url", "")).startswith("https://")]
+    if not sources:
+        return ""
+    host = (urlparse(sources[0]["url"]).hostname or "").lower()
+    if not host or not re.fullmatch(r"[a-z0-9.-]+", host):
+        return ""
+    icon_url = "https://www.google.com/s2/favicons?domain=" + quote(host, safe="") + "&sz=128"
+    label = sources[0].get("name", "Fuente")
+    return (
+        '<div class="source-thumbnail">'
+        '<img src="{icon}" loading="lazy" width="64" height="64" '
+        'alt="Icono del sitio de {label}; no es fotografía del hecho">'
+        '<span class="source-thumbnail-name">{label}</span></div>'
+    ).format(icon=esc(icon_url), label=esc(label))
+
+
 def article_html(n):
     sources = [s for s in n.get("sources", []) if str(s.get("url", "")).startswith("https://")]
     if not sources:
         return ""
     source = sources[0]
+    thumbnail = image_markup(n)
+    if not thumbnail:
+        thumbnail = source_thumbnail(n)
     return (
-        '<article id="noticia-{id}" class="card">{photo}'
+        '<article id="noticia-{id}" class="card compact-card">'
+        '<div class="visual-frame">{thumbnail}</div>'
         '<div class="news-body"><div class="news-meta">'
-        '<span class="news-chip">Top 10 · {cat}</span><time datetime="{date}">{date}</time>'
+        '<span class="news-chip">{cat}</span><time datetime="{date}">{date}</time>'
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
         '<div class="news-actions">'
         '<button type="button" class="listen-btn" data-tts-action="toggle" '
-        'data-tts-id="{id}" aria-pressed="false" aria-label="Escuchar resumen de esta noticia">'
-        '▶ Escuchar resumen</button>'
+        'data-tts-id="{id}" aria-pressed="false" aria-label="Escuchar resumen" '
+        'title="Escuchar resumen">▶ <span class="listen-label">Escuchar</span></button>'
         '<button type="button" class="stop-btn" data-tts-action="stop" '
-        'data-tts-id="{id}" aria-label="Detener la lectura de esta noticia" hidden>■ Detener</button>'
-        '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}">'
-        'Ver fuente: {label}</a></div>'
-        '</div></article>'
+        'data-tts-id="{id}" aria-label="Detener lectura" title="Detener lectura" hidden>■</button>'
+        '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
+        'title="Abrir la fuente original {label}">Fuente ↗</a>'
+        '</div></div></article>'
     ).format(
-        id=esc(n["id"]), photo=image_markup(n),
-        cat=esc(n["category"]), date=esc(n["date"]), title=esc(n["title"]),
+        id=esc(n["id"]), thumbnail=thumbnail,
+        cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
     )
