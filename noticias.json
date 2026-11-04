@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-a11138b3b9e270f7",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial: una revolución que pone en discusión el lugar de la inteligencia humana",
+      "summary": "Titular difundido por Diario Junio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario Junio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVlgwZXhvdktGTC15bmdtZnAxMFBrMno4eWxUZE9aZHlLakNFYktxd2I5eFdXRFYzX08xMGk5V1JqbVZBUV9LclFWdGJ0QllUTUtwR1dvZUc2dHdZdFQzWjhZa19rZzBlQ043b0FFbldoQlR2WVp6dmpSeGdCWjNhWEZwN2RfR0NGcENvbFVLVmQzekRaRTJyZzdnRGd0V1RUbThUcU5YM2lUQXRHbGF5dktyQzZSMzAzZlZjVDY3Z3Z3Y0lla0JGc3RabWd2Y0h0c2FR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T15:10-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-76b87650896c850a",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial pone a prueba la capacidad de adaptación de las empresas familiares",
+      "summary": "Titular difundido por Revista SUMMA a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista SUMMA · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU1ZQS1h4OGRQdkt1TXM3dXdKWTYyc0RpLWdQeEkweUJERmRwUURkd3VENVZTYkhtYXd1dndTa09sVnpzanotbkowU0lUSWFyRGk4X2N2cWtKVkw0dktZY2RxOUk2WENXUlY0Ym8xeG9aMXZFRk9oX3pKSnh3RzVCbTFQRlhSSW1aVUtrUHFRekpISU1kYzFUOVlaSzI0MWZBSDhQMHQ4X1VnRkVRU2p2ZXJYWHY5RG5yVVRvVw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T14:58-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-7461e4d3b19513e7",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
