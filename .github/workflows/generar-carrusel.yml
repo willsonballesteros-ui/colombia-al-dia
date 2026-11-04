@@ -1,4 +1,4 @@
-name: Generar carrusel e historia ORBIUNO
+name: Generar carrusel documental Colombia al Día
 on:
   workflow_dispatch:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - 'noticias.json'
       - 'scripts/build_carousel.py'
+      - 'scripts/prepare_site.py'
       - '.github/workflows/generar-carrusel.yml'
 
 permissions:
@@ -32,25 +33,22 @@ jobs:
         run: python scripts/validate_news.py noticias.json
       - name: Renderizar diez láminas
         run: python scripts/build_carousel.py
-      - name: Verificar cantidad y dimensiones
+      - name: Validar formato 12 láminas sin avatares
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           from PIL import Image
-          date=json.loads(Path('noticias.json').read_text())['editionDate']
-          images=list((Path('media')/date).glob('top10-*.png'))
-          assert len(images)==10, len(images)
-          for file in images:
-              with Image.open(file) as image: assert image.size==(1080,1350),file
-          visuals=list((Path('media')/date).glob('visual-*.png'))
-          assert len(visuals)==10, 'Se requieren 10 ilustraciones originales'
-          for file in visuals:
-              with Image.open(file) as art: assert art.size==(1080,600),file
-          story=Path('media')/date/'historia-orbiuno.png'
-          assert story.exists(), 'No se generó historia'
-          with Image.open(story) as cover: assert cover.size==(1080,1920),story
-          print('Validado:',len(images),'láminas + historia ORBIUNO')
+          day=json.loads(Path("noticias.json").read_text(encoding="utf-8"))["editionDate"]
+          p=Path("media")/day
+          slides=[p/"portada.png"]+[p/f"top10-{i:02d}.png" for i in range(1,11)]+[p/"cierre.png"]
+          assert len(slides)==12
+          for file in slides:
+              with Image.open(file) as im:
+                  assert im.size==(1080,1350), (file,im.size)
+          with Image.open(p/"historia.png") as im: assert im.size==(1080,1920)
+          assert (p/"sugerencias-stickers.json").is_file()
+          print("Validado: 12 láminas limpias + historia; ningún avatar")
           PY
       - name: Publicar imágenes sobre la última versión de main
         run: |
@@ -62,7 +60,13 @@ jobs:
             git reset --hard origin/main
             python scripts/validate_news.py noticias.json
             python scripts/build_carousel.py
-            git add media
+            # Eliminar todos los dibujos y clips de avatar de la edición activa.
+            DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
+            git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
+              "media/$DAY/historia-orbiuno.png" \
+              "media/$DAY/boletin-narrado.mp4" \
+              "media/$DAY/boletin-narrado.json"
+            git add -A media
             if git diff --cached --quiet; then
               echo 'Imágenes ya sincronizadas'; exit 0
             fi
