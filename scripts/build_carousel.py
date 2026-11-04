@@ -82,6 +82,15 @@ def verified_photo(note):
     return path if path.is_file() and path.suffix.lower() in (".png",".jpg",".jpeg",".webp") else None
 
 
+def font_for_lines(draw, text, width, count, preferred=34, minimum=24):
+    """Ajustar fuente para que el resumen quede completo en dos líneas."""
+    for size in range(preferred, minimum-1, -1):
+        face=font(size)
+        if len(wrap(draw,text,face,width,99))<=count:
+            return face
+    return font(minimum)
+
+
 def base():
     image=Image.new("RGB",(W,H),PAPER)
     d=ImageDraw.Draw(image)
@@ -128,8 +137,9 @@ def news_card(note,num,day,out):
     d=ImageDraw.Draw(image)
     paragraph(d,note["title"],65,729,font(47,True),INK,943,3,10)
     d.line((68,970,1011,970),fill="#D4DFEF",width=3)
-    paragraph(d,note.get("executiveSummary") or note.get("summary",""),
-              69,999,font(32),INK,947,2,12)
+    summary=note.get("executiveSummary") or note.get("summary","")
+    shortface=font_for_lines(d,summary,947,2,preferred=33,minimum=23)
+    paragraph(d,summary,69,999,shortface,INK,947,2,12)
     d.rectangle((0,1233,W,H),fill=NAVY)
     paragraph(d,"FUENTE: "+note["sources"][0]["name"],65,1252,
               font(20,True),WHITE,950,1,0)
