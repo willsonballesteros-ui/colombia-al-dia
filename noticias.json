@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-a83b2a564c254e7f",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Congreso de Colombia aprueba la ley de sometimiento a la Justicia en medio de críticas",
+      "summary": "Titular difundido por EFE - Agencia de noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "EFE - Agencia de noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeE96Z0VpZ3hUU0h5Z1ZSNFdETHJGRlJ5SlhHQ01Xek1VeVlxcVd0YXppaFdyZTVDaGZoR3Y1NEJ3Q3NFT1FQR1hVOF9Mdm1qUG5ISUhwYzJaS0JCdzJuT3VBNzFHRUZQdXZ4UnZjcXctOEJObFRvUW9oYnN6MUZfZ2xKREU1RVpRM1ZCcnR3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:01-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-321f48252794dbc2",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿PUEDE EUROPA SER TECNOLÓGICAMENTE SOBERANA? CHIPS, NUBE E INTELIGENCIA ARTIFICIAL FRENTE A LA DEPENDENCIA EXTERIOR",
+      "summary": "Titular difundido por Geopol 21 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Geopol 21 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOEluYzZNVURTZnVTS2U1RWZqa0FKUFlVWkI4Zlp1dUxCZFFleGM2V3M2QmphM1dkRUZuMF9SQjVaeG16YVRmaDhxZ0ZTdXRSR2UyMDlvRmU1cENQTWdIcWJWXzBsNWxJMGtRTzJqdnI5WnNjSldkLUlOWHBONjVoV1pKcEpmaXJLZ1pwSGp4WUp6LU1FU056ckJKMU9PLVNMY1lwNnRuaUthLV9jNE0tcW1YWVRUamtoTThyZEIzNzhsUm8tdUk5bm01SENxc00?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T08:58-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c19629294452ebf1",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Protección gana Premio Platino en Inteligencia Artificial 2027",
+      "summary": "Titular difundido por areacucuta.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "areacucuta.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbFBiNE9ORFBIcEFvd19NSUZ0c1RlX3lqeVI5N1J1dXlxMzRkVXhZTkcyalA0d1RiYWhhMTRUcUdUakt5QTIzRUdDZ2lhR1JNRHFqWmphbVIxT3FxajRqSjYzWnFFYm11c2E5bHRMWTJxeFRiamdwOTZFRHlHZFBqbzNSZFM4NXRKcnVUb3huVUNCZExPWVl4alk4MEZUdFA0RzVPdzF2bklFbmxDOXhqbTlXMXhUYTQwWFN3VTlsbEl5WmlDTzU2SUd6SE9BVXI0bG03WFRvVERNWlYwRThlc0FuU2xFbGpGZGdvWXZHMGo?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T11:03-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-dee5f35e39a48e4b",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -3822,8 +3879,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:57-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:57-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T09:05-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:05-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
