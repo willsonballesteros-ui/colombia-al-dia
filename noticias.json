@@ -6,6 +6,25 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-571a1d6fae0a33cc",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial contraataca: \"La guerra de los clones\"",
+      "summary": "Titular difundido por El Nacional.cat a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Nacional.cat · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSU5qd3JhenY4cTJ5SkVScUQxa1oyTU1KN0pVNy1JT2NYTWdmWUpScm5naEcyQjlMQ2Z2UmNTczl2U2ZCZmt4T0lKa2J6cmNzcjdLVlhYd0NORjV2M2FvazNNRGUyZHlBNF9VUXIydURSMWlFU290SDJraVZHTzhFZjNnMUhyaUVGRUg5VndMUDZmM1VYMmcydTdHLUxnUDlBWDB1QmtaMXZZVUU?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:30-05:00",
+      "relevanceScore": 7
+    },
+    {
       "id": "rss-fbce7d868a83b7b0",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -4243,7 +4262,7 @@
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-04T09:35-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T09:29-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:35-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
