@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-dee5f35e39a48e4b",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial: neurocientífico advierte sobre impacto cerebral y social",
+      "summary": "Titular difundido por CONSULTORSALUD a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "CONSULTORSALUD · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVOGpveGI2UDNtRUU4VGE2c043bnNZWGhmQW51eTA5YzdlQ2ZLWWRWazVTRkVtRVVydmZNbnhnQTkzYVRZX2RidlRwM0VGYk5HT216MHJsR2Fqeno2b1JOejBkZFNLRkFqUjFHcVFTMEV1N2E0RngybEV4TzF3NWs?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T11:43-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-4c68dc1ac963cb90",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El FMI alerta de los empleos que la inteligencia artificial puede poner en peligro: los jóvenes, entre los más afectados",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOcHQ3SjlLUS1pZEpqRTl2YkhlcjFvUGk5LTNVMW4xeDRKbDFKcnZMazBTSElZSFNGLTNoZThwMU1DUmNuV2FYYWNuSHh1X1BoUWpqTkZ4S29lMWU5NWNreTdZSGFaa1FuT2NfOVNocExzU3ZzNkRraXFoZkRScl9wMnNQVDMwUGlOeGVtLUJCQWNKTXhNb2wtRjVYV05GSV84WGI1WHFKcUpzcTBKbEtweU9SR3Y3NGJRT3ZuVEgwUnliRzVUaC1SeGZDQnE4eWQ3TEpLNEdUTlh1cVBCWDFPMXlXUlFmVnowWWlPYTl5QWQ4RFHSAY4CQVVfeXFMTUhrYl9lTlp6aFY0WUdOcEdpclpoRURMOWt3Nk5aVVVIS1o4Q0cya2t0ZExoSU44Q2Q4R0V2Z2dfMTNZZFFldk9RNFYtOXNXeVl5NDlKOUdTb3hXTThzSlh3UGQ0Mm5tTHNiY3NmOW15REZMWG5XREdSZmtYM3duellrREdPclNIOUhwbGNqNFp0OEZPVVdBblBtdFJQSzFObWVZVmZUWlhaWkp4c1RtQVhvNkNVdUoxREtaX2l2Yk9jV2Vlb2RtSFBkeFJRSWVsU3NDcy01LWp1MGtWRzlwYk5CMExZV0tlTU5TS3JGOXgxTkNSaDNjWGZFQjdoS2hiZmFWQk5KM3RpOUNIYlJn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T11:15-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-7f8b48591ab026c6",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -3744,8 +3782,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:56-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:56-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:57-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:57-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
