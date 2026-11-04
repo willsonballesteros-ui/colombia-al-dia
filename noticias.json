@@ -1,8 +1,8 @@
 {
-  "brand": "Colombia al Día | Resumen de Noticias",
+  "brand": "ORBIUNO",
   "editionDate": "2026-11-03",
   "editedAtBogota": "2026-11-03 21:55",
-  "siteVersion": "3.2",
+  "siteVersion": "3.4",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
@@ -996,5 +996,14 @@
     },
     "selection": "actualidad e interés público; tendencia de búsqueda cuando hay evidencia",
     "editionLabel": "Edición global de 10 noticias"
+  },
+  "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
+  "branding": {
+    "name": "ORBIUNO",
+    "monogram": "OU",
+    "logo": "/branding/orbiuno-logo.svg",
+    "icon": "/branding/orbiuno-icono.svg",
+    "website": "https://colombia-al-dia.pages.dev/",
+    "note": "La marca pública del sitio es ORBIUNO; el dominio histórico se conserva para preservar enlaces."
   }
 }
