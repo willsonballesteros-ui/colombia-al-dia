@@ -60,8 +60,9 @@ class NewsAudioUITests(unittest.TestCase):
                    and x.get("verification") == "editorial_verified"]
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
         self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
-        self.assertEqual(rendered.count('data-tts-full="true"'), 10)
-        self.assertEqual(rendered.count("Escuchar toda la noticia"), 20)
+        self.assertEqual(rendered.count('data-tts-full="editorial"'), 10)
+        self.assertEqual(rendered.count('data-tts-full="true"'), 0)
+        self.assertEqual(rendered.count("Escuchar versión ampliada"), 20)
         self.assertEqual(len(current), 10)
         self.assertTrue(all(len(x.get("audioFullTextEs", "")) > len(x["executiveSummary"]) for x in current))
         english = [x for x in current if x.get("sourceLanguage") == "en"]
@@ -79,6 +80,37 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("const readSpeechSegment=()=>", self.page)
         self.assertIn("utterance.lang='es-CO'", self.page)
         self.assertIn("sourceLanguage==='en'", self.page)
+        self.assertIn("hasAuthorizedFullArticle",self.page)
+
+    def test_voice_selector_offers_real_spanish_device_voices(self):
+        self.assertIn('id="voice-select"',self.page)
+        self.assertIn('Voz en español',self.page)
+        self.assertIn("const spanishVoices=()",self.page)
+        self.assertIn("const selectSpanishVoice=()=>",self.page)
+        self.assertIn("voiceschanged",self.page)
+        self.assertIn("utterance.voice=voice",self.page)
+        self.assertIn("restartCurrentSentence()",self.page)
+
+    def test_full_article_requires_source_rights_and_translation(self):
+        from copy import deepcopy
+        from scripts.prepare_site import article_original_authorized
+        first = next(n for n in self.data["news"] if n.get("sourceLanguage")=="en" and n.get("verification")=="editorial_verified")
+        candidate = deepcopy(first)
+        candidate["fullArticleTextEs"]="Texto íntegro permitido por la fuente. "*25
+        candidate["fullArticleIsVerbatimSource"]=True
+        candidate["fullArticleRightsVerified"]=True
+        candidate["fullArticleLicense"]="Licencia de reproducción y traducción documentada"
+        candidate["fullArticleSourceUrl"]=candidate["sources"][0]["url"]
+        self.assertFalse(article_original_authorized(candidate))
+        candidate["fullArticleTranslationAuthorized"]=True
+        self.assertTrue(article_original_authorized(candidate))
+        page = __import__("scripts.prepare_site",fromlist=["article_html"]).article_html(candidate)
+        self.assertIn('data-tts-full="true"',page)
+        self.assertIn("Escuchar toda la noticia",page)
+        candidate["fullArticleRightsVerified"]=False
+        self.assertFalse(article_original_authorized(candidate))
+        page = __import__("scripts.prepare_site",fromlist=["article_html"]).article_html(candidate)
+        self.assertNotIn('data-tts-full="true"',page)
 
     def test_speech_api_is_user_initiated_and_free(self):
         self.assertIn("new window.SpeechSynthesisUtterance", self.page)
