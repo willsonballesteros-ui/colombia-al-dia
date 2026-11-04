@@ -143,8 +143,8 @@ def news_card(note,num,day,out):
     d.rectangle((0,1233,W,H),fill=NAVY)
     paragraph(d,"FUENTE: "+note["sources"][0]["name"],65,1252,
               font(20,True),WHITE,950,1,0)
-    d.text((66,1296),"Ver noticia y enlace original: colombia-al-dia.pages.dev",
-           font=font(18),fill=GOLD)
+    d.text((66,1296),"ESCUCHA LA NOTICIA EN LA WEB · colombia-al-dia.pages.dev",
+           font=font(18,True),fill=GOLD)
     image.save(out,optimize=True)
 
 
@@ -155,8 +155,10 @@ def cover(day,out):
     d.line((71,680,1008,680),fill=GOLD,width=5)
     paragraph(d,"Colombia · Mundo · Economía · Inteligencia artificial",
               74,746,font(32),INK,925,3,16)
-    paragraph(d,"Consulta fuentes verificables en nuestra web.",
-              75,1040,font(30),NAVY,930,2,14)
+    paragraph(d,"ESCUCHA LAS NOTICIAS EN NUESTRA WEB.",
+              75,1008,font(31,True),NAVY,930,2,14)
+    paragraph(d,"Elige voz y velocidad · colombia-al-dia.pages.dev",
+              75,1078,font(25),INK,935,3,12)
     d.text((74,1273),day[8:10]+"/"+day[5:7]+"/"+day[:4]+"  ·  @resumen.noticias",
            font=font(23),fill=MUTED)
     image.save(out,optimize=True)
