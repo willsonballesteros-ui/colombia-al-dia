@@ -13,9 +13,9 @@ on:
       - '.github/workflows/actualizar-noticias.yml'
   schedule:
     # GitHub Actions usa UTC; Bogotá (UTC-5) no cambia por horario de verano.
-    # Preparación a las 07:30, 11:30 y 17:30 locales.
+    # Preparación anticipada a las 07:10, 11:10 y 17:10 locales para permitir publicación a 08:00, 12:00 y 18:00.
     # El inicio puede demorarse; NO garantiza publicación exacta.
-    - cron: '30 12,16,22 * * *'
+    - cron: '10 12,16,22 * * *'
 
 permissions:
   contents: write
