@@ -20,27 +20,45 @@ def build(data: dict, page: str) -> str:
         and n.get("verification") == "editorial_verified"
     ]
     news.sort(key=lambda x: x.get("priority", 999))
-    # El contenido estático NO incluye titulares RSS pendientes de verificación.
+    # Precarga SEO sin JS: sólo la edición verificada.
     articles = []
     for n in news[:10]:
-        source_links = "".join(
-            '<a class="source" target="_blank" rel="noopener noreferrer" href="{}">Ver fuente: {}</a> '.format(
+        sid = html.escape(n["id"], quote=True)
+        title = html.escape(n["title"])
+        cat = html.escape(n["category"])
+        day = html.escape(n["date"])
+        image = html.escape(n.get("imageUrl", "./branding/orbiuno-icono.svg"), quote=True)
+        source = n["sources"][0]
+        href = html.escape(source["url"], quote=True)
+        label = html.escape(source["name"])
+        extra = "".join(
+            '<a class="source" href="{}" target="_blank" rel="noopener noreferrer">Otra fuente: {}</a>'.format(
                 html.escape(s["url"], quote=True), html.escape(s["name"])
-            )
-            for s in n.get("sources", [])
-            if s.get("url", "").startswith("https://")
+            ) for s in n["sources"][1:]
         )
         articles.append(
-            '<article id="noticia-{}" class="card"><h3>{}</h3><p>{}</p><p><strong>Por qué importa:</strong> {}</p><a class="source" href="#noticia-{}">Enlace directo a esta noticia</a> {}</article>'.format(
-                html.escape(n["id"], quote=True), html.escape(n["title"]), html.escape(n["summary"]), html.escape(n["why"]), html.escape(n["id"], quote=True), source_links
+            '<article id="noticia-{id}" class="card">'
+            '<img class="news-image" src="{image}" loading="lazy" width="1080" height="600" '
+            'alt="Ilustración editorial de {cat}; no es una fotografía del hecho">'
+            '<div class="news-body">'
+            '<div class="news-meta"><span class="news-chip">Top 10 · {cat}</span><time datetime="{day}">{day}</time></div>'
+            '<h3>{title}</h3>'
+            '<a class="source" href="{href}" target="_blank" rel="noopener noreferrer">Ver fuente: {label}</a>'
+            '<details class="news-more"><summary>+ Leer resumen completo</summary>'
+            '<div class="explain"><strong>QUÉ PASÓ</strong><p>{summary}</p></div>'
+            '<div class="explain"><strong>POR QUÉ IMPORTA</strong><p>{why}</p></div>'
+            '<div class="explain"><strong>QUÉ SIGUE</strong><p>{next}</p></div>{extra}'
+            '</details></div></article>'.format(
+                id=sid, image=image, cat=cat, day=day, title=title,
+                href=href, label=label, summary=html.escape(n.get("summary", "")),
+                why=html.escape(n.get("why", "")), next=html.escape(n.get("next", "")),
+                extra=extra
             )
         )
-
-    rendered = '<div class="cards" id="cards" aria-live="polite">' + "".join(articles) + "</div>"
-    marker = r'<div class="cards" id="cards" aria-live="polite">.*?</div>'
-    page, count = re.subn(marker, lambda _: rendered, page, count=1, flags=re.S)
-    if count != 1:
-        raise ValueError("No se localizó #cards para insertar noticias iniciales")
+    rendered = '<div class="cards" id="cards" aria-live="polite">' + "".join(articles) + '</div>'
+    start = page.index('<div class="cards" id="cards" aria-live="polite">')
+    finish = page.index('<div class="empty" id="empty"', start)
+    page = page[:start] + rendered + page[finish:]
 
     # Escapar < para impedir cierre de script en contenido de terceros.
     encoded = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
@@ -74,6 +92,23 @@ def build(data: dict, page: str) -> str:
 
 def main():
     data = json.loads((ROOT / "noticias.json").read_text(encoding="utf-8"))
+    changed = False
+    for item in data.get("news", []):
+        pr = item.get("priority")
+        if (item.get("date") == data.get("editionDate")
+            and item.get("verification") == "editorial_verified"
+            and isinstance(pr, int) and 1 <= pr <= 10):
+            image_path = "./media/{}/visual-{:02d}.png".format(item["date"], pr)
+            if item.get("imageUrl") != image_path:
+                item["imageUrl"] = image_path
+                changed = True
+            if item.get("imageType") != "ilustracion_editorial":
+                item["imageType"] = "ilustracion_editorial"
+                changed = True
+    if changed:
+        (ROOT / "noticias.json").write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
     path = ROOT / "index.html"
     current = path.read_text(encoding="utf-8")
     rendered = build(data, current)
