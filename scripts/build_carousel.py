@@ -92,8 +92,7 @@ def draw_story(day,out,url):
     d.text((102,1442),"@resumen.noticias",font=f(34),fill="#d9e4ff")
     d.text((103,1510),"colombia-al-dia.pages.dev",font=f(31,True),fill="#e9f0ff")
     # Reservar espacio libre para que Instagram agregue sticker Enlace REAL.
-    d.rounded_rectangle((98,1640,982,1790),radius=35,outline="#7b9ed5",width=3)
-    d.text((180,1680),"ESPACIO PARA STICKER ENLACE",font=f(28,True),fill="#e8efff")
+    # Dejar espacio limpio para colocar el sticker nativo de enlace.
     im.save(out,optimize=True)
 
 def main():
