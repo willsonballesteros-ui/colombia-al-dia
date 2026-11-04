@@ -55,7 +55,14 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m 'Generar carrusel de edición verificada'
-            git push
+            # Otro workflow puede publicar cambios en main en paralelo.
+            for i in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep $((3 * i))
+            done
+            echo 'Error al sincronizar material grafico' >&2
+            exit 1
           else
             echo 'Sin cambios en láminas'
           fi
