@@ -977,7 +977,8 @@
       "verification": "editorial_verified",
       "priority": 1,
       "imageUrl": "./media/2026-11-04/visual-01.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "Congreso estadounidense"
     },
     {
       "id": "20261104-editorial-02",
@@ -1001,7 +1002,8 @@
       "verification": "editorial_verified",
       "priority": 2,
       "imageUrl": "./media/2026-11-04/visual-02.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "sometimiento a la justicia"
     },
     {
       "id": "20261104-editorial-03",
@@ -1021,7 +1023,8 @@
       "verification": "editorial_verified",
       "priority": 3,
       "imageUrl": "./media/2026-11-04/visual-03.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "impuestos en Colombia"
     },
     {
       "id": "20261104-editorial-04",
@@ -1041,7 +1044,8 @@
       "verification": "editorial_verified",
       "priority": 4,
       "imageUrl": "./media/2026-11-04/visual-04.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "energía ucraniana"
     },
     {
       "id": "20261104-editorial-05",
@@ -1065,7 +1069,8 @@
       "verification": "editorial_verified",
       "priority": 5,
       "imageUrl": "./media/2026-11-04/visual-05.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "Nvidia y China"
     },
     {
       "id": "20261104-editorial-06",
@@ -1089,7 +1094,8 @@
       "verification": "editorial_verified",
       "priority": 6,
       "imageUrl": "./media/2026-11-04/visual-06.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "salario mínimo"
     },
     {
       "id": "20261104-editorial-07",
@@ -1109,7 +1115,8 @@
       "verification": "editorial_verified",
       "priority": 7,
       "imageUrl": "./media/2026-11-04/visual-07.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "buques en Ormuz"
     },
     {
       "id": "20261104-editorial-08",
@@ -1129,7 +1136,8 @@
       "verification": "editorial_verified",
       "priority": 8,
       "imageUrl": "./media/2026-11-04/visual-08.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "acuerdos de AMD"
     },
     {
       "id": "20261104-editorial-09",
@@ -1149,7 +1157,8 @@
       "verification": "editorial_verified",
       "priority": 9,
       "imageUrl": "./media/2026-11-04/visual-09.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "ayuda a Israel"
     },
     {
       "id": "20261104-editorial-10",
@@ -1169,7 +1178,8 @@
       "verification": "editorial_verified",
       "priority": 10,
       "imageUrl": "./media/2026-11-04/visual-10.png",
-      "imageType": "ilustracion_editorial"
+      "imageType": "ilustracion_editorial",
+      "openingCue": "seguridad de agentes de inteligencia artificial"
     },
     {
       "id": "rss-07ce29318ee99881",
