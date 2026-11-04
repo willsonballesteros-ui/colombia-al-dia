@@ -31,8 +31,8 @@ def build(data: dict, page: str) -> str:
             if s.get("url", "").startswith("https://")
         )
         articles.append(
-            '<article class="card"><h3>{}</h3><p>{}</p><p><strong>Por qué importa:</strong> {}</p>{}</article>'.format(
-                html.escape(n["title"]), html.escape(n["summary"]), html.escape(n["why"]), source_links
+            '<article id="noticia-{}" class="card"><h3>{}</h3><p>{}</p><p><strong>Por qué importa:</strong> {}</p><a class="source" href="#noticia-{}">Enlace directo a esta noticia</a> {}</article>'.format(
+                html.escape(n["id"], quote=True), html.escape(n["title"]), html.escape(n["summary"]), html.escape(n["why"]), html.escape(n["id"], quote=True), source_links
             )
         )
 
