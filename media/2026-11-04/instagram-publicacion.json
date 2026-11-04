@@ -1,0 +1,62 @@
+{
+  "editionDate": "2026-11-04",
+  "brand": "ORBIUNO",
+  "caption": "ORBIUNO | 04/11/2026\n\nDiez noticias de Colombia y el mundo. Titulares y contexto en dos líneas.\n\n¿Qué noticia te impactó más? Te leemos.\n\n👇 Lee los resúmenes y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "👇 Lee la noticia completa y verifica las fuentes originales aquí:\n🌐 https://colombia-al-dia.pages.dev/",
+  "publicationVerified": false,
+  "media": [
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-01.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-02.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-03.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-04.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-05.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-06.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-07.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-08.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-09.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/top10-10.png"
+  ],
+  "sourceLinks": [
+    {
+      "title": "Demócratas recuperan Senado y Cámara en las elecciones de EE. UU.",
+      "url": "https://www.reuters.com/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+    },
+    {
+      "title": "Congreso aprueba la ley de sometimiento; falta la sanción presidencial",
+      "url": "https://www.elespectador.com/politica/ley-de-sometimiento-de-de-la-espriella-termina-tramite-en-congreso-y-va-a-sancion/"
+    },
+    {
+      "title": "Reforma tributaria: estiman mayor carga para algunos salarios altos",
+      "url": "https://www.larepublica.co/economia/reforma-tributaria-reduciria-en-969-000-mensuales-los-salarios-de-25-millones-4516846"
+    },
+    {
+      "title": "Rusia ataca infraestructura energética ucraniana antes de nuevas conversaciones",
+      "url": "https://www.reuters.com/world/europe/russia-bombards-ukraine-power-grid-before-abu-dhabi-talks-merz-urges-moscow-2026-11-03/"
+    },
+    {
+      "title": "Nvidia impone a socios de nube nuevas condiciones vinculadas a China, según FT",
+      "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+    },
+    {
+      "title": "Salario mínimo de 2027: propuestas van del 8 % al 38,5 %",
+      "url": "https://www.larepublica.co/economia/negociacion-del-minimo-para-2027-tiene-propuestas-desde-8-hasta-38-5-4517014"
+    },
+    {
+      "title": "Irán afirma que cuatro petroleros ardieron tras tocar minas cerca de Ormuz",
+      "url": "https://www.reuters.com/world/middle-east/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-near-strait-hormuz-2026-11-04/"
+    },
+    {
+      "title": "AMD registra cargo contable por acuerdos de chips con OpenAI y Meta",
+      "url": "https://www.reuters.com/legal/transactional/amds-openai-meta-chip-deals-trigger-1-billion-quarterly-charge-2026-11-04/"
+    },
+    {
+      "title": "Trump anuncia que buscará terminar la ayuda anual a Israel después de 2026",
+      "url": "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/"
+    },
+    {
+      "title": "Apple advierte que agentes de IA pueden actuar sin autorización",
+      "url": "https://efe.com/ciencia-y-tecnologia/2026-11-04/apple-riesgos-ia-autorizacion-anticiparse/"
+    }
+  ],
+  "note": "La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo."
+}
