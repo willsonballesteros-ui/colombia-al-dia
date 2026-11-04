@@ -2,9 +2,47 @@
   "brand": "Colombia al Día",
   "editionDate": "2026-11-04",
   "editedAtBogota": "2026-11-04 05:55",
-  "siteVersion": "5.0",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-89b014f27a0aec43",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Recomiendan uso de Inteligencia Artificial en periodismo para crear contenidos especializados",
+      "summary": "Titular difundido por vanguardia.com.mx a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "vanguardia.com.mx · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTEw5aG4wWEd3ZGFIYnhoZzZBaXpFWEtzSW5SNVJib2cxVUt0Q0k1OWJDbW9mZUdWalBwZ1Y3Ny1qeHRmcXQzY0VLX3VXQ2ZmYnJaVEJ6QUJCdUM0UlJ1QlJmV1llU0ZkWHRvNmJiZ09FSnZpU3VCdE5aQkZwU2FYLUNKX1BZTHNmYkRxN1dBdVVvMFEwQnBabkR4aUhxQU9NLXhmLVd5Zm9VOFhhUlB1WlNNcjR6YzNZWi1oZDkzd0QzNlNOUkVNUFRCQVRQZ0IyTlRBTlZaWWFlTk1SaXN3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T19:57-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3398f93e762edb30",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cómo la inteligencia artificial está cambiando la forma de comprar en CyberMonday 2026",
+      "summary": "Titular difundido por iProfesional a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "iProfesional · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUWpqaHFoRG42S3VldVkyZ1cwQ1Uwem9aVE5qcTNnMThUZXV0aFhiakM5Tm92NWJCOW00VUg5ZWJJd2k1c3VaWVI1NFlKM09hM1gwWDZEYkp6MTE4MFQ2UHpnVU4zcGFDQ3hWZFBEQ08zb0U3MUFrZHNFR3FuSk5LNy1TMkpKMHpnY0hJQmd3by15dWVfMThaa2E1aVdoSGtxUXNmV3F4aTYyeVVmQ0tJNlM3clI0LWFPcm1RY3Vn0gHDAUFVX3lxTE1LdkVDcE9WdjZPRjFIWTZYYVZDNWlveXdMNF84Z1VXMHpZMUI3Um1fSW5acGNOUnNSQS1EQ255bEhIa0lzMENDQzZFZHhLX0NQcXNvSnR1bVdvRWNHLVlWY20yUG9PaVRVaXdobkRHcEhWV0dhZkNKTkc0R1BxVmM2eVlEVXdRSUNwemtNTUZXdXpWdnBuX19UeFNkbW1kc1VnN25xclhUckgwYUdVUTdnVlR1WmFuZVZXak4wOWkwbkViaw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T18:44-05:00",
+      "relevanceScore": 5
+    },
     {
       "id": "rss-40b093ab193e2e02",
       "date": "2026-11-04",
@@ -2594,8 +2632,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T07:07-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T07:07-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T07:11-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T07:11-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
