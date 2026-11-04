@@ -32,6 +32,14 @@ jobs:
         run: |
           command -v ffmpeg
           command -v ffprobe
+      - name: Instalar sintetizador Edge-TTS solo con permiso
+        if: vars.ORBIUNO_EDGE_TTS_OPT_IN == '1'
+        run: python -m pip install --disable-pip-version-check edge-tts
+      - name: Crear locución local de titulares solo con licencia aprobada
+        if: vars.ORBIUNO_EDGE_TTS_OPT_IN == '1'
+        env:
+          ORBIUNO_EDGE_TTS_OPT_IN: '1'
+        run: python scripts/prepare_presenter_voice.py
       - name: Montar once escenas con video o foto narrada autorizados
         run: python scripts/assemble_reel.py
       - name: Confirmar presencia de video y audio
@@ -54,9 +62,18 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git fetch origin main
           git reset --hard origin/main
+          if [ "${{ vars.ORBIUNO_EDGE_TTS_OPT_IN }}" = "1" ]; then
+            ORBIUNO_EDGE_TTS_OPT_IN=1 python scripts/prepare_presenter_voice.py
+          fi
           python scripts/assemble_reel.py
           DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
           git add "media/$DAY/reel-presentadora.mp4" "media/$DAY/reel-presentadora.json"
+          if [ -f "media/$DAY/presentadora-voz.wav" ]; then
+            git add "media/$DAY/presentadora-voz.wav"
+          fi
+          if [ -f "media/$DAY/presentadora-foto.json" ]; then
+            git add "media/$DAY/presentadora-foto.json"
+          fi
           if git diff --cached --quiet; then
             echo 'Reel ya guardado'; exit 0
           fi
