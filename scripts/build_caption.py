@@ -24,14 +24,18 @@ def build(db):
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
     caption=(
         "ORBIUNO | "+display+"\n\n"
-        "Diez noticias de Colombia y el mundo. Titulares y contexto en dos líneas.\n\n"
-        "¿Qué noticia te impactó más? Te leemos.\n\n"
-        "👇 Lee los resúmenes y verifica las fuentes originales:\n"
+        "Diez noticias de Colombia y el mundo, claras y directas.\n\n"
+        "🎧 Las noticias también se escuchan en nuestra web.\n"
+        "Elige voz en español, tono y velocidad a tu gusto.\n\n"
+        "👇 Escucha el audio y consulta las fuentes originales:\n"
         "🌐 "+URL+"\n\n"
+        "¿Qué noticia te impactó más? Comenta su número.\n\n"
         + HANDLE+"  #ORBIUNO #NoticiasColombia #ResumenDelDia"
     )
     first_comment=(
-        "👇 Lee la noticia completa y verifica las fuentes originales aquí:\n"
+        "🎧 Las noticias también se escuchan en ORBIUNO.\n"
+        "Escoge la voz y la velocidad desde nuestra página.\n"
+        "👇 Escucha y verifica las fuentes originales:\n"
         "🌐 "+URL
     )
     assert "\n🌐 "+URL in caption
