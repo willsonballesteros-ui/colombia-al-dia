@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-6cfbbdab02d8a791",
+      "date": "2026-11-04",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Los gráficos y mapas que muestran la magnitud del histórico triunfo de los demócratas en las elecciones de medio mandato en EE.UU.",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/c63dj78e4z40o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T08:21-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-8558c2c263d46b84",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Terremoto leve mag. 3.0 - Colombia: 101 km Al Noroeste De Bucaramanga, Wednesday 4 Nov 2026 a las 08:11 (Hora Caracas)",
+      "summary": "Titular difundido por Volcano Discovery a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Volcano Discovery · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQd3VFVGx5Z25KQi1LUDQwV0RTbTg0eVh1SnVoVG1XVmhxVE5GMC1rWGhjQi1QYzB2c3AzMEp1NFRQWlNyVHBHZjRIRGlDMnM4cUdCR1VJeUFST2RNd3NERm4zYnhLQVdQaU1aNTd0UThKcFNDelFudzRtSWFkM1l1UWNXUURWRENFTlZrel9mQklCVHF0VGtmc3B6Z19BQ19aRUtRQVByMzBkNzV3QnRZdkVhM2JTMHFhNTcxNmVZXzQ2YXpmd2lsRnVKRU4zaWM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:37-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e08ca507bf54b182",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Palmar El Salto contará con sistema de inteligencia artificial para detectar incendios forestales",
+      "summary": "Titular difundido por UCV radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "UCV radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPckMwdno4RHBFeXRvV01lTFZLcmJFVWlsc1dlWVdqZTNreHc2V1daSnl5NmI4aVlZLUFOSDNfWUxCTXVoZGpPT1hKUXRLbEhyU2Y2ekRiNFNDaW5rMjdacE9EV3Jubnc4eno4UEU0N0JxU1ptSHltRm9RY0dEblR1S3l0VzhlTC14dlc2NlhYSGRSYzBpc0o0Tm5GZEtYdzJYUVVYbHNRc1RlcEpBSVNkeFFPcldMSzZRMThWNmxjSHg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-596b29e219281278",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Advierten a la banca sobre riesgos de invertir en inteligencia artificial sin controles adecuados",
+      "summary": "Titular difundido por El Nuevo Día a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Nuevo Día · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQc3lKRU1vaW1hZDFRZWhYMUFYWWp1RkRkMzY1UjVtcWNpTTMwSWJCX1ZlNFpEQjM1MmVEVW9mWTE5V3FtX3pDTmhXX3lTSDI1WWMyblhBNGxoX3h6SlU1YU9UR0ZrSEVhQXZwTzNmUkNaRzJuQTNvRnBxTXVvX1RiSUpTQ2ZTby13cUtwQXI5U3FtdGljcndPTUQ5QWJWc21fOHl6Ukl5WjNTVHg4ZDZmYXNkNHJsNWtxT1VLaVowQ2Vkak9UNG9iY09YYmh0VzJtdllVbWM3Y1NNb0Q2OTE1THRMakpBclVZQ0Yw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T07:00-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-12a914fdef6929bd",
       "date": "2026-11-04",
       "category": "Colombia",
@@ -3193,8 +3269,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T08:29-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T08:29-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T08:30-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T08:30-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
