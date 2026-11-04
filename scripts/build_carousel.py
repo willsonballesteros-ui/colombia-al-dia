@@ -254,7 +254,7 @@ def main():
        "fullAudioInImages":False,
        "note":"Los PNG no incluyen audio. Para Instagram se debe producir un video narrado autorizado; la lectura completa ya existe en la web."
     }
-    (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Generadas portada-resumen, 4 laminas compactas (3+3+2+2) y recursos por noticia.")
 
 
