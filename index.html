@@ -434,11 +434,15 @@ const buildSpeechSegments=news=>{
  // En las demás noticias, resumen propio de ORBIUNO en español.
  const licensedOriginal=hasAuthorizedFullArticle(news);
  const authoredOriginal=hasOriginalOrbiunoArticle(news);
+ const isVerified=news.verification==='editorial_verified';
+ const narration=isVerified&&typeof news.audioFullTextEs==='string'&&news.audioFullTextEs.trim()
+  ?news.audioFullTextEs:(news.executiveSummary||news.summary||'');
  const text=String(licensedOriginal?news.fullArticleTextEs:
-   authoredOriginal?news.originalArticleTextEs:
-   (news.executiveSummary||news.summary||'')).trim();
+   authoredOriginal?news.originalArticleTextEs:narration).trim();
+ const source=String(news.sources?.[0]?.name||'la fuente citada').replace(/\\s*[·–-]\\s*\\d+\\s+nov\\b.*$/iu,'').trim();
+ const attribution='Según '+source+', ';
  const sentences=text.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑ¿¡])/u).map(s=>s.trim()).filter(Boolean);
- return [news.title,...sentences].filter(Boolean);
+ return [news.title,attribution+sentences.join(' ')].filter(Boolean);
 };
 const readSpeechSegment=()=>{
  if(!canSpeak||!speakingId||speechPaused)return;
