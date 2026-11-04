@@ -1,0 +1,57 @@
+name: ORBIUNO - redactar borradores extendidos con IA (opt-in)
+on:
+  workflow_dispatch:
+    inputs:
+      autorizar_consumo_api:
+        description: "Confirmo que autorizo uso facturable de API para borradores"
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: noticias-auto
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: inputs.autorizar_consumo_api == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generar solo borradores originales con modelo configurado
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ORBIUNO_LLM_MODEL: ${{ vars.ORBIUNO_LLM_MODEL }}
+          ORBIUNO_ENABLE_LLM: '1'
+        run: python scripts/generate_full_reports.py noticias.json
+      - name: Validar borradores y prohibir publicación automática sin revisión
+        run: |
+          python scripts/validate_news.py noticias.json
+          python - <<'PY'
+          import json
+          data=json.load(open('noticias.json',encoding='utf-8'))
+          drafts=[x for x in data['news'] if x.get('originalArticleReviewStatus')=='pendiente_validacion_editorial']
+          assert all(x.get('originalArticleReviewed') is False for x in drafts)
+          print(f'{len(drafts)} reportajes requieren revisión editorial ANTES de habilitar lectura íntegra')
+          PY
+      - name: Guardar borradores sin desplazar actualizaciones concurrentes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add noticias.json
+          if git diff --cached --quiet; then
+            echo 'No se produjeron borradores nuevos'; exit 0
+          fi
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo 'La rama cambió durante generación: no sobrescribir la edición'; exit 1
+          fi
+          git commit -m 'ORBIUNO: nuevos borradores editoriales extensos pendientes de revisión'
+          git push origin HEAD:main
