@@ -167,7 +167,7 @@ def cover(day, news, out):
     d.rectangle((0,1200,W,H),fill=NAVY)
     d.text((63,1224),"ESCUCHA LAS NOTICIAS EN NUESTRA WEB",font=font(30,True),fill=GOLD)
     d.text((65,1277),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
-           font(24,True),fill=WHITE)
+           font=font(24,True),fill=WHITE)
     image.save(out,optimize=True)
 
 
@@ -185,9 +185,9 @@ def combined_sports_card(a,b,out):
         paragraph(d,n["executiveSummary"],102,y+262,font(26),INK,856,2,10)
     d.rectangle((0,1215,W,H),fill=NAVY)
     d.text((65,1240),"FUENTES: AS / CARACOL · VER ENLACES EN ORBIUNO",
-           font(22,True),fill=WHITE)
+           font=font(22,True),fill=WHITE)
     d.text((65,1293),"ESCUCHA LA NOTICIA EN colombia-al-dia.pages.dev",
-           font(19,True),fill=GOLD)
+           font=font(19,True),fill=GOLD)
     image.save(out,optimize=True)
 
 
