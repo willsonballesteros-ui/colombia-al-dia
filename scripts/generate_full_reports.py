@@ -43,7 +43,8 @@ def acceptable(text,item):
         return False
     # Las cifras nunca pueden surgir por generación libre: deben constar
     # en los antecedentes ya contrastados. Bloquea exageraciones evidentes.
-    source=" ".join(str(v) for v in grounding(item).values())
+    source=" ".join(str(item.get(k,"")) for k in
+                    ("title","summary","why","next","executiveSummary"))
     grounded_numbers=set(re.findall(r"\d[\d.,]*",source))
     generated_numbers=set(re.findall(r"\d[\d.,]*",text))
     if not generated_numbers.issubset(grounded_numbers):
