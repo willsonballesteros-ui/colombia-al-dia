@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b3bc516f41cc1559",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Ofrecen formación gratuita en inteligencia artificial para emprendedores: cómo acceder a los 10.000 cupos",
+      "summary": "Titular difundido por Portafolio.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Portafolio.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbC1SM0U1M1M5MWRTdmY5V2xjcjFBVXFQU0NoS0VpZzdqYlV5NkFmeG9OVjByUkZIN3ZpeENtNm5kQ2d0a2ZyZTJZeUw3eHNYa0hpU3hDQllBVDMyVDNHUWloQjRUbnc3WWozZTM1dzF5bmFPSW9JMmJpNWpSTjl6VUhmeWRrenZDMEo0SVZUazR2bjB4aGR2dGFlcXZLQS1WZDQyc0oyUXpGWFdSLVdDVmU3aG5SOUtwajdFTk5uYmpVdVMySnBDaFAyb0NPQTV4enlzaTVka3Axa05XeUFydS130gHnAUFVX3lxTE9RNlNSbU9XTHlMdkJ2bmJiZmxtTXlXTS1ISXh0LWRLMkI3bEZmb25ra3BLenNuOVkyQ0RYNm1wOVlETTBnSVNNajlIQUNYbVd3YkJKY1JBRVlZTFcwaHdDRzVwZjZQdFk3STd0RVpFdllFMXYwS0xfY0VRV0Znc2ROQl92ZjRzdjEyWnd3c3NZei1sRGY2Q2tBM0g1bDdpdkJWM2l0UFdPM1BMZ0pEU2M2YkRzVUE1TkE0VVpuT2pjSzBfNlNtdVc0MHk3S0hBU1RKN2ZaRXVWbzFCdUowdlZ2aWRBUmlFTQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T14:44-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-414b603bfa87dcc9",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Ciberseguridad para microempresas: cómo proteger sitios web y sistemas con ayuda de la inteligencia artificial",
+      "summary": "Titular difundido por Líder Empresarial a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Líder Empresarial · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeWlTUnYzV0FUQVJUYW1Yb1UzenJ2UjYzTmtCdFNRT0d0LUhEbXo1dG1Ub2hEN0lfT0JsTlpId1g2YmVsSWo3MG8yXzVqNlZ4UDRqRUstTzBqVUV1dlVIMkpjY29vVjdES25IWndwTnhvVHFpbUdGaGdza2Z2OTNSZVl0bTdscENIUGdRRG1fVjNySU1h0gGaAUFVX3lxTE4xeVh5THpaN2ctZVdGbUFjcHF0UFdPSXE2aTZYcEJUUURQZ1RVUkQwM25vTC12RVAwY2hqUm9rTl9wbkVaVENCOUtGaGl1X28zMUZyWHlpak9TRFBMUVczalBqRHBlSGVibU9IZlFQRUZaclczVGEwUlB3a0hoQXNrZWNCdGZqN1hSTlE0YWtpbDctYll6aGM1SHc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T14:31-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-473137c273580bab",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -6392,8 +6430,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T18:25-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T18:25-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T18:26-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T18:26-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
