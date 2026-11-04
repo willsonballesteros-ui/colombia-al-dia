@@ -1,0 +1,19 @@
+{
+  "editionDate": "2026-11-04",
+  "format": "compact_carousel",
+  "slides": [
+    "portada.png",
+    "grupo-01.png",
+    "grupo-02.png",
+    "grupo-03.png",
+    "grupo-04.png"
+  ],
+  "newsCounts": [
+    3,
+    3,
+    2,
+    2
+  ],
+  "fullAudioInImages": false,
+  "note": "Los PNG no incluyen audio. Para Instagram se debe producir un video narrado autorizado; la lectura completa ya existe en la web."
+}\n
