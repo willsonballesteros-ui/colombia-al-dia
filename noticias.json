@@ -1,10 +1,192 @@
 {
   "brand": "Colombia al Día | Resumen de Noticias",
-  "editionDate": "2026-11-02",
-  "editedAtBogota": "2026-11-02 21:40",
-  "siteVersion": "3.0",
+  "editionDate": "2026-11-03",
+  "editedAtBogota": "2026-11-03 20:42",
+  "siteVersion": "3.1",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261103-editorial-01",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Informe de adopción · II trimestre de 2026",
+      "title": "Microsoft: el uso de IA generativa llega al 25,9 % en Colombia",
+      "summary": "Según Microsoft AI Diffusion, el 25,9 % de la población colombiana en edad laboral utilizó IA generativa durante el segundo trimestre de 2026. La estimación no mide adopción empresarial.",
+      "why": "El dato muestra el avance del uso individual de IA y la necesidad de formación digital.",
+      "next": "Seguir las siguientes mediciones y las iniciativas de capacitación, sin confundir usuarios individuales con empresas.",
+      "sources": [
+        {
+          "name": "Microsoft · fuente original",
+          "url": "https://news.microsoft.com/source/emea/2026/09/microsoft-ai-diffusion-report-evolucion-uso-ia/?lang=es"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-02",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Comunicado oficial · 1 nov",
+      "title": "MinEnergía levanta la limitación temporal de gas natural",
+      "summary": "El Ministerio de Minas y Energía anunció el levantamiento de una limitación programada de gas tras superar una contingencia en la instalación SPEC LNG de Cartagena.",
+      "why": "El funcionamiento del suministro de gas es fundamental para generación de electricidad, industrias y hogares.",
+      "next": "Monitorear los reportes de operación y prevención de incidentes en instalaciones críticas.",
+      "sources": [
+        {
+          "name": "Ministerio de Minas y Energía · comunicado",
+          "url": "https://minenergia.gov.co/es/sala-de-prensa/noticias-index/ministerio-de-minas-y-energia-levanta-limitacion-programada-de-gas-natural-tras-superar-contingencia-en-spec-lng/"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-03",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Reporte de autoridad · 1 nov",
+      "title": "Armada reporta incautación de 2.250 kilos de cocaína en el Pacífico",
+      "summary": "La Armada reportó la incautación de 2.250 kilogramos de cocaína en el Pacífico sur y la captura de tres personas, según la cobertura periodística.",
+      "why": "La operación afecta rutas marítimas usadas por organizaciones de narcotráfico; los capturados conservan sus garantías procesales.",
+      "next": "Continuará el procedimiento judicial de las personas detenidas.",
+      "sources": [
+        {
+          "name": "Caracol Radio · información de Armada",
+          "url": "https://caracol.com.co/2026/11/01/la-armada-incauto-mas-de-dos-toneladas-de-cocaina-en-el-pacifico-sur-que-serian-enviadas-a-mexico/"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-04",
+      "date": "2026-11-03",
+      "category": "Economía",
+      "level": "Encuesta sectorial · septiembre",
+      "title": "Fenalco: 34 % de comerciantes encuestados reportó más ventas en septiembre",
+      "summary": "Según la encuesta comercial de Fenalco, 34 % de encuestados reportó mayores ventas, 41 % resultados similares y 25 % menores ventas. No significa que el comercio nacional creciera 34 %.",
+      "why": "El balance permite observar la percepción de los comerciantes antes de la temporada de fin de año.",
+      "next": "Contrastar próximos balances del gremio con las cifras oficiales de ventas e inflación.",
+      "sources": [
+        {
+          "name": "Fenalco · Bitácora Económica",
+          "url": "https://www.fenalco.com.co/blog/economico-3/bitacora-economica-octubre-2026-9236"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-05",
+      "date": "2026-11-03",
+      "category": "Mundo",
+      "level": "Cobertura periodística · 2 y 3 nov",
+      "title": "Ciberataques afectan refrigeración de supermercados de Europa",
+      "summary": "AFP informó inicialmente sobre incidentes de refrigeración en supermercados de cinco países europeos. Reportes posteriores ampliaron la afectación a al menos nueve países; la investigación continúa.",
+      "why": "Los sistemas industriales conectados pueden sufrir incidentes que comprometen bienes físicos y cadenas de suministro.",
+      "next": "Las empresas y autoridades investigarán el alcance, las vulnerabilidades y la autoría, aún no confirmada.",
+      "sources": [
+        {
+          "name": "AFP vía El Colombiano",
+          "url": "https://www.elcolombiano.com/internacional/ciberataques-supermercados-europa-frigorificos-aumento-temperaturas-KP43086509"
+        },
+        {
+          "name": "Euronews · actualización 3 nov",
+          "url": "https://es.euronews.com/2026/11/03/presunto-ciberataque-a-frigorificos-de-supermercados-en-9-paises-europeos"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-06",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Hallazgos preliminares · no condena",
+      "title": "MinCiencias traslada hallazgos preliminares de $9.800 millones",
+      "summary": "El Ministerio de Ciencia reportó presuntas irregularidades por más de $9.800 millones en contratos asociados a investigación y trasladó hallazgos a organismos de control. Estos señalamientos no constituyen una sentencia.",
+      "why": "Es importante conocer cómo se utilizan los recursos destinados a la investigación pública, garantizando el debido proceso.",
+      "next": "Fiscalía, Contraloría y demás autoridades evaluarán posibles responsabilidades.",
+      "sources": [
+        {
+          "name": "Caracol Radio · MinCiencias",
+          "url": "https://caracol.com.co/2026/11/02/minciencias-denuncia-presuntas-irregularidades-por-9800-millones-en-contratos-del-gobierno-pasado/"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-07",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Acuerdo anunciado · 2 nov",
+      "title": "ADNOC, G42 y OpenAI anuncian alianza para aplicar IA en el sector energético",
+      "summary": "ADNOC anunció una alianza con OpenAI y G42 para explorar aplicaciones avanzadas de inteligencia artificial en sus operaciones industriales y energéticas.",
+      "why": "La IA está extendiéndose a sectores industriales complejos, aunque los beneficios anunciados requieren medición posterior.",
+      "next": "Desarrollar los casos de uso y evaluar sus efectos operativos.",
+      "sources": [
+        {
+          "name": "ADNOC · comunicado",
+          "url": "https://www.adnoc.ae/media-center/news/2026/11/ADNOC-Signs-Landmark-Partnership-Agreement-with-OpenAI"
+        },
+        {
+          "name": "Reuters · 2 nov",
+          "url": "https://www.reuters.com/business/energy/abu-dhabis-adnoc-g42-sign-deal-with-openai-sam-altman-travels-uae-2026-11-02/"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-08",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Servicio Geológico Colombiano · 3 nov",
+      "title": "Sismo de magnitud 5,6 en Chaparral, Tolima",
+      "summary": "El Servicio Geológico Colombiano reportó un sismo de magnitud 5,6 el 3 de noviembre de 2026, con epicentro en Chaparral (Tolima). La magnitud inicial fue ajustada tras la primera medición.",
+      "why": "Los informes de las autoridades ayudan a dimensionar el evento y atender sus efectos, sin que sea posible predecir réplicas a partir de la noticia.",
+      "next": "Seguir la información oficial y los balances locales de gestión del riesgo.",
+      "sources": [
+        {
+          "name": "Servicio Geológico Colombiano · fuente original",
+          "url": "https://www2.sgc.gov.co/Noticias/Paginas/El-SGC-registra-sismo-con-epicentro-en-Chaparral-Tolima-este-3-de-noviembre-de-2026.aspx"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-09",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Proyecto en consulta · 3 nov",
+      "title": "MinTIC publica proyecto de Agenda Regulatoria 2027",
+      "summary": "El Ministerio TIC publicó un proyecto de Agenda Regulatoria 2027 y habilitó información para consulta pública. No se trata de una norma ya aprobada.",
+      "why": "La propuesta permite a ciudadanos y sectores interesados conocer prioridades regulatorias y participar.",
+      "next": "Revisar el documento y las oportunidades de comentarios en SUCOP.",
+      "sources": [
+        {
+          "name": "MinTIC · fuente oficial",
+          "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/442390%3AMinTIC-publica-proyecto-de-Agenda-Regulatoria-2027"
+        },
+        {
+          "name": "SUCOP · agenda",
+          "url": "https://www.sucop.gov.co/entidades/mintic/Agenda?IDAgenda=34475"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
+    {
+      "id": "20261103-editorial-10",
+      "date": "2026-11-03",
+      "category": "Mundo",
+      "level": "Reporte Reuters · 3 nov",
+      "title": "Ataques a la red energética provocan cortes de electricidad en Ucrania",
+      "summary": "Reuters reportó ataques a infraestructura energética ucraniana con interrupciones del suministro en distintas regiones, según autoridades y operadores.",
+      "why": "La falta de electricidad compromete servicios básicos durante los meses fríos.",
+      "next": "Continuarán las reparaciones y el seguimiento a la situación humanitaria.",
+      "sources": [
+        {
+          "name": "Reuters · 3 nov",
+          "url": "https://www.reuters.com/business/energy/russian-strikes-knock-out-power-swathes-ukraine-kyiv-hits-russian-refinery-2026-11-03/"
+        }
+      ],
+      "verification": "editorial_verified"
+    },
     {
       "id": "rss-7ca4fbd372cacf8b",
       "date": "2026-11-03",
@@ -789,5 +971,6 @@
   "autoSyncCheckedAtBogota": "2026-11-03T18:36-05:00",
   "lastNewSourceAtBogota": "2026-11-03T18:36-05:00",
   "autoSyncOkSources": 4,
-  "autoSyncFailedSources": 0
+  "autoSyncFailedSources": 0,
+  "editorialNote": "Edición revisada del 3 de noviembre de 2026. Algunos sucesos originales corresponden a fechas anteriores y se identifican por fuente. Titulares RSS automatizados siguen marcados pendientes de verificación."
 }
