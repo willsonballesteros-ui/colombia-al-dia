@@ -67,11 +67,30 @@ def source_thumbnail(n):
     ).format(icon=esc(icon_url), label=esc(label))
 
 
+def article_original_authorized(n):
+    """El texto ÍNTEGRO del proveedor requiere permiso explícito y trazable."""
+    sources = [s.get("url") for s in n.get("sources", [])]
+    article_url = n.get("fullArticleSourceUrl")
+    lang = n.get("sourceLanguage", "es")
+    return (
+        bool(n.get("fullArticleTextEs"))
+        and n.get("fullArticleRightsVerified") is True
+        and n.get("fullArticleIsVerbatimSource") is True
+        and bool(n.get("fullArticleLicense"))
+        and article_url in sources
+        and (lang != "en" or n.get("fullArticleTranslationAuthorized") is True)
+    )
+
+
 def article_html(n):
     sources = [s for s in n.get("sources", []) if str(s.get("url", "")).startswith("https://")]
     if not sources:
         return ""
     source = sources[0]
+    complete = article_original_authorized(n)
+    narration_label = "Escuchar toda la noticia" if complete else (
+        "Escuchar versión ampliada" if n.get("audioFullTextEs") else "Escuchar resumen"
+    )
     thumbnail = image_markup(n)
     if not thumbnail:
         thumbnail = source_thumbnail(n)
@@ -91,15 +110,15 @@ def article_html(n):
         'data-tts-id="{id}" aria-label="Detener lectura" title="Detener lectura" hidden>■</button>'
         '{spanish}'
         '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
-        'title="Abrir la fuente original {label}">Fuente ↗</a>'
+        'title="Abrir el artículo original completo en {label}">Artículo completo ↗</a>'
         '</div></div></article>'
     ).format(
         id=esc(n["id"]), thumbnail=thumbnail,
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
         summary=esc(n.get("executiveSummary") or n.get("summary", "")),
-        full="true" if n.get("audioFullTextEs") else "false",
-        listen="Escuchar toda la noticia" if n.get("audioFullTextEs") else "Escuchar resumen",
+        full="true" if complete else "false",
+        listen=esc(narration_label),
         spanish='<span class="tts-lang" title="Narración editorial en español de una fuente publicada en inglés" lang="es">ES</span>' if n.get("sourceLanguage") == "en" and n.get("audioFullTextEs") else "",
     )
 
