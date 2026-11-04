@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-473137c273580bab",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La apuesta de Sandro Salsano por el futuro: de la tecnología privada a la ciencia de devolver a la sociedad",
+      "summary": "Titular difundido por El Digital Panamá a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Digital Panamá · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOX1NYT0IyeWF0ZUQyeWxLbDE2Rld4N0tvV1dpRGNITHg5Z1FoLUpQeGlvNnBYVVlsanJWSFkzUEJvODhjVEFvZzVQeDBlWVkyT0wyMHdMemFJbmd5MVFUR0E0Rm42eG9SSVQwdmJkN3lPM0JEUGZKVUFjajhpVE9fQXNHTWVBRTRiXzhYYzA5WUtsY0FGV0FTaXVhSFJERnhvTEZqSHQ4Wm5xVzQyUTkwSEVxWEpfUHZQN0cxOExJbXY4MUd6dE9XcTgybWE3Tmlr?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T18:19-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-fafd87d6b65e9f27",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Apple recorta el gasto de sus empleados en inteligencia artificial",
+      "summary": "Titular difundido por Bloomberg a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Bloomberg · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLXo1VndHUGE2cFdEbWg5NXdRVmxDV0NnZEhVT29jamJjODUxUUtyYS1PZk05NTNjUy04WWk4dWhscnowaEJUbWZRS19RZXpTNXYzNWs1X0VxQjczUnhBaGxRNzBLd1FsQnpQc3Fia0w5YjVYVDBNTENrZ1ZjV0JLQUhCWEtuRVIzSFNINnFSOVE3WHV0NWNEb19RWlJMbWlWZjhLazhXTUtDbHdHNVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T15:03-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-a02fcebaa2e4a4c6",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -6354,8 +6392,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T18:22-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T18:22-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T18:25-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T18:25-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
