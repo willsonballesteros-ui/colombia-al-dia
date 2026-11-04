@@ -2,9 +2,180 @@
   "brand": "ORBIUNO",
   "editionDate": "2026-11-03",
   "editedAtBogota": "2026-11-03 21:55",
-  "siteVersion": "3.4",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-07ce29318ee99881",
+      "date": "2026-11-03",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Terremoto electoral\" en Texas: quién es James Talarico, el primer demócrata en ganar un lugar en el Senado desde 1988",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cwg7xk8ljmdyo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T23:19-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-597a05b14ac2750f",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Figura de la Selección Colombia en Brasil 2014 anuncia su retiro como profesional: pronunciamiento oficial",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdFV4eUFzRWs5Wk9pUXh3UlB4SjZqREpKUFZwdmZOVVVfMkFvYVBQSGtpdTlqd0poRGFobFFjMnF3RjVHUDFhaWlDb0J1Y0JmZ3c2ckczakw1dVRqN3lFTDJRbENIcUpjY1R5QXlZUXNsdGdGaFJhM19vQTlfQWN6bnRQRm15SG8xQmhiOUl5d0JMcFBhRkxUUXNTNnh2X3RVR041djVNZm9nZXRURzBNd0kwN3o1cHlqQWJzVUlyVzJnWlZydm9DOUVoVmh2X1lta29MektkSGs1czBQYTc0ZzJDNEo1SGUyU2fSAe8BQVVfeXFMUHJQUXUxekFodUJ3YlpkNjY0Z3dSVUVnVEdFSi1ZMGx2aDFTeDJSUGs3RnU0X29xSUdpRGhQMGNtaWZjYUsyaVY0a1o2NXJsa2FWMVFRMTZlQjZDTGZhVWtZSm9yUmdFT3FWa0U0a19iZy0yVFVSTHBnbWlwMWJpZ0U3azdEMVcyWjM5dFlnT1ZfYnBhSFRjRHJtcVBjWXBlR2k5Yld6Yl8wYVMyaHJ0aVM0blFrLU9vT0ZqN1B3eFAtRHNSNmdqZmFUQmZ5Uy1LLVdya3pqdERlb0VMRWJ5MGkyRmVtV3FZbjROM2ZYS28?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T21:49-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-653d0edac257a56a",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Congreso debate regulación de redes sociales e inteligencia artificial",
+      "summary": "Titular difundido por Canal 1 En vivo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Canal 1 En vivo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ1Fib2ZSZHd1SjlpUjA1UFZLT08yVnhDcDBvc3FWY3loRXFfV05ydnRhNThBTGV3TjExUE14Y1RNQ3g0NlpmWHhfSjBkTXlBV092VkxGUjdTdXBYdUhIMzZRR1IwS2J0bUh1UDV5SWk5TGg2eWtCSDVUemhFX0RTMW9saVFUMFNNM09wRGpicXdYMkdIcTh6LS1QOHNpUnE1Ti1vMmxlaE1WODhIb19QQlVpZUhhUdIBuwFBVV95cUxOTjc0T1pHVVdGYllJSkRPMVpDNWEzaVdKZ1NuTXhXVGFJM1loV3FlMWJNWHVYWVdNYjRHVVJKczMwSm1jUFk5Yi1BdnBrclQ1cG1Ka0s0S3ZaUkRobXQ0TVJNYlVONkFzZVVHTElQbmdYVlZucFdiTmUxeWVpSGx1bm1BQ1Z4cHdPSEtMUmVMMDNkR1BTN1hycXlnV3dXRmFLdnNzSGFfeXBtRXZCcnhoN1R2QVZRdllDdmFn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T06:00-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-1f38ad35e2b2af39",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Cómo afectan las elecciones de medio mandato en EE. UU. a Colombia? Hay cuatro prioridades",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUWhuSUJHdndlVXBZLW5kdUViMHlBMmZFOXpmTlFtaldKUVlna2NUQVVHa0pUcEx2d0E1bV9rTWJZTGRzdVdiT0RsMF9KQzNNNmhic3d0SDRoRzNHeEFkT3dfaDlWSHU1UnRwT3VmS08xRTdhbk1PaGZPSC1GaFJjVmFxYWYyOUR4SGQtNFViV1gzOEVjYlBHQVREY3N3MlE5bjR5SVVYN2M5U1U3REJwZ3RJc20yd9IBuwFBVV95cUxPZ0xVc2h6S05tYjd4UVNnYUdYZlEtLTI2b2F0VjI4ZUVKeVJtcm5PdERXdFFJdUlDNGpEeXprdl9KakJFSDhkeGhvTTBiS2pCcWR0VjY2aGlhTW9YN25KVkJ2OEwyRjZiWEQxUW95Y01Pel9LT0hpc0FmaTVoTHBqeUtrQ3d2R3ZIQng4STRtNXl5clBaZmNoV1I2ZFVGYS1jbHFyRFc1Q2FYeXhfdU00dUJ3Y0tYTkE3TVVn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T05:29-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-832aafc4fb11c0a1",
+      "date": "2026-11-04",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Quién es Abdul El-Sayed, el demócrata de Michigan que se convirtió en el primer senador musulmán en la historia de EE.UU.",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cjx23zy222y6o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T05:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-4b75ba8f5ef19857",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Esto representa una oportunidad para que CMC dé un salto cualitativo en inteligencia artificial y capacidades en la nube a escala global.",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU0NuMFJOV0JXVzNDQlUxYjhSSHNjaHViSmdsSThiTWctS3A4X0Zoc0EyVVBQakxMbUFwNElKdS1oTUo5S19jaUJPdEtCT2Y0YU51MngwLTVEWlNjMlRSUE9JNHhCLVU3ZjBhVlhMRHMwbjRDNTBWTHcwcUVIWElQamFha29zYXJLX0ZyaWZRbFlYNXJRSmFUblRn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T04:44-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-03ce050ea4ef19da",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Catalina Oquendo: “Los colombianos seguimos obsesionados con la idea de ganar la guerra, incluso si es una ficción”",
+      "summary": "Titular difundido por EL PAÍS a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "EL PAÍS · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQajctUVhNZktMa0VNWS1kcEZaVkJjdnRXRk9hX2pfY05OcjZmeXRYLXdVMS1PdGk3a01CSWVyR0pTRlVoUjZnOTBtR2dKczFnSTU2endwR0RndlZxRER3Mk11bGtseG92QUFuLV9fd0NnbGpuQ3lyamRHRHliZi1wWWVCTmM2NVBIamdXWFRJTUJyZzJJUEYyaHJ4SG1RYnVKQ1BtaGdTUGZRbzNRS2g4NGRTd1M0Z1FmR3M2UC1lNWplUk9mbXdvdXhJMmdiS1A0akVFUmZPeHBDR3lBZ1RNamVsVVpQdWJkTWVOc0xqMjE0MGFBNHfSAYoCQVVfeXFMUDNGTGdGRlh4WE9wdnRfSDJFOHBLY0h0aDRvTl9zLWdXTzJxRDJqQkdTRkl4ZHl2VnZpNDlYZVZLTmkwNXNMV0w4eWFhV1piWEhuT3pNWEdPWFdQaHBJblFKSWFQM0pVbE9NcXIxUHktVl8zUHVvR0F5WDFfamhVZE5rN0dJekwwa19ZMGpNNDBwRVpxRTdDeDJqVGwxWm9falZRQ1czTUt6SFBydy0tWjJFcEtYYXVDWUdBd3RFbFBaU2RhVkFUc2tHUk5SMFV2U3hBNnViVnBJRDRVemU2YWdIQnJRSWNXSmM0c1B5V3pLSGhBQW9uODQtXzJvcjdpUjdPcmJFbW1qeEE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T04:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-21589cddb4a961a9",
+      "date": "2026-11-03",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Lecciones no aprendidas de la Guerra Fría?",
+      "summary": "Titular difundido por Portafolio.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Portafolio.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNm9xZVJuc0VnbjQ3UWMyUFVzd0xTZ2g0dlE2LUI1RXh0Qk5mcnhHWmVROG9fbnlvdC1NM3JJSUxzTWJfNHVKM1RDRnp6cDJ2RU5MWGlLMmV1WXVOdkYtNmE4NzZKbWRCYnZRSlNlbUpPY3paYlE1WkZnUWExZFhZeG5TZ2pSWERRT2tMQWgySm1YbU1UbDdNbWZQWdIBmwFBVV95cUxNNm9xZVJuc0VnbjQ3UWMyUFVzd0xTZ2g0dlE2LUI1RXh0Qk5mcnhHWmVROG9fbnlvdC1NM3JJSUxzTWJfNHVKM1RDRnp6cDJ2RU5MWGlLMmV1WXVOdkYtNmE4NzZKbWRCYnZRSlNlbUpPY3paYlE1WkZnUWExZFhZeG5TZ2pSWERRT2tMQWgySm1YbU1UbDdNbWZQWQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T17:50-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-bd1eff21250b5f5c",
+      "date": "2026-11-03",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "ANIF advierte que sin ajuste fiscal, el déficit llegaría al 9,4 % del PIB en 2027",
+      "summary": "Titular difundido por Blu Radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Blu Radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVG52dXpHY2ZaSnE3RXdUSWVXM3MyU01icHV2ZG1IWjJmbWk2ZzJlQWYzV19TWXpCSU5Nd053Sl9JV2dKLWV2RkNRalo3Vm1MZDFQQm81Z2pIWGNHOTd6QjRLbmlBeUFzODh5WWp6QkdnZHdialIwc1FIR1VHLVNyalJjNUVtSGRXNmNrQ0M5NFVZMDNzVlJtOTFHVUNkOVBIU3hDemlMa2JCQW95SktLM2lncURHWERl0gHGAUFVX3lxTE1RUmJGelBpUVM3TVNHa3ozY09vclNQWlBPaGdrNDI4VkFBUzlVRkthcGJUSHQzM1N0NTVCUnNVVTFQQ3JUU2Z0NmZkQnZON2RYenpuN2tJR2NIX0pwb2l0cmNmWEpPZWFWbkMxZjdLTW43VWNqTjJfZkx4Yk5RcWpYUWlWcEJSZ3loZlNDM0c2ZkgtdWhpZnFBdTI1MHpfcExBMlBIN1R6TmtoRTJaUGNhcUF6MnhqVGlNRnZ6NENod25HeGdtZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T16:16-05:00",
+      "relevanceScore": 5
+    },
     {
       "id": "20261103-editorial-01",
       "date": "2026-11-03",
@@ -982,8 +1153,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-03T18:36-05:00",
-  "lastNewSourceAtBogota": "2026-11-03T18:36-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T05:36-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T05:36-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
