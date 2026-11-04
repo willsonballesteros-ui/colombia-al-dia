@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-07c5389399c0d1ba",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Se termina el entusiasmo por la inteligencia artificial? El 42% de los británicos ya limita su uso",
+      "summary": "Titular difundido por La Voz del Interior a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Voz del Interior · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaHZPSDdvMlNoQUowNzRQNEJLdFZSUm84QkY3enRiVnpsVG9QUldDLUJ1cENsQ2dsV0tKS2JkbjhRZkpwZjVobzJ6QnZXS3V0M05JeFVOWDIzd3Y2bmFqNGxvVktGdmxxdHpWYUNvQVNydDNvYkdIVWVtOXhNM18zMGZEbXRBLWNEeEpZWi1vYkxRT3RwSFVXdG5nQWhvX2ZWYTlaLUd3cl96bUpDWGo0azhGMXNhcVhyVjNpLXF3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T09:04-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-84a78a160037691c",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "'Tsunami' demócrata le arrebata Congreso a Trump: qué implicaciones tienen las elecciones en EE. UU. para Colombia",
+      "summary": "Titular difundido por Portafolio.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Portafolio.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQejN2eVFDUkJ4aTE4blMxd2xISVlCM2xSa3BZU0NKYUhGVy1USEFrVFpjajRNb2lTRU9JcVNYMUxwTU52QmNmVnBqUklJZ0hhUVE3LWlQdkhuNXFTM05jTXZ4VkVMR0dfamRDdGI4YjQ3MGhxZDdGdkh4cWR4SXphYWsyc2pLYmZXR2Z1RFd4cE1MWjFTTHpNeVp3NHMwNGJkTXAyUzY1RjNUVk8xRm85NDFkdDhFVjBHVmVwcUlDblNpYUJSblV0amVGM3lOOURqWk0zaEFEVjk5bWtDaTVKaU52UEswZ1VSQlk1ZdIB8gFBVV95cUxPYkdNNG5JcnhRTWY1WW5MT2JtNW1CX0ZrVTM0anFUbW5MUlc4S2k4Qi12TllBZjJTUXVqVjE1M2VVY3l3bTlnLTBTcVRJRlI2S0M1TUhCdG8wTkZzb1Bxb0MtdUJUNDh3aFkyMlhPTURxWlpRZHJvMUhndUN5b0FoWGdadTA2RGp1eFhuWWZDUTJLdnJKdkJuWEpBYWsxV3A3M18zRko4Q2JhUGFYemRpd0ZxXzFoSl83Z1dWTXk5NnpDQTVHX1hnSmdGZkVvM0dqU2t4Sk9hc0RLRWNlTENMbWxaaU05eTZMWWxSb0hENGlHdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T08:52-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-99a108fd56db8a04",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "29 jurisdicciones votaron contra la instalación de data centers, claves para el desarrollo de la inteligencia artificial en EEUU",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPakZxd2cwRmU1S0JHZ2tJRGdNVzllZ1BKVDVGMG0xdFFRT3hIWUtCRnJLRjYxdi1tR1ByajBDcnFLdHA0RU1CT3BzLW9JNVp4WGx0SHZLalk1T3ZoN3pLaTB5dTlWckp6UnVCZnlQZkZRMzh1alF4TDJzR0JKd05obGtQY3VmS3A1TE9DMDJpSWVfM0dMTlB0aVRoZzlza2MwMVVFSU8ydnhDNUliSGlsWEc5UFZ0em85bHN4NDdNaF8zc3NrcGhEdXJpcE5RUU9NNmQ1dkFZWlJDS2VFRTdvN2FWaDVJcGhwcWozYmxRMVhXaHJVRFhQNXpOZWRwQUl3WTdBWFZkT0NxRVB6Tk83ZW930gGsAkFVX3lxTE1WbDQyQ1IxeHZsSXNFSTRVRm80bWwwYjlVdmdrNi0xX0FESmFDUDRWbXR3NURNaXlJb0NlOXVtMHdja2JocXBDQkhJckNOMEoxdHVtTGJVM1RjN0RReVFqdUY4Yk4weV9RS3BaSFFnUzNCY3lPS3Z2WjBmUHNiSmdTZ2JCVzB2QzVlTDgtclhHRExiMG1fM1NPMmdmMDJrMWpxNjg4WHctbjFiUENuZnBfQUdpUFgzWXlwVThIaTUwdHpTTUM4VFY1LXlrQW1qM1RKOFRIRWNGZk9meHlOYnh4TVlzaDQ1VmRuUHNISWMzZFJRXzcwQW9VaGt6QXFXMG9fSnRidVdmZ3NxazVXZ0M4THpqUGVPMnRiN3lSam5JS2w4eUdTbFdkLXpuVA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T08:51-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-a83b2a564c254e7f",
       "date": "2026-11-04",
       "category": "Colombia",
@@ -2922,7 +2979,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 1
+      "priority": 1,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El Servicio Geológico Colombiano registró a las 4:13 a. m. un sismo de magnitud 5,6 con epicentro en Chaparral, Tolima. La cifra fue actualizada tras el primer reporte. La preocupación por posibles afectaciones impulsó numerosas búsquedas en Colombia; Google Trends registró más de un millón de consultas relacionadas. Los siguientes aspectos requieren seguimiento. Consultar reportes del SGC y balances oficiales de atención; un sismo no permite predecir nuevos eventos.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-02",
@@ -2944,7 +3005,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 2
+      "priority": 2,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "La jornada electoral de mitad de mandato renueva los 435 escaños de la Cámara de Representantes y disputa 35 del Senado. El escrutinio y los resultados de algunos estados pueden prolongarse. La composición del Congreso condicionará las políticas de Washington y decisiones con impacto internacional. Los siguientes aspectos requieren seguimiento. Seguir los resultados oficiales y las proyecciones atribuidas a AP, sin adelantar ganadores en estados no definidos.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-03",
@@ -2962,7 +3027,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 3
+      "priority": 3,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "La compañía de ciberseguridad presentó AI Kill Switch en Falcon Guardian: permite a administradores detener un agente, bloquear su reinicio y restringir su conexión a redes corporativas. Los agentes autónomos pueden actuar sobre archivos, servicios y sistemas reales; las empresas buscan controles eficaces y supervisión humana. Los siguientes aspectos requieren seguimiento. Comprobar su aplicación en organizaciones y la evolución de mecanismos de auditoría y autorización.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-04",
@@ -2984,7 +3053,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 4
+      "priority": 4,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Ana María Ramírez Cetina, colombiana que trabajaba como niñera, falleció con otras ocho personas en un accidente de Learjet ocurrido el 1 de noviembre en Palm Beach, Florida. Investigadores examinan las circunstancias de la caída. El caso reúne impacto humano y preguntas relevantes sobre seguridad aérea, sin que exista una causa definitiva del accidente. Los siguientes aspectos requieren seguimiento. Esperar las conclusiones de investigación de la NTSB y los informes oficiales.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-05",
@@ -3002,7 +3075,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 5
+      "priority": 5,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Óscar Puente anunció su decisión de renunciar tras el accidente ferroviario del 28 de octubre, que dejó 69 fallecidos. La investigación sobre las causas del choque sigue abierta. El hecho plantea preguntas sobre la seguridad de los sistemas ferroviarios y la responsabilidad política por accidentes graves. Los siguientes aspectos requieren seguimiento. Seguir las investigaciones técnicas y la ejecución de medidas de seguridad anunciadas.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-06",
@@ -3020,7 +3097,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 6
+      "priority": 6,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Google Labs anunció el lanzamiento de Dreambeans para mayores de 18 años en India. La aplicación crea colecciones de historias personalizadas usando, con selección del usuario, datos de aplicaciones como Calendar, Gmail, Fotos y Gemini. Muestra nuevas formas de integrar IA a servicios personales, junto con interrogantes sobre privacidad y uso de datos. Los siguientes aspectos requieren seguimiento. Examinar controles de privacidad, disponibilidad y la recepción de usuarios; el lanzamiento no implica disponibilidad en Colombia.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-07",
@@ -3038,7 +3119,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 7
+      "priority": 7,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Al menos siete vuelos en Europa recibieron amenazas de bomba que provocaron desvíos, inspecciones y cierres temporales. Las autoridades no hallaron explosivos en los aviones revisados. Los incidentes afectaron viajeros y operaciones aeroportuarias sin que se haya identificado públicamente a los responsables. Los siguientes aspectos requieren seguimiento. Continuar las investigaciones policiales y verificar eventuales nuevas alertas con autoridades aeroportuarias.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-08",
@@ -3060,7 +3145,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 8
+      "priority": 8,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "Las autoridades departamentales informaron que las explosiones del 1 de noviembre en Planadas, Tolima, dejaron cuatro fallecidos y 18 heridos; también reportaron 177 viviendas afectadas. Los daños a viviendas y servicios de salud exigen atención humanitaria y esclarecimiento judicial; el balance puede actualizarse. Los siguientes aspectos requieren seguimiento. Seguir los comunicados de Gobernación, Defensoría y autoridades de investigación.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-09",
@@ -3078,7 +3167,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 9
+      "priority": 9,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Un abogado general del tribunal superior de la UE planteó que ciertos usos de artículos periodísticos por un chatbot de IA podrían infringir derechos de autor, por ejemplo si reproducen expresiones protegidas o sortean barreras técnicas. Su criterio no es una sentencia. El caso puede influir en cómo los buscadores y asistentes de IA reutilizan contenidos periodísticos, y en la sostenibilidad de los medios. Los siguientes aspectos requieren seguimiento. Esperar la decisión judicial; distinguir la opinión no vinculante del fallo definitivo.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "20261103-editorial-10",
@@ -3096,7 +3189,11 @@
         }
       ],
       "verification": "editorial_verified",
-      "priority": 10
+      "priority": 10,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Reuters informó de movimientos del precio del crudo asociados a nuevas gestiones diplomáticas y episodios militares en torno a Irán. El Brent cerró cerca de 103,60 dólares por barril el 3 de noviembre. Las tensiones en torno al estrecho de Ormuz importan para transporte, inflación y comercio internacional. Los siguientes aspectos requieren seguimiento. Seguir negociaciones y acontecimientos confirmados, sin presentar un acuerdo de paz como concluido.",
+      "audioEditorialSource": "ORBIUNO: narración editorial propia en español basada en fuentes atribuidas.",
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "rss-7ca4fbd372cacf8b",
@@ -3879,8 +3976,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T09:05-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T09:05-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T09:13-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T09:13-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición breve del 4 de noviembre de 2026. Diez noticias atribuidas a fuentes originales, cada una con resumen ejecutivo y enlace.",
