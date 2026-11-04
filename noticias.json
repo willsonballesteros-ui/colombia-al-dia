@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b27c3c624cc6a502",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Agencia Española de Supervisión de Inteligencia Artificial se acerca a Lugo para resolver dudas sobre la IA",
+      "summary": "Titular difundido por La Voz de Galicia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Voz de Galicia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQRXFUc0FNcUVOYjN0N3d4NS10VzFfUlFwdkJMaG0yV1hNZXRwR244eEJFUWs2RWNndk9rUWFQenR2SF9ZeEtRV280NHZTWUhwQ3I1YUNmQXNIS01MMW9BbXlQajBmUmFjMDJTLUVvNktyejFZekdiVFljMlFLa2xJMEl5eW5xSjU5R3J2bU5RNm40OG1wOU1OTGtRU2MtX3Njdkd1MUZSYzVJakU2MWp6akd0ZkV3U25IRFZ0bm5XZHJxNTFaMmhKeHdndnVXOWFPS3RpQ3EtcFlOQTV4Q2JCbEJaSi0yMGVFSWhQWlhwVVNVMkt5WklGeE0ybTBkNnlTS2w4ZTVIVy14Y1ZrS3R5dlpHQ2pJLXJsbVAw0gGbAkFVX3lxTFBFcVRzQU1xRU5iM3Q3d3g1LXRXMV9SUXB2QkxobTJXWE1ldHBHbjh4QkVRazZFY2d2T2tRYVB6dHZIX1l4S1FXbzQ0dlNZSHBDcjVhQ2ZBc0hLTUwxb0FteVBqMGZSYWMwMlMtRW82S3J6MVl6R2JUWWMyUUtrbEkwSXl5bnFKNTlHcnZtTlE2bjQ4bXA5TU5Ma1FTYy1fc2N2R3UxRlJjNUlqRTYxanpqR3RmRXdTbkhEVnRubldkcnE1MVoyaEp4d2d2dVc5YU9LdGlDcS1wWU5BNXhDYkJsQlpKLTIwZUVJaFBaWHBVU1UyS3laSUZ4TTJtMGQ2eVNLbDhlNUhXLXhjVmtLdHl2WkdDakktcmxtUDA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T04:47-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f6480ca2ed2a1302",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El 38% de las empresas ya gasta más de lo previsto en inteligencia artificial",
+      "summary": "Titular difundido por IT User a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "IT User · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMFhmTUVSNEY3WnFoNW1VZ3lWRWpNTktHSDNYd2xVS3JuQVgyYko3Njc3dTdya3NzTE9NZ0UteC1kMElDZTJQRU1DSnFNQUFhdGZ2aU5ZdGFXOEZQQ0VUUDNmeTFyRDFNVlpSSkZob2pWWlR3X2RWeGFhUEhyME1qTHlYWHhYUkJISnZxWVM3bkNwV080Wkx1SlBrZEFNZVpuVzBNc2Y5b1ExU3FKbWwyLTd1aWtEUi1odGc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T03:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-d428eb0ed1bc11cb",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Convocatoria de la selección Colombia: esta es la fecha para conocer la lista para los partidos contra Chile",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeEV4UEVGUFhmcldMV0h2US1WVWJibVVlRTVtUTdoSTN2S2l6RTgweElUWHQ4SDdnakRibzlHbDk4dkJnQk1la1B2UWhRNkFkcDJVdmpDZlZmTVlTc0VNcmRrUlJoU1dCRmlDWjVsWXBjQ042RXJXbEFRT1Z1VEg4bW5XZG1LenhJUmFpTjV3ZjY3RXZDYkU1Z2F2blg4SDNfTkpRZHdLSFdqdTBlSWEwdnFxN093OEZfZ1VWamxBTklFQ3VJY2hLdnllNmpLU0xNUlRrc1pjQTYtTjZzaDNXekhKd1NpQXE1UU5IRXpiLXZob3PSAY4CQVVfeXFMTlh0alF3MkRtWlk2OWYxTWtzT0tiS3pOeXFHaVdMS0tiNzI2WFlSRm9qV1hqZzNCQURuenFPdTV3TXNsT2NYd2xKVHBRcW5GQTc3cEZGVno1dGRKQnh2N1VQdnNMSmtHZ1N4cHBEZFloNGs4dnNQbXc5d3pQM2FxMWd3VUJwOE9rNGotVEZvdUY4eXlGZndRck1CbVJVdVFHME1qS1FhQ0wyZks2YXVoQ2VaVGs0LWdsNy1MUzNvajJ5bU9SbWE4dmE5NkJNbFRHWFVvQVVjTTZ6Q1FJNmZ5bC1Xb0lSNDRxSGpVdGRCSWhEV1hXSTk4SnlXbnYzT0lHbmlHNTB3bTlvN2lKLV9n?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T19:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f54688d28a5932d7",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cuándo sale la convocatoria de la Selección Colombia para los juegos preparatorios contra Chile",
+      "summary": "Titular difundido por Noticias Caracol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias Caracol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNndXV29uT0tzRGNodFVDeWVRUnpBZVRvaHM4MWdudXdvR3NjTFdCUXZuVWdoQ2NlNEJQUEdDYmRUY3RvelRycDhWOC1mZWo4dElZa0tMbU1sNkZkbkRIZ1JtX2xFdEJxZHRmVGdPeGxrRWZTTVpia3I5bkktaEFlUkw3UHpDMEM1NFdmRVF3RHdMNTNFckQ0YkV0WUNqbWJFSEd2czZuTW5pYndDVWVDLTFIVTZYUFRwNTVfaHBiUkkzSGowOXBvYUxjS2FURTNZeXdydTVLdDJYYU5BMHlKbVhyQzd0b1RfVEY4Vko3V1ZLTS130gGCAkFVX3lxTE5YdVJHSmFVaFcwNldfSHBmbFVFWGxFS3hoRzI5Vk5aMDdXZGhWenhEUkp6NkJ2ZmhkUk1IWjJaVkY3T3FWWktNdzV1R3Fkd0tmNDJlLTFmTGRrOEFCZWpLdUp5enZoNkJ5VVVDM1VuUkRZaF9fbWl1YmVad05XbHhJb1VvQVl4aTVhaWtnVGotT0dnQWt0MGRLNHYwUHFWNnA0NjNiN2VVRHpUSW41SVdlQnZRTHBIaWJwM0JXdTJzOVNsYjFEa0FEYkMxc3hreDlCY3JhT3hpUmVmS01qaV93TVJ1RFQwcE1XQ0k3anRJM2JZSHdXT0dWbE5VZDI0YmhFQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T15:07-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e3ef3ab9875eb161",
+      "date": "2026-11-03",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Temblor de 5,6 en Colombia: ¿cuáles fueron los más recientes sismos en las últimas 24 horas, qué magnitud tuvieron y dónde se registraron?",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNWDhCb0NTWmR5ZUo5XzNxdEIzMkxPVjBMWXMxcWRkVTBMd28zby1hc2FkWVU5ckc4dVhFcWJvelRLUWx1Ul9Kdjh3NW9iZlp1a002SUI5cXRUdEpSZnNEVTczakVBN3k5dGtKR3NsVmtzbHJuSHYxb3VzUURDZTUyLXhQSlF0THhrV1NRMWR1bHF0b3lOUU1NTkp6MXZXY2FoOXdRZllzX1p5ZlpKOFFJR0FCOWRaNzdma0hGSFY0dlVqM0lKNHAzOFd0NlpIMk01OVRLVzRxMWtBYVdxNE5UUUlJbVFEandOWkFfRHhzaFptclNJUmxPRXQzbDd6cWtHbUxOR0JXcWE1VlI5dUFEelpB0gGXAkFVX3lxTFBnODQzcXZ1Yjl4YU12dWp2VDZmR3JqVHZXMDN0bDR3SlR0MndnUlowbXRmUTZ2d2k1aEE2ZGYxRHFmWWd2NEFacmRjX3o0bUNndGhFMGhTWjZmT0JtNjlMajJKZng1clNVWGR2TURydWtFYkN2SlRBY0JiekFTTGNNYU56cXc1aXpvWnl5OFRmNHZmWHZLSjBJekFhZjljMnJoR0duZXF4OHFfa2dENUJLeklpemVuazZjMjhYYjFlQVQ2dXJoOGpkcHFIcTBSU1JQZ0tPdGd5alh1OWQ1TXRkdDFvUDJ5dXJWMzc4YlhFWktwNE5XLUczaHBGNWhjeXlvamdldjRlN2tEbU1pU0UyWTAwSGowTQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T08:50-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-80aebaea6369c4b6",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
@@ -1862,8 +1957,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:07-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:07-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:09-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:09-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
