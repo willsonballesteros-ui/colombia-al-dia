@@ -296,12 +296,14 @@ const stopSpeech=()=>{
 const spanishVoiceKey=v=>[v.voiceURI,v.lang,v.name].join('|');
 const voiceSelect=el('voice-select');
 let selectedVoiceKey='auto';
+try{selectedVoiceKey=window.localStorage.getItem('orbiuno-voice-es')||'auto';}
+catch(error){/* Navegación privada puede impedir almacenamiento local. */}
 const spanishVoices=()=>window.speechSynthesis.getVoices().filter(v=>/^es([-_]|$)/i.test(v.lang));
 const rankVoice=v=>{
  const name=String(v.name||'');
  let score=/^es-CO$/i.test(v.lang)?90:50;
  if(/(natural|neural|enhanced|premium)/i.test(name))score+=35;
- if(/(m[oó]nica|paulina|milena|sofia|sof[ií]a|luciana|isabela|helena|valentina|alva|paloma|marisol|claudia|laura)/i.test(name))score+=25;
+ if(/(m[oó]nica|paulina|milena|sofia|sof[ií]a|luciana|isabela|helena|valentina|alva|paloma|marisol|claudia|laura)/i.test(name))score+=70;
  if(v.localService)score+=3;
  return score;
 };
@@ -349,6 +351,8 @@ const restartCurrentSentence=()=>{
 };
 if(voiceSelect)voiceSelect.addEventListener('change',()=>{
  selectedVoiceKey=voiceSelect.value;
+ try{window.localStorage.setItem('orbiuno-voice-es',selectedVoiceKey);}
+ catch(error){/* La voz permanece elegida durante la sesión actual. */}
  restartCurrentSentence();
 });
 if(canSpeak){
