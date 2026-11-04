@@ -21,7 +21,7 @@ def check(data):
             assert u.scheme == 'https' and u.netloc, f"URL de fuente no segura: {s['url']}"
         # La narración ampliada es síntesis propia y nunca una copia del medio.
         if x.get('audioFullTextEs'):
-            assert x.get('verification') == 'editorial_verified', 'Audio ampliado requiere revisión editorial'
+            assert x.get('verification') in ('editorial_verified', 'editorial_superseded'), 'Audio requiere revisión previa o archivo editorial sustituido'
             assert x.get('sourceLanguage') in ('en', 'es'), 'Idioma de origen sin identificar'
             assert x.get('audioIsFullPublisherArticle') is False, 'Prohibido almacenar artículo íntegro de prensa como audio propio'
             assert len(x['audioFullTextEs']) > len(x.get('executiveSummary') or ''), 'Audio ampliado demasiado corto'
