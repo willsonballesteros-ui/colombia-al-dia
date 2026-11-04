@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-5253a86b49a517b8",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "'La falsa paz total llegó a su fin': Presidente De La Espriella acaba con legado de Petro tras luz verde a nueva ley en el Congreso",
+      "summary": "Titular difundido por redmas.com.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "redmas.com.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcC1BT29WbURRcHpRU1JYUWNjdllINXkyU1haRk9pWlRGdG9WZV9PMi1maXNFazJBLUhUMWt6d2RmM1JyWl85NEdrM2ItLXBDU3RCZmNHQ3ZmamtySWxmOEZTOEtqSTBTNldhbkdKdTUxQWNFNGREY2drcmUzMGdxLTd1ckhPdEhIQk03TUdDZTJWY2JQWVZzN2NsQkIxam9WTDF5a01mOFl1ejFCbFpacVM3ZXZNZ2ljeTZYODRPc1RIRjg2aUV2ckhnOXpLZGZiZkhleWNaYmJiR0g5OE5ONkJIWWp4Q2ROMlp6VVpxcEdxeW5UZTVSN3F5RWhidHF4cFp0WVRFMVBPQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T06:44-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-88b8bce36132befd",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial en Chile: ¿capacidad propia o subordinación tecnológica?",
+      "summary": "Titular difundido por El Mostrador a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Mostrador · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONjRQS1RrMkdobnR0MEdfY3UxbmpiRlZsVm5lY0ZaMURBWERtX1AxZVRhY0ZOOEluX2VJVmVkU0ZMQVFwWGNZV2Q4dmw4Vy1kYUFBelJYWEZZbWpINEQ3U1kwSlJVOW8tdnlqNFM1Tk94VFkwNmwxUXlzc3U2Si1SbXg4VUFyQ1dBNzJGd2NOQ1VUSXdQRlE5ckVSMXdjZUxfVEhxVVlWWkZ3LXA0eEJaUmN6MkpsRG4wNzdOcHVaTWl6Tk5NeUlMNkVZWTRyc0JIaFlkbnlsRQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:39-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c0870f20a79c54a7",
+      "date": "2026-11-03",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Este sería el cargo que ocuparía Dan Driscoll, exsecretario del Ejército de Estados Unidos, en OpenAI",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONTZkcGZaU0ZvbnVJeGlOdzZrLWxxd2pXbW9PVUVDbTFmbGZ1bDdpN1U5UGtHZEk1S0wwaFdoTG5SWXlaZzkzcjZXLWVPTHFOVHk2RnhSbEd3cnVBbUhGX1RxcG9lNGROZUctcDJQOWtVZEdncWllOTFkTnRhQ3lES1VDUHhyTG1pWU45RkFnSVU4ZTRWS3dDZjRsUThoOC1SR1ZELTdMZGFIcDUzei1MYmQ0ejlYZjNiMVZDRHp1R09BeGQtZHNkZFhtTnloTXNwcWlEWVJjdy1sX2trT1pmT1ZPaVo?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-03T22:09-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-e684dffc43774636",
       "date": "2026-11-03",
       "category": "Tecnología e IA",
@@ -2329,8 +2386,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T06:39-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T06:39-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T06:46-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T06:46-05:00",
   "autoSyncOkSources": 4,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición global actualizada el 3 de noviembre de 2026. Tres noticias Colombia, cuatro Mundo y tres Tecnología e IA. Las tendencias se atribuyen a Google Trends cuando se indica; no constituye clasificación general de viralidad. Fuentes originales por noticia. RSS automático queda separado como no verificado.",
