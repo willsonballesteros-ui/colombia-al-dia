@@ -62,7 +62,7 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
         self.assertEqual(rendered.count('data-tts-full="editorial"'), 10)
         self.assertEqual(rendered.count('data-tts-full="true"'), 0)
-        self.assertEqual(rendered.count("Escuchar versión ampliada"), 20)
+        self.assertEqual(rendered.count("Escuchar versión ampliada"), 30)
         self.assertEqual(len(current), 10)
         self.assertTrue(all(len(x.get("audioFullTextEs", "")) > len(x["executiveSummary"]) for x in current))
         english = [x for x in current if x.get("sourceLanguage") == "en"]
