@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-e91de406d28af8bd",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cristina Aranda aborda en Huesca los desafíos de la inteligencia artificial y los riesgos de su poder",
+      "summary": "Titular difundido por Diario del Alto Aragón a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario del Alto Aragón · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbmtLb2daMHBROHExelBmXzd2a2xSS0pIc29RVE01MDZRWDNBWXBzdkpXa0RVMXdaSy0wZFlHZC1uN1JWMEJNNEsxcm1CaVUzYjlWakZoZ0VVT1Rvc3hWRDA3QXNtcDUzMmFLd0hrSHpUMWFzNzVZMi1wWVZwLTdMM3JqX29kelY3c3JkWkZ0RjMyU2VmT3ZKVi1mQ0x2d3NuRS04ZTRSNF9FcHFrcGlXaDJ3V3VsZFVFOUl0dXpiN0Jza29UbTFZX1p5Qk1mUG80Q1l1YlpIWS1mOExBbk9HTUpFVkVrNFlsWEtLeGdaNVRDU01a?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T12:13-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-8e8dbf03c2732160",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Daniel Innerarity: \"La inteligencia artificial va a modificar nuestro modo de pensar\"",
+      "summary": "Titular difundido por Magisnet a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Magisnet · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbFlkWWhyLW1QY0phNkdfdW5HaGJlY1hQS2NkX2kyUmQ1MG44UXFhSlJoMl9Cczc4dzBqTFA1SnBVcnhDajdEMTNvamRGdFkwbVZjc28zTTUxR2ljMHU3SUFHaEU0THM2QW03QTkyYVRwTkpFTmFHelNuNDFHelB2eWZodUhUNlU5Qm1FYWhpVDdVQS13a2lqTHBobmVzdkNpX0lnb3RxbnNhSmw1eUhZSENKa2w2MUE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T12:12-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-eaf57c818ccc6c77",
       "date": "2026-11-04",
       "category": "Tecnología e IA",
