@@ -62,7 +62,7 @@ def build(data: dict, page: str) -> str:
             '<span id="boletin-date">' + day + '</span>', page, count=1
         )
         def set_video(m):
-            source = re.sub(r'\\s(?:src|poster)="[^"]*"', '', m.group(0))
+            source = re.sub(r'\s(?:src|poster)="[^"]*"', '', m.group(0))
             if video.is_file():
                 source = source.replace(
                     '<video ', f'<video src="./media/{day}/boletin-narrado.mp4" poster="./media/{day}/historia-orbiuno.png" ', 1
