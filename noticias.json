@@ -1,8 +1,8 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-04",
-  "editedAtBogota": "2026-11-04 18:13",
-  "siteVersion": "3.0",
+  "editedAtBogota": "2026-11-04 18:29",
+  "siteVersion": "3.1-audio-ampliado",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
@@ -1189,7 +1189,7 @@
       "category": "Colombia",
       "level": "Noticia contrastada · edición noche",
       "title": "Carro bomba en Patía, Cauca: emergencia en la vía Panamericana",
-      "summary": "Una volqueta con explosivos detonó cerca de una estación de Policía en El Estrecho. Las autoridades reportan víctimas y afectaciones a la movilidad; el balance es preliminar.",
+      "summary": "Un vehículo con explosivos detonó en El Estrecho, Patía. Caracol reportó preliminarmente una persona muerta y dos heridas; hubo afectación en la Panamericana.",
       "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
       "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
       "executiveSummary": "Una explosión cerca de la estación de Policía de El Estrecho afectó la Panamericana; víctimas y movilidad siguen bajo evaluación.",
@@ -1206,11 +1206,13 @@
       "verification": "editorial_verified",
       "priority": 1,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Una volqueta con explosivos detonó cerca de una estación de Policía en El Estrecho. Las autoridades reportan víctimas y afectaciones a la movilidad; el balance es preliminar. Una explosión cerca de la estación de Policía de El Estrecho afectó la Panamericana; víctimas y movilidad siguen bajo evaluación. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "En el corregimiento de El Estrecho, municipio de Patía, al sur del Cauca, se registró una explosión de un vehículo preparado con artefactos explosivos cerca de una estación de Policía. Caracol Radio informó que el reporte preliminar señalaba una persona fallecida y otras dos heridas. El alcalde Jhon Jairo Fuentes indicó que las personas lesionadas estaban siendo atendidas en el puesto de salud de la localidad, luego de sufrir heridas por esquirlas. La detonación produjo daños en infraestructura del centro poblado y afectó el tránsito por la vía Panamericana, un corredor de comunicación entre departamentos del suroccidente colombiano. En su cobertura del miércoles, el medio reportó el cierre de la vía mientras se atendía la emergencia. Hasta ese momento, las autoridades no habían establecido oficialmente la autoría del ataque. Caracol recordó que en días recientes también se registraron hechos violentos con explosivos en La Sierra y Balboa, municipios del mismo departamento. Las cifras de víctimas y el estado de la movilidad pueden cambiar con nuevos comunicados oficiales.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 167
     },
     {
       "id": "20261104-noche-02",
@@ -1218,7 +1220,7 @@
       "category": "Colombia",
       "level": "Noticia contrastada · edición noche",
       "title": "Accidente de bus en Rosas, Cauca, deja dos muertos y diez heridos",
-      "summary": "Un autobús de servicio interdepartamental que cubría Popayán–Ipiales volcó en el municipio de Rosas. Bomberos y autoridades atendieron a los heridos y trabajan en recuperar la movilidad.",
+      "summary": "Un bus que iba de Popayán a Ipiales colisionó con un tractocamión en Rosas. El balance preliminar de Caracol es de dos fallecidos y diez heridos.",
       "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
       "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
       "executiveSummary": "Un bus que viajaba de Popayán a Ipiales se volcó en Rosas; el balance preliminar es de dos fallecidos y diez heridos.",
@@ -1231,11 +1233,13 @@
       "verification": "editorial_verified",
       "priority": 2,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Un autobús de servicio interdepartamental que cubría Popayán–Ipiales volcó en el municipio de Rosas. Bomberos y autoridades atendieron a los heridos y trabajan en recuperar la movilidad. Un bus que viajaba de Popayán a Ipiales se volcó en Rosas; el balance preliminar es de dos fallecidos y diez heridos. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "En la madrugada del miércoles ocurrió un accidente de tránsito en la vía Panamericana, a la altura de la vereda Chontaduro, jurisdicción de Rosas, en el departamento del Cauca. Según la información difundida por Caracol Radio, dos personas murieron y otras diez resultaron heridas. Un autobús de servicio interdepartamental, afiliado a Flota Magdalena, chocó con un tractocamión mientras cubría la ruta entre Popayán e Ipiales. Los equipos de emergencia trasladaron inicialmente a los lesionados al Hospital de Rosas; posteriormente, algunos fueron remitidos a centros asistenciales de Popayán. El comandante del Cuerpo de Bomberos de Rosas explicó que fue necesario coordinar la respuesta con servicios de salud y con la concesión vial. Las autoridades de tránsito investigan las circunstancias exactas del siniestro, incluida una posible falla en el sistema de frenos, sin que se haya establecido una causa definitiva. Hasta el momento de ese reporte no se habían divulgado las identidades de las personas fallecidas. También continuaban los trabajos para retirar los vehículos y recuperar la circulación en la carretera.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 169
     },
     {
       "id": "20261104-noche-03",
@@ -1256,11 +1260,13 @@
       "verification": "editorial_verified",
       "priority": 3,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Alejandro Ordóñez se posesionó como ministro del Interior de Colombia. También asumió Viviane Morales como comisionada de Paz, según informó Noticias Caracol. Alejandro Ordóñez asumió Interior y Viviane Morales fue posesionada como comisionada de Paz, según Noticias Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "Este miércoles fue posesionado Alejandro Ordóñez como ministro del Interior de Colombia. Noticias Caracol informó que reemplaza a Rodrigo Lara Restrepo, quien dejó el cargo después de cerca de tres meses en el Gobierno del presidente Abelardo de la Espriella. Ordóñez había sido designado embajador ante la Organización de los Estados Americanos y fue procurador general entre 2009 y 2016. En el mismo anuncio, Viviane Morales asumió como consejera comisionada de Paz. La funcionaria había estado previamente al frente del Ministerio de Educación y renunció a ese puesto por motivos familiares, según la explicación conocida entonces. La Presidencia señaló que su nueva labor incluye revisar los resultados y estructuras administrativas de la política de paz. La noticia coincide con una discusión sobre la reducción proyectada para el presupuesto de la Jurisdicción Especial para la Paz en 2027. El presidente de ese tribunal expresó públicamente su preocupación por las consecuencias de esa propuesta. Los nombramientos ya se realizaron; el desarrollo de las políticas y decisiones presupuestales corresponde a etapas posteriores.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 169
     },
     {
       "id": "20261104-noche-04",
@@ -1268,10 +1274,10 @@
       "category": "Colombia",
       "level": "Noticia contrastada · edición noche",
       "title": "Operativo de seguridad en Cúcuta: más de cien capturas",
-      "summary": "El Espectador informó de un amplio operativo en Cúcuta contra presuntos integrantes de varias estructuras delictivas. Las autoridades presentaron un balance que permanece sujeto a ajustes.",
+      "summary": "La Fiscalía elevó a 111 el número de capturados en la operación Némesis en Cúcuta y alrededores, según El Espectador.",
       "why": "Seguimiento informativo a un hecho reciente con fuente original pública.",
       "next": "Consultar el enlace original para actualizaciones posteriores al cierre.",
-      "executiveSummary": "Un operativo en Cúcuta dejó más de cien capturas, según el reporte de las autoridades recogido por El Espectador.",
+      "executiveSummary": "La Fiscalía reportó 111 capturas en Cúcuta y municipios cercanos, tras un balance preliminar de 109.",
       "sources": [
         {
           "name": "El Espectador · 4 nov",
@@ -1281,11 +1287,13 @@
       "verification": "editorial_verified",
       "priority": 4,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "El Espectador informó de un amplio operativo en Cúcuta contra presuntos integrantes de varias estructuras delictivas. Las autoridades presentaron un balance que permanece sujeto a ajustes. Un operativo en Cúcuta dejó más de cien capturas, según el reporte de las autoridades recogido por El Espectador. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "En Cúcuta y municipios cercanos de Norte de Santander, la fuerza pública realizó durante la madrugada una operación contra organizaciones señaladas de participar en distintas actividades delictivas. El Espectador informó que el primer balance del Gobierno hablaba de 109 capturas; más tarde, la Fiscalía elevó el total a 111 personas capturadas y reportó la aprehensión de un menor de edad. La operación, denominada Némesis, incluyó 58 diligencias de allanamiento y registro en sectores de Cúcuta, Villa del Rosario, San Cayetano y La Parada. Según la Fiscalía, 42 capturas se hicieron por orden judicial y 69 en flagrancia. Los investigadores señalaron a presuntos integrantes de varias estructuras, entre ellas el ELN, el Tren de Aragua y otras agrupaciones locales. El operativo contó con participación del Cuerpo Técnico de Investigación, la Policía y apoyo del Ejército. Las autoridades informaron decomisos de armas, sustancias ilícitas y otros elementos. Los detenidos deberán comparecer ante jueces y las responsabilidades individuales siguen sujetas al debido proceso. La acción se enmarca en la estrategia de seguridad anunciada por el Gobierno para esa zona fronteriza.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 177
     },
     {
       "id": "20261104-noche-05",
@@ -1310,11 +1318,13 @@
       "verification": "editorial_verified",
       "priority": 5,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Corea del Norte informó de pruebas de un nuevo sistema de defensa antiaérea y de un ejercicio con misiles de crucero. Seúl y Washington siguen los lanzamientos, según Reuters y AP. Corea del Norte reportó pruebas antiaéreas y de misiles de crucero; Corea del Sur y Estados Unidos siguen los lanzamientos. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "Corea del Norte informó sobre nuevas pruebas de armamento realizadas durante el miércoles. Reuters, con base en un reporte de la agencia estatal norcoreana KCNA, señaló que las actividades comprendieron un sistema de misiles de defensa antiaérea de nuevo diseño y un ejercicio de misiles de crucero. Según KCNA, una de las pruebas buscaba verificar materiales, modos de guiado y capacidad para identificar y seguir objetivos. La agencia también describió un simulacro de ataque contra el objetivo de un aeropuerto, realizado por una unidad de misiles de crucero de largo alcance situada en el este del país. Por separado, el Ministerio de Defensa de Corea del Sur había comunicado el lanzamiento de varios proyectiles hacia el mar desde un sector de la costa oriental. Reuters indicó que se trata del cuarto episodio de lanzamiento de armas norcoreanas en aproximadamente un mes. La información técnica proviene principalmente de comunicaciones oficiales de Corea del Norte y debe distinguirse de cualquier evaluación independiente. Seúl mantiene el seguimiento de estos ensayos y sus posibles implicaciones para la seguridad regional.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "en"
+      "sourceLanguage": "en",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 175
     },
     {
       "id": "20261104-noche-06",
@@ -1335,11 +1345,13 @@
       "verification": "editorial_verified",
       "priority": 6,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Autoridades ucranianas elevaron a 40 los muertos y reportaron 59 desaparecidos después del ataque del lunes a un centro de ayuda en Zaporiyia. Rusia sostiene que su objetivo era militar. Ucrania reporta 40 muertos y 59 desaparecidos tras un ataque a un centro de ayuda; Rusia afirma haber atacado objetivos militares. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "En la región ucraniana de Zaporiyia, las autoridades elevaron a 40 el número de personas muertas después del ataque ruso del lunes contra un complejo que funcionaba como punto de distribución de ayuda humanitaria. Reuters informó también sobre 59 personas desaparecidas, según las autoridades de la zona. El lugar era una antigua instalación escolar en Komyshuvakha, próxima al frente de combate. Las clases estaban suspendidas desde hacía tiempo, pero el espacio seguía siendo utilizado como refugio y para entregar asistencia los lunes. El presidente Volodímir Zelenski atribuyó a las fuerzas rusas varios impactos sobre el edificio y el refugio subterráneo. Los servicios de emergencia señalaron que entre los fallecidos había rescatistas y policías. Por su parte, el Ministerio de Defensa ruso sostuvo que sus ataques estaban dirigidos contra unidades militares en la zona. Las dos versiones sobre la naturaleza del objetivo son distintas y se atribuyen a sus respectivas autoridades. Mientras continuaban las tareas de búsqueda, se preparaban conversaciones entre delegaciones ucranianas y rusas previstas en Abu Dabi para el 10 y 11 de noviembre, con mediación estadounidense.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "en"
+      "sourceLanguage": "en",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 178
     },
     {
       "id": "20261104-noche-07",
@@ -1360,11 +1372,13 @@
       "verification": "editorial_verified",
       "priority": 7,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Según Nikkei, citado por Reuters, Japón quiere recibir antes información sobre fallas informáticas no divulgadas de empresas tecnológicas extranjeras para reforzar su ciberseguridad. Japón estudia recibir alertas de fallas de software antes de que sean públicas, según Nikkei citado por Reuters. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "Japón estudia cambios en la manera de recibir alertas sobre fallas graves de programas informáticos. Reuters citó un informe del diario económico Nikkei, según el cual el Gobierno japonés buscaría acceso más temprano a información sobre vulnerabilidades de software todavía no divulgadas públicamente. La propuesta involucraría a desarrolladores de inteligencia artificial de Estados Unidos y a otras compañías tecnológicas extranjeras. El objetivo señalado por Nikkei es dar más margen de reacción a organismos gubernamentales y operadores de infraestructura crítica antes de que los problemas sean conocidos por posibles atacantes. El medio reportó que el Ejecutivo podría presentar un paquete de medidas urgentes de ciberseguridad en una reunión ministerial próxima. Esta iniciativa llega después de incidentes registrados en octubre, cuando se difundieron vulnerabilidades importantes relacionadas con el lenguaje de programación PHP y numerosos administradores de sitios web tuvieron que tomar precauciones. Nikkei también informó que Japón estudia equipos de pruebas de ciberataques apoyados por inteligencia artificial. Por ahora se trata de medidas en estudio; no de una obligación aprobada y vigente para todas las empresas.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "en"
+      "sourceLanguage": "en",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 174
     },
     {
       "id": "20261104-noche-08",
@@ -1379,17 +1393,19 @@
       "sources": [
         {
           "name": "Associated Press · 4 nov",
-          "url": "https://apnews.com/article/4d12764c0b3ce38ffde3077712811182"
+          "url": "https://apnews.com/article/c0be7ca45b5875abe758e0570cb9a265"
         }
       ],
       "verification": "editorial_verified",
       "priority": 8,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "AP informa que el Dow Jones avanzó cerca de 1.569 puntos, mientras el Brent cayó por debajo de 95 dólares. Los mercados reaccionaron a los resultados legislativos de Estados Unidos. El Dow Jones subió alrededor de 1.569 puntos y el Brent bajó de US$95, según AP, tras las elecciones en EE. UU. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "Las bolsas de Estados Unidos registraron un aumento generalizado durante la jornada del miércoles, después de las elecciones legislativas de mitad de período. Associated Press informó que el índice Dow Jones subió 1.569 puntos, aproximadamente un tres por ciento, y terminó en 53.356 puntos. El indicador S&P 500 ganó cerca de 1,6 por ciento, mientras el Nasdaq avanzó aproximadamente 1,4 por ciento. Los resultados electorales modificaron el equilibrio de poder en Washington, al perder el partido del presidente Donald Trump el control exclusivo del Congreso. Según el balance publicado por AP, las acciones de empresas hospitalarias y de comercios orientados a consumidores de menores ingresos estuvieron entre las que impulsaron el movimiento. Al mismo tiempo, los precios del petróleo descendieron y eso contribuyó a reducir el rendimiento de los bonos del Tesoro estadounidense. El resultado de un día no permite anticipar por sí solo el comportamiento futuro del mercado. Los inversionistas continúan evaluando las políticas económicas y los cambios legislativos que puedan ocurrir después de las elecciones.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "en"
+      "sourceLanguage": "en",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 167
     },
     {
       "id": "20261104-noche-09",
@@ -1403,6 +1419,10 @@
       "executiveSummary": "Real Madrid derrotó 3-2 al AEK en Atenas en la cuarta fecha de Champions; resultado final reportado por AS y Caracol.",
       "sources": [
         {
+          "name": "UEFA · resumen oficial 4 nov",
+          "url": "https://es.uefa.com/uefachampionsleague/news/02ab-21fe48f0b7da-351f3a5a0318-1000--resumen-del-miercoles-de-la-jornada-4-de-la-champions-leag/"
+        },
+        {
           "name": "AS / Caracol · 4 nov",
           "url": "https://as.com/futbol/champions/clasificacion-de-fase-liga-de-la-champions-league-2026202-jornada-4-f202611-n/"
         },
@@ -1414,11 +1434,13 @@
       "verification": "editorial_verified",
       "priority": 9,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "El Real Madrid venció 3-2 al AEK Atenas en la cuarta jornada de la fase liga de la Champions League 2026/27, según el marcador final publicado por AS y Caracol. Real Madrid derrotó 3-2 al AEK en Atenas en la cuarta fecha de Champions; resultado final reportado por AS y Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "El Real Madrid derrotó al AEK de Atenas por tres goles a dos en la cuarta jornada de la fase liga de la Champions League. El resumen oficial de la UEFA señala que el equipo griego abrió el marcador en el minuto doce mediante un gol de Koita. Jude Bellingham logró el empate antes del descanso tras una acción ofensiva del conjunto español. En el segundo tiempo, Pilios adelantó nuevamente al AEK y dejó al Real Madrid obligado a remontar. Kylian Mbappé marcó el dos a dos, y Federico Valverde consiguió el gol decisivo durante el tiempo añadido. Con ese resultado, el equipo dirigido por José Mourinho sumó su cuarta victoria en cuatro encuentros de la fase liga. UEFA destacó a Bellingham como jugador del partido. El encuentro se disputó en Atenas y formó parte de la programación del miércoles cuatro de noviembre. El resultado corresponde a esta jornada, no a una eliminatoria de ida y vuelta; la posición definitiva de los equipos dependerá de los partidos que restan en la fase de liga.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 174
     },
     {
       "id": "20261104-noche-10",
@@ -1432,6 +1454,10 @@
       "executiveSummary": "Fenerbahçe ganó 3-2 al Liverpool en Estambul en la jornada de Champions del miércoles, según AS y Caracol.",
       "sources": [
         {
+          "name": "UEFA · resumen oficial 4 nov",
+          "url": "https://es.uefa.com/uefachampionsleague/news/02ab-21fe48f0b7da-351f3a5a0318-1000--resumen-del-miercoles-de-la-jornada-4-de-la-champions-leag/"
+        },
+        {
           "name": "AS / Caracol · 4 nov",
           "url": "https://caracol.com.co/resultados/futbol/champions/"
         },
@@ -1443,11 +1469,13 @@
       "verification": "editorial_verified",
       "priority": 10,
       "originalArticleReviewed": false,
-      "audioFullTextEs": "Fenerbahçe superó 3-2 al Liverpool en Turquía, en la jornada de Champions de este miércoles. AS y Caracol reportan el marcador como finalizado. Fenerbahçe ganó 3-2 al Liverpool en Estambul en la jornada de Champions del miércoles, según AS y Caracol. Consulta la fuente original y sus posibles actualizaciones desde el portal ORBIUNO.",
-      "audioEditorialSource": "Resumen original de Redacción ORBIUNO a partir de fuentes atribuidas.",
+      "audioFullTextEs": "El Fenerbahçe venció al Liverpool por tres a dos en Estambul, durante la cuarta fecha de la fase liga de la Champions League. De acuerdo con el resumen oficial de la UEFA, el equipo inglés se adelantó gracias a un remate de Trey Nyoni en el minuto veinticinco. El conjunto turco empató pocos minutos después, tras una jugada a balón parado. En la segunda parte, Alexander Isak volvió a poner por delante a los visitantes en el minuto sesenta y nueve. Sin embargo, Archie Brown consiguió una nueva igualdad al aprovechar un rebote en el área. El gol de la victoria llegó en el minuto setenta y nueve con un cabezazo de Vedat Muriqi. La UEFA señaló que ese resultado puso fin al inicio ganador del Liverpool en la competición de esta temporada. Para Fenerbahçe significó su primera victoria en la Champions League propiamente dicha desde 2008. El partido terminó con el marcador confirmado de tres a dos y los dos equipos seguirán disputando encuentros en la fase de liga.",
+      "audioEditorialSource": "Redacción ORBIUNO; información contrastada con los medios y enlaces citados, 4 de noviembre de 2026",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "sourceLanguage": "es"
+      "sourceLanguage": "es",
+      "audioEditorialReviewed": true,
+      "audioWordCount": 170
     },
     {
       "id": "rss-87abc812855465c6",
