@@ -1,4 +1,4 @@
-name: Generar carrusel ORBIUNO 11 láminas
+name: ORBIUNO - 10 láminas Instagram y portada Reel
 on:
   workflow_dispatch:
   push:
@@ -33,7 +33,7 @@ jobs:
         run: python scripts/validate_news.py noticias.json
       - name: Renderizar portada y diez láminas
         run: python scripts/build_carousel.py
-      - name: Validar formato compacto de 11 láminas
+      - name: Validar diez imágenes de Instagram más portada de Reel
         run: |
           python - <<'PY'
           import json
@@ -46,7 +46,7 @@ jobs:
           for file in slides:
               with Image.open(file) as im:
                   assert im.size==(1080,1350), (file,im.size)
-          print("Validado: 11 láminas + 10 fuentes originales")
+          print("Validado: diez noticias para Instagram y portada para Reel (11 archivos).")
           PY
       - name: Publicar imágenes sobre la última versión de main
         run: |
