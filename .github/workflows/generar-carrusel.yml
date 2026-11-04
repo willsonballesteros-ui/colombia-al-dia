@@ -52,7 +52,7 @@ jobs:
           assert (p/"instagram-caption.txt").is_file()
           assert (p/"instagram-primer-comentario.txt").is_file()
           text=(p/"instagram-caption.txt").read_text(encoding="utf-8")
-          assert "\\n🌐 https://colombia-al-dia.pages.dev/" in text
+          assert "\n🌐 https://colombia-al-dia.pages.dev/" in text
           print("Validado: 10 imágenes, portada y links del copy.")
           PY
       - name: Publicar imágenes sobre la última versión de main
