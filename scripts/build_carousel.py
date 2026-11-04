@@ -148,19 +148,46 @@ def news_card(note,num,day,out):
     image.save(out,optimize=True)
 
 
-def cover(day,out):
-    image=base();d=ImageDraw.Draw(image)
-    paragraph(d,"10 NOTICIAS",70,320,font(90,True),NAVY,930,2,13)
-    paragraph(d,"Lo importante, en dos líneas.",72,480,font(45,True),INK,935,3,16)
-    d.line((71,680,1008,680),fill=GOLD,width=5)
-    paragraph(d,"Colombia · Mundo · Economía · Inteligencia artificial",
-              74,746,font(32),INK,925,3,16)
-    paragraph(d,"ESCUCHA LAS NOTICIAS EN NUESTRA WEB.",
-              75,1008,font(31,True),NAVY,930,2,14)
-    paragraph(d,"Elige voz y velocidad · colombia-al-dia.pages.dev",
-              75,1078,font(25),INK,935,3,12)
-    d.text((74,1273),day[8:10]+"/"+day[5:7]+"/"+day[:4]+"  ·  @resumen.noticias",
-           font=font(23),fill=MUTED)
+def cover(day, news, out):
+    """Apertura: resumen legible de los diez titulares en una sola pantalla."""
+    image=base()
+    d=ImageDraw.Draw(image)
+    d.text((65,181),"EDICIÓN DE LA NOCHE · 18:00 BOGOTÁ",font(29,True),fill=NAVY)
+    d.text((65,241),"ESTAS SON LAS 10 NOTICIAS",font(43,True),fill=INK)
+    d.line((66,310,1012,310),fill=GOLD,width=5)
+    for i, item in enumerate(news, 1):
+        y=335+(i-1)*83
+        d.rounded_rectangle((61,y,1018,y+75),radius=9,
+                            fill="#E7EFFA" if i%2 else "#F0F4FB")
+        d.rounded_rectangle((74,y+10,136,y+65),radius=8,fill=NAVY)
+        d.text((84,y+20),str(i).zfill(2),font(27,True),fill=WHITE)
+        title=str(item["title"])
+        title_face=font_for_lines(d,title,847,2,preferred=27,minimum=21)
+        paragraph(d,title,151,y+9,title_face,INK,847,2,5)
+    d.rectangle((0,1200,W,H),fill=NAVY)
+    d.text((63,1224),"ESCUCHA LAS NOTICIAS EN NUESTRA WEB",font(30,True),fill=GOLD)
+    d.text((65,1277),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
+           font(24,True),fill=WHITE)
+    image.save(out,optimize=True)
+
+
+def combined_sports_card(a,b,out):
+    """Lámina combinada para cubrir 10 noticias en 10 medios con portada."""
+    image=base()
+    d=ImageDraw.Draw(image)
+    d.text((65,190),"09 Y 10 / 10  ·  DEPORTES",font(32,True),fill=MUTED)
+    for i,n in enumerate((a,b)):
+        y=290+i*425
+        d.rounded_rectangle((60,y,1020,y+385),radius=18,fill="#E7EFFA")
+        d.rounded_rectangle((84,y+20,996,y+79),radius=10,fill=NAVY)
+        d.text((105,y+30),f"{9+i:02d}  CHAMPIONS LEAGUE",font(25,True),fill=GOLD)
+        paragraph(d,n["title"],102,y+110,font(45,True),INK,856,3,10)
+        paragraph(d,n["executiveSummary"],102,y+262,font(26),INK,856,2,10)
+    d.rectangle((0,1215,W,H),fill=NAVY)
+    d.text((65,1240),"FUENTES: AS / CARACOL · VER ENLACES EN ORBIUNO",
+           font(22,True),fill=WHITE)
+    d.text((65,1293),"ESCUCHA LA NOTICIA EN colombia-al-dia.pages.dev",
+           font(19,True),fill=GOLD)
     image.save(out,optimize=True)
 
 
@@ -176,10 +203,11 @@ def main():
         if not x.get("sources") or not str(x["sources"][0]["url"]).startswith("https://"):
             raise RuntimeError("Falta fuente HTTPS")
     out=ROOT/"media"/day;out.mkdir(parents=True,exist_ok=True)
-    cover(day,out/"portada.png")
+    cover(day,news,out/"portada.png")
     for i,n in enumerate(news,1):
         news_card(n,i,day,out/f"top10-{i:02d}.png")
-    print("Generadas 10 láminas sin apartados densos; portada reservada para Reel.")
+    combined_sports_card(news[8],news[9],out/"top10-09.png")
+    print("Generadas portada-resumen, 8 noticias individuales y 1 doble deportes.")
 
 
 if __name__=="__main__":
