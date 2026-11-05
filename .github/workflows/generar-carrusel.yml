@@ -37,7 +37,7 @@ jobs:
         run: python scripts/build_carousel.py
       - name: Generar copy y primer comentario con enlace aislado
         env:
-          ORBIUNO_EDITION_SLOT: '12m'
+          ORBIUNO_EDITION_SLOT: ''
         run: python scripts/build_caption.py
       - name: Validar carrusel de portada y cinco láminas de dos noticias
         run: |
