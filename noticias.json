@@ -1649,7 +1649,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 167
+      "audioWordCount": 167,
+      "socialDetail": "Ocurrió cerca de la estación de Policía de El Estrecho. Autoridades evalúan afectaciones y movilidad.",
+      "socialHeadline": "EXPLOSIÓN EN PATÍA AFECTA LA PANAMERICANA"
     },
     {
       "id": "20261104-noche-02",
@@ -1676,7 +1678,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 169
+      "audioWordCount": 169,
+      "socialDetail": "El vehículo cubría la ruta Popayán–Ipiales y se volcó en Rosas; las cifras son del balance preliminar.",
+      "socialHeadline": "ACCIDENTE EN ROSAS: DOS MUERTOS Y DIEZ HERIDOS"
     },
     {
       "id": "20261104-noche-03",
@@ -1703,7 +1707,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 169
+      "audioWordCount": 169,
+      "socialDetail": "Viviane Morales fue posesionada como comisionada de Paz, según informó Noticias Caracol.",
+      "socialHeadline": "ORDÓÑEZ ASUME LA CARTERA DEL INTERIOR"
     },
     {
       "id": "20261104-noche-04",
@@ -1730,7 +1736,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 177
+      "audioWordCount": 177,
+      "socialDetail": "La Fiscalía actualizó a 111 el número de capturas en Cúcuta y municipios cercanos; antes reportaba 109.",
+      "socialHeadline": "111 CAPTURAS EN OPERATIVO DE CÚCUTA"
     },
     {
       "id": "20261104-noche-05",
@@ -1761,7 +1769,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "en",
       "audioEditorialReviewed": true,
-      "audioWordCount": 175
+      "audioWordCount": 175,
+      "socialDetail": "Las pruebas incluyeron un sistema antiaéreo y misiles de crucero; Corea del Sur y EE. UU. monitorean los lanzamientos.",
+      "socialHeadline": "COREA DEL NORTE ENSAYA MISILES"
     },
     {
       "id": "20261104-noche-06",
@@ -1788,7 +1798,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "en",
       "audioEditorialReviewed": true,
-      "audioWordCount": 178
+      "audioWordCount": 178,
+      "socialDetail": "Las autoridades ucranianas reportan además 59 desaparecidos. Rusia asegura que atacó objetivos militares.",
+      "socialHeadline": "UCRANIA REPORTA 40 MUERTOS Y 59 DESAPARECIDOS"
     },
     {
       "id": "20261104-noche-07",
@@ -1815,7 +1827,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "en",
       "audioEditorialReviewed": true,
-      "audioWordCount": 174
+      "audioWordCount": 174,
+      "socialDetail": "El plan buscaría conocer fallas de software antes de su divulgación pública, según Nikkei citado por Reuters.",
+      "socialHeadline": "JAPÓN ESTUDIA ALERTAS TEMPRANAS DE SOFTWARE"
     },
     {
       "id": "20261104-noche-08",
@@ -1842,7 +1856,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "en",
       "audioEditorialReviewed": true,
-      "audioWordCount": 167
+      "audioWordCount": 167,
+      "socialDetail": "El Dow Jones avanzó unos 1.569 puntos y el Brent bajó de US$95, de acuerdo con AP.",
+      "socialHeadline": "EL DOW AVANZA 1.569 PUNTOS; CAE EL PETRÓLEO"
     },
     {
       "id": "20261104-noche-09",
@@ -1877,7 +1893,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 174
+      "audioWordCount": 174,
+      "socialDetail": "El rival fue AEK y el partido correspondió a la cuarta fecha del torneo; UEFA publicó el resumen oficial.",
+      "socialHeadline": "REAL MADRID VENCE 3-2 AL AEK"
     },
     {
       "id": "20261104-noche-10",
@@ -1912,7 +1930,9 @@
       "imageRightsVerified": false,
       "sourceLanguage": "es",
       "audioEditorialReviewed": true,
-      "audioWordCount": 170
+      "audioWordCount": 170,
+      "socialDetail": "El partido se disputó en Estambul, durante la jornada del miércoles de la Champions.",
+      "socialHeadline": "FENERBAHÇE VENCE 3-2 AL LIVERPOOL"
     },
     {
       "id": "rss-87abc812855465c6",
