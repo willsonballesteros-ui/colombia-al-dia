@@ -63,6 +63,9 @@ def favicon(note):
     host=(urlsplit(source["url"]).hostname or "").lower()
     if not host or not all(ch.isalnum() or ch in ".-" for ch in host):
         return None
+    cached=ROOT/"media"/"source-icons"/(host+".png")
+    if cached.exists():
+        return Image.open(cached).convert("RGBA")
     if host not in _ICON_CACHE:
         try:
             url="https://www.google.com/s2/favicons?domain="+quote(host,safe="")+"&sz=128"
@@ -262,7 +265,7 @@ def single_card(note,num,day,out):
     accent=accents[(num-1)%4]
     d.rectangle((0,0,W,14),fill=accent)
     d.text((60,42),"ORBIUNO",font=font(64,True),fill="#FFFFFF")
-    d.text((62,128),f"{day}  /  EDICIÓN DE MEDIODÍA",font=font(24,True),fill=accent)
+    d.text((62,128),f"{day}  /  EDICIÓN DE LAS 18:00",font=font(24,True),fill=accent)
     d.rounded_rectangle((60,207,1020,288),radius=16,fill=accent)
     d.text((87,224),f"{num:02d} / 10  ·  {note['category'].upper()}",font=font(31,True),fill="#162044")
     title=note.get("socialHeadline") or note["title"]
@@ -317,3 +320,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
