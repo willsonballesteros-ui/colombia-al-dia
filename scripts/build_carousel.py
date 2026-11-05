@@ -256,6 +256,33 @@ def combined_sports_card(a,b,out):
     image.save(out,optimize=True)
 
 
+def single_card(note,num,day,out):
+    im=Image.new("RGB",(W,H),"#162044"); d=ImageDraw.Draw(im)
+    accents=["#FFCF4B","#65F0D4","#FF8B71","#CCAEFF"]
+    accent=accents[(num-1)%4]
+    d.rectangle((0,0,W,14),fill=accent)
+    d.text((60,42),"ORBIUNO",font=font(64,True),fill="#FFFFFF")
+    d.text((62,128),f"{day}  /  EDICIÓN DE MEDIODÍA",font=font(24,True),fill=accent)
+    d.rounded_rectangle((60,207,1020,288),radius=16,fill=accent)
+    d.text((87,224),f"{num:02d} / 10  ·  {note['category'].upper()}",font=font(31,True),fill="#162044")
+    title=note.get("socialHeadline") or note["title"]
+    ft=font_for_lines(d,title,940,5,preferred=68,minimum=48,bold=True)
+    paragraph(d,title,65,345,ft,"#FFFFFF",940,5,15)
+    d.line((65,820,1015,820),fill=accent,width=5)
+    paragraph(d,note["executiveSummary"],68,866,font(34),"#E1E9FF",935,4,12)
+    icon=favicon(note)
+    if icon is not None:
+        icon=icon.copy();icon.thumbnail((78,78),Image.Resampling.LANCZOS)
+        d.rounded_rectangle((62,1090,154,1180),radius=14,fill="#FFFFFF")
+        im.paste(icon,(68,1096),icon);d=ImageDraw.Draw(im)
+    d.text((178,1102),"FUENTE",font=font(21,True),fill=accent)
+    paragraph(d,note["sources"][0]["name"],178,1137,font(30,True),"#FFFFFF",820,1)
+    d.rectangle((0,1220,W,H),fill=accent)
+    d.text((62,1242),"FUENTES Y DESARROLLO EN LA WEB",font=font(26,True),fill="#162044")
+    d.text((62,1291),"colombia-al-dia.pages.dev  ·  @resumen.noticias",font=font(22,True),fill="#162044")
+    im.save(out,optimize=True)
+
+
 def main():
     data=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=data["editionDate"]
@@ -270,9 +297,7 @@ def main():
     out=ROOT/"media"/day;out.mkdir(parents=True,exist_ok=True)
     cover(day,news,out/"portada.png")
     for i,n in enumerate(news,1):
-        news_card(n,i,day,out/f"top10-{i:02d}.png")
-    if len(news) >= 10:
-        combined_sports_card(news[8],news[9],out/"top10-09.png")
+        single_card(n,i,day,out/f"top10-{i:02d}.png")
     # Carrusel editorial con portada + cinco parejas (10 noticias).
     blocks=[news[i:i+2] for i in range(0,len(news),2)]
     start=1
@@ -281,7 +306,7 @@ def main():
         start+=len(group)
     compact={
        "editionDate":day,"format":"compact_carousel",
-       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,len(blocks)+1)],
+       "slides":["portada.png"]+[f"top10-{i:02d}.png" for i in range(1,11)],
        "newsCounts":[len(group) for group in blocks],
        "fullAudioInImages":False,
        "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
