@@ -37,12 +37,12 @@ def build(db):
     news=sorted((n for n in db["news"] if n.get("date")==day
                  and n.get("verification")=="editorial_verified"),
                 key=lambda n:n.get("priority",999))
-    if len(news)!=10 or len({n["id"] for n in news})!=10:
-        raise RuntimeError("Se requieren diez noticias verificadas distintas")
+    if not (1 <= len(news) <= 10) or len({n["id"] for n in news})!=len(news):
+        raise RuntimeError("Se requieren entre una y diez noticias verificadas distintas")
     for n in news:
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
-    slot=edition_slot()
+    slot=os.getenv("ORBIUNO_EDITION_SLOT", "8am") if os.getenv("ORBIUNO_EXTRAORDINARY")=="1" else edition_slot()
     verified_sports=sum(n.get("category")=="Deportes" for n in news)
     sports_ready=slot!="12m" or 1<=verified_sports<=2
     blockers=[] if sports_ready else ["edicion_mediodia_requiere_1_o_2_deportes_verificados"]
@@ -52,7 +52,7 @@ def build(db):
     story_link=tracked_url(day,"story",slot)
     caption=(
         "ORBIUNO | "+display+"\n\n"
-        "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la noche"}[slot]+" · diez noticias en seis láminas.\n\n"
+        "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la noche"}[slot]+" · "+str(len(news))+" noticias verificadas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
         "Elige voz en español, tono y velocidad a tu gusto.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
@@ -86,7 +86,7 @@ def build(db):
         ]+[
             "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
             +day+"/grupo-"+str(i).zfill(2)+".png"
-            for i in range(1,6)
+            for i in range(1,(len(news)+1)//2+1)
         ],
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
