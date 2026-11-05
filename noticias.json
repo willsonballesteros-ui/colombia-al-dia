@@ -6,6 +6,158 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-1b4c9dd48f31e82e",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "María Fernanda Mena logró un nuevo bronce para Colombia en el Mundial de Levantamiento de Pesas",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUjg2Vl9zMzRlangzdGJKQjNoZzNyRHAxYzgzd3E0N2pKN1QydHliNnNWekRxY2xHWmFrSmQ0T1NaMWtvNm9wUVB6eTRySVZQTGY3WGtJTnRlMUNibzQxbFAyRFJkQlpoUnZpR1FGM0RaY3ZEbkFielZmSnpNQmUxQ0tWNWw5X3NwMzZBYjBfTVZIVGppb0g2YnJncG1reGpBcGQwNl9jYjNybTJETGducm50X0FRc1kwdjRMM3FLU3pYbTdqRnNHcFBnU0hvSmtBV3dkd0pqUWY3cnV4UUZxOEhqU3FFX0HSAewBQVVfeXFMUDhaY3paNDRRZ2ZIWUtYcDNnb0RzRV9hdDBzaUxFSF9Bd2JPTDZkN0V4WFFFcFltbnN3R1hIUmo5bXJGSFpWbm5Jb1B1VGtsdXByN0YtdlNNQ2toV3hxcDZWNVpmRmtXWjJTU0JIekZoNTFoMGZNRXcxQXN2b0llclhHWkQ1LVBlVFBFOERMSG1XUzdVUU1jMU04N1VzUWNIY3NKdFkyelV1dXFPeVJmWGF6TEJOOHgxWW11czRIQnVMdjJpVDh5WnVMcVdoSmlKWV9kaVdCQjhCUnpfZ1dfNWJCbGpob2pnRnd4RnE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T08:01-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b19e5a7f71eb1c8a",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Más de 200 empresarios burgaleses analizan el impacto de la Inteligencia Artificial en el futuro de las empresas",
+      "summary": "Titular difundido por Burgosnoticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Burgosnoticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNb1kyeEh0eDdpYmxUUDRxUkE1NjdqcUJ0T2piWWlFSjhUZmd6aDhlRHNkWnRKRFMxejRrWldHaTVjNTYtVGo0SVVrLW9yTTBWaGlYOXcxY1N6TlBiX3hGUld1cldXeEU5M3RoVTFpa2IyZmNfa1AyMk5xRmZSOU5YWDJDMGVaRXhCZmFQaVRVZjQwd3ZNYTFseTdqMVRKTWhIa0E2VmJIUTM0Z25kbFIxTHVGVC16TUlSaS1jemdTb2ZBYldzUXFUb2hUbC1NZkt0dGR0SkhHbzlBWF9rQW1KQTNwaGRoUl9oZS03NGRaTmlRU3U4WUZN?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T07:43-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f1b2bd5bfeadd530",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El nuevo virus que roba tus contraseñas y consulta a una inteligencia artificial cuánto dinero vales",
+      "summary": "Titular difundido por El Debate a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Debate · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZHJBbHdDU0RubHIzQXpFUnhJdzJXYzh3dmtZemhMZlQ0bFoyMXFWeVp5SkVZVUZvdERyNG5qUF9GaVZfUmVXSlMwZFE2MW1LZXNMQTN6X1VWTzMxQnk2Zl9rcVNoZ1RaZWVVZVRzd1hmc1Bjclh0NlpDWS1rbUNkOWl3Z2hTQzF2SUp4UndnSWVUNS1hM2tHNzY5S3JobUllSDlCWmNHUDBlZHB4d0R5di1qcUk4YWRrNWdVb3h4SnBiaWdKR2pNN0YweTJvYUZuVE5ieUdNS3k3SWxqU1Y00gHkAUFVX3lxTFBmR253ZUVOeEgtLXZRXzFWbnNUOWV2ZzAxdzZiYU5NZmk5WHp0SU5aemxEWUgtSHFfTThscjlVd21rQ0d3VUFlSzFjLVhzYl9icGV3R04yWlRIaGUtSkdEVlhwY0hWX0dhYXlMbmpvd2xLcFpqYmY3Mi1KYmNDZXFhc2lJSU1CS3VfNTUybWZHS1FKMGdnNUpjVmdGZm1EQXl4bDQ1SlBibDBQYWlRYzF5WEJfZTdmRF9WMGhGbWRfbUxETk1aQTdVZzJGaUIxZGZvcnBOOTZsVWVGemNzb2tBREstXw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T07:39-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-75709857ec06466e",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "AmCham Colombia insta a fortalecer relaciones bipartidistas con Estados Unidos tras cambios en el Congreso estadounidense",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkc4U3hVcEpWZFNKZ0VJOVcyOWJtZDcxNzZRYlpTN2xQLV83MFBEMXRGQkpfSTdEYU9wUXF6czU2b3J1R3FkMDY5ZThSNTVzTTNDZ1p5MFNzRWlteXlEaWJVcUNsOVVMeEx2czBFYjRmN2Q0VndHLWJZNjZOc0VqY2E2OUdZZFVqZldFdERrcVVGREtuVmFmSVdBNlZrS0RaS0Z3TVdRVXJQWTN0X0ZoaS1tbm96WGdTMldOMDV6Z3V4UHJMTEJkend6QdIB0AFBVV95cUxQMVBNYV9kT2trSWRQamQtS1ZBSGlhVm91VWJBRlhremhSdnd4bmhpV3RXSFZFSDkzOElVWndWMGplVXpPc010ODNPOHFldVpGZ3B6bmJfcm03eXpteXZ0UmlzZ1VIWmZ0eVZadXVHSWYxcmM5anN5TzE5TDZpYTViUEpXS05ZU0QtWEpsWWtWalJaQkhfODJyWjVtVFRIbTVoYl9pcGhSN1o3cms4NUs1UGIyNmNvZXlqZHVhWWhGWmNGVEt6Y2lZcDZSYUxiMzla?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T07:22-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-60c9a8e5c1f27da2",
+      "date": "2026-11-05",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Ha llegado el día de devolver la camiseta número 7\": Cristiano Ronaldo anuncia su retiro de la selección de Portugal",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/ck8dz330rjmvo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T06:13-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ba366253070875ec",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El vicepresidente de Colombia denuncia en la Cumbre Iberoamericana la «charlatanería propia del progresismo»",
+      "summary": "Titular difundido por El Debate a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Debate · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNYXQtaXlpeHZsYkRwY2tJcHZadXJCVnlWbjRKbmxsVGJBaFZWTTFLRlZ4OEhhRWFobmFPRFJmeEo2RnVJU09ORTljT29kSDVWdmx6ZnNZZGdtZjdZVEdzeGVqTkp3eUxFMTYxWDBybWQwWEZVQ1JVZDdjVE5QWmhxSnhWZmhiNFExV3JyUW15YjB3QlFGMlhoNTNEel81THpLeTgwQ0pyMVpmQTR4R0VwdVZfUWhhQS1TSXpNOFhkTDhaY0dvM0s2VUtyUWktcUlLUVFSYXlHbTZSNktMUkJRNtIB5gFBVV95cUxPQkxBaDRCRmhNaGl2U2toWWZMeW1uMGFuamJzWGxSdWFUcWR4MDhsa0lhcW5HYkFXTlhQUlBvNl91Vkx0N2ZMdG9EcVhIXzFUb0ZzaWpUQnd4MEZNY3RzMzRXMHphZGp6UjJmN1RHUGdtR2NkYUhlRWxYNFF4cmItay1rWE5ZTVlaMWR4Tl9IeTJ2WHpudXA4SHpvUEl3LVhuYm9yUXZrRTJMSGllbnpJUXlKZEZiMlJqd1RDbDMyUTRhcnhGTUt1bEdodGotMWNpMHlTQVdzckZDRTRoeDFmVWtGUk9BUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T06:06-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f5533e857591c73b",
+      "date": "2026-11-05",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "F1: hora y dónde ver en vivo la práctica libre de Colapinto en el GP de Brasil",
+      "summary": "Titular difundido por TyC Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "TyC Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSmZyT2N1ZUpXYzlZbGthYWhTQmJubzdhZkRiUkZQam1sRU9hY2JZNVdzVWNfR3FHTi1YWlBmR0ZhUDhrTXpNMTJOZzZQOU5JbFY5RS0wQTlKcDB3ODdFTlR5MXZhWi1TZ3lFYl9uWGtxWlFRSlVieHQ5Yy1UTnNsalFhUVFXUDNEejlrc254VFRUSGRQd3p4NS1mZFR1RFlmZW0yYm1FTXZSb0xzeV9hQnFlSVQzVEFjamdQa3BRV0hKbUF3ZTJTQXdzSQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T05:24-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-702d0838d2ab06d0",
+      "date": "2026-11-05",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "F1 | Colapinto en el GP de Brasil: horarios y el cronograma completo",
+      "summary": "Titular difundido por TyC Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "TyC Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmkxMHVZb1p0SEgzd1lxVFdldXl3MWdPNm5HNU5YMHFyU2lPUjlmU3Y3Sno0cTZoXzZOZS1YWXhtbzBrRE9lR2dlRTdvNHM4dkowTXA2eVFGREhEY19UZEsxOHBLZWFZSG9LYUlxQ3pwNlhZcDJWMFlmQWh1SF9Kc2l0T1VndVJrVE9OeUJJdEw0TXVZVFEwWVplNDhnQzZWVzNidElxeUxsT1AtWnF4ano0cDFobmtwYkFZ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T05:24-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-d575e5aa1f9a44cb",
       "date": "2026-11-05",
       "category": "Colombia",
@@ -7295,8 +7447,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-05T08:06-05:00",
-  "lastNewSourceAtBogota": "2026-11-05T08:06-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-05T08:14-05:00",
+  "lastNewSourceAtBogota": "2026-11-05T08:14-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
