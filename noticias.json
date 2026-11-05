@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c3f5b514cf9af0a8",
+      "date": "2026-11-04",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Gobierno de Abelardo de la Espriella anuncia nuevos nombramientos en la ARN y embajada de Colombia ante la ONU en Suiza",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOXk2dXlOdHFCbzQxdkdFdmRJU0V2emRIUzN0d0hGR1hYcGpCYVFTRDdnUWpLSzVvZ0l0WjNiTzVjaXJEN3JveDdkSUptOU1Wd0lmdUNjdi16VjB5YzBxQldqQUtuV1NjMDBWc3hMOGlqVG1yUnJvYXdGdUhJcEJ5UDc0alVLUE1OZXpvdGxKS09fZnJqY0xpSUNoMDQzcmZST3JHREVjNkNVdHJlOTNwUVhVQ0FHNGFQTklnZ0M4THhLRmdmZldVZnVZTmNOa1dYTHhSU2FR0gHbAUFVX3lxTFA1U3FMQW5UdkJLOHBpbHo4WXExN09qM1ZxOVZpV1ltVHdaOUh6c25seGlabFBWSFhneUVraVc4WE0xaWZjUVQ4TGdKYVc4UC02NUYxQkRqUGYzbXJESkZpVGhiVlBMSWlvaXlzbDMtZ05fb0NSZ0d4QVBmUngzM2NwWkZpczRJbDJKOFRGRzlOYXZvMFRnWGlBZUhERlNqOFZHbXpyeTJ6WjZ1OWthclozcHJPalVabktLS3hBdlB5WU9oY2ZGSWlwVGRnQXNnT2tlaFhsX2N6ZS1jOA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T19:20-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ee06c75b92f0baaf",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Núria López lidera un proyecto europeo de 4 millones de euros para transformar residuos mediante inteligencia artificial",
+      "summary": "Titular difundido por IndustriAmbiente a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "IndustriAmbiente · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNczRpX0VUVVlkekZlQUVFSUJTMDdXN2lWUGpZdmZzZHlSSkJ5alBTbEZDd3hPMzQ4M2wzZHZPRlFNNFhBVjNzUmZCSXhMLXo5Q0RpeFJpVTJodlRCVElsYm1mWmdMaXh6akVxVE95aUxDNXFIdHFVZmtjdWF4dUp0N2ZHaTFIcU1ac0NEZjBqRkZjMGw3MlhOUmNIUVdmSThCdk81a19hWkZhOTV4bWllUTNnWDZ0SFRmLXBJbFZWTXFBajlOZ0dIWnpsWTI5N0hSNmhUVHJzejQwdXpzVUlXcGI4NmdFU2RhWjJCdFBSa1FNdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T19:02-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9d413833ff626c9a",
+      "date": "2026-11-04",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El director de tecnología del Pentágono afirma que el Gobierno detallará este mes la normativa aplicable a los laboratorios de inteligencia artificial",
+      "summary": "Titular difundido por MarketScreener España a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MarketScreener España · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVnZfVzNMX1k2Tko5MnRiT1N2aTlqNEV1NFZzMHQwR192TEtKX2tHZ1h0OWJORjA5YU1xVDY0NnAwcmRocUpGUDhHOTZDckdTZFVJWmVzLW82WkZWUmFkYmpzelhOdmwxM3FoTzRKaW1aZGM5LVNLazhCNlZIQ1lvYURYVm0xa1ozWlZMWTlBYVVPT25vQWpnWEZYV3d4dFRLWS13VGZiLU9zbER5aXlLaEctQWdkTXI2NDgwdnFzZ193ZmtOV2p3N1l0RVY2OFdCT2FsZnFnQkkzbGNIX2lkMjFsX0VrTVZaTkFr?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-04T18:33-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-c63394d4d693b66e",
       "date": "2026-11-04",
       "category": "Colombia",
@@ -6838,8 +6895,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-04T19:21-05:00",
-  "lastNewSourceAtBogota": "2026-11-04T19:21-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-04T19:39-05:00",
+  "lastNewSourceAtBogota": "2026-11-04T19:39-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
