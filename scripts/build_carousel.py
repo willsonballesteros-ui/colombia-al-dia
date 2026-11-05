@@ -189,7 +189,7 @@ def cover(day, news, out):
         d.text((x+78,y+126),source,font=font(20,True),fill="#394560")
     d.rectangle((0,1175,W,H),fill=navy)
     d.rectangle((0,1175,W,1185),fill="#00CDB9")
-    d.text((45,1202),"ESCUCHA LAS 10 NOTICIAS EN NUESTRA WEB",font=font(28,True),fill="#FCDF59")
+    d.text((45,1202),f"ESCUCHA LAS {len(news)} NOTICIAS EN NUESTRA WEB",font=font(28,True),fill="#FCDF59")
     d.text((46,1251),"colombia-al-dia.pages.dev",font=font(27,True),fill="#FFFFFF")
     d.text((47,1298),"@resumen.noticias  ·  FUENTES Y ENLACES ORIGINALES",font=font(19),fill="#A9C4E2")
     im.save(out,optimize=True)
