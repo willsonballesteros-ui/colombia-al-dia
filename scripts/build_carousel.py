@@ -84,13 +84,13 @@ def verified_photo(note):
     return path if path.is_file() and path.suffix.lower() in (".png",".jpg",".jpeg",".webp") else None
 
 
-def font_for_lines(draw, text, width, count, preferred=34, minimum=24):
+def font_for_lines(draw, text, width, count, preferred=34, minimum=24, bold=False):
     """Ajustar fuente para que el resumen quede completo en dos líneas."""
     for size in range(preferred, minimum-1, -1):
-        face=font(size)
+        face=font(size,bold=bold)
         if len(wrap(draw,text,face,width,99))<=count:
             return face
-    return font(minimum)
+    return font(minimum,bold=bold)
 
 
 def base():
@@ -164,7 +164,7 @@ def cover(day, news, out):
     d.rounded_rectangle((80,252,464,305),radius=12,fill=GOLD)
     d.text((98,264),"01 · NOTICIA PRINCIPAL",font=font(24,True),fill=NAVY)
     principal=str(news[0]["title"])
-    main_ft=font_for_lines(d,principal,875,3,preferred=53,minimum=38)
+    main_ft=font_for_lines(d,principal,875,3,preferred=53,minimum=38,bold=True)
     paragraph(d,principal,91,329,main_ft,WHITE,876,3,10)
     d.text((90,527),"FUENTE: "+str(news[0]["sources"][0]["name"])[:55],
            font=font(19,True),fill=GOLD)
@@ -176,13 +176,13 @@ def cover(day, news, out):
         col=i%2
         row=i//2
         x=60+col*490
-        y=662+row*106
-        d.rounded_rectangle((x,y,x+470,y+94),radius=13,
+        y=662+row*105
+        d.rounded_rectangle((x,y,x+470,y+100),radius=13,
                             fill="#EDF3FB" if row%2==0 else "#E4ECF7")
         d.rounded_rectangle((x+12,y+15,x+62,y+62),radius=10,fill=NAVY)
         d.text((x+18,y+22),f"{i+2:02d}",font=font(23,True),fill=WHITE)
-        title_ft=font_for_lines(d,note["title"],382,2,preferred=27,minimum=22)
-        paragraph(d,note["title"],x+76,y+11,title_ft,INK,381,2,5)
+        title_ft=font_for_lines(d,note["title"],382,3,preferred=26,minimum=22,bold=True)
+        paragraph(d,note["title"],x+76,y+5,title_ft,INK,381,3,5)
     d.rectangle((0,1208,W,H),fill=NAVY)
     d.text((59,1228),"ESCUCHA EL BOLETÍN COMPLETO EN LA WEB",font=font(27,True),fill=GOLD)
     d.text((62,1280),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
@@ -210,7 +210,7 @@ def grouped_card(notes, first_number, group_index, total_groups, out):
         # Titular dominante. La síntesis añade contexto: no se imprime
         # nuevamente la misma frase en otro lugar.
         headline=str(note.get("socialHeadline") or note["title"])
-        headline_ft=font_for_lines(d,headline,867,3,preferred=49,minimum=33)
+        headline_ft=font_for_lines(d,headline,867,3,preferred=49,minimum=33,bold=True)
         paragraph(d,headline,87,y+109,headline_ft,WHITE,865,3,7)
         d.line((88,y+294,988,y+294),fill="#D5AD59",width=3)
         summary=str(note.get("socialDetail") or
