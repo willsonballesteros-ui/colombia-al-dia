@@ -271,9 +271,10 @@ def main():
     cover(day,news,out/"portada.png")
     for i,n in enumerate(news,1):
         news_card(n,i,day,out/f"top10-{i:02d}.png")
-    combined_sports_card(news[8],news[9],out/"top10-09.png")
+    if len(news) >= 10:
+        combined_sports_card(news[8],news[9],out/"top10-09.png")
     # Carrusel editorial con portada + cinco parejas (10 noticias).
-    blocks=[news[i:i+2] for i in range(0,10,2)]
+    blocks=[news[i:i+2] for i in range(0,len(news),2)]
     start=1
     for i,group in enumerate(blocks,1):
         (grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png") if len(group)==2 else news_card(group[0],start,day,out/f"grupo-{i:02d}.png"))
@@ -286,7 +287,7 @@ def main():
        "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Generadas portada y cinco laminas editoriales de dos noticias cada una.")
+    print("Generadas portada y laminas editoriales de hasta dos noticias cada una.")
 
 
 if __name__=="__main__":
