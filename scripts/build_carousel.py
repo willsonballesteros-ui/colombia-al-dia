@@ -161,7 +161,10 @@ def cover(day, news, out):
     stamp=datetime.now(ZoneInfo("America/Bogota")).strftime("%H:%M")
     d.rounded_rectangle((770,45,1032,121),radius=18,fill="#FCDF59")
     d.text((793,57),"CORTE "+stamp,font=font(28,True),fill=navy)
-    d.text((46,193),"MIÉRCOLES 4 NOV 2026 · EDICIÓN NOCTURNA",font=font(23,True),fill=navy)
+    date_display=datetime.strptime(day,"%Y-%m-%d").strftime("%d/%m/%Y")
+    hour=datetime.now(ZoneInfo("America/Bogota")).hour
+    edition_name=("EDICIÓN DE LA MAÑANA" if hour<11 else "EDICIÓN DE MEDIODÍA" if hour<17 else "EDICIÓN NOCTURNA")
+    d.text((46,193),date_display+" · "+edition_name,font=font(23,True),fill=navy)
     d.text((46,229),"10 NOTICIAS. TODAS EN PORTADA.",font=font(30,True),fill="#E9466B")
     fills=["#FFF0E6","#E3F8F6","#F1EAFE","#E6F1FF","#FFF0F5"]
     accents=["#FF6747","#00AFA7","#8A57DE","#3184D5","#E84682"]
@@ -175,14 +178,15 @@ def cover(day, news, out):
         cat=str(n.get("category","NOTICIAS")).upper()[:24]
         d.text((x+91,y+18),cat,font=font(16,True),fill="#414E67")
         title=str(n.get("socialHeadline") or n["title"]).strip()
-        ft=font_for_lines(d,title,448,2,preferred=28,minimum=21,bold=True)
-        paragraph(d,title,x+21,y+58,ft,navy,450,2,5)
+        ft=font_for_lines(d,title,448,2,preferred=27,minimum=21,bold=True)
+        paragraph(d,title,x+21,y+54,ft,navy,450,2,3)
         icon=favicon(n)
         if icon is not None:
-            icon=icon.copy();icon.thumbnail((25,25),resample=Image.Resampling.LANCZOS)
-            im.paste(icon,(x+23,y+130),icon);d=ImageDraw.Draw(im)
+            icon=icon.copy();icon.thumbnail((44,44),resample=Image.Resampling.LANCZOS)
+            d.rounded_rectangle((x+17,y+117,x+67,y+159),radius=7,fill="#FFFFFF")
+            im.paste(icon,(x+20,y+116),icon);d=ImageDraw.Draw(im)
         source=str(n["sources"][0]["name"]).split(" · ")[0].split(" / ")[0][:37]
-        d.text((x+55,y+129),source,font=font(17,True),fill="#394560")
+        d.text((x+78,y+126),source,font=font(20,True),fill="#394560")
     d.rectangle((0,1175,W,H),fill=navy)
     d.rectangle((0,1175,W,1185),fill="#00CDB9")
     d.text((45,1202),"ESCUCHA LAS 10 NOTICIAS EN NUESTRA WEB",font=font(28,True),fill="#FCDF59")
@@ -192,7 +196,7 @@ def cover(day, news, out):
 
 
 def grouped_card(notes, first_number, group_index, total_groups, out):
-    """Dos noticias por lámina; tipografía dominante, colores vivos, logos discretos."""
+    """Dos noticias por lámina; colores vivos y logos de las fuentes en tamaño legible."""
     if len(notes)!=2: raise ValueError("Se requieren exactamente dos noticias por lámina")
     im=Image.new("RGB",(W,H),"#F5F7FD")
     d=ImageDraw.Draw(im)
@@ -215,14 +219,15 @@ def grouped_card(notes, first_number, group_index, total_groups, out):
         paragraph(d,title,89,y+119,title_ft,"#FFFFFF",885,3,8)
         d.line((90,y+304,989,y+304),fill=accent,width=4)
         detail=str(n.get("socialDetail") or n.get("executiveSummary") or n.get("summary",""))
-        ft=font_for_lines(d,detail,892,3,preferred=27,minimum=21)
-        paragraph(d,detail,91,y+321,ft,light,883,3,7)
+        ft=font_for_lines(d,detail,892,2,preferred=27,minimum=23)
+        paragraph(d,detail,91,y+321,ft,light,883,2,7)
         ico=favicon(n)
         if ico is not None:
-            ico=ico.copy();ico.thumbnail((29,29),resample=Image.Resampling.LANCZOS)
-            im.paste(ico,(91,y+413),ico);d=ImageDraw.Draw(im)
-        d.text((135,y+413),"FUENTE: "+str(n["sources"][0]["name"])[:64],
-               font=font(20,True),fill=accent)
+            ico=ico.copy();ico.thumbnail((59,59),resample=Image.Resampling.LANCZOS)
+            d.rounded_rectangle((83,y+391,152,y+453),radius=11,fill="#FFFFFF")
+            im.paste(ico,(88,y+391),ico);d=ImageDraw.Draw(im)
+        d.text((166,y+406),"FUENTE: "+str(n["sources"][0]["name"])[:52],
+               font=font(23,True),fill=accent)
     d.rectangle((0,1227,W,H),fill="#121A35")
     d.rectangle((0,1227,W,1235),fill="#FF684E")
     d.text((52,1248),"ESCUCHA EL DESARROLLO EN ORBIUNO",font=font(27,True),fill="#FFCE4E")
