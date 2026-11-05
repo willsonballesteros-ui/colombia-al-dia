@@ -1,4 +1,4 @@
-name: ORBIUNO - 10 láminas Instagram y portada Reel
+name: ORBIUNO - portada y 5 láminas editoriales Instagram
 on:
   workflow_dispatch:
   push:
@@ -37,7 +37,7 @@ jobs:
         run: python scripts/build_carousel.py
       - name: Generar copy y primer comentario con enlace aislado
         run: python scripts/build_caption.py
-      - name: Validar diez imágenes de Instagram más portada de Reel
+      - name: Validar carrusel de portada y cinco láminas de dos noticias
         run: |
           python - <<'PY'
           import json
@@ -47,10 +47,10 @@ jobs:
           p=Path("media")/day
           slides=[p/"portada.png"]+[p/f"top10-{i:02d}.png" for i in range(1,11)]
           assert len(slides)==11
-          compact=[p/f"grupo-{i:02d}.png" for i in range(1,5)]
+          compact=[p/f"grupo-{i:02d}.png" for i in range(1,6)]
           manifest_compact=json.loads((p/"instagram-compacto.json").read_text(encoding="utf-8"))
-          assert manifest_compact["slides"]==["portada.png","grupo-01.png","grupo-02.png","grupo-03.png","grupo-04.png"]
-          assert manifest_compact["newsCounts"]==[3,3,2,2]
+          assert manifest_compact["slides"]==["portada.png","grupo-01.png","grupo-02.png","grupo-03.png","grupo-04.png","grupo-05.png"]
+          assert manifest_compact["newsCounts"]==[2,2,2,2,2]
           slides+=compact
           for file in slides:
               with Image.open(file) as im:
@@ -62,7 +62,7 @@ jobs:
               "No despachar: "+",".join(manifest.get("blockers",[])))
           text=(p/"instagram-caption.txt").read_text(encoding="utf-8")
           assert "\n🌐 https://colombia-al-dia.pages.dev/" in text
-          print("Validado: 10 imágenes, portada y links del copy.")
+          print("Validado: portada, cinco parejas, fuentes y copy.")
           PY
       - name: Publicar imágenes sobre la última versión de main
         run: |
@@ -88,7 +88,7 @@ jobs:
             if git diff --cached --quiet; then
               echo 'Imágenes ya sincronizadas'; exit 0
             fi
-            git commit -m 'ORBIUNO: láminas breves, favicon de fuente y copy con enlace limpio'
+            git commit -m 'ORBIUNO: portada y cinco láminas con dos noticias y letra grande'
             if git push origin HEAD:main; then exit 0; fi
             sleep $((i * 3))
           done
