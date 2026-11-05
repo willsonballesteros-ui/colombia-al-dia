@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-d02148f04da174f2",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Festival de Inteligencia Artificial de Vietnam: Promoviendo el desarrollo del ecosistema de IA",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRml3R25oRDZMSndXc2ppb3dwVVdHUkFYc0d1Q1pVYlk4Qno4b1FUZFl3c3FCZUJuNjhxMGt0Q1JVS0FGRTgzdXBXZ3hOYUtQbHRQclVyTkdWYl9BVlB4dTZpT3ByQXd6S2JHYTFUYVdiaU42NDVnbW13c3daUU1NVWluLWdQd3lhVzJTTnNWaDBfWlFrZkdYUTZ2bGo?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T09:36-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6366209d66213b77",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "De Bill Gates en Chile al Súper RIGI de Argentina: la minería detrás de la inteligencia artificial",
+      "summary": "Titular difundido por Acero y Roca a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Acero y Roca · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWncycU1WSnIyMm1BMmZIbWNfSll2UGkzOVdQNjRBd2czZ0l1eGJGSlpBdTFLZ1c3LURtSFFqWnBSbl91X1BON2xublU2M3hvWWNxbFJEd3ZYTmNwTlpTMExzNXFrelhSWGhLSjI2Yml3c2k5MVg0ZlZPSUIwd2dIdDFtQXBWeE9FS3ZYZjhOSURSMC1PX3huXzdXWGtYaFlkNDFhZzJ3NA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T09:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9d0b65d4033e70ec",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Energía solar en Colombia: el reto de almacenar electricidad",
+      "summary": "Titular difundido por Impacto TIC a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Impacto TIC · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcjRSYURfbkpKS09GR3ZmVExPWWFkY0xUMl84ZURlbWpZOTFXcnFOMTZkZ3NTM2Y0RkdnZUtRQWlZUC1nV3Vlc2w0MU5ROFI1VVlpQmRTWGUtME5EYy0wZElLR1B5RVI1VG9XdDFQbWJrTnh3UVVoZDlvcEtud3RTSXVKT3hWVnhoX2RsZ095R3FnVEcwVXVzOHFn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T09:07-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-971d99946d93dbdb",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia agotó su colchón de energía firme y ya opera con déficit, alerta el gremio generador",
+      "summary": "Titular difundido por LA RAZÓN.CO a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "LA RAZÓN.CO · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZWxDV2lVTXF5RnFFR0xzTnVuc2ZtMWlxckN2Y2p2dWVfa0FLSTRZWXFjQkszYmItYXM2VWplM3VEM1ZhY2MzbnlSUVFSYmVDTTNrb1JiazJKRzJBdkdfaWQzRUxLVER0X0RQQjJHNnBqaXNkV1NlR25pZWdzWmdKV0E0UnJQckpnNEtNQlZubEloR3pkRWtqZUlkQmxrTkdRWFE5TEpmcGdIWXpqeXJTcUln?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T08:59-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-357d06bb98474680",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Nadie quiere parar la guerra en Colombia\", alerta la defensora del pueblo",
+      "summary": "Titular difundido por RFI a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "RFI · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT093OW9ENEtUWEl5VnRhYXNRRDlmZUhfOWRKcG9WV295ejRYV05HdDFZTVhHNVlkTE4zYjFTZ2JCR0J3a2tQaFhLSG5zWmZzMk1KLXRnQnRoU1RIVThpYkNsRTN4X1BsUV83bUpJMDVNZ2hmZEowTTN5RUdha2Y5LU4tNWhnbkU3T2tZQlZWRVNUV0FYLUFXcUxMUlF1UF9BR21WWTRfUkNBcEgtMnRta19aOEc2cDYxbFUwdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T08:58-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-afe28a6ec4660948",
       "date": "2026-11-05",
       "category": "Colombia",
@@ -7713,8 +7808,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-05T10:04-05:00",
-  "lastNewSourceAtBogota": "2026-11-05T10:04-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-05T10:05-05:00",
+  "lastNewSourceAtBogota": "2026-11-05T10:05-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de la noche 18:00 Bogotá: diez noticias nuevas frente a las franjas anteriores, contrastadas con fuentes originales; fotografías de terceros no incorporadas sin licencia.",
