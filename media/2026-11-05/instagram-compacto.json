@@ -3,10 +3,23 @@
   "format": "compact_carousel",
   "slides": [
     "portada.png",
-    "grupo-01.png"
+    "top10-01.png",
+    "top10-02.png",
+    "top10-03.png",
+    "top10-04.png",
+    "top10-05.png",
+    "top10-06.png",
+    "top10-07.png",
+    "top10-08.png",
+    "top10-09.png",
+    "top10-10.png"
   ],
   "newsCounts": [
-    1
+    2,
+    2,
+    2,
+    2,
+    2
   ],
   "fullAudioInImages": false,
   "note": "Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."

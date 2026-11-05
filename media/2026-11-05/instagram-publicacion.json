@@ -1,28 +1,73 @@
 {
   "editionDate": "2026-11-05",
   "brand": "ORBIUNO",
-  "editionSlot": "8am",
-  "verifiedSports": 0,
+  "editionSlot": "12m",
+  "verifiedSports": 1,
   "publicationReady": true,
   "blockers": [],
-  "utmCampaign": "edicion_20261105_8am",
+  "utmCampaign": "edicion_20261105_12m",
   "links": {
-    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261105_8am",
-    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261105_8am",
-    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_8am",
-    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_8am"
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261105_12m",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261105_12m",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_12m",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_12m"
   },
-  "caption": "ORBIUNO | 05/11/2026\n\nEdición de la mañana · 1 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_8am\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
-  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_8am",
+  "caption": "ORBIUNO | 05/11/2026\n\nEdición del mediodía · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_12m",
   "publicationVerified": false,
   "media": [
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/portada.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/grupo-01.png"
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-01.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-02.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-03.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-04.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-05.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-06.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-07.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-08.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-09.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/top10-10.png"
   ],
   "sourceLinks": [
     {
-      "title": "Dólar inicia el 5 de noviembre al alza en Colombia",
-      "url": "https://caracol.com.co/2026/11/05/dolar-hoy-5-de-noviembre-de-2026-en-colombia-la-moneda-internacional-inicia-la-jornada-al-alza/"
+      "title": "Buscan a subteniente secuestrada en Saravena",
+      "url": "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/11/secuestro-de-la-subteniente-maria-camila-pantoja-en-arauca-lo-que-se-sabe-del-caso"
+    },
+    {
+      "title": "El Dorado: explican la falla de visualización aérea",
+      "url": "https://www.valoraanalitik.com/fallas-en-aeropuerto-el-dorado-controladores-explican-que-ocurrio-y-advierten-riesgos-por-falta-de-modernizacion/"
+    },
+    {
+      "title": "Exportaciones de septiembre crecieron 16,4 %",
+      "url": "https://www.larepublica.co/economia/exportaciones-en-septiembre-sumaron-us-5-410-millones-por-impulso-del-oro-4517931"
+    },
+    {
+      "title": "TRM de este jueves: $3.221,19 por dólar",
+      "url": "https://www.noticiascaracol.com/economia/cual-es-el-precio-del-dolar-hoy-en-colombia-asi-abrio-la-trm-este-jueves-5-de-noviembre-so35"
+    },
+    {
+      "title": "Cortes de agua hoy en Bogotá y Soacha",
+      "url": "https://bogota.gov.co/mi-ciudad/habitat/2026-11/bogota-y-soacha-con-cortes-de-agua-este-jueves-5-de-noviembre-2026"
+    },
+    {
+      "title": "Falsas amenazas alteran vuelos en Europa",
+      "url": "https://efe.com/english/economy/2026-11-05/european-flight-bomb-threats/"
+    },
+    {
+      "title": "Cumbre impulsa cooperación iberoamericana en IA",
+      "url": "https://caracol.com.co/2026/11/05/la-inteligencia-artificial-tiene-que-ser-para-todos-xavier-espot-en-cumbre-iberoamericana/?outputType=amp"
+    },
+    {
+      "title": "Hong Kong condena a Joshua Wong a diez años",
+      "url": "https://efe.com/english/latest-news/2026-11-05/joshua-wong-sentenced-10-years/"
+    },
+    {
+      "title": "Jurado declara culpable a Russell Brand",
+      "url": "https://efe.com/english/latest-news/2026-11-05/russell-brand-guilty-rape-sexual-assault/"
+    },
+    {
+      "title": "Cristiano Ronaldo anuncia su retiro de Portugal",
+      "url": "https://efe.com/english/sports/2026-11-05/cristiano-ronaldo-retires-from-portugal/"
     }
   ],
   "note": "La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo."
