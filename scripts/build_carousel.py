@@ -262,8 +262,8 @@ def main():
     news=sorted((x for x in data["news"] if x.get("date")==day and
                 x.get("verification")=="editorial_verified"),
                 key=lambda x:x.get("priority",999))
-    if not (1 <= len(news) <= 10) or len({x["id"] for x in news})!=len(news):
-        raise RuntimeError("Se requieren entre una y diez noticias editoriales únicas")
+    if len(news) != 10 or len({x["id"] for x in news}) != 10:
+        raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren diez noticias verificadas únicas")
     for x in news:
         if not x.get("sources") or not str(x["sources"][0]["url"]).startswith("https://"):
             raise RuntimeError("Falta fuente HTTPS")
