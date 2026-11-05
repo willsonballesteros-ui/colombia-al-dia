@@ -6,8 +6,8 @@
   "postId": 418308189,
   "uuid": "-2174726255646129381",
   "brandId": 7759167,
-  "publicationVerified": false,
-  "status": "PUBLISHING",
+  "publicationVerified": true,
+  "status": "PUBLISHED_WITH_WARNINGS",
   "sourceCommit": "2efe0517c5ca9d8e90ac2a371ff6a3e3a0676c4b",
   "media": [
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/2efe0517c5ca9d8e90ac2a371ff6a3e3a0676c4b/media/2026-11-05-18h/portada.jpg",
@@ -31,5 +31,9 @@
     "script": "Esto es ORBIUNO, edición de las seis del cinco de noviembre. Diez noticias de Colombia y el mundo. Nutresa cerró la adquisición de Presto y anuncia reaperturas. Davivienda informa la incorporación de clientes de Davibank. El dólar terminó la jornada con un promedio de tres mil doscientos veintiocho pesos con diecinueve centavos. Una garantía del Grupo Banco Mundial respalda financiación de la primera línea del Metro de Bogotá. Colombia propone a Corea cooperación en inteligencia artificial. En Paraguay, Santiago Peña presentó su renuncia en medio de la crisis de Ueno Bank, según EFE y La República. En Israel, Herzog anunciará el domingo el encargo para formar Gobierno. En Ecuador, un exministro y otras seis personas fueron llamados a juicio por el asesinato de Fernando Villavicencio; no es una condena. Zelenski solicitó suministros para reparar el sistema energético de Ucrania. Y António Costa pidió reforzar la cooperación entre Europa y América Latina. Las fuentes son La República, Noticias RCN, el Ministerio de Ciencias y la agencia EFE. Lee y escucha el desarrollo con los enlaces originales en nuestra web, Colombia al Día punto pages punto dev. Sigue a resumen punto noticias y comparte información verificada."
   },
   "web": "https://colombia-al-dia.pages.dev/",
-  "note": "No duplicar este envío mientras esté pendiente o procesándose. Las diez noticias tienen lectura en español en la web. El carrusel no contiene audio ni presentadora."
+  "note": "No duplicar este envío mientras esté pendiente o procesándose. Las diez noticias tienen lectura en español en la web. El carrusel no contiene audio ni presentadora.",
+  "publicUrl": "https://www.instagram.com/p/DfYHOqriMcZ/",
+  "providerStatus": "ERROR",
+  "providerDetails": "The Instagram post was published with some warnings: Instagram restricted activity on the account: We restrict certain activity to protect our community. Tell us if you think we made a mistake.",
+  "verification": "Public Instagram HTML contains the post code and matching ORBIUNO evening caption; Metricool explicitly reports post was published with warnings."
 }
