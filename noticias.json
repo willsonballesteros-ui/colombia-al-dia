@@ -1,10 +1,31 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-04",
-  "editedAtBogota": "2026-11-04 21:47",
+  "editionDate": "2026-11-05",
+  "editedAtBogota": "2026-11-05 11:24",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261105-editorial-01",
+      "date": "2026-11-05",
+      "category": "Economía",
+      "level": "Información atribuida; ver fuente",
+      "title": "Dólar inicia el 5 de noviembre al alza en Colombia",
+      "summary": "Caracol Radio informa que la TRM de este jueves es de $3.221,19 por dólar, frente a $3.182,99 el día anterior.",
+      "executiveSummary": "La tasa representativa del mercado del dólar subió a $3.221,19, según Caracol Radio.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/05/dolar-hoy-5-de-noviembre-de-2026-en-colombia-la-moneda-internacional-inicia-la-jornada-al-alza/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 1,
+      "openingCue": "cotización del dólar",
+      "audioFullTextEs": "Caracol Radio reportó que la tasa representativa del mercado para el jueves 5 de noviembre de 2026 es de 3.221 pesos con 19 centavos por dólar, frente a 3.182 pesos con 99 centavos del día anterior. Los valores de compra y venta de las casas de cambio pueden variar por ciudad y establecimiento.",
+      "audioEditorialSource": "ORBIUNO · síntesis original atribuida a Caracol Radio.",
+      "audioIsFullPublisherArticle": false
+    },
     {
       "id": "rss-fb605fadca75bf52",
       "date": "2026-11-05",
