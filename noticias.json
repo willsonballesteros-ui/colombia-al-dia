@@ -1,10 +1,244 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-05",
-  "editedAtBogota": "2026-11-05 11:24",
+  "editedAtBogota": "2026-11-05 13:35",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "20261105-12m-01",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "title": "Buscan a subteniente secuestrada en Saravena",
+      "socialHeadline": "Buscan a subteniente secuestrada en Saravena",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "El Ejército atribuye el secuestro de María Camila Pantoja al Frente Domingo Laín del ELN.",
+      "executiveSummary": "El Ejército atribuye el secuestro de María Camila Pantoja al Frente Domingo Laín del ELN.",
+      "sources": [
+        {
+          "name": "Cambio",
+          "url": "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/11/secuestro-de-la-subteniente-maria-camila-pantoja-en-arauca-lo-que-se-sabe-del-caso"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 1,
+      "audioFullTextEs": "La Décima Octava Brigada confirmó el secuestro de la subteniente María Camila Pantoja Hernández, ocurrido el miércoles 4 de noviembre en Saravena, Arauca. Según el Ejército, dos hombres armados que se movilizaban en motocicleta la interceptaron. La institución atribuye el hecho al Frente Domingo Laín Sáenz del ELN. Cambio informa que Ejército, Armada, Fuerza Aeroespacial y Policía participan en su búsqueda. En el reporte revisado no se anuncia su liberación ni se identifica su ubicación. La atribución de responsabilidad corresponde a la versión militar.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-02",
+      "date": "2026-11-05",
+      "category": "Transporte",
+      "title": "El Dorado: explican la falla de visualización aérea",
+      "socialHeadline": "El Dorado: explican la falla de visualización aérea",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "Controladores aplicaron contingencia el 4 de noviembre; Aerocivil reportó superado el inconveniente.",
+      "executiveSummary": "Controladores aplicaron contingencia el 4 de noviembre; Aerocivil reportó superado el inconveniente.",
+      "sources": [
+        {
+          "name": "Valora Analitik",
+          "url": "https://www.valoraanalitik.com/fallas-en-aeropuerto-el-dorado-controladores-explican-que-ocurrio-y-advierten-riesgos-por-falta-de-modernizacion/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 2,
+      "audioFullTextEs": "Nicolás Beltrán, representante de los controladores aéreos, explicó que la contingencia del miércoles en El Dorado afectó los monitores que muestran la información de las aeronaves. Según la entrevista recogida por Valora Analitik, se ampliaron las separaciones entre aviones y se redujo el tránsito. La afectación duró aproximadamente dos horas y repercutió en otros aeropuertos. Aerocivil informó posteriormente que el problema técnico había sido superado. Los gremios de controladores y aviadores pidieron mantenimiento y modernización de los sistemas. Se trata del balance de lo ocurrido el 4 de noviembre.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-03",
+      "date": "2026-11-05",
+      "category": "Economía",
+      "title": "Exportaciones de septiembre crecieron 16,4 %",
+      "socialHeadline": "Exportaciones de septiembre crecieron 16,4 %",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "Las ventas externas alcanzaron US$5.410,7 millones, con impulso del oro no monetario.",
+      "executiveSummary": "Las ventas externas alcanzaron US$5.410,7 millones, con impulso del oro no monetario.",
+      "sources": [
+        {
+          "name": "La República",
+          "url": "https://www.larepublica.co/economia/exportaciones-en-septiembre-sumaron-us-5-410-millones-por-impulso-del-oro-4517931"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 3,
+      "audioFullTextEs": "La República informó, con cifras del DANE, que Colombia exportó 5.410,7 millones de dólares en septiembre de 2026. El valor representa un aumento de 16,4 por ciento frente al mismo mes de 2025 y el mayor resultado mensual desde julio de 2022. El oro no monetario aportó una parte considerable del crecimiento: sus ventas pasaron de 419,7 a 786,9 millones de dólares. También aumentaron los combustibles y productos de industrias extractivas. El dato corresponde a septiembre, aunque su análisis se publica este jueves.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-04",
+      "date": "2026-11-05",
+      "category": "Economía",
+      "title": "TRM de este jueves: $3.221,19 por dólar",
+      "socialHeadline": "TRM de este jueves: $3.221,19 por dólar",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "Caracol y RCN coinciden en la TRM; sus reportes difieren sobre la apertura de mercado.",
+      "executiveSummary": "Caracol y RCN coinciden en la TRM; sus reportes difieren sobre la apertura de mercado.",
+      "sources": [
+        {
+          "name": "Noticias Caracol",
+          "url": "https://www.noticiascaracol.com/economia/cual-es-el-precio-del-dolar-hoy-en-colombia-asi-abrio-la-trm-este-jueves-5-de-noviembre-so35"
+        },
+        {
+          "name": "Noticias RCN",
+          "url": "https://www.noticiasrcn.com/economia/precio-del-dolar-en-colombia-hoy-5-de-noviembre-de-2026-1078820"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 4,
+      "audioFullTextEs": "La tasa representativa del mercado para el jueves 5 de noviembre es de 3.221 pesos con 19 centavos por dólar, de acuerdo con Noticias Caracol y Noticias RCN. Los dos medios coinciden en este valor de referencia, pero publican cifras distintas sobre la apertura de negociación. Por esa razón, esta edición informa únicamente la TRM coincidente y no atribuye una dirección de apertura al mercado. La TRM es una referencia diaria y debe distinguirse de las cotizaciones de compra o venta de una casa de cambio.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-05",
+      "date": "2026-11-05",
+      "category": "Bogotá",
+      "title": "Cortes de agua hoy en Bogotá y Soacha",
+      "socialHeadline": "Cortes de agua hoy en Bogotá y Soacha",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "La programación incluye sectores de Usaquén, Suba, Chapinero, Barrios Unidos y Ciudad Bolívar.",
+      "executiveSummary": "La programación incluye sectores de Usaquén, Suba, Chapinero, Barrios Unidos y Ciudad Bolívar.",
+      "sources": [
+        {
+          "name": "Alcaldía de Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/habitat/2026-11/bogota-y-soacha-con-cortes-de-agua-este-jueves-5-de-noviembre-2026"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 5,
+      "audioFullTextEs": "La Alcaldía de Bogotá divulgó las suspensiones de agua programadas para este jueves 5 de noviembre por trabajos del Acueducto. La lista incluye sectores de Usaquén, Suba, Chapinero, Barrios Unidos, Ciudad Bolívar y Soacha. En Mirandela, Suba, se anunció una intervención desde las diez de la mañana durante 24 horas. En Chapinero, la programación señala desde las nueve de la mañana durante 24 horas. Los cortes afectan áreas delimitadas, no necesariamente localidades completas. El enlace oficial permite revisar barrios, límites y duración de cada intervención.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-06",
+      "date": "2026-11-05",
+      "category": "Mundo",
+      "title": "Falsas amenazas alteran vuelos en Europa",
+      "socialHeadline": "Falsas amenazas alteran vuelos en Europa",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "EFE reporta más de 15 vuelos afectados en nueve países este jueves.",
+      "executiveSummary": "EFE reporta más de 15 vuelos afectados en nueve países este jueves.",
+      "sources": [
+        {
+          "name": "EFE",
+          "url": "https://efe.com/english/economy/2026-11-05/european-flight-bomb-threats/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 6,
+      "audioFullTextEs": "Una nueva serie de amenazas de bomba falsas alteró este jueves más de quince vuelos en nueve países europeos, informó EFE. Se activaron desvíos, escoltas militares, evacuaciones y revisiones de seguridad. Entre los casos reportados figura un vuelo entre Dublín y Roma que aterrizó en una base aérea francesa. También se inspeccionaron aeronaves con destino a Bulgaria. En los casos detallados por la agencia no se encontraron explosivos. Las alertas generaron interrupciones operativas y controles adicionales para pasajeros y equipajes.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "en",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-07",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "title": "Cumbre impulsa cooperación iberoamericana en IA",
+      "socialHeadline": "Cumbre impulsa cooperación iberoamericana en IA",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "Xavier Espot destaca la Alianza Iberoamericana de Inteligencia Artificial y la inclusión digital.",
+      "executiveSummary": "Xavier Espot destaca la Alianza Iberoamericana de Inteligencia Artificial y la inclusión digital.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/05/la-inteligencia-artificial-tiene-que-ser-para-todos-xavier-espot-en-cumbre-iberoamericana/?outputType=amp"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 7,
+      "audioFullTextEs": "En entrevista con Caracol Radio, el jefe de Gobierno de Andorra, Xavier Espot, destacó la creación de la Alianza Iberoamericana de Inteligencia Artificial durante la cumbre de Madrid. Señaló la transformación digital, la inteligencia artificial y el cambio climático como ejes de cooperación. Su planteamiento es que los beneficios tecnológicos alcancen a toda la población y que se conozcan también sus riesgos. El encuentro reúne a países iberoamericanos y aborda además movilidad académica y cooperación frente a emergencias.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "es",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-08",
+      "date": "2026-11-05",
+      "category": "Mundo",
+      "title": "Hong Kong condena a Joshua Wong a diez años",
+      "socialHeadline": "Hong Kong condena a Joshua Wong a diez años",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "La nueva condena se refiere a conspiración para colaborar con fuerzas extranjeras.",
+      "executiveSummary": "La nueva condena se refiere a conspiración para colaborar con fuerzas extranjeras.",
+      "sources": [
+        {
+          "name": "EFE",
+          "url": "https://efe.com/english/latest-news/2026-11-05/joshua-wong-sentenced-10-years/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 8,
+      "audioFullTextEs": "Un tribunal de Hong Kong condenó este jueves al activista prodemocracia Joshua Wong a diez años de prisión, informó EFE. El proceso corresponde al delito de conspiración para colaborar con fuerzas extranjeras bajo la legislación de seguridad nacional. Wong se había declarado culpable en septiembre. El caso examina sus gestiones internacionales de 2020 para promover sanciones y otras medidas contra Hong Kong y China. Human Rights Watch y Amnistía Internacional cuestionaron la sentencia y reclamaron su liberación. La condena es distinta de la que ya cumplía.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "en",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-09",
+      "date": "2026-11-05",
+      "category": "Mundo",
+      "title": "Jurado declara culpable a Russell Brand",
+      "socialHeadline": "Jurado declara culpable a Russell Brand",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "El veredicto comprende una violación y tres agresiones sexuales; falta fijar la pena.",
+      "executiveSummary": "El veredicto comprende una violación y tres agresiones sexuales; falta fijar la pena.",
+      "sources": [
+        {
+          "name": "EFE",
+          "url": "https://efe.com/english/latest-news/2026-11-05/russell-brand-guilty-rape-sexual-assault/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 9,
+      "audioFullTextEs": "Un jurado de Londres declaró culpable al actor y comediante Russell Brand de un cargo de violación y tres de agresión sexual, según EFE. Fue absuelto de otros delitos incluidos en el proceso. Tras el veredicto, el juez ordenó que permaneciera bajo custodia hasta la audiencia en la que se establecerá la pena, anunciada para el lunes siguiente. La decisión llegó después de cuatro semanas de juicio. El veredicto de culpabilidad y la determinación de la pena corresponden a etapas distintas del procedimiento.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "en",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
+    {
+      "id": "20261105-12m-10",
+      "date": "2026-11-05",
+      "category": "Deportes",
+      "title": "Cristiano Ronaldo anuncia su retiro de Portugal",
+      "socialHeadline": "Cristiano Ronaldo anuncia su retiro de Portugal",
+      "level": "Información verificada con fuente atribuida",
+      "summary": "El delantero de 41 años cierra una trayectoria de 23 años en la selección.",
+      "executiveSummary": "El delantero de 41 años cierra una trayectoria de 23 años en la selección.",
+      "sources": [
+        {
+          "name": "EFE",
+          "url": "https://efe.com/english/sports/2026-11-05/cristiano-ronaldo-retires-from-portugal/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 10,
+      "audioFullTextEs": "Cristiano Ronaldo anunció este jueves que se retira de la selección portuguesa, informó EFE. El delantero de 41 años comunicó la decisión en un video publicado en Instagram y puso fin a una etapa internacional iniciada en agosto de 2003. En su despedida agradeció a compañeros y aficionados y explicó que la determinación no había sido sencilla. El anuncio se refiere a su participación en el combinado nacional. La agencia reseña el cierre de una trayectoria de 23 años con Portugal.",
+      "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
+      "audioIsFullPublisherArticle": false,
+      "sourceLanguage": "en",
+      "editorialVerifiedAtBogota": "2026-11-05T13:35:00-05:00"
+    },
     {
       "id": "20261105-editorial-01",
       "date": "2026-11-05",
@@ -19,7 +253,7 @@
           "url": "https://caracol.com.co/2026/11/05/dolar-hoy-5-de-noviembre-de-2026-en-colombia-la-moneda-internacional-inicia-la-jornada-al-alza/"
         }
       ],
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "priority": 1,
       "openingCue": "cotización del dólar",
       "audioFullTextEs": "Caracol Radio reportó que la tasa representativa del mercado para el jueves 5 de noviembre de 2026 es de 3.221 pesos con 19 centavos por dólar, frente a 3.182 pesos con 99 centavos del día anterior. Los valores de compra y venta de las casas de cambio pueden variar por ciudad y establecimiento.",
@@ -8439,5 +8673,7 @@
         }
       ]
     }
-  ]
+  ],
+  "editionSlot": "12m",
+  "openingScriptEs": "ORBIUNO, edición de mediodía del 5 de noviembre. Estas son nuestras diez noticias: Buscan a subteniente secuestrada en Saravena. El Dorado: explican la falla de visualización aérea. Exportaciones de septiembre crecieron 16,4 %. TRM de este jueves: $3.221,19 por dólar. Cortes de agua hoy en Bogotá y Soacha. Falsas amenazas alteran vuelos en Europa. Cumbre impulsa cooperación iberoamericana en IA. Hong Kong condena a Joshua Wong a diez años. Jurado declara culpable a Russell Brand. Cristiano Ronaldo anuncia su retiro de Portugal. Consulta las fuentes originales y escucha el desarrollo en colombia-al-dia.pages.dev."
 }
