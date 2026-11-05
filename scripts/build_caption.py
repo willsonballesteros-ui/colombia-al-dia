@@ -85,8 +85,8 @@ def build(db):
             +day+"/portada.png"
         ]+[
             "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
-            +day+"/grupo-"+str(i).zfill(2)+".png"
-            for i in range(1,(len(news)+1)//2+1)
+            +day+"/top10-"+str(i).zfill(2)+".png"
+            for i in range(1,len(news)+1)
         ],
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
