@@ -163,7 +163,7 @@ def cover(day, news, out):
     d.rounded_rectangle((56,227,1024,570),radius=22,fill=NAVY)
     d.rounded_rectangle((80,252,464,305),radius=12,fill=GOLD)
     d.text((98,264),"01 · NOTICIA PRINCIPAL",font=font(24,True),fill=NAVY)
-    principal=str(news[0]["title"])
+    principal=str(news[0].get("socialHeadline") or news[0]["title"])
     main_ft=font_for_lines(d,principal,875,3,preferred=53,minimum=38,bold=True)
     paragraph(d,principal,91,329,main_ft,WHITE,876,3,10)
     d.text((90,527),"FUENTE: "+str(news[0]["sources"][0]["name"])[:55],
@@ -181,8 +181,9 @@ def cover(day, news, out):
                             fill="#EDF3FB" if row%2==0 else "#E4ECF7")
         d.rounded_rectangle((x+12,y+15,x+62,y+62),radius=10,fill=NAVY)
         d.text((x+18,y+22),f"{i+2:02d}",font=font(23,True),fill=WHITE)
-        title_ft=font_for_lines(d,note["title"],382,3,preferred=26,minimum=22,bold=True)
-        paragraph(d,note["title"],x+76,y+5,title_ft,INK,381,3,5)
+        mini=str(note.get("socialHeadline") or note["title"])
+        title_ft=font_for_lines(d,mini,382,3,preferred=26,minimum=22,bold=True)
+        paragraph(d,mini,x+76,y+5,title_ft,INK,381,3,5)
     d.rectangle((0,1208,W,H),fill=NAVY)
     d.text((59,1228),"ESCUCHA EL BOLETÍN COMPLETO EN LA WEB",font=font(27,True),fill=GOLD)
     d.text((62,1280),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
@@ -210,7 +211,7 @@ def grouped_card(notes, first_number, group_index, total_groups, out):
         # Titular dominante. La síntesis añade contexto: no se imprime
         # nuevamente la misma frase en otro lugar.
         headline=str(note.get("socialHeadline") or note["title"])
-        headline_ft=font_for_lines(d,headline,867,3,preferred=49,minimum=33,bold=True)
+        headline_ft=font_for_lines(d,headline,867,3,preferred=60,minimum=40,bold=True)
         paragraph(d,headline,87,y+109,headline_ft,WHITE,865,3,7)
         d.line((88,y+294,988,y+294),fill="#D5AD59",width=3)
         summary=str(note.get("socialDetail") or
