@@ -37,7 +37,7 @@ jobs:
         run: python scripts/build_carousel.py
       - name: Generar copy y primer comentario con enlace aislado
         env:
-          ORBIUNO_EXTRAORDINARY: '1'
+          ORBIUNO_EDITION_SLOT: '12m'
         run: python scripts/build_caption.py
       - name: Validar carrusel de portada y cinco láminas de dos noticias
         run: |
@@ -49,7 +49,7 @@ jobs:
           p=Path("media")/day
           manifest_compact=json.loads((p/"instagram-compacto.json").read_text(encoding="utf-8"))
           slides=[p/name for name in manifest_compact["slides"]]
-          assert 2 <= len(slides) <= 6
+          assert len(slides) == 11
           assert sum(manifest_compact["newsCounts"]) >= 1
           for file in slides:
               with Image.open(file) as im:
@@ -73,7 +73,7 @@ jobs:
             git reset --hard origin/main
             python scripts/validate_news.py noticias.json
             python scripts/build_carousel.py
-            ORBIUNO_EXTRAORDINARY=1 python scripts/build_caption.py
+            python scripts/build_caption.py
             # Eliminar exclusivamente recursos de los formatos obsoletos.
             DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
             git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
