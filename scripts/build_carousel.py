@@ -165,7 +165,7 @@ def cover(day, news, out):
     hour=datetime.now(ZoneInfo("America/Bogota")).hour
     edition_name=("EDICIÓN DE LA MAÑANA" if hour<11 else "EDICIÓN DE MEDIODÍA" if hour<17 else "EDICIÓN NOCTURNA")
     d.text((46,193),date_display+" · "+edition_name,font=font(23,True),fill=navy)
-    d.text((46,229),"10 NOTICIAS. TODAS EN PORTADA.",font=font(30,True),fill="#E9466B")
+    d.text((46,229),f"{len(news)} NOTICIAS. TODAS EN PORTADA.",font=font(30,True),fill="#E9466B")
     fills=["#FFF0E6","#E3F8F6","#F1EAFE","#E6F1FF","#FFF0F5"]
     accents=["#FF6747","#00AFA7","#8A57DE","#3184D5","#E84682"]
     for i,n in enumerate(news[:10]):
@@ -262,8 +262,8 @@ def main():
     news=sorted((x for x in data["news"] if x.get("date")==day and
                 x.get("verification")=="editorial_verified"),
                 key=lambda x:x.get("priority",999))
-    if len(news)!=10 or len({x["id"] for x in news})!=10:
-        raise RuntimeError("Se exigen diez noticias editoriales únicas")
+    if not (1 <= len(news) <= 10) or len({x["id"] for x in news})!=len(news):
+        raise RuntimeError("Se requieren entre una y diez noticias editoriales únicas")
     for x in news:
         if not x.get("sources") or not str(x["sources"][0]["url"]).startswith("https://"):
             raise RuntimeError("Falta fuente HTTPS")
@@ -276,11 +276,11 @@ def main():
     blocks=[news[i:i+2] for i in range(0,10,2)]
     start=1
     for i,group in enumerate(blocks,1):
-        grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png")
+        (grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png") if len(group)==2 else news_card(group[0],start,day,out/f"grupo-{i:02d}.png"))
         start+=len(group)
     compact={
        "editionDate":day,"format":"compact_carousel",
-       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,6)],
+       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,len(blocks)+1)],
        "newsCounts":[len(group) for group in blocks],
        "fullAudioInImages":False,
        "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
