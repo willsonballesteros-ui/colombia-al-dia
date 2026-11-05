@@ -64,6 +64,27 @@ jobs:
           PY
           node --check /tmp/orbiuno-frontend.js
 
+      - name: Instalar Pillow para carrusel editorial
+        run: python -m pip install Pillow
+
+      - name: Generar carrusel únicamente con noticias verificadas de hoy
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from pathlib import Path
+          data=json.loads(Path('noticias.json').read_text(encoding='utf-8'))
+          today=datetime.now(ZoneInfo('America/Bogota')).date().isoformat()
+          verified=[n for n in data.get('news',[]) if n.get('date')==today and n.get('verification')=='editorial_verified']
+          if data.get('editionDate')!=today or len(verified)!=10:
+              print(f'NO PUBLICAR: edición {data.get("editionDate")}; {len(verified)} noticias verificadas de {today}')
+              Path('/tmp/orbiuno_skip_carousel').touch()
+          PY
+          if [ ! -f /tmp/orbiuno_skip_carousel ]; then
+            python scripts/build_carousel.py
+          fi
+
       - name: Crear RSS con fuentes y enlaces originales
         run: python scripts/build_feed.py
 
@@ -82,6 +103,9 @@ jobs:
             python scripts/prepare_site.py
             python scripts/build_feed.py
             git add noticias.json index.html feed.xml
+            if [ -d "media/$(TZ=America/Bogota date +%F)" ]; then
+              git add "media/$(TZ=America/Bogota date +%F)"
+            fi
             if git diff --cached --quiet; then
               echo 'Sin cambios nuevos'; exit 0
             fi
