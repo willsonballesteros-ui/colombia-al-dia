@@ -102,6 +102,9 @@ jobs:
             python scripts/validate_news.py noticias.json
             python scripts/prepare_site.py
             python scripts/build_feed.py
+            if [ ! -f /tmp/orbiuno_skip_carousel ]; then
+              python scripts/build_carousel.py
+            fi
             git add noticias.json index.html feed.xml
             if [ -d "media/$(TZ=America/Bogota date +%F)" ]; then
               git add "media/$(TZ=America/Bogota date +%F)"
