@@ -151,82 +151,84 @@ def news_card(note,num,day,out):
 
 
 def cover(day, news, out):
-    """Portada con una noticia protagonista y las otras nueve en lectura rápida."""
-    image=base()
-    d=ImageDraw.Draw(image)
-    hour=datetime.now(ZoneInfo("America/Bogota")).hour
-    slot=("MAÑANA · 08:00" if hour<11 else
-          "MEDIODÍA · 12:00" if hour<17 else
-          "NOCHE · 18:00")
-    d.text((62,181), "EDICIÓN "+slot+" · "+day[8:10]+"/"+day[5:7]+"/"+day[:4],
-           font=font(25,True),fill=BLUE)
-    d.rounded_rectangle((56,227,1024,570),radius=22,fill=NAVY)
-    d.rounded_rectangle((80,252,464,305),radius=12,fill=GOLD)
-    d.text((98,264),"01 · NOTICIA PRINCIPAL",font=font(24,True),fill=NAVY)
-    principal=str(news[0].get("socialHeadline") or news[0]["title"])
-    main_ft=font_for_lines(d,principal,875,3,preferred=53,minimum=38,bold=True)
-    paragraph(d,principal,91,329,main_ft,WHITE,876,3,10)
-    d.text((90,527),"FUENTE: "+str(news[0]["sources"][0]["name"])[:55],
-           font=font(19,True),fill=GOLD)
-    d.text((63,592),"ADEMÁS, EN ESTA EDICIÓN",font=font(30,True),fill=INK)
-    d.line((63,641,1015,641),fill=GOLD,width=5)
-    # Distribuir nueve titulares en dos columnas, sin repetir síntesis.
-    remaining=news[1:]
-    for i,note in enumerate(remaining):
-        col=i%2
-        row=i//2
-        x=60+col*490
-        y=662+row*105
-        d.rounded_rectangle((x,y,x+470,y+100),radius=13,
-                            fill="#EDF3FB" if row%2==0 else "#E4ECF7")
-        d.rounded_rectangle((x+12,y+15,x+62,y+62),radius=10,fill=NAVY)
-        d.text((x+18,y+22),f"{i+2:02d}",font=font(23,True),fill=WHITE)
-        mini=str(note.get("socialHeadline") or note["title"])
-        title_ft=font_for_lines(d,mini,382,3,preferred=26,minimum=22,bold=True)
-        paragraph(d,mini,x+76,y+5,title_ft,INK,381,3,5)
-    d.rectangle((0,1208,W,H),fill=NAVY)
-    d.text((59,1228),"ESCUCHA EL BOLETÍN COMPLETO EN LA WEB",font=font(27,True),fill=GOLD)
-    d.text((62,1280),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
-           font=font(22,True),fill=WHITE)
-    image.save(out,optimize=True)
+    """Diez noticias con jerarquía EQUITATIVA: cinco filas por dos columnas."""
+    im=Image.new("RGB",(W,H),"#F5F7FD"); d=ImageDraw.Draw(im)
+    navy="#121A35"
+    d.rectangle((0,0,W,183),fill=navy)
+    d.rectangle((0,0,W,13),fill="#FF684E")
+    d.text((49,23),"ORBIUNO",font=font(65,True),fill="#FFFFFF")
+    d.text((50,105),"COLOMBIA AL DÍA  /  PANORAMA COMPLETO",font=font(23,True),fill="#66F3D7")
+    stamp=datetime.now(ZoneInfo("America/Bogota")).strftime("%H:%M")
+    d.rounded_rectangle((770,45,1032,121),radius=18,fill="#FCDF59")
+    d.text((793,57),"CORTE "+stamp,font=font(28,True),fill=navy)
+    d.text((46,193),"MIÉRCOLES 4 NOV 2026 · EDICIÓN NOCTURNA",font=font(23,True),fill=navy)
+    d.text((46,229),"10 NOTICIAS. TODAS EN PORTADA.",font=font(30,True),fill="#E9466B")
+    fills=["#FFF0E6","#E3F8F6","#F1EAFE","#E6F1FF","#FFF0F5"]
+    accents=["#FF6747","#00AFA7","#8A57DE","#3184D5","#E84682"]
+    for i,n in enumerate(news[:10]):
+        col=i%2; row=i//2
+        x=42+col*505; y=285+row*173
+        accent=accents[row]; bg=fills[row]
+        d.rounded_rectangle((x,y,x+491,y+162),radius=16,fill=bg)
+        d.rounded_rectangle((x,y,x+10,y+162),radius=5,fill=accent)
+        d.text((x+21,y+13),f"{i+1:02d}",font=font(31,True),fill=accent)
+        cat=str(n.get("category","NOTICIAS")).upper()[:24]
+        d.text((x+91,y+18),cat,font=font(16,True),fill="#414E67")
+        title=str(n.get("socialHeadline") or n["title"]).strip()
+        ft=font_for_lines(d,title,448,2,preferred=28,minimum=21,bold=True)
+        paragraph(d,title,x+21,y+58,ft,navy,450,2,5)
+        icon=favicon(n)
+        if icon is not None:
+            icon=icon.copy();icon.thumbnail((25,25),resample=Image.Resampling.LANCZOS)
+            im.paste(icon,(x+23,y+130),icon);d=ImageDraw.Draw(im)
+        source=str(n["sources"][0]["name"]).split(" · ")[0].split(" / ")[0][:37]
+        d.text((x+55,y+129),source,font=font(17,True),fill="#394560")
+    d.rectangle((0,1175,W,H),fill=navy)
+    d.rectangle((0,1175,W,1185),fill="#00CDB9")
+    d.text((45,1202),"ESCUCHA LAS 10 NOTICIAS EN NUESTRA WEB",font=font(28,True),fill="#FCDF59")
+    d.text((46,1251),"colombia-al-dia.pages.dev",font=font(27,True),fill="#FFFFFF")
+    d.text((47,1298),"@resumen.noticias  ·  FUENTES Y ENLACES ORIGINALES",font=font(19),fill="#A9C4E2")
+    im.save(out,optimize=True)
 
 
 def grouped_card(notes, first_number, group_index, total_groups, out):
-    """Lámina editorial de DOS noticias, letras grandes y cero paneles vacíos."""
-    if len(notes)!=2:
-        raise ValueError("El nuevo formato requiere dos noticias por lámina")
-    image=base()
-    d=ImageDraw.Draw(image)
-    d.text((62,182),f"ACTUALIDAD  ·  LÁMINA {group_index} DE {total_groups}",
-           font=font(28,True),fill=BLUE)
-    d.line((63,229,1016,229),fill=GOLD,width=5)
-    for i,note in enumerate(notes):
-        y=250+i*481
-        x1,x2=60,1020
-        d.rounded_rectangle((x1,y,x2,y+463),radius=22,fill=NAVY)
-        d.rounded_rectangle((x1+16,y+18,x1+110,y+89),radius=12,fill=GOLD)
-        d.text((x1+30,y+31),f"{first_number+i:02d}",font=font(37,True),fill=NAVY)
-        category=str(note.get("category","NOTICIAS")).upper()[:23]
-        d.text((x1+131,y+35),category,font=font(25,True),fill=GOLD)
-        # Titular dominante. La síntesis añade contexto: no se imprime
-        # nuevamente la misma frase en otro lugar.
-        headline=str(note.get("socialHeadline") or note["title"])
-        headline_ft=font_for_lines(d,headline,867,3,preferred=60,minimum=40,bold=True)
-        paragraph(d,headline,87,y+109,headline_ft,WHITE,865,3,7)
-        d.line((88,y+294,988,y+294),fill="#D5AD59",width=3)
-        summary=str(note.get("socialDetail") or
-                    note.get("executiveSummary") or note.get("summary",""))
-        # Las síntesis oficiales tienen fuente; nunca fabricar datos
-        # para hacer más espectacular la lámina.
-        summary_ft=font_for_lines(d,summary,881,3,preferred=29,minimum=23)
-        paragraph(d,summary,89,y+309,summary_ft,WHITE,875,3,8)
-        src=str(note["sources"][0]["name"])
-        d.text((90,y+425),"FUENTE: "+src[:72],font=font(21,True),fill=GOLD)
-    d.rectangle((0,1228,W,H),fill=NAVY)
-    d.text((58,1245),"ESCUCHA TODAS LAS NOTICIAS EN ORBIUNO",font=font(26,True),fill=GOLD)
-    d.text((60,1291),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
-           font=font(21,True),fill=WHITE)
-    image.save(out,optimize=True)
+    """Dos noticias por lámina; tipografía dominante, colores vivos, logos discretos."""
+    if len(notes)!=2: raise ValueError("Se requieren exactamente dos noticias por lámina")
+    im=Image.new("RGB",(W,H),"#F5F7FD")
+    d=ImageDraw.Draw(im)
+    d.rectangle((0,0,W,166),fill="#121A35")
+    d.rectangle((0,0,W,12),fill="#FF684E")
+    d.text((50,25),"ORBIUNO",font=font(63,True),fill="#FFFFFF")
+    d.text((51,109),"COLOMBIA AL DÍA   /   NOTICIAS VERIFICADAS",font=font(21,True),fill="#66F3D7")
+    d.text((52,180),f"PANORAMA  ·  LÁMINA {group_index} DE {total_groups}",font=font(29,True),fill="#152447")
+    tones=[("#182347","#FFCE4E","#E4EFFB"),("#35214E","#62F1D9","#F6E9FD")]
+    for i,n in enumerate(notes):
+        y=244+i*478; col,accent,light=tones[i]
+        d.rounded_rectangle((44,y,1036,y+457),radius=22,fill=col)
+        d.rounded_rectangle((44,y,58,y+457),radius=9,fill=accent)
+        d.rounded_rectangle((76,y+22,172,y+96),radius=16,fill=accent)
+        d.text((94,y+36),f"{first_number+i:02d}",font=font(36,True),fill=col)
+        d.text((192,y+42),str(n.get("category","ACTUALIDAD")).upper()[:30],
+               font=font(26,True),fill=accent)
+        title=str(n.get("socialHeadline") or n["title"])
+        title_ft=font_for_lines(d,title,910,3,preferred=55,minimum=39,bold=True)
+        paragraph(d,title,89,y+119,title_ft,"#FFFFFF",885,3,8)
+        d.line((90,y+304,989,y+304),fill=accent,width=4)
+        detail=str(n.get("socialDetail") or n.get("executiveSummary") or n.get("summary",""))
+        ft=font_for_lines(d,detail,892,3,preferred=27,minimum=21)
+        paragraph(d,detail,91,y+321,ft,light,883,3,7)
+        ico=favicon(n)
+        if ico is not None:
+            ico=ico.copy();ico.thumbnail((29,29),resample=Image.Resampling.LANCZOS)
+            im.paste(ico,(91,y+413),ico);d=ImageDraw.Draw(im)
+        d.text((135,y+413),"FUENTE: "+str(n["sources"][0]["name"])[:64],
+               font=font(20,True),fill=accent)
+    d.rectangle((0,1227,W,H),fill="#121A35")
+    d.rectangle((0,1227,W,1235),fill="#FF684E")
+    d.text((52,1248),"ESCUCHA EL DESARROLLO EN ORBIUNO",font=font(27,True),fill="#FFCE4E")
+    d.text((52,1293),"colombia-al-dia.pages.dev    ·    @resumen.noticias",
+           font=font(21,True),fill="#FFFFFF")
+    im.save(out,optimize=True)
 
 
 def combined_sports_card(a,b,out):
