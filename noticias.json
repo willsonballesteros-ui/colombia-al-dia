@@ -6,6 +6,177 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b093b41871680258",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia de amputados se prepara en Barranquilla para el Mundial de México 2026",
+      "summary": "Titular difundido por Zona Cero a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Zona Cero · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOanRSTVRJZzZZclM4aS1FS0xJRVJVWERfMHpyTlFidDJpblM5N0drOFV6NE9hcHpCQzhPb1MyVXI0bXNrT3dYWkRwcUUxZUpsNThWR2dDaG0wNTZaZE9TTFBXRkpaVzZhWXpnTWx4TWtIY2duaWI5RXFEOTBVc1RjdHFOdDNxam11c0IyNGhGbUdaMHNFMmZYTlByNzNQU1A1ck8zWmtEbndpTDEwSzdZdEZCUFZVY3g5eFJz?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T14:29-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-525d30629ad4bbef",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Abre convocatoria para que 10.000 jóvenes aprendan gratis a crear aplicaciones con inteligencia artificial; fechas y requisitos",
+      "summary": "Titular difundido por El País a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El País · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQV1FrRkU1dnA5dDUxaGhpRTMxN3lqX180MHpnYzA2VEFnR05QeEFOMTdJQVF4U1FkSGxFQXdoamJBcXpfcnl5X3AyUjdHelJITHd4WDFvZy1vYmlGU2ZNZTF1ZHNCSmkwZWNQTUt0bHctekQ4a1JVUmZuanZXZDNZTDVOUFhSN1lkZU5sWHE4SHlZVXNUaDlJMWpKc0Noenc2Q0NjbldkOUhEb29VanhCWEVnakY3MUpCNWZKa2JkbUxTZlM4NVV5N1VxYks1UUp6eFRTTGtHWkZjWnhxbkdIQzBXZUZ1WXo5TG9lS01VZ1BKZlNRSDVGcHhn0gH_AUFVX3lxTE4zZmN6QWJaUDByODBGaU9QdTZRWTRzV3JhTkZrWVVSOTZBY1Z2SXpTcHJKUzlTdkpIR19xZk00OEF6cWFKNjNsTlcxdHd6Z2JVak1UM01JYzJQUzkzcmFobllqdFZYN1FIalY3bW1nVkowWnVDZHJFcGJpc3VnNmRZdUtfaHVBMGZGSEJ2VHJhRHd4dldjeWkycmdJTFBrMV9hQmVmR3g4QUtnc0lTX04zSmVXejM3SnVrOTg2REZPTXFSNF9INGJ3WHI4NlJabFdXQ09mM3lzZ1JSeHpaWERnaVV3MkdsLWNFZzBTNU91QkJhWFh3OGRJc2o2Z0ZPVQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T17:17-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e7884fe146602e53",
+      "date": "2026-11-05",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Boris Aguirre: \"A la inteligencia artificial la maneja la inteligencia humana\"",
+      "summary": "Titular difundido por Diario La Hora a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario La Hora · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVUF5U2tzUDJZcExTMHJXTkJiVU9KQUY1b1EwUEZpbXpxS3FuZVpmd01QWk8zYk1uclNpaVJYOWJuNWJfYTd2M29fUmwyZUlHeUpLakJkRUNGRlplbi1aZDdrdFVEcXQ0QlJwblhBOHFqRWVNd2szVHA2UW1uUkR0UkZQbzZPREtlWXUwS1dKMEhIbnA4NkhHVEtGYXdJdGRwQmVkTWJKSmpNNkhpelM1VjdYQVc4amppT2RabzBNMFJvX1dNV0Uxdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T17:06-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-47b6cfa46d47306a",
+      "date": "2026-11-05",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Así quedó la tabla de posiciones de la Liga BetPlay tras el cierre de la fecha 17: las cuentas de Millonarios para clasificar a cuadrangulares",
+      "summary": "Titular difundido por RED+ Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "RED+ Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOVkhjZXNSTXhDU1dYa3JPd2V0ZTl5cGtIeTJ5NEdqLWpTc1E0MjAwbExEWWVNdEYwSWE5UTdzNFViUnA1SUYzUjI1UkI1cTJvZ25kUXRkQlRlOC15eTYwN2ZmQmtCRGZ2NU9LVW8tYU9uendIYnpzLXFaS0NodlNkTmctYmlRN0psWl9KRUZzX0JkN1dlX0daN1A3SjJabk5EeEUwanUtWG1heHpNM1A0Qkhzdi1jTjJYLXlJMzA5Y3NDc3NoQllTWFBGbmZJWTM0a1hiZV9xcGRiZHoyWTJqV2hXZjhCdEFrVFNJdUd2bW5iRE5QaHR4OGxqM09XOWRteENxanN6cTVlWVVzazZ3c0J2cU1aeVM5ek1j?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T16:55-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f9d09db71c0cab77",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "EY: tecnología, prioridad del 32% de empresas en Colombia",
+      "summary": "Titular difundido por El Ecosistema Startup a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Ecosistema Startup · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdGJyNVNnNzVnaWd2RGxIMkJicFJKdjNoZ0RYWm1DQ0FfWXhRRFJxeGFsYjQyekRRcktFeUNaWk9tekdEWVdrcGdkaF81c2ZDVC00RkNCY3ktazY0bnM5V3M2OXZSbWNFN3VjTGRJZU9uZzByNjlzYUgyemNDY09pcjNGRHRDZk1FTXFteGdR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T16:51-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6e50652120b97fa6",
+      "date": "2026-11-05",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Juzgado ordena a la Fundación Colombia Luz y Sonrisas revelar manejo de donaciones tras el terremoto del 10 de agosto",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZFdaS1BLVnA0eVRmY2FjSHdVME5acUJVZFRyd2dtdi1QZjRRYlYzb2Z5VTNoWlMzV0Y3WmcyNDBxRnBndEFpU0ZROTRvX2F5cmh3Z2U0R3VEYmgzZWdYRlFLeS1qcmNEMkJXOG9Oc0YwcldWeXBHN0poeFdUZ3VnMFdaYzlkV051U0NNWVM2TTJGbFZQMnJKNkZna2dNekI1TzVxZDJQRkRtazQ4bmpUNm9jdEd5MGFRZjVSWDBJSDdpS1A0OVd4c3VLQ0dMS0pp0gHWAUFVX3lxTE12aVg0VE9TTjZROE1nSVJMY3ppOUdwdVNvV0Z6bWtZXzdiNE94WS1mZ1hhY052a01kOEY3TnREVkJGMHhZLUJ4Z2Nud2VBak9sZFRuUXRwTlFQZkRDYU5EclZuSkVTOGZUT0lSekRSVmpEUzBEZnAwd1VacV9TMVlyektReVFoWnBMMmZDcmUycjR3Qjd0Uk5zeG9wOUJiQ0JVSHRTT0FVMXpuYWhOcXROX2Zla0w2OTNnWW50OXJaNGNGOGZqN3JEM2NINzUyeUdNSk5XS3c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T16:16-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c51ffdb632a284f8",
+      "date": "2026-11-05",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Santiago Peña renuncia a la presidencia de Paraguay mientras la Cámara de Diputados aprueba someterlo a un juicio político por el caso Ueno Bank",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/ckjwe5wy4nxyo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T15:03-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-fad26b73cf407c75",
+      "date": "2026-11-05",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "F1 hoy: A qué hora es la carrera, canal y dónde ver el GP de Brasil",
+      "summary": "Titular difundido por Sporting News a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Sporting News · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOcDRjckVGWFIzOEtzZkRjU0NmeXg4Sk1oVWJHS21ZbWRzOGxvNi1yN29vZmY0QzZtY29CckRZMUNGcGxxd29LU2dCT0VPTXBKWkJVT3A1QnpZb05lQWNiVmVZSUpYYjQ2TG1QMnZmQVhIajF6c3NwMkxHWEFweHZLcmlfdkllRjM1d2JTSk5Va1J0SnQ1SGJIcjl1UDQxRnJKMUwzbzFmN0Q5cl9UM21STVlSYnlSdUN6STh1YmJISmxrakZoQV9iY1c4R2pMc2p2OC1ld2VBeEtwUlM4Q2hHQWtGdUZlTnhMaWc0cDlxMjNwR2JXMmxUcXZnYnU1aVV1cG9tNzFDRXg5Q1h4VmJnNE90QjY4aVhpOWpRalJRN052enhYNlY4dzFn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T12:59-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-02666d6f7d2580c2",
+      "date": "2026-11-05",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Barómetro Petrolero 2026: Confianza Presidencial vs. Ecopetrol",
+      "summary": "Titular difundido por Estrella Digital Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Estrella Digital Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQT3lwcFlFRERSWngxOE5nZ2JzWV96b0E0MlJ1b01BVFJod3NVR1RicGYweXBUTVl5SnZZWnY5U2JuQ0piVkV1MHFWUnVXWldPejRyUl9KOHA5YXpIalNteGVNRkJ5c3BBRzBLajdVYVgxR0Nqa1dwTGVleWtETHoxY2dEcGpCNzNseXc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-05T06:15-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-2c9b510fa9b600c8",
       "date": "2026-11-05",
       "category": "Colombia",
@@ -8967,8 +9138,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-05T17:28-05:00",
-  "lastNewSourceAtBogota": "2026-11-05T17:28-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-05T17:30-05:00",
+  "lastNewSourceAtBogota": "2026-11-05T17:30-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 18:00: diez noticias verificadas. Redacción propia. Carrusel sin narración; lectura en español disponible en la web.",
