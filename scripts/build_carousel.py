@@ -3,7 +3,7 @@
 
 Las fotos se reproducen SOLO con derechos verificados. En su ausencia se
 muestra favicon REAL del sitio periodístico, no una fotografía inventada.
-La portada está destinada al Reel/preview, no se publica como diapositiva azul.
+La portada es la primera diapositiva del carrusel estático de Instagram.
 """
 import io
 import json
@@ -283,7 +283,7 @@ def main():
        "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,6)],
        "newsCounts":[len(group) for group in blocks],
        "fullAudioInImages":False,
-       "note":"Los PNG no incluyen audio. Para Instagram se debe producir un video narrado autorizado; la lectura completa ya existe en la web."
+       "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Generadas portada y cinco laminas editoriales de dos noticias cada una.")
