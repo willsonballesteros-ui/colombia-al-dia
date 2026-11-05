@@ -151,57 +151,80 @@ def news_card(note,num,day,out):
 
 
 def cover(day, news, out):
-    """Apertura: resumen legible de los diez titulares en una sola pantalla."""
+    """Portada con una noticia protagonista y las otras nueve en lectura rápida."""
     image=base()
     d=ImageDraw.Draw(image)
     hour=datetime.now(ZoneInfo("America/Bogota")).hour
     slot=("MAÑANA · 08:00" if hour<11 else
           "MEDIODÍA · 12:00" if hour<17 else
           "NOCHE · 18:00")
-    d.text((65,181),"EDICIÓN DE "+slot+" BOGOTÁ",font=font(29,True),fill=NAVY)
-    d.text((65,241),f"ESTAS SON LAS {len(news)} NOTICIAS",font=font(43,True),fill=INK)
-    d.line((66,310,1012,310),fill=GOLD,width=5)
-    for i, item in enumerate(news, 1):
-        y=335+(i-1)*83
-        d.rounded_rectangle((61,y,1018,y+75),radius=9,
-                            fill="#E7EFFA" if i%2 else "#F0F4FB")
-        d.rounded_rectangle((74,y+10,136,y+65),radius=8,fill=NAVY)
-        d.text((84,y+20),str(i).zfill(2),font=font(27,True),fill=WHITE)
-        title=str(item["title"])
-        title_face=font_for_lines(d,title,847,2,preferred=27,minimum=21)
-        paragraph(d,title,151,y+9,title_face,INK,847,2,5)
-    d.rectangle((0,1200,W,H),fill=NAVY)
-    d.text((63,1224),"ESCUCHA LAS NOTICIAS EN NUESTRA WEB",font=font(30,True),fill=GOLD)
-    d.text((65,1277),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
-           font=font(24,True),fill=WHITE)
+    d.text((62,181), "EDICIÓN "+slot+" · "+day[8:10]+"/"+day[5:7]+"/"+day[:4],
+           font=font(25,True),fill=BLUE)
+    d.rounded_rectangle((56,227,1024,570),radius=22,fill=NAVY)
+    d.rounded_rectangle((80,252,464,305),radius=12,fill=GOLD)
+    d.text((98,264),"01 · NOTICIA PRINCIPAL",font=font(24,True),fill=NAVY)
+    principal=str(news[0]["title"])
+    main_ft=font_for_lines(d,principal,875,3,preferred=53,minimum=38)
+    paragraph(d,principal,91,329,main_ft,WHITE,876,3,10)
+    d.text((90,527),"FUENTE: "+str(news[0]["sources"][0]["name"])[:55],
+           font=font(19,True),fill=GOLD)
+    d.text((63,592),"ADEMÁS, EN ESTA EDICIÓN",font=font(30,True),fill=INK)
+    d.line((63,641,1015,641),fill=GOLD,width=5)
+    # Distribuir nueve titulares en dos columnas, sin repetir síntesis.
+    remaining=news[1:]
+    for i,note in enumerate(remaining):
+        col=i%2
+        row=i//2
+        x=60+col*490
+        y=662+row*106
+        d.rounded_rectangle((x,y,x+470,y+94),radius=13,
+                            fill="#EDF3FB" if row%2==0 else "#E4ECF7")
+        d.rounded_rectangle((x+12,y+15,x+62,y+62),radius=10,fill=NAVY)
+        d.text((x+18,y+22),f"{i+2:02d}",font=font(23,True),fill=WHITE)
+        title_ft=font_for_lines(d,note["title"],382,2,preferred=27,minimum=22)
+        paragraph(d,note["title"],x+76,y+11,title_ft,INK,381,2,5)
+    d.rectangle((0,1208,W,H),fill=NAVY)
+    d.text((59,1228),"ESCUCHA EL BOLETÍN COMPLETO EN LA WEB",font=font(27,True),fill=GOLD)
+    d.text((62,1280),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
+           font=font(22,True),fill=WHITE)
     image.save(out,optimize=True)
 
 
 def grouped_card(notes, first_number, group_index, total_groups, out):
-    """Carrusel compacto: 2 o 3 titulares contrastados por lámina."""
+    """Lámina editorial de DOS noticias, letras grandes y cero paneles vacíos."""
+    if len(notes)!=2:
+        raise ValueError("El nuevo formato requiere dos noticias por lámina")
     image=base()
     d=ImageDraw.Draw(image)
-    d.text((65,182),f"EDICIÓN DE HOY  ·  BLOQUE {group_index} DE {total_groups}",font=font(29,True),fill=NAVY)
-    d.line((65,239,1015,239),fill=GOLD,width=5)
-    block_height=315 if len(notes)==3 else 445
-    for i,n in enumerate(notes):
-        y=265+i*(block_height+14)
-        d.rounded_rectangle((61,y,1018,y+block_height),radius=16,fill="#E8F0FA" if i%2==0 else "#F2F5FB")
-        d.rounded_rectangle((79,y+18,146,y+78),radius=9,fill=NAVY)
-        d.text((94,y+29),f"{first_number+i:02d}",font=font(27,True),fill=WHITE)
-        d.text((165,y+29),str(n.get("category","NOTICIAS")).upper()[:28],font=font(20,True),fill=BLUE)
-        title=str(n["title"])
-        y_title=y+94
-        title_ft=font_for_lines(d,title,890,2,preferred=36,minimum=26)
-        y_summary=paragraph(d,title,87,y_title,title_ft,INK,891,2,8)+12
-        summary=str(n.get("executiveSummary") or n.get("summary",""))
-        summary_ft=font_for_lines(d,summary,885,2,preferred=24,minimum=19)
-        paragraph(d,summary,87,y_summary,summary_ft,INK,885,2,7)
-        source=str(n["sources"][0]["name"])
-        d.text((88,y+block_height-48),"FUENTE: "+source[:58],font=font(18,True),fill=BLUE)
-    d.rectangle((0,1240,W,H),fill=NAVY)
-    d.text((65,1257),"🎧".replace("🎧","AUDIO")+" · ESCUCHA EL REPORTAJE EN LA WEB",font=font(23,True),fill=GOLD)
-    d.text((65,1300),"colombia-al-dia.pages.dev  ·  @resumen.noticias",font=font(19),fill=WHITE)
+    d.text((62,182),f"ACTUALIDAD  ·  LÁMINA {group_index} DE {total_groups}",
+           font=font(28,True),fill=BLUE)
+    d.line((63,229,1016,229),fill=GOLD,width=5)
+    for i,note in enumerate(notes):
+        y=250+i*481
+        x1,x2=60,1020
+        d.rounded_rectangle((x1,y,x2,y+463),radius=22,fill=NAVY)
+        d.rounded_rectangle((x1+16,y+18,x1+110,y+89),radius=12,fill=GOLD)
+        d.text((x1+30,y+31),f"{first_number+i:02d}",font=font(37,True),fill=NAVY)
+        category=str(note.get("category","NOTICIAS")).upper()[:23]
+        d.text((x1+131,y+35),category,font=font(25,True),fill=GOLD)
+        # Titular dominante. La síntesis añade contexto: no se imprime
+        # nuevamente la misma frase en otro lugar.
+        headline=str(note.get("socialHeadline") or note["title"])
+        headline_ft=font_for_lines(d,headline,867,3,preferred=49,minimum=33)
+        paragraph(d,headline,87,y+109,headline_ft,WHITE,865,3,7)
+        d.line((88,y+294,988,y+294),fill="#D5AD59",width=3)
+        summary=str(note.get("socialDetail") or
+                    note.get("executiveSummary") or note.get("summary",""))
+        # Las síntesis oficiales tienen fuente; nunca fabricar datos
+        # para hacer más espectacular la lámina.
+        summary_ft=font_for_lines(d,summary,881,3,preferred=29,minimum=23)
+        paragraph(d,summary,89,y+309,summary_ft,WHITE,875,3,8)
+        src=str(note["sources"][0]["name"])
+        d.text((90,y+425),"FUENTE: "+src[:72],font=font(21,True),fill=GOLD)
+    d.rectangle((0,1228,W,H),fill=NAVY)
+    d.text((58,1245),"ESCUCHA TODAS LAS NOTICIAS EN ORBIUNO",font=font(26,True),fill=GOLD)
+    d.text((60,1291),"colombia-al-dia.pages.dev  ·  @resumen.noticias",
+           font=font(21,True),fill=WHITE)
     image.save(out,optimize=True)
 
 
@@ -241,21 +264,21 @@ def main():
     for i,n in enumerate(news,1):
         news_card(n,i,day,out/f"top10-{i:02d}.png")
     combined_sports_card(news[8],news[9],out/"top10-09.png")
-    # Arte nuevo para publicaciones compactas: portada inicial y 4 bloques (3+3+2+2).
-    blocks=[news[:3],news[3:6],news[6:8],news[8:10]]
+    # Carrusel editorial con portada + cinco parejas (10 noticias).
+    blocks=[news[i:i+2] for i in range(0,10,2)]
     start=1
     for i,group in enumerate(blocks,1):
         grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png")
         start+=len(group)
     compact={
        "editionDate":day,"format":"compact_carousel",
-       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,5)],
+       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,6)],
        "newsCounts":[len(group) for group in blocks],
        "fullAudioInImages":False,
        "note":"Los PNG no incluyen audio. Para Instagram se debe producir un video narrado autorizado; la lectura completa ya existe en la web."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Generadas portada-resumen, 4 laminas compactas (3+3+2+2) y recursos por noticia.")
+    print("Generadas portada y cinco laminas editoriales de dos noticias cada una.")
 
 
 if __name__=="__main__":
