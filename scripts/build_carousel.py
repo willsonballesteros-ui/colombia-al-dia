@@ -265,7 +265,7 @@ def single_card(note,num,day,out):
     accent=accents[(num-1)%4]
     d.rectangle((0,0,W,14),fill=accent)
     d.text((60,42),"ORBIUNO",font=font(64,True),fill="#FFFFFF")
-    d.text((62,128),f"{day}  /  EDICIÓN DE LAS 18:00",font=font(24,True),fill=accent)
+    d.text((62,128),f"{day}  /  "+("EDICIÓN DE LA MAÑANA" if datetime.now(ZoneInfo("America/Bogota")).hour<11 else "EDICIÓN DE MEDIODÍA" if datetime.now(ZoneInfo("America/Bogota")).hour<17 else "EDICIÓN DE LAS 18:00"),font=font(24,True),fill=accent)
     d.rounded_rectangle((60,207,1020,288),radius=16,fill=accent)
     d.text((87,224),f"{num:02d} / 10  ·  {note['category'].upper()}",font=font(31,True),fill="#162044")
     title=note.get("socialHeadline") or note["title"]
