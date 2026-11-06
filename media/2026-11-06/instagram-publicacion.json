@@ -3,8 +3,10 @@
   "brand": "ORBIUNO",
   "editionSlot": "12m",
   "verifiedSports": 1,
-  "publicationReady": true,
-  "blockers": [],
+  "publicationReady": false,
+  "blockers": [
+    "contiene_8_noticias_ya_presentadas_en_la_manana"
+  ],
   "utmCampaign": "edicion_20261106_12m",
   "links": {
     "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261106_12m",
@@ -15,13 +17,15 @@
   "caption": "ORBIUNO | 06/11/2026\n\nEdición del mediodía · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nEscucha nuestra voz en español y ajusta la velocidad.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261106_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
   "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscucha las noticias completas y ajusta la velocidad en nuestra web.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261106_12m",
   "publicationVerified": false,
+  "repeatedMorningNews": 8,
+  "newsPerSlide": [
+    5,
+    5
+  ],
   "media": [
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/portada.png",
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-01.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-02.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-03.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-04.png",
-    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-05.png"
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-02.png"
   ],
   "sourceLinks": [
     {
