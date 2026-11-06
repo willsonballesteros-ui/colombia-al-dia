@@ -155,35 +155,41 @@ def article_html(n):
 
 
 def build(data, page):
-    news = sorted(
-        (n for n in data["news"]
-         if n.get("date") == data.get("editionDate")
-         and n.get("verification") == "editorial_verified"),
-        key=lambda n: n.get("priority", 999),
-    )[:10]
-    # Acceso breve a la edición de seguimiento sin añadir tarjetas repetidas
-    # a la portada principal ni modificar el historial de las ocho de la mañana.
-    followup_path = ROOT / 'seguimiento-2026-11-06.html'
-    followup = (
-        '<a href="/seguimiento-2026-11-06.html" '
-        'style="display:block;margin:9px 0 16px;padding:12px 15px;'
-        'border-radius:12px;background:#f9cc68;color:#142c30;'
-        'font-weight:750;text-decoration:none;font-size:1rem">'
-        '🎧 ORBIUNO · Actualización 13:30 · 8 novedades para escuchar →</a>'
-        if data.get('editionDate') == '2026-11-06' and followup_path.is_file()
-        else ''
-    )
-    rendered = '<div class="cards" id="cards" aria-live="polite">' + followup + "".join(
-        article_html(n) for n in news
-    ) + '</div>'
-    begin = page.index('<div class="cards" id="cards" aria-live="polite">')
-    end = page.index('<div class="empty" id="empty"', begin)
-    page = page[:begin] + rendered + page[end:]
-    encoded = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
-    marker = r'(<script type="application/json" id="initial-news">).*?(</script>)'
-    page, count = re.subn(marker, lambda m: m.group(1) + encoded + m.group(2),
-                          page, count=1, flags=re.S)
-    if count != 1:
+    """Mantener las tres franjas verificadas, con fotos y lectura, en UNA portada."""
+    today=data.get("editionDate")
+    published=[
+        n for n in data["news"]
+        if n.get("date")==today
+        and n.get("verification")=="editorial_verified"
+        and n.get("editionSlot") in ("08:00","12:00","18:00")
+    ]
+    slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
+    sections=[]
+    for slot,label in slots:
+        rows=sorted((n for n in published if n.get("editionSlot")==slot),
+                    key=lambda n:n.get("priority",999))
+        cards="".join(article_html(n) for n in rows)
+        if not cards:
+            cards='<p class="edition-empty">No hay noticias verificadas cargadas para esta franja.</p>'
+        sections.append(
+            '<section class="edition-section" id="edicion-'+slot.replace(":","")+'">'
+            '<h3 class="edition-heading"><span>Edición de las '+label+'</span>'
+            '<small>'+str(len(rows))+' noticias disponibles</small></h3>'
+            '<div class="cards edition-cards">'+cards+'</div></section>'
+        )
+    # El contenedor #cards se conserva para búsquedas y filtrado de histórico;
+    # las tres ediciones son el contenido visible inicial de la portada.
+    begin=page.index('<div id="ediciones-hoy" aria-label="Publicaciones del día"></div>')
+    finish=page.index('<div class="empty" id="empty"',begin)
+    page=page[:begin]+(
+       '<div id="ediciones-hoy" aria-label="Publicaciones del día">'
+       +''.join(sections)+'</div>'
+       '<div class="cards" id="cards" aria-live="polite"></div>'
+    )+page[finish:]
+    encoded=json.dumps(data,ensure_ascii=False,separators=(",",":")).replace("<",r"\u003c")
+    marker=r'(<script type="application/json" id="initial-news">).*?(</script>)'
+    page,count=re.subn(marker,lambda m:m.group(1)+encoded+m.group(2),page,count=1,flags=re.S)
+    if count!=1:
         raise ValueError("No se localizó #initial-news")
     return page
 
