@@ -179,7 +179,7 @@ def build(data, page):
         )
     # El contenedor #cards se conserva para búsquedas y filtrado de histórico;
     # las tres ediciones son el contenido visible inicial de la portada.
-    begin=page.index('<div id="ediciones-hoy" aria-label="Publicaciones del día"></div>')
+    begin=page.index('<div id="ediciones-hoy"')
     finish=page.index('<div class="empty" id="empty"',begin)
     page=page[:begin]+(
        '<div id="ediciones-hoy" aria-label="Publicaciones del día">'
