@@ -63,8 +63,9 @@ def source_thumbnail(n):
         '<div class="source-thumbnail">'
         '<img src="{icon}" loading="lazy" width="64" height="64" '
         'alt="Icono del sitio de {label}; no es fotografía del hecho">'
-        '<span class="source-thumbnail-name">{label}</span></div>'
-    ).format(icon=esc(icon_url), label=esc(label))
+        '<span class="source-thumbnail-name">{label}</span>'
+        '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" title="Abrir fuente original: {label}">Fuente ↗</a></div>'
+    ).format(icon=esc(icon_url), label=esc(label), url=esc(sources[0]["url"]))
 
 
 def article_original_authorized(n):
@@ -142,8 +143,6 @@ def article_html(n):
         '<span class="news-chip">{cat}</span><time datetime="{date}">{date}</time>'
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
         '<div class="news-actions">{controls}{article_tag}'
-        '<a class="source" target="_blank" rel="noopener noreferrer" href="{url}" '
-        'title="Abrir fuente original: {label}">Fuente ↗</a>'
         '</div>{transcript}</div></article>'
     ).format(
         transcript=transcript,
