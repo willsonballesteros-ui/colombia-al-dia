@@ -897,7 +897,16 @@
       "audioIsFullPublisherArticle": false,
       "audioEditorialSource": "Redacción ORBIUNO · síntesis propia con atribución",
       "sourceLanguage": "es",
-      "editorialVerifiedAtBogota": "2026-11-05T17:25:00-05:00"
+      "editorialVerifiedAtBogota": "2026-11-05T17:25:00-05:00",
+      "imageUrl": "./media/news-photos/metro-archivo-thumb.webp",
+      "imageFullUrl": "./media/news-photos/metro-archivo-large.webp",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "ShijiKamio",
+      "imageLicense": "CC0 1.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Viaducto_L%C3%ADnea_1_en_Portal_Am%C3%A9ricas.jpg",
+      "imageAlt": "Viaducto de la Línea 1 del Metro de Bogotá visto desde Portal Américas. Fotografía de archivo del 8 de junio de 2026.",
+      "imageCaption": "Archivo · 8 jun 2026"
     },
     {
       "id": "20261105-18h-05",

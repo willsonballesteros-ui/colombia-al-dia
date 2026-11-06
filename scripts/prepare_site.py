@@ -38,15 +38,15 @@ def image_markup(n):
     if not image_verified(n):
         return ""
     return (
-        '<figure class="news-photo"><img src="{url}" loading="lazy" '
-        'alt="{alt}" width="1080" height="600">'
-        '<figcaption>Imagen: <a href="{origin}" target="_blank" rel="noopener noreferrer">'
-        '{credit}</a>. {license}</figcaption></figure>'
-    ).format(
-        url=esc(n["imageUrl"]), alt=esc(n.get("imageAlt") or n["title"]),
-        origin=esc(n["imageSourceUrl"]), credit=esc(n["imageCredit"]),
-        license=esc(n["imageLicense"]),
-    )
+        '<figure class="news-photo"><button type="button" class="photo-open" '
+        'data-photo-id="{id}" aria-label="Ampliar fotografía: {alt}">'
+        '<img src="{url}" loading="lazy" decoding="async" alt="{alt}" width="320" height="180">'
+        '<span class="photo-expand" aria-hidden="true">⤢</span></button>'
+        '<figcaption>{caption}<br><a href="{origin}" target="_blank" rel="noopener noreferrer">'
+        '{credit}</a> · {license}</figcaption></figure>'
+    ).format(id=esc(n['id']),url=esc(n['imageUrl']),alt=esc(n.get('imageAlt') or n['title']),
+             caption=esc(n.get('imageCaption') or 'Fotografía'),origin=esc(n['imageSourceUrl']),
+             credit=esc(n['imageCredit']),license=esc(n['imageLicense']))
 
 
 def source_thumbnail(n):
@@ -108,7 +108,7 @@ def article_html(n):
     source = sources[0]
     complete = has_complete_audio(n)
     authored = original_article_ready(n)
-    thumbnail = image_markup(n) or source_thumbnail(n)
+    thumbnail = (image_markup(n) + source_thumbnail(n)) if image_verified(n) else source_thumbnail(n)
     # El audio SIEMPRE se queda en ORBIUNO: íntegro licenciado o resumen.
     label = ("Escuchar completo" if complete else
              "Escuchar noticia" if len(str(n.get("audioFullTextEs") or "").split()) >= 110
@@ -137,7 +137,7 @@ def article_html(n):
     )
     return (
         '<article id="noticia-{id}" class="card compact-card">'
-        '<div class="visual-frame">{thumbnail}</div>'
+        '<div class="visual-frame{photo_class}">{thumbnail}</div>'
         '<div class="news-body"><div class="news-meta">'
         '<span class="news-chip">{cat}</span><time datetime="{date}">{date}</time>'
         '</div><h3>{title}</h3><p class="news-preview">{summary}</p>'
@@ -147,7 +147,7 @@ def article_html(n):
         '</div>{transcript}</div></article>'
     ).format(
         transcript=transcript,
-        id=esc(n["id"]), thumbnail=thumbnail, controls=player_controls,
+        id=esc(n["id"]), thumbnail=thumbnail, photo_class=" has-photo" if image_verified(n) else "", controls=player_controls,
         article_tag='<span class="original-full-tag" title="Artículo completo redactado por ORBIUNO; fuente enlazada aparte">ORBIUNO</span>' if authored else "",
         cat=esc(n.get("category", "")), date=esc(n["date"]), title=esc(n["title"]),
         url=esc(source["url"]), label=esc(source["name"]),
