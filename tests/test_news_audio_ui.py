@@ -64,12 +64,15 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertTrue(all(not x.get("fullArticleRightsVerified") for x in current))
         self.assertEqual(rendered.count('data-tts-action="toggle"'), 10)
         self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
-        self.assertEqual(rendered.count('data-tts-full="false"'), 10)
-        self.assertEqual(rendered.count("Escuchar noticia"), 20)
+        from scripts.prepare_site import has_complete_audio
+        full_count=sum(has_complete_audio(item) for item in current)
+        self.assertEqual(rendered.count('data-tts-full="true"'), full_count)
+        self.assertEqual(rendered.count('data-tts-full="false"'), 10-full_count)
         for item in current:
             self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 130)
             self.assertLessEqual(len(item["audioFullTextEs"].split()), 250)
-        self.assertEqual(rendered.count('data-tts-full="true"'), 0)
+            self.assertIn('data-tts-id="'+item["id"]+'" data-tts-full="'+
+                          ('true' if has_complete_audio(item) else 'false')+'"', rendered)
         self.assertEqual(rendered.count('class="source"'), 10)
         self.assertNotIn("Abrir para escuchar completo", rendered)
         self.assertNotIn("Escuchar versión ampliada", rendered)
@@ -91,6 +94,12 @@ class NewsAudioUITests(unittest.TestCase):
         from scripts.prepare_site import article_original_authorized
         first = next(n for n in self.data["news"] if n.get("sourceLanguage")=="en" and n.get("verification")=="editorial_verified")
         candidate = deepcopy(first)
+        # Aislar la licencia de reproducción de terceros: esta prueba no usa
+        # el reportaje íntegro propio, que es una vía independiente y legítima.
+        for key in ("originalArticleTextEs","originalArticleByline",
+                    "originalArticleReviewed","originalArticleSourceUrls",
+                    "originalArticleIsPublisherVerbatim","originalArticleReviewStatus"):
+            candidate.pop(key, None)
         candidate["fullArticleTextEs"]="Texto íntegro permitido por la fuente. "*25
         candidate["fullArticleIsVerbatimSource"]=True
         candidate["fullArticleRightsVerified"]=True
