@@ -1,0 +1,91 @@
+{
+  "editionDate": "2026-11-06",
+  "slot": "13:30",
+  "timezone": "America/Bogota",
+  "editorialType": "seguimiento",
+  "morningStoryIdsExcluded": 10,
+  "editionTitle": "ORBIUNO · Actualización",
+  "format": "portada + dos bloques de cuatro titulares, voz femenina original, sin subtítulos",
+  "items": [
+    {
+      "id": "sel-chile",
+      "category": "DEPORTES",
+      "title": "Colombia anuncia su nómina ante Chile",
+      "source": "Caracol Radio",
+      "url": "https://caracol.com.co/2026/11/06/seleccion-colombia-con-varios-sorpresas-nestor-lorenzo-dio-a-conocer-nomina-para-juegos-ante-chile/",
+      "speech": "Caracol Radio informa que Néstor Lorenzo convocó a veintiséis futbolistas para los amistosos contra Chile. Camilo Mena es una de las sorpresas."
+    },
+    {
+      "id": "chips-ia",
+      "category": "TECNOLOGÍA E IA",
+      "title": "La IA abre otra carrera: cómo unir los chips",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/ai-boom-turns-chip-packaging-into-next-battleground-semiconductors-2026-11-06/",
+      "speech": "Reuters explica que la expansión de la inteligencia artificial impulsa inversiones millonarias en el empaquetado avanzado de chips, esencial para mover datos más rápido."
+    },
+    {
+      "id": "maluma-gira",
+      "category": "ENTRETENIMIENTO",
+      "title": "Maluma anuncia gira por más de 60 ciudades",
+      "source": "Caracol Radio",
+      "url": "https://caracol.com.co/2026/11/06/maluma-anuncio-su-nueva-gira-loco-x-volver-world-tour-2027-en-que-ciudades-se-presentara/",
+      "speech": "Caracol Radio informa que Maluma anunció su gira internacional Loco por Volver. La primera presentación está prevista para el cinco de febrero en Bogotá.",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maluma%20at%20Ahoy%20Rotterdam%20with%20%2BPretty%20%2BDirty%20World%20Tour%20in%20March%202025.jpg?width=800",
+        "page": "https://commons.wikimedia.org/wiki/File:Maluma_at_Ahoy_Rotterdam_with_%2BPretty_%2BDirty_World_Tour_in_March_2025.jpg",
+        "credit": "JaflaumS05",
+        "license": "CC BY 4.0",
+        "caption": "Maluma, foto de archivo 2025"
+      }
+    },
+    {
+      "id": "narino-ia",
+      "category": "COLOMBIA",
+      "title": "Nariño impulsa usos prácticos de la IA",
+      "source": "Gobernación de Nariño",
+      "url": "https://narino.gov.co/noticias/narino-realizara-la-cumbre-tecnologica-ia-2026-los-dias-5-y-6-de-noviembre-en-pasto/",
+      "speech": "La Gobernación de Nariño desarrolla en Pasto una cumbre sobre inteligencia artificial aplicada a salud, análisis geoespacial y servicios a la ciudadanía."
+    },
+    {
+      "id": "stranger",
+      "category": "SERIES",
+      "title": "Stranger Things prepara una nueva serie",
+      "source": "Caracol Radio",
+      "url": "https://caracol.com.co/2026/11/06/stranger-things-anuncio-su-regreso-con-una-nueva-serie-ambientada-en-1955-como-se-llamara/",
+      "speech": "Caracol Radio señala que Netflix prepara una nueva historia del universo Stranger Things. Estará ambientada en mil novecientos cincuenta y cinco y se prevé para dos mil veintiocho."
+    },
+    {
+      "id": "clima",
+      "category": "MUNDO Y AMBIENTE",
+      "title": "Siguen vigentes muchas metas climáticas",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/environment/net-zero-commitments-remained-largely-intact-in-2026-researchers-say-2026-11-06/",
+      "speech": "Reuters reporta que, según investigadores, buena parte de los compromisos de emisiones netas cero se mantuvo durante dos mil veintiséis pese a las tensiones mundiales."
+    },
+    {
+      "id": "juanes",
+      "category": "MÚSICA",
+      "title": "Juanes celebra 25 años de trayectoria",
+      "source": "Caracol Radio",
+      "url": "https://caracol.com.co/2026/11/06/juanes-celebra-25-anos-de-carrera-con-un-album-que-reune-sus-mayores-exitos-que-canciones-incluye/",
+      "speech": "Caracol Radio informa que Juanes lanzó una recopilación de veinticinco canciones por sus veinticinco años de carrera. Incluye La Camisa Negra y A Dios Le Pido.",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juanes%20by%20Luz%20V%20%28cropped%20version%29.png?width=800",
+        "page": "https://commons.wikimedia.org/wiki/File:Juanes_by_Luz_V_(cropped_version).png",
+        "credit": "Luz V",
+        "license": "CC BY 2.0",
+        "caption": "Juanes, fotografía de archivo"
+      }
+    },
+    {
+      "id": "nasa-sorpresa",
+      "category": "ORBIUNO TE SORPRENDE",
+      "title": "La NASA presenta su avión X-70 Fractal",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+      "speech": "Y en ORBIUNO te sorprende: la NASA presentó el avión X setenta Fractal, diseñado para cambiar de configuración entre pruebas. Espera su primer vuelo bajo la agencia dentro de dos años."
+    }
+  ],
+  "intro": "Bienvenidos a ORBIUNO. Viernes seis de noviembre de dos mil veintiséis, edición de la una y treinta. Estas son ocho novedades de Colombia y el mundo, sin repetir el boletín de la mañana.",
+  "outro": "Escucha el desarrollo de cada noticia y consulta las fuentes originales en colombia guion al guion día punto pages punto dev. Entra desde arroba resumen punto noticias."
+}
