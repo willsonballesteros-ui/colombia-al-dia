@@ -10834,10 +10834,10 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-06T11:21-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-06T11:27-05:00",
   "lastNewSourceAtBogota": "2026-11-06T11:21-05:00",
-  "autoSyncOkSources": 6,
-  "autoSyncFailedSources": 0,
+  "autoSyncOkSources": 1,
+  "autoSyncFailedSources": 5,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
   "editorialFormat": "Portada con diez titulares y una noticia por lámina.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
