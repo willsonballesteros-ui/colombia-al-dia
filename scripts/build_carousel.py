@@ -87,6 +87,32 @@ def verified_photo(note):
     return path if path.is_file() and path.suffix.lower() in (".png",".jpg",".jpeg",".webp") else None
 
 
+def licensed_image(note):
+    """Fotografías documentadas: archivo local o Wikimedia Commons con licencia y crédito."""
+    if not image_verified(note):
+        return None
+    local=verified_photo(note)
+    try:
+        if local:
+            with Image.open(local) as original:
+                return original.convert("RGB").copy()
+        u=str(note.get("imageUrl",""))
+        p=urlsplit(u)
+        if p.scheme!="https" or p.hostname!="commons.wikimedia.org" or not p.path.startswith("/wiki/Special:FilePath/"):
+            return None
+        req=Request(u,headers={"User-Agent":"ORBIUNO-newsroom/1.0 (editorial image with documented credit)","Accept":"image/avif,image/webp,image/png,image/jpeg"})
+        with urlopen(req,timeout=7) as response:
+            content=response.read(4_000_001)
+        if len(content)>4_000_000:
+            return None
+        with Image.open(io.BytesIO(content)) as original:
+            if original.width*original.height>22_000_000:
+                return None
+            return original.convert("RGB").copy()
+    except (OSError,ValueError,TypeError):
+        return None
+
+
 def font_for_lines(draw, text, width, count, preferred=34, minimum=24, bold=False):
     """Ajustar fuente para que el resumen quede completo en dos líneas."""
     for size in range(preferred, minimum-1, -1):
@@ -218,18 +244,27 @@ def grouped_card(notes, first_number, group_index, total_groups, out):
         d.text((192,y+42),str(n.get("category","ACTUALIDAD")).upper()[:30],
                font=font(26,True),fill=accent)
         title=str(n.get("socialHeadline") or n["title"])
-        title_ft=font_for_lines(d,title,910,3,preferred=55,minimum=39,bold=True)
-        paragraph(d,title,89,y+119,title_ft,"#FFFFFF",885,3,8)
-        d.line((90,y+304,989,y+304),fill=accent,width=4)
+        photo=licensed_image(n)
+        if photo is not None:
+            im.paste(ImageOps.fit(photo,(286,168),method=Image.Resampling.LANCZOS),(704,y+122))
+            d=ImageDraw.Draw(im)
+            title_ft=font_for_lines(d,title,594,4,preferred=47,minimum=32,bold=True)
+            paragraph(d,title,89,y+119,title_ft,"#FFFFFF",595,4,7)
+            d.rounded_rectangle((703,y+270,994,y+307),radius=4,fill=col)
+            d.text((711,y+277),"FOTO DE ARCHIVO · CRÉDITO EN WEB",font=font(14,True),fill=accent)
+        else:
+            title_ft=font_for_lines(d,title,910,3,preferred=55,minimum=39,bold=True)
+            paragraph(d,title,89,y+119,title_ft,"#FFFFFF",885,3,8)
+        d.line((90,y+310,989,y+310),fill=accent,width=4)
         detail=str(n.get("socialDetail") or n.get("executiveSummary") or n.get("summary",""))
         ft=font_for_lines(d,detail,892,2,preferred=27,minimum=23)
         paragraph(d,detail,91,y+321,ft,light,883,2,7)
         ico=favicon(n)
         if ico is not None:
-            ico=ico.copy();ico.thumbnail((59,59),resample=Image.Resampling.LANCZOS)
-            d.rounded_rectangle((83,y+391,152,y+453),radius=11,fill="#FFFFFF")
-            im.paste(ico,(88,y+391),ico);d=ImageDraw.Draw(im)
-        d.text((166,y+406),"FUENTE: "+str(n["sources"][0]["name"])[:52],
+            ico=ico.copy();ico.thumbnail((72,72),resample=Image.Resampling.LANCZOS)
+            d.rounded_rectangle((82,y+378,163,y+455),radius=11,fill="#FFFFFF")
+            im.paste(ico,(87,y+381),ico);d=ImageDraw.Draw(im)
+        d.text((175,y+406),"FUENTE: "+str(n["sources"][0]["name"])[:52],
                font=font(23,True),fill=accent)
     d.rectangle((0,1227,W,H),fill="#121A35")
     d.rectangle((0,1227,W,1235),fill="#FF684E")
