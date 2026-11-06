@@ -1,0 +1,21 @@
+{
+  "editionDate": "2026-11-06",
+  "format": "compact_carousel",
+  "slides": [
+    "portada.png",
+    "grupo-01.png",
+    "grupo-02.png",
+    "grupo-03.png",
+    "grupo-04.png",
+    "grupo-05.png"
+  ],
+  "newsCounts": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "fullAudioInImages": false,
+  "note": "Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
+}
