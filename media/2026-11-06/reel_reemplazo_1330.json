@@ -1,0 +1,64 @@
+{
+  "editionDate": "2026-11-06",
+  "scheduledSlot": "13:30 America/Bogota",
+  "newsCount": 8,
+  "newsIds": [
+    "sel-chile",
+    "chips-ia",
+    "maluma-gira",
+    "narino-ia",
+    "stranger",
+    "clima",
+    "juanes",
+    "nasa-sorpresa"
+  ],
+  "format": "portada, 4 noticias, 4 noticias, cierre",
+  "newsRepeatedFromMorning": 0,
+  "subtitles": false,
+  "headlineSynchronized": true,
+  "voice": "ef_dora",
+  "voiceEngine": "kokoro-onnx",
+  "voiceSpeed": 1.25,
+  "durationSeconds": 85.08,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "photoCredits": [
+    {
+      "id": "maluma-gira",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maluma%20at%20Ahoy%20Rotterdam%20with%20%2BPretty%20%2BDirty%20World%20Tour%20in%20March%202025.jpg?width=800",
+      "page": "https://commons.wikimedia.org/wiki/File:Maluma_at_Ahoy_Rotterdam_with_%2BPretty_%2BDirty_World_Tour_in_March_2025.jpg",
+      "credit": "JaflaumS05",
+      "license": "CC BY 4.0",
+      "caption": "Maluma, foto de archivo 2025"
+    },
+    {
+      "id": "juanes",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juanes%20by%20Luz%20V%20%28cropped%20version%29.png?width=800",
+      "page": "https://commons.wikimedia.org/wiki/File:Juanes_by_Luz_V_(cropped_version).png",
+      "credit": "Luz V",
+      "license": "CC BY 2.0",
+      "caption": "Juanes, fotografía de archivo"
+    }
+  ],
+  "logosPresent": {
+    "Caracol Radio": true,
+    "Reuters": true,
+    "Gobernación de Nariño": true,
+    "NASA": true
+  },
+  "sourceUrls": [
+    "https://caracol.com.co/2026/11/06/seleccion-colombia-con-varios-sorpresas-nestor-lorenzo-dio-a-conocer-nomina-para-juegos-ante-chile/",
+    "https://www.reuters.com/world/asia-pacific/ai-boom-turns-chip-packaging-into-next-battleground-semiconductors-2026-11-06/",
+    "https://caracol.com.co/2026/11/06/maluma-anuncio-su-nueva-gira-loco-x-volver-world-tour-2027-en-que-ciudades-se-presentara/",
+    "https://narino.gov.co/noticias/narino-realizara-la-cumbre-tecnologica-ia-2026-los-dias-5-y-6-de-noviembre-en-pasto/",
+    "https://caracol.com.co/2026/11/06/stranger-things-anuncio-su-regreso-con-una-nueva-serie-ambientada-en-1955-como-se-llamara/",
+    "https://www.reuters.com/business/environment/net-zero-commitments-remained-largely-intact-in-2026-researchers-say-2026-11-06/",
+    "https://caracol.com.co/2026/11/06/juanes-celebra-25-anos-de-carrera-con-un-album-que-reune-sus-mayores-exitos-que-canciones-incluye/",
+    "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/"
+  ],
+  "audioStreamVerified": true,
+  "publicationVerified": false,
+  "fileName": "reel_reemplazo_1330.mp4"
+}
