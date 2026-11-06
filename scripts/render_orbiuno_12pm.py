@@ -177,7 +177,7 @@ def main():
       "-movflags","+faststart","-shortest",str(final))
   report=json.loads(cmd("ffprobe","-v","error","-show_entries","format=duration,size:stream=codec_type,codec_name,width,height","-of","json",str(final)))
   secs=float(report["format"]["duration"]);size=int(report["format"]["size"])
-  assert 58<=secs<=90 and size>100000, 'Duración incompatible con Reel corto; no publicar', (secs,size)
+  assert 58<=secs<=90 and size>100000, f"Duración incompatible con Reel corto; no publicar: {secs:.1f}s, {size} bytes"
   assert any(s.get("codec_type")=="audio" for s in report["streams"])
   assert any(s.get("codec_type")=="video" and s.get("width")==W and s.get("height")==H for s in report["streams"])
   metadata={"slot":"12:00 America/Bogota","editionDate":TODAY,"durationSeconds":round(secs,1),"newsCount":10,
