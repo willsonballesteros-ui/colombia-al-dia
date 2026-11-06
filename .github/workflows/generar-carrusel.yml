@@ -54,6 +54,8 @@ jobs:
           for file in slides:
               with Image.open(file) as im:
                   assert im.size==(1080,1350), (file,im.size)
+          with Image.open(p/"historia-orbiuno.png") as story:
+              assert story.size==(1080,1920), story.size
           assert (p/"instagram-caption.txt").is_file()
           assert (p/"instagram-primer-comentario.txt").is_file()
           manifest=json.loads((p/"instagram-publicacion.json").read_text(encoding="utf-8"))
@@ -77,7 +79,6 @@ jobs:
             # Eliminar exclusivamente recursos de los formatos obsoletos.
             DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
             git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
-              "media/$DAY/historia-orbiuno.png" \
               "media/$DAY/boletin-narrado.mp4" \
               "media/$DAY/boletin-narrado.json" \
               "media/$DAY/cierre.png" \
