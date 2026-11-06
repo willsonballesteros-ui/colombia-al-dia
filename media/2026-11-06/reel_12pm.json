@@ -1,13 +1,16 @@
 {
   "slot": "12:00 America/Bogota",
   "editionDate": "2026-11-06",
-  "durationSeconds": 713.2,
+  "durationSeconds": 83.9,
   "newsCount": 10,
   "intro": true,
   "closingCTA": "colombia-al-dia.pages.dev",
   "voice": "ef_dora",
+  "voiceEngine": "kokoro-onnx",
   "voiceRate": 1.25,
-  "fullNewsNarration": true,
+  "allTenNewsNarrated": true,
+  "fullReportsAvailableOnWeb": true,
+  "fullNewsNarration": false,
   "sourceLinks": [
     "https://www.reuters.com/world/asia-pacific/north-koreas-army-world-class-hackers-is-secret-weapon-that-took-down-binance-2026-11-06/",
     "https://caracol.com.co/2026/11/05/armada-incauto-104-armas-de-guerra-en-el-caribe-colombiano-hay-cinco-capturados/",
