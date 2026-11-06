@@ -1,0 +1,25 @@
+name: ORBIUNO - Validar MP4 portada con voz 18h
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/check-portada-voz-18h.yml']
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Esperar MP4 desde Cloudflare
+        run: |
+          set -e
+          URL='https://colombia-al-dia.pages.dev/media/2026-11-06/reel_18pm_voz_sobre_portada.mp4'
+          for i in $(seq 1 12); do
+            curl -sSLI --max-time 15 "$URL" -o /tmp/headers
+            if grep -iq 'content-type: video/mp4' /tmp/headers; then
+              echo 'REEL_FINAL_PUBLICO'
+              grep -iE '^HTTP/|content-type:|etag:' /tmp/headers
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'REEL_FINAL_NO_DISPONIBLE'
+          exit 1
