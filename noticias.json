@@ -1036,7 +1036,15 @@
       "audioEditorialSource": "Redacción ORBIUNO. Síntesis original basada en Caracol Radio.",
       "sourceLanguage": "es",
       "sourcePublishedAtBogota": "2026-11-06T10:12:00-05:00",
-      "editorialNote": "Nueva selección de mediodía; fuente original enlazada. Imágenes de terceros no reutilizadas."
+      "editorialNote": "Nueva selección de mediodía; fuente original enlazada. Imágenes de terceros no reutilizadas.",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maluma_concert.jpg?width=500",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "Badbunny35",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Maluma_concert.jpg",
+      "imageAlt": "Maluma en concierto durante la gira Don Juan de 2023",
+      "imageCaption": "Archivo (2023): Maluma en concierto; fotografía de referencia"
     },
     {
       "id": "rss-d37d911a93bc59f0",
@@ -1623,7 +1631,15 @@
       "originalArticleReviewed": true,
       "originalArticleReviewStatus": "verificado_con_fuente",
       "originalArticleIsPublisherVerbatim": false,
-      "editorialVerifiedAtBogota": "2026-11-06"
+      "editorialVerifiedAtBogota": "2026-11-06",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PO1_3369%20%2852470342437%29.jpg?width=500",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "Piaras Ó Mídheach / Web Summit",
+      "imageLicense": "CC BY 2.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:PO1_3369_(52470342437).jpg",
+      "imageAlt": "Fotografía de archivo de Changpeng Zhao, cofundador de Binance, en un evento de 2022",
+      "imageCaption": "Archivo (2022): cofundador de Binance; no muestra el incidente investigado"
     },
     {
       "id": "orbiuno-20261106-am-02",
@@ -1875,7 +1891,15 @@
       "originalArticleReviewed": true,
       "originalArticleReviewStatus": "verificado_con_fuente",
       "originalArticleIsPublisherVerbatim": false,
-      "editorialVerifiedAtBogota": "2026-11-06"
+      "editorialVerifiedAtBogota": "2026-11-06",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg?width=500",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "TechCrunch",
+      "imageLicense": "CC BY 2.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg",
+      "imageAlt": "Dario Amodei, directivo de Anthropic, durante TechCrunch Disrupt 2023",
+      "imageCaption": "Archivo (2023): directivo de Anthropic; imagen contextual"
     },
     {
       "id": "orbiuno-20261106-am-08",
