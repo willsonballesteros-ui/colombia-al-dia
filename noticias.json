@@ -1,10 +1,370 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-05",
+  "editionDate": "2026-11-06",
   "editedAtBogota": "2026-11-05 17:28",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261106-am-01",
+      "date": "2026-11-06",
+      "category": "Tecnología",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Reuters revela cómo opera la red norcoreana vinculada al ataque a Binance",
+      "socialHeadline": "Hackers de Corea del Norte: robo de US$6.300 millones",
+      "socialDetail": "Reuters detalla cómo se selecciona a jóvenes y se emplea IA en operaciones cibernéticas.",
+      "summary": "Reuters documentó el sistema de entrenamiento y recompensas de hackers norcoreanos. El FBI y Binance atribuyen a Corea del Norte el ataque que permitió robar US$6.300 millones; Pionyang niega su responsabilidad.",
+      "executiveSummary": "Reuters detalla cómo se selecciona a jóvenes y se emplea IA en operaciones cibernéticas.",
+      "why": "El caso revela cómo el cibercrimen respaldado por un Estado puede afectar plataformas financieras globales.",
+      "next": "Seguir las investigaciones técnicas, los procesos de recuperación de fondos y la respuesta de las compañías afectadas.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/asia-pacific/north-koreas-army-world-class-hackers-is-secret-weapon-that-took-down-binance-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 1,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Una investigación de Reuters publicada este viernes reconstruye cómo Corea del Norte selecciona, forma y recompensa a especialistas informáticos que terminan participando en operaciones cibernéticas. El reportaje se conoce después del ataque contra la plataforma de criptomonedas Binance, que, según la información de la agencia, dejó un robo de seis mil trescientos millones de dólares. El FBI y Binance atribuyeron la operación a actores norcoreanos; el Gobierno de Pionyang rechazó esa acusación.\n\nDe acuerdo con testimonios recogidos por Reuters, el programa comienza desde edades escolares. Cada año se elige a cerca de doscientos estudiantes con habilidades destacadas para formarlos en ciencias de la computación. Un grupo más reducido ingresa posteriormente a unidades especializadas. Las fuentes consultadas describen incentivos económicos, viviendas y posibilidades de ascenso social para quienes obtienen resultados. También mencionan exigentes jornadas de trabajo y vigilancia.\n\nLa investigación señala el uso de herramientas de inteligencia artificial en tareas de programación, creación de identidades y operaciones digitales. Binance afirmó que los atacantes recurrieron a una falsa entrevista laboral y programas ocultos para comprometer equipos. Son detalles reportados por las fuentes citadas, no instrucciones para reproducir el ataque. La información completa y las precisiones de atribución están disponibles en Reuters.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 199,
+      "originalArticleTextEs": "Una investigación de Reuters publicada este viernes reconstruye cómo Corea del Norte selecciona, forma y recompensa a especialistas informáticos que terminan participando en operaciones cibernéticas. El reportaje se conoce después del ataque contra la plataforma de criptomonedas Binance, que, según la información de la agencia, dejó un robo de seis mil trescientos millones de dólares. El FBI y Binance atribuyeron la operación a actores norcoreanos; el Gobierno de Pionyang rechazó esa acusación.\n\nDe acuerdo con testimonios recogidos por Reuters, el programa comienza desde edades escolares. Cada año se elige a cerca de doscientos estudiantes con habilidades destacadas para formarlos en ciencias de la computación. Un grupo más reducido ingresa posteriormente a unidades especializadas. Las fuentes consultadas describen incentivos económicos, viviendas y posibilidades de ascenso social para quienes obtienen resultados. También mencionan exigentes jornadas de trabajo y vigilancia.\n\nLa investigación señala el uso de herramientas de inteligencia artificial en tareas de programación, creación de identidades y operaciones digitales. Binance afirmó que los atacantes recurrieron a una falsa entrevista laboral y programas ocultos para comprometer equipos. Son detalles reportados por las fuentes citadas, no instrucciones para reproducir el ataque. La información completa y las precisiones de atribución están disponibles en Reuters.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/north-koreas-army-world-class-hackers-is-secret-weapon-that-took-down-binance-2026-11-06/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-02",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Armada incauta 104 armas en el Caribe y captura a cinco personas",
+      "socialHeadline": "104 armas de guerra decomisadas en el Caribe",
+      "socialDetail": "La Armada interceptó una lancha Go Fast: 69 fusiles, 30 pistolas, tres lanzagranadas y dos ametralladoras.",
+      "summary": "La Armada decomisó 104 armas de fuego transportadas en una lancha tipo Go Fast en aguas del Caribe y capturó a cinco personas. El posible destinatario del arsenal continúa bajo investigación.",
+      "executiveSummary": "La Armada interceptó una lancha Go Fast: 69 fusiles, 30 pistolas, tres lanzagranadas y dos ametralladoras.",
+      "why": "La cantidad y características del armamento convierten el procedimiento en un hecho relevante para la seguridad regional.",
+      "next": "Las autoridades deben determinar la procedencia del material, su destino y las responsabilidades de los capturados.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/05/armada-incauto-104-armas-de-guerra-en-el-caribe-colombiano-hay-cinco-capturados/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 2,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "La Armada Nacional reportó la incautación de ciento cuatro armas de fuego de guerra durante una operación de interdicción marítima en el Caribe colombiano. De acuerdo con la información divulgada por Caracol Radio, el armamento era transportado en una embarcación tipo Go Fast. Cinco personas fueron capturadas en el procedimiento: cuatro ciudadanos colombianos y uno de nacionalidad hondureña. Las capturas y el material incautado quedaron a disposición de las autoridades competentes.\n\nEl reporte describe un arsenal integrado por sesenta y nueve fusiles, treinta pistolas, tres lanzagranadas y dos ametralladoras. La intervención de unidades de la Fuerza Naval del Caribe se realizó el cuatro de noviembre y su resultado fue presentado públicamente el día siguiente. El presidente de Colombia calificó el decomiso como una operación de magnitud poco habitual, en atención al número y al tipo de armas transportadas.\n\nSegún la información preliminar de inteligencia citada por el Gobierno, el cargamento posiblemente se dirigía a las Autodefensas Conquistadoras de la Sierra Nevada. Ese destino no ha sido establecido como conclusión judicial. Los investigadores deberán verificar la procedencia del arsenal, la ruta prevista y la eventual participación de redes de tráfico. ORBIUNO atribuye estos datos a Caracol Radio y distingue los hechos confirmados de las hipótesis aún investigadas.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 206,
+      "originalArticleTextEs": "La Armada Nacional reportó la incautación de ciento cuatro armas de fuego de guerra durante una operación de interdicción marítima en el Caribe colombiano. De acuerdo con la información divulgada por Caracol Radio, el armamento era transportado en una embarcación tipo Go Fast. Cinco personas fueron capturadas en el procedimiento: cuatro ciudadanos colombianos y uno de nacionalidad hondureña. Las capturas y el material incautado quedaron a disposición de las autoridades competentes.\n\nEl reporte describe un arsenal integrado por sesenta y nueve fusiles, treinta pistolas, tres lanzagranadas y dos ametralladoras. La intervención de unidades de la Fuerza Naval del Caribe se realizó el cuatro de noviembre y su resultado fue presentado públicamente el día siguiente. El presidente de Colombia calificó el decomiso como una operación de magnitud poco habitual, en atención al número y al tipo de armas transportadas.\n\nSegún la información preliminar de inteligencia citada por el Gobierno, el cargamento posiblemente se dirigía a las Autodefensas Conquistadoras de la Sierra Nevada. Ese destino no ha sido establecido como conclusión judicial. Los investigadores deberán verificar la procedencia del arsenal, la ruta prevista y la eventual participación de redes de tráfico. ORBIUNO atribuye estos datos a Caracol Radio y distingue los hechos confirmados de las hipótesis aún investigadas.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/05/armada-incauto-104-armas-de-guerra-en-el-caribe-colombiano-hay-cinco-capturados/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-03",
+      "date": "2026-11-06",
+      "category": "Economía",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Banco de la República sube al 7,1 % su previsión de inflación para 2026",
+      "socialHeadline": "Inflación podría cerrar 2026 en 7,1 %",
+      "socialDetail": "El nuevo pronóstico del Banco de la República supera la estimación anterior de 6,9 %.",
+      "summary": "El Banco de la República revisó su previsión de inflación de cierre de 2026 desde 6,9 % hasta 7,1 %. Señaló riesgos relacionados con El Niño, alimentos y precios regulados.",
+      "executiveSummary": "El nuevo pronóstico del Banco de la República supera la estimación anterior de 6,9 %.",
+      "why": "La inflación afecta el costo de vida, las decisiones de ahorro y las perspectivas para las tasas de interés.",
+      "next": "El dato es una proyección sujeta a incertidumbre, no la inflación anual ya observada. Se esperan nuevas decisiones de política monetaria.",
+      "sources": [
+        {
+          "name": "La República",
+          "url": "https://www.larepublica.co/economia/emisor-actualizo-al-alza-su-proyeccion-de-inflacion-y-preve-que-cerrara-el-ano-en-7-1-4518800"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 3,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El equipo técnico del Banco de la República elevó su pronóstico de inflación para el cierre de dos mil veintiséis. La nueva estimación es de siete coma uno por ciento, frente al seis coma nueve por ciento previsto anteriormente. La República informó que el ajuste aparece en el Informe de Política Monetaria del Emisor. Se trata de una previsión económica y no de la medición definitiva que conocerá el país al terminar diciembre.\n\nEl Banco Central relaciona parte de la revisión con los posibles efectos del fenómeno de El Niño sobre los alimentos y sobre ciertos precios regulados. El informe también reconoce factores de incertidumbre, entre ellos la duración de las condiciones climáticas, los cambios de política fiscal, los precios internacionales de la energía y el conflicto en Medio Oriente. La meta de inflación del Banco de la República continúa siendo del tres por ciento.\n\nAnalistas consultados por La República describen un escenario complejo para las próximas decisiones sobre las tasas de interés. Algunos consideran que aún podría requerirse un ajuste, mientras otros destacan el efecto que tasas más elevadas tendrían sobre el crecimiento y el crédito. Ninguna de esas posiciones constituye por sí sola una decisión oficial. La evolución real de los precios y los próximos comunicados de la Junta permitirán comparar el pronóstico con los resultados observados.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 219,
+      "originalArticleTextEs": "El equipo técnico del Banco de la República elevó su pronóstico de inflación para el cierre de dos mil veintiséis. La nueva estimación es de siete coma uno por ciento, frente al seis coma nueve por ciento previsto anteriormente. La República informó que el ajuste aparece en el Informe de Política Monetaria del Emisor. Se trata de una previsión económica y no de la medición definitiva que conocerá el país al terminar diciembre.\n\nEl Banco Central relaciona parte de la revisión con los posibles efectos del fenómeno de El Niño sobre los alimentos y sobre ciertos precios regulados. El informe también reconoce factores de incertidumbre, entre ellos la duración de las condiciones climáticas, los cambios de política fiscal, los precios internacionales de la energía y el conflicto en Medio Oriente. La meta de inflación del Banco de la República continúa siendo del tres por ciento.\n\nAnalistas consultados por La República describen un escenario complejo para las próximas decisiones sobre las tasas de interés. Algunos consideran que aún podría requerirse un ajuste, mientras otros destacan el efecto que tasas más elevadas tendrían sobre el crecimiento y el crédito. Ninguna de esas posiciones constituye por sí sola una decisión oficial. La evolución real de los precios y los próximos comunicados de la Junta permitirán comparar el pronóstico con los resultados observados.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.larepublica.co/economia/emisor-actualizo-al-alza-su-proyeccion-de-inflacion-y-preve-que-cerrara-el-ano-en-7-1-4518800"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-04",
+      "date": "2026-11-06",
+      "category": "Deportes",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Jhon Arias marca dos goles en el 6-1 de Palmeiras contra Remo",
+      "socialHeadline": "Jhon Arias brilla: doblete en solo 14 minutos",
+      "socialDetail": "El colombiano abrió el marcador al minuto 4 y volvió a marcar al 14 en la victoria 6-1.",
+      "summary": "Jhon Arias anotó dos veces en los primeros catorce minutos del triunfo de Palmeiras por 6-1 frente a Remo. El delantero colombiano fue uno de los protagonistas del partido.",
+      "executiveSummary": "El colombiano abrió el marcador al minuto 4 y volvió a marcar al 14 en la victoria 6-1.",
+      "why": "La actuación del futbolista colombiano destaca en la jornada brasileña y mantiene la atención de los seguidores de la Selección Colombia.",
+      "next": "Palmeiras continuará su calendario del torneo brasileño y Arias podrá seguir sumando minutos y actuaciones destacadas.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/06/jhon-arias-se-reporto-con-doblete-en-la-goleada-de-palmeiras-6-1-sobre-remo/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 4,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El atacante colombiano Jhon Arias fue protagonista de una goleada de Palmeiras frente a Remo en el campeonato brasileño. El resultado final fue seis goles contra uno y el jugador de la Selección Colombia convirtió dos tantos antes de que se cumpliera el primer cuarto de hora del partido. Caracol Radio documentó las acciones principales del encuentro y el desempeño del delantero.\n\nArias abrió el marcador en el minuto cuatro después de aprovechar una recuperación de balón en campo rival. Entró al área, superó al arquero Marcelo Rangel y definió el primer gol. Diez minutos después, en el minuto catorce, volvió a marcar tras una asistencia de Khellven. Su doblete permitió a Palmeiras tomar una ventaja temprana y orientar el desarrollo del compromiso.\n\nMaurício amplió la cuenta al minuto veintiuno. Más tarde llegó un autogol de Marcelinho que llevó el marcador a cuatro por cero. Remo consiguió descontar antes del descanso con Zé Welison. En la segunda mitad marcaron José Manuel López y Felipe Anderson para cerrar el seis a uno. La victoria dejó como uno de sus momentos principales la eficacia del colombiano durante los primeros minutos. La información corresponde al relato deportivo publicado por Caracol Radio y no a una transmisión propia del partido.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 206,
+      "originalArticleTextEs": "El atacante colombiano Jhon Arias fue protagonista de una goleada de Palmeiras frente a Remo en el campeonato brasileño. El resultado final fue seis goles contra uno y el jugador de la Selección Colombia convirtió dos tantos antes de que se cumpliera el primer cuarto de hora del partido. Caracol Radio documentó las acciones principales del encuentro y el desempeño del delantero.\n\nArias abrió el marcador en el minuto cuatro después de aprovechar una recuperación de balón en campo rival. Entró al área, superó al arquero Marcelo Rangel y definió el primer gol. Diez minutos después, en el minuto catorce, volvió a marcar tras una asistencia de Khellven. Su doblete permitió a Palmeiras tomar una ventaja temprana y orientar el desarrollo del compromiso.\n\nMaurício amplió la cuenta al minuto veintiuno. Más tarde llegó un autogol de Marcelinho que llevó el marcador a cuatro por cero. Remo consiguió descontar antes del descanso con Zé Welison. En la segunda mitad marcaron José Manuel López y Felipe Anderson para cerrar el seis a uno. La victoria dejó como uno de sus momentos principales la eficacia del colombiano durante los primeros minutos. La información corresponde al relato deportivo publicado por Caracol Radio y no a una transmisión propia del partido.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/06/jhon-arias-se-reporto-con-doblete-en-la-goleada-de-palmeiras-6-1-sobre-remo/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-05",
+      "date": "2026-11-06",
+      "category": "Mundo",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "León XIV inicia una gira por Uruguay, Argentina y Perú",
+      "socialHeadline": "El papa vuelve a Suramérica tras una operación",
+      "socialDetail": "Su viaje abarca tres países hasta el 17 de noviembre, con decenas de actos y mensajes públicos.",
+      "summary": "El papa León XIV partió de Roma rumbo a Uruguay, Argentina y Perú. Reuters informa que es su primera gran gira por Suramérica después de una intervención pulmonar en octubre.",
+      "executiveSummary": "Su viaje abarca tres países hasta el 17 de noviembre, con decenas de actos y mensajes públicos.",
+      "why": "La visita reúne actividades religiosas y encuentros institucionales en una región donde el pontífice vivió durante décadas.",
+      "next": "Seguir las intervenciones oficiales del Vaticano y los actos previstos en las distintas ciudades.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/americas/pope-leo-starts-south-america-homecoming-tour-month-after-lung-surgery-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 5,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "El papa León catorce inició este viernes un viaje por Suramérica que comprende visitas a Uruguay, Argentina y Perú. Reuters informó que el pontífice partió del aeropuerto de Roma para una agenda que se extenderá hasta el diecisiete de noviembre. La gira se desarrolla después de una cirugía pulmonar a la que fue sometido en octubre. El Vaticano señaló que se encuentra recuperado y que no se han dispuesto precauciones médicas especiales para el recorrido.\n\nLa programación prevé desplazamientos por diez ciudades, numerosos encuentros religiosos y treinta y seis discursos. León catorce nació en Estados Unidos, pero vivió durante décadas en Perú y tiene una relación cercana con la región. Durante el viaje, además de las celebraciones religiosas, se esperan reuniones con autoridades políticas y visitas a comunidades locales.\n\nEl Vaticano indicó que sus mensajes abordarán asuntos como la inestabilidad regional, el tráfico de armas y la protección del medioambiente. Reuters también informa que se esperan concentraciones masivas de fieles en algunos de los encuentros públicos. Los detalles de horario y el contenido de los discursos deberán verificarse con las comunicaciones oficiales de cada jornada. ORBIUNO presenta este hecho a partir de la cobertura de Reuters y remite a su fuente original.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 202,
+      "originalArticleTextEs": "El papa León catorce inició este viernes un viaje por Suramérica que comprende visitas a Uruguay, Argentina y Perú. Reuters informó que el pontífice partió del aeropuerto de Roma para una agenda que se extenderá hasta el diecisiete de noviembre. La gira se desarrolla después de una cirugía pulmonar a la que fue sometido en octubre. El Vaticano señaló que se encuentra recuperado y que no se han dispuesto precauciones médicas especiales para el recorrido.\n\nLa programación prevé desplazamientos por diez ciudades, numerosos encuentros religiosos y treinta y seis discursos. León catorce nació en Estados Unidos, pero vivió durante décadas en Perú y tiene una relación cercana con la región. Durante el viaje, además de las celebraciones religiosas, se esperan reuniones con autoridades políticas y visitas a comunidades locales.\n\nEl Vaticano indicó que sus mensajes abordarán asuntos como la inestabilidad regional, el tráfico de armas y la protección del medioambiente. Reuters también informa que se esperan concentraciones masivas de fieles en algunos de los encuentros públicos. Los detalles de horario y el contenido de los discursos deberán verificarse con las comunicaciones oficiales de cada jornada. ORBIUNO presenta este hecho a partir de la cobertura de Reuters y remite a su fuente original.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/americas/pope-leo-starts-south-america-homecoming-tour-month-after-lung-surgery-2026-11-06/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-06",
+      "date": "2026-11-06",
+      "category": "Mundo",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Nuevos incidentes con buques elevan la tensión en el estrecho de Ormuz",
+      "socialHeadline": "Ormuz: barcos reportan nuevos ataques",
+      "socialDetail": "Autoridades marítimas registran al menos cinco incidentes con embarcaciones desde el 1 de noviembre.",
+      "summary": "Reuters informó de daños a nuevos petroleros en el estrecho de Ormuz. La agencia británica UKMTO registró al menos cinco incidentes marítimos desde el 1 de noviembre, en medio del conflicto regional.",
+      "executiveSummary": "Autoridades marítimas registran al menos cinco incidentes con embarcaciones desde el 1 de noviembre.",
+      "why": "Ormuz es una ruta decisiva para el comercio internacional de petróleo y gas, por lo que los incidentes afectan la seguridad marítima.",
+      "next": "Continuarán las investigaciones sobre cada incidente y las conversaciones diplomáticas mediadas por Qatar.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 6,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "La situación de seguridad marítima en el estrecho de Ormuz volvió a ocupar la atención internacional. Reuters reportó nuevos daños a petroleros en esta ruta, en el contexto de la guerra regional y de conversaciones diplomáticas sin acuerdo definitivo. De acuerdo con datos de la agencia británica de seguridad marítima UKMTO citados en el informe, al menos cinco embarcaciones notificaron incidentes desde el domingo primero de noviembre.\n\nEl reporte indica que autoridades iraníes hablaron de daños a tres petroleros durante el jueves. También se registró un episodio en el que una embarcación habría recibido impactos de proyectiles no identificados. Los mecanismos y responsables de cada incidente requieren comprobación independiente. La información debe distinguir entre comunicaciones de las autoridades involucradas, registros de seguridad marítima y hechos todavía bajo investigación.\n\nEl estrecho de Ormuz conecta una parte esencial de las exportaciones energéticas del Golfo con los mercados internacionales. Los riesgos para los barcos pueden tener repercusiones sobre rutas comerciales, costos de transporte y expectativas de precios. Reuters señala que mediadores de Qatar mantienen contactos relacionados con propuestas para superar las diferencias entre Estados Unidos e Irán, aunque no hay un avance decisivo anunciado. ORBIUNO continuará atribuyendo cada desarrollo a fuentes comprobables.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 199,
+      "originalArticleTextEs": "La situación de seguridad marítima en el estrecho de Ormuz volvió a ocupar la atención internacional. Reuters reportó nuevos daños a petroleros en esta ruta, en el contexto de la guerra regional y de conversaciones diplomáticas sin acuerdo definitivo. De acuerdo con datos de la agencia británica de seguridad marítima UKMTO citados en el informe, al menos cinco embarcaciones notificaron incidentes desde el domingo primero de noviembre.\n\nEl reporte indica que autoridades iraníes hablaron de daños a tres petroleros durante el jueves. También se registró un episodio en el que una embarcación habría recibido impactos de proyectiles no identificados. Los mecanismos y responsables de cada incidente requieren comprobación independiente. La información debe distinguir entre comunicaciones de las autoridades involucradas, registros de seguridad marítima y hechos todavía bajo investigación.\n\nEl estrecho de Ormuz conecta una parte esencial de las exportaciones energéticas del Golfo con los mercados internacionales. Los riesgos para los barcos pueden tener repercusiones sobre rutas comerciales, costos de transporte y expectativas de precios. Reuters señala que mediadores de Qatar mantienen contactos relacionados con propuestas para superar las diferencias entre Estados Unidos e Irán, aunque no hay un avance decisivo anunciado. ORBIUNO continuará atribuyendo cada desarrollo a fuentes comprobables.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-07",
+      "date": "2026-11-06",
+      "category": "Inteligencia artificial",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Anthropic enfrenta dudas de inversionistas antes de una posible salida a bolsa",
+      "socialHeadline": "Anthropic: dudas sobre su millonaria salida a bolsa",
+      "socialDetail": "Reuters reporta cuestionamientos a la valoración y al momento elegido para la oferta.",
+      "summary": "Potenciales inversionistas expresaron dudas sobre el calendario y la valoración de una posible oferta pública de Anthropic. Reuters señala incertidumbre por la caída de las acciones tecnológicas y la reacción contra proyectos de IA.",
+      "executiveSummary": "Reuters reporta cuestionamientos a la valoración y al momento elegido para la oferta.",
+      "why": "La eventual cotización de Anthropic sería una señal importante para la financiación y valoración del sector de inteligencia artificial.",
+      "next": "La salida a bolsa es una posibilidad bajo evaluación; no debe tratarse como una operación concluida.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say-2026-11-05/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 7,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "El mercado de inteligencia artificial sigue de cerca los planes de financiación de Anthropic, la empresa desarrolladora de Claude. Una investigación de Reuters publicada el cinco de noviembre recoge dudas de potenciales inversionistas sobre el momento elegido para una posible salida a bolsa y sobre el valor que podría asignarse a la compañía. Las conversaciones ocurren en un escenario de caídas en acciones tecnológicas y mayor escrutinio sobre los costos de la expansión de la inteligencia artificial.\n\nDe acuerdo con las fuentes consultadas por Reuters, algunos participantes del mercado consideran exigente la valoración discutida y quieren conocer mejor la evolución de ingresos, pérdidas y compromisos de inversión. También preocupa la oposición social y política que algunos proyectos de grandes centros de datos han despertado en distintas localidades. Estos factores podrían influir en el apetito de los inversionistas y en las condiciones finales de una oferta.\n\nLa noticia no significa que Anthropic haya cancelado la operación, fijado un precio definitivo o comenzado ya a cotizar. Se trata de escenarios y percepciones atribuidos a posibles compradores de acciones y analistas. La evolución del mercado y los anuncios corporativos serán determinantes para confirmar los siguientes pasos. ORBIUNO presenta una síntesis propia y remite a Reuters para la cobertura financiera original.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 207,
+      "originalArticleTextEs": "El mercado de inteligencia artificial sigue de cerca los planes de financiación de Anthropic, la empresa desarrolladora de Claude. Una investigación de Reuters publicada el cinco de noviembre recoge dudas de potenciales inversionistas sobre el momento elegido para una posible salida a bolsa y sobre el valor que podría asignarse a la compañía. Las conversaciones ocurren en un escenario de caídas en acciones tecnológicas y mayor escrutinio sobre los costos de la expansión de la inteligencia artificial.\n\nDe acuerdo con las fuentes consultadas por Reuters, algunos participantes del mercado consideran exigente la valoración discutida y quieren conocer mejor la evolución de ingresos, pérdidas y compromisos de inversión. También preocupa la oposición social y política que algunos proyectos de grandes centros de datos han despertado en distintas localidades. Estos factores podrían influir en el apetito de los inversionistas y en las condiciones finales de una oferta.\n\nLa noticia no significa que Anthropic haya cancelado la operación, fijado un precio definitivo o comenzado ya a cotizar. Se trata de escenarios y percepciones atribuidos a posibles compradores de acciones y analistas. La evolución del mercado y los anuncios corporativos serán determinantes para confirmar los siguientes pasos. ORBIUNO presenta una síntesis propia y remite a Reuters para la cobertura financiera original.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say-2026-11-05/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-08",
+      "date": "2026-11-06",
+      "category": "Economía global",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Caída de acciones tecnológicas golpea fondos de inversión y provoca recortes",
+      "socialHeadline": "Desplome tecnológico golpea a fondos globales",
+      "socialDetail": "Reuters documenta reducción de riesgos y equipos tras las pérdidas en los mercados.",
+      "summary": "Reuters informó que las caídas bursátiles lideradas por compañías tecnológicas borraron ganancias acumuladas de varios fondos de inversión y llevaron a gestores a reducir posiciones y equipos.",
+      "executiveSummary": "Reuters documenta reducción de riesgos y equipos tras las pérdidas en los mercados.",
+      "why": "Los movimientos muestran la sensibilidad del mercado a las inversiones en centros de datos, inteligencia artificial y sus expectativas de rentabilidad.",
+      "next": "Es necesario vigilar los balances y las medidas de gestión de riesgo de cada firma antes de extrapolar las pérdidas al conjunto del sistema.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/tech-selloff-wipes-out-hedge-fund-gains-prompting-risk-cuts-layoffs-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 8,
+      "sourceLanguage": "en",
+      "audioFullTextEs": "Las pérdidas en los mercados bursátiles internacionales afectan a fondos de inversión con exposición importante al sector tecnológico. Reuters informó este viernes que varios gestores han visto desaparecer ganancias acumuladas durante el año, mientras otros reducen posiciones de riesgo o ajustan el tamaño de sus equipos. El informe describe consecuencias de la reciente caída de acciones vinculadas a tecnología, computación en la nube y grandes inversiones de inteligencia artificial.\n\nLa agencia señala que la recuperación observada después de las elecciones legislativas estadounidenses duró poco tiempo. La sesión del jueves se sumó a un octubre difícil para ciertas estrategias de inversión. Como contexto, Reuters recuerda que el índice Nasdaq cien había caído seis coma seis por ciento durante octubre, mientras una estimación de JPMorgan situó la pérdida de los fondos globales en alrededor de tres por ciento ese mes.\n\nNo todos los fondos tienen la misma composición ni sufren idénticos resultados. Algunas firmas están recortando apalancamiento, revisando estrategias o eliminando equipos que acumulan pérdidas, de acuerdo con participantes del mercado consultados por Reuters. La noticia apunta a una etapa de mayor cautela frente al costo del capital y la rentabilidad esperada de las inversiones tecnológicas. Los movimientos futuros dependerán de resultados empresariales y condiciones financieras internacionales.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 205,
+      "originalArticleTextEs": "Las pérdidas en los mercados bursátiles internacionales afectan a fondos de inversión con exposición importante al sector tecnológico. Reuters informó este viernes que varios gestores han visto desaparecer ganancias acumuladas durante el año, mientras otros reducen posiciones de riesgo o ajustan el tamaño de sus equipos. El informe describe consecuencias de la reciente caída de acciones vinculadas a tecnología, computación en la nube y grandes inversiones de inteligencia artificial.\n\nLa agencia señala que la recuperación observada después de las elecciones legislativas estadounidenses duró poco tiempo. La sesión del jueves se sumó a un octubre difícil para ciertas estrategias de inversión. Como contexto, Reuters recuerda que el índice Nasdaq cien había caído seis coma seis por ciento durante octubre, mientras una estimación de JPMorgan situó la pérdida de los fondos globales en alrededor de tres por ciento ese mes.\n\nNo todos los fondos tienen la misma composición ni sufren idénticos resultados. Algunas firmas están recortando apalancamiento, revisando estrategias o eliminando equipos que acumulan pérdidas, de acuerdo con participantes del mercado consultados por Reuters. La noticia apunta a una etapa de mayor cautela frente al costo del capital y la rentabilidad esperada de las inversiones tecnológicas. Los movimientos futuros dependerán de resultados empresariales y condiciones financieras internacionales.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/china/tech-selloff-wipes-out-hedge-fund-gains-prompting-risk-cuts-layoffs-2026-11-06/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-09",
+      "date": "2026-11-06",
+      "category": "Justicia Colombia",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "Tribunal ordena la libertad del exministro Luis Fernando Velasco",
+      "socialHeadline": "Tribunal ordena libertad de Luis F. Velasco",
+      "socialDetail": "El proceso penal relacionado con la UNGRD continúa; la medida no equivale a una absolución.",
+      "summary": "El Tribunal Superior de Bogotá dispuso la libertad inmediata del exministro Luis Fernando Velasco, vinculado a una investigación relacionada con la UNGRD. La decisión permite que continúe el proceso en libertad.",
+      "executiveSummary": "El proceso penal relacionado con la UNGRD continúa; la medida no equivale a una absolución.",
+      "why": "El fallo tiene relevancia pública por tratarse de un exalto funcionario investigado en un caso de presunta corrupción.",
+      "next": "La Fiscalía y las demás partes continuarán las actuaciones correspondientes. La decisión no establece responsabilidad ni inocencia definitiva.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/05/tribunal-superior-de-bogota-otorgo-libertad-inmediata-al-exministro-del-interior-luis-f-velasco/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 9,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El Tribunal Superior de Bogotá ordenó la libertad inmediata del exministro del Interior Luis Fernando Velasco. La decisión fue comunicada el jueves cinco de noviembre, según la cobertura de Caracol Radio. Velasco estaba sometido a una medida de prisión domiciliaria dentro de un proceso por su presunta participación en hechos relacionados con el escándalo de la Unidad Nacional para la Gestión del Riesgo de Desastres, conocida como UNGRD.\n\nDe acuerdo con el reporte periodístico, el tribunal valoró que el exfuncionario ya no ocupa el cargo público que desempeñaba y que no había elementos suficientes para concluir que podría continuar utilizando una estructura estatal para cometer presuntas conductas ilícitas. También examinó las condiciones para mantener una medida restrictiva de la libertad mientras avanza el proceso penal.\n\nLa decisión sobre la medida de aseguramiento no constituye una sentencia absolutoria ni una declaración de responsabilidad penal. El expediente sigue sujeto a las actuaciones judiciales correspondientes y a las garantías de defensa y presunción de inocencia. ORBIUNO evita presentar una decisión procesal como un fallo sobre el fondo del caso. Las precisiones sobre las razones judiciales y los siguientes movimientos deben consultarse en las decisiones oficiales y en la información actualizada de Caracol Radio.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 200,
+      "originalArticleTextEs": "El Tribunal Superior de Bogotá ordenó la libertad inmediata del exministro del Interior Luis Fernando Velasco. La decisión fue comunicada el jueves cinco de noviembre, según la cobertura de Caracol Radio. Velasco estaba sometido a una medida de prisión domiciliaria dentro de un proceso por su presunta participación en hechos relacionados con el escándalo de la Unidad Nacional para la Gestión del Riesgo de Desastres, conocida como UNGRD.\n\nDe acuerdo con el reporte periodístico, el tribunal valoró que el exfuncionario ya no ocupa el cargo público que desempeñaba y que no había elementos suficientes para concluir que podría continuar utilizando una estructura estatal para cometer presuntas conductas ilícitas. También examinó las condiciones para mantener una medida restrictiva de la libertad mientras avanza el proceso penal.\n\nLa decisión sobre la medida de aseguramiento no constituye una sentencia absolutoria ni una declaración de responsabilidad penal. El expediente sigue sujeto a las actuaciones judiciales correspondientes y a las garantías de defensa y presunción de inocencia. ORBIUNO evita presentar una decisión procesal como un fallo sobre el fondo del caso. Las precisiones sobre las razones judiciales y los siguientes movimientos deben consultarse en las decisiones oficiales y en la información actualizada de Caracol Radio.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/05/tribunal-superior-de-bogota-otorgo-libertad-inmediata-al-exministro-del-interior-luis-f-velasco/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
+    {
+      "id": "orbiuno-20261106-am-10",
+      "date": "2026-11-06",
+      "category": "Energía Colombia",
+      "level": "Verificada editorialmente · Redacción propia ORBIUNO",
+      "title": "MinEnergía pide ahorrar electricidad y elevar las reservas de embalses",
+      "socialHeadline": "Piden ahorrar energía entre las 6 y las 9 p. m.",
+      "socialDetail": "El Gobierno busca elevar las reservas hídricas del 77,87 % al 80 % antes del verano.",
+      "summary": "El Ministerio de Minas y Energía pidió reducir el consumo eléctrico entre las 6 y las 9 de la noche y plantea elevar la reserva de los embalses al 80 % antes del verano.",
+      "executiveSummary": "El Gobierno busca elevar las reservas hídricas del 77,87 % al 80 % antes del verano.",
+      "why": "La medida preventiva busca aumentar la capacidad de respuesta del sistema eléctrico ante posibles efectos de El Niño.",
+      "next": "Las cifras y necesidades de ahorro podrán actualizarse de acuerdo con los niveles de embalses y el comportamiento de las lluvias.",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/06/minenergia-pide-ahorrar-energia-para-subir-el-nivel-de-los-embalses-al-80-antes-del-verano/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 10,
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El Ministerio de Minas y Energía invitó a los colombianos a reducir el consumo de electricidad durante las horas de mayor demanda, entre las seis y las nueve de la noche. Según informó Caracol Radio, la petición forma parte del Plan Energía Ya, presentado para fortalecer las reservas del sistema eléctrico ante los posibles efectos del fenómeno de El Niño y una temporada seca prolongada.\n\nLa ministra María Nohemí Arboleda indicó que el nivel de los embalses se sitúa cerca del setenta y siete coma ochenta y siete por ciento. La meta del Gobierno es elevarlo al menos al ochenta por ciento durante el período de lluvias disponible antes de que llegue la temporada de menor aporte hídrico. La funcionaria sostuvo que algunos ríos que alimentan las centrales están aportando menos agua de la esperada para esta época.\n\nEntre las recomendaciones se encuentran posponer el uso de lavadoras y planchas durante la franja de mayor consumo, apagar luces innecesarias y moderar la demanda de equipos eléctricos. El Gobierno también anunció medidas de vigilancia sobre la disponibilidad de generación térmica y el abastecimiento de combustible. La solicitud es preventiva y no debe presentarse como un anuncio de racionamiento. Los datos y recomendaciones fueron atribuidos a la información divulgada por el Ministerio a través de Caracol Radio.",
+      "audioEditorialSource": "ORBIUNO: narración propia en español a partir de la fuente original verificada.",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialReviewed": true,
+      "audioWordCount": 215,
+      "originalArticleTextEs": "El Ministerio de Minas y Energía invitó a los colombianos a reducir el consumo de electricidad durante las horas de mayor demanda, entre las seis y las nueve de la noche. Según informó Caracol Radio, la petición forma parte del Plan Energía Ya, presentado para fortalecer las reservas del sistema eléctrico ante los posibles efectos del fenómeno de El Niño y una temporada seca prolongada.\n\nLa ministra María Nohemí Arboleda indicó que el nivel de los embalses se sitúa cerca del setenta y siete coma ochenta y siete por ciento. La meta del Gobierno es elevarlo al menos al ochenta por ciento durante el período de lluvias disponible antes de que llegue la temporada de menor aporte hídrico. La funcionaria sostuvo que algunos ríos que alimentan las centrales están aportando menos agua de la esperada para esta época.\n\nEntre las recomendaciones se encuentran posponer el uso de lavadoras y planchas durante la franja de mayor consumo, apagar luces innecesarias y moderar la demanda de equipos eléctricos. El Gobierno también anunció medidas de vigilancia sobre la disponibilidad de generación térmica y el abastecimiento de combustible. La solicitud es preventiva y no debe presentarse como un anuncio de racionamiento. Los datos y recomendaciones fueron atribuidos a la información divulgada por el Ministerio a través de Caracol Radio.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/06/minenergia-pide-ahorrar-energia-para-subir-el-nivel-de-los-embalses-al-80-antes-del-verano/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "verificado_con_fuente",
+      "originalArticleIsPublisherVerbatim": false,
+      "editorialVerifiedAtBogota": "2026-11-06"
+    },
     {
       "id": "rss-640929fd48c1e183",
       "date": "2026-11-06",
@@ -10139,7 +10499,7 @@
   "lastNewSourceAtBogota": "2026-11-06T06:28-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición de las 18:00: diez noticias verificadas. Redacción propia. Carrusel sin narración; lectura en español disponible en la web.",
+  "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
   "editorialFormat": "Portada con diez titulares y una noticia por lámina.",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
@@ -10422,7 +10782,7 @@
       ]
     }
   ],
-  "editionSlot": "12m",
-  "openingScriptEs": "ORBIUNO, edición de mediodía del 5 de noviembre. Estas son nuestras diez noticias: Buscan a subteniente secuestrada en Saravena. El Dorado: explican la falla de visualización aérea. Exportaciones de septiembre crecieron 16,4 %. TRM de este jueves: $3.221,19 por dólar. Cortes de agua hoy en Bogotá y Soacha. Falsas amenazas alteran vuelos en Europa. Cumbre impulsa cooperación iberoamericana en IA. Hong Kong condena a Joshua Wong a diez años. Jurado declara culpable a Russell Brand. Cristiano Ronaldo anuncia su retiro de Portugal. Consulta las fuentes originales y escucha el desarrollo en colombia-al-dia.pages.dev.",
-  "editionLabel": "Edición de las 18:00"
+  "editionSlot": "08:00",
+  "openingScriptEs": "Buenos días. Son las ocho de la mañana de este viernes seis de noviembre. Esto es ORBIUNO. Hackers de Corea del Norte: robo de US$6.300 millones. 104 armas de guerra decomisadas en el Caribe. Inflación podría cerrar 2026 en 7,1 %. Jhon Arias brilla: doblete en solo 14 minutos. El papa vuelve a Suramérica tras una operación. Ormuz: barcos reportan nuevos ataques. Anthropic: dudas sobre su millonaria salida a bolsa. Desplome tecnológico golpea a fondos globales. Tribunal ordena libertad de Luis F. Velasco. Piden ahorrar energía entre las 6 y las 9 p. m.. Encuentra el desarrollo completo y las fuentes originales en colombia-al-dia.pages.dev.",
+  "editionLabel": "ORBIUNO · Viernes 6 de noviembre · 08:00 Bogotá"
 }
