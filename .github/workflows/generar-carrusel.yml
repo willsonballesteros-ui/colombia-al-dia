@@ -49,7 +49,7 @@ jobs:
           p=Path("media")/day
           manifest_compact=json.loads((p/"instagram-compacto.json").read_text(encoding="utf-8"))
           slides=[p/name for name in manifest_compact["slides"]]
-          assert len(slides) == 11
+          assert len(slides) == 6
           assert sum(manifest_compact["newsCounts"]) >= 1
           for file in slides:
               with Image.open(file) as im:
