@@ -286,6 +286,37 @@ def single_card(note,num,day,out):
     im.save(out,optimize=True)
 
 
+def story_card(day, news, out):
+    """Historia vertical de acceso a la web, sin fotos ficticias ni enlaces simulados."""
+    im=Image.new("RGB",(1080,1920),"#1B142C")
+    d=ImageDraw.Draw(im)
+    d.rectangle((0,0,1080,20),fill="#FFCF69")
+    d.text((68,70),"OU",font=font(66,True),fill="#FFD76A")
+    d.text((190,78),"ORBIUNO",font=font(62,True),fill="#FFFFFF")
+    d.text((70,165),"COLOMBIA AL DÍA  ·  NOTICIAS",font=font(25,True),fill="#7FE8D4")
+    d.text((70,270),"LAS NOTICIAS",font=font(74,True),fill="#FFFFFF")
+    d.text((70,370),"QUE TE INTERESAN",font=font(56,True),fill="#FFD76A")
+    topics=[
+        ("COLOMBIA  +  MUNDO","#FF82AA"),
+        ("ECONOMÍA  +  TECNOLOGÍA","#78E6D6"),
+        ("INTELIGENCIA ARTIFICIAL","#FFC266"),
+        ("DEPORTES  +  ACTUALIDAD","#D4B7FF")
+    ]
+    for idx,(label,color) in enumerate(topics):
+        y=570+idx*157
+        d.rounded_rectangle((68,y,1012,y+124),radius=19,fill="#30243E")
+        d.rounded_rectangle((68,y,84,y+124),radius=6,fill=color)
+        d.text((108,y+37),label,font=font(31,True),fill="#FFFFFF")
+    d.rounded_rectangle((65,1285,1015,1720),radius=31,fill="#FFF0BD")
+    d.text((106,1329),"ESCUCHA LA NOTICIA",font=font(50,True),fill="#241832")
+    d.text((106,1407),"QUE TÚ ELIJAS",font=font(54,True),fill="#241832")
+    d.text((106,1504),"ENLACE EN EL PERFIL  ↓",font=font(36,True),fill="#39274A")
+    d.text((106,1602),"colombia-al-dia.pages.dev",font=font(36,True),fill="#096C77")
+    d.text((74,1785),"@resumen.noticias",font=font(38,True),fill="#FFFFFF")
+    d.text((74,1845),"FUENTES Y ENLACES ORIGINALES EN LA WEB",font=font(21,True),fill="#B5A4D1")
+    im.save(out,optimize=True)
+
+
 def main():
     data=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=data["editionDate"]
@@ -299,6 +330,7 @@ def main():
             raise RuntimeError("Falta fuente HTTPS")
     out=ROOT/"media"/day;out.mkdir(parents=True,exist_ok=True)
     cover(day,news,out/"portada.png")
+    story_card(day,news,out/"historia-orbiuno.png")
     for i,n in enumerate(news,1):
         single_card(n,i,day,out/f"top10-{i:02d}.png")
     # Carrusel editorial con portada + cinco parejas (10 noticias).
