@@ -1,0 +1,236 @@
+{
+  "duration": 62.856,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 3.8625,
+      "head": "10 noticias para\ncerrar el día",
+      "source": "ORBIUNO",
+      "line": "Diez noticias para cerrar este cinco de noviembre."
+    },
+    {
+      "start": 3.8625,
+      "end": 8.025,
+      "head": "Nutresa adquiere\nPresto",
+      "source": "La República",
+      "line": "La República: Nutresa cerró la compra de Presto."
+    },
+    {
+      "start": 8.025,
+      "end": 12.375,
+      "head": "Davivienda integra\na Davibank",
+      "source": "La República",
+      "line": "También informa: Davivienda incorporó clientes de Davibank."
+    },
+    {
+      "start": 12.375,
+      "end": 18.825,
+      "head": "Dólar: promedio\n$3.228,19",
+      "source": "Noticias RCN",
+      "line": "Noticias RCN: el dólar promedió tres mil doscientos veintiocho pesos con diecinueve."
+    },
+    {
+      "start": 18.825,
+      "end": 23.95,
+      "head": "Respaldo al crédito\ndel Metro de Bogotá",
+      "source": "La República",
+      "line": "La República: una garantía respalda crédito para el Metro de Bogotá."
+    },
+    {
+      "start": 23.95,
+      "end": 28.8,
+      "head": "Cooperación en IA\ncon Corea",
+      "source": "Minciencias",
+      "line": "Minciencias propone cooperación con Corea en inteligencia artificial."
+    },
+    {
+      "start": 28.8,
+      "end": 33.0375,
+      "head": "Santiago Peña\npresenta su renuncia",
+      "source": "EFE",
+      "line": "EFE: Santiago Peña presentó su renuncia en Paraguay."
+    },
+    {
+      "start": 33.0375,
+      "end": 38.6125,
+      "head": "Israel: encargo\nde Gobierno el domingo",
+      "source": "EFE",
+      "line": "En Israel, EFE informa: Herzog encargará formar Gobierno el domingo."
+    },
+    {
+      "start": 38.6125,
+      "end": 45.875,
+      "head": "Caso Villavicencio:\nllamado a juicio",
+      "source": "EFE",
+      "line": "En Ecuador, EFE reporta juicio a José Serrano por el caso Villavicencio. No es una condena."
+    },
+    {
+      "start": 45.875,
+      "end": 50.4125,
+      "head": "Ucrania solicita\nequipos eléctricos",
+      "source": "EFE",
+      "line": "EFE: Zelenski pide equipos para reparar la red eléctrica."
+    },
+    {
+      "start": 50.4125,
+      "end": 55.775,
+      "head": "Europa y Latinoamérica:\nmás cooperación",
+      "source": "EFE",
+      "line": "EuroEFE: António Costa pide reforzar la cooperación con Latinoamérica."
+    },
+    {
+      "start": 55.775,
+      "end": 62.856,
+      "head": "Escúchalas completas\nen nuestra web",
+      "source": "ORBIUNO",
+      "line": "Escucha el desarrollo completo en nuestra web. Toca el enlace del perfil de resumen punto noticias."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.1,
+      "end": 2.325,
+      "text": "Diez noticias para cerrar este cinco"
+    },
+    {
+      "start": 2.325,
+      "end": 2.9875000000000003,
+      "text": "de noviembre."
+    },
+    {
+      "start": 3.8625,
+      "end": 6.175,
+      "text": "La República: Nutresa cerró la"
+    },
+    {
+      "start": 6.175,
+      "end": 7.1625,
+      "text": "compra de Presto."
+    },
+    {
+      "start": 8.025,
+      "end": 9.75,
+      "text": "También informa: Davivienda"
+    },
+    {
+      "start": 9.75,
+      "end": 11.6,
+      "text": "incorporó clientes de Davibank."
+    },
+    {
+      "start": 12.375,
+      "end": 15.3625,
+      "text": "Noticias RCN: el dólar promedió tres"
+    },
+    {
+      "start": 15.3625,
+      "end": 17.275,
+      "text": "mil doscientos veintiocho pesos con"
+    },
+    {
+      "start": 17.275,
+      "end": 17.975,
+      "text": "diecinueve."
+    },
+    {
+      "start": 18.825,
+      "end": 21.475,
+      "text": "La República: una garantía respalda"
+    },
+    {
+      "start": 21.475,
+      "end": 23.0625,
+      "text": "crédito para el Metro de Bogotá."
+    },
+    {
+      "start": 23.95,
+      "end": 25.9625,
+      "text": "Minciencias propone cooperación con"
+    },
+    {
+      "start": 25.9625,
+      "end": 27.975,
+      "text": "Corea en inteligencia artificial."
+    },
+    {
+      "start": 28.8,
+      "end": 31.025,
+      "text": "EFE: Santiago Peña presentó su"
+    },
+    {
+      "start": 31.025,
+      "end": 32.25,
+      "text": "renuncia en Paraguay."
+    },
+    {
+      "start": 33.0375,
+      "end": 35.6375,
+      "text": "En Israel, EFE informa: Herzog"
+    },
+    {
+      "start": 35.6375,
+      "end": 37.15,
+      "text": "encargará formar Gobierno el"
+    },
+    {
+      "start": 37.15,
+      "end": 37.7,
+      "text": "domingo."
+    },
+    {
+      "start": 38.6125,
+      "end": 40.8625,
+      "text": "En Ecuador, EFE reporta juicio a"
+    },
+    {
+      "start": 40.8625,
+      "end": 42.2,
+      "text": "José Serrano por el caso"
+    },
+    {
+      "start": 42.2,
+      "end": 45.025,
+      "text": "Villavicencio. No es una condena."
+    },
+    {
+      "start": 45.875,
+      "end": 48.1,
+      "text": "EFE: Zelenski pide equipos para"
+    },
+    {
+      "start": 48.1,
+      "end": 49.550000000000004,
+      "text": "reparar la red eléctrica."
+    },
+    {
+      "start": 50.4125,
+      "end": 53.075,
+      "text": "EuroEFE: António Costa pide reforzar"
+    },
+    {
+      "start": 53.075,
+      "end": 54.9125,
+      "text": "la cooperación con Latinoamérica."
+    },
+    {
+      "start": 55.775,
+      "end": 57.475,
+      "text": "Escucha el desarrollo completo en"
+    },
+    {
+      "start": 57.475,
+      "end": 59.9375,
+      "text": "nuestra web. Toca el enlace del"
+    },
+    {
+      "start": 59.9375,
+      "end": 62.0375,
+      "text": "perfil de resumen punto noticias."
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "rate": "+0%",
+  "listening_review": "not_performed",
+  "timing": "TTS word boundaries; all 122 words matched script",
+  "visual": "Editorial typography; no event photographs"
+}
