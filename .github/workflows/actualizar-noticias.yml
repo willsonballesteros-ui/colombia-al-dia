@@ -45,6 +45,9 @@ jobs:
       - name: Preparar narración propia ampliada en español
         run: python scripts/prepare_audio.py noticias.json
 
+      - name: Instalar codificador MP3 requerido por la voz
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Preparar la única voz de la web
         run: |
           python -m pip install kokoro-onnx==0.6.1 soundfile
