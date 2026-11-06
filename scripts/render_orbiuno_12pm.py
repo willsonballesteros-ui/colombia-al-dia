@@ -18,13 +18,8 @@ TODAY="2026-11-06"; OUT=ROOT/"media"/TODAY;OUT.mkdir(parents=True,exist_ok=True)
 FONT=Path("/usr/share/fonts/truetype/dejavu")
 W,H=720,1280
 THEMES=["#FF715B","#F2BD58","#57E0D3","#C9A7FF","#FF87B1"]
-INTRO=("Bienvenidos a ORBIUNO, Colombia al Día. Son las doce del mediodía del viernes seis de noviembre de dos mil veintiséis. "
-       "En esta edición: seguridad digital, armamento incautado, inflación, deporte, el papa en Suramérica, Ormuz, inteligencia artificial, Maluma, música viral y energía. "
-       "Estas son las diez noticias de Colombia y el mundo, con sus fuentes.")
-CLOSING=("Esto fue ORBIUNO, las noticias más importantes de Colombia y el mundo, en un solo lugar. "
-         "Para escuchar con más detalle cada reportaje y consultar las fuentes originales, visita nuestra página web. "
-         "Entra a arroba resumen punto noticias y toca el enlace de nuestro perfil. "
-         "colombia guion al guion dia punto pages punto dev. ¡Nos vemos en la próxima edición!")
+INTRO=("ORBIUNO, edición del mediodía. Hoy: ciberseguridad, Armada, inflación, deportes, visita papal, Ormuz, inteligencia artificial, Maluma, música viral y energía.")
+CLOSING=("Para escuchar cada reportaje completo y consultar sus fuentes, entra a colombia guion al guion día punto pages punto dev. Visita arroba resumen punto noticias y toca el enlace del perfil.")
 NEW=[
  {"id":"orbiuno-20261106-12m-maluma","title":"Maluma anuncia gira mundial 2027, con inicio en Bogotá",
   "category":"Farándula","priority":8,"date":TODAY,"verification":"editorial_verified",
@@ -47,6 +42,19 @@ NEW=[
   "El anuncio también ocurrió en vísperas de un concierto del cantante en Bogotá. "
   "Este reporte describe el anuncio y la repercusión cultural indicada por Caracol Radio; no atribuye cifras de reproducciones que no hayan sido verificadas.")}
 ]
+SHORT_COPY = {
+ "orbiuno-20261106-am-01": "Según Reuters, hackers entrenados por Corea del Norte están vinculados con ataques financieros. La agencia documentó su sistema de reclutamiento.",
+ "orbiuno-20261106-am-02": "Caracol Radio informa que la Armada incautó ciento cuatro armas en el Caribe y capturó a cinco personas. Investigan su destino.",
+ "orbiuno-20261106-am-03": "La República informa que el Banco de la República elevó a siete coma uno por ciento su previsión de inflación para este año.",
+ "orbiuno-20261106-am-04": "Caracol Radio destaca que Jhon Arias marcó dos goles en la victoria seis a uno de Palmeiras sobre Remo.",
+ "orbiuno-20261106-am-05": "Reuters informa que el papa León catorce comenzó una gira por Uruguay, Argentina y Perú, después de una intervención médica.",
+ "orbiuno-20261106-am-06": "Reuters reporta nuevos incidentes con petroleros en el estrecho de Ormuz. Sigue la preocupación por la seguridad marítima.",
+ "orbiuno-20261106-am-07": "Según Reuters, inversionistas cuestionan la valoración y el calendario de una posible salida a bolsa de Anthropic.",
+ "orbiuno-20261106-12m-maluma": "Caracol Radio confirma que Maluma anunció una gira por más de sesenta ciudades, que comenzará en Bogotá en febrero de dos mil veintisiete.",
+ "orbiuno-20261106-12m-bella-bonita": "Caracol Radio informa que Luis Alfonso y Los Dotores de la Carranga presentan una nueva versión de Bella y Bonita, popular en redes.",
+ "orbiuno-20261106-am-10": "Caracol Radio reporta que MinEnergía pidió ahorrar electricidad entre seis y nueve de la noche para elevar las reservas de los embalses."
+}
+APPROVED_VOICE = "ef_dora"
 def cmd(*args):
  return subprocess.run(args,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True).stdout
 def font(n,bold=False):
@@ -123,10 +131,10 @@ def main():
  db=json.loads((ROOT/"noticias.json").read_text(encoding="utf8"))
  news=sorted([x for x in db["news"] if x["date"]==TODAY and x.get("verification")=="editorial_verified"],key=lambda x:x.get("priority",999))
  assert len(news)==10 and all(n.get("audioFullTextEs") for n in news)
- news[7],news[8]=NEW
  assert len(news)==10 and len(set(n["id"] for n in news))==10
- manifest=json.loads((ROOT/"media/web-voice/manifest.json").read_text(encoding="utf8"))
- # Build exactly 12 narrated segments; the morning 8 contain the FULL source-backed web reports.
+ assert all(n["id"] in SHORT_COPY for n in news), "Falta locución verificada para una noticia"
+ # Prohibir audios heredados o sustituciones de Edge-TTS: toda la edición usa Kokoro ef_dora.
+ # Exactly 12 freshly synthesized Kokoro segments: short intro, 10 verified brief reports, web CTA.
  os.environ.setdefault("OMP_NUM_THREADS","2")
  options=ort.SessionOptions();options.intra_op_num_threads=2;options.inter_op_num_threads=1
  model=ort.InferenceSession("/tmp/kokoro-v1.0.onnx",sess_options=options,providers=["CPUExecutionProvider"])
@@ -135,19 +143,14 @@ def main():
   work=Path(workdir);tracks=[];sample_rate=24000
   for i,n in enumerate([{"id":"intro","audioFullTextEs":INTRO}]+news+[{"id":"outro","audioFullTextEs":CLOSING}]):
    wav=work/f"track_{i:02d}.wav"
-   item=manifest.get("items",{}).get(n["id"])
-   if item and i not in (0,11):
-    mp3=ROOT/item["url"].removeprefix("./")
-    if not mp3.is_file():raise RuntimeError(f"Falta MP3 {mp3}")
-    cmd("ffmpeg","-v","error","-y","-i",str(mp3),"-ar",str(sample_rate),"-ac","1",str(wav))
-   else:
-    body=n["audioFullTextEs"]
-    if i in (0,11):body=body
-    else:body=n["title"]+". Fuente: "+n["sources"][0]["name"]+". "+body
-    audio,sr=kokoro.create(body,"ef_dora",speed=1.25,lang="es",sentence_pause=.2,clause_pause=.1)
-    if not len(audio):raise RuntimeError("Sin voz: "+n["id"])
-    sf.write(wav,audio,sr)
-    if sr!=sample_rate:cmd("ffmpeg","-v","error","-y","-i",str(wav),"-ar",str(sample_rate),"-ac","1",str(work/f"res_{i}.wav"));wav=work/f"res_{i}.wav"
+   body=INTRO if i==0 else CLOSING if i==11 else SHORT_COPY[n["id"]]
+   audio,sr=kokoro.create(body,APPROVED_VOICE,speed=1.25,lang="es",sentence_pause=.1,clause_pause=.06)
+   if not len(audio):raise RuntimeError("Sin voz ef_dora: "+n["id"])
+   sf.write(wav,audio,sr)
+   if sr!=sample_rate:
+    converted=work/f"res_{i}.wav"
+    cmd("ffmpeg","-v","error","-y","-i",str(wav),"-ar",str(sample_rate),"-ac","1",str(converted))
+    wav=converted
    samples,sr=sf.read(wav,dtype="float32")
    if samples.ndim>1:samples=samples.mean(axis=1)
    assert sr==sample_rate and np.max(np.abs(samples))>0.01
@@ -174,12 +177,12 @@ def main():
       "-movflags","+faststart","-shortest",str(final))
   report=json.loads(cmd("ffprobe","-v","error","-show_entries","format=duration,size:stream=codec_type,codec_name,width,height","-of","json",str(final)))
   secs=float(report["format"]["duration"]);size=int(report["format"]["size"])
-  assert 135<=secs<=900 and size>100000, (secs,size)
+  assert 58<=secs<=90 and size>100000, 'Duración incompatible con Reel corto; no publicar', (secs,size)
   assert any(s.get("codec_type")=="audio" for s in report["streams"])
   assert any(s.get("codec_type")=="video" and s.get("width")==W and s.get("height")==H for s in report["streams"])
   metadata={"slot":"12:00 America/Bogota","editionDate":TODAY,"durationSeconds":round(secs,1),"newsCount":10,
-           "intro":True,"closingCTA":"colombia-al-dia.pages.dev","voice":"ef_dora","voiceRate":1.25,
-           "fullNewsNarration":True,"sourceLinks":[n["sources"][0]["url"] for n in news],
+           "intro":True,"closingCTA":"colombia-al-dia.pages.dev","voice":APPROVED_VOICE,"voiceEngine":"kokoro-onnx","voiceRate":1.25,
+           "allTenNewsNarrated":True,"fullReportsAvailableOnWeb":True,"fullNewsNarration":False,"sourceLinks":[n["sources"][0]["url"] for n in news],
            "videoFile":"reel_12pm.mp4","audioVerified":True,"publicationVerified":False}
   (OUT/"reel_12pm.json").write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
   print("REEL_12PM_VALIDATED",json.dumps(metadata,ensure_ascii=False),flush=True)
