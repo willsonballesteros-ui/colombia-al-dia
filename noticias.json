@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-d41fe681758c8e29",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "UJAT alista Congreso Internacional de Innovación e Inteligencia Artificial",
+      "summary": "Titular difundido por Tabasco HOY a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Tabasco HOY · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVFNfT1Nxc3BkRXdmM24xTDBoS2FqU3VRZFd0cGVxZWV4Z3V4X3otbmIzZ3cwakZ6TWI1eGxlUEZmNzYzc1NXeHdMNUlxNTYwZGl4RmQzMENaVkctY0tvSFJjTDBTMHhyRjhHOUVZR1ROelVrR20zZXYtVTZfNFo5bHBiQTliSGNzMVJFclUzbTVvWHF1SzdNblcycXJJR1BFRjBDVA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T12:10-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-d18a7389b89ad05d",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección Colombia anunció a los 25 jugadores convocados para los partidos ante Chile",
+      "summary": "Titular difundido por La FM a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La FM · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN2pnYUtuSDVCU3FXTnMxWVBNWERpbUg1alhKTVBJc3VTN1hhTlMtRERMYkwzNFdXNDhQVnpGOGZmekFzXy1KNjhfNmd0c0xQbGVQd0VrSFFSNXNub2tTbG5pZ3pZaXRIV2xLVUJzNzJET3R2SlQzbjk4NWFQaDg2QXRHcEU0X1hkQld2TWtYZFZzd9IBkgFBVV95cUxQdXpXSlFuOTI0ZGFzbS04WmZVUjJEZFNBS25RY01lY1k3MEVrS24zQy04RWpMZHhMaS1COGxMQW93SnoyalB1RFhpZ09BNmNySWVtNkp3dkpPQklSeDZVdmtITTRQSXR3N2lVMDFUMG1RWVRqSmdmVTNtVHVwdnlwbmFDOUhjQ2Zfb3VhZGV3NzM5dw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T09:39-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-a5fb4ed413edc887",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia: la última lista de convocados en 2026",
+      "summary": "Titular difundido por ESPN Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ESPN Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbnh5blYyeGtGcUJ3dTRNYTJZU0N4cHBBOVlNVlBLMk52NWNLbEFwRHo2RHdPNF9KaVhCSzNEU1ZjWDl4RzdRX3FpMW1RdDk2MUUtdURnTnhBWmhibHdacm1FcDJsOUVJaS05MG4zNG9YTVB5V3lOWDh6RkR4bS1rYk1xTFhrNFRBNlpwWi1xME4xbkIzNjlnVzNQNXRQQUJrbjVRSzdBM3MxaEVPb01MdU1IR1NrbWhuWndHbQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T09:30-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-eb6f3004d6929417",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Convocatoria de selección Colombia para amistosos contra Chile",
+      "summary": "Titular difundido por Win Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Win Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZGUtVDZfTzEtdGl6cUMzUlhESE9CS2pwVldZSkRpMzc0UWkzTERPYzlzamlQcEh2ZjMxaXU0aml4TVByWkVNT0x0QjVoeW41bzd4aWg4VDlVU0Q2TGdiV2tCRGlKSlBTeGZ1ZzNRTi1MTHpwLVJIRDJsQTF0Q2lCU2djckZTdVZGNnktMmRMWHI2SDZTRTJVazFRaWlCRHFjNkxDS2VwN3c3dXlaTEVkU1d4NHI0TDRGNUsxQ0g1MA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T09:19-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-286601a5efeea1ef",
+      "date": "2026-11-06",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Convocatoria de la Selección Colombia para la última fecha Fifa del año, de nuevo sin Luis Díaz",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQWhvcTdxV2JqeWtKVzMyWk9tQTNzaWJTRlJxU3VtdmNIdkFBV2hyeTQ3UE8yWnBQZE9MRmNOQ1dGcVlsZzlvM09la1dVMlZlME5wQ05iX21aWVRGQ3FLUGl0UlBOc0tDZ1d4dVJqUFR5NGRjbzh0SnY5TWgyRGhnbmNfaFV6OEppNXlvR2x2c09iakdXREdsY3YzYmN2bEVWQXJBelg0QUxSRTDSAbABQVVfeXFMTkNlRE1OSzAxbEV6MjlBYWtDYm1Za2hOczdVQWdPQ1JXQWJTT285OW45QmZLUHdJYzJTTEJwMThqcWw4cktJVkpFU3pDbnRjRlFCdWZfYkZILVlLWkl2eTBob29sdzZoWXZLdGtzVU8zOEZUdFpJakhsZGpfcVlULWhzNVBDVXQ0a0dyRW5PeTdLMHg4eGZuTDlncTlnYS1LZWlHWVQ4dVhPaHh4bVVPS2k?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T09:10-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-b47c73958567cd2e",
+      "date": "2026-11-06",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia afina detalles en Barranquilla para el Mundial de Fútbol de Amputados",
+      "summary": "Titular difundido por ELHERALDO.CO a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ELHERALDO.CO · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZzRFZi1ITTNUSlJ4aUYtQWZWU0dUVDFTR2VjRXYtdDJDSmg5VEI4YjZRYXV4bGhzOHYzOGQ5Y1lIODFVMThvemQ0SzNWaWI4MjJMNDdCMm91dUx2bzYyUFd4M21idzlncEhOaExveFhHYUUxbkZ2TVJidlkyUFY4VnNXSkdiMW8yb0lrdmp4Y3QtTWkydEJaTVVVOGk3ZUk2dk82Znp6RHFOaHJJRWZLNmlWeVNpdTZDbVF5ZFFXMFBEUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T11:35-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-cd1414ab41be543f",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Peter Diamandis, cofundador de Singularity University y presidente de XPRIZE: “Estamos en las primeras etapas de la singularidad de la inteligencia artificial”",
+      "summary": "Titular difundido por Diario Financiero a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario Financiero · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdkhjMG1GWDBteDZzVUg2aXNqd3dhdDRuWVZaWGtPZHk2Wm5UdDJtaTl3cTFWNkRrNEF6MENKVWljaVVnT2YzLXdpcU51WmxJMzR3akM3QWI3akVkVmN5b1MwWmtSZFdNcDBmYU84YkZfX3RQRFpzWTFyMlRQVXlfTHVXblpSby1HME9EeFRkOVJBMUVrakhPeDRIRDRZODI0RXNIUXlLc0Y?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T10:00-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-50713b94f313a20d",
       "date": "2026-11-06",
       "category": "Deportes",
@@ -11416,8 +11549,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-06T12:08-05:00",
-  "lastNewSourceAtBogota": "2026-11-06T12:08-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-06T12:13-05:00",
+  "lastNewSourceAtBogota": "2026-11-06T12:13-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
