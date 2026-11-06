@@ -1,0 +1,52 @@
+name: ORBIUNO - Intro solo voz sobre portada existente
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reel-18h-solo-voz.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Sustituir lamina nueva por portada existente durante anuncio de hora
+        run: |
+          set -euo pipefail
+          DIR=media/2026-11-06
+          ORIGINAL="$DIR/reel_18pm.mp4"
+          INTRO="$DIR/reel_18pm_con_intro.mp4"
+          OUT="$DIR/reel_18pm_voz_sobre_portada.mp4"
+          test -s "$ORIGINAL" && test -s "$INTRO"
+          # Duración agregada por la narración: 8.533691 segundos.
+          # Mantener primeras imágenes del noticiero durante firma musical,
+          # congelar el mismo panel durante locución, sin crear otra lámina.
+          ffmpeg -hide_banner -loglevel error -nostdin -y -i "$ORIGINAL" -i "$INTRO" \
+            -filter_complex "[0:v]split=2[head][tail];[head]trim=start=0:end=3.18,setpts=PTS-STARTPTS[h];[tail]trim=start=3.18,setpts=PTS-STARTPTS,tpad=start_mode=clone:start_duration=8.533691[t];[h][t]concat=n=2:v=1:a=0,fps=24,format=yuv420p[v]" \
+            -map "[v]" -map "1:a:0" -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p \
+            -c:a copy -movflags +faststart -shortest "$OUT"
+          ffprobe -v error -show_entries format=duration,size:stream=codec_type,width,height -of json "$OUT"
+          test "$(stat -c%s "$OUT")" -gt 800000
+          ffmpeg -hide_banner -loglevel error -nostdin -y -ss 7.0 -i "$OUT" -frames:v 1 "$DIR/reel_18pm_voz_sobre_portada_preview.png"
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("media/2026-11-06/reel_18pm_voz_sobre_portada.json")
+          p.write_text(json.dumps({"editionDate":"2026-11-06","slot":"18:00","voice":"ef_dora","nativeSpeed":1.25,"newsCount":10,"introduction":"Son las seis de la tarde, hora de Colombia. Bienvenidos a ORBIUNO, Colombia al Día.","extraIntroSlide":False,"introOnExistingCover":True,"publicationVerified":False},indent=2,ensure_ascii=False)+"\n")
+          PY
+      - name: Guardar video verificado en rama main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-06/reel_18pm_voz_sobre_portada.mp4 media/2026-11-06/reel_18pm_voz_sobre_portada_preview.png media/2026-11-06/reel_18pm_voz_sobre_portada.json
+          git commit -m 'ORBIUNO: hora narrada sobre portada existente, sin lamina adicional'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 3
+          done
+          exit 1
