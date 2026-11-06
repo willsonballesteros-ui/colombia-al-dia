@@ -39,9 +39,10 @@ class CaptionTests(unittest.TestCase):
             self.assertNotIn("user_id=",url)
         self.assertEqual(self.out["links"]["bio"],tracked_url(self.db["editionDate"],"bio",self.out["editionSlot"]))
 
-    def test_six_unique_slides_ten_original_sources(self):
-        self.assertEqual(len(self.out["media"]),6)
-        self.assertEqual(len(set(self.out["media"])),6)
+    def test_three_unique_slides_ten_original_sources(self):
+        self.assertEqual(len(self.out["media"]),3)
+        self.assertEqual(len(set(self.out["media"])),3)
+        self.assertEqual(self.out["newsPerSlide"],[5,5])
         self.assertEqual(len(self.out["sourceLinks"]),10)
         self.assertTrue(all(s["url"].startswith("https://") for s in self.out["sourceLinks"]))
 
