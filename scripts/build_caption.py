@@ -54,7 +54,7 @@ def build(db):
         "ORBIUNO | "+display+"\n\n"
         "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la noche"}[slot]+" · "+str(len(news))+" noticias verificadas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
-        "Elige voz en español, tono y velocidad a tu gusto.\n\n"
+        "Escucha nuestra voz en español y ajusta la velocidad.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
         "🌐 "+caption_link+"\n\n"
         "¿Qué noticia te impactó más? Comenta su número.\n\n"
@@ -62,7 +62,7 @@ def build(db):
     )
     first_comment=(
         "🎧 Las noticias también se escuchan en ORBIUNO.\n"
-        "Escoge la voz y la velocidad desde nuestra página.\n"
+        "Escucha las noticias completas y ajusta la velocidad en nuestra web.\n"
         "👇 Escucha y verifica las fuentes originales:\n"
         "🌐 "+comment_link
     )
@@ -85,8 +85,8 @@ def build(db):
             +day+"/portada.png"
         ]+[
             "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
-            +day+"/top10-"+str(i).zfill(2)+".png"
-            for i in range(1,len(news)+1)
+            +day+"/grupo-"+str(i).zfill(2)+".png"
+            for i in range(1,6)
         ],
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
