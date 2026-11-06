@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Instalar herramientas de inspeccion
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Comprobar original de MP4 y teaser PNG
         run: |
           test -s media/2026-11-06/reel_18pm.mp4
