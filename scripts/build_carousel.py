@@ -322,33 +322,45 @@ def single_card(note,num,day,out):
 
 
 def story_card(day, news, out):
-    """Historia vertical de acceso a la web, sin fotos ficticias ni enlaces simulados."""
+    """Historia 9:16 segura en Instagram: marca, horario y CTA nunca ocultos.
+
+    La interfaz cubre aproximadamente los 260 px superiores y los 390 px
+    inferiores. Limitar el contenido esencial a x=100..940, y=260..1530.
+    """
     im=Image.new("RGB",(1080,1920),"#1B142C")
     d=ImageDraw.Draw(im)
-    d.rectangle((0,0,1080,20),fill="#FFCF69")
-    d.text((68,70),"OU",font=font(66,True),fill="#FFD76A")
-    d.text((190,78),"ORBIUNO",font=font(62,True),fill="#FFFFFF")
-    d.text((70,165),"COLOMBIA AL DÍA  ·  NOTICIAS",font=font(25,True),fill="#7FE8D4")
-    d.text((70,270),"LAS NOTICIAS",font=font(74,True),fill="#FFFFFF")
-    d.text((70,370),"QUE TE INTERESAN",font=font(56,True),fill="#FFD76A")
+    d.rectangle((0,0,1080,18),fill="#FFCF69")  # Solo decoración fuera de zona segura
+    now_hour=datetime.now(ZoneInfo("America/Bogota")).hour
+    slot="08:00" if now_hour<10 else "12:00" if now_hour<16 else "18:00"
+
+    # Cabecera compacta dentro de la zona segura; no se tapa en Reels/Stories.
+    d.rounded_rectangle((108,278,240,398),radius=24,fill="#283268")
+    d.text((132,297),"OU",font=font(65,True),fill="#FFCF69")
+    d.text((273,284),"ORBIUNO",font=font(59,True),fill="#FFFFFF")
+    d.text((275,364),"COLOMBIA AL DÍA · NOTICIAS",font=font(20,True),fill="#83EADD")
+    d.rounded_rectangle((737,292,938,375),radius=18,fill="#FFD76A")
+    d.text((757,307),slot,font=font(43,True),fill="#241832")
+
+    d.text((109,476),"PANORAMA INFORMATIVO",font=font(44,True),fill="#FFFFFF")
+    d.text((112,547),f"{len(news)} NOTICIAS VERIFICADAS",font=font(33,True),fill="#FFD76A")
     topics=[
-        ("COLOMBIA  +  MUNDO","#FF82AA"),
-        ("ECONOMÍA  +  TECNOLOGÍA","#78E6D6"),
+        ("COLOMBIA Y MUNDO","#FF82AA"),
+        ("ECONOMÍA Y TECNOLOGÍA","#78E6D6"),
         ("INTELIGENCIA ARTIFICIAL","#FFC266"),
-        ("DEPORTES  +  ACTUALIDAD","#D4B7FF")
+        ("DEPORTES Y ENTRETENIMIENTO","#D4B7FF")
     ]
-    for idx,(label,color) in enumerate(topics):
-        y=570+idx*157
-        d.rounded_rectangle((68,y,1012,y+124),radius=19,fill="#30243E")
-        d.rounded_rectangle((68,y,84,y+124),radius=6,fill=color)
-        d.text((108,y+37),label,font=font(31,True),fill="#FFFFFF")
-    d.rounded_rectangle((65,1285,1015,1720),radius=31,fill="#FFF0BD")
-    d.text((106,1329),"ESCUCHA LA NOTICIA",font=font(50,True),fill="#241832")
-    d.text((106,1407),"QUE TÚ ELIJAS",font=font(54,True),fill="#241832")
-    d.text((106,1504),"ENLACE EN EL PERFIL  ↓",font=font(36,True),fill="#39274A")
-    d.text((106,1602),"colombia-al-dia.pages.dev",font=font(36,True),fill="#096C77")
-    d.text((74,1785),"@resumen.noticias",font=font(38,True),fill="#FFFFFF")
-    d.text((74,1845),"FUENTES Y ENLACES ORIGINALES EN LA WEB",font=font(21,True),fill="#B5A4D1")
+    for idx,(title,color) in enumerate(topics):
+        y=626+idx*134
+        d.rounded_rectangle((108,y,942,y+105),radius=18,fill="#30243E")
+        d.rounded_rectangle((108,y,122,y+105),radius=5,fill=color)
+        d.text((151,y+32),title,font=font(30,True),fill="#FFFFFF")
+
+    # CTA completo y legible antes del área inferior tapada por Instagram.
+    d.rounded_rectangle((108,1206,942,1524),radius=30,fill="#FFF0BD")
+    d.text((142,1236),"ESCUCHA CADA NOTICIA",font=font(38,True),fill="#241832")
+    d.text((142,1294),"UNA POR UNA, EN LA WEB",font=font(33,True),fill="#241832")
+    d.text((142,1370),"↓ ENLACE DEL PERFIL",font=font(35,True),fill="#096C77")
+    d.text((142,1440),"colombia-al-dia.pages.dev",font=font(29,True),fill="#39274A")
     im.save(out,optimize=True)
 
 
