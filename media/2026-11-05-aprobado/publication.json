@@ -1,0 +1,21 @@
+{
+  "edition": "2026-11-05 extra, revised",
+  "instagram": "@resumen.noticias",
+  "metricoolPostId": 418500761,
+  "metricoolUuid": "4503033687386050344",
+  "scheduledLocal": "2026-11-05T22:48:00-05:00",
+  "status": "PENDING",
+  "voice": "ef_dora",
+  "nativeSpeed": 1.25,
+  "approvedAudioLibraryId": "libfile_c20c685740008191b2a3bd7f13e9abb7",
+  "format": "two screens of five headlines",
+  "videoSha256": "89b0ff15463e8c7958955a17879375ea6dc6da2746ab929b9cc8fc116225c668",
+  "checks": [
+    "local video fully decoded",
+    "public repository binary hash matches local",
+    "Metricool hosted binary hash matches local",
+    "Metricool hosted video fully decoded",
+    "representative frames visually inspected"
+  ],
+  "listeningReview": "User approved source audio; no new listening review by assistant"
+}
