@@ -20,7 +20,7 @@ class CaptionTests(unittest.TestCase):
         self.assertTrue(self.out["links"]["bio"].startswith(URL+"?utm_source=instagram&utm_medium=bio"))
         self.assertIn("utm_medium=story",self.out["links"]["story"])
         self.assertIn("🎧 Las noticias también se escuchan en nuestra web.",text)
-        self.assertIn("Elige voz en español, tono y velocidad",text)
+        self.assertIn("Escucha nuestra voz en español y ajusta la velocidad",text)
         self.assertNotIn("1. ",text)
         self.assertNotIn("QUÉ PASÓ",text.upper())
         self.assertNotIn("POR QUÉ IMPORTA",text.upper())
@@ -39,9 +39,9 @@ class CaptionTests(unittest.TestCase):
             self.assertNotIn("user_id=",url)
         self.assertEqual(self.out["links"]["bio"],tracked_url(self.db["editionDate"],"bio",self.out["editionSlot"]))
 
-    def test_eleven_unique_slides_ten_original_sources(self):
-        self.assertEqual(len(self.out["media"]),11)
-        self.assertEqual(len(set(self.out["media"])),11)
+    def test_six_unique_slides_ten_original_sources(self):
+        self.assertEqual(len(self.out["media"]),6)
+        self.assertEqual(len(set(self.out["media"])),6)
         self.assertEqual(len(self.out["sourceLinks"]),10)
         self.assertTrue(all(s["url"].startswith("https://") for s in self.out["sourceLinks"]))
 
