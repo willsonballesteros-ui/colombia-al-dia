@@ -23,7 +23,7 @@ jobs:
           home=Path('index.html').read_text()
           assert all('Edición de las '+time in home for time in ('8:00 a. m.','12:00 m.','6:00 p. m.'))
           assert 'Contraloría pide explicaciones por fallas en radares' in home
-          n_sections=len(re.findall(r'<section class="edition-section" id="edicion-', home))
+          n_sections=len(re.findall(r'<section class="edition-section" id="edicion-', home.split('<script type="application/json" id="initial-news">')[0]))
           print("SECTIONS",n_sections,"CHECKSUM",len(home))
           assert n_sections==3
           assert 'href="./edicion-2026-11-06-18.html"' not in home
