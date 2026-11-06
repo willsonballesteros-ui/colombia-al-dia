@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/render_orbiuno_5x5.py'
+      - '.github/workflows/reel-cinco-cinco.yml'
 permissions:
   contents: write
 concurrency:
@@ -21,6 +22,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar FFmpeg, fuentes y subtitulos
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
       - name: Instalar dependencias gratuitas
         run: |
           python -m pip install --disable-pip-version-check "kokoro-onnx==0.6.1" Pillow numpy soundfile
