@@ -3,16 +3,11 @@
   "format": "compact_carousel",
   "slides": [
     "portada.png",
-    "top10-01.png",
-    "top10-02.png",
-    "top10-03.png",
-    "top10-04.png",
-    "top10-05.png",
-    "top10-06.png",
-    "top10-07.png",
-    "top10-08.png",
-    "top10-09.png",
-    "top10-10.png"
+    "grupo-01.png",
+    "grupo-02.png",
+    "grupo-03.png",
+    "grupo-04.png",
+    "grupo-05.png"
   ],
   "newsCounts": [
     2,

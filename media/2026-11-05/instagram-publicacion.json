@@ -1,19 +1,19 @@
 {
   "editionDate": "2026-11-05",
   "brand": "ORBIUNO",
-  "editionSlot": "6pm",
+  "editionSlot": "8am",
   "verifiedSports": 0,
   "publicationReady": true,
   "blockers": [],
-  "utmCampaign": "edicion_20261105_6pm",
+  "utmCampaign": "edicion_20261105_8am",
   "links": {
-    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261105_6pm",
-    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261105_6pm",
-    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_6pm",
-    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_6pm"
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261105_8am",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261105_8am",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_8am",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_8am"
   },
-  "caption": "ORBIUNO | 05/11/2026\n\nEdición de la noche · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_6pm\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
-  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_6pm",
+  "caption": "ORBIUNO | 05/11/2026\n\nEdición de la mañana · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261105_8am\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261105_8am",
   "publicationVerified": false,
   "media": [
     "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-05/portada.png",
