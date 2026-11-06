@@ -28,7 +28,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 25
 
     steps:
       - name: Descargar proyecto
@@ -45,6 +45,15 @@ jobs:
       - name: Preparar narración propia ampliada en español
         run: python scripts/prepare_audio.py noticias.json
 
+      - name: Preparar la única voz de la web
+        run: |
+          python -m pip install kokoro-onnx==0.6.1 soundfile
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo 'beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+          python scripts/generate_web_voice.py
+
       - name: Validar integridad y clasificación
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
@@ -60,7 +69,7 @@ jobs:
           from pathlib import Path
           raw=Path('index.html').read_text(encoding='utf-8')
           scripts=re.findall(r'<script(?:\\s+[^>]*)?>(.*?)</script>',raw,re.S)
-          assert scripts and 'SpeechSynthesisUtterance' in scripts[-1], 'TTS frontend ausente'
+          assert scripts and 'const player=new Audio()' in scripts[-1], 'Reproductor de audio ausente'
           Path('/tmp/orbiuno-frontend.js').write_text(scripts[-1], encoding='utf-8')
           PY
           node --check /tmp/orbiuno-frontend.js
@@ -100,13 +109,14 @@ jobs:
             git reset --hard origin/main
             python scripts/sync_sources.py --data noticias.json
             python scripts/prepare_audio.py noticias.json
+            python scripts/generate_web_voice.py
             python scripts/validate_news.py noticias.json
             python scripts/prepare_site.py
             python scripts/build_feed.py
             if [ ! -f /tmp/orbiuno_skip_carousel ]; then
               python scripts/build_carousel.py
             fi
-            git add noticias.json index.html feed.xml
+            git add noticias.json index.html feed.xml media/web-voice
             if [ -d "media/$(TZ=America/Bogota date +%F)" ]; then
               git add "media/$(TZ=America/Bogota date +%F)"
             fi

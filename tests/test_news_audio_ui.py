@@ -76,36 +76,15 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("Fuente ↗", rendered)
         self.assertNotIn('<details class="news-more">', rendered)
 
-    def test_realtime_speed_switch_restarts_only_current_sentence(self):
-        self.assertIn("speechRates=[1,1.25,1.5,2]", self.page)
-        self.assertIn("utterance.rate=speechRates[speechRateIndex]", self.page)
-        self.assertIn("const changeSpeechRate=()=>", self.page)
-        self.assertIn("speechSession++", self.page)
-        self.assertIn("speechSegmentIndex", self.page)
-        self.assertIn("const buildSpeechSegments=news=>", self.page)
-        self.assertIn("news.audioFullTextEs", self.page)
-        self.assertIn("listen-edition", self.page)
-        self.assertIn("const readSpeechSegment=()=>", self.page)
-        self.assertIn("utterance.lang='es-CO'", self.page)
-        self.assertIn("hasAuthorizedFullArticle", self.page)
-        self.assertIn("hasAuthorizedFullArticle",self.page)
-
-    def test_voice_selector_offers_real_spanish_device_voices(self):
-        self.assertIn('id="voice-select"',self.page)
-        self.assertIn('Voz en español',self.page)
-        self.assertIn("const spanishVoices=()",self.page)
-        self.assertIn("const selectSpanishVoice=()=>",self.page)
-        self.assertIn("voiceschanged",self.page)
-        self.assertIn("utterance.voice=voice",self.page)
-        self.assertIn("restartCurrentSentence()",self.page)
-        self.assertIn('id="tone-select"',self.page)
-        self.assertIn("tonePitches={dulce:1.1,juvenil:1.18,natural:1}",self.page)
-        self.assertIn("utterance.pitch=tonePitches[selectedTone]",self.page)
-        self.assertIn("window.localStorage.setItem('orbiuno-tone'",self.page)
-        self.assertIn('id="voice-preview"',self.page)
-        self.assertIn("const voicePreviewButton=el('voice-preview')",self.page)
-        self.assertIn("sample.pitch=tonePitches[selectedTone]",self.page)
-        self.assertIn("window.speechSynthesis.speak(sample)",self.page)
+    def test_fixed_voice_and_three_playback_rates(self):
+        self.assertIn('speechRates=[1.25,1.5,2]', self.page)
+        self.assertIn('const player=new Audio()', self.page)
+        self.assertIn('player.preservesPitch=true', self.page)
+        self.assertIn('speechRates[speechRateIndex]/audioManifest.baseRate', self.page)
+        self.assertIn('a.text===narrationText(n)', self.page)
+        self.assertNotIn('id="voice-select"', self.page)
+        self.assertNotIn('id="tone-select"', self.page)
+        self.assertNotIn('SpeechSynthesisUtterance', self.page)
 
     def test_full_article_requires_source_rights_and_translation(self):
         from copy import deepcopy
@@ -131,14 +110,14 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn('Escuchar noticia', page)
         self.assertIn('Fuente ↗', page)
 
-    def test_speech_api_is_user_initiated_and_free(self):
-        self.assertIn("new window.SpeechSynthesisUtterance", self.page)
-        self.assertIn("window.speechSynthesis", self.page)
-        self.assertIn("window.speechSynthesis.speak(utterance)", self.page)
-        self.assertIn("synth.pause()", self.page)
-        self.assertIn("synth.resume()", self.page)
-        self.assertIn("window.speechSynthesis.cancel()", self.page)
+    def test_recorded_audio_keeps_controls_and_edition_queue(self):
         self.assertIn("el('cards').addEventListener('click'", self.page)
+        self.assertIn('player.pause()', self.page)
+        self.assertIn('await player.play()', self.page)
+        self.assertIn("player.addEventListener('ended'", self.page)
+        self.assertIn('queueIndex+1<editionQueue.length', self.page)
+        self.assertIn('mediaSession', self.page)
+
 
 
 if __name__ == "__main__":
