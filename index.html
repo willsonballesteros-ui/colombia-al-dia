@@ -309,64 +309,164 @@ const render=()=>{
  el('empty').hidden=matching.length>0;
  document.querySelectorAll('.filt').forEach(b=>b.onclick=()=>{category=b.dataset.cat;render();});
 };
-// Voz integrada en el móvil: nunca se inicia sin un toque del lector.
-// Motor de lectura ampliada de ORBIUNO. No descarga ni reproduce artículos
-// completos de terceros: narra un texto editorial original en español.
-// Audios de la voz aprobada Dora, generados a velocidad nativa 1.25x.
-const canSpeak=typeof Audio!=='undefined';
-const speechRates=[1.25,1.5,2];
-let speechRateIndex=0, speakingId=null, speechPaused=false;
+// Narración de ORBIUNO: utilizar MP3 Dora cuando esté disponible y,
+ // si la edición acaba de publicarse, leer de inmediato con la voz española
+ // integrada en el dispositivo. Nunca deshabilitar una noticia con texto.
+const nativeSynth=('speechSynthesis' in window&&typeof SpeechSynthesisUtterance!=='undefined')?window.speechSynthesis:null;
+const canSpeak=typeof Audio!=='undefined'||!!nativeSynth;
+const speechRates=[1,1.25,1.5,2];
+let speechRateIndex=1, speakingId=null, speechPaused=false;
 const selectedTone='natural';
 const player=new Audio();player.preload='none';player.preservesPitch=true;
 let audioManifest={items:{}}, editionQueue=[], queueIndex=0;
-const narrationText=n=>n.title+'. Fuente: '+n.sources[0].name+'. '+n.audioFullTextEs;
-const availableAudio=n=>{const a=audioManifest.items[n.id];return a&&a.text===narrationText(n)?a:null;};
+let nativeMode=false,nativeToken=0,nativeChunks=[],nativeChunkIndex=0;
+const narrationText=n=>{
+ const body=String(n.audioFullTextEs||n.originalArticleTextEs||n.executiveSummary||n.summary||'').trim();
+ return n.title+'. Fuente: '+((n.sources&&n.sources[0]&&n.sources[0].name)||'ORBIUNO')+'. '+body;
+};
+const availableAudio=n=>{
+ const a=audioManifest.items&&audioManifest.items[n.id];
+ return a&&a.text===narrationText(n)&&typeof a.url==='string'&&a.url.startsWith('./media/web-voice/')?a:null;
+};
+const canNarrate=n=>!!(n&&(availableAudio(n)||(nativeSynth&&narrationText(n).length>30)));
 const speedLabel=()=>speechRates[speechRateIndex]+'x';
-const speechLabel=()=> 'Escuchar noticia';
+const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified').sort((a,b)=>(a.priority??999)-(b.priority??999)).slice(0,10);
+let audioStatus=el('audio-status');
+if(!audioStatus){
+ audioStatus=document.createElement('p');audioStatus.id='audio-status';
+ audioStatus.setAttribute('role','status');audioStatus.setAttribute('aria-live','polite');
+ audioStatus.style.cssText='font-size:13px;color:#31527a;margin:7px 0 10px;';
+ el('listen-edition').insertAdjacentElement('afterend',audioStatus);
+}
+const setAudioStatus=s=>{audioStatus.textContent=s||'';};
 const updateSpeechControls=()=>{
  document.querySelectorAll('button[data-tts-action="toggle"]').forEach(btn=>{
-  const n=db.news.find(n=>n.id===btn.dataset.ttsId),ready=n&&availableAudio(n);
+  const n=db.news.find(n=>n.id===btn.dataset.ttsId),ready=canNarrate(n);
   const current=speakingId===btn.dataset.ttsId;
   btn.textContent=current?(speechPaused?'▶ Reanudar':'Ⅱ Pausar'):'▶ Escuchar noticia';
   btn.setAttribute('aria-pressed',String(current&&!speechPaused));
-  btn.disabled=!ready;btn.title=ready?'Escuchar con la voz de ORBIUNO':'Audio de esta noticia en preparación';
+  btn.disabled=!ready;
+  btn.title=!ready?'Voz no disponible en este navegador':availableAudio(n)?'Escuchar con la voz de ORBIUNO':'Escuchar con la voz en español del dispositivo';
  });
  document.querySelectorAll('button[data-tts-action="speed"]').forEach(btn=>{
-  btn.textContent=speedLabel();btn.setAttribute('aria-label','Cambiar velocidad. Actual: '+speedLabel());
-  btn.title='Velocidades: 1.25x, 1.5x y 2x';
+  btn.textContent=speedLabel();
+  btn.setAttribute('aria-label','Cambiar velocidad. Actual: '+speedLabel());
+  btn.title='Velocidades: 1x, 1.25x, 1.5x y 2x';
  });
- document.querySelectorAll('button[data-tts-action="stop"]').forEach(btn=>{btn.hidden=speakingId!==btn.dataset.ttsId;});
+ document.querySelectorAll('button[data-tts-action="stop"]').forEach(btn=>{btn.hidden!==undefined&&(btn.hidden=speakingId!==btn.dataset.ttsId);});
  const all=el('listen-edition'),end=el('stop-edition');
  const active=speakingId==='__edicion__';
- if(all){all.textContent=active?(speechPaused?'▶ Reanudar edición':'Ⅱ Pausar edición'):'▶ Escuchar todas';all.setAttribute('aria-pressed',String(active&&!speechPaused));all.disabled=!editionItems().length||editionItems().some(n=>!availableAudio(n));}
+ if(all){all.textContent=active?(speechPaused?'▶ Reanudar edición':'Ⅱ Pausar edición'):'▶ Escuchar todas';all.setAttribute('aria-pressed',String(active&&!speechPaused));all.disabled=!editionItems().length||editionItems().some(n=>!canNarrate(n));}
  if(end)end.hidden=!active;
 };
-const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified').sort((a,b)=>(a.priority??999)-(b.priority??999)).slice(0,10);
-const stopSpeech=()=>{player.pause();player.removeAttribute('src');player.load();speakingId=null;speechPaused=false;editionQueue=[];queueIndex=0;updateSpeechControls();};
+const stopSpeech=()=>{
+ nativeToken++;
+ if(nativeSynth)nativeSynth.cancel();
+ player.pause();player.removeAttribute('src');player.load();
+ nativeMode=false;nativeChunks=[];nativeChunkIndex=0;
+ speakingId=null;speechPaused=false;editionQueue=[];queueIndex=0;
+ setAudioStatus('');updateSpeechControls();
+};
+const chooseSpanishVoice=()=>{
+ if(!nativeSynth)return null;
+ const voices=nativeSynth.getVoices().filter(v=>String(v.lang||'').toLowerCase().startsWith('es'));
+ const preference=['mónica','monica','paulina','luciana','helena','dora','maria','maría','sofia','sofía','sabina','paloma'];
+ return voices.find(v=>preference.some(p=>v.name.toLowerCase().includes(p)))||voices.find(v=>v.localService)||voices[0]||null;
+};
+const chunksForSpeech=text=>{
+ const words=text.replace(/\s+/g,' ').trim().split(' '),chunks=[];
+ let part='';
+ words.forEach(word=>{
+  if(part.length+word.length+1>175&&part){chunks.push(part);part='';}
+  part+=(part?' ':'')+word;
+ });
+ if(part)chunks.push(part);
+ return chunks;
+};
+const advanceNarration=()=>{
+ const current=editionQueue[queueIndex];
+ if(current)trackAudio('audio_finished',current);
+ if(speakingId==='__edicion__'&&queueIndex+1<editionQueue.length){
+  queueIndex++;startAudio(editionQueue[queueIndex]);
+ }else stopSpeech();
+};
+const speakNextChunk=token=>{
+ if(!nativeSynth||token!==nativeToken)return;
+ if(nativeChunkIndex>=nativeChunks.length){advanceNarration();return;}
+ const utterance=new SpeechSynthesisUtterance(nativeChunks[nativeChunkIndex++]);
+ utterance.lang='es-CO';utterance.rate=speechRates[speechRateIndex];
+ utterance.pitch=1;utterance.volume=1;
+ const voice=chooseSpanishVoice();if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
+ utterance.onend=()=>{if(token===nativeToken)speakNextChunk(token);};
+ utterance.onerror=event=>{
+  if(token!==nativeToken||event.error==='canceled'||event.error==='interrupted')return;
+  speechPaused=true;
+  setAudioStatus('La voz del dispositivo no pudo iniciar. Comprueba que el sonido esté activado e inténtalo de nuevo.');
+  updateSpeechControls();
+ };
+ try{nativeSynth.speak(utterance);}catch(error){
+  speechPaused=true;setAudioStatus('No fue posible iniciar la voz en este dispositivo.');updateSpeechControls();
+ }
+};
+const startNative=n=>{
+ if(!nativeSynth){speechPaused=true;setAudioStatus('La voz no está disponible en este navegador.');updateSpeechControls();return;}
+ player.pause();player.removeAttribute('src');
+ nativeSynth.cancel();nativeMode=true;nativeToken++;nativeChunkIndex=0;
+ nativeChunks=chunksForSpeech(narrationText(n));
+ speechPaused=false;
+ setAudioStatus('Leyendo con la voz en español de tu dispositivo · '+speedLabel());
+ trackAudio('audio_play',n);updateSpeechControls();
+ speakNextChunk(nativeToken);
+};
 const startAudio=async n=>{
- const a=availableAudio(n);if(!a)return;
- player.src=a.url;player.playbackRate=speechRates[speechRateIndex]/audioManifest.baseRate;
- if('mediaSession' in navigator&&typeof MediaMetadata!=='undefined')navigator.mediaSession.metadata=new MediaMetadata({title:n.title,artist:'ORBIUNO',album:'Noticias de Colombia y el mundo'});
- try{await player.play();speechPaused=false;trackAudio('audio_play',n);}catch(error){speechPaused=true;}
+ const a=availableAudio(n);
+ if(!a){startNative(n);return;}
+ nativeMode=false;
+ player.src=a.url;
+ player.playbackRate=speechRates[speechRateIndex]/(audioManifest.baseRate||1.25);
+ if('mediaSession' in navigator&&typeof MediaMetadata!=='undefined')
+  navigator.mediaSession.metadata=new MediaMetadata({title:n.title,artist:'ORBIUNO',album:'Noticias de Colombia y el mundo'});
+ try{
+  await player.play();
+  speechPaused=false;
+  setAudioStatus('Reproduciendo narración ORBIUNO · '+speedLabel());
+  trackAudio('audio_play',n);
+ }catch(error){startNative(n);}
  updateSpeechControls();
 };
-player.addEventListener('ended',()=>{
- const current=editionQueue[queueIndex];if(current)trackAudio('audio_finished',current);
- if(speakingId==='__edicion__'&&queueIndex+1<editionQueue.length){queueIndex++;startAudio(editionQueue[queueIndex]);}else stopSpeech();
+player.addEventListener('ended',()=>{if(!nativeMode)advanceNarration();});
+player.addEventListener('error',()=>{
+ if(!nativeMode&&speakingId&&editionQueue[queueIndex])startNative(editionQueue[queueIndex]);
 });
-player.addEventListener('error',()=>{speechPaused=true;updateSpeechControls();});
 const toggleAudio=async()=>{
- if(player.paused){try{await player.play();speechPaused=false;}catch(error){speechPaused=true;}}
- else{player.pause();speechPaused=true;}
+ if(nativeMode&&nativeSynth){
+  if(speechPaused){nativeSynth.resume();speechPaused=false;trackAudio('audio_resumed',editionQueue[queueIndex]);}
+  else{nativeSynth.pause();speechPaused=true;trackAudio('audio_paused',editionQueue[queueIndex]);}
+ }else if(player.paused){
+  try{await player.play();speechPaused=false;trackAudio('audio_resumed',editionQueue[queueIndex]);}
+  catch(error){const n=editionQueue[queueIndex];if(n)startNative(n);}
+ }else{player.pause();speechPaused=true;trackAudio('audio_paused',editionQueue[queueIndex]);}
  updateSpeechControls();
 };
 const playSpeech=id=>{
  if(speakingId===id){toggleAudio();return;}
- const n=db.news.find(n=>n.id===id);if(!n||!availableAudio(n))return;
+ const n=db.news.find(n=>n.id===id);
+ if(!canNarrate(n))return;
  stopSpeech();speakingId=id;editionQueue=[n];startAudio(n);
 };
-const changeSpeechRate=()=>{speechRateIndex=(speechRateIndex+1)%speechRates.length;player.playbackRate=speechRates[speechRateIndex]/(audioManifest.baseRate||1.25);updateSpeechControls();};
-async function loadAudioManifest(){try{const r=await fetch('./media/web-voice/manifest.json',{cache:'no-store'});if(r.ok)audioManifest=await r.json();}catch(error){}updateSpeechControls();}
+const changeSpeechRate=()=>{
+ speechRateIndex=(speechRateIndex+1)%speechRates.length;
+ if(!nativeMode)player.playbackRate=speechRates[speechRateIndex]/(audioManifest.baseRate||1.25);
+ if(speakingId)setAudioStatus((nativeMode?'Leyendo con voz del dispositivo':'Reproduciendo narración ORBIUNO')+' · '+speedLabel());
+ updateSpeechControls();
+};
+async function loadAudioManifest(){
+ try{
+  const r=await fetch('./media/web-voice/manifest.json',{cache:'no-store'});
+  if(r.ok){const parsed=await r.json();if(parsed&&parsed.items)audioManifest=parsed;}
+ }catch(error){/* TTS nativo continúa disponible aunque falten MP3. */}
+ updateSpeechControls();
+}
 loadAudioManifest();setInterval(loadAudioManifest,300000);
 // Métrica de conversión Instagram -> lectura de noticias.
 // No se envía IP, correo, nombre, identificador de visitante ni texto completo.
@@ -430,7 +530,7 @@ const trackLanding=()=>{
 trackLanding();
 el('listen-edition').addEventListener('click',()=>{
  if(speakingId==='__edicion__'){toggleAudio();return;}
- const items=editionItems();if(!items.length||items.some(n=>!availableAudio(n)))return;
+ const items=editionItems();if(!items.length||items.some(n=>!canNarrate(n)))return;
  stopSpeech();speakingId='__edicion__';editionQueue=items;startAudio(items[0]);
 });
 el('stop-edition').addEventListener('click',stopSpeech);
