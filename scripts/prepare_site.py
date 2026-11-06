@@ -161,7 +161,19 @@ def build(data, page):
          and n.get("verification") == "editorial_verified"),
         key=lambda n: n.get("priority", 999),
     )[:10]
-    rendered = '<div class="cards" id="cards" aria-live="polite">' + "".join(
+    # Acceso breve a la edición de seguimiento sin añadir tarjetas repetidas
+    # a la portada principal ni modificar el historial de las ocho de la mañana.
+    followup_path = ROOT / 'seguimiento-2026-11-06.html'
+    followup = (
+        '<a href="/seguimiento-2026-11-06.html" '
+        'style="display:block;margin:9px 0 16px;padding:12px 15px;'
+        'border-radius:12px;background:#f9cc68;color:#142c30;'
+        'font-weight:750;text-decoration:none;font-size:1rem">'
+        '🎧 ORBIUNO · Actualización 13:30 · 8 novedades para escuchar →</a>'
+        if data.get('editionDate') == '2026-11-06' and followup_path.is_file()
+        else ''
+    )
+    rendered = '<div class="cards" id="cards" aria-live="polite">' + followup + "".join(
         article_html(n) for n in news
     ) + '</div>'
     begin = page.index('<div class="cards" id="cards" aria-live="polite">')
