@@ -73,7 +73,7 @@ if(prefer)u.voice=prefer;u.onend=()=>stop();u.onerror=()=>stop();
 activeId=id;activeUtterance=u;speechSynthesis.speak(u);
 document.querySelectorAll("button.play").forEach(b=>b.textContent=b.dataset.id===id?"Ⅱ Pausar / reanudar":"▶ Escuchar completo")
 }
-function speed(){const speeds=[1,1.25,1.5,2];rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];document.querySelectorAll("button.speed").forEach(b=>b.textContent=rate+"×");if(activeId){const old=activeId;play(old)}}
+function speed(){const speeds=[1,1.25,1.5,2];rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];document.querySelectorAll("button.speed").forEach(b=>b.textContent=rate+"×");if(activeId){const old=activeId;stop();play(old)}}
 document.querySelectorAll("button.play").forEach(b=>b.addEventListener("click",()=>play(b.dataset.id)));
 document.querySelectorAll("button.speed").forEach(b=>b.addEventListener("click",speed));
 document.querySelectorAll("button.stop").forEach(b=>b.addEventListener("click",stop));
