@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c2835c2e7db81e02",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Vístete de Colombia, movimiento de más de 1.000 marcas, recibe ropa nueva para 15.000 damnificados del terremoto en Risaralda",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQczB4QW92OW5UY1BSTjdaTmctdmFvNDZ0ZEtDb29sdDNXdzJzRnNNMF93NXdWUndLZnJHOFU2bjkxQXBLYUstN2xOTTdLeDJaODc0QVgwYUlZaFVJVU5ZcnV5cmhVbmhjaFV3VXItTWYyVFg2dGJNUWFPZk1oVjJzSzk0XzZReDJRYk5jWVl5cVFnNFdJZEhfTTJMb0o5ZHF2Y2Nlam14b19NUU8yZVNpcVB1ZURBbHdSaG1RcHdqOXlfZ294SUFQR1plMGJlMDZVd0g1UdIB2gFBVV95cUxPUVdtWmtrNjdicjNWbmRtMkk4bjBhS2ZMYjFWTW1UeEVZUG5MWEJjX3FxN2Fldkg0QzBiVXJWZ2NkaEc1bTJfQU5rdnZhenVxa2xqLUNGVjYzNWlsQnBYOVVTdE91emNhQ2k5TEdYdEJJdzI3NTJtay03UnZvQzFPeWhiRVRTS08zcnJzNUxBRkQ4THpxSVFrcFFZOE11X3E3NktfUGV0c2NlYXYxdnNkYkhIc19JaE5STnBNS0F6Y2g3Z0VPRV9peDlnMV9QSlpFZDJwU2l2aDBQZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T11:02-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e09d3321fa6be8d9",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial revoluciona la seguridad vial y ayuda a prevenir accidentes",
+      "summary": "Titular difundido por Cadena 3 Argentina a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Cadena 3 Argentina · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSlVpQ01XTE1wQlVOZEJoLWJTbHBINWhkd0w1ZXJRNlFUYTZ4amN5VUNQNHozaDF3MmxPT2RvQWpTcExqSDFrQThIdnZCR2VCTFBVRVJkVUpEUVdLNkE4UXZDWXVBSmhEakJ0ZTkzUkdUSlZ5VUNRd1RfQVEzSXZkTnZvS2FqNUVseHpWOWNVdmFQb05sLXRVRFpvZ2MyQ2lRN0Z0bXdTV09Bcy1udTRZLWdNTkJ4aEp6aVJoUGRiTDNfcXo4NzZET0VsSWJuczjSAdQBQVVfeXFMT2lNRkJfVXZaNG1CNnZBTl9BRk03ZWxiMkwwWmNxdmFrSzd5WEZnZzktakstOEhrYmhhTmtzX0NId1lPdHZiTU1ZQVc4akNhQWRNSE1keEFIQjJUSGRKVFJUWDRmaUdUZFlUMUxBMy14WHJSWDAwYVZfMEMtdUZUWU5mSTliVmxYQ3RFTW1Ud3NucDNPOC1Xa21IZXhNMEdrYmMwVHBzaHlsOC15NzdrNmlCRmRGVUIzY3FsdWJSZXlTRlV5eWM5V0VZdVdhaXhLdHd2M0M?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T11:01-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-062103dc3f27cbf0",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Jefe de la Misión de Verificación de la ONU en Colombia se refirió a las declaraciones del embajador Gaona en Nueva York",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNQkhUdEVwaWJkZXRBaEM1bV91aWtSTDRVUW1UV29fYm5JT3RoMmpBMHo1TmlDM0hCY2plSDhMRU9heVROOEMxSVlWRll6dGg0dXRfQVMzTmhneXdoSl9XSFVfMFJiZlNXLUZkRlBSVmtkcUxkeThxLWlMdlhwdXd0aHMtdmVFeXlaRmplUzZDdDFISG9PSzhfM3lsQlQ3dGtiOE9RYWxucnlnVkJqc3hvalZqYXVoRnFzYlVwV0lkMWZELVFjRDN5Z1ZIRmFtTlZFeEp3RjdiMDJCTWlneGNiSkNMUmRLX2dqR1liR0ZCVDVWX2xHaFNGRFYxMA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T09:48-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9589a0cd99bb104e",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial se tomará al 81% de las empresas en la ciudad de Medellín",
+      "summary": "Titular difundido por Caracol Radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Caracol Radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSlhUeVc3VjdHdUgtTm13Q1lBbHU1OFpGZ094SWxRZGRJYzA1NEdnanNWOHZ3NV9QNFRmc1B0R2RtRlA0Njg2eWg3dl9RWGtBUGt1Z0ZqQ2gwdFoyalRDUVkzSEtNV3JtVnFHMDRBajdRRU01T2lXREtZYU02YXBnQlJnaG4yOHMwTXNsYVMxcGg4WDlVNkJNTV9wVl9qRkU0V3ZzdFVOZGJCc3dtUlVEbUVTZHNVY1FhNHpabE5uZVNzTFZXeVZ5c3hjWnhRd9IBzgFBVV95cUxOSlhUeVc3VjdHdUgtTm13Q1lBbHU1OFpGZ094SWxRZGRJYzA1NEdnanNWOHZ3NV9QNFRmc1B0R2RtRlA0Njg2eWg3dl9RWGtBUGt1Z0ZqQ2gwdFoyalRDUVkzSEtNV3JtVnFHMDRBajdRRU01T2lXREtZYU02YXBnQlJnaG4yOHMwTXNsYVMxcGg4WDlVNkJNTV9wVl9qRkU0V3ZzdFVOZGJCc3dtUlVEbUVTZHNVY1FhNHpabE5uZVNzTFZXeVZ5c3hjWnhRdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T08:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-89a6f5eb1498482b",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Más de 80 extranjeros serán expulsados de Colombia tras megaoperativo: irán del aeropuerto militar de Catam a Cúcuta antes de salir por la frontera",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOc2JXY2k4VVMzZHNhNWdaQW9rOFBZYzg0cVExYW53UkpWTlJVRU40SGM4V09RdUduYjgzY3FXZVY3LUdCeTNlaVdMcjJVY1I4LWNFenNVbVRqTHh6N2c2YjhhcDhCZXpaT0N4cG81c3ZhMl83NmF5eVlsWnJsSHJKNnpkRmtTVDdZTTd2eE9MdEhWVzNNVFN4cmxkTkJBTzljZzF1M1ZXOHRDQmJEWThxVUwya2FfeUxCaFladTJlYUJBRHV6THV6TkN5WnJkMnVWM1JfLW50N1QtbE5KbFpKdkp5VEd6ajRZbFUydmZhOHNIY2F4LUZyb1VkRnrSAYICQVVfeXFMTWtDU3EzNUVqLXFIU0xVOGZGV3FUQjZvTG11V0JPNmJHU2lWTlBSUlg4aVhRUUNRelowUFdhVHA0dnQ1SHZhLW1sMTRiRlJ3TmFrbUJnUEU4Uks2YktnU2RHblByVk9vcUVWTTZkcGRWYWx1ZnEyU1Jyem1qR19LS3A4aDdPUHNvWEJ3cjZvSXgyeEdzRXNHZ1BQczdSNG5FNVltek03YlpYUGh4MkJmYUROcTZCSkUxRGRDOWRJUXVkS2JRZ1dMbGNfY3hqOWtiM0hweWNodV9haXJUNFI2bjZwQi1JWGZYS2l4V1IyQ2MwckthZDRweThQSmdxUE1tZUJB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T08:22-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-c1a6d71c0bdcc759",
       "date": "2026-11-06",
       "category": "Colombia",
@@ -11948,8 +12043,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-06T12:24-05:00",
-  "lastNewSourceAtBogota": "2026-11-06T12:24-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-06T12:26-05:00",
+  "lastNewSourceAtBogota": "2026-11-06T12:26-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",

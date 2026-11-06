@@ -1,21 +1,29 @@
 {
   "editionDate": "2026-11-06",
-  "format": "compact_carousel",
+  "format": "compact_carousel_5_per_slide",
   "slides": [
     "portada.png",
     "grupo-01.png",
-    "grupo-02.png",
-    "grupo-03.png",
-    "grupo-04.png",
-    "grupo-05.png"
+    "grupo-02.png"
   ],
   "newsCounts": [
-    2,
-    2,
-    2,
-    2,
-    2
+    5,
+    5
+  ],
+  "maxNewsPerSlide": 5,
+  "sourceNewsIds": [
+    "orbiuno-20261106-am-01",
+    "orbiuno-20261106-am-02",
+    "orbiuno-20261106-am-03",
+    "orbiuno-20261106-am-04",
+    "orbiuno-20261106-am-05",
+    "orbiuno-20261106-am-06",
+    "orbiuno-20261106-am-07",
+    "orbiuno-20261106-12m-maluma",
+    "orbiuno-20261106-12m-bella-bonita",
+    "orbiuno-20261106-am-10"
   ],
   "fullAudioInImages": false,
-  "note": "Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
+  "noRepublishWithoutSubstantiveUpdates": true,
+  "note": "Portada y dos láminas de hasta cinco noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
 }
