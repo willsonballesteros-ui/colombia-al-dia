@@ -2,9 +2,269 @@
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-06",
   "editedAtBogota": "2026-11-05 17:28",
-  "siteVersion": "3.0",
+  "siteVersion": "3.1",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261106-18h-01",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Política y Actualidad",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Contraloría pide explicaciones por fallas en radares de El Dorado",
+      "summary": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.",
+      "executiveSummary": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.",
+      "audioFullTextEs": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.\n\nLa petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.\n\nLa solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
+      "originalArticleTextEs": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.\n\nLa petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.\n\nLa solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/06/contraloria-pide-informacion-a-aerocivil-tras-fallas-en-radares-en-aeropuerto-el-dorado/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 1,
+      "why": "La petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.",
+      "next": "La solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-02",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Mundo",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Amenazas de bomba interrumpen vuelos en distintos puntos de Europa",
+      "summary": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.",
+      "executiveSummary": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.",
+      "audioFullTextEs": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.\n\nLos vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.\n\nLas autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
+      "originalArticleTextEs": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.\n\nLos vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.\n\nLas autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/live/2026/nov/06/high-alert-hoax-bomb-threats-france-air-lingus-belgium-pope-leo-europe-live"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 2,
+      "why": "Los vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.",
+      "next": "Las autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-03",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Economía",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Colombia reanuda ventas de electricidad a Ecuador",
+      "summary": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.",
+      "executiveSummary": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.",
+      "audioFullTextEs": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.\n\nEntre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.\n\nLa cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
+      "originalArticleTextEs": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.\n\nEntre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.\n\nLa cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Primicias",
+          "url": "https://www.primicias.ec/economia/colombia-reactiva-venta-energia-electrica-ecuador-noviembre-cortes-luz-estiaje-136588/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 3,
+      "why": "Entre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.",
+      "next": "La cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-04",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Economía",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Wall Street sigue pendiente de la caída de acciones ligadas a IA",
+      "summary": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.",
+      "executiveSummary": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.",
+      "audioFullTextEs": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.\n\nEl debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.\n\nUna caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
+      "originalArticleTextEs": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.\n\nEl debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.\n\nUna caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 4,
+      "why": "El debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.",
+      "next": "Una caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-05",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Tecnología e IA",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Estados Unidos incorpora IA para revisar estadísticas agrícolas",
+      "summary": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.",
+      "executiveSummary": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.",
+      "audioFullTextEs": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.\n\nLa iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.\n\nLos responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
+      "originalArticleTextEs": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.\n\nLa iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.\n\nLos responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/technology/usda-launch-ai-tool-check-crop-production-data-after-errors-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 5,
+      "why": "La iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.",
+      "next": "Los responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-06",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Salud y Medioambiente",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Copernicus reporta el octubre más cálido a escala mundial",
+      "summary": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.",
+      "executiveSummary": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.",
+      "audioFullTextEs": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.\n\nEl servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.\n\nLa superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
+      "originalArticleTextEs": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.\n\nEl servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.\n\nLa superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Reuters · Copernicus",
+          "url": "https://www.reuters.com/sustainability/cop/after-warmest-october-record-2026-is-likely-exceed-15-c-above-pre-industrial-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 6,
+      "why": "El servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.",
+      "next": "La superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-07",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Entretenimiento y Farándula",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "U2 prepara «Carnaval de Luz» para el 13 de noviembre",
+      "summary": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.",
+      "executiveSummary": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.",
+      "audioFullTextEs": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.\n\nEntre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.\n\nEl disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
+      "originalArticleTextEs": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.\n\nEntre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.\n\nEl disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/465085508c38bfcc487ed247d4b987f5"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 7,
+      "why": "Entre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.",
+      "next": "El disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-08",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Tecnología e IA",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Manifestantes protestan contra un centro de datos en Ámsterdam",
+      "summary": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.",
+      "executiveSummary": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.",
+      "audioFullTextEs": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.\n\nEl episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.\n\nLa información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
+      "originalArticleTextEs": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.\n\nEl episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.\n\nLa información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/europe/activists-breach-microsoft-data-centre-construction-site-protests-spread-europe-2026-11-06/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 8,
+      "why": "El episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.",
+      "next": "La información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-09",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Deportes",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Alejandro Gutiérrez logra bronce juvenil en Dakar",
+      "summary": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.",
+      "executiveSummary": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.",
+      "audioFullTextEs": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.\n\nEl resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.\n\nPara precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
+      "originalArticleTextEs": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.\n\nEl resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.\n\nPara precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Vanguardia",
+          "url": "https://www.vanguardia.com/deportes/2026/11/06/historico-bronce-para-colombia-alejandro-gutierrez-brillo-en-los-juegos-olimpicos-de-la-juventud-dakar-2026/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 9,
+      "why": "El resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.",
+      "next": "Para precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
+    {
+      "id": "orbiuno-20261106-18h-10",
+      "date": "2026-11-06",
+      "editionSlot": "18:00",
+      "category": "Política y Actualidad",
+      "level": "Noticia contrastada · Edición de las seis",
+      "title": "Ucrania reclama garantías de seguridad antes de nuevas conversaciones",
+      "summary": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.",
+      "executiveSummary": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.",
+      "audioFullTextEs": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.\n\nLa discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.\n\nLos ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
+      "originalArticleTextEs": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.\n\nLa discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.\n\nLos ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
+      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleReviewed": true,
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com/article/713268db3dac59bff6ad6c831c72cdb6"
+        }
+      ],
+      "verification": "editorial_verified",
+      "priority": 10,
+      "why": "La discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.",
+      "next": "Los ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
+      "imageRightsVerified": false,
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+    },
     {
       "id": "rss-79264c28bf5514ea",
       "date": "2026-11-06",
@@ -1992,7 +2252,8 @@
       "audioEditorialSource": "Redacción ORBIUNO. Síntesis original basada en Caracol Radio.",
       "sourceLanguage": "es",
       "sourcePublishedAtBogota": "2026-11-02T22:36:00-05:00",
-      "editorialNote": "Nueva selección de mediodía; fuente original enlazada. Imágenes de terceros no reutilizadas."
+      "editorialNote": "Nueva selección de mediodía; fuente original enlazada. Imágenes de terceros no reutilizadas.",
+      "editionSlot": "12:00"
     },
     {
       "id": "orbiuno-20261106-12m-maluma",
@@ -2032,7 +2293,8 @@
       "imageLicense": "CC BY-SA 4.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Maluma_concert.jpg",
       "imageAlt": "Maluma en concierto durante la gira Don Juan de 2023",
-      "imageCaption": "Archivo (2023): Maluma en concierto; fotografía de referencia"
+      "imageCaption": "Archivo (2023): Maluma en concierto; fotografía de referencia",
+      "editionSlot": "12:00"
     },
     {
       "id": "rss-d37d911a93bc59f0",
@@ -2627,7 +2889,8 @@
       "imageLicense": "CC BY 2.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:PO1_3369_(52470342437).jpg",
       "imageAlt": "Fotografía de archivo de Changpeng Zhao, cofundador de Binance, en un evento de 2022",
-      "imageCaption": "Archivo (2022): cofundador de Binance; no muestra el incidente investigado"
+      "imageCaption": "Archivo (2022): cofundador de Binance; no muestra el incidente investigado",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-02",
@@ -2663,7 +2926,8 @@
       "originalArticleReviewed": true,
       "originalArticleReviewStatus": "verificado_con_fuente",
       "originalArticleIsPublisherVerbatim": false,
-      "editorialVerifiedAtBogota": "2026-11-06"
+      "editorialVerifiedAtBogota": "2026-11-06",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-03",
@@ -2708,7 +2972,8 @@
       "imageLicense": "CC BY-SA 4.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2019%20Bogot%C3%A1%20-%20Edificio%20Banco%20de%20la%20Rep%C3%BAblica.jpg",
       "imageAlt": "Archivo (2019) · Edificio del Banco de la República en Bogotá",
-      "imageCaption": "Archivo (2019) · Edificio del Banco de la República en Bogotá"
+      "imageCaption": "Archivo (2019) · Edificio del Banco de la República en Bogotá",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-04",
@@ -2753,7 +3018,8 @@
       "imageLicense": "CC BY 4.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Jhon%20Arias%20en%20Palmeiras%20-%20Copa%20Libertadores%202026.jpg",
       "imageAlt": "Archivo (mayo de 2026) · Jhon Arias con Palmeiras; no corresponde al partido narrado",
-      "imageCaption": "Archivo (mayo de 2026) · Jhon Arias con Palmeiras; no corresponde al partido narrado"
+      "imageCaption": "Archivo (mayo de 2026) · Jhon Arias con Palmeiras; no corresponde al partido narrado",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-05",
@@ -2798,7 +3064,8 @@
       "imageLicense": "CC0 1.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Papa%20Le%C3%B3n%20XIV.jpg",
       "imageAlt": "Archivo (junio de 2026) · El papa León XIV en Madrid",
-      "imageCaption": "Archivo (junio de 2026) · El papa León XIV en Madrid"
+      "imageCaption": "Archivo (junio de 2026) · El papa León XIV en Madrid",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-06",
@@ -2843,7 +3110,8 @@
       "imageLicense": "Dominio público (NASA)",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:STS004-37-716%20-%20Strait%20of%20Hormuz.jpg",
       "imageAlt": "Archivo satelital (1982) · Estrecho de Ormuz; no muestra el incidente de hoy",
-      "imageCaption": "Archivo satelital (1982) · Estrecho de Ormuz; no muestra el incidente de hoy"
+      "imageCaption": "Archivo satelital (1982) · Estrecho de Ormuz; no muestra el incidente de hoy",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-07",
@@ -2887,7 +3155,8 @@
       "imageLicense": "CC BY 2.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg",
       "imageAlt": "Dario Amodei, directivo de Anthropic, durante TechCrunch Disrupt 2023",
-      "imageCaption": "Archivo (2023): directivo de Anthropic; imagen contextual"
+      "imageCaption": "Archivo (2023): directivo de Anthropic; imagen contextual",
+      "editionSlot": "08:00"
     },
     {
       "id": "orbiuno-20261106-am-08",
@@ -2999,7 +3268,8 @@
       "imageLicense": "CC BY 4.0",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:El%20Guavio%202024.jpg",
       "imageAlt": "Archivo (2024) · Embalse del Guavio; no representa las reservas actuales",
-      "imageCaption": "Archivo (2024) · Embalse del Guavio; no representa las reservas actuales"
+      "imageCaption": "Archivo (2024) · Embalse del Guavio; no representa las reservas actuales",
+      "editionSlot": "08:00"
     },
     {
       "id": "rss-640929fd48c1e183",
@@ -13420,5 +13690,10 @@
   ],
   "editionSlot": "08:00",
   "openingScriptEs": "Buenos días. Son las ocho de la mañana de este viernes seis de noviembre. Esto es ORBIUNO. Hackers de Corea del Norte: robo de US$6.300 millones. 104 armas de guerra decomisadas en el Caribe. Inflación podría cerrar 2026 en 7,1 %. Jhon Arias brilla: doblete en solo 14 minutos. El papa vuelve a Suramérica tras una operación. Ormuz: barcos reportan nuevos ataques. Anthropic: dudas sobre su millonaria salida a bolsa. Desplome tecnológico golpea a fondos globales. Tribunal ordena libertad de Luis F. Velasco. Piden ahorrar energía entre las 6 y las 9 p. m.. Encuentra el desarrollo completo y las fuentes originales en colombia-al-dia.pages.dev.",
-  "editionLabel": "ORBIUNO · Viernes 6 de noviembre · 08:00 Bogotá"
+  "editionLabel": "Noticias de hoy · Ediciones 08:00, 12:00 y 18:00 en una sola página",
+  "editionSlots": [
+    "08:00",
+    "12:00",
+    "18:00"
+  ]
 }
