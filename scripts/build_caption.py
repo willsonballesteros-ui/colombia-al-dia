@@ -45,7 +45,24 @@ def build(db):
     slot=os.getenv("ORBIUNO_EDITION_SLOT", "8am") if os.getenv("ORBIUNO_EXTRAORDINARY")=="1" else edition_slot()
     verified_sports=sum(n.get("category")=="Deportes" for n in news)
     sports_ready=slot!="12m" or 1<=verified_sports<=2
+    # No presentar por segunda vez la edición matutina como una edición nueva.
+    repeats=[n for n in news if "-am-" in n["id"] and not (
+        (n.get("editorialUpdate") or {}).get("substantial") is True
+        and (n.get("editorialUpdate") or {}).get("newFacts")
+        and (n.get("editorialUpdate") or {}).get("verifiedSource"))]
     blockers=[] if sports_ready else ["edicion_mediodia_requiere_1_o_2_deportes_verificados"]
+    if slot!="8am" and repeats:
+        blockers.append("contiene_"+str(len(repeats))+"_noticias_ya_presentadas_en_la_manana")
+    publication_ready=not blockers
+    compact_path=ROOT/"media"/day/"instagram-compacto.json"
+    if not compact_path.exists():
+        raise RuntimeError("Carrusel no renderizado. No generar publicación con archivo anterior")
+    compact=json.loads(compact_path.read_text(encoding="utf-8"))
+    slide_names=compact.get("slides",[])
+    if compact.get("maxNewsPerSlide")!=5 or not 2<=len(slide_names)<=3:
+        raise RuntimeError("Carrusel no cumple el diseño compacto de máximo cinco noticias")
+    media=["https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
+           +day+"/"+name for name in slide_names]
     caption_link=tracked_url(day,"caption",slot)
     comment_link=tracked_url(day,"comment",slot)
     bio_link=tracked_url(day,"bio",slot)
@@ -73,21 +90,16 @@ def build(db):
         "brand":"ORBIUNO",
         "editionSlot":slot,
         "verifiedSports":verified_sports,
-        "publicationReady":sports_ready,
+        "publicationReady":publication_ready,
         "blockers":blockers,
         "utmCampaign":"edicion_"+day.replace("-","")+"_"+slot,
         "links":{"bio":bio_link,"story":story_link,"caption":caption_link,"firstComment":comment_link},
         "caption":caption,
         "firstComment":first_comment,
         "publicationVerified":False,
-        "media":[
-            "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
-            +day+"/portada.png"
-        ]+[
-            "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
-            +day+"/grupo-"+str(i).zfill(2)+".png"
-            for i in range(1,6)
-        ],
+        "repeatedMorningNews":len(repeats),
+        "newsPerSlide":compact["newsCounts"],
+        "media":media,
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
     }
