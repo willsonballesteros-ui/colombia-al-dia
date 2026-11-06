@@ -1,0 +1,26 @@
+{
+  "edition": "2026-11-05 extra",
+  "postId": 418447702,
+  "uuid": "-2123777039491184210",
+  "url": "https://www.instagram.com/reel/DfYgPM9iayD/",
+  "status": "PUBLISHED",
+  "scheduledAt": {
+    "dateTime": "2026-11-05T21:11:00",
+    "timezone": "America/Bogota"
+  },
+  "voice": "es-CO-SalomeNeural",
+  "voiceDescription": "Voz femenina sintética alternativa, sin clonación de identidad",
+  "durationSeconds": 62.9,
+  "subtitles": true,
+  "web": "https://colombia-al-dia.pages.dev/",
+  "fileSha256": "29acf03944979878760ccf132a898bacac3f1b38ff0d18b448267acb73ef0096",
+  "videoSource": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/fb5f197de18a6a9b1fbdc7f90166b3aed530b702/media/2026-11-05-extra/ORBIUNO_Extra_20261105.mp4",
+  "checks": [
+    "Original and public video byte-identical",
+    "Metricool video byte-identical",
+    "Full video decode clean",
+    "122 script words matched TTS word boundary metadata",
+    "28 subtitle cues without overlap"
+  ],
+  "listening_review": "not_performed"
+}
