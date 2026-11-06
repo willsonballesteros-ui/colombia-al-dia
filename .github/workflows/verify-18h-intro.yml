@@ -1,0 +1,25 @@
+name: ORBIUNO - Comprobar MP4 con introduccion 18h
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-18h-intro.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar URL, tipo de medio y longitud en Cloudflare
+        run: |
+          set -eu
+          URL='https://colombia-al-dia.pages.dev/media/2026-11-06/reel_18pm_con_intro.mp4'
+          for i in $(seq 1 20); do
+            curl -sSLI --max-time 20 "$URL" -o /tmp/headers
+            if grep -iq 'content-type: video/mp4' /tmp/headers; then
+              echo "REEL_CON_INTRO_PUBLICO"
+              cat /tmp/headers | grep -iE '^HTTP/|content-type:|content-length:|etag:'
+              exit 0
+            fi
+            sleep 6
+          done
+          echo "MP4_CON_INTRO_NO_ACCESIBLE"; exit 1
