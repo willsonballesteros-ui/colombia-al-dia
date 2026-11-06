@@ -1,0 +1,14 @@
+{
+  "id": 418500761,
+  "providers": [
+    {
+      "network": "instagram",
+      "id": "https://www.instagram.com/reel/DfYreZdl7JB/",
+      "status": "ERROR",
+      "publicUrl": "https://www.instagram.com/reel/DfYreZdl7JB/",
+      "detailedStatus": "The Instagram post was published with some warnings: No se pudo publicar el primer comentario."
+    }
+  ],
+  "verifiedBy": "Metricool provider response explicitly confirms publication; warning only first comment",
+  "videoSHA256": "89b0ff15463e8c7958955a17879375ea6dc6da2746ab929b9cc8fc116225c668"
+}
