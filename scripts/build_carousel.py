@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ORBIUNO: carrusel rápido, un titular + dos líneas + fuente por lámina.
+"""ORBIUNO: carrusel compacto, máximo cinco noticias verificadas por lámina.
 
 Las fotos se reproducen SOLO con derechos verificados. En su ausencia se
 muestra favicon REAL del sitio periodístico, no una fotografía inventada.
@@ -225,53 +225,52 @@ def cover(day, news, out):
 
 
 def grouped_card(notes, first_number, group_index, total_groups, out):
-    """Dos noticias por lámina; colores vivos y logos de las fuentes en tamaño legible."""
-    if len(notes)!=2: raise ValueError("Se requieren exactamente dos noticias por lámina")
-    im=Image.new("RGB",(W,H),"#F5F7FD")
-    d=ImageDraw.Draw(im)
-    d.rectangle((0,0,W,166),fill="#121A35")
-    d.rectangle((0,0,W,12),fill="#FF684E")
-    d.text((50,25),"ORBIUNO",font=font(63,True),fill="#FFFFFF")
-    d.text((51,109),"COLOMBIA AL DÍA   /   NOTICIAS VERIFICADAS",font=font(21,True),fill="#66F3D7")
-    d.text((52,180),f"PANORAMA  ·  LÁMINA {group_index} DE {total_groups}",font=font(29,True),fill="#152447")
-    tones=[("#182347","#FFCE4E","#E4EFFB"),("#35214E","#62F1D9","#F6E9FD")]
-    for i,n in enumerate(notes):
-        y=244+i*478; col,accent,light=tones[i]
-        d.rounded_rectangle((44,y,1036,y+457),radius=22,fill=col)
-        d.rounded_rectangle((44,y,58,y+457),radius=9,fill=accent)
-        d.rounded_rectangle((76,y+22,172,y+96),radius=16,fill=accent)
-        d.text((94,y+36),f"{first_number+i:02d}",font=font(36,True),fill=col)
-        d.text((192,y+42),str(n.get("category","ACTUALIDAD")).upper()[:30],
-               font=font(26,True),fill=accent)
-        title=str(n.get("socialHeadline") or n["title"])
-        photo=licensed_image(n)
-        if photo is not None:
-            im.paste(ImageOps.fit(photo,(286,168),method=Image.Resampling.LANCZOS),(704,y+122))
-            d=ImageDraw.Draw(im)
-            title_ft=font_for_lines(d,title,594,4,preferred=47,minimum=32,bold=True)
-            paragraph(d,title,89,y+119,title_ft,"#FFFFFF",595,4,7)
-            d.rounded_rectangle((703,y+270,994,y+307),radius=4,fill=col)
-            d.text((711,y+277),"FOTO DE ARCHIVO · CRÉDITO EN WEB",font=font(14,True),fill=accent)
-        else:
-            title_ft=font_for_lines(d,title,910,3,preferred=55,minimum=39,bold=True)
-            paragraph(d,title,89,y+119,title_ft,"#FFFFFF",885,3,8)
-        d.line((90,y+310,989,y+310),fill=accent,width=4)
-        detail=str(n.get("socialDetail") or n.get("executiveSummary") or n.get("summary",""))
-        ft=font_for_lines(d,detail,892,2,preferred=27,minimum=23)
-        paragraph(d,detail,91,y+321,ft,light,883,2,7)
-        ico=favicon(n)
+    """Formato ORBIUNO compacto: hasta cinco noticias en una lámina, nunca una por noticia."""
+    if not 1 <= len(notes) <= 5:
+        raise ValueError("Máximo cinco noticias en una lámina")
+    im = Image.new("RGB", (W, H), "#160F2B")
+    d = ImageDraw.Draw(im)
+    d.rectangle((0, 0, W, 153), fill="#1B1939")
+    d.rectangle((0, 0, W, 13), fill="#FF715B")
+    d.text((50, 28), "ORBIUNO", font=font(62, True), fill=WHITE)
+    d.text((52, 108), "COLOMBIA AL DÍA  ·  INFORMACIÓN VERIFICADA", font=font(21, True), fill="#62E4D3")
+    d.text((55, 175), f"NOTICIAS {first_number:02d} A {first_number+len(notes)-1:02d}   ·   LÁMINA {group_index}/{total_groups}",
+           font=font(29, True), fill="#FFCE6B")
+    colors = ["#FF8066", "#F9D16C", "#65E5D2", "#BF9EFF", "#FF9BC4"]
+    start = 248
+    gap = 16
+    card_height = min(290, int((936 - gap*(len(notes)-1)) / len(notes)))
+    for i, n in enumerate(notes):
+        y = start + i*(card_height+gap)
+        color = colors[i%len(colors)]
+        d.rounded_rectangle((46, y, 1033, y+card_height), radius=19, fill="#2D2442")
+        d.rounded_rectangle((46, y, 62, y+card_height), radius=8, fill=color)
+        d.text((87, y+16), f"{first_number+i:02d}", font=font(34, True), fill=color)
+        d.text((176, y+22), str(n.get("category","ACTUALIDAD")).upper()[:29],
+               font=font(18, True), fill="#C8BDEE")
+        title = str(n.get("socialHeadline") or n["title"])
+        preferred = 34 if len(notes)>=4 else 43
+        title_ft = font_for_lines(d, title, 820, 2, preferred=preferred,
+                                  minimum=27 if len(notes)>=4 else 35, bold=True)
+        paragraph(d, title, 87, y+58, title_ft, WHITE, 815, 2, 4)
+        source = str(n["sources"][0]["name"])[:48]
+        d.text((89, y+card_height-38), "FUENTE: "+source,
+               font=font(19, True), fill=color)
+        ico = favicon(n)
         if ico is not None:
-            ico=ico.copy();ico.thumbnail((72,72),resample=Image.Resampling.LANCZOS)
-            d.rounded_rectangle((82,y+378,163,y+455),radius=11,fill="#FFFFFF")
-            im.paste(ico,(87,y+381),ico);d=ImageDraw.Draw(im)
-        d.text((175,y+406),"FUENTE: "+str(n["sources"][0]["name"])[:52],
-               font=font(23,True),fill=accent)
-    d.rectangle((0,1227,W,H),fill="#121A35")
-    d.rectangle((0,1227,W,1235),fill="#FF684E")
-    d.text((52,1248),"ESCUCHA EL DESARROLLO EN ORBIUNO",font=font(27,True),fill="#FFCE4E")
-    d.text((52,1293),"colombia-al-dia.pages.dev    ·    @resumen.noticias",
-           font=font(21,True),fill="#FFFFFF")
-    im.save(out,optimize=True)
+            ico = ico.copy()
+            ico.thumbnail((44,44), resample=Image.Resampling.LANCZOS)
+            d.rounded_rectangle((947, y+card_height-62, 1011, y+card_height-4),
+                                radius=9, fill="#FFFFFF")
+            im.paste(ico, (957+(44-ico.width)//2,
+                           y+card_height-57+(44-ico.height)//2), ico)
+            d = ImageDraw.Draw(im)
+    d.rectangle((0, 1224, W, H), fill="#1B1939")
+    d.rectangle((0, 1224, W, 1232), fill="#65E5D2")
+    d.text((53, 1245), "ESCUCHA EL REPORTE COMPLETO", font=font(28, True), fill="#FFCE6B")
+    d.text((53, 1293), "colombia-al-dia.pages.dev  ·  @resumen.noticias",
+           font=font(22, True), fill=WHITE)
+    im.save(out, optimize=True)
 
 
 def combined_sports_card(a,b,out):
@@ -378,23 +377,24 @@ def main():
     out=ROOT/"media"/day;out.mkdir(parents=True,exist_ok=True)
     cover(day,news,out/"portada.png")
     story_card(day,news,out/"historia-orbiuno.png")
-    for i,n in enumerate(news,1):
-        single_card(n,i,day,out/f"top10-{i:02d}.png")
-    # Carrusel editorial con portada + cinco parejas (10 noticias).
-    blocks=[news[i:i+2] for i in range(0,len(news),2)]
+    # La versión publicada nunca utiliza una diapositiva por noticia.
+    blocks=[news[i:i+5] for i in range(0,len(news),5)]
     start=1
     for i,group in enumerate(blocks,1):
-        (grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png") if len(group)==2 else news_card(group[0],start,day,out/f"grupo-{i:02d}.png"))
+        grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png")
         start+=len(group)
     compact={
-       "editionDate":day,"format":"compact_carousel",
-       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,6)],
+       "editionDate":day,"format":"compact_carousel_5_per_slide",
+       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,len(blocks)+1)],
        "newsCounts":[len(group) for group in blocks],
+       "maxNewsPerSlide":5,
+       "sourceNewsIds":[n["id"] for n in news],
        "fullAudioInImages":False,
-       "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
+       "noRepublishWithoutSubstantiveUpdates":True,
+       "note":"Portada y dos láminas de hasta cinco noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Generadas portada y laminas editoriales de hasta dos noticias cada una.")
+    print("Generadas portada y láminas editoriales de máximo cinco noticias cada una.")
 
 
 if __name__=="__main__":
