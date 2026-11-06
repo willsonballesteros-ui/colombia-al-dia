@@ -485,7 +485,7 @@ const availableAudio=n=>{
 };
 const canNarrate=n=>!!(n&&(availableAudio(n)||(nativeSynth&&narrationText(n).length>30)));
 const speedLabel=()=>speechRates[speechRateIndex]+'x';
-const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified').sort((a,b)=>(a.priority??999)-(b.priority??999)).slice(0,10);
+const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified'&&['08:00','12:00','18:00'].includes(n.editionSlot)).sort((a,b)=>['08:00','12:00','18:00'].indexOf(a.editionSlot)-['08:00','12:00','18:00'].indexOf(b.editionSlot)||(a.priority??999)-(b.priority??999));
 let audioStatus=el('audio-status');
 if(!audioStatus){
  audioStatus=document.createElement('p');audioStatus.id='audio-status';
