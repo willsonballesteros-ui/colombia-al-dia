@@ -1,0 +1,54 @@
+name: ORBIUNO - Publicar portada unica de 3 ediciones
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/portada-tres-ediciones.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  home:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerar portada a partir de TODAS las ediciones verificadas
+        run: |
+          python3 scripts/prepare_site.py
+          python3 - <<'PY'
+          from pathlib import Path
+          import json,re
+          db=json.loads(Path('noticias.json').read_text())
+          home=Path('index.html').read_text()
+          assert all('Edición de las '+time in home for time in ('8:00 a. m.','12:00 m.','6:00 p. m.'))
+          assert 'Contraloría pide explicaciones por fallas en radares' in home
+          assert home.count('id="edicion-')==3
+          assert 'href="./edicion-2026-11-06-18.html"' not in home
+          assert all(n.get('editionSlot') for n in db['news'] if n.get('date')==db['editionDate'] and n.get('verification')=='editorial_verified')
+          m=re.search(r'<script type="application/json" id="initial-news">(.*?)</script>',home,re.S)
+          assert m and len(json.loads(m.group(1))['news'])==len(db['news'])
+          print('PORTADA_VALIDADA 08:00 12:00 18:00')
+          PY
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          s=Path('index.html').read_text()
+          scripts=re.findall(r'<script(?:\s+[^>]*)?>(.*?)</script>',s,re.S)
+          Path('/tmp/orbiuno-front.js').write_text(scripts[-1])
+          PY
+          node --check /tmp/orbiuno-front.js
+      - name: Confirmar versión en main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for i in 1 2 3; do
+            git pull --rebase origin main
+            python3 scripts/prepare_site.py
+            git add index.html
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'ORBIUNO: portada consolidada 8 12 y 18'
+            git push origin HEAD:main && exit 0
+            sleep 3
+          done
+          exit 1
