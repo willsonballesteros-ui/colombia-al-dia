@@ -1,0 +1,41 @@
+name: ORBIUNO - Mejorar CTA voz alta en Reel 18h
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cta-voz-alta-18h.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar video
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Redactar llamado a escuchar noticias en voz alta
+        run: |
+          set -euo pipefail
+          DIR=media/2026-11-06
+          INPUT="$DIR/reel_18pm_voz_sobre_portada.mp4"
+          OUTPUT="$DIR/reel_18pm_voz_alta_final.mp4"
+          test -s "$INPUT"
+          FONT=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          ffmpeg -hide_banner -loglevel error -nostdin -y -i "$INPUT" \
+            -vf "drawbox=x=85:y=447:w=900:h=960:color=0x12353D:t=fill:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='¡LA NOTICIA':fontsize=69:fontcolor=0xFFC857:x=112:y=535:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='NO TERMINA AQUÍ!':fontsize=53:fontcolor=white:x=112:y=633:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='ESCUCHA CADA NOTICIA':fontsize=37:fontcolor=0x62DED0:x=112:y=765:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='COMPLETA EN VOZ ALTA':fontsize=36:fontcolor=white:x=112:y=834:enable='gte(t,57.0)',drawbox=x=105:y=1010:w=865:h=125:color=0xFF7659:t=fill:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='ENLACE DEL PERFIL':fontsize=48:fontcolor=0x14222B:x=155:y=1047:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='@resumen.noticias':fontsize=39:fontcolor=white:x=110:y=1217:enable='gte(t,57.0)',drawtext=fontfile=$FONT:text='colombia-al-dia.pages.dev':fontsize=31:fontcolor=white:x=110:y=1285:enable='gte(t,57.0)'" \
+            -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a copy -movflags +faststart "$OUTPUT"
+          ffprobe -v error -show_entries format=duration,size:stream=codec_type -of json "$OUTPUT"
+          test "$(stat -c%s "$OUTPUT")" -gt 700000
+          ffmpeg -hide_banner -loglevel error -nostdin -y -ss 59.8 -i "$OUTPUT" -frames:v 1 "$DIR/reel_18pm_voz_alta_preview.png"
+      - name: Guardar versión corregida
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-06/reel_18pm_voz_alta_final.mp4 media/2026-11-06/reel_18pm_voz_alta_preview.png
+          git commit -m 'ORBIUNO: CTA claro para escuchar cada noticia en voz alta'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 3
+          done
+          exit 1
