@@ -1,0 +1,55 @@
+name: ORBIUNO - Reel cinco y cinco con voz Dora
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render_orbiuno_5x5.py'
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-reel-cinco-cinco
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Descargar la edicion
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias gratuitas
+        run: |
+          python -m pip install --disable-pip-version-check "kokoro-onnx==0.6.1" Pillow numpy soundfile
+          command -v ffmpeg
+          command -v ffprobe
+      - name: Descargar motor de voz autorizado y comprobar hashes
+        run: |
+          curl -fL --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl -fL --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Generar audio y Reel de la edicion del dia
+        run: python scripts/render_orbiuno_5x5.py
+      - name: Probar audio real y video con FFprobe
+        run: |
+          F="media/$(TZ=America/Bogota date +%F)/reel_08am.mp4"
+          ffprobe -v error -show_entries format=duration,size:stream=codec_type,codec_name -of json "$F"
+          test "$(ffprobe -v error -select_streams a -show_entries stream=codec_type -of csv=p=0 "$F" | head -1)" = audio
+          test "$(ffprobe -v error -select_streams v -show_entries stream=codec_type -of csv=p=0 "$F" | head -1)" = video
+          test "$(stat -c%s "$F")" -gt 100000
+      - name: Guardar MP4 y trazabilidad sin publicar duplicados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "media/$(TZ=America/Bogota date +%F)/reel_08am.mp4" "media/$(TZ=America/Bogota date +%F)/reel_08am.srt" "media/$(TZ=America/Bogota date +%F)/reel_08am.json"
+          if git diff --cached --quiet; then echo 'Reel ya guardado'; exit 0; fi
+          git commit -m 'ORBIUNO: Reel 5+5 narrado del 6 de noviembre'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i*4))
+          done
+          exit 1
