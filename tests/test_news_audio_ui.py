@@ -79,15 +79,18 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("Fuente ↗", rendered)
         self.assertNotIn('<details class="news-more">', rendered)
 
-    def test_fixed_voice_and_three_playback_rates(self):
-        self.assertIn('speechRates=[1.25,1.5,2]', self.page)
+    def test_normal_speed_and_fallback_playback(self):
+        self.assertIn('speechRates=[1,1.25,1.5,2]', self.page)
+        self.assertIn('let speechRateIndex=0',self.page)
         self.assertIn('const player=new Audio()', self.page)
         self.assertIn('player.preservesPitch=true', self.page)
-        self.assertIn('speechRates[speechRateIndex]/audioManifest.baseRate', self.page)
+        self.assertIn('speechRates[speechRateIndex]/(audioManifest.baseRate||1.25)', self.page)
         self.assertIn('a.text===narrationText(n)', self.page)
         self.assertNotIn('id="voice-select"', self.page)
         self.assertNotIn('id="tone-select"', self.page)
-        self.assertNotIn('SpeechSynthesisUtterance', self.page)
+        self.assertIn('SpeechSynthesisUtterance', self.page)
+        self.assertIn('const startNative=', self.page)
+        self.assertNotIn('Leyendo con la voz en español de tu dispositivo · ', self.page)
 
     def test_full_article_requires_source_rights_and_translation(self):
         from copy import deepcopy
