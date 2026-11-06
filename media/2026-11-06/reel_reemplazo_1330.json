@@ -19,7 +19,7 @@
   "voice": "ef_dora",
   "voiceEngine": "kokoro-onnx",
   "voiceSpeed": 1.25,
-  "durationSeconds": 85.08,
+  "durationSeconds": 83.33,
   "resolution": [
     1080,
     1920
