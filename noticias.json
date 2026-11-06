@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-79264c28bf5514ea",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Medellín acelera su transformación digital: el 81% de las empresas adoptará inteligencia artificial para 2029",
+      "summary": "Titular difundido por IFM Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "IFM Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaFRlLTZyTHpWX0lRU1RLMzdraVZueVNxRjBQTV9pem96U2dPMVdNRDRZRjB4VmdRUHdTX2lQQTRmekRBclctbDVMSnlMdFhnZE5ZYnphTDhrcWNLUEt6eU03bi1pX3BjV05qNzZSV2I3QnZ1OXhrQnVPMzNqc0tBWlYtc1ZSVjVNcUlyTERLdGpta1FLU0ctYUVLendiNmozZVRncXRWYUg2c2JaQk9oNHBHSHZiNncyMmsyMjlYV0VXd3FXWkJGdEJCQjdpMUVBVG1vdUVZR0JGZmpUWEVmOV9abXdLZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T18:32-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-70c7a1589c48b524",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "At. Nacional vs Pereira: Choque de realidades en el Atanasio por la Liga BetPlay Colombia",
+      "summary": "Titular difundido por Futbolred a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Futbolred · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOTjREa1pFTWYxa2w0a2UxWWhQQlJyandRTWVGa2wweW5mOVJZckFNU2dUN0FRWjRESUR6bzJNNElRSF95ZEViNGcxV0luZFhScjVlQU02WmFWb0FULXJ0blVTY0pCS2pKMUN1ZHE0NlliYksxN01WUWVtd1ZaRnRlRW1aMHVvS3NKeEhqUEU2a1ZrMXZPdWQ5cWFCT0ltZUpfSk1CaDdGQno3N2c0OXI2RnZTeEY4aUlMRTZTOXpmR2lXbGlMb25kdUk0ZTA5aDF1aE1ZdEFxUjNJa0dKcEJXSC1VVm1Xd9IB6wFBVV95cUxPZmxUcU5nelhsZ2xSUUlnVC1VLVhITllJaFdYcTdRWm1hV3JUR1ZQeTRKR1BEUzJTZnlJT1ZDTy1OTGhyaUlfcGZ5d1NJczBZYXRMYjlfRnVfQ3JNTlBjWm4wYU56MkRNTWg1ZXk2THgxMUhlczZfcUkxejJZbzk2NmFDcmRjQklTeEFSbFh0OWIwQmtha0ZiSVdMbW02MzBfdW5UV0ZEUHVrR1NOZ0R2cE82ZVBzTzh6MEx3ODJUUDUxc0xDanhhMmkxWGZIdjR0eFBZMUpyd2lELU9Rb0hSUGpvSW5oNW5MV3FV?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T18:15-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9a31cb077e2bbc35",
+      "date": "2026-11-06",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Congreso de Paraguay destituye a Santiago Peña y juramenta a Pedro Alliana como nuevo presidente del país",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cwkg55edm8r7o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T18:10-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-1c9dc0a69062de4c",
+      "date": "2026-11-06",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial y seguridad vial: tecnologías que ayudan a prevenir siniestros y salvar vidas",
+      "summary": "Titular difundido por Noticias \"d\" a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias \"d\" · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaExJeE1KNXlvbUwtWHhtVWM5QXQ5X2NTTFp0VlBJM3FCOThPd0U4ZEZLT3YyVnlZUnh6RWFWa3NvcVRHMDVvNXpia3U2YkFtU2t0dE1qaU9jejdEU0ZEMWU4c0NUUXA1dmtTR1Q0cFZIS29POHFEVE9mQXEySDFjMXptMUVqcFN1Wk92cl9NcVo4Z2lnWXhrTE1heExXZ1cwQWE4NVVCbHYyRWNJVnZrRmJyLXR0OVdkWFhndVY0Q3BMSm5tMU5GNW9MQkI4S29kR3B6dzktc3JBUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e68f24bb2ef1e080",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "China podría entrar a millonario negocio con la imprenta de billetes en Colombia con esta tecnología",
+      "summary": "Titular difundido por Valora Analitik a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Valora Analitik · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOX2xLMlRTNG12blc5WGpMZmI2aGNKTERTRURmWU9Gb1VUQ1U1aFFKVzRiVVlZenpNQzhwNkJrdWZvaXE5b3JHNkJwdTBUU3JrZTdpTVBZT0UtdkZvSTNIQzVmc19UUnA5cnlpMG91T0JGMXZ1aWhxMmdHRTdjeTdlLXQ4YVpOR2RtSUo2dXdqS2pycDIyM3JIWHNSeVpxd1lDdUNiQWtHbTRTSzMwc1h4elg5b09NOHN4NEFmOWRiOS0tXzJYbmdzajhGQ3bSAdIBQVVfeXFMUHdmTVRyeG5yWGhDTWlVTUpYQ2EtdWJ3NGQyQkdRZ1BXaWNKV1ZEVXlIRU44TE91dnhQaTB1WmNNbWQyaWhDaGViMENzZ0o2VnhrUERFRERCdkU3b0YyTUFGRTctb1J3U0dqcFVDaTRPOGlmSHBraTBEWjExM25fSmVNb0lzUmxubDNBaDFZSzNDdFNORUFLdXZsWVc3Y3hTdk9vME1tRjZLZ1k1ZFN5MGdIT3kwN2tJZnhzbDJfNThKX3RWSDhVUFVaWlBFVnlMbm13?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0953d1282b618751",
+      "date": "2026-11-06",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La economía colombiana pierde impulso al cierre de 2026 en medio de alta inflación y tasas elevadas",
+      "summary": "Titular difundido por IFM Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "IFM Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYzFPYkt4N3ktc1JMaUFfQUdoYndITGMyWE1BTEpXUDc3YUt1NjN3c011SGFQOG1jcnJiLXJfemdhYUxnUmR0blFHdnllM2p4N3ZjYjNDSlpqN3J2T05IT2prbXlCOTFOTzQ3LTQyUkdqbXN3Ni1SQ0gydHZxM2p4ejE3Tzl0bVZCR1lsWEQwNXF4RkxDaWlvM3lMT0I5SDk1eEZ4N2hMMVZSWG5zX3E4WThCMnhhZTA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T17:57-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-97b19fec555a058d",
+      "date": "2026-11-06",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La ONU reivindica como «exitoso» el acuerdo de paz en Colombia tras las críticas del Gobierno",
+      "summary": "Titular difundido por MiOriente a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MiOriente · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0yRnUyOTA1WlNrLXUtQXF0a19lUXFmdjlrWVc5bWtsazR5YUFQdFNqb0J6Z2xxc3hjSmNxamtySEl5ckdOMHM5aHRPcGJRME14X0JVaXczTnpCUXdUM2xick9vVk1INlpqMG1KX1BrZzhneGpPZlE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-06T16:16-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-98356ce5670fe8bd",
       "date": "2026-11-06",
       "category": "Colombia",
@@ -12998,8 +13131,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-06T17:46-05:00",
-  "lastNewSourceAtBogota": "2026-11-06T17:46-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-06T18:40-05:00",
+  "lastNewSourceAtBogota": "2026-11-06T18:40-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
