@@ -119,8 +119,8 @@ def article_html(n):
         'data-tts-id="{id}" data-tts-full="{authorized}" aria-pressed="false" '
         'aria-label="{label}" title="{tip}">▶ {label}</button>'
         '<button type="button" class="speed-btn" data-tts-action="speed" '
-        'data-tts-id="{id}" aria-label="Cambiar velocidad. Actual: 1.25x" '
-        'title="Velocidad de lectura">1.25x</button>'
+        'data-tts-id="{id}" aria-label="Cambiar velocidad. Actual: 1x" '
+        'title="Velocidad de lectura">1x</button>'
         '<button type="button" class="stop-btn" data-tts-action="stop" '
         'data-tts-id="{id}" aria-label="Detener lectura" hidden>■</button>'
     ).format(
