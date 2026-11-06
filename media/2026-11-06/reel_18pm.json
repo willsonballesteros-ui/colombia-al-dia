@@ -1,0 +1,32 @@
+{
+  "editionDate": "2026-11-06",
+  "slot": "18:00 America/Bogota",
+  "format": "9:16",
+  "resolution": [
+    1080,
+    1920
+  ],
+  "display": "2 grupos de cinco; realce en funcion del audio",
+  "newsCount": 10,
+  "sourceNames": [
+    "Caracol Radio",
+    "The Guardian",
+    "Primicias",
+    "Reuters",
+    "Reuters",
+    "Reuters · Copernicus",
+    "Associated Press",
+    "Reuters",
+    "Vanguardia",
+    "Associated Press"
+  ],
+  "voice": "kokoro-onnx/ef_dora",
+  "nativeSpeed": 1.25,
+  "postTimeStretch": false,
+  "subtitles": "reel_18pm.srt",
+  "durationSeconds": 53.54,
+  "output": "reel_18pm.mp4",
+  "audioStreamVerified": true,
+  "publicationVerified": false,
+  "photoRightsMode": "solo fondos tipograficos; favicon real de fuente si disponible"
+}
