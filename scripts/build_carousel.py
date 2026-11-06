@@ -309,7 +309,7 @@ def main():
         start+=len(group)
     compact={
        "editionDate":day,"format":"compact_carousel",
-       "slides":["portada.png"]+[f"top10-{i:02d}.png" for i in range(1,11)],
+       "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,6)],
        "newsCounts":[len(group) for group in blocks],
        "fullAudioInImages":False,
        "note":"Carrusel estático de seis imágenes, sin video. La narración completa está disponible en la web."
