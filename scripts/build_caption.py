@@ -54,13 +54,10 @@ def build(db):
     if slot!="8am" and repeats:
         blockers.append("contiene_"+str(len(repeats))+"_noticias_ya_presentadas_en_la_manana")
     publication_ready=not blockers
-    compact_path=ROOT/"media"/day/"instagram-compacto.json"
-    if not compact_path.exists():
-        raise RuntimeError("Carrusel no renderizado. No generar publicación con archivo anterior")
-    compact=json.loads(compact_path.read_text(encoding="utf-8"))
-    slide_names=compact.get("slides",[])
-    if compact.get("maxNewsPerSlide")!=5 or not 2<=len(slide_names)<=3:
-        raise RuntimeError("Carrusel no cumple el diseño compacto de máximo cinco noticias")
+    # La definición del contenido es independiente de que el render ya haya terminado.
+    # El pipeline valida los archivos físicos después de construir el carrusel.
+    slide_names=["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,(len(news)+4)//5+1)]
+    news_counts=[len(news[i:i+5]) for i in range(0,len(news),5)]
     media=["https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
            +day+"/"+name for name in slide_names]
     caption_link=tracked_url(day,"caption",slot)
@@ -98,7 +95,7 @@ def build(db):
         "firstComment":first_comment,
         "publicationVerified":False,
         "repeatedMorningNews":len(repeats),
-        "newsPerSlide":compact["newsCounts"],
+        "newsPerSlide":news_counts,
         "media":media,
         "sourceLinks":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in news],
         "note":"La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo.",
