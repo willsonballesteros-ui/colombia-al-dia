@@ -302,8 +302,8 @@ def panel(items, block, active, photo_cache, output):
         if not chosen:
             d.rounded_rectangle((43, y, 57, y + 216), radius=7, fill=accent)
         d.text((71, y + 16), f"{i+1:02d}", font=font(37), fill=fg if chosen else accent)
-        category = str(item["category"]).upper()[:22]
-        d.text((159, y + 19), category, font=font(22), fill=fg if chosen else TEAL)
+        category = str(item["category"]).upper()
+        d.text((159, y + 19), category, font=font(19 if len(category) > 22 else 22), fill=fg if chosen else TEAL)
         source = item["sources"][0]["name"]
         d.text((160, y + 147), "FUENTE: " + source, font=font(24), fill=faint)
         pic = photo_cache.get(source)
@@ -345,7 +345,7 @@ def closing(output):
     d.rounded_rectangle((100, 1200, 940, 1340), radius=30, fill=CORAL)
     d.text((130, 1230), "ENLACE DEL PERFIL", font=font(50), fill=INK)
     d.text((110, 1440), "@resumen.noticias", font=font(43), fill=WHITE)
-    d.text((110, 1500), "colombia-al-dia.pages.dev", font=font(33), fill=PALE)
+    d.text((110, 1490), "colombia-al-dia.pages.dev", font=font(33), fill=PALE)
     im.save(output, optimize=True)
 
 
