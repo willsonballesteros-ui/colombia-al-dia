@@ -1,0 +1,26 @@
+name: ORBIUNO - Validar video corregido 18h
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/check-patched-18h.yml']
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar Cloudflare video corregido sin recurrir a un HTML fallback
+        run: |
+          set -e
+          URL="https://colombia-al-dia.pages.dev/media/2026-11-06/reel_18pm.mp4"
+          for i in $(seq 1 14); do
+            curl -sSLI "$URL" -o /tmp/headers
+            cat /tmp/headers | grep -iE 'HTTP/|content-type:|etag:'
+            if grep -iq 'content-type: video/mp4' /tmp/headers && ! grep -q '40d59c5af8b99162598fd1224ed2f9bc' /tmp/headers; then
+              echo "VIDEO_CORREGIDO_PUBLICO"
+              exit 0
+            fi
+            echo "Esperando actualización Cloudflare, intento $i"
+            sleep 8
+          done
+          echo "VERSION_CORREGIDA_NO_DESPLEGADA"
+          exit 1
