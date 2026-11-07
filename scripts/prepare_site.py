@@ -165,7 +165,7 @@ def build(data, page):
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
     sections=[]
-    reel_limits={"08:00":4,"12:00":3,"18:00":4}
+    reel_limits={"08:00":4,"12:00":4,"18:00":4}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
