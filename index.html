@@ -454,7 +454,7 @@ const render=()=>{
   const slots=[['08:00','8:00 a. m.'],['12:00','12:00 m.'],['18:00','6:00 p. m.']];
   const groups=slots.map(([slot,label])=>{
    const ed=matching.filter(x=>x.editionSlot===slot).sort((a,b)=>(a.priority??999)-(b.priority??999));
-   const maxReel=slot==='12:00'?3:4;
+   const maxReel=4;
    const reel=ed.filter(x=>Number.isInteger(x.instagramReelOrder)&&x.instagramReelOrder>0).sort((a,b)=>a.instagramReelOrder-b.instagramReelOrder).slice(0,maxReel);
    const featuredIds=new Set(reel.map(x=>x.id));
    const rest=ed.filter(x=>!featuredIds.has(x.id));
