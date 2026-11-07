@@ -1,0 +1,32 @@
+name: ORBIUNO - prueba de voz Kokoro
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install kokoro-onnx numpy
+      - name: Descargar modelo y voces oficiales
+        run: |
+          curl -fL --retry 3 -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          curl -fL --retry 3 -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+      - name: Crear prueba de voz en español
+        run: |
+          python - <<'PY'
+          import json
+          with open('prueba_voz.json','w',encoding='utf-8') as f:
+            json.dump(['Bienvenidos a ORBIUNO. Estas son las cuatro noticias de Colombia y el mundo.','Colombia presenta novedades económicas.','La Unión Europea examina los riesgos de TikTok.','Jhon Arias destaca en el fútbol internacional.'],f,ensure_ascii=False)
+          PY
+          python scripts/generate_kokoro_audio.py --script prueba_voz.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin --voice ef_dora --speed 1.25
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prueba-voz-ef-dora
+          path: audio_orbiuno/
+          retention-days: 7
