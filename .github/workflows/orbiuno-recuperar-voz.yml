@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install kokoro-onnx numpy
+      - run: pip install kokoro-onnx==0.6.1 numpy soundfile onnxruntime
       - run: |
           curl -fL --retry 3 -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
           curl -fL --retry 3 -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
@@ -31,7 +31,19 @@ jobs:
           ]
           open('orbiuno_20h.json','w',encoding='utf8').write(json.dumps(texts,ensure_ascii=False))
           PY
-          python scripts/generate_kokoro_audio.py --script orbiuno_20h.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin --voice ef_dora --speed 1.25
+          python - <<'PY'
+          import json, numpy as np, soundfile as sf
+          from pathlib import Path
+          from kokoro_onnx import Kokoro
+          k=Kokoro('kokoro-v1.0.onnx','voices-v1.0.bin')
+          texts=json.loads(Path('orbiuno_20h.json').read_text(encoding='utf-8'))
+          out=Path('audio_orbiuno');out.mkdir(exist_ok=True)
+          for i,t in enumerate(texts):
+              audio,sr=k.create(t,voice='ef_dora',speed=1.25,lang='es')
+              assert len(audio)>sr//2, 'Audio demasiado corto'
+              sf.write(out/f'voz_{i:02}.wav',np.asarray(audio,dtype=np.float32),sr)
+              print('Generado',i,len(audio)/sr,'segundos')
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: orbiuno-20h-ef-dora
