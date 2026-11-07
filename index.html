@@ -212,6 +212,11 @@
 .edition-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,390px),1fr));gap:11px}
 .edition-empty{padding:12px;border:1px solid #dce5f3;border-radius:10px;background:#fff;color:#59677d}
 @media(max-width:720px){.edition-heading{font-size:16px}.edition-cards{grid-template-columns:1fr;gap:8px}.compact-card .news-meta time{display:inline!important;font-size:10px;color:#5d687c;white-space:nowrap}}
+
+/* Orden de acceso: noticias del Reel primero, después cobertura ampliada. */
+.edition-subheading{font-size:14px;color:#193e67;margin:14px 0 10px;line-height:1.35}
+article[id^="noticia-"]{scroll-margin-top:110px}
+article[id^="noticia-"]:target{outline:3px solid #f4b64b;outline-offset:4px}
 </style>
 <style id="orbiuno-editorial-photos">
 /* Fotografías documentales verificadas, con crédito siempre visible. */
@@ -448,10 +453,17 @@ const render=()=>{
  if(todayView){
   const slots=[['08:00','8:00 a. m.'],['12:00','12:00 m.'],['18:00','6:00 p. m.']];
   const groups=slots.map(([slot,label])=>{
-   const ed=matching.filter(x=>x.editionSlot===slot);
+   const ed=matching.filter(x=>x.editionSlot===slot).sort((a,b)=>(a.priority??999)-(b.priority??999));
+   const maxReel=slot==='12:00'?3:4;
+   const reel=ed.filter(x=>Number.isInteger(x.instagramReelOrder)&&x.instagramReelOrder>0).sort((a,b)=>a.instagramReelOrder-b.instagramReelOrder).slice(0,maxReel);
+   const featuredIds=new Set(reel.map(x=>x.id));
+   const rest=ed.filter(x=>!featuredIds.has(x.id));
+   let content='';
+   if(reel.length)content+='<h4 class="edition-subheading">📌 Noticias del Reel · En el mismo orden de Instagram</h4><div class="cards edition-cards">'+reel.map(cardHTML).join('')+'</div>';
+   if(rest.length)content+='<h4 class="edition-subheading">'+(reel.length?'🔎 Más noticias verificadas · Cobertura ampliada':'Noticias verificadas de esta edición')+'</h4><div class="cards edition-cards">'+rest.map(cardHTML).join('')+'</div>';
    return '<section class="edition-section" id="edicion-'+slot.replace(':','')+'" aria-label="Edición de las '+label+'">'
-    +'<h3 class="edition-heading"><span>Edición de las '+label+'</span><small>'+ed.length+' noticias disponibles · '+esc(fmt(db.editionDate))+'</small></h3>'
-    +(ed.length?'<div class="cards edition-cards">'+ed.sort((a,b)=>(a.priority??999)-(b.priority??999)).map(cardHTML).join('')+'</div>':'<p class="edition-empty">No hay noticias verificadas cargadas para esta franja.</p>')
+    +'<h3 class="edition-heading"><span>Edición de las '+label+'</span><small>'+ed.length+' noticias verificadas · '+esc(fmt(db.editionDate))+'</small></h3>'
+    +(ed.length?content:'<p class="edition-empty">No hay noticias verificadas cargadas para esta franja.</p>')
     +'</section>';
   }).join('');
   el('ediciones-hoy').innerHTML=groups;
@@ -726,6 +738,7 @@ el('cards').addEventListener('click',event=>{
 if(el('boletin-player'))el('boletin-player').addEventListener('play',stopSpeech);
 el('date').addEventListener('change',()=>{selectedDate=el('date').value;render();});el('search').addEventListener('input',render);
 render();
+if(location.hash.startsWith('#noticia-'))requestAnimationFrame(()=>document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({block:'start'}));
 // Cuando se despliega junto a noticias.json en un servidor público, el navegador consulta
 // actualizaciones cada cinco minutos. El administrador DEBE actualizar el JSON y desplegarlo.
 async function loadFeed(){if(location.protocol==='file:')return;try{const response=await fetch('./noticias.json',{cache:'no-store'});if(!response.ok)throw Error(response.status);const data=await response.json();if(Array.isArray(data.news)&&data.editionDate){if(JSON.stringify(db)!==JSON.stringify(data)){const oldLatest=db.news.reduce((a,x)=>x.date>a?x.date:a,db.editionDate);const wasLatest=selectedDate===oldLatest;db=data;if(wasLatest)selectedDate=db.news.reduce((a,x)=>x.date>a?x.date:a,db.editionDate);render();}}}catch(e){/* Mantener última versión disponible, no inventar datos. */}}
