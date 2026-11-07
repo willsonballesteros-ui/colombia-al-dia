@@ -1,5 +1,8 @@
-name: ORBIUNO - prueba de voz Kokoro
+name: ORBIUNO - correccion voz ef_dora
 on:
+  push:
+    branches: [orbiuno/kokoro-voz-reel-4]
+    paths: ['.github/workflows/probar-voz-kokoro.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,20 +16,25 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install kokoro-onnx numpy
-      - name: Descargar modelo y voces oficiales
+      - name: Descargar modelo y voces
         run: |
           curl -fL --retry 3 -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
           curl -fL --retry 3 -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
-      - name: Crear prueba de voz en español
+      - name: Crear voz aprobada
         run: |
           python - <<'PY'
           import json
-          with open('prueba_voz.json','w',encoding='utf-8') as f:
-            json.dump(['Bienvenidos a ORBIUNO. Estas son las cuatro noticias de Colombia y el mundo.','Colombia presenta novedades económicas.','La Unión Europea examina los riesgos de TikTok.','Jhon Arias destaca en el fútbol internacional.'],f,ensure_ascii=False)
+          textos=[
+            "ORBIUNO. Edición de las seis de la tarde, sábado siete de noviembre. Estas son cuatro noticias de Colombia y el mundo.",
+            "La República informa sobre el avance de la Línea dos del Metro de Bogotá hacia la licitación. También reporta acceso sin aranceles para gran parte de los productos colombianos en Emiratos Árabes.",
+            "Portafolio informa que setecientos seis municipios continúan en riesgo o deterioro fiscal.",
+            "El Espectador reporta que la Unión Europea exige cambios a TikTok por los riesgos que identifica para la salud mental. Consulta el desarrollo de cada noticia y sus fuentes en colombia al día punto pages punto dev."
+          ]
+          with open('guion_correccion.json','w',encoding='utf-8') as f: json.dump(textos,f,ensure_ascii=False)
           PY
-          python scripts/generate_kokoro_audio.py --script prueba_voz.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin --voice ef_dora --speed 1.25
+          python scripts/generate_kokoro_audio.py --script guion_correccion.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin --voice ef_dora --speed 1.25
       - uses: actions/upload-artifact@v4
         with:
-          name: prueba-voz-ef-dora
+          name: ORBIUNO-voz-ef-dora-7nov
           path: audio_orbiuno/
           retention-days: 7
