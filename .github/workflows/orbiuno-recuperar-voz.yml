@@ -1,0 +1,39 @@
+name: ORBIUNO recuperar voz aprobada ef_dora
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/orbiuno-recuperar-voz.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install kokoro-onnx numpy
+      - run: |
+          curl -fL --retry 3 -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          curl -fL --retry 3 -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+      - name: Generar narracion de noticias con ef_dora
+        run: |
+          python - <<'PY'
+          import json
+          texts=[
+            "ORBIUNO. Las principales noticias de Colombia y el mundo. Sábado siete de noviembre, edición de las ocho de la noche.",
+            "La República informa sobre el avance de la Línea dos del Metro de Bogotá hacia licitación.",
+            "La República también reporta acceso sin aranceles para gran parte de los productos colombianos en Emiratos Árabes.",
+            "Portafolio informa que setecientos seis municipios continúan en riesgo o deterioro fiscal. El Espectador reporta que la Unión Europea exige cambios a TikTok por riesgos para la salud mental. Consulta las noticias completas en colombia al día punto pages punto dev."
+          ]
+          open('orbiuno_20h.json','w',encoding='utf8').write(json.dumps(texts,ensure_ascii=False))
+          PY
+          python scripts/generate_kokoro_audio.py --script orbiuno_20h.json --model kokoro-v1.0.onnx --voices voices-v1.0.bin --voice ef_dora --speed 1.25
+      - uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-20h-ef-dora
+          path: audio_orbiuno/
+          retention-days: 7
