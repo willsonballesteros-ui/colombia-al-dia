@@ -1,0 +1,89 @@
+name: ORBIUNO - Carrusel feed 18h 6 nov
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/carrusel-feed-18h.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m pip install --quiet Pillow
+      - name: Dibujar carrusel editorial sin fotos inventadas
+        run: |
+          python3 - <<'PY'
+          import re, html, json
+          from pathlib import Path
+          from PIL import Image,ImageDraw,ImageFont
+          root=Path('media/2026-11-06')
+          src=Path('edicion-2026-11-06-18.html').read_text(encoding='utf-8')
+          notes=[]
+          for m in re.finditer(r'<article class="story" id="nota-(\d+)"[^>]*>([\s\S]*?)</article>',src):
+              b=m.group(2)
+              title=re.search(r'<h2>(.*?)</h2>',b,re.S)
+              cat=re.search(r'<div class="meta"><b>\d+</b> · (.*?)</div>',b,re.S)
+              credit=re.search(r'<p class="credit">Fuente: <a[^>]*>(.*?) ↗</a>',b,re.S)
+              if title and cat and credit:notes.append((html.unescape(title.group(1)),html.unescape(cat.group(1)),html.unescape(credit.group(1))))
+          assert len(notes)==10,len(notes)
+          B='#0B252C';WHITE='#F8FAFB';TEAL='#66DDCC';GOLD='#FFD16E';CORAL='#FF806C'
+          font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          normal='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          def f(sz,b=True):return ImageFont.truetype(font if b else normal,sz)
+          def wrap(draw,text,font,maxw):
+              lines=[];cur=''
+              for w in text.split():
+                  n=(cur+' '+w).strip()
+                  if draw.textbbox((0,0),n,font=font)[2]<=maxw:cur=n
+                  else:
+                      if cur:lines.append(cur)
+                      cur=w
+              if cur:lines.append(cur)
+              return lines
+          def base():
+              im=Image.new('RGB',(1080,1350),B);d=ImageDraw.Draw(im)
+              d.rectangle((0,0,1080,17),fill=CORAL)
+              d.text((65,54),'ORBIUNO',font=f(83),fill=WHITE)
+              d.text((65,159),'COLOMBIA AL DÍA  ·  6 NOV 2026',font=f(26),fill=TEAL)
+              d.rounded_rectangle((65,1240,1015,1310),radius=17,fill='#17464C')
+              d.text((92,1260),'@resumen.noticias  ·  colombia-al-dia.pages.dev',font=f(25,False),fill=WHITE)
+              return im,d
+          im,d=base()
+          d.text((70,327),'EDICIÓN 6:00 P. M.',font=f(63),fill=GOLD)
+          d.text((70,444),'10 NOTICIAS',font=f(100),fill=WHITE)
+          d.text((70,564),'COLOMBIA Y MUNDO',font=f(49),fill=TEAL)
+          for idx,(title,cat,source) in enumerate(notes):
+              d.text((84,690+idx*43),f'{idx+1:02d}  '+title[:63],font=f(20),fill=WHITE)
+          d.text((70,1181),'DESLIZA PARA VER LAS NOTICIAS',font=f(25),fill=GOLD)
+          im.save(root/'feed_18pm_00.png')
+          for j in range(5):
+              im,d=base();d.text((66,272),'NOTICIAS DE LAS 6:00 P. M.',font=f(42),fill=GOLD)
+              for k in range(2):
+                  i=2*j+k;t,c,src=notes[i]
+                  y=385+k*414
+                  d.rounded_rectangle((65,y,1015,y+369),radius=26,fill='#16383F')
+                  d.text((95,y+30),f'{i+1:02d}   {c.upper()}',font=f(25),fill=TEAL)
+                  fontt=f(41)
+                  lines=wrap(d,t,fontt,847)
+                  for l,line in enumerate(lines[:4]):d.text((94,y+91+l*55),line,font=fontt,fill=WHITE)
+                  d.text((94,y+319),'FUENTE: '+src[:45],font=f(20),fill=GOLD)
+              d.text((70,1175),'LECTURA COMPLETA Y FUENTES EN NUESTRA WEB',font=f(25),fill=WHITE)
+              im.save(root/f'feed_18pm_{j+1:02d}.png')
+          print(json.dumps({'slides':6,'titles':len(notes)}))
+          PY
+      - name: Guardar piezas en proyecto
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-06/feed_18pm_*.png
+          git commit -m 'Carrusel feed independiente edición ORBIUNO 18h'
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main && exit 0
+            sleep 3
+          done
+          exit 1
