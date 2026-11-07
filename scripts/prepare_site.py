@@ -165,17 +165,40 @@ def build(data, page):
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
     sections=[]
+    reel_limits={"08:00":4,"12:00":3,"18:00":4}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
-        cards="".join(article_html(n) for n in rows)
-        if not cards:
-            cards='<p class="edition-empty">No hay noticias verificadas cargadas para esta franja.</p>'
+        # Solo se etiqueta "del Reel" cuando los IDs y orden se consignaron
+        # explícitamente al publicar Instagram. No deducirlo por prioridad.
+        featured=sorted(
+            (n for n in rows if isinstance(n.get("instagramReelOrder"),int)
+             and not isinstance(n.get("instagramReelOrder"),bool)
+             and n.get("instagramReelOrder")>0),
+            key=lambda n:n["instagramReelOrder"]
+        )[:reel_limits[slot]]
+        featured_ids={n["id"] for n in featured}
+        more=[n for n in rows if n["id"] not in featured_ids]
+        content=""
+        if featured:
+            content+=(
+                '<h4 class="edition-subheading">📌 Noticias del Reel · En el mismo orden de Instagram</h4>'
+                '<div class="cards edition-cards">'+''.join(article_html(n) for n in featured)+'</div>'
+            )
+        if more:
+            title=('🔎 Más noticias verificadas · Cobertura ampliada' if featured
+                   else 'Noticias verificadas de esta edición')
+            content+=(
+                '<h4 class="edition-subheading">'+title+'</h4>'
+                '<div class="cards edition-cards">'+''.join(article_html(n) for n in more)+'</div>'
+            )
+        if not rows:
+            content='<p class="edition-empty">No hay noticias verificadas cargadas para esta franja.</p>'
         sections.append(
             '<section class="edition-section" id="edicion-'+slot.replace(":","")+'">'
             '<h3 class="edition-heading"><span>Edición de las '+label+'</span>'
-            '<small>'+str(len(rows))+' noticias disponibles</small></h3>'
-            '<div class="cards edition-cards">'+cards+'</div></section>'
+            '<small>'+str(len(rows))+' noticias verificadas</small></h3>'
+            +content+'</section>'
         )
     # El contenedor #cards se conserva para búsquedas y filtrado de histórico;
     # las tres ediciones son el contenido visible inicial de la portada.
