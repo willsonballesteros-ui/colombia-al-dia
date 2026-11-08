@@ -96,7 +96,7 @@ def analyze(samples, duration, text):
 def asr_overlap(path, text, model="base"):
     from faster_whisper import WhisperModel
     m = WhisperModel(model, device="cpu", compute_type="int8")
-    segs, _ = m.transcribe(str(path), language="es", beam_size=1)
+    segs, _ = m.transcribe(decode(path), language="es", beam_size=1)
     heard = " ".join(s.text for s in segs)
 
     def norm(s):
