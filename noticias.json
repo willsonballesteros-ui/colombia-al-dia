@@ -1,10 +1,176 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-06",
-  "editedAtBogota": "2026-11-05 17:28",
+  "editionDate": "2026-11-07",
+  "editedAtBogota": "2026-11-07 19:41",
   "siteVersion": "3.1",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261107-20h-metro",
+      "date": "2026-11-07",
+      "editionSlot": "20:00",
+      "category": "Colombia",
+      "level": "Noticia contrastada · Edición especial",
+      "title": "Tres grupos pasan a la licitación de la Línea 2 del Metro de Bogotá",
+      "summary": "La precalificación deja tres grupos en carrera para un proyecto subterráneo de 15,5 kilómetros y 11 estaciones.",
+      "executiveSummary": "La precalificación deja tres grupos en carrera para un proyecto subterráneo de 15,5 kilómetros y 11 estaciones.",
+      "verification": "editorial_verified",
+      "priority": 1,
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "La República",
+          "url": "https://www.larepublica.co/economia/las-tres-companias-de-la-linea-2-del-metro-de-bogota-pasaran-a-licitacion-4519879"
+        },
+        {
+          "name": "Alcaldía de Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/tres-grupos-participaran-en-licitacion-de-linea-2-del-metro-de-bogota"
+        }
+      ],
+      "originalArticleTextEs": "La Empresa Metro de Bogotá se dispone a solicitar ofertas para su segunda línea después de que tres grupos empresariales superaran la etapa de precalificación. La Alcaldía anunció el resultado de la evaluación y explicó que las agrupaciones habilitadas podrán presentar propuestas técnicas y económicas. La República reportó el anuncio y detalló la composición de los grupos.\n\nLa futura línea está prevista como un corredor subterráneo de 15,5 kilómetros con once estaciones. Su trazado pasará por Chapinero, Barrios Unidos, Engativá y Suba. El proceso reúne en un mismo contrato el diseño y la construcción, además de la financiación, la operación y el mantenimiento de la infraestructura.\n\nLa lista de precalificados define quiénes pueden competir en la fase siguiente. La selección del contratista dependerá de las ofertas que se presenten y de su evaluación. La Alcaldía ubica la adjudicación en el primer semestre de 2027, como fecha prevista en el cronograma del proceso. En esta fase, los grupos deberán convertir su interés en ofertas formales.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "revisado",
+      "originalArticleSourceUrls": [
+        "https://www.larepublica.co/economia/las-tres-companias-de-la-linea-2-del-metro-de-bogota-pasaran-a-licitacion-4519879",
+        "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/tres-grupos-participaran-en-licitacion-de-linea-2-del-metro-de-bogota"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioFullTextEs": "La Empresa Metro de Bogotá se dispone a solicitar ofertas para su segunda línea después de que tres grupos empresariales superaran la etapa de precalificación. La Alcaldía anunció el resultado de la evaluación y explicó que las agrupaciones habilitadas podrán presentar propuestas técnicas y económicas. La República reportó el anuncio y detalló la composición de los grupos.\n\nLa futura línea está prevista como un corredor subterráneo de 15,5 kilómetros con once estaciones. Su trazado pasará por Chapinero, Barrios Unidos, Engativá y Suba. El proceso reúne en un mismo contrato el diseño y la construcción, además de la financiación, la operación y el mantenimiento de la infraestructura.\n\nLa lista de precalificados define quiénes pueden competir en la fase siguiente. La selección del contratista dependerá de las ofertas que se presenten y de su evaluación. La Alcaldía ubica la adjudicación en el primer semestre de 2027, como fecha prevista en el cronograma del proceso. En esta fase, los grupos deberán convertir su interés en ofertas formales.",
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": "./media/2026-11-07-2000/foto-metro.jpg",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "ShijiKamio",
+      "imageLicense": "CC0 1.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Viaducto_L%C3%ADnea_1_en_Portal_Am%C3%A9ricas.jpg",
+      "imageCaption": "Archivo · Viaducto de la Línea 1",
+      "imageAlt": "Archivo · Viaducto de la Línea 1",
+      "reelShort": "Metro de Bogotá: tres grupos a licitación",
+      "reelNarrationEs": "Según La República, tres grupos pasan a la licitación de la segunda línea del Metro de Bogotá."
+    },
+    {
+      "id": "orbiuno-20261107-20h-emiratos",
+      "date": "2026-11-07",
+      "editionSlot": "20:00",
+      "category": "Economía",
+      "level": "Noticia contrastada · Edición especial",
+      "title": "Acuerdo con Emiratos prevé acceso sin aranceles para el 85 % de los productos colombianos",
+      "summary": "El acuerdo superó su primer debate en el Senado y las preferencias dependerán de su entrada en vigor.",
+      "executiveSummary": "El acuerdo superó su primer debate en el Senado y las preferencias dependerán de su entrada en vigor.",
+      "verification": "editorial_verified",
+      "priority": 2,
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "La República",
+          "url": "https://www.larepublica.co/economia/colombia-tendra-acceso-sin-aranceles-para-85-de-sus-productos-en-emiratos-arabes-4519866"
+        }
+      ],
+      "originalArticleTextEs": "El acuerdo económico entre Colombia y Emiratos Árabes Unidos avanzó en el Congreso tras superar su primer debate en la Comisión Segunda del Senado. La República informó que, cuando el tratado entre en vigor, el 85 % de los productos colombianos tendrá acceso al mercado emiratí sin aranceles. El texto también contempla una reducción gradual de aranceles para otro 13 % durante cinco años.\n\nEntre los productos con acceso preferente figuran café, frutas, flores, cacao y manufacturas como calzado, muebles y prendas de vestir. El acceso dependerá del cumplimiento de las reglas de origen y, según el bien, de los requisitos técnicos y sanitarios. Entre enero y agosto de 2026, las exportaciones colombianas no mineroenergéticas a Emiratos sumaron 35,1 millones de dólares, según el mismo reporte.\n\nEl tratado fue firmado en 2024 y aún debe completar el trámite en el Congreso y la revisión de la Corte Constitucional. Hasta que se cumplan los procedimientos internos y el acuerdo entre en vigor, el acceso preferente sigue siendo una condición prevista en el texto del tratado.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "revisado",
+      "originalArticleSourceUrls": [
+        "https://www.larepublica.co/economia/colombia-tendra-acceso-sin-aranceles-para-85-de-sus-productos-en-emiratos-arabes-4519866"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioFullTextEs": "El acuerdo económico entre Colombia y Emiratos Árabes Unidos avanzó en el Congreso tras superar su primer debate en la Comisión Segunda del Senado. La República informó que, cuando el tratado entre en vigor, el 85 % de los productos colombianos tendrá acceso al mercado emiratí sin aranceles. El texto también contempla una reducción gradual de aranceles para otro 13 % durante cinco años.\n\nEntre los productos con acceso preferente figuran café, frutas, flores, cacao y manufacturas como calzado, muebles y prendas de vestir. El acceso dependerá del cumplimiento de las reglas de origen y, según el bien, de los requisitos técnicos y sanitarios. Entre enero y agosto de 2026, las exportaciones colombianas no mineroenergéticas a Emiratos sumaron 35,1 millones de dólares, según el mismo reporte.\n\nEl tratado fue firmado en 2024 y aún debe completar el trámite en el Congreso y la revisión de la Corte Constitucional. Hasta que se cumplan los procedimientos internos y el acuerdo entre en vigor, el acceso preferente sigue siendo una condición prevista en el texto del tratado.",
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": "./media/2026-11-07-2000/foto-emiratos.jpg",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "Shaun McRae",
+      "imageLicense": "CC BY 2.5",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Quimbaya_2005-08-27.jpg",
+      "imageCaption": "Archivo · Cultivo de café en Quimbaya",
+      "imageAlt": "Archivo · Cultivo de café en Quimbaya",
+      "reelShort": "Acuerdo comercial con Emiratos",
+      "reelNarrationEs": "La República informa que el acuerdo con Emiratos prevé arancel cero para el ochenta y cinco por ciento de los productos colombianos."
+    },
+    {
+      "id": "orbiuno-20261107-20h-municipios",
+      "date": "2026-11-07",
+      "editionSlot": "20:00",
+      "category": "Economía",
+      "level": "Noticia contrastada · Edición especial",
+      "title": "706 municipios siguen en riesgo o deterioro fiscal, según el DNP",
+      "summary": "El índice fiscal municipal de 2025 mejoró frente a 2024. El 64 % de los municipios quedó por debajo de 60 puntos.",
+      "executiveSummary": "El índice fiscal municipal de 2025 mejoró frente a 2024. El 64 % de los municipios quedó por debajo de 60 puntos.",
+      "verification": "editorial_verified",
+      "priority": 3,
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "DNP",
+          "url": "https://dnp.gov.co/Prensa_/Noticias/Paginas/departamento-nacional-de-planeacion-revela-resultados-del-indice-de-desempeno-fiscal-idf-de-municipios-2025.aspx"
+        }
+      ],
+      "originalArticleTextEs": "El Departamento Nacional de Planeación divulgó los resultados de la vigencia 2025 del Índice de Desempeño Fiscal municipal. El promedio del país llegó a 57,25 puntos de 100, una mejora de 1,40 puntos frente a 2024. El DNP atribuyó el avance principalmente al componente que mide los resultados fiscales de las entidades territoriales.\n\nEl informe registra 706 municipios con menos de 60 puntos, equivalentes al 64 % del total. Ese umbral reúne los rangos de riesgo y deterioro. La cifra se redujo en 74 municipios frente a la medición anterior. En el otro extremo, siete alcanzaron la categoría sostenible, definida a partir de los 80 puntos, frente a uno en 2024.\n\nGirardota, en Antioquia, encabezó el ranking con 83,92 puntos. El índice combina ocho indicadores sobre resultados fiscales y gestión financiera, y permite comparar la evolución de los municipios de un año a otro. El DNP habilitó un visor de consulta pública para revisar los resultados por territorio y vigencia. Allí se pueden contrastar los puntajes con los de años anteriores.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "revisado",
+      "originalArticleSourceUrls": [
+        "https://dnp.gov.co/Prensa_/Noticias/Paginas/departamento-nacional-de-planeacion-revela-resultados-del-indice-de-desempeno-fiscal-idf-de-municipios-2025.aspx"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioFullTextEs": "El Departamento Nacional de Planeación divulgó los resultados de la vigencia 2025 del Índice de Desempeño Fiscal municipal. El promedio del país llegó a 57,25 puntos de 100, una mejora de 1,40 puntos frente a 2024. El DNP atribuyó el avance principalmente al componente que mide los resultados fiscales de las entidades territoriales.\n\nEl informe registra 706 municipios con menos de 60 puntos, equivalentes al 64 % del total. Ese umbral reúne los rangos de riesgo y deterioro. La cifra se redujo en 74 municipios frente a la medición anterior. En el otro extremo, siete alcanzaron la categoría sostenible, definida a partir de los 80 puntos, frente a uno en 2024.\n\nGirardota, en Antioquia, encabezó el ranking con 83,92 puntos. El índice combina ocho indicadores sobre resultados fiscales y gestión financiera, y permite comparar la evolución de los municipios de un año a otro. El DNP habilitó un visor de consulta pública para revisar los resultados por territorio y vigencia. Allí se pueden contrastar los puntajes con los de años anteriores.",
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": "./media/2026-11-07-2000/foto-municipios.jpg",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "XalD",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Paisaje_de_Girardota.jpg",
+      "imageCaption": "Archivo · Girardota, líder del índice",
+      "imageAlt": "Archivo · Girardota, líder del índice",
+      "reelShort": "706 municipios en riesgo o deterioro fiscal",
+      "reelNarrationEs": "El D N P reporta setecientos seis municipios en riesgo o deterioro fiscal."
+    },
+    {
+      "id": "orbiuno-20261107-20h-tiktok",
+      "date": "2026-11-07",
+      "editionSlot": "20:00",
+      "category": "Tecnología",
+      "level": "Noticia contrastada · Edición especial",
+      "title": "Bruselas cuestiona el algoritmo de TikTok en una investigación preliminar",
+      "summary": "La Comisión Europea considera que el sistema «Para ti» puede encadenar recomendaciones de contenido perjudicial.",
+      "executiveSummary": "La Comisión Europea considera que el sistema «Para ti» puede encadenar recomendaciones de contenido perjudicial.",
+      "verification": "editorial_verified",
+      "priority": 4,
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "El Espectador · AFP",
+          "url": "https://www.elespectador.com/economia/empresas/la-union-europea-exige-a-tiktok-cambiar-su-algoritmo-por-riesgos-para-la-salud-mental/"
+        },
+        {
+          "name": "Comisión Europea",
+          "url": "https://digital-strategy.ec.europa.eu/es/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes"
+        }
+      ],
+      "originalArticleTextEs": "La Comisión Europea comunicó una conclusión preliminar sobre el sistema de recomendaciones de TikTok. Según el organismo, el funcionamiento de la sección «Para ti» podría incumplir obligaciones del Reglamento de Servicios Digitales relacionadas con la evaluación y la mitigación de riesgos. El Espectador publicó el reporte de la agencia AFP sobre el pronunciamiento.\n\nLa investigación examina cómo un interés inicial puede llevar a que el usuario reciba repetidamente videos sobre un mismo asunto. La Comisión señaló como ejemplos contenidos sobre soledad, tristeza o autoestima. Su preocupación se concentra en la exposición repetida y en sus posibles efectos sobre personas vulnerables y menores de edad.\n\nBruselas también cuestionó la eficacia de las medidas que la plataforma ya introdujo para controlar esas secuencias. El pronunciamiento describe la posición preliminar de la Comisión dentro del procedimiento. La determinación definitiva y las medidas que eventualmente se adopten dependerán del resultado de la investigación.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "revisado",
+      "originalArticleSourceUrls": [
+        "https://www.elespectador.com/economia/empresas/la-union-europea-exige-a-tiktok-cambiar-su-algoritmo-por-riesgos-para-la-salud-mental/",
+        "https://digital-strategy.ec.europa.eu/es/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioFullTextEs": "La Comisión Europea comunicó una conclusión preliminar sobre el sistema de recomendaciones de TikTok. Según el organismo, el funcionamiento de la sección «Para ti» podría incumplir obligaciones del Reglamento de Servicios Digitales relacionadas con la evaluación y la mitigación de riesgos. El Espectador publicó el reporte de la agencia AFP sobre el pronunciamiento.\n\nLa investigación examina cómo un interés inicial puede llevar a que el usuario reciba repetidamente videos sobre un mismo asunto. La Comisión señaló como ejemplos contenidos sobre soledad, tristeza o autoestima. Su preocupación se concentra en la exposición repetida y en sus posibles efectos sobre personas vulnerables y menores de edad.\n\nBruselas también cuestionó la eficacia de las medidas que la plataforma ya introdujo para controlar esas secuencias. El pronunciamiento describe la posición preliminar de la Comisión dentro del procedimiento. La determinación definitiva y las medidas que eventualmente se adopten dependerán del resultado de la investigación.",
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": "./media/2026-11-07-2000/foto-tiktok.jpg",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageCredit": "almathias",
+      "imageLicense": "CC0 1.0",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Berlaymont_building_in_Brussels.jpg",
+      "imageCaption": "Archivo · Sede de la Comisión Europea",
+      "imageAlt": "Archivo · Sede de la Comisión Europea",
+      "reelShort": "Bruselas cuestiona el algoritmo de TikTok",
+      "reelNarrationEs": "El Espectador reporta objeciones preliminares de Bruselas al algoritmo de TikTok."
+    },
     {
       "id": "orbiuno-20261106-18h-01",
       "date": "2026-11-06",
