@@ -1,0 +1,34 @@
+{
+  "edition": {
+    "editionId": "2026-11-07-0800",
+    "date": "2026-11-07",
+    "slot": "08:00",
+    "newsIds": ["TODO-id-1", "TODO-id-2", "TODO-id-3", "TODO-id-4"],
+    "roles": ["principal", "principal", "breve", "breve"],
+    "review": {"status": "pending", "by": "", "at": ""}
+  },
+  "news": [
+    {
+      "id": "TODO-id-1",
+      "date": "2026-11-07",
+      "editionSlot": "08:00",
+      "category": "TODO",
+      "level": "Noticia contrastada",
+      "title": "TODO titular (principal)",
+      "summary": "TODO",
+      "sources": [{"name": "TODO medio", "url": "https://TODO/enlace-directo-al-articulo"}],
+      "verification": "editorial_verified",
+      "reelShort": "TODO frase de 4 a 8 palabras para la apertura",
+      "reelNarrationEs": "TODO 35 a 60 palabras (principal) o 18 a 35 (breve); debe pronunciar el nombre de la fuente",
+      "sourceLanguage": "es",
+      "originalArticleTextEs": "TODO reportaje propio de 3-4 párrafos separados por línea en blanco",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente_validacion_editorial",
+      "originalArticleSourceUrls": ["https://TODO/enlace-directo-al-articulo"],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioFullTextEs": "TODO texto de «Escuchar completo»",
+      "audioIsFullPublisherArticle": false
+    }
+  ]
+}
