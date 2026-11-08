@@ -161,11 +161,13 @@ def build(data, page):
         n for n in data["news"]
         if n.get("date")==today
         and n.get("verification")=="editorial_verified"
-        and n.get("editionSlot") in ("08:00","12:00","18:00")
+        and n.get("editionSlot") in ("08:00","12:00","18:00","20:00")
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
+    if any(n.get("editionSlot") == "20:00" for n in published):
+        slots=(("20:00","8:00 p. m."),)+slots
     sections=[]
-    reel_limits={"08:00":4,"12:00":4,"18:00":4}
+    reel_limits={"08:00":4,"12:00":4,"18:00":4,"20:00":4}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))

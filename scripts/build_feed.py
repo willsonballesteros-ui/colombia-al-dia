@@ -22,18 +22,19 @@ def main():
         x for x in db["news"]
         if x.get("date") == day and x.get("verification") == "editorial_verified"
     ), key=lambda x: x.get("priority", 999))
-    if len(news) != 10:
+    special = len(news) == 4 and all(item.get("editionSlot") == "20:00" for item in news)
+    if len(news) != 10 and not special:
         raise RuntimeError(f"RSS de edición verificada requiere 10 noticias, hay {len(news)}")
     root = Element("rss", {"version": "2.0"})
     channel = SubElement(root, "channel")
     for tag, value in (
         ("title", "Colombia al Día | Noticias verificadas"),
         ("link", BASE),
-        ("description", "Diez noticias contrastadas con sus fuentes originales y fecha de edición."),
+        ("description", "Noticias contrastadas con sus fuentes originales y fecha de edición."),
         ("language", "es-CO"),
     ):
         SubElement(channel, tag).text = value
-    published = datetime.fromisoformat(day + "T06:00:00").replace(tzinfo=ZoneInfo("America/Bogota"))
+    published = datetime.fromisoformat(day + ("T20:00:00" if special else "T06:00:00")).replace(tzinfo=ZoneInfo("America/Bogota"))
     for n in news:
         item = SubElement(channel, "item")
         link = BASE + "#noticia-" + n["id"]
