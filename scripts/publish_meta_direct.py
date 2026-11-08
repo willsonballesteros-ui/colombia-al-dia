@@ -7,8 +7,11 @@ La edición se identifica con edition_key para prevenir publicaciones repetidas.
 import argparse
 import json
 import os
+import re
 import sys
 import time
+from datetime import datetime
+from zoneinfo import ZoneInfo
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -63,8 +66,14 @@ def main():
     parsed = urllib.parse.urlparse(args.video_url)
     if parsed.scheme != "https" or not parsed.hostname:
         sys.exit("Se requiere video_url HTTPS publico")
-    if not args.edition_key.startswith("ORBIUNO-"):
-        sys.exit("La clave de edicion debe comenzar con ORBIUNO-")
+    match = re.fullmatch(r"ORBIUNO-(\\d{4}-\\d{2}-\\d{2})-(0800|1200|1800)", args.edition_key)
+    if not match:
+        sys.exit("edition_key invalida: ORBIUNO-AAAA-MM-DD-HHMM")
+    today = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
+    if match.group(1) != today:
+        sys.exit("Se bloquea publicacion retroactiva o futura: hoy en Colombia es " + today)
+    if not args.caption.strip():
+        sys.exit("La descripcion editorial no puede estar vacia")
     token = os.getenv("ORBIUNO_IG_ACCESS_TOKEN")
     user_id = os.getenv("ORBIUNO_IG_USER_ID")
     if not token or not user_id:
