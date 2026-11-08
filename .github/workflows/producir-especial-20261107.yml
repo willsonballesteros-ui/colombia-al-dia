@@ -3,14 +3,20 @@ on:
   push:
     branches: [orbiuno/edicion-2026-11-07-2000]
     paths: [production/**, .github/workflows/producir-especial-20261107.yml]
+  pull_request:
+    types: [opened]
+    paths: [production/**]
 permissions:
   contents: write
 jobs:
   edicion:
+    if: github.event_name == 'push' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'orbiuno/edicion-2026-11-07-2000')
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
