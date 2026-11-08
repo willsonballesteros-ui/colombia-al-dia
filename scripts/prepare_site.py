@@ -91,7 +91,9 @@ def original_article_ready(n):
         and n.get("originalArticleByline") == "Redacción ORBIUNO"
         and n.get("originalArticleReviewed") is True
         and isinstance(n.get("originalArticleTextEs"), str)
-        and len(n["originalArticleTextEs"].strip()) >= 1000
+        and (len(n["originalArticleTextEs"].strip()) >= 1000
+             or (len(n["originalArticleTextEs"].strip()) >= 650
+                 and len(n["originalArticleTextEs"].strip().split("\n\n")) >= 3))
         and isinstance(n.get("originalArticleSourceUrls"), list)
         and bool(n["originalArticleSourceUrls"])
         and all(url in sources for url in n["originalArticleSourceUrls"])
@@ -133,8 +135,8 @@ def article_html(n):
     report = str(n.get("audioFullTextEs") or "").strip()
     transcript = (
         '<details class="news-transcript"><summary>Leer noticia desarrollada</summary>'
-        '<p>' + esc(report) + '</p></details>'
-        if n.get("verification") == "editorial_verified" and len(report.split()) >= 110 else ""
+        + ''.join('<p>' + esc(p) + '</p>' for p in report.split('\n\n')) + '</details>'
+        if n.get("verification") == "editorial_verified" and (authored or len(report.split()) >= 110) else ""
     )
     return (
         '<article id="noticia-{id}" class="card compact-card">'

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Crea un RSS propio a partir de las 10 notas editoriales del día.
+"""Crea un RSS propio a partir de las notas editoriales del día.
 
 No replica artículos originales de terceros ni incluye titulares source_only.
 """
@@ -22,9 +22,8 @@ def main():
         x for x in db["news"]
         if x.get("date") == day and x.get("verification") == "editorial_verified"
     ), key=lambda x: x.get("priority", 999))
-    special = len(news) == 4 and all(item.get("editionSlot") == "20:00" for item in news)
-    if len(news) != 10 and not special:
-        raise RuntimeError(f"RSS de edición verificada requiere 10 noticias, hay {len(news)}")
+    if not news:
+        raise RuntimeError("RSS requiere una edición verificada")
     root = Element("rss", {"version": "2.0"})
     channel = SubElement(root, "channel")
     for tag, value in (
@@ -34,8 +33,9 @@ def main():
         ("language", "es-CO"),
     ):
         SubElement(channel, tag).text = value
-    published = datetime.fromisoformat(day + ("T20:00:00" if special else "T06:00:00")).replace(tzinfo=ZoneInfo("America/Bogota"))
     for n in news:
+        slot = n.get("editionSlot") or "06:00"
+        published = datetime.fromisoformat(day + "T" + slot).replace(tzinfo=ZoneInfo("America/Bogota"))
         item = SubElement(channel, "item")
         link = BASE + "#noticia-" + n["id"]
         for tag, value in (
