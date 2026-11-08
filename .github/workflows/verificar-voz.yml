@@ -2,8 +2,8 @@ name: Verificar voz Kokoro (solo prueba, no publica)
 
 on:
   workflow_dispatch:
-  push:
-    branches: ['orbiuno/fase3-validacion']
+  pull_request:
+    branches: [main]
     paths:
       - 'scripts/verify_voice.py'
       - '.github/workflows/verificar-voz.yml'
