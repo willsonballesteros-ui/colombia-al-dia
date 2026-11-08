@@ -1,0 +1,48 @@
+name: ORBIUNO - Meta directo (Reel verificado)
+on:
+  workflow_dispatch:
+    inputs:
+      edition_key:
+        description: 'Identificador único, ej. ORBIUNO-2026-11-08-1200'
+        required: true
+        type: string
+      video_url:
+        description: 'URL HTTPS pública del MP4 FINAL, previamente verificado'
+        required: true
+        type: string
+      caption:
+        description: 'Texto propio de la edición y fuentes, sin datos secretos'
+        required: true
+        type: string
+      publish:
+        description: 'Publicar ahora; desactivado = comprobación segura'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-meta-${{ inputs.edition_key }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar cuenta y publicación anterior; publicar solo si se pidió
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+          VIDEO_URL: ${{ inputs.video_url }}
+          CAPTION: ${{ inputs.caption }}
+          EDITION_KEY: ${{ inputs.edition_key }}
+          PUBLISH: ${{ inputs.publish }}
+        run: |
+          args=()
+          if [ "$PUBLISH" = "true" ]; then args+=(--publish); fi
+          python scripts/publish_meta_direct.py \
+            --video-url "$VIDEO_URL" --caption "$CAPTION" \
+            --edition-key "$EDITION_KEY" "${args[@]}"
