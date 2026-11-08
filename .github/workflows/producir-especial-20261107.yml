@@ -1,0 +1,49 @@
+name: ORBIUNO · producir edición especial 2026-11-07
+on:
+  push:
+    branches: [orbiuno/edicion-2026-11-07-2000]
+    paths: [production/**, .github/workflows/producir-especial-20261107.yml]
+permissions:
+  contents: write
+jobs:
+  edicion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar motor y fotos acreditadas
+        run: |
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install kokoro-onnx==0.6.1 soundfile Pillow
+          curl -fLsS --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl -fLsS --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+          mkdir -p production/assets
+          cp media/news-photos/metro-archivo-large.webp production/assets/metro.webp
+          curl -fLsS --retry 3 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Cafe_Quimbaya_2005-08-27.jpg' -o production/assets/cafe.jpg
+          curl -fLsS --retry 3 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Paisaje_de_Girardota.jpg/960px-Paisaje_de_Girardota.jpg' -o production/assets/girardota.jpg
+          curl -fLsS --retry 3 'https://upload.wikimedia.org/wikipedia/commons/7/70/Berlaymont_building_in_Brussels.jpg' -o production/assets/bruselas.jpg
+          for domain in larepublica.co dnp.gov.co elespectador.com; do
+            curl -fLsS --retry 3 "https://www.google.com/s2/favicons?domain=$domain&sz=64" -o "production/assets/$domain.png"
+          done
+      - name: Generar portada, reportajes, Reel, historia y carrusel
+        env:
+          ORBIUNO_VOICE_MODEL: /tmp/kokoro-v1.0.onnx
+          ORBIUNO_VOICE_BANK: /tmp/voices-v1.0.bin
+        run: |
+          export ORBIUNO_REPO_ROOT="$PWD"
+          python production/edicion.py
+          python production/prepare.py
+          python scripts/prepare_site.py
+          python scripts/build_feed.py
+          python production/render.py
+          python scripts/generate_web_voice.py
+          git add noticias.json index.html feed.xml scripts/prepare_site.py scripts/build_feed.py media/2026-11-07-2000 media/web-voice
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'ORBIUNO: edición especial del 7 de noviembre, 20:00'
+          git push origin HEAD:refs/heads/orbiuno/edicion-2026-11-07-2000
