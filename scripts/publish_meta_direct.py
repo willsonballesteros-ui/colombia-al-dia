@@ -78,10 +78,10 @@ def main():
     user_id = os.getenv("ORBIUNO_IG_USER_ID")
     if not token or not user_id:
         sys.exit("Faltan GitHub Secrets ORBIUNO_IG_ACCESS_TOKEN / ORBIUNO_IG_USER_ID")
-    profile = api("GET", "/me", token, {"fields": "id,username"})
+    profile = api("GET", "/me", token, {"fields": "id,user_id,username"})
     if profile.get("username", "").lower().lstrip("@") != "resumen.noticias":
         sys.exit("Cuenta equivocada: se detiene antes de publicar")
-    if str(profile.get("id")) != user_id:
+    if str(profile.get("user_id") or profile.get("id")) != user_id:
         sys.exit("ID de cuenta no coincide con el secret: se detiene")
     marker = "[" + args.edition_key + "]"
     caption = args.caption.rstrip() + "\n\n" + marker
