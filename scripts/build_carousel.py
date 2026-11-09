@@ -366,8 +366,11 @@ def story_card(day, news, out):
 def main():
     data=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=data["editionDate"]
+    from scripts.build_caption import edition_slot
+    slot_time={"8am":"08:00","12m":"12:00","6pm":"18:00"}[edition_slot()]
     news=sorted((x for x in data["news"] if x.get("date")==day and
-                x.get("verification")=="editorial_verified"),
+                x.get("verification")=="editorial_verified" and
+                x.get("editionSlot")==slot_time),
                 key=lambda x:x.get("priority",999))
     if not (1 <= len(news) <= 4) or len({x["id"] for x in news}) != len(news):
         raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren entre una y cuatro noticias verificadas únicas")
