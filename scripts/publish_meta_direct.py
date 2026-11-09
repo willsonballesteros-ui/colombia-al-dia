@@ -34,8 +34,27 @@ def api(method, path, token, values=None):
         with urllib.request.urlopen(request, timeout=35) as response:
             return json.load(response)
     except urllib.error.HTTPError as err:
-        # Do not print the request URL or token, even when Meta echoes it.
-        raise RuntimeError("Meta HTTP " + str(err.code) + " on " + path) from None
+        # Meta error details may help diagnosis, but must never expose credentials.
+        details = {}
+        try:
+            details = json.loads(err.read(8192).decode("utf-8")).get("error", {})
+        except (ValueError, UnicodeDecodeError, AttributeError):
+            pass
+        code = details.get("code")
+        subcode = details.get("error_subcode")
+        message = str(details.get("message", ""))[:400]
+        # Redact access tokens and credential-like query strings from Meta messages.
+        message = message.replace(token, "[REDACTED]")
+        message = re.sub(r"(?i)(access_token|client_secret|appsecret_proof)\\s*[=:]\\s*[^\\s&,]+", r"\\1=[REDACTED]", message)
+        message = re.sub(r"https?://\\S+", "[URL_REDACTED]", message)
+        summary = "Meta HTTP " + str(err.code) + " on " + path
+        if code is not None:
+            summary += " code=" + str(code)
+        if subcode is not None:
+            summary += " subcode=" + str(subcode)
+        if message:
+            summary += " message=" + message
+        raise RuntimeError(summary) from None
 
 def existing_media(user_id, token, marker):
     url = "/" + user_id + "/media"
@@ -74,6 +93,10 @@ def main():
         sys.exit("Se bloquea publicacion retroactiva o futura: hoy en Colombia es " + today)
     if not args.caption.strip():
         sys.exit("La descripcion editorial no puede estar vacia")
+    if len(args.caption) + 2 + len("[" + args.edition_key + "]") > 2200:
+        sys.exit("El pie de foto, incluida la marca de edicion, supera 2200 caracteres")
+    if len(re.findall(r"(?<!\\w)#[\\w]+", args.caption)) > 30:
+        sys.exit("El pie de foto supera 30 hashtags")
     token = os.getenv("ORBIUNO_IG_ACCESS_TOKEN")
     user_id = os.getenv("ORBIUNO_IG_USER_ID")
     if not token or not user_id:
