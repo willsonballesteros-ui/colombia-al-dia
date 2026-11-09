@@ -61,7 +61,7 @@ class NewsAudioUITests(unittest.TestCase):
     def test_audio_is_inline_full_if_licensed_else_summary(self):
         current = [x for x in self.data["news"] if x.get("date") == self.data["editionDate"]
                    and x.get("verification") == "editorial_verified"]
-        rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
+        rendered = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertGreaterEqual(len(current), 1)
         self.assertLessEqual(len(current), 12)
         self.assertTrue(all(not x.get("fullArticleRightsVerified") for x in current))
