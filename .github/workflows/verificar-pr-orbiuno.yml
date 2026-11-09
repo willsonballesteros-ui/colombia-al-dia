@@ -21,6 +21,8 @@ jobs:
           python-version: '3.12'
       - name: Verificar pruebas sin Meta ni publicaciones
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Completar metadatos de idioma como hace el flujo de producción
+        run: python scripts/prepare_audio.py noticias.json
       - name: Validar datos editoriales
         run: python scripts/validate_news.py noticias.json
       - name: Sintaxis del publicador y generadores
