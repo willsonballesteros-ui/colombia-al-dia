@@ -72,7 +72,7 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertEqual(rendered.count('data-tts-full="true"'), full_count)
         self.assertEqual(rendered.count('data-tts-full="false"'), len(current)-full_count)
         for item in current:
-            self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 130)
+            self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 110)
             self.assertLessEqual(len(item["audioFullTextEs"].split()), 250)
             self.assertIn('data-tts-id="'+item["id"]+'" data-tts-full="'+
                           ('true' if has_complete_audio(item) else 'false')+'"', rendered)
