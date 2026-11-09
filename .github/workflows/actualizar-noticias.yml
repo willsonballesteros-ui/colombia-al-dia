@@ -90,7 +90,7 @@ jobs:
           data=json.loads(Path('noticias.json').read_text(encoding='utf-8'))
           today=datetime.now(ZoneInfo('America/Bogota')).date().isoformat()
           verified=[n for n in data.get('news',[]) if n.get('date')==today and n.get('verification')=='editorial_verified']
-          if data.get('editionDate')!=today or len(verified)!=10:
+          if data.get('editionDate')!=today or not (1 <= len(verified) <= 4):
               print(f'NO PUBLICAR: edición {data.get("editionDate")}; {len(verified)} noticias verificadas de {today}')
               Path('/tmp/orbiuno_skip_carousel').touch()
           PY
