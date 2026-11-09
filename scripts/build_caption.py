@@ -56,8 +56,8 @@ def build(db):
     publication_ready=not blockers
     # La definición del contenido es independiente de que el render ya haya terminado.
     # El pipeline valida los archivos físicos después de construir el carrusel.
-    slide_names=["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,(len(news)+4)//5+1)]
-    news_counts=[len(news[i:i+5]) for i in range(0,len(news),5)]
+    slide_names=["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,(len(news)+1)//2+1)]
+    news_counts=[len(news[i:i+2]) for i in range(0,len(news),2)]
     media=["https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
            +day+"/"+name for name in slide_names]
     caption_link=tracked_url(day,"caption",slot)
