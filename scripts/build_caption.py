@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Copies de Instagram cortos con URL sola en una línea y primer comentario.
 
-Genera archivos para entregar a Metricool. NO afirma que un comentario esté
+Genera archivos editoriales independientes de cualquier programador externo. No afirma que un comentario esté
 publicado ni coloca enlaces falsamente clicables sobre diapositivas.
 """
 import json
@@ -40,8 +40,8 @@ def build(db):
                  and n.get("verification")=="editorial_verified"
                  and n.get("editionSlot")==slot_time),
                 key=lambda n:n.get("priority",999))
-    if not (1 <= len(news) <= 10) or len({n["id"] for n in news})!=len(news):
-        raise RuntimeError("Se requieren entre una y diez noticias verificadas distintas")
+    if not (1 <= len(news) <= 4) or len({n["id"] for n in news})!=len(news):
+        raise RuntimeError("Se requieren entre una y cuatro noticias verificadas distintas")
     for n in news:
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
