@@ -1,0 +1,47 @@
+name: ORBIUNO - Diagnostico seguro Meta (NO PUBLICA)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnostico-meta-orbiuno.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Comprobar secretos y cuenta Instagram sin publicar
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request, urllib.error
+          token=os.environ.get("ORBIUNO_IG_ACCESS_TOKEN","")
+          expected=os.environ.get("ORBIUNO_IG_USER_ID","")
+          print("ORBIUNO_IG_ACCESS_TOKEN:", "CONFIGURADO" if token else "AUSENTE")
+          print("ORBIUNO_IG_USER_ID:", "CONFIGURADO" if expected else "AUSENTE")
+          if not token or not expected:
+              raise SystemExit("DIAGNOSTICO: falta configurar secretos de ORBIUNO en GitHub; NO PUBLICADO")
+          # No escribir token, cabeceras, URL con token ni cuerpos de error.
+          url="https://graph.instagram.com/v25.0/me?fields=id%2Cuser_id%2Cusername"
+          request=urllib.request.Request(url,headers={"Authorization":"Bearer "+token})
+          try:
+              with urllib.request.urlopen(request,timeout=20) as response:
+                  profile=json.load(response)
+          except urllib.error.HTTPError as err:
+              print("DIAGNOSTICO META: HTTP",err.code,"en GET /me; verificar token y rol de Instagram Login")
+              raise SystemExit(1)
+          except Exception as exc:
+              print("DIAGNOSTICO META: fallo de conexion o JSON:", type(exc).__name__)
+              raise SystemExit(1)
+          username=str(profile.get("username","")).lower().lstrip("@")
+          account_id=str(profile.get("user_id") or profile.get("id") or "")
+          if username!="resumen.noticias":
+              raise SystemExit("DIAGNOSTICO: identidad incorrecta (no @resumen.noticias); NO PUBLICADO")
+          if account_id!=expected:
+              raise SystemExit("DIAGNOSTICO: el ID de ORBIUNO no coincide con el secreto; NO PUBLICADO")
+          print("DIAGNOSTICO: AUTH_OK, @resumen.noticias y ID coinciden. NO SE PUBLICO NADA.")
+          PY
