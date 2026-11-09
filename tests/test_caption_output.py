@@ -1,5 +1,6 @@
 """Bloqueo de regresiones: copy breve y URL en una sola línea."""
 import json
+import os
 import unittest
 from scripts.build_caption import ROOT, URL, build, tracked_url
 
@@ -8,7 +9,16 @@ class CaptionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
-        cls.out=build(cls.db)
+        slots={n.get("editionSlot") for n in cls.db["news"] if n.get("date")==cls.db["editionDate"] and n.get("verification")=="editorial_verified"}
+        candidate=next((k for k,v in (("8am","08:00"),("12m","12:00"),("6pm","18:00")) if v in slots),None)
+        assert candidate, "No hay noticias verificadas para probar"
+        original=os.environ.get("ORBIUNO_EDITION_SLOT")
+        os.environ["ORBIUNO_EDITION_SLOT"]=candidate
+        try:
+            cls.out=build(cls.db)
+        finally:
+            if original is None: os.environ.pop("ORBIUNO_EDITION_SLOT",None)
+            else: os.environ["ORBIUNO_EDITION_SLOT"]=original
 
     def test_caption_short_and_url_isolated(self):
         text=self.out["caption"]
@@ -40,10 +50,10 @@ class CaptionTests(unittest.TestCase):
         self.assertEqual(self.out["links"]["bio"],tracked_url(self.db["editionDate"],"bio",self.out["editionSlot"]))
 
     def test_three_unique_slides_ten_original_sources(self):
-        self.assertEqual(len(self.out["media"]),3)
-        self.assertEqual(len(set(self.out["media"])),3)
-        self.assertEqual(self.out["newsPerSlide"],[5,5])
-        self.assertEqual(len(self.out["sourceLinks"]),10)
+        self.assertEqual(len(self.out["media"]),1+len(self.out["newsPerSlide"]))
+        self.assertEqual(len(set(self.out["media"])),len(self.out["media"]))
+        self.assertEqual(self.out["newsPerSlide"],[2]* (sum(self.out["newsPerSlide"])//2) + ([1] if sum(self.out["newsPerSlide"])%2 else []))
+        self.assertEqual(len(self.out["sourceLinks"]),sum(self.out["newsPerSlide"]))
         self.assertTrue(all(s["url"].startswith("https://") for s in self.out["sourceLinks"]))
 
 

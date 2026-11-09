@@ -1,0 +1,29 @@
+name: ORBIUNO - Validar PR sin publicar
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'noticias.json'
+      - 'index.html'
+      - '.github/workflows/verificar-pr-orbiuno.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar pruebas sin Meta ni publicaciones
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Completar metadatos de idioma como hace el flujo de producción
+        run: python scripts/prepare_audio.py noticias.json
+      - name: Validar datos editoriales
+        run: python scripts/validate_news.py noticias.json
+      - name: Sintaxis del publicador y generadores
+        run: python -m compileall -q scripts tests

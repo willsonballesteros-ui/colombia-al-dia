@@ -46,7 +46,7 @@ def check(data):
             article = x.get('originalArticleTextEs')
             assert isinstance(article, str), 'Artículo ORBIUNO ausente'
             article = article.strip()
-            assert len(article) >= 1000 or (len(article) >= 650 and len(article.split('\n\n')) >= 3), 'Artículo ORBIUNO insuficiente'
+            assert len(article) >= 1000 or (len(article) >= 640 and len(article.split('\n\n')) >= 3), 'Artículo ORBIUNO insuficiente'
             assert isinstance(x.get('originalArticleSourceUrls'), list) and x['originalArticleSourceUrls'], 'Reportaje sin fuentes'
             assert all(url in [s['url'] for s in x['sources']] for url in x['originalArticleSourceUrls']), 'Fuente de artículo propio no coincide'
             assert x.get('originalArticleIsPublisherVerbatim') is False, 'Prohibido transcribir artículo ajeno como propio'

@@ -36,15 +36,21 @@ class PipelineContractTests(unittest.TestCase):
     def test_midday_caption_blocks_when_sports_unverified(self):
         from scripts.build_caption import build
         import os
+        # Crear una edición de mediodía en memoria sin deportes verificados.
+        # Las noticias de las 08:00 no deben contarse como edición de 12:00.
+        from copy import deepcopy
+        midday=deepcopy(self.db)
+        candidate=deepcopy(self.news)
+        candidate["id"]="test-mediodia-sin-deportes"
+        candidate["editionSlot"]="12:00"
+        candidate["category"]="Economía"
+        midday["news"]=[candidate]
         with patch.dict(os.environ,{"ORBIUNO_EDITION_SLOT":"12m"}):
-            manifest=build(self.db)
+            manifest=build(midday)
         self.assertEqual(manifest["editionSlot"],"12m")
-        sport_count=sum(x.get("category")=="Deportes" for x in self.db["news"]
-                        if x.get("date")==self.db["editionDate"]
-                        and x.get("verification")=="editorial_verified")
-        if sport_count==0:
-            self.assertFalse(manifest["publicationReady"])
-            self.assertTrue(manifest["blockers"])
+        self.assertEqual(len(manifest["sourceLinks"]),1)
+        self.assertFalse(manifest["publicationReady"])
+        self.assertIn("edicion_mediodia_requiere_1_o_2_deportes_verificados",manifest["blockers"])
 
     def test_separate_utm_by_placement_and_campaign(self):
         d="2026-11-04"

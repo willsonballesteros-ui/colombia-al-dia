@@ -16,10 +16,11 @@ class VisualIntegrityTests(unittest.TestCase):
         editorials = [n for n in self.db["news"]
                       if n["date"] == self.db["editionDate"]
                       and n.get("verification") == "editorial_verified"]
-        self.assertEqual(len(editorials), 10)
+        self.assertGreaterEqual(len(editorials), 1)
+        self.assertLessEqual(len(editorials), 12)
         self.assertTrue(all(not n.get("imageUrl") or image_verified(n) for n in editorials))
         page = build(self.db, self.template)
-        preloaded = page.split('id="cards" aria-live="polite">', 1)[1].split('<div class="empty"', 1)[0]
+        preloaded = page.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertEqual(preloaded.count('class="news-photo"'), sum(image_verified(n) for n in editorials))
         for n in editorials:
             if image_verified(n):

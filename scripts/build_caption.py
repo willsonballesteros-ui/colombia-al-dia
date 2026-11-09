@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Copies de Instagram cortos con URL sola en una línea y primer comentario.
 
-Genera archivos para entregar a Metricool. NO afirma que un comentario esté
+Genera archivos editoriales independientes de cualquier programador externo. No afirma que un comentario esté
 publicado ni coloca enlaces falsamente clicables sobre diapositivas.
 """
 import json
@@ -34,15 +34,18 @@ def tracked_url(day,medium,slot):
 
 def build(db):
     day=db["editionDate"]
+    slot=edition_slot()
+    slot_time={"8am":"08:00","12m":"12:00","6pm":"18:00"}[slot]
     news=sorted((n for n in db["news"] if n.get("date")==day
-                 and n.get("verification")=="editorial_verified"),
+                 and n.get("verification")=="editorial_verified"
+                 and n.get("editionSlot")==slot_time),
                 key=lambda n:n.get("priority",999))
-    if not (1 <= len(news) <= 10) or len({n["id"] for n in news})!=len(news):
-        raise RuntimeError("Se requieren entre una y diez noticias verificadas distintas")
+    if not (1 <= len(news) <= 4) or len({n["id"] for n in news})!=len(news):
+        raise RuntimeError("Se requieren entre una y cuatro noticias verificadas distintas")
     for n in news:
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
-    slot=os.getenv("ORBIUNO_EDITION_SLOT", "8am") if os.getenv("ORBIUNO_EXTRAORDINARY")=="1" else edition_slot()
+    slot=edition_slot()
     verified_sports=sum(n.get("category")=="Deportes" for n in news)
     sports_ready=slot!="12m" or 1<=verified_sports<=2
     # No presentar por segunda vez la edición matutina como una edición nueva.
@@ -56,8 +59,8 @@ def build(db):
     publication_ready=not blockers
     # La definición del contenido es independiente de que el render ya haya terminado.
     # El pipeline valida los archivos físicos después de construir el carrusel.
-    slide_names=["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,(len(news)+4)//5+1)]
-    news_counts=[len(news[i:i+5]) for i in range(0,len(news),5)]
+    slide_names=["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,(len(news)+1)//2+1)]
+    news_counts=[len(news[i:i+2]) for i in range(0,len(news),2)]
     media=["https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/"
            +day+"/"+name for name in slide_names]
     caption_link=tracked_url(day,"caption",slot)

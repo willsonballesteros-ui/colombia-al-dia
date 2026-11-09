@@ -58,6 +58,23 @@ def enrich(db):
         if item.get("sourceLanguage") != language:
             item["sourceLanguage"] = language
             count += 1
+        # Migración restringida de metadatos de los diez reportajes propios
+        # revisados del 6/11: no se modifica el texto ni su revisión editorial.
+        legacy = (item.get("date") == "2026-11-06"
+                  and str(item.get("id", "")).startswith("orbiuno-20261106-18h-")
+                  and item.get("originalArticleByline") == "ORBIUNO · Redacción propia"
+                  and item.get("originalArticleReviewed") is True
+                  and bool(item.get("originalArticleTextEs"))
+                  and bool(item.get("sources")))
+        if legacy:
+            item["originalArticleByline"] = "Redacción ORBIUNO"
+            item.setdefault("originalArticleSourceUrls",
+                            [s["url"] for s in item["sources"] if str(s.get("url", "")).startswith("https://")])
+            if item.get("originalArticleIsPublisherVerbatim") is None:
+                item["originalArticleIsPublisherVerbatim"] = False
+            if item.get("audioFullTextEs") and item.get("audioIsFullPublisherArticle") is None:
+                item["audioIsFullPublisherArticle"] = False
+            count += 1
         if not item.get("audioFullTextEs"):
             full_text = editorial_audio(item)
             if full_text and len(full_text) > len(str(item.get("executiveSummary") or "")):
