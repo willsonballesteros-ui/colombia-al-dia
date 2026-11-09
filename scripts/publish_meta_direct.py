@@ -45,8 +45,8 @@ def api(method, path, token, values=None):
         message = str(details.get("message", ""))[:400]
         # Redact access tokens and credential-like query strings from Meta messages.
         message = message.replace(token, "[REDACTED]")
-        message = re.sub(r"(?i)(access_token|client_secret|appsecret_proof)\\s*[=:]\\s*[^\\s&,]+", r"\\1=[REDACTED]", message)
-        message = re.sub(r"https?://\\S+", "[URL_REDACTED]", message)
+        message = re.sub(r"(?i)(access_token|client_secret|appsecret_proof)\s*[=:]\s*[^\s&,]+", r"\1=[REDACTED]", message)
+        message = re.sub(r"https?://\S+", "[URL_REDACTED]", message)
         summary = "Meta HTTP " + str(err.code) + " on " + path
         if code is not None:
             summary += " code=" + str(code)
@@ -95,7 +95,7 @@ def main():
         sys.exit("La descripcion editorial no puede estar vacia")
     if len(args.caption) + 2 + len("[" + args.edition_key + "]") > 2200:
         sys.exit("El pie de foto, incluida la marca de edicion, supera 2200 caracteres")
-    if len(re.findall(r"(?<!\\w)#[\\w]+", args.caption)) > 30:
+    if len(re.findall(r"(?<!\w)#[\w]+", args.caption)) > 30:
         sys.exit("El pie de foto supera 30 hashtags")
     token = os.getenv("ORBIUNO_IG_ACCESS_TOKEN")
     user_id = os.getenv("ORBIUNO_IG_USER_ID")
