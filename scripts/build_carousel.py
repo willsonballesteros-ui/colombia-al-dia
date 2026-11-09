@@ -7,6 +7,7 @@ La portada es la primera diapositiva del carrusel estático de Instagram.
 """
 import io
 import json
+import os
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -366,8 +367,10 @@ def story_card(day, news, out):
 def main():
     data=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=data["editionDate"]
-    from scripts.build_caption import edition_slot
-    slot_time={"8am":"08:00","12m":"12:00","6pm":"18:00"}[edition_slot()]
+    hour=datetime.now(ZoneInfo('America/Bogota')).hour
+    requested=os.getenv('ORBIUNO_EDITION_SLOT', '').lower()
+    slot=requested if requested in ('8am','12m','6pm') else ('8am' if hour<11 else '12m' if hour<17 else '6pm')
+    slot_time={'8am':'08:00','12m':'12:00','6pm':'18:00'}[slot]
     news=sorted((x for x in data["news"] if x.get("date")==day and
                 x.get("verification")=="editorial_verified" and
                 x.get("editionSlot")==slot_time),
