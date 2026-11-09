@@ -19,12 +19,14 @@ class NewsAudioUITests(unittest.TestCase):
             if n.get("verification") == "editorial_verified"
             and n.get("date") == self.data["editionDate"]
         ]
-        self.assertEqual(len(expected), 10)
-        first = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
-        self.assertEqual(first.count('data-tts-action="toggle"'), 10)
-        self.assertEqual(first.count('data-tts-action="speed"'), 10)
-        self.assertEqual(first.count('data-tts-action="stop"'), 10)
-        self.assertEqual(first.count('class="news-preview"'), 10)
+        self.assertGreaterEqual(len(expected), 1)
+        self.assertLessEqual(len(expected), 12)
+        self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=4 for slot in ('08:00','12:00','18:00')))
+        first = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
+        self.assertEqual(first.count('data-tts-action="toggle"'), len(expected))
+        self.assertEqual(first.count('data-tts-action="speed"'), len(expected))
+        self.assertEqual(first.count('data-tts-action="stop"'), len(expected))
+        self.assertEqual(first.count('class="news-preview"'), len(expected))
         self.assertNotIn('<details class="news-more">', first)
         self.assertNotIn("QUÉ PASÓ", first)
         self.assertNotIn("POR QUÉ IMPORTA", first)
@@ -45,7 +47,7 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn("source-thumbnail-name",self.out)
 
     def test_source_urls_and_images_are_protected(self):
-        rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
+        rendered = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         for n in self.data["news"]:
             if n.get("verification") != "editorial_verified" or n.get("date") != self.data["editionDate"]:
                 continue
@@ -60,20 +62,21 @@ class NewsAudioUITests(unittest.TestCase):
         current = [x for x in self.data["news"] if x.get("date") == self.data["editionDate"]
                    and x.get("verification") == "editorial_verified"]
         rendered = self.out.split('<div class="cards" id="cards" aria-live="polite">', 1)[1].split('<div class="empty" id="empty"', 1)[0]
-        self.assertEqual(len(current), 10)
+        self.assertGreaterEqual(len(current), 1)
+        self.assertLessEqual(len(current), 12)
         self.assertTrue(all(not x.get("fullArticleRightsVerified") for x in current))
-        self.assertEqual(rendered.count('data-tts-action="toggle"'), 10)
-        self.assertEqual(rendered.count('data-tts-action="speed"'), 10)
+        self.assertEqual(rendered.count('data-tts-action="toggle"'), len(current))
+        self.assertEqual(rendered.count('data-tts-action="speed"'), len(current))
         from scripts.prepare_site import has_complete_audio
         full_count=sum(has_complete_audio(item) for item in current)
         self.assertEqual(rendered.count('data-tts-full="true"'), full_count)
-        self.assertEqual(rendered.count('data-tts-full="false"'), 10-full_count)
+        self.assertEqual(rendered.count('data-tts-full="false"'), len(current)-full_count)
         for item in current:
             self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 130)
             self.assertLessEqual(len(item["audioFullTextEs"].split()), 250)
             self.assertIn('data-tts-id="'+item["id"]+'" data-tts-full="'+
                           ('true' if has_complete_audio(item) else 'false')+'"', rendered)
-        self.assertEqual(rendered.count('class="source"'), 10)
+        self.assertEqual(rendered.count('class="source"'), len(current))
         self.assertNotIn("Abrir para escuchar completo", rendered)
         self.assertNotIn("Escuchar versión ampliada", rendered)
         self.assertIn("Fuente ↗", rendered)
