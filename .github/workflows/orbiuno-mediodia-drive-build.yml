@@ -27,6 +27,17 @@ jobs:
           unzip -q /tmp/orbiuno.zip -d /tmp/orbiuno-src
           test -f /tmp/orbiuno-src/orbiuno/scripts/build_edition.py
           test -f /tmp/orbiuno-src/orbiuno/editions/2026-11-09-mediodia.json
+      - name: Usar fuente oficial COP31 cuando medio secundario bloquea robots
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('/tmp/orbiuno-src/orbiuno/editions/2026-11-09-mediodia.json')
+          data=json.loads(p.read_text(encoding='utf-8'))
+          article=data['stories'][2]
+          article['sources']=[u for u in article['sources'] if not u.startswith('https://unsdg.un.org/')]
+          article['verification'] += ' Referencia secundaria excluida por HTTP 403 en GitHub; se conserva UNFCCC.'
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2), encoding='utf-8')
+          PY
       - name: Instalar generador de Claude
         run: |
           python -m pip install -r /tmp/orbiuno-src/orbiuno/requirements.txt
