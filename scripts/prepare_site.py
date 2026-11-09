@@ -92,7 +92,7 @@ def original_article_ready(n):
         and n.get("originalArticleReviewed") is True
         and isinstance(n.get("originalArticleTextEs"), str)
         and (len(n["originalArticleTextEs"].strip()) >= 1000
-             or (len(n["originalArticleTextEs"].strip()) >= 650
+             or (len(n["originalArticleTextEs"].strip()) >= 640
                  and len(n["originalArticleTextEs"].strip().split("\n\n")) >= 3))
         and isinstance(n.get("originalArticleSourceUrls"), list)
         and bool(n["originalArticleSourceUrls"])
