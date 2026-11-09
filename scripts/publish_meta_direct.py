@@ -66,7 +66,7 @@ def main():
     parsed = urllib.parse.urlparse(args.video_url)
     if parsed.scheme != "https" or not parsed.hostname:
         sys.exit("Se requiere video_url HTTPS publico")
-    match = re.fullmatch(r"ORBIUNO-(\\d{4}-\\d{2}-\\d{2})-(0800|1200|1800)", args.edition_key)
+    match = re.fullmatch(r"ORBIUNO-(\d{4}-\d{2}-\d{2})-(0800|1200|1800)", args.edition_key)
     if not match:
         sys.exit("edition_key invalida: ORBIUNO-AAAA-MM-DD-HHMM")
     today = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
