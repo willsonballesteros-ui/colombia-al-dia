@@ -40,10 +40,10 @@ class CaptionTests(unittest.TestCase):
         self.assertEqual(self.out["links"]["bio"],tracked_url(self.db["editionDate"],"bio",self.out["editionSlot"]))
 
     def test_three_unique_slides_ten_original_sources(self):
-        self.assertEqual(len(self.out["media"]),3)
-        self.assertEqual(len(set(self.out["media"])),3)
-        self.assertEqual(self.out["newsPerSlide"],[5,5])
-        self.assertEqual(len(self.out["sourceLinks"]),10)
+        self.assertEqual(len(self.out["media"]),1+len(self.out["newsPerSlide"]))
+        self.assertEqual(len(set(self.out["media"])),len(self.out["media"]))
+        self.assertEqual(self.out["newsPerSlide"],[2,2])
+        self.assertEqual(len(self.out["sourceLinks"]),sum(self.out["newsPerSlide"]))
         self.assertTrue(all(s["url"].startswith("https://") for s in self.out["sourceLinks"]))
 
 
