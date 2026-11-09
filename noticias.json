@@ -2,9 +2,180 @@
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-08",
   "editedAtBogota": "2026-11-08 08:30",
-  "siteVersion": "3.1",
+  "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "rss-b045f27ec8fb0ffd",
+      "date": "2026-11-08",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La selección Colombia se pronunció sobre los convocados de Nacional que reclamó Lucas González",
+      "summary": "Titular difundido por MSN a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MSN · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNRlRXMEtvVE9xSFJZeHFFWjdJci01TU5VUWg4NGZtWl9QZDlJS2hkR3ZHNDIxX0JtSWFZMGxqbVhkQTUwMzVESHF0VHo4eWhlMGtTR19ySHNRUmFBX05ZTGNsZmt5MGpkTUdwbmZLSGMtZXl6bGxKTXJVeGlJMEtGell4dC10OVlvdkpyMUxuSmdKYlBrQkVZdlJYYjRoWUxnREEzSkhaSFVjX2o4Q1pHUzAxT1A5MW12UWtMX3pRTGVial92VHNlUm16TFJRWUpkSjlad3M1MmlMRXFEWlRGdGpGUHp0WTNGUWV3ajJrYWhKNVVpRmkyVjJvM0E?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T18:18-05:00",
+      "relevanceScore": 9
+    },
+    {
+      "id": "rss-7fac4d224e1b7e72",
+      "date": "2026-11-08",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección Colombia llega a Cali: así será su agenda completa antes de enfrentar a Chile en el Pascual Guerrero",
+      "summary": "Titular difundido por El País a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El País · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZzk1N1J4OXZEdWM0Rkp2a05OYmI1YU9IVi01aEVvMTNCN09MQ0NBT1pFMVUtTkJkaXk3WTJMX0U0WnlMOVhnNnVHOTd3Uk4xbTR1OXNoWlgtcWxCNHdrSDcxbENUTnpmUlg4MjRMY0xqWEtYaVc0YzM3Y3dreVZMNTdIdFNxTV9kMjZPU0xxMjF6OEtCdlRXOWl1RmFyajBOcnZwcGVEVDhET3RuZ3M0LWRyb1F2WFpRR2dvYnEyQTVVd0xNaGJ0UVpmcGRCWlVjYk15ZWtJSXVDSXFtLUY5SHZmbDh0ZXl5N1BUSkxB0gHzAUFVX3lxTE9YbGVCZjZ0Y09nS015SVp4UnpjS1pUQmdHX1Yzc0luRGY4NjlvWllFMEtBQ0dFQ0RfRzlKdWdBUFQ4bFB4WFAxcUZmZWZLbjBMbU9qb3VDZ1AxUEJBUE94LUtDUFNRMlNVanozX2JXRXYtbDY5cWF6NWxGckJaa0MzMVVYTmdnQVhkV2dHM1JPMGNsLXBvSVoyXzUyRE9ESkZVcTAtU1I2cnc4bEV1OUdKZDZsWjJNd1pOM0dtcjF6Q212QTc5SWI2dDVMY2dJSEhEM2JMNGZudmtjSjlxWFdPcFk5RFRwSGdEMGpOcTVGODJXZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T19:29-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-d43fc40c49ae1782",
+      "date": "2026-11-08",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Jaminton Campaz es baja en la Selección Colombia y Óscar Cortés fue convocado de urgencia | El Colombiano",
+      "summary": "Titular difundido por El Colombiano a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Colombiano · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPc0hMbUh6ajRGczhQQUZUdmxTWWRNMmI1MkJINFV3SG5iOVc3WnBhSWd4RTBiLXlacm1PeEh4QzdEMG1PWWZoWW40N0dBR05nNFhBb3huVV9ldkRYZ2swemhzYmxqY3FieVNqcU9TMHgxM3piRnU2UmhLamF2dFBRVzBVR0ZpR3M2VWFfLTlqSFZFNGdheVFZRy1LR2J1WE9TeVZIX2RR0gGrAUFVX3lxTE9oWjhUZFpIUVIyQjVZQVBOMnRGWkpSanExOENHUTJ5VHV0dXZxOUVlVXMta1FkVWdRVVVLTERwbUl1TDU2ZzFpRG5lQzV2Z3ZHU1Frc2JtOUlYb1BiYi1POFBkWG9DMFlBNHVoWkF0RWFqZ19pY1pvNGJNS0JUMGRhQzE1aEdHMHd0cUFaalZ1Ykc4eTBQZDU4Q21JU0xzcm1PSWhwQk5JbVpjNA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T18:38-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-944ba98dc7ce7dc2",
+      "date": "2026-11-08",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección Colombia confirmó una baja de última hora para los amistosos de noviembre",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNHhQQjJvU0tDWEhpOVUydlpYY0NKUnJ6ZHlaS0hINkItMGZ4QlhscDhwVXZ5YllCRDRvMEVHcGotYmoxYzBVOU9ieHFBemlTMHdGdks2R0ZrQWQ1VHZVamNkaGFoYUswTE9OYTFPNkg5UFE2Q2VYY1RmR1BSclhtalNYaEduMjMwb1NxYkNXNVZwejJweFVkNVBsLVpQUU1wWVRyUDRYZjhBc3JiMEVF0gG0AUFVX3lxTE1BUTQ3ZjNkeVlkdWlON1pNM1RqVmFoRk1aRGlxdkhUcHdxVDZCTHVNaWNUeEI4ZUppVGZhanFkTW5MUHlOSDR5bnJWY1EydS1MS1ZqQ1RMSGRTN0docWhDeHRLd01KSUlNWDZaY2NtdXZEa0s4S2VJcFpuOTZFSm5QVEhuZUEzaEtsdkNsMjVLZG44Z1NHU3pvc3FGclBYYXVONkdsalV3bEFObVRsRlVKbWQ3aA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T18:23-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-55e64fb28ad192d0",
+      "date": "2026-11-08",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Jaminton Campaz, desconvocado de la Selección Colombia por lesión",
+      "summary": "Titular difundido por AS Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "AS Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZGliQVZGUHdPM0ducWJhMDUwRjAxMXlrTnBRMDl1M1lPeEtEc3U2T25zdUpSTU0tTDZ6TUxMSUFKOUloNlFhaUE1OGNmeTZTeVNERTNIR2xrYmMydVp2YU1pcThqMXVHQ2dVV0VSUWJYeHdQS1MzWjdVdmVZRktZQ3dCMExwX3N5V2xnOE52eElqRmcya0pKaEtxak5DX1VIX2cwUUxiYWlfMTJJMzYxOFB2YXo3WkhRVGQxUHVR0gG-AUFVX3lxTE1kaWJBVkZQd08zR25xYmEwNTBGMDExeWtOcFEwOXUzWU94S0RzdTZPbnN1SlJNTS1MNnpNTExJQUo5SWg2UWFpQTU4Y2Z5NlN5U0RFM0hHbGtiYzJ1WnZhTWlxOGoxdUdDZ1VXRVJRYlh4d1BLUzNaN1V2ZVlGS1lDd0IwTHBfc3lXbGc4TnZ4SWpGZzJrSkpoS3FqTkNfVUhfZzBRTGJhaV8xMkkzNjE4UHZhejdaSFFUZDFQdVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T17:54-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-270425104ea01daa",
+      "date": "2026-11-08",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Expansión de centros de datos en Colombia abre debate sobre eficiencia y costos de la inteligencia artificial",
+      "summary": "Titular difundido por Noticias RCN a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias RCN · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbFRUSE9IYkszVzVfR2ZPb0dQdjFSSFhwc016UHJMYkh2dk5xTW5BQzcweWVtc000MlV6OFBpNmlTZXNNZ0dTTWEwdjZURGc1NjNreVdYc19nWV9YbFdxN1lGdDlLOWZjTGRtdk1Ib01EQjFmYm1WTWRydGdQaEZ0SzhKVHBiTTY1ak5PQTRWWGhqYVJySXM2REtKNHlMWXRyV0VwNnc1T3hJd3UyVW1ob2d5eDJ1TEdUVkNCaGJCTVkzc3hZNGhtMVZ6blkwa3ZsQmJaWi0zbmhFOFhHZk45dGVwM2VKT1FlQkhNYtIB7AFBVV95cUxOa2psWmZ5S1BxcXV5Y0F1ZzVESVdXNzFUUmZfeGFRdFA2cmo2aUpmZ1JUeEJjaURDc25CN0c1TFExNWVkR1RXcjVaUkhTSVlfVzU3b1NRZnFBd2VyWDkxRHlGVnk3cHZHQzhkSnNxOUlDMEJkd1Q4LUVBYkhVR3FXRlBtNE1UYllXU256eHNQa2hlSWtYZHRDYlNjWURRTXZTU1NZQWdoQUJzaF9IdnNBZlgzY2otT1d4WmEzcUc2aTFLSDd5NjdNRzdvYlFTSzVualNtOHY5cGR3TWdQLUhBVXYxSjRnTHFsZVlPQw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T19:25-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f858d7db3adf1d24",
+      "date": "2026-11-08",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El nuevo 'CSI' español utiliza tecnología valenciana",
+      "summary": "Titular difundido por Las Provincias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Las Provincias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWVh2WnFvdG81dEdiU19rNEtINW5Dejg4S0RiemhYQ2F0UnBfZTFUVFNBaTFkcDFOVjg4Yk80NkNrUU1lUW9nRVM5ZjhTM0toQlJvTzZmYjNLMVVSZ1dURTRxbkNyT25KOHBUblZBTk5Fc0JHNG9XcUFCME9yU1dNU1gtU21kQTY5dkVRd0JDMmM3R3RUY1RPYU4zSDJnOEVu0gGmAUFVX3lxTE85VTlIaTB5WW50aUhKTXdfZFVvd2dMbzFkSmlUX0g4VEtCSkdOWklfYmpLYVBhYzJhbTJHbDhrTThTNWJwVHY1SF9HT2ZZb3FjSDJQQW82VFFKRjRrVGJoVU5BeTJKZE9pajZfYjE0dm0tTk8ydF9WXzJfeW5SYkEyX0lqOHVDdGZzeGRoYWRXMkNLRmx3OWZMQktmdmxMT2hySGgtWFE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T19:24-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e30c204224e14dba",
+      "date": "2026-11-08",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Arriendos en Bogotá: Menos alza que inflación, alivio hogares",
+      "summary": "Titular difundido por Estrella Digital Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Estrella Digital Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45M2VGWFNtYllwa1FkRklCeUtObVBaOFFWek16VHNTS2RVTjZ4aFRkVDFSMmJvaXdISk1udGYyN3hCXzZfNDdOajZsN3ZKWW8tTFI3MERXdzhSTFBBYjVrSkhPYlBoa1VJeFlTeUc5RVV0dlVydkdsZGhxR1BmZw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T17:28-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c2448223ce30982b",
+      "date": "2026-11-08",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nvidia abre una investigación sobre la relación de su director ejecutivo con una presunta espía china",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/ck20wv99nd81o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-08T17:20-05:00",
+      "relevanceScore": 5
+    },
     {
       "id": "orbiuno-20261108-08h-01",
       "date": "2026-11-08",
@@ -337,7 +508,7 @@
       "executiveSummary": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.",
       "audioFullTextEs": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.\n\nLa petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.\n\nLa solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
       "originalArticleTextEs": "La Contraloría General solicitó a la Aeronáutica Civil un informe técnico sobre las fallas registradas el 4 de noviembre en los sistemas de visualización radar del aeropuerto El Dorado. La novedad afectó la gestión del tránsito aéreo y generó retrasos, de acuerdo con el reporte de Caracol Radio.\n\nLa petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.\n\nLa solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -350,7 +521,13 @@
       "why": "La petición busca establecer el origen del problema, los equipos comprometidos, la duración de la indisponibilidad y las horas en que se recuperó el servicio. La entidad de control también pidió información sobre la cantidad de vuelos demorados, cancelados, desviados o reprogramados y los aeropuertos o aerolíneas involucrados.",
       "next": "La solicitud es una actuación de control y no equivale a una conclusión sobre responsabilidades. La información pendiente permitirá precisar la magnitud operativa del incidente y las medidas correctivas adoptadas por las autoridades aeronáuticas.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "es",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/06/contraloria-pide-informacion-a-aerocivil-tras-fallas-en-radares-en-aeropuerto-el-dorado/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-02",
@@ -363,7 +540,7 @@
       "executiveSummary": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.",
       "audioFullTextEs": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.\n\nLos vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.\n\nLas autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
       "originalArticleTextEs": "Una nueva oleada de amenazas de bomba provocó interrupciones en al menos dieciocho vuelos europeos el viernes, según la cobertura en directo de The Guardian. Autoridades de distintos países investigan incidentes reportados en operaciones con origen o destino en varias ciudades del continente.\n\nLos vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.\n\nLas autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -376,7 +553,13 @@
       "why": "Los vuelos afectados aterrizaron sin incidentes relacionados con explosivos confirmados en los casos descritos. Algunas alertas resultaron falsas después de las inspecciones, aunque los procedimientos preventivos ocasionaron demoras y activaron servicios de seguridad aeroportuaria.",
       "next": "Las autoridades irlandesas consideraron posible una campaña coordinada de perturbación, una hipótesis que todavía requiere investigación. La información no implica que toda la aviación europea esté suspendida: el número de operaciones afectadas es reducido frente al tráfico aéreo cotidiano.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://www.theguardian.com/world/live/2026/nov/06/high-alert-hoax-bomb-threats-france-air-lingus-belgium-pope-leo-europe-live"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-03",
@@ -389,7 +572,7 @@
       "executiveSummary": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.",
       "audioFullTextEs": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.\n\nEntre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.\n\nLa cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
       "originalArticleTextEs": "Ecuador volvió a recibir energía eléctrica procedente de Colombia este viernes 6 de noviembre, de acuerdo con datos del operador eléctrico ecuatoriano Cenace citados por Primicias. La reanudación ocurre en un contexto de atención sobre la disponibilidad regional de electricidad.\n\nEntre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.\n\nLa cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -402,7 +585,13 @@
       "why": "Entre la medianoche y las dos de la tarde, la potencia media adquirida por Ecuador fue de 247 megavatios, según la información reportada. La infraestructura de transmisión entre ambos países tiene una capacidad aproximada de 450 megavatios.",
       "next": "La cifra describe potencia importada durante un intervalo del día, no el suministro garantizado para las siguientes jornadas. La evolución dependerá de la situación de generación, demanda y decisiones operativas de ambos sistemas.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "es",
+      "originalArticleSourceUrls": [
+        "https://www.primicias.ec/economia/colombia-reactiva-venta-energia-electrica-ecuador-noviembre-cortes-luz-estiaje-136588/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-04",
@@ -415,7 +604,7 @@
       "executiveSummary": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.",
       "audioFullTextEs": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.\n\nEl debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.\n\nUna caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
       "originalArticleTextEs": "La corrección de empresas tecnológicas relacionadas con inteligencia artificial sigue influyendo en la percepción de riesgo de los inversionistas internacionales. Reuters informó este viernes que la volatilidad se extendió a distintos segmentos del mercado, al tiempo que operadores evaluaban la magnitud del ajuste.\n\nEl debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.\n\nUna caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -428,7 +617,13 @@
       "why": "El debate se concentra en las grandes inversiones en infraestructura de inteligencia artificial y en la rapidez con que esas inversiones pueden traducirse en ingresos. El comportamiento de los bonos, las opciones y la demanda por activos considerados refugio ofrece señales adicionales sobre la confianza de los participantes.",
       "next": "Una caída de cotizaciones no demuestra por sí misma que la tecnología haya perdido utilidad. Las bolsas pueden variar a lo largo de la sesión; por eso esta edición no presenta como definitivos los movimientos intradía ni anticipa un cierre no confirmado.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-05",
@@ -441,7 +636,7 @@
       "executiveSummary": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.",
       "audioFullTextEs": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.\n\nLa iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.\n\nLos responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
       "originalArticleTextEs": "El Departamento de Agricultura de Estados Unidos anunció la incorporación de una herramienta de inteligencia artificial para detectar anomalías en la revisión de datos de producción agrícola. La primera aplicación está prevista para el informe de cosechas del 10 de noviembre, según Reuters.\n\nLa iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.\n\nLos responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -454,7 +649,13 @@
       "why": "La iniciativa llega después de errores en estimaciones de maíz correspondientes a septiembre. Una combinación informática incorrecta de datos de superficies irrigadas y no irrigadas produjo ajustes en los cálculos de rendimiento para algunos estados.",
       "next": "Los responsables explicaron que la herramienta servirá como control adicional y no como reemplazo del personal especializado. La exactitud de los informes importa para agricultores, compradores y mercados que usan esas cifras al tomar decisiones.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/technology/usda-launch-ai-tool-check-crop-production-data-after-errors-2026-11-06/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-06",
@@ -467,7 +668,7 @@
       "executiveSummary": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.",
       "audioFullTextEs": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.\n\nEl servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.\n\nLa superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
       "originalArticleTextEs": "El servicio europeo Copernicus informó que octubre de 2026 fue el octubre más cálido observado a escala global. La temperatura media del aire en superficie se situó 1,75 grados Celsius por encima de la referencia preindustrial, según los datos divulgados y recogidos por Reuters.\n\nEl servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.\n\nLa superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -480,7 +681,13 @@
       "why": "El servicio considera probable que el promedio del año 2026 supere 1,5 grados sobre esa referencia, como ya ocurrió en 2024. Se trata de una medición del comportamiento anual, relevante para comprender la sucesión de anomalías térmicas recientes.",
       "next": "La superación de ese umbral durante un año no se interpreta automáticamente como incumplimiento permanente del objetivo a largo plazo del Acuerdo de París, cuyo seguimiento se basa en tendencias de más duración. Los datos aportan una referencia para el debate sobre emisiones y adaptación.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/sustainability/cop/after-warmest-october-record-2026-is-likely-exceed-15-c-above-pre-industrial-2026-11-06/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-07",
@@ -493,7 +700,7 @@
       "executiveSummary": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.",
       "audioFullTextEs": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.\n\nEntre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.\n\nEl disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
       "originalArticleTextEs": "La banda irlandesa U2 tiene previsto lanzar el 13 de noviembre «Carnaval de Luz», su primer álbum completo de material nuevo desde 2017. Associated Press informó que el trabajo incluye doce canciones y fue producido por Jacknife Lee, colaborador habitual del grupo.\n\nEntre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.\n\nEl disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -506,7 +713,13 @@
       "why": "Entre los temas anunciados figura una colaboración con Dolly Parton. El lanzamiento se enmarca además en un año significativo para la trayectoria de la banda, que celebra cinco décadas de actividad musical.",
       "next": "El disco todavía no ha llegado a su fecha de lanzamiento en el momento de esta edición. ORBIUNO presenta la noticia como un estreno anunciado y no como un álbum ya publicado.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://apnews.com/article/465085508c38bfcc487ed247d4b987f5"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-08",
@@ -519,7 +732,7 @@
       "executiveSummary": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.",
       "audioFullTextEs": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.\n\nEl episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.\n\nLa información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
       "originalArticleTextEs": "Un grupo de activistas ingresó a un emplazamiento de construcción de un centro de datos de Microsoft en Ámsterdam durante una protesta, según un reporte publicado este viernes por Reuters.\n\nEl episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.\n\nLa información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -532,7 +745,13 @@
       "why": "El episodio se inscribe en el debate sobre la expansión de infraestructura digital y su consumo de recursos. Los centros de datos son necesarios para numerosos servicios de nube y aplicaciones de inteligencia artificial, pero su desarrollo también genera preguntas locales sobre energía y territorio.",
       "next": "La información disponible describe una protesta concreta. No permite atribuir a todas las comunidades europeas una misma postura ni concluir sobre la legalidad del proyecto sin documentos y decisiones de las autoridades competentes.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/europe/activists-breach-microsoft-data-centre-construction-site-protests-spread-europe-2026-11-06/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-09",
@@ -545,7 +764,7 @@
       "executiveSummary": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.",
       "audioFullTextEs": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.\n\nEl resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.\n\nPara precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
       "originalArticleTextEs": "El deportista colombiano Alejandro Gutiérrez obtuvo una medalla de bronce en los Juegos Olímpicos de la Juventud Dakar 2026, de acuerdo con el reporte difundido por Vanguardia este 6 de noviembre.\n\nEl resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.\n\nPara precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -558,7 +777,13 @@
       "why": "El resultado suma una noticia positiva al panorama del deporte juvenil colombiano y da visibilidad a la participación nacional en competencias internacionales. La información disponible destaca el logro individual del atleta en el encuentro.",
       "next": "Para precisar la prueba, categoría y resultado homologado, esta edición remite a la cobertura original y recomienda la consulta de los registros oficiales de la competencia. No se agregan marcas ni tiempos que no estén corroborados.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "es",
+      "originalArticleSourceUrls": [
+        "https://www.vanguardia.com/deportes/2026/11/06/historico-bronce-para-colombia-alejandro-gutierrez-brillo-en-los-juegos-olimpicos-de-la-juventud-dakar-2026/"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "orbiuno-20261106-18h-10",
@@ -571,7 +796,7 @@
       "executiveSummary": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.",
       "audioFullTextEs": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.\n\nLa discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.\n\nLos ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
       "originalArticleTextEs": "El presidente ucraniano, Volodímir Zelenski, pidió compromisos de seguridad claros y documentados de sus aliados de cara a eventuales acuerdos que busquen poner fin a la guerra con Rusia. Associated Press informó sobre las conversaciones mantenidas en Bruselas con representantes de Estados Unidos y países europeos.\n\nLa discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.\n\nLos ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
-      "originalArticleByline": "ORBIUNO · Redacción propia",
+      "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleReviewed": true,
       "sources": [
         {
@@ -584,7 +809,13 @@
       "why": "La discusión incluye cómo responderían los aliados a futuros ataques, los medios para sostener la defensa aérea y la financiación de la recuperación. También se preparan contactos trilaterales entre Ucrania, Rusia y Estados Unidos, aunque las diferencias sobre territorio y garantías siguen siendo obstáculos importantes.",
       "next": "Los ataques contra infraestructura energética continuaron mientras avanzaban las gestiones diplomáticas. La existencia de reuniones programadas no significa que haya un alto el fuego general ni un acuerdo de paz aprobado.",
       "imageRightsVerified": false,
-      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00"
+      "sourcePublishedAtBogota": "2026-11-06T18:00-05:00",
+      "sourceLanguage": "en",
+      "originalArticleSourceUrls": [
+        "https://apnews.com/article/713268db3dac59bff6ad6c831c72cdb6"
+      ],
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false
     },
     {
       "id": "rss-79264c28bf5514ea",
@@ -13722,8 +13953,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-06T18:40-05:00",
-  "lastNewSourceAtBogota": "2026-11-06T18:40-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-08T19:54-05:00",
+  "lastNewSourceAtBogota": "2026-11-08T19:54-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
