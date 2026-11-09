@@ -369,8 +369,8 @@ def main():
     news=sorted((x for x in data["news"] if x.get("date")==day and
                 x.get("verification")=="editorial_verified"),
                 key=lambda x:x.get("priority",999))
-    if len(news) != 10 or len({x["id"] for x in news}) != 10:
-        raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren diez noticias verificadas únicas")
+    if not (1 <= len(news) <= 4) or len({x["id"] for x in news}) != len(news):
+        raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren entre una y cuatro noticias verificadas únicas")
     for x in news:
         if not x.get("sources") or not str(x["sources"][0]["url"]).startswith("https://"):
             raise RuntimeError("Falta fuente HTTPS")
@@ -378,23 +378,23 @@ def main():
     cover(day,news,out/"portada.png")
     story_card(day,news,out/"historia-orbiuno.png")
     # La versión publicada nunca utiliza una diapositiva por noticia.
-    blocks=[news[i:i+5] for i in range(0,len(news),5)]
+    blocks=[news[i:i+2] for i in range(0,len(news),2)]
     start=1
     for i,group in enumerate(blocks,1):
         grouped_card(group,start,i,len(blocks),out/f"grupo-{i:02d}.png")
         start+=len(group)
     compact={
-       "editionDate":day,"format":"compact_carousel_5_per_slide",
+       "editionDate":day,"format":"compact_carousel_2_per_slide",
        "slides":["portada.png"]+[f"grupo-{i:02d}.png" for i in range(1,len(blocks)+1)],
        "newsCounts":[len(group) for group in blocks],
-       "maxNewsPerSlide":5,
+       "maxNewsPerSlide":2,
        "sourceNewsIds":[n["id"] for n in news],
        "fullAudioInImages":False,
        "noRepublishWithoutSubstantiveUpdates":True,
-       "note":"Portada y dos láminas de hasta cinco noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
+       "note":"Portada y hasta dos láminas de dos noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("Generadas portada y láminas editoriales de máximo cinco noticias cada una.")
+    print("Generadas portada y láminas editoriales de máximo dos noticias cada una.")
 
 
 if __name__=="__main__":
