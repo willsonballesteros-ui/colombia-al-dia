@@ -22,7 +22,7 @@ jobs:
           python -m pip install -U pip gdown
       - name: Descargar paquete editorial de Google Drive
         run: |
-          gdown --id '1AiW3fQxNxgxj4sLtkMMJBWQQeIbrUH_q' -O /tmp/orbiuno.zip
+          gdown '1AiW3fQxNxgxj4sLtkMMJBWQQeIbrUH_q' -O /tmp/orbiuno.zip
           unzip -t /tmp/orbiuno.zip
           unzip -q /tmp/orbiuno.zip -d /tmp/orbiuno-src
           test -f /tmp/orbiuno-src/orbiuno/scripts/build_edition.py
