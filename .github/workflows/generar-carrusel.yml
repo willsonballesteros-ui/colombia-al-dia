@@ -1,96 +1,46 @@
-name: ORBIUNO - portada y dos bloques de hasta cinco noticias
+name: ORBIUNO - Carrusel bajo demanda (solo generar, sin publicar)
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'noticias.json'
-      - 'scripts/build_carousel.py'
-      - 'scripts/build_caption.py'
-      - 'scripts/prepare_site.py'
-      - 'scripts/validate_news.py'
-      - '.github/workflows/generar-carrusel.yml'
-
+    inputs:
+      edition_slot:
+        description: 'Franja editorial: 8am, 12m, 6pm'
+        required: true
+        type: choice
+        options:
+          - 8am
+          - 12m
+          - 6pm
 permissions:
-  contents: write
-
-concurrency:
-  group: carrusel-imagenes
-  cancel-in-progress: false
-
+  contents: read
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
+    env:
+      ORBIUNO_EDITION_SLOT: ${{ inputs.edition_slot }}
     steps:
-      - name: Obtener repositorio
-        uses: actions/checkout@v4
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Instalar Pillow
-        run: python -m pip install --disable-pip-version-check pillow==12.0.0
-      - name: Verificar noticias
-        run: python scripts/validate_news.py noticias.json
-      - name: Renderizar portada y bloques compactos de cinco titulares
-        run: python scripts/build_carousel.py
-      - name: Generar copy y primer comentario con enlace aislado
-        env:
-          ORBIUNO_EDITION_SLOT: ''
-        run: python scripts/build_caption.py
-      - name: Validar carrusel compacto de portada y dos láminas de cinco noticias
+      - run: python -m pip install --disable-pip-version-check pillow==12.0.0
+      - name: Preparar metadatos y validar noticias
         run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from PIL import Image
-          day=json.loads(Path("noticias.json").read_text(encoding="utf-8"))["editionDate"]
-          p=Path("media")/day
-          manifest_compact=json.loads((p/"instagram-compacto.json").read_text(encoding="utf-8"))
-          slides=[p/name for name in manifest_compact["slides"]]
-          assert len(slides) == 3, "Se esperan portada y dos grupos de cinco"
-          assert manifest_compact["newsCounts"] == [5,5] and manifest_compact["maxNewsPerSlide"] == 5
-          for file in slides:
-              with Image.open(file) as im:
-                  assert im.size==(1080,1350), (file,im.size)
-          with Image.open(p/"historia-orbiuno.png") as story:
-              assert story.size==(1080,1920), story.size
-          assert (p/"instagram-caption.txt").is_file()
-          assert (p/"instagram-primer-comentario.txt").is_file()
-          manifest=json.loads((p/"instagram-publicacion.json").read_text(encoding="utf-8"))
-          if not manifest["publicationReady"]:
-              print("BLOQUEO DE PUBLICACIÓN POR FALTA DE NOVEDADES:", ",".join(manifest.get("blockers",[])))
-          text=(p/"instagram-caption.txt").read_text(encoding="utf-8")
-          assert "\n🌐 https://colombia-al-dia.pages.dev/" in text
-          print("Validado: portada y dos bloques compactos de cinco; fuentes y copy.")
-          PY
-      - name: Publicar imágenes sobre la última versión de main
+          python scripts/prepare_audio.py noticias.json
+          python scripts/validate_news.py noticias.json
+      - name: Generar imágenes de la franja solicitada
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for i in 1 2 3; do
-            # Rehacer imágenes desde la rama actual para evitar conflictos de rebase.
-            git fetch origin main
-            git reset --hard origin/main
-            python scripts/validate_news.py noticias.json
-            python scripts/build_carousel.py
-            python scripts/build_caption.py
-            # Eliminar exclusivamente recursos de los formatos obsoletos.
-            DAY=$(python -c 'import json;print(json.load(open("noticias.json"))["editionDate"])')
-            git rm -f --ignore-unmatch "media/$DAY"/visual-*.png \
-              "media/$DAY/boletin-narrado.mp4" \
-              "media/$DAY/boletin-narrado.json" \
-              "media/$DAY/cierre.png" \
-              "media/$DAY/historia.png" \
-              "media/$DAY/sugerencias-stickers.json"
-            git add -A media
-            if git diff --cached --quiet; then
-              echo 'Imágenes ya sincronizadas'; exit 0
-            fi
-            git commit -m 'ORBIUNO: portada y dos láminas compactas de cinco noticias'
-            if git push origin HEAD:main; then exit 0; fi
-            sleep $((i * 3))
-          done
-          echo 'No se pudo guardar material gráfico sin conflicto' >&2
-          exit 1
+          python scripts/build_carousel.py
+          python scripts/build_caption.py
+      - name: Guardar artefactos para revisión; no publicar ni borrar archivos
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-carrusel-${{ inputs.edition_slot }}
+          path: |
+            media/*/portada.png
+            media/*/grupo-*.png
+            media/*/historia-orbiuno.png
+            media/*/instagram-compacto.json
+            media/*/instagram-publicacion.json
+            media/*/instagram-caption.txt
+          if-no-files-found: error
