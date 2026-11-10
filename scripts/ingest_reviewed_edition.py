@@ -41,7 +41,7 @@ def merge(db, edition):
         paragraphs=n["body"]
         if not isinstance(paragraphs,list) or len(paragraphs)<3 or any(len(x)<130 for x in paragraphs):
             raise ValueError("Reportaje propio requiere tres párrafos sustanciales")
-        report="\\n\\n".join(paragraphs)
+        report="\n\n".join(paragraphs)
         if len(report)<640 or not 110<=len(report.split())<=250:
             raise ValueError("Extensión editorial/audio fuera de los límites")
         item={
@@ -84,7 +84,7 @@ def main():
     if count!=4:
         raise ValueError(f"La franja debe tener 4 notas únicas; hay {count}")
     if args.apply:
-        path.write_text(json.dumps(updated,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        path.write_text(json.dumps(updated,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"EDICIÓN PREPARADA, NO PUBLICADA: {edition['editionDate']} {edition['editionSlot']}, {count} notas; apply={args.apply}")
 
 if __name__=="__main__":
