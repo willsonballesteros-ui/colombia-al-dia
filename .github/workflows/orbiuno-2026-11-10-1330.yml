@@ -1,0 +1,41 @@
+name: ORBIUNO 10 noviembre 13:30 - MP4 manual Dora
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-2026-11-10-1330.yml'
+      - 'scripts/orbiuno_2026_11_10_1330.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias de video y voz Dora
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --disable-pip-version-check kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
+          python -m py_compile scripts/orbiuno_2026_11_10_1330.py
+      - name: Descargar modelo original Kokoro y comprobar integridad
+        run: |
+          curl -fL --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl -fL --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Crear MP4 real (sin publicacion automatica)
+        run: python scripts/orbiuno_2026_11_10_1330.py
+      - name: Guardar video y fuentes para publicar manualmente
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-2026-11-10-1330-MP4
+          path: |
+            media/2026-11-10/ORBIUNO_2026-11-10_1330.mp4
+            media/2026-11-10/ORBIUNO_2026-11-10_1330_fuentes.json
+          if-no-files-found: error
