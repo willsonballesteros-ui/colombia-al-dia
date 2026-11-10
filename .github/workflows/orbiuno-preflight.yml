@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'scripts/preflight_edition.py'
+      - 'tests/test_orbiuno_preflight.py'
       - '.github/workflows/orbiuno-preflight.yml'
 permissions:
   contents: read
@@ -18,6 +19,8 @@ jobs:
           python-version: '3.12'
       - name: Comprobar sintaxis
         run: python -m py_compile scripts/preflight_edition.py
+      - name: Ejecutar pruebas de regresión
+        run: python -m unittest discover -s tests -p 'test_orbiuno_preflight.py' -v
       - name: Probar bloqueo de fuente genérica
         run: |
           python - <<'PY'
