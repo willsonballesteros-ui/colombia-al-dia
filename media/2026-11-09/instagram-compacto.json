@@ -1,0 +1,23 @@
+{
+  "editionDate": "2026-11-09",
+  "format": "compact_carousel_2_per_slide",
+  "slides": [
+    "portada.png",
+    "grupo-01.png",
+    "grupo-02.png"
+  ],
+  "newsCounts": [
+    2,
+    2
+  ],
+  "maxNewsPerSlide": 2,
+  "sourceNewsIds": [
+    "orbiuno-20261109-18h-01",
+    "orbiuno-20261109-18h-02",
+    "orbiuno-20261109-18h-03",
+    "orbiuno-20261109-18h-04"
+  ],
+  "fullAudioInImages": false,
+  "noRepublishWithoutSubstantiveUpdates": true,
+  "note": "Portada y hasta dos láminas de dos noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
+}
