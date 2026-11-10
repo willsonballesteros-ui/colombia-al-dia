@@ -1,0 +1,37 @@
+name: ORBIUNO - validar SEO cuatro noticias sin publicar
+on:
+  push:
+    branches: [fix/orbiuno-seo-cuatro-noticias-20261109]
+    paths:
+      - scripts/prepare_site.py
+      - .github/workflows/validar-seo-4.yml
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Actualizar metadatos en el runner temporal
+        run: |
+          python scripts/prepare_site.py
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('index.html').read_text(encoding='utf-8')
+          assert 'Hasta cuatro noticias verificadas por edición, con fuentes originales.' in s
+          assert 'Diez noticias verificadas con fuentes originales.' not in s
+          print('SEO coherente con cuatro noticias')
+          PY
+          python -m unittest discover -s tests -p 'test_*.py'
+          python scripts/validate_news.py noticias.json
+      - name: Conservar solo el HTML revisado en rama de PR
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'web: regenerar descripción SEO para cuatro noticias'
+          git push origin HEAD:fix/orbiuno-seo-cuatro-noticias-20261109
