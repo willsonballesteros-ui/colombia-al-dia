@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-9e045e031883d55b",
+      "date": "2026-11-10",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia confirmó baja para la fecha FIFA ante Chile",
+      "summary": "Titular difundido por La Nación.com.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Nación.com.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSkh6dlhfZEV1S0d4UFduaWQwaVFueERUOHJSa3hsNFExWko5MExxZ0R4YzdPdTl5eWUwTWtJQnIzTXZxbEhsX2pjb0Z2b1BiR3JJRzhxZm5LUVBLQVhRVnFuWGU0LXJTU3NrZ3JLVS0zaW9HeU9WMlZCSjdsVFRncEZVSm5fRklsN0c1TzZTLTBKNVhMUlE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-10T00:55-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-8752f36c1b687957",
+      "date": "2026-11-10",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia buscaría convocar 2 joyas que juegan en Europa",
+      "summary": "Titular difundido por Win Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Win Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYUt3eXFEM1cxLUxnSXBrZktuQjA5MUwyM0xfOTVYQTluSkxiZzJZajNxRlJ3ajBpelRIemE4b0lwQWZCb2JsZEhfYkpsSF92c2RxbXBJUjJCZUFSYkptYlpMY3lsNmZFV0cwLVV5QjllOGRVTEM2aXN3SmN6Wkp3MjBLV29odXJGUjVMaXVnMDRET3lBZWwwWWUwQ3BhS3MxVXg0VzRWd19pWjk3YXR6WTdyVW5mLS0xOXlpRmg5Um92U2c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-10T00:42-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-4e87f4a19260fe78",
+      "date": "2026-11-09",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Primer entrenamiento de la Selección Colombia en Cali",
+      "summary": "Titular difundido por Federación Colombiana de Futbol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Federación Colombiana de Futbol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPd0twMjBja0ptVTN6em84bHNtZ3kxdk40eWFkMVVjRlktUzRnRklSd1ZiUjJ1OEpRaE9FWlJxWmotNGg5R0doa3pEcU84ZTM1S1lMY2MycDR4cTlIRG5jbU15YTAtLVRadHRvSlBKRWVKeVFoNk5KbEtjd2NwZlBnNkFaTHU0Z1I5Y2RkZQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-09T22:13-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-62ac10b961fc4f26",
+      "date": "2026-11-09",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Mal momento de Kevin Viveros en Brasil: revelan grave problema que impidió su convocatoria a Selección Colombia",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQR0xHY2cwUHIzUlN5eExhWmR1WmVwcm51dXNzcDNUSmxfN0k1eklRUmZ4SmZLUTlsbDV1ZURIdUZZNGdXdFFGU0R1WFpVandCOGc0enBOcnIxZlBYRFE0WkZ3bDF1UVFTeFR5Q21pbUlVcU9XdnNmYUNXX2FDZVNJM1dUM0tWd3ZPYzUySnRXQUpMYW1JcV9xOVlibkR5SzNLZEM1YzJFM1lyUDJQdmd3ZEgyeGtjQ2xXRm5CM3luNDJRTWVYem16TmRFeWVSTU85Z3FCZVdhWG1Cak9nb0JHdVpLNVlNMUM4ak5Md2FFaDbSAfYBQVVfeXFMT0s5VTBTRjB0SldpWFdkV3NCeHZxY2dOZEpBTjN2bS1ZNmpkOHpmbExEbUo3NGtJaWwxbTlINmxjczl3LXZ6dUNnVGh5Ukh0X2hlRE5FX2VwVTdobTZJTU55RndwTmhSMFpWTG8wV0NLc2xXbjNUVng5bnE2cUxUdl9lZXNZUldQRXJWaWJuZDdGTjBOVTZfUTNHVXNoalotVDVCTmIzUml6azVQVzc0WkRBS192UHpoRTdHOGljWlhIaGVDdEFoYjRDamJQUF96X0VmYjQzZHJJVW96SmhxNzBkeUc1M0RDbnJyN2FjdVE1d3ZiV3lR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-09T17:50-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-e61fe73c579fc505",
+      "date": "2026-11-10",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Terremoto en Colombia: balance oficial a los tres meses",
+      "summary": "Titular difundido por cablenoticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "cablenoticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTTVGX0tSTzlEajAxdmNORm1GQnIzSXpCaXdlVGVScWo2NkFzX2MwVnM0RHhmbl9UY3ZKdllyVWpFREo4SXlNbTh4S0JxUm1vMzhTUUZ2ZHE3MG5QejBRQkl1MW1LMFRXUzVMRFNyQWI3MVRabXgzSzgtZGp2VEdhNlE0VDMwNE1CdzNxWTZpNklucnJFamlZTUpTWHhSUzQ2c3o1cDJCbEltRTN0WXNzbWJVZ2M2b3NWSlVNZVowck1lVk8zaGQycmdiemV6UQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-10T08:05-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e69df15ba84ddf77",
+      "date": "2026-11-10",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Alfabetización en inteligencia artificial: cómo desarrollar la agencia de la infancia",
+      "summary": "Titular difundido por Educación 3.0 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Educación 3.0 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRVVVRWVfQ2ZWTVowb2RjZ3hEUWYzbi10cUdFUGFEeVVaQzJTY3dGMmtuNEhrT2JnN0FLOVRoRzJMWlJ5NzNtbWJSaDQxY2NxNzNsQTlwVHoyRmhVZmR6RXZOelRTbHY5RXVsTkpOYUNjR0ZuMkZ0eXdhYVB6amVxVHVyWVZ2RFJTOURPdUpkY2dPcDlYcmVkRzhHaXczOFBscVA0STRCTWx0UDBQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-10T08:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ccf657ad97142052",
+      "date": "2026-11-10",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Telefónica desplegará una red 5G para la OTAN en Eslovaquia con inteligencia artificial y tecnología antidrones",
+      "summary": "Titular difundido por Elplural.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Elplural.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPY3hzYXNON1NRQ2FRUlBvSjk1aXZ2Z29YZHdJVlhXOVJZLVZOdGRTV2xwMk9mZ2t2dGEySkF2OU9TQkRBOWI5cDZ4TURpOFliVmpnak94UWpzRHZEZEZka0Q1NWd3VEwxOFR2TURyb0g5Mi00dkxLQzkzNU1GU082bWFidFRmM3dkSDJkQ1FaMDAxOFBOZ2dhUEZyUkU5TEdpMnc3b09MdVJwQ05tc2RrMGJ5M1BYT092WmRMZ3dwRURSQnk2R1NFbXladjRCeFV3T0t0WGpPWGhpOVXSAeABQVVfeXFMUHMyLU04Q2dhWU0xNUJkZm9wS3JiMXRVdHNtTFlGdkE3dHpXMGprUV9GSEhvTG54VFYzaVlOUWVDUDZsdkYwM2Q0eFdiTWxsR0RMQ0cwVm8wZWVkU2RvMWRuT2piQ3Nub0FvemZlU1IyRW42aVJUOXBKbGxMWXVDZ01OZ1lGSXhJRnJDeWdOelpmeGFHaGJFM2NEVUdPemU5M3p5R191cW43aHdIYkFUZnl1ZXNXYjV4SGQtZU5tSFVCQnBadmx1Zm9jVDYwVGRWZlp6am9pc1FXaWJiLVdYdVE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-10T07:43-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-6ecb0bfd50e91eed",
       "date": "2026-11-09",
       "category": "Colombia",
@@ -15095,8 +15228,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-09T22:13-05:00",
-  "lastNewSourceAtBogota": "2026-11-09T22:13-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-10T08:10-05:00",
+  "lastNewSourceAtBogota": "2026-11-10T08:10-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
