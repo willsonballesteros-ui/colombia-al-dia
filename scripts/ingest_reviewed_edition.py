@@ -33,7 +33,7 @@ def merge(db, edition):
     for i,n in enumerate(stories,1):
         if n.get("date")!=day or n.get("editionSlot")!=slot or n.get("priority")!=i:
             raise ValueError("Fecha, franja u orden inconsistente")
-        if not re.fullmatch(r"orbiuno-\\d{8}-\\d{2}h-0[1-4]",n["id"]):
+        if not re.fullmatch(r"orbiuno-\d{8}-\d{2}h-0[1-4]",n["id"]):
             raise ValueError("Identificador editorial no válido")
         src=n["source"]
         if not approved_article(src["url"]):
