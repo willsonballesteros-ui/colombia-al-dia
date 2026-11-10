@@ -20,6 +20,9 @@ def check_manifest(path):
         title = story.get("titulo") or story.get("title")
         source = story.get("fuente") or story.get("source")
         url = story.get("url") or story.get("sourceUrl") or story.get("source_url")
+        if not source and isinstance(story.get("sources"), list) and story["sources"]:
+            source = story["sources"][0].get("name")
+            url = url or story["sources"][0].get("url")
         if isinstance(source, dict):
             url = url or source.get("url")
             source = source.get("name")
@@ -28,8 +31,8 @@ def check_manifest(path):
         parsed = urlparse(str(url))
         if parsed.scheme != "https" or not parsed.hostname or parsed.path in ("", "/"):
             raise ValueError(f"Story {index} source URL is a homepage, not an article")
-        if str(story.get("verification", "")).lower() in ("source_only", "pending", "unverified"):
-            raise ValueError(f"Story {index} is not editorially verified")
+        if str(story.get("verification", "")).lower() != "editorial_verified":
+            raise ValueError(f"Story {index} is not explicitly editorial_verified")
         if re.search(r"pendiente de verificaci[oó]n", str(story.get("level", "")), re.I):
             raise ValueError(f"Story {index} has pending editorial verification")
     return len(stories)
@@ -45,8 +48,9 @@ def check_video(path):
     audio = next((s for s in streams if s.get("codec_type") == "audio"), None)
     if not video or not audio:
         raise ValueError("MP4 must have video and audio")
-    if (video.get("width"), video.get("height")) != (1080, 1920):
-        raise ValueError("MP4 must be 1080x1920")
+    width, height = video.get("width"), video.get("height")
+    if (width, height) not in ((720, 1280), (1080, 1920)):
+        raise ValueError("MP4 must be approved vertical 9:16 (720x1280 or 1080x1920)")
     duration = float(info.get("format", {}).get("duration", 0))
     if not 35 <= duration <= 90:
         raise ValueError("MP4 duration outside 35-90 seconds")
@@ -60,7 +64,7 @@ def main():
     count = check_manifest(args.manifest)
     duration = check_video(args.video)
     print(f"PASS: {count} source-specific stories; MP4 {duration:.1f}s, audio/video present")
-    print("NOTE: source URL specificity is not independent fact-checking; editor approval still required.")
+    print("NOT RELEASE-APPROVED: web deployment, playable per-story audio, source facts and image licenses still require independent checks.")
 
 if __name__ == "__main__":
     main()
