@@ -34,8 +34,8 @@ jobs:
       - name: Guardar video y fuentes para publicar manualmente
         uses: actions/upload-artifact@v4
         with:
-          name: ORBIUNO-2026-11-10-1330-MP4
+          name: ORBIUNO-2026-11-10-1330-CON-IMAGENES
           path: |
-            media/2026-11-10/ORBIUNO_2026-11-10_1330.mp4
-            media/2026-11-10/ORBIUNO_2026-11-10_1330_fuentes.json
+            media/2026-11-10/ORBIUNO_2026-11-10_1330_imagenes.mp4
+            media/2026-11-10/ORBIUNO_2026-11-10_1330_imagenes_fuentes.json
           if-no-files-found: error
