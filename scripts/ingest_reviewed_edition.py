@@ -76,7 +76,7 @@ def main():
     db=json.loads(path.read_text(encoding="utf-8"))
     edition=json.loads(Path(args.edition).read_text(encoding="utf-8"))
     updated=merge(db,edition)
-    from scripts.validate_news import check
+    from validate_news import check
     check(updated)
     count=sum(n.get("editionSlot")==edition["editionSlot"] and
               n.get("date")==edition["editionDate"] and
