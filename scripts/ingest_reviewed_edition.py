@@ -15,7 +15,7 @@ def approved_article(source):
         u.hostname == "unfccc.int" and u.path.rstrip("/") == "/cop31"
         or u.hostname == "www.senado.gov.co" and "/noticias/" in u.path
         or u.hostname == "www.elespectador.com" and "/economia/" in u.path
-        or u.hostname == "www.dane.gov.co" and "/ipc/" in u.path
+        or u.hostname == "www.dane.gov.co" and "indice-de-precios-al-consumidor-ipc" in u.path
     )
 
 def merge(db, edition):
