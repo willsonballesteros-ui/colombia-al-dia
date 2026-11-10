@@ -25,11 +25,28 @@ IMAGES=[
 ]
 def news_image(index):
     url=IMAGES[index]["url"]
-    req=Request(url,headers={"User-Agent":"ORBIUNONewsEditor/1.0 (editorial archive credit)"})
-    with urlopen(req,timeout=20) as resp:
-        raw=resp.read(6000000)
-    img=Image.open(BytesIO(raw)).convert("RGB")
-    return img
+    from urllib.parse import quote
+    from urllib.error import HTTPError, URLError
+    import time
+    urls=[
+       "https://wsrv.nl/?url="+quote(url,safe="")+"&w=900&output=jpg",
+       "https://images.weserv.nl/?url="+quote(url,safe="")+"&w=900&output=jpg",
+       url
+    ]
+    last=None
+    for attempt,candidate in enumerate(urls):
+       try:
+          req=Request(candidate,headers={"User-Agent":"Mozilla/5.0 (compatible; ORBIUNONewsEditor/1.0)"})
+          with urlopen(req,timeout=24) as resp:
+             raw=resp.read(6000000)
+          img=Image.open(BytesIO(raw)).convert("RGB")
+          print("IMAGEN_DESCARGADA",index,attempt,len(raw),flush=True)
+          return img
+       except Exception as exc:
+          last=exc
+          print("IMAGEN_FALLO",index,attempt,str(exc)[:140],flush=True)
+          time.sleep(1)
+    raise RuntimeError("No se pudo descargar fotografia real "+str(index)+": "+str(last))
 
 stories=[
  {"title":"HACIENDA PROPONE RECORTES AL GASTO","category":"COLOMBIA · ECONOMIA","source":"Ministerio de Hacienda","date":"10 nov 2026","url":"https://www.minhacienda.gov.co/home","speech":"El Ministerio de Hacienda presento este diez de noviembre su Operacion Rescate. Segun la entidad, la propuesta busca ahorros de veintitres billones de pesos, mediante ajustes de personal, funcionamiento y contratacion. Se trata de una propuesta del Gobierno, no de una medida ya aprobada."},
