@@ -218,6 +218,9 @@ def build(data, page):
     page,count=re.subn(marker,lambda m:m.group(1)+encoded+m.group(2),page,count=1,flags=re.S)
     if count!=1:
         raise ValueError("No se localizó #initial-news")
+    # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
+    page=page.replace("Diez noticias verificadas con fuentes originales.",
+                      "Hasta cuatro noticias verificadas por edición, con fuentes originales.")
     return page
 
 
