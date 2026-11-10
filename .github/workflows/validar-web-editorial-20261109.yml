@@ -1,0 +1,66 @@
+name: ORBIUNO - validar web 4 noticias sin publicar
+on:
+  push:
+    branches: [fix/orbiuno-web-first-editorial-20261109]
+    paths:
+      - 'scripts/ingest_reviewed_edition.py'
+      - 'editorial/ediciones/2026-11-09-1800-reviewed.json'
+      - '.github/workflows/validar-web-editorial-20261109.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verificar-web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar cuatro noticias y actualizar solo el runner temporal
+        run: |
+          python scripts/ingest_reviewed_edition.py --edition editorial/ediciones/2026-11-09-1800-reviewed.json --apply
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+          python scripts/build_feed.py
+      - name: Regresiones existentes
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Inspeccionar HTML y su espejo editorial
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('index.html').read_text(encoding='utf-8')
+          data=json.loads(Path('noticias.json').read_text(encoding='utf-8'))
+          d='2026-11-09'
+          records=[n for n in data['news'] if n.get('date')==d and n.get('editionSlot')=='18:00' and n.get('verification')=='editorial_verified']
+          assert data['editionDate']==d and len(records)==4
+          section=p.split('id="edicion-1800"')[1].split('</section>',1)[0]
+          assert section.count('class="card compact-card"')==4
+          assert section.count('data-tts-action="toggle"')==4
+          assert section.count('class="news-transcript"')==4
+          for n in records:
+              assert n['title'] in section
+              assert n['sources'][0]['url'].replace('&','&amp;') in section
+              assert len(n['originalArticleTextEs'].split('\n\n'))>=3
+          print('OK: 4 noticias, 4 lecturas, cuatro fuentes y reportajes propios en la vista de cierre.')
+          PY
+      - name: Guardar prueba web sin escribir a main ni desplegar Cloudflare
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-9nov-18h-web-revisada-preview
+          path: |
+            index.html
+            noticias.json
+            feed.xml
+          if-no-files-found: error
+
+      - name: Incorporar resultado verificado SOLO a la rama de prueba
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add noticias.json index.html feed.xml
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'editorial: preparar portada y RSS de 4 noticias verificadas'
+          git push origin HEAD:fix/orbiuno-web-first-editorial-20261109

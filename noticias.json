@@ -1,10 +1,126 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-08",
-  "editedAtBogota": "2026-11-08 08:30",
+  "editionDate": "2026-11-09",
+  "editedAtBogota": "2026-11-09 18:15",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261109-18h-01",
+      "date": "2026-11-09",
+      "editionSlot": "18:00",
+      "priority": 1,
+      "category": "Colombia",
+      "level": "Noticia verificada por la redacción",
+      "title": "Reforma tributaria: senadores piden proteger la canasta familiar",
+      "summary": "La reforma tributaria sigue sin acuerdo en el Congreso y senadores piden ajustar el déficit sin afectar productos básicos.",
+      "executiveSummary": "La reforma tributaria sigue sin acuerdo en el Congreso y senadores piden ajustar el déficit sin afectar productos básicos.",
+      "sources": [
+        {
+          "name": "Senado de la República",
+          "url": "https://www.senado.gov.co/index.php/el-senado/noticias/7711-senadores-piden-que-la-reforma-tributaria-no-toque-la-canasta-familiar"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El debate sobre la reforma tributaria presentada por el Gobierno nacional sigue abierto en el Congreso. En una publicación de Prensa Senado divulgada el 9 de noviembre, varios congresistas señalaron que una salida al déficit fiscal no debería trasladar nuevas cargas a los productos de la canasta familiar. El planteamiento forma parte de la discusión política y no significa que ya exista una decisión definitiva sobre el contenido de la reforma.\n\nEl senador Carlos Meisel, del Centro Democrático, afirmó que el país afronta un desbalance entre lo que gasta y lo que recauda, y defendió la necesidad de examinar ajustes en el gasto público. El senador Álvaro Monedero, del Partido Liberal, también aparece en el pronunciamiento institucional sobre las preocupaciones para los hogares. Son posiciones expresadas por legisladores y deben diferenciarse de una aprobación legislativa.\n\nPara los ciudadanos, el punto central es qué impuestos quedarían incluidos y cómo impactarían el gasto de las familias. Las propuestas y los desacuerdos todavía requieren discusión y trámite en el Congreso. ORBIUNO continuará siguiendo las decisiones formales y las modificaciones publicadas, sin presentar las declaraciones de los senadores como si fueran una ley aprobada.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El debate sobre la reforma tributaria presentada por el Gobierno nacional sigue abierto en el Congreso. En una publicación de Prensa Senado divulgada el 9 de noviembre, varios congresistas señalaron que una salida al déficit fiscal no debería trasladar nuevas cargas a los productos de la canasta familiar. El planteamiento forma parte de la discusión política y no significa que ya exista una decisión definitiva sobre el contenido de la reforma.\n\nEl senador Carlos Meisel, del Centro Democrático, afirmó que el país afronta un desbalance entre lo que gasta y lo que recauda, y defendió la necesidad de examinar ajustes en el gasto público. El senador Álvaro Monedero, del Partido Liberal, también aparece en el pronunciamiento institucional sobre las preocupaciones para los hogares. Son posiciones expresadas por legisladores y deben diferenciarse de una aprobación legislativa.\n\nPara los ciudadanos, el punto central es qué impuestos quedarían incluidos y cómo impactarían el gasto de las familias. Las propuestas y los desacuerdos todavía requieren discusión y trámite en el Congreso. ORBIUNO continuará siguiendo las decisiones formales y las modificaciones publicadas, sin presentar las declaraciones de los senadores como si fueran una ley aprobada.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleSourceUrls": [
+        "https://www.senado.gov.co/index.php/el-senado/noticias/7711-senadores-piden-que-la-reforma-tributaria-no-toque-la-canasta-familiar"
+      ],
+      "originalArticleIsPublisherVerbatim": false
+    },
+    {
+      "id": "orbiuno-20261109-18h-02",
+      "date": "2026-11-09",
+      "editionSlot": "18:00",
+      "priority": 2,
+      "category": "Economía",
+      "level": "Noticia verificada por la redacción",
+      "title": "El dólar cerró el 9 de noviembre en 3.269 pesos",
+      "summary": "La divisa abrió cerca de $3.245 y cerró en $3.269, según el reporte de mercado de El Espectador.",
+      "executiveSummary": "La divisa abrió cerca de $3.245 y cerró en $3.269, según el reporte de mercado de El Espectador.",
+      "sources": [
+        {
+          "name": "El Espectador",
+          "url": "https://www.elespectador.com/economia/dolar-hoy-en-colombia-la-divisa-arranco-al-alza-este-lunes-9-de-noviembre/"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El dólar estadounidense cerró la jornada del lunes 9 de noviembre en Colombia en 3.269 pesos, de acuerdo con el informe de cierre de El Espectador. La divisa había comenzado las operaciones en 3.245 pesos y durante la sesión registró movimientos entre un mínimo de 3.235 y un máximo de 3.288,50 pesos. Es importante distinguir esas cotizaciones de la tasa representativa del mercado, o TRM.\n\nSegún el mismo reporte, el cierre fue 29,50 pesos superior al registrado el viernes anterior, equivalente a una variación aproximada del 0,91 por ciento. La TRM de referencia para el lunes se ubicó en 3.237,83 pesos. La tasa de cierre del mercado y la TRM sirven para propósitos distintos y no deben anunciarse como si fueran un único precio oficial de todas las transacciones.\n\nEntre los factores que analizan los operadores aparecen las expectativas sobre las tasas de interés de Estados Unidos, el comportamiento del petróleo y las perspectivas fiscales de Colombia. Ninguno de estos elementos permite asegurar la dirección del precio del dólar en los siguientes días. Este resumen recoge el resultado del 9 de noviembre y no constituye una recomendación de inversión o una predicción cambiaria.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El dólar estadounidense cerró la jornada del lunes 9 de noviembre en Colombia en 3.269 pesos, de acuerdo con el informe de cierre de El Espectador. La divisa había comenzado las operaciones en 3.245 pesos y durante la sesión registró movimientos entre un mínimo de 3.235 y un máximo de 3.288,50 pesos. Es importante distinguir esas cotizaciones de la tasa representativa del mercado, o TRM.\n\nSegún el mismo reporte, el cierre fue 29,50 pesos superior al registrado el viernes anterior, equivalente a una variación aproximada del 0,91 por ciento. La TRM de referencia para el lunes se ubicó en 3.237,83 pesos. La tasa de cierre del mercado y la TRM sirven para propósitos distintos y no deben anunciarse como si fueran un único precio oficial de todas las transacciones.\n\nEntre los factores que analizan los operadores aparecen las expectativas sobre las tasas de interés de Estados Unidos, el comportamiento del petróleo y las perspectivas fiscales de Colombia. Ninguno de estos elementos permite asegurar la dirección del precio del dólar en los siguientes días. Este resumen recoge el resultado del 9 de noviembre y no constituye una recomendación de inversión o una predicción cambiaria.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleSourceUrls": [
+        "https://www.elespectador.com/economia/dolar-hoy-en-colombia-la-divisa-arranco-al-alza-este-lunes-9-de-noviembre/"
+      ],
+      "originalArticleIsPublisherVerbatim": false
+    },
+    {
+      "id": "orbiuno-20261109-18h-03",
+      "date": "2026-11-09",
+      "editionSlot": "18:00",
+      "priority": 3,
+      "category": "Mundo",
+      "level": "Noticia verificada por la redacción",
+      "title": "La COP31 comenzó en Antalya, Turquía, este 9 de noviembre",
+      "summary": "La conferencia de Naciones Unidas sobre cambio climático se desarrolla en Antalya del 9 al 20 de noviembre.",
+      "executiveSummary": "La conferencia de Naciones Unidas sobre cambio climático se desarrolla en Antalya del 9 al 20 de noviembre.",
+      "sources": [
+        {
+          "name": "ONU Cambio Climático (CMNUCC)",
+          "url": "https://unfccc.int/cop31"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioFullTextEs": "La Conferencia de las Naciones Unidas sobre el Cambio Climático COP31 inició el 9 de noviembre de 2026 en Antalya, Turquía, y está prevista hasta el 20 de noviembre. Las fechas y la sede constan en el portal oficial de la Convención Marco de las Naciones Unidas sobre el Cambio Climático, que publica además documentos, agendas y programas de las reuniones.\n\nEn la conferencia participan delegaciones y observadores vinculados a las negociaciones climáticas internacionales. Entre los asuntos de la agenda están la implementación de compromisos ambientales, la acción climática, la financiación y la adaptación a impactos cada vez más visibles. El calendario reúne sesiones formales, actividades de la presidencia de la conferencia y espacios de discusión temática para los participantes.\n\nEl inicio de la COP31 no debe confundirse con un acuerdo adoptado. Las decisiones oficiales dependen de las negociaciones y de los documentos que se publiquen durante el encuentro. ORBIUNO seguirá los anuncios de la organización y distinguirá entre discursos, propuestas y resultados formalmente aprobados. La página de la CMNUCC es la referencia principal para consultar el desarrollo del evento.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La Conferencia de las Naciones Unidas sobre el Cambio Climático COP31 inició el 9 de noviembre de 2026 en Antalya, Turquía, y está prevista hasta el 20 de noviembre. Las fechas y la sede constan en el portal oficial de la Convención Marco de las Naciones Unidas sobre el Cambio Climático, que publica además documentos, agendas y programas de las reuniones.\n\nEn la conferencia participan delegaciones y observadores vinculados a las negociaciones climáticas internacionales. Entre los asuntos de la agenda están la implementación de compromisos ambientales, la acción climática, la financiación y la adaptación a impactos cada vez más visibles. El calendario reúne sesiones formales, actividades de la presidencia de la conferencia y espacios de discusión temática para los participantes.\n\nEl inicio de la COP31 no debe confundirse con un acuerdo adoptado. Las decisiones oficiales dependen de las negociaciones y de los documentos que se publiquen durante el encuentro. ORBIUNO seguirá los anuncios de la organización y distinguirá entre discursos, propuestas y resultados formalmente aprobados. La página de la CMNUCC es la referencia principal para consultar el desarrollo del evento.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleSourceUrls": [
+        "https://unfccc.int/cop31"
+      ],
+      "originalArticleIsPublisherVerbatim": false
+    },
+    {
+      "id": "orbiuno-20261109-18h-04",
+      "date": "2026-11-09",
+      "editionSlot": "18:00",
+      "priority": 4,
+      "category": "Economía",
+      "level": "Noticia verificada por la redacción",
+      "title": "DANE: la inflación anual de octubre se ubicó en 6,30 %",
+      "summary": "El IPC de octubre fue 0,20 % mensual y 6,30 % anual, según los resultados publicados por el DANE.",
+      "executiveSummary": "El IPC de octubre fue 0,20 % mensual y 6,30 % anual, según los resultados publicados por el DANE.",
+      "sources": [
+        {
+          "name": "DANE — IPC octubre 2026",
+          "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc/ipc-informacion-tecnica"
+        }
+      ],
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioFullTextEs": "El Departamento Administrativo Nacional de Estadística publicó el 9 de noviembre los resultados del índice de precios al consumidor correspondientes a octubre de 2026. La inflación mensual fue de 0,20 por ciento y la variación anual se situó en 6,30 por ciento, según el informe de la entidad. El dato anual resume el cambio acumulado en los precios respecto de octubre del año anterior.\n\nLa cifra anual fue ligeramente superior al 6,29 por ciento registrado en septiembre de 2026. El resultado mensual, por su parte, expresa la variación del indicador entre septiembre y octubre, por lo que no debe sumarse ni compararse directamente como si midiera el mismo periodo. El DANE publica el boletín técnico, los anexos y desagregaciones de los precios para facilitar su consulta.\n\nEl indicador es relevante para evaluar el costo de vida y para las decisiones económicas de hogares, empresas y autoridades. No significa que todos los productos o todas las ciudades hayan registrado exactamente el mismo aumento. La publicación oficial permite examinar diferencias por grupos de gasto y ciudades. ORBIUNO presenta estos resultados después de su divulgación, y no como un anuncio pendiente de publicación.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El Departamento Administrativo Nacional de Estadística publicó el 9 de noviembre los resultados del índice de precios al consumidor correspondientes a octubre de 2026. La inflación mensual fue de 0,20 por ciento y la variación anual se situó en 6,30 por ciento, según el informe de la entidad. El dato anual resume el cambio acumulado en los precios respecto de octubre del año anterior.\n\nLa cifra anual fue ligeramente superior al 6,29 por ciento registrado en septiembre de 2026. El resultado mensual, por su parte, expresa la variación del indicador entre septiembre y octubre, por lo que no debe sumarse ni compararse directamente como si midiera el mismo periodo. El DANE publica el boletín técnico, los anexos y desagregaciones de los precios para facilitar su consulta.\n\nEl indicador es relevante para evaluar el costo de vida y para las decisiones económicas de hogares, empresas y autoridades. No significa que todos los productos o todas las ciudades hayan registrado exactamente el mismo aumento. La publicación oficial permite examinar diferencias por grupos de gasto y ciudades. ORBIUNO presenta estos resultados después de su divulgación, y no como un anuncio pendiente de publicación.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleSourceUrls": [
+        "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc/ipc-informacion-tecnica"
+      ],
+      "originalArticleIsPublisherVerbatim": false
+    },
     {
       "id": "rss-886c60b792cb1ef1",
       "date": "2026-11-09",
