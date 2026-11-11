@@ -23,6 +23,8 @@ jobs:
           run-id: 43080356853
           github-token: ${{ github.token }}
           path: dist/orbiuno-2026-11-11
+      - name: Instalar verificador de video
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Validar video y fuentes antes de copiarlo
         run: |
           set -eu
