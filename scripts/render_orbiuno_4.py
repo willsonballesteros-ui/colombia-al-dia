@@ -238,7 +238,7 @@ def render(manifest: Path, output: Path, release: bool=False):
     types={x.get("codec_type") for x in probe.get("streams",[])}
     video=next((x for x in probe.get("streams",[]) if x.get("codec_type")=="video"),{})
     final_duration=float(probe.get("format",{}).get("duration",0))
-    if types!={"audio","video"} or video.get("width")!=W or video.get("height")!=H or not 50<=final_duration<=61:
+    if types!={"audio","video"} or video.get("width")!=W or video.get("height")!=H or not 50<=final_duration<=60:
         output.unlink(missing_ok=True)
         raise RuntimeError("El MP4 no pasó la inspección de medios")
     checksum=hashlib.sha256(output.read_bytes()).hexdigest()
