@@ -18,11 +18,11 @@ class OrbiunoPipelineIntegrationTests(unittest.TestCase):
 
     def test_real_template_detected(self):
         self.assertEqual(self.template["brand"], "ORBIUNO")
-        self.assertEqual(len(self.template["news"]), 4)
-        self.assertEqual(manifest_check.validate(self.template, self.template), [])
+        self.assertEqual(len(self.template["news"]), 5)
+        self.assertEqual(manifest_check.validate(self.template, self.template, expected_items=5), [])
         altered = json.loads(json.dumps(self.template))
         altered["news"][0]["id"] = altered["news"][1]["id"]
-        self.assertTrue(any("duplicate" in x for x in manifest_check.validate(altered, self.template)))
+        self.assertTrue(any("duplicate" in x for x in manifest_check.validate(altered, self.template, expected_items=5)))
 
     def test_real_template_rejects_wrong_fields(self):
         incompatible = {"edition_id": "x", "items": [], "date": "2026-11-11"}
