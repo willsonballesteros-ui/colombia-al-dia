@@ -101,6 +101,19 @@ def main():
     digest = sha256(path)
     if digest != args.expected_sha:
         raise RuntimeError("SHA256 del MP4 no coincide con el aprobado")
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_format", "-show_streams",
+         "-of", "json", str(path)],
+        capture_output=True, text=True, timeout=30, check=True)
+    technical = json.loads(probe.stdout)
+    streams = technical.get("streams", [])
+    video = next((s for s in streams if s.get("codec_type") == "video"), {})
+    audio = next((s for s in streams if s.get("codec_type") == "audio"), {})
+    seconds = float(technical.get("format", {}).get("duration") or 0)
+    if (video.get("codec_name") != "h264" or audio.get("codec_name") != "aac"
+            or video.get("width") != 1080 or video.get("height") != 1920
+            or not 30 <= seconds <= 90):
+        raise RuntimeError("MP4 no cumple H.264/AAC 1080x1920 y 30-90 segundos")
     p = json.loads((directory / "publish_ready.json").read_text(encoding="utf-8"))
     caption = validate_manifest(p, args.edition_key, digest)
     token = os.environ.get("ORBIUNO_IG_ACCESS_TOKEN", "").strip()
