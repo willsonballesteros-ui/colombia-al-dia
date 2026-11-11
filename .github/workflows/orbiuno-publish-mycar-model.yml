@@ -1,0 +1,72 @@
+name: ORBIUNO - Publicar MP4 aprobado (modelo MyCar)
+on:
+  workflow_dispatch:
+    inputs:
+      production_run_id:
+        description: 'ID del run que generó y aprobó el video'
+        type: string
+        required: true
+      artifact_name:
+        description: 'Nombre del artefacto con reel.mp4 y publish_ready.json'
+        type: string
+        required: true
+      edition_key:
+        description: 'ORBIUNO-AAAA-MM-DD-0800, 1200 o 1800'
+        type: string
+        required: true
+      expected_sha256:
+        description: 'SHA256 exacto del reel.mp4 aprobado'
+        type: string
+        required: true
+      publish:
+        description: 'false valida sin publicar; true publica si pasan todas las pruebas'
+        type: boolean
+        required: true
+        default: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: orbiuno-binary-publish-${{ inputs.edition_key }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    environment: instagram-publish
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar identificadores antes de descargar
+        env:
+          RUN_ID: ${{ inputs.production_run_id }}
+          ARTIFACT: ${{ inputs.artifact_name }}
+        run: |
+          [[ "$RUN_ID" =~ ^[0-9]+$ ]] || exit 1
+          [[ "$ARTIFACT" =~ ^[A-Za-z0-9._-]{1,100}$ ]] || exit 1
+      - name: Descargar paquete producido en GitHub Actions
+        uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.production_run_id }}
+          name: ${{ inputs.artifact_name }}
+          github-token: ${{ github.token }}
+          path: dist/orbiuno-approved
+      - name: Revisar MP4, SHA, aprobaciones y cuenta de ORBIUNO
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+          EDITION_KEY: ${{ inputs.edition_key }}
+          SHA256: ${{ inputs.expected_sha256 }}
+          PUBLISH: ${{ inputs.publish }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [ "$PUBLISH" = "true" ]; then args+=(--publish); fi
+          python3 scripts/publish_orbiuno_binary.py --dir dist/orbiuno-approved --edition-key "$EDITION_KEY" --expected-sha "$SHA256" "${args[@]}"
+      - name: Guardar evidencia sin credenciales
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-meta-result-${{ github.run_id }}
+          path: dist/orbiuno-approved/publish_result.json
+          if-no-files-found: warn
+          retention-days: 30
