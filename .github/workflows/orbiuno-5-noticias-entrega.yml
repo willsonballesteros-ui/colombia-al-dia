@@ -1,0 +1,88 @@
+name: ORBIUNO · MP4 cinco noticias (entrega)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render_orbiuno_5_noticias.py'
+      - '.github/workflows/orbiuno-5-noticias-entrega.yml'
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-entrega-5-noticias
+  cancel-in-progress: false
+jobs:
+  video:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar sintaxis del generador
+        run: python -m py_compile scripts/render_orbiuno_5_noticias.py
+      - name: Preparar FFmpeg y voz
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
+      - name: Descargar voz Dora con hash comprobado
+        run: |
+          curl --fail -L --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail -L --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum -c
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum -c
+      - name: Renderizar portada y cinco noticias
+        env:
+          ORBIUNO_EDITION_SLOT: '12:00'
+        run: python scripts/render_orbiuno_5_noticias.py
+      - name: Comprobar MP4 y fuentes
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          day=datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
+          folder=pathlib.Path("dist")/("orbiuno-"+day+"-1200")
+          p=json.loads((folder/"manifest.json").read_text(encoding="utf-8"))
+          video=folder/p["video"]
+          assert p["newsCount"] == 5 and p["voice"] == "ef_dora" and p["speed"] == 1.25
+          assert len(p["sources"]) == 5 and len(p["scenes"]) == 12
+          assert video.stat().st_size > 100000 and hashlib.sha256(video.read_bytes()).hexdigest()==p["sha256"]
+          print("VALIDADO",video,video.stat().st_size,p["duration"])
+          PY
+      - name: Guardar MP4 en artifacts (descarga sin Metricool)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-5-NOTICIAS
+          path: dist/orbiuno-*/ORBIUNO_*.mp4
+          retention-days: 30
+          if-no-files-found: error
+      - name: Guardar pruebas y créditos
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-5-FUENTES
+          path: dist/orbiuno-*/manifest.json
+          retention-days: 30
+      - name: Publicar copia MP4 descargable en repo (no en Instagram)
+        run: |
+          set -e
+          day=$(TZ=America/Bogota date +%F)
+          folder="dist/orbiuno-$day-1200"
+          mkdir -p "media/$day"
+          cp "$folder/ORBIUNO_"*"_5_NOTICIAS.mp4" "media/$day/"
+          cp "$folder/manifest.json" "media/$day/manifest_5_noticias.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "media/$day/"
+          git diff --cached --quiet && exit 0
+          git commit -m "ORBIUNO: entregar MP4 verificado $day, cinco noticias"
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$i"
+          done
+          echo "No se pudo publicar copia en main; artifact conserva video" >&2
+          exit 1
