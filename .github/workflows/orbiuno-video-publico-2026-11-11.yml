@@ -1,0 +1,58 @@
+name: ORBIUNO · Preparar MP4 público 11 noviembre para Instagram
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-video-publico-2026-11-11.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: orbiuno-video-publico-2026-11-11
+  cancel-in-progress: false
+jobs:
+  preparar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: ORBIUNO-2026-11-11-1330
+          run-id: 43080356853
+          github-token: ${{ github.token }}
+          path: dist/orbiuno-2026-11-11
+      - name: Validar video y fuentes antes de copiarlo
+        run: |
+          set -eu
+          mkdir -p media/2026-11-11-1330
+          VIDEO=dist/orbiuno-2026-11-11/ORBIUNO_2026-11-11_1330.mp4
+          test -s "$VIDEO"
+          test -s dist/orbiuno-2026-11-11/fuentes.json
+          ffprobe -v error -show_entries stream=codec_type,width,height:format=duration -of json "$VIDEO" > /tmp/video-check.json
+          python3 - <<'PY'
+          import json
+          p=json.load(open('/tmp/video-check.json'))
+          assert 35 <= float(p['format']['duration']) <= 90
+          assert any(s.get('codec_type')=='audio' for s in p['streams'])
+          assert any(s.get('codec_type')=='video' and s.get('width')==720 and s.get('height')==1280 for s in p['streams'])
+          sources=json.load(open('dist/orbiuno-2026-11-11/fuentes.json'))
+          assert sources['fecha']=='2026-11-11' and len(sources['stories'])==4
+          PY
+          cp "$VIDEO" media/2026-11-11-1330/ORBIUNO_2026-11-11_1330.mp4
+          cp dist/orbiuno-2026-11-11/fuentes.json media/2026-11-11-1330/fuentes.json
+      - name: Almacenar MP4 público para publicación en Instagram
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-11-1330/ORBIUNO_2026-11-11_1330.mp4 media/2026-11-11-1330/fuentes.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'ORBIUNO: MP4 11 noviembre para Instagram'
+          for i in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$i"
+          done
+          exit 1
