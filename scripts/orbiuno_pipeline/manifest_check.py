@@ -2,7 +2,7 @@
 from urllib.parse import urlsplit
 
 
-def validate(manifest: dict, template: dict, expected_items: int = 4, items_key: str = "news"):
+def validate(manifest: dict, template: dict, expected_items: int = 5, items_key: str = "news"):
     errors = []
     if not isinstance(manifest, dict) or not isinstance(template, dict):
         return ["manifest and template must be objects"]
