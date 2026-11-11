@@ -1,0 +1,65 @@
+name: ORBIUNO - Reel 4 noticias (previsualizacion, sin publicar)
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: 'Ejemplo: editions/2026-11-10-2000.json'
+        required: true
+        type: string
+      release:
+        description: 'Exigir aprobación editorial completa y web sincronizada'
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias
+        run: |
+          python -m pip install Pillow==11.3.0
+          ffmpeg -version
+          ffprobe -version
+      - name: Ejecutar pruebas sin red
+        run: python -m unittest discover -s tests -p 'test_orbiuno_4.py' -v
+      - name: Validar ruta segura del manifiesto
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+        run: |
+          python - <<'PY'
+          import os,re
+          value=os.environ['MANIFEST']
+          assert re.fullmatch(r'editions/\d{4}-\d{2}-\d{2}-\d{4}\.json',value), 'Ruta no autorizada'
+          assert os.path.isfile(value), 'Manifest faltante'
+          PY
+      - name: Validar sincronización web para publicación aprobada
+        if: inputs.release
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+        run: python scripts/verify_alignment.py "$MANIFEST" --newsdb noticias.json --site https://colombia-al-dia.pages.dev/
+      - name: Renderizar MP4 con imagen y audio reales (sin HeyGen Video)
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+          RELEASE: ${{ inputs.release }}
+        run: |
+          if [ "$RELEASE" = "true" ]; then
+            python scripts/render_orbiuno_4.py "$MANIFEST" --output dist/ORBIUNO_4_NOTICIAS.mp4 --release
+          else
+            python scripts/render_orbiuno_4.py "$MANIFEST" --output dist/ORBIUNO_PREVIEW.mp4
+          fi
+      - name: Publicar artefacto descargable (nunca Instagram)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-MP4-IPhone
+          path: |
+            dist/*.mp4
+            dist/*.report.json
+          if-no-files-found: error
+          retention-days: 14
