@@ -11,7 +11,7 @@ from orbiuno_editorial import build, choose, canonical_url
 
 def candidates():
     items = []
-    for i in range(4):
+    for i in range(5):
         items.append({
             "title": f"Noticia comprobable de prueba numero {i + 1}",
             "narration": f"Texto de narracion para la noticia numero {i + 1}.",
@@ -19,7 +19,7 @@ def candidates():
             "source": {"name": "Fuente de prueba", "url": f"https://noticias.test/articulo/{i + 1}"},
             "editorialEvidence": "verified",
             "category": "Mundo",
-            "tone": "positive" if i == 3 else "news",
+            "tone": "positive" if i == 4 else "news",
         })
     return items
 
@@ -30,7 +30,7 @@ class EditorialAdapterTests(unittest.TestCase):
         self.assertEqual(manifest["brand"], "ORBIUNO")
         self.assertEqual(manifest["editionDate"], "2026-11-10")
         self.assertEqual(manifest["slot"], "08:00")
-        self.assertEqual(len(manifest["news"]), 4)
+        self.assertEqual(len(manifest["news"]), 5)
         self.assertEqual(manifest["voice"]["speed"], 1.25)
         self.assertTrue(all(x["verification"] == "pending" for x in manifest["news"]))
         self.assertTrue(all(not x["image"]["rightsVerified"] for x in manifest["news"]))
@@ -51,7 +51,7 @@ class EditorialAdapterTests(unittest.TestCase):
 
     def test_requires_verified_input(self):
         items = candidates()
-        items[3]["editorialEvidence"] = "pending"
+        items[4]["editorialEvidence"] = "pending"
         with self.assertRaisesRegex(ValueError, "BLOCKED"):
             choose(items, "2026-11-10")
 
@@ -61,7 +61,7 @@ class EditorialAdapterTests(unittest.TestCase):
 
     def test_missing_positive(self):
         items = candidates()
-        items[3]["tone"] = "news"
+        items[4]["tone"] = "news"
         with self.assertRaisesRegex(ValueError, "BLOCKED"):
             choose(items, "2026-11-10")
 
