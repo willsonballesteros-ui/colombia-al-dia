@@ -1,0 +1,81 @@
+{
+  "editionDate": "2026-11-11",
+  "slot": "08:00",
+  "voiceId": "6ce26db0cb6f4e7881b85452619f7f19",
+  "recordedAtSpeed": 1,
+  "renderSpeed": 1.25,
+  "clips": [
+    {
+      "file": "intro_lead.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=0b8f85ffb30b4893bd4eb8ea843c0048.wav",
+      "durationSec": 4.815192743764173,
+      "text": "Orbiuno. Estas son las cinco noticias clave de Colombia y el mundo."
+    },
+    {
+      "file": "titular_01.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=a4e90ac00c41422fa1fbac46c582e130.wav",
+      "durationSec": 4.397233560090703,
+      "text": "Luz Stella Murgas se convierte en la primera mujer que preside la Andi."
+    },
+    {
+      "file": "titular_02.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=2c6c0246803540feaf4f6d65adc80e87.wav",
+      "durationSec": 6.312879818594104,
+      "text": "Las acciones tecnológicas impulsan los mercados mundiales por el entusiasmo con la inteligencia artificial."
+    },
+    {
+      "file": "titular_03.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=2f0b890019774d739a87d39dce6b27db.wav",
+      "durationSec": 6.440589569160998,
+      "text": "MinCiencias recibe ciento treinta y seis proyectos para reconstruir las regiones afectadas por el terremoto."
+    },
+    {
+      "file": "titular_04.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=e0a95397cb114cc3a41e083fc6fd3749.wav",
+      "durationSec": 5.546621315192744,
+      "text": "Un estudio descubre por qué algunas especies de mosquitos prefieren picar a ciertas personas."
+    },
+    {
+      "file": "titular_05.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=af3d015089ff47dc8f1f84f6f4a89b6f.wav",
+      "durationSec": 5.337641723356009,
+      "text": "Un video viral moviliza más de setenta y seis mil dólares para apoyar a una cuidadora."
+    },
+    {
+      "file": "01.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=7b3a520c1681450390842e831456e065.wav",
+      "durationSec": 9.633333333333333,
+      "text": "En Colombia, Luz Stella Murgas fue elegida presidenta de la Andi. Es la primera mujer en dirigir el gremio empresarial en sus ochenta y dos años de historia."
+    },
+    {
+      "file": "02.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=d9a2a8104d3e413a9e006887ee2a33b4.wav",
+      "durationSec": 12.779637188208616,
+      "text": "En el mundo, las acciones tecnológicas repuntaron este miércoles. Reuters atribuye el impulso a nuevas expectativas sobre inteligencia artificial, mientras inversionistas siguen atentos a las tasas de interés."
+    },
+    {
+      "file": "03.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=aa1ad704b6804084b9dcee780d2b1396.wav",
+      "durationSec": 13.260748299319728,
+      "text": "En Colombia, MinCiencias recibió ciento treinta y seis propuestas para la reconstrucción después del terremoto de agosto. La convocatoria dispone de setecientos mil millones de pesos para apoyar proyectos seleccionados."
+    },
+    {
+      "file": "04.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=f02596035aa04ed5834585335f3f8561.wav",
+      "durationSec": 11.630249433106576,
+      "text": "En ciencia, una investigación encontró que distintas especies de mosquitos reaccionan a combinaciones diferentes de olores y sustancias de la piel humana. El hallazgo podría orientar nuevos repelentes."
+    },
+    {
+      "file": "05.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=a6be5ac59ff843ab898d82bbec8b849e.wav",
+      "durationSec": 12.013378684807256,
+      "text": "Y nuestra historia viral: un video de solidaridad con una repartidora que cuida a su madre de ochenta y dos años impulsó donaciones por más de setenta y seis mil dólares. Una historia de empatía."
+    },
+    {
+      "file": "outro.wav",
+      "url": "https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=70283a0c636d4a30a0436be093c387e4.wav",
+      "durationSec": 12.698367346938776,
+      "text": "Síguenos en Instagram, arroba resumen punto noticias, y mantente informado. Visita colombia al día punto pages punto dev para leer y escuchar las noticias. ¡Orbiuno, las noticias que importan!"
+    }
+  ]
+}

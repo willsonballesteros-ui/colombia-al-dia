@@ -1,0 +1,146 @@
+{
+  "brand": "ORBIUNO",
+  "editionDate": "2026-11-10",
+  "slot": "20:00",
+  "voice": {
+    "name": "Camila Vega",
+    "id": "6ce26db0cb6f4e7881b85452619f7f19",
+    "speed": 1.25,
+    "recordedAtSpeed": 1
+  },
+  "intro": {
+    "narration": "Orbiuno. Estas son las noticias más importantes de Colombia y el mundo. [NARRAR AQUÍ LOS CINCO TITULARES EN EL ORDEN DE PANTALLA]",
+    "audioFile": "audio/intro.wav",
+    "headlineTimings": [],
+    "leadAudioFile": "audio/intro_lead.wav",
+    "headlineAudioFiles": [
+      "audio/titular_01.wav",
+      "audio/titular_02.wav",
+      "audio/titular_03.wav",
+      "audio/titular_04.wav",
+      "audio/titular_05.wav"
+    ]
+  },
+  "news": [
+    {
+      "id": "REEMPLAZAR-ID-1",
+      "date": "2026-11-10",
+      "category": "Colombia",
+      "verification": "pending",
+      "title": "REEMPLAZAR CON TITULAR CONTRASTADO",
+      "narration": "REEMPLAZAR CON GUION EDITORIAL ORIGINAL",
+      "audioFile": "audio/01.wav",
+      "source": {
+        "name": "REEMPLAZAR MEDIO",
+        "url": "https://example.org/articulo/1"
+      },
+      "image": {
+        "file": "images/01.jpg",
+        "sourceUrl": "https://example.org/foto/1",
+        "credit": "REEMPLAZAR AUTOR DE FOTO",
+        "license": "REEMPLAZAR LICENCIA REAL",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "REEMPLAZAR-ID-2",
+      "date": "2026-11-10",
+      "category": "Economía",
+      "verification": "pending",
+      "title": "REEMPLAZAR",
+      "narration": "REEMPLAZAR",
+      "audioFile": "audio/02.wav",
+      "source": {
+        "name": "REEMPLAZAR",
+        "url": "https://example.org/articulo/2"
+      },
+      "image": {
+        "file": "images/02.jpg",
+        "sourceUrl": "https://example.org/foto/2",
+        "credit": "REEMPLAZAR",
+        "license": "REEMPLAZAR",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "REEMPLAZAR-ID-3",
+      "date": "2026-11-10",
+      "category": "Internacional",
+      "verification": "pending",
+      "title": "REEMPLAZAR",
+      "narration": "REEMPLAZAR",
+      "audioFile": "audio/03.wav",
+      "source": {
+        "name": "REEMPLAZAR",
+        "url": "https://example.org/articulo/3"
+      },
+      "image": {
+        "file": "images/03.jpg",
+        "sourceUrl": "https://example.org/foto/3",
+        "credit": "REEMPLAZAR",
+        "license": "REEMPLAZAR",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "REEMPLAZAR-ID-4",
+      "date": "2026-11-10",
+      "category": "Mundo",
+      "verification": "pending",
+      "title": "REEMPLAZAR",
+      "narration": "REEMPLAZAR",
+      "audioFile": "audio/04.wav",
+      "source": {
+        "name": "REEMPLAZAR",
+        "url": "https://example.org/articulo/4"
+      },
+      "image": {
+        "file": "images/04.jpg",
+        "sourceUrl": "https://example.org/foto/4",
+        "credit": "REEMPLAZAR",
+        "license": "REEMPLAZAR",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "REEMPLAZAR-ID-5",
+      "date": "2026-11-10",
+      "category": "Viral / Curiosidad",
+      "verification": "pending",
+      "title": "REEMPLAZAR",
+      "narration": "REEMPLAZAR",
+      "audioFile": "audio/05.wav",
+      "source": {
+        "name": "REEMPLAZAR",
+        "url": "https://example.org/articulo/5"
+      },
+      "image": {
+        "file": "images/05.jpg",
+        "sourceUrl": "https://example.org/foto/5",
+        "credit": "REEMPLAZAR",
+        "license": "REEMPLAZAR",
+        "rightsVerified": false
+      }
+    }
+  ],
+  "outro": {
+    "narration": "Síguenos en Instagram, arroba resumen punto noticias. Visita colombia-al-dia punto pages punto dev para leer y escuchar las noticias en voz alta. Orbiuno, las noticias que importan.",
+    "audioFile": "audio/outro.wav"
+  },
+  "approval": {
+    "editorialApproved": false,
+    "imagesApproved": false,
+    "voiceApproved": false,
+    "pronunciationApproved": false,
+    "webSyncApproved": false,
+    "finalReviewApproved": false
+  },
+  "music": {
+    "file": "audio/music.mp3",
+    "sourceUrl": "https://example.org/music/REEMPLAZAR",
+    "credit": "REEMPLAZAR AUTOR MUSICAL",
+    "license": "REEMPLAZAR LICENCIA COMERCIAL",
+    "rightsVerified": false
+  },
+  "format": "5_news_official"
+}

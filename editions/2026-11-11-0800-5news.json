@@ -1,0 +1,154 @@
+{
+  "brand": "ORBIUNO",
+  "editionDate": "2026-11-11",
+  "slot": "08:00",
+  "format": "5_news_official",
+  "voice": {
+    "name": "Camila Vega",
+    "id": "6ce26db0cb6f4e7881b85452619f7f19",
+    "speed": 1.25,
+    "recordedAtSpeed": 1
+  },
+  "intro": {
+    "narration": "Orbiuno. Estas son las cinco noticias clave de Colombia y el mundo. Luz Stella Murgas se convierte en la primera mujer que preside la Andi. Las acciones tecnológicas impulsan los mercados mundiales por el entusiasmo con la inteligencia artificial. MinCiencias recibe ciento treinta y seis proyectos para reconstruir las regiones afectadas por el terremoto. Un estudio descubre por qué algunas especies de mosquitos prefieren picar a ciertas personas. Un video viral moviliza más de setenta y seis mil dólares para apoyar a una cuidadora.",
+    "audioFile": "2026-11-11-0800-5news/audio/intro_lead.wav",
+    "leadAudioFile": "2026-11-11-0800-5news/audio/intro_lead.wav",
+    "headlineAudioFiles": [
+      "2026-11-11-0800-5news/audio/titular_01.wav",
+      "2026-11-11-0800-5news/audio/titular_02.wav",
+      "2026-11-11-0800-5news/audio/titular_03.wav",
+      "2026-11-11-0800-5news/audio/titular_04.wav",
+      "2026-11-11-0800-5news/audio/titular_05.wav"
+    ],
+    "headlineTimings": []
+  },
+  "news": [
+    {
+      "id": "a54dff6e5d73",
+      "date": "2026-11-11",
+      "sourcePublishedDate": "2026-11-10",
+      "category": "Colombia",
+      "verification": "pending",
+      "title": "Luz Stella Murgas se convierte en la primera mujer que preside la Andi.",
+      "narration": "En Colombia, Luz Stella Murgas fue elegida presidenta de la Andi. Es la primera mujer en dirigir el gremio empresarial en sus ochenta y dos años de historia.",
+      "audioFile": "2026-11-11-0800-5news/audio/01.wav",
+      "source": {
+        "name": "Caracol Radio",
+        "url": "https://caracol.com.co/2026/11/10/luz-stella-murgas-fue-elegida-presidente-de-la-andi-la-primera-mujer-en-ocupar-el-cargo/"
+      },
+      "image": {
+        "file": "2026-11-11-0800-5news/images/01.jpg",
+        "sourceUrl": "",
+        "credit": "",
+        "license": "",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "1ed28aa1b1c2",
+      "date": "2026-11-11",
+      "sourcePublishedDate": "2026-11-11",
+      "category": "Internacional",
+      "verification": "pending",
+      "title": "Las acciones tecnológicas impulsan los mercados mundiales por el entusiasmo con la inteligencia artificial.",
+      "narration": "En el mundo, las acciones tecnológicas repuntaron este miércoles. Reuters atribuye el impulso a nuevas expectativas sobre inteligencia artificial, mientras inversionistas siguen atentos a las tasas de interés.",
+      "audioFile": "2026-11-11-0800-5news/audio/02.wav",
+      "source": {
+        "name": "Reuters",
+        "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
+      },
+      "image": {
+        "file": "2026-11-11-0800-5news/images/02.jpg",
+        "sourceUrl": "",
+        "credit": "",
+        "license": "",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "d15236631420",
+      "date": "2026-11-11",
+      "sourcePublishedDate": "2026-11-10",
+      "category": "Colombia / Ciencia",
+      "verification": "pending",
+      "title": "MinCiencias recibe ciento treinta y seis proyectos para reconstruir las regiones afectadas por el terremoto.",
+      "narration": "En Colombia, MinCiencias recibió ciento treinta y seis propuestas para la reconstrucción después del terremoto de agosto. La convocatoria dispone de setecientos mil millones de pesos para apoyar proyectos seleccionados.",
+      "audioFile": "2026-11-11-0800-5news/audio/03.wav",
+      "source": {
+        "name": "Ministerio de Ciencia, Tecnología e Innovación",
+        "url": "https://minciencias.gov.co/sala_de_prensa/la-ciencia-responde-al-terremoto-convocatoria-emergencia-cierra-con-136-proyectos"
+      },
+      "image": {
+        "file": "2026-11-11-0800-5news/images/03.jpg",
+        "sourceUrl": "",
+        "credit": "",
+        "license": "",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "d949ba45c848",
+      "date": "2026-11-11",
+      "sourcePublishedDate": "2026-11-10",
+      "category": "Ciencia",
+      "verification": "pending",
+      "title": "Un estudio descubre por qué algunas especies de mosquitos prefieren picar a ciertas personas.",
+      "narration": "En ciencia, una investigación encontró que distintas especies de mosquitos reaccionan a combinaciones diferentes de olores y sustancias de la piel humana. El hallazgo podría orientar nuevos repelentes.",
+      "audioFile": "2026-11-11-0800-5news/audio/04.wav",
+      "source": {
+        "name": "ScienceDaily",
+        "url": "https://www.sciencedaily.com/releases/2026/11/261106174541.htm"
+      },
+      "image": {
+        "file": "2026-11-11-0800-5news/images/04.jpg",
+        "sourceUrl": "",
+        "credit": "",
+        "license": "",
+        "rightsVerified": false
+      }
+    },
+    {
+      "id": "56f845ca8c96",
+      "date": "2026-11-11",
+      "sourcePublishedDate": "2026-11-10",
+      "category": "Viral / Positiva",
+      "verification": "pending",
+      "title": "Un video viral moviliza más de setenta y seis mil dólares para apoyar a una cuidadora.",
+      "narration": "Y nuestra historia viral: un video de solidaridad con una repartidora que cuida a su madre de ochenta y dos años impulsó donaciones por más de setenta y seis mil dólares. Una historia de empatía.",
+      "audioFile": "2026-11-11-0800-5news/audio/05.wav",
+      "source": {
+        "name": "Good News Network",
+        "url": "https://www.goodnewsnetwork.org/viral-video-raises-76000-for-caregiver/"
+      },
+      "image": {
+        "file": "2026-11-11-0800-5news/images/05.jpg",
+        "sourceUrl": "",
+        "credit": "",
+        "license": "",
+        "rightsVerified": false
+      },
+      "tone": "positive",
+      "popularityEvidence": "Medio reporta viralidad; métricas independientes pendientes"
+    }
+  ],
+  "outro": {
+    "narration": "Síguenos en Instagram, arroba resumen punto noticias, y mantente informado. Visita colombia al día punto pages punto dev para leer y escuchar las noticias. ¡Orbiuno, las noticias que importan!",
+    "audioFile": "2026-11-11-0800-5news/audio/outro.wav"
+  },
+  "approval": {
+    "editorialApproved": false,
+    "imagesApproved": false,
+    "voiceApproved": false,
+    "pronunciationApproved": false,
+    "webSyncApproved": false,
+    "finalReviewApproved": false
+  },
+  "music": {
+    "file": "2026-11-11-0800-5news/audio/music.mp3",
+    "sourceUrl": "",
+    "credit": "",
+    "license": "",
+    "rightsVerified": false
+  },
+  "productionStatus": "DRAFT_AUDIO_GENERATED_IMAGE_RIGHTS_PENDING"
+}
