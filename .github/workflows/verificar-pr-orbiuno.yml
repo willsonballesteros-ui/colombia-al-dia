@@ -41,6 +41,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar FFprobe para comprobar los archivos auténticos
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
       - name: Descargar los 12 WAV reales y comprobar SHA-256/ffprobe
         run: python scripts/orbiuno_pipeline/materialize_camila_audio.py
       - name: Guardar paquete auténtico de voz de Camila (NO PUBLICAR)
