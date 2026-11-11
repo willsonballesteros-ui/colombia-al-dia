@@ -121,7 +121,7 @@ def main():
         phrases += [f"Noticia {i+1}. {n['title']}." for i,n in enumerate(notes)]
         # Breve desarrollo de cada noticia con fuente atribuida.
         phrases += [f"{n['summary']} Fuente: {n['sources'][0]['name']}." for n in notes]
-        phrases += ["ORBIUNO. Lee y escucha las noticias y sus fuentes en el enlace de nuestro perfil."]
+        phrases += ["ORBIUNO. Síguenos en nuestra página web y escucha en voz alta la noticia que más te interese. El enlace está en el perfil."]
         for j,phrase in enumerate(phrases):
             audio,sr=voice.create(phrase,"ef_dora",speed=1.25,lang="es",sentence_pause=.12,clause_pause=.06)
             arr=np.asarray(audio,dtype=np.float32)

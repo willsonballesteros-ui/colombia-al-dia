@@ -41,7 +41,7 @@ def caption_for(manifest, site):
     lines = [f"ORBIUNO | {manifest['date']} · {manifest['slot']}", ""]
     for index, source in enumerate(sources, 1):
         lines.extend([f"{index}. {source['title']}", source["url"]])
-    lines.extend(["", "👇 Escucha cada noticia en colombia-al-dia.pages.dev. Enlace en el perfil."])
+    lines.extend(["", "👇 Síguenos en colombia-al-dia.pages.dev y escucha en voz alta la noticia que más te interese. Enlace en el perfil."])
     return "\n".join(lines)
 
 
