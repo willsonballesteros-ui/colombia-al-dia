@@ -94,7 +94,7 @@ jobs:
           hour=datetime.now(ZoneInfo('America/Bogota')).hour
           slot='08:00' if hour<11 else '12:00' if hour<17 else '18:00'
           verified=[n for n in data.get('news',[]) if n.get('date')==today and n.get('verification')=='editorial_verified' and n.get('editionSlot')==slot]
-          if data.get('editionDate')!=today or not (1 <= len(verified) <= 4):
+          if data.get('editionDate')!=today or not (1 <= len(verified) <= 5):
               print(f'NO PUBLICAR: edición {data.get("editionDate")}; {len(verified)} noticias verificadas de {today}')
               Path('/tmp/orbiuno_skip_carousel').touch()
           PY
