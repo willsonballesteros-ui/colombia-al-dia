@@ -1,0 +1,42 @@
+{
+  "fecha": "2026-11-11",
+  "stories": [
+    {
+      "title": "DÓLAR OFICIAL: $3.297,07",
+      "source": "El Espectador",
+      "url": "https://www.elespectador.com/economia/dolar-hoy-en-colombia-asi-arranco-el-precio-de-la-divisa-este-miercoles-11-de-noviembre/"
+    },
+    {
+      "title": "GOBIERNO DEFIENDE AJUSTE FISCAL",
+      "source": "La República",
+      "url": "https://www.larepublica.co/economia/gobierno-defendio-ajuste-fiscal-y-advirtio-sobre-el-peso-de-los-intereses-de-la-deuda-4522524"
+    },
+    {
+      "title": "IDEAM PREVÉ LLUVIAS EN CINCO REGIONES",
+      "source": "La República / Ideam",
+      "url": "https://www.larepublica.co/economia/ideam-advierte-sobre-lluvias-en-varias-zonas-del-pais-para-este-miercoles-11-de-noviembre-4522340"
+    },
+    {
+      "title": "MEDELLÍN REÚNE EXPERTOS EN INTELIGENCIA ARTIFICIAL",
+      "source": "INMERXIA oficial",
+      "url": "https://inmerxia.co/"
+    }
+  ],
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "52.434333",
+      "size": "1470787"
+    }
+  }
+}
