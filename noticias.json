@@ -1,10 +1,114 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-09",
-  "editedAtBogota": "2026-11-09 18:15",
+  "editionDate": "2026-11-11",
+  "editedAtBogota": "2026-11-11 14:00",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261111-trm",
+      "title": "La TRM del dólar en Colombia se ubicó en $3.297,07",
+      "category": "Economía",
+      "summary": "La tasa representativa del mercado para el 11 de noviembre fue de $3.297,07 por dólar, de acuerdo con registros basados en datos de la Superintendencia Financiera.",
+      "why": "Sirve de referencia a operaciones y obligaciones expresadas en dólares.",
+      "next": "Consultar la certificación oficial de la TRM y su evolución diaria.",
+      "sources": [
+        {
+          "name": "TRM con datos de la Superintendencia Financiera",
+          "url": "https://valorvigente.com/co/trm/"
+        }
+      ],
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 1,
+      "instagramReelOrder": 1,
+      "level": "Noticia verificada · Fuente original",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false,
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+    },
+    {
+      "id": "orbiuno-20261111-ajuste-fiscal",
+      "title": "Gobierno defiende el ajuste fiscal ante el peso de los intereses de la deuda",
+      "category": "Economía",
+      "summary": "En la Asamblea de ANIF, José Manuel Restrepo afirmó que el país necesita combinar ajuste fiscal y crecimiento; señaló el peso de las obligaciones financieras sobre el recaudo.",
+      "why": "El costo de la deuda reduce los recursos disponibles para otras prioridades públicas.",
+      "next": "Seguir las medidas anunciadas y su discusión institucional.",
+      "sources": [
+        {
+          "name": "La República · 11 nov. 2026",
+          "url": "https://www.larepublica.co/economia/gobierno-defendio-ajuste-fiscal-y-advirtio-sobre-el-peso-de-los-intereses-de-la-deuda-4522524"
+        },
+        {
+          "name": "Ministerio de Hacienda · 11 nov. 2026",
+          "url": "https://www.minhacienda.gov.co/w/ministro-defiende-ley-rescate-y-ajuste-fiscal-anif"
+        }
+      ],
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 2,
+      "instagramReelOrder": 2,
+      "level": "Noticia verificada · Fuente original",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false,
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+    },
+    {
+      "id": "orbiuno-20261111-ideam",
+      "title": "Ideam prevé lluvias fuertes en varias regiones de Colombia",
+      "category": "Colombia · Clima",
+      "summary": "Para el miércoles 11 se pronosticaron lluvias fuertes en sectores de Antioquia, Chocó, Eje Cafetero, occidente y suroccidente, Caquetá y zonas del suroriente.",
+      "why": "El pronóstico permite anticipar medidas de prevención ante las lluvias.",
+      "next": "Revisar los avisos del Ideam y la información de las autoridades locales.",
+      "sources": [
+        {
+          "name": "Caracol Radio · Pronóstico IDEAM",
+          "url": "https://caracol.com.co/2026/11/10/pronostico-ideam-para-esta-semana-lista-de-regiones-con-fuertes-lluvias-del-9-al-13-de-noviembre/"
+        },
+        {
+          "name": "Noticias Caracol · 10 nov. 2026",
+          "url": "https://www.noticiascaracol.com/colombia/ideam-revelo-como-estara-el-clima-en-colombia-del-10-al-13-de-noviembre-en-colombia-habra-lluvias-so35"
+        }
+      ],
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 3,
+      "instagramReelOrder": 3,
+      "level": "Noticia verificada · Fuente original",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false,
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+    },
+    {
+      "id": "orbiuno-20261111-inmerxia",
+      "title": "Medellín reúne a expertos y emprendedores durante INMERXIA 2026",
+      "category": "Tecnología · IA",
+      "summary": "INMERXIA se celebra del 9 al 13 de noviembre en Medellín; el 11 está dedicada a Ciudad Joven, con programación sobre inteligencia artificial, innovación y emprendimiento.",
+      "why": "El encuentro conecta conocimientos de IA con formación y oportunidades de negocio.",
+      "next": "Consultar la programación y las actividades del 12 y 13 de noviembre.",
+      "sources": [
+        {
+          "name": "INMERXIA 2026 · Sitio oficial",
+          "url": "https://inmerxia.com.co/"
+        }
+      ],
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 4,
+      "instagramReelOrder": 4,
+      "level": "Noticia verificada · Fuente original",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "imageRightsVerified": false,
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+    },
     {
       "id": "rss-f690971f4f6e1ec6",
       "date": "2026-11-11",
@@ -16505,8 +16609,8 @@
   "lastNewSourceAtBogota": "2026-11-11T13:44-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición de las 08:00: diez noticias verificadas, una de deportes, una de tecnología y una de IA, con redacción original y fuentes enlazadas. Fotos solo con derechos verificados.",
-  "editorialFormat": "Portada con diez titulares y una noticia por lámina.",
+  "editorialNote": "Edición de cuatro noticias preparada para Reel; publicación manual de Instagram pendiente de confirmación. Fotografías sujetas a verificación de derechos.",
+  "editorialFormat": "4 noticias verificadas por edición; cada Reel corresponde a las cuatro notas destacadas de su franja",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
     "name": "ORBIUNO",
@@ -16788,9 +16892,9 @@
       ]
     }
   ],
-  "editionSlot": "08:00",
+  "editionSlot": "12:00",
   "openingScriptEs": "Buenos días. Son las ocho de la mañana de este viernes seis de noviembre. Esto es ORBIUNO. Hackers de Corea del Norte: robo de US$6.300 millones. 104 armas de guerra decomisadas en el Caribe. Inflación podría cerrar 2026 en 7,1 %. Jhon Arias brilla: doblete en solo 14 minutos. El papa vuelve a Suramérica tras una operación. Ormuz: barcos reportan nuevos ataques. Anthropic: dudas sobre su millonaria salida a bolsa. Desplome tecnológico golpea a fondos globales. Tribunal ordena libertad de Luis F. Velasco. Piden ahorrar energía entre las 6 y las 9 p. m.. Encuentra el desarrollo completo y las fuentes originales en colombia-al-dia.pages.dev.",
-  "editionLabel": "Noticias de hoy · Ediciones 08:00, 12:00 y 18:00 en una sola página",
+  "editionLabel": "Edición del 11 de noviembre de 2026 · 4 noticias",
   "editionSlots": [
     "08:00",
     "12:00",
