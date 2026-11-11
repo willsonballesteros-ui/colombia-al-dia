@@ -55,9 +55,9 @@ def base(day, label):
     d.text((62,1212),"colombia-al-dia.pages.dev",font=face(18,False),fill=TEAL)
     return im,d
 
-def cover(day,notes,active,out):
+def cover(day,slot,notes,active,out):
     im,d=base(day,"PORTADA")
-    d.text((44,198),"5 NOTICIAS · EDICIÓN DE HOY",font=face(27),fill=GOLD)
+    d.text((44,198),f"5 NOTICIAS · EDICIÓN {slot}",font=face(27),fill=GOLD)
     for i,n in enumerate(notes):
         y=276+i*162
         d.rounded_rectangle((41,y,679,y+148),radius=17,fill=TEAL if i==active else PANEL)
@@ -113,7 +113,7 @@ def main():
     opts=ort.SessionOptions();opts.intra_op_num_threads=2;opts.inter_op_num_threads=1
     session=ort.InferenceSession("/tmp/kokoro-v1.0.onnx",sess_options=opts,providers=["CPUExecutionProvider"])
     voice=Kokoro.from_session(session,"/tmp/voices-v1.0.bin")
-    clips=[];pictures=[];timeline=[];t=0.0
+    clips=[];pictures=[];timeline=[];photos=[];t=0.0
     with tempfile.TemporaryDirectory() as temp:
         scratch=Path(temp)
         # Portada con todos los titulares visibles; realce calculado de la duración de cada frase.
@@ -131,9 +131,17 @@ def main():
             clips.append(clip)
             length=len(clip)/sr
             frame=scratch/f"{j:02d}.png"
-            if j < 6: cover(day,notes,max(0,j-1),frame) if j else cover(day,notes,-1,frame)
-            elif j < 11: news_slide(day,notes[j-6],j-5,frame)
-            else: cover(day,notes,-1,frame)
+            if j < 6: cover(day,slot,notes,max(0,j-1),frame) if j else cover(day,slot,notes,-1,frame)
+            elif j < 11:
+                note = notes[j-6]
+                if news_slide(day, note, j-5, frame):
+                    photos.append({
+                        "newsId": note["id"],
+                        "credit": note["imageCredit"],
+                        "license": note["imageLicense"],
+                        "sourceUrl": note.get("imageSourceUrl", ""),
+                    })
+            else: cover(day,slot,notes,-1,frame)
             pictures.append((frame,length))
             timeline.append({"scene":j,"from":round(t,3),"to":round(t+length,3),"voiceText":phrase,"newsId":notes[j-1]["id"] if 1<=j<=5 else notes[j-6]["id"] if 6<=j<=10 else None})
             t+=length
@@ -156,7 +164,7 @@ def main():
         if not (any(s.get("codec_type")=="audio" for s in streams) and any(s.get("codec_type")=="video" and s.get("width")==W and s.get("height")==H for s in streams) and 35<=runtime<=150):
             raise RuntimeError("MP4 inválido: falta pista o duración fuera de rango")
         digest=hashlib.sha256(target.read_bytes()).hexdigest()
-        meta={"date":day,"slot":slot,"newsCount":5,"voice":"ef_dora","speed":1.25,"duration":runtime,"sha256":digest,"video":target.name,"scenes":timeline,"sources":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in notes],"photoPolicy":"Solo fotografías con licencia verificada y archivo local; si no, lámina editorial con fuente","publishedToInstagram":False}
+        meta={"date":day,"slot":slot,"newsCount":5,"voice":"ef_dora","speed":1.25,"duration":runtime,"sha256":digest,"video":target.name,"scenes":timeline,"photos":photos,"sources":[{"id":n["id"],"title":n["title"],"url":n["sources"][0]["url"]} for n in notes],"photoPolicy":"Solo fotografías con licencia verificada y archivo local; si no, lámina editorial con fuente","publishedToInstagram":False}
         (out/"manifest.json").write_text(json.dumps(meta,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("MP4_VERIFICADO",target,round(runtime,1),digest,flush=True)
 if __name__=="__main__":

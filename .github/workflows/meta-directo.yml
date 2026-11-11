@@ -18,6 +18,25 @@ on:
         description: 'Publicar ahora; desactivado = comprobación segura'
         type: boolean
         default: false
+  workflow_call:
+    inputs:
+      edition_key:
+        required: true
+        type: string
+      video_url:
+        required: true
+        type: string
+      caption:
+        required: true
+        type: string
+      publish:
+        type: boolean
+        default: false
+    secrets:
+      ORBIUNO_IG_ACCESS_TOKEN:
+        required: true
+      ORBIUNO_IG_USER_ID:
+        required: true
 permissions:
   contents: read
 concurrency:
