@@ -1,0 +1,40 @@
+name: ORBIUNO - Validaciones seguras (no publica)
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/preflight_edition.py'
+      - 'tests/test_orbiuno_preflight.py'
+      - '.github/workflows/orbiuno-preflight.yml'
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar sintaxis
+        run: python -m py_compile scripts/preflight_edition.py
+      - name: Ejecutar pruebas de regresión
+        run: python -m unittest discover -s tests -p 'test_orbiuno_preflight.py' -v
+      - name: Probar bloqueo de fuente genérica
+        run: |
+          python - <<'PY'
+          import importlib.util, json, tempfile, pathlib
+          spec=importlib.util.spec_from_file_location("preflight","scripts/preflight_edition.py")
+          m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          with tempfile.TemporaryDirectory() as tmp:
+              p=pathlib.Path(tmp)/"edition.json"
+              p.write_text(json.dumps({"noticias":[{"titulo":"Titular","fuente":"Reuters","url":"https://www.reuters.com/"}]}))
+              try: m.check_manifest(str(p))
+              except ValueError: print("PASS: generic source rejected")
+              else: raise SystemExit("FAIL: generic source accepted")
+              p.write_text(json.dumps({"noticias":[{"titulo":"Titular","fuente":"Medio","url":"https://example.org/article","verification":"source_only"}]}))
+              try: m.check_manifest(str(p))
+              except ValueError: print("PASS: unverified story rejected")
+              else: raise SystemExit("FAIL: unverified story accepted")
+          PY

@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Bloquear render si la edición no está verificada en la web pública
+        run: |
+          python scripts/preflight_edition.py --manifest noticias.json --site-url https://colombia-al-dia.pages.dev/ --pre-render
       - name: Verificar código del renderizador
         run: python -m py_compile scripts/assemble_reel.py
       - name: Instalar FFmpeg
