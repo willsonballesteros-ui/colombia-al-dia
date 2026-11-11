@@ -6,11 +6,12 @@
     "name": "Camila Vega",
     "id": "6ce26db0cb6f4e7881b85452619f7f19",
     "speed": 1.25,
-    "recordedAtSpeed": 1.0
+    "recordedAtSpeed": 1
   },
   "intro": {
-    "narration": "Orbiuno. Estas son las noticias más importantes de Colombia y el mundo.",
-    "audioFile": "audio/intro.wav"
+    "narration": "Orbiuno. Estas son las noticias más importantes de Colombia y el mundo. [NARRAR AQUÍ LOS CINCO TITULARES EN EL ORDEN DE PANTALLA]",
+    "audioFile": "audio/intro.wav",
+    "headlineTimings": []
   },
   "news": [
     {
@@ -92,6 +93,26 @@
         "license": "REEMPLAZAR",
         "rightsVerified": false
       }
+    },
+    {
+      "id": "REEMPLAZAR-ID-5",
+      "date": "2026-11-10",
+      "category": "Viral / Curiosidad",
+      "verification": "pending",
+      "title": "REEMPLAZAR",
+      "narration": "REEMPLAZAR",
+      "audioFile": "audio/05.wav",
+      "source": {
+        "name": "REEMPLAZAR",
+        "url": "https://example.org/articulo/5"
+      },
+      "image": {
+        "file": "images/05.jpg",
+        "sourceUrl": "https://example.org/foto/5",
+        "credit": "REEMPLAZAR",
+        "license": "REEMPLAZAR",
+        "rightsVerified": false
+      }
     }
   ],
   "outro": {
@@ -112,5 +133,6 @@
     "credit": "REEMPLAZAR AUTOR MUSICAL",
     "license": "REEMPLAZAR LICENCIA COMERCIAL",
     "rightsVerified": false
-  }
+  },
+  "format": "5_news_official"
 }
