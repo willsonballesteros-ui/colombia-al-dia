@@ -47,13 +47,14 @@ def build(db):
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
     slot=edition_slot()
     verified_sports=sum(n.get("category")=="Deportes" for n in news)
-    sports_ready=True  # categorías variables: no imponer deportes en cada edición
     # No presentar por segunda vez la edición matutina como una edición nueva.
     repeats=[n for n in news if "-am-" in n["id"] and not (
         (n.get("editorialUpdate") or {}).get("substantial") is True
         and (n.get("editorialUpdate") or {}).get("newFacts")
         and (n.get("editorialUpdate") or {}).get("verifiedSource"))]
     blockers=[]
+    if len(news) != 5:
+        blockers.append("edicion_incompleta_requiere_cinco_noticias")
     if slot!="8am" and repeats:
         blockers.append("contiene_"+str(len(repeats))+"_noticias_ya_presentadas_en_la_manana")
     publication_ready=not blockers
