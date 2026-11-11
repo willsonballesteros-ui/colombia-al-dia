@@ -1,0 +1,83 @@
+name: ORBIUNO - ensamblar cinco noticias sin publicar
+on:
+  workflow_dispatch:
+    inputs:
+      drive_bundle_file_id:
+        description: 'ID del ZIP de la edición real en Drive (editions/manifiesto.json y sus audio/ e images/)'
+        required: true
+        type: string
+      manifest:
+        description: 'Ruta exacta dentro del ZIP, por ejemplo editions/2026-11-11-0800-5news.json'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-5-preview-${{ github.ref }}-${{ inputs.manifest }}
+  cancel-in-progress: false
+jobs:
+  preview-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      ORBIUNO_DRIVE_BUNDLE_ID: ${{ inputs.drive_bundle_file_id }}
+      GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+      MANIFEST_PATH: ${{ inputs.manifest }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install ffmpeg, Pillow and Google Drive reader
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install Pillow==11.3.0 google-api-python-client google-auth
+      - name: Fetch actual licensed media and authentic voice clips from Drive
+        run: python scripts/orbiuno_pipeline/drive_bundle.py
+      - name: Validate exact requested manifest
+        shell: bash
+        run: |
+          test -f "$MANIFEST_PATH" || { echo "BLOCKED: requested edition manifest absent"; exit 1; }
+          python -m json.tool "$MANIFEST_PATH" >/dev/null
+      - name: Render five-headline animated MP4 (preview only)
+        run: |
+          python scripts/render_orbiuno_5news_animated.py "$MANIFEST_PATH" --output dist/ORBIUNO_5_REAL_PREVIEW.mp4
+      - name: Verify MP4 with real ffprobe
+        shell: bash
+        run: |
+          ffprobe -v error -show_format -show_streams -of json dist/ORBIUNO_5_REAL_PREVIEW.mp4 > dist/ffprobe.json
+          python - <<'PY'
+          import json
+          x=json.load(open('dist/ffprobe.json'))
+          v=next((t for t in x['streams'] if t.get('codec_type')=='video'),{})
+          a=next((t for t in x['streams'] if t.get('codec_type')=='audio'),{})
+          assert (v.get('width'),v.get('height'),v.get('codec_name'),a.get('codec_name'))==(1080,1920,'h264','aac')
+          assert float(x['format']['duration'])>0
+          print('Video confirmed with audio and proper codecs')
+          PY
+      - name: Stage five IDs and actual image files in website snapshot
+        shell: bash
+        run: |
+          python scripts/sync_orbiuno_5news_web.py "$MANIFEST_PATH" --write
+          python scripts/prepare_site.py
+          python - "$MANIFEST_PATH" <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          from verify_alignment import check
+          check(sys.argv[1], 'noticias.json',Path('index.html').read_text(encoding='utf-8'))
+          print('Web preview matches five Reel IDs')
+          PY
+      - name: Upload preview and web staging artifacts only (no publish/deploy)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ORBIUNO-5-PREVIEW-NO-PUBLICAR
+          path: |
+            dist/
+            noticias.json
+            index.html
+            media/orbiuno/
+          if-no-files-found: warn
+          retention-days: 7
