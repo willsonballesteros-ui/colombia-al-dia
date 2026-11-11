@@ -169,7 +169,7 @@ def build(data, page):
     if any(n.get("editionSlot") == "20:00" for n in published):
         slots=(("20:00","8:00 p. m."),)+slots
     sections=[]
-    reel_limits={"08:00":4,"12:00":4,"18:00":4,"20:00":4}
+    reel_limits={"08:00":5,"12:00":5,"18:00":5,"20:00":5}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
@@ -220,7 +220,7 @@ def build(data, page):
         raise ValueError("No se localizó #initial-news")
     # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
-                      "Hasta cuatro noticias verificadas por edición, con fuentes originales.")
+                      "Hasta cinco noticias verificadas por edición, con fuentes originales.")
     return page
 
 
