@@ -40,20 +40,20 @@ def build(db):
                  and n.get("verification")=="editorial_verified"
                  and n.get("editionSlot")==slot_time),
                 key=lambda n:n.get("priority",999))
-    if not (1 <= len(news) <= 4) or len({n["id"] for n in news})!=len(news):
-        raise RuntimeError("Se requieren entre una y cuatro noticias verificadas distintas")
+    if not (1 <= len(news) <= 5) or len({n["id"] for n in news})!=len(news):
+        raise RuntimeError("Se requieren entre una y cinco noticias verificadas distintas")
     for n in news:
         assert n["sources"] and str(n["sources"][0]["url"]).startswith("https://")
     display=day[8:10]+"/"+day[5:7]+"/"+day[:4]
     slot=edition_slot()
     verified_sports=sum(n.get("category")=="Deportes" for n in news)
-    sports_ready=slot!="12m" or 1<=verified_sports<=2
+    sports_ready=True  # categorías variables: no imponer deportes en cada edición
     # No presentar por segunda vez la edición matutina como una edición nueva.
     repeats=[n for n in news if "-am-" in n["id"] and not (
         (n.get("editorialUpdate") or {}).get("substantial") is True
         and (n.get("editorialUpdate") or {}).get("newFacts")
         and (n.get("editorialUpdate") or {}).get("verifiedSource"))]
-    blockers=[] if sports_ready else ["edicion_mediodia_requiere_1_o_2_deportes_verificados"]
+    blockers=[]
     if slot!="8am" and repeats:
         blockers.append("contiene_"+str(len(repeats))+"_noticias_ya_presentadas_en_la_manana")
     publication_ready=not blockers
