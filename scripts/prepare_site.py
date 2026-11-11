@@ -169,12 +169,11 @@ def build(data, page):
     if any(n.get("editionSlot") == "20:00" for n in published):
         slots=(("20:00","8:00 p. m."),)+slots
     sections=[]
-    reel_limits={"08:00":4,"12:00":4,"18:00":4,"20:00":4}
+    reel_limits={"08:00":5,"12:00":5,"18:00":5,"20:00":5}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
-        # Solo se etiqueta "del Reel" cuando los IDs y orden se consignaron
-        # explícitamente al publicar Instagram. No deducirlo por prioridad.
+        # Los cinco IDs visibles en la web son los mismos del video preparado.\n        # Esto no implica que Instagram esté publicado.
         featured=sorted(
             (n for n in rows if isinstance(n.get("instagramReelOrder"),int)
              and not isinstance(n.get("instagramReelOrder"),bool)
@@ -186,7 +185,7 @@ def build(data, page):
         content=""
         if featured:
             content+=(
-                '<h4 class="edition-subheading">📌 Noticias del Reel · En el mismo orden de Instagram</h4>'
+                '<h4 class="edition-subheading">📌 Noticias del video · En el orden de la edición</h4>'
                 '<div class="cards edition-cards">'+''.join(article_html(n) for n in featured)+'</div>'
             )
         if more:
