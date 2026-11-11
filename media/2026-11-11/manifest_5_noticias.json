@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-11",
+  "slot": "12:00",
+  "newsCount": 5,
+  "voice": "ef_dora",
+  "speed": 1.25,
+  "duration": 101.28,
+  "sha256": "03d0e6e167df8da1cab287f390ee59a592229ac6d8e854052929c727e7b90492",
+  "video": "ORBIUNO_2026-11-11_5_NOTICIAS.mp4",
+  "scenes": [
+    {
+      "scene": 0,
+      "from": 0.0,
+      "to": 4.253,
+      "voiceText": "ORBIUNO. 2026-11-11. Cinco noticias de Colombia y el mundo.",
+      "newsId": null
+    },
+    {
+      "scene": 1,
+      "from": 4.253,
+      "to": 7.461,
+      "voiceText": "Noticia 1. Luz Stella Murgas, nueva presidenta de la ANDI.",
+      "newsId": "orbiuno-20261111-andi"
+    },
+    {
+      "scene": 2,
+      "from": 7.461,
+      "to": 12.035,
+      "voiceText": "Noticia 2. Rusia y Ucrania reportan avances limitados en conversaciones de paz.",
+      "newsId": "orbiuno-20261111-dialogo-ucrania"
+    },
+    {
+      "scene": 3,
+      "from": 12.035,
+      "to": 18.144,
+      "voiceText": "Noticia 3. El dólar registra una TRM de $3.297,07 en Colombia.",
+      "newsId": "orbiuno-20261111-trm"
+    },
+    {
+      "scene": 4,
+      "from": 18.144,
+      "to": 23.357,
+      "voiceText": "Noticia 4. TSMC aprueba invertir hasta US$1.000 millones en OpenAI y Anthropic.",
+      "newsId": "orbiuno-20261111-tsmc-ia"
+    },
+    {
+      "scene": 5,
+      "from": 23.357,
+      "to": 28.229,
+      "voiceText": "Noticia 5. En la COP31, líderes mundiales piden acelerar la acción climática.",
+      "newsId": "orbiuno-20261111-cop31"
+    },
+    {
+      "scene": 6,
+      "from": 28.229,
+      "to": 40.227,
+      "voiceText": "La ANDI eligió el 10 de noviembre a Luz Stella Murgas como su nueva presidenta. Entre sus prioridades estarán la competitividad, la inversión y el empleo formal. Fuente: ANDI · Comunicado oficial, 10 nov. 2026.",
+      "newsId": "orbiuno-20261111-andi"
+    },
+    {
+      "scene": 7,
+      "from": 40.227,
+      "to": 53.44,
+      "voiceText": "Delegaciones de Rusia y Ucrania reconocieron avances en conversaciones mediadas por Estados Unidos en Abu Dabi, incluido un acuerdo sobre intercambio de prisioneros; siguen diferencias territoriales. Fuente: Reuters · 11 nov. 2026.",
+      "newsId": "orbiuno-20261111-dialogo-ucrania"
+    },
+    {
+      "scene": 8,
+      "from": 53.44,
+      "to": 70.621,
+      "voiceText": "La TRM certificada para el 11 de noviembre de 2026 se situó en $3.297,07 por dólar, $27,19 más que el día anterior, un aumento del 0,83 %. Fuente: Registro de TRM con datos de la Superintendencia Financiera · 11 nov..",
+      "newsId": "orbiuno-20261111-trm"
+    },
+    {
+      "scene": 9,
+      "from": 70.621,
+      "to": 83.835,
+      "voiceText": "El fabricante de chips TSMC autorizó inversiones de hasta US$500 millones en OpenAI y otros US$500 millones en Anthropic, según informó Reuters el 10 de noviembre. Fuente: Reuters · 10 nov. 2026.",
+      "newsId": "orbiuno-20261111-tsmc-ia"
+    },
+    {
+      "scene": 10,
+      "from": 83.835,
+      "to": 97.304,
+      "voiceText": "Dirigentes reunidos en la COP31 en Turquía pidieron reforzar la reducción de emisiones y la cooperación frente al cambio climático, sin dejar que las tensiones internacionales desplacen la agenda. Fuente: Reuters · 11 nov. 2026.",
+      "newsId": "orbiuno-20261111-cop31"
+    },
+    {
+      "scene": 11,
+      "from": 97.304,
+      "to": 101.28,
+      "voiceText": "ORBIUNO. Lee y escucha las noticias y sus fuentes en el enlace de nuestro perfil.",
+      "newsId": null
+    }
+  ],
+  "sources": [
+    {
+      "title": "Luz Stella Murgas, nueva presidenta de la ANDI",
+      "url": "https://andi.com.co/Home/Noticia/18107-luz-stella-murgas-es-la-nueva-president"
+    },
+    {
+      "title": "Rusia y Ucrania reportan avances limitados en conversaciones de paz",
+      "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/"
+    },
+    {
+      "title": "El dólar registra una TRM de $3.297,07 en Colombia",
+      "url": "https://valorvigente.com/co/trm/2026/noviembre/"
+    },
+    {
+      "title": "TSMC aprueba invertir hasta US$1.000 millones en OpenAI y Anthropic",
+      "url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/"
+    },
+    {
+      "title": "En la COP31, líderes mundiales piden acelerar la acción climática",
+      "url": "https://www.reuters.com/sustainability/cop/world-leaders-address-cop31-turkey-pushes-new-climate-deal-2026-11-11/"
+    }
+  ],
+  "photoPolicy": "Solo fotografías con licencia verificada y archivo local; si no, lámina editorial con fuente",
+  "publishedToInstagram": false
+}
