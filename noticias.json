@@ -1,10 +1,144 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
   "editionDate": "2026-11-11",
-  "editedAtBogota": "2026-11-11 14:00",
+  "editedAtBogota": "2026-11-11 14:10",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261111-cop31",
+      "category": "Medioambiente · Mundo",
+      "title": "En la COP31, líderes mundiales piden acelerar la acción climática",
+      "summary": "Dirigentes reunidos en la COP31 en Turquía pidieron reforzar la reducción de emisiones y la cooperación frente al cambio climático, sin dejar que las tensiones internacionales desplacen la agenda.",
+      "why": "Las negociaciones climáticas influyen en compromisos de emisiones, financiación y transición energética a escala mundial.",
+      "next": "Los países continúan debatiendo compromisos y mecanismos de implementación durante la conferencia.",
+      "sources": [
+        {
+          "name": "Reuters · 11 nov. 2026",
+          "url": "https://www.reuters.com/sustainability/cop/world-leaders-address-cop31-turkey-pushes-new-climate-deal-2026-11-11/"
+        }
+      ],
+      "audioFullTextEs": "En la conferencia climática COP treinta y uno, que se celebra en Turquía, varios líderes mundiales pidieron acelerar la respuesta internacional frente al cambio climático. Reuters informó este once de noviembre que los participantes advirtieron que las guerras, las tensiones comerciales y otras crisis no deberían desplazar la agenda ambiental. Durante el encuentro se habló de reducir las emisiones, impulsar fuentes de energía más limpias y fortalecer la cooperación y la financiación entre los países. Representantes de distintas regiones también destacaron que las medidas deben considerar las capacidades y necesidades de las economías más vulnerables. Las declaraciones forman parte de una negociación internacional todavía en curso, por lo que no representan por sí solas un acuerdo definitivo. ORBIUNO seguirá los resultados de la conferencia y las decisiones concretas que adopten los gobiernos sobre energía, clima y financiación.",
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 5,
+      "instagramReelOrder": 5,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO a partir de los hechos atribuidos a las fuentes indicadas",
+      "imageRightsVerified": false,
+      "imageNote": "Logotipo de la fuente. Fotografía pendiente de derechos comprobados."
+    },
+    {
+      "id": "orbiuno-20261111-tsmc-ia",
+      "category": "Tecnología · IA",
+      "title": "TSMC aprueba invertir hasta US$1.000 millones en OpenAI y Anthropic",
+      "summary": "El fabricante de chips TSMC autorizó inversiones de hasta US$500 millones en OpenAI y otros US$500 millones en Anthropic, según informó Reuters el 10 de noviembre.",
+      "why": "La decisión refleja cómo la expansión de la inteligencia artificial atrae capital de empresas que también suministran infraestructura tecnológica.",
+      "next": "Las inversiones aprobadas dependen de sus respectivas operaciones y condiciones; no equivalen a desembolsos ya ejecutados.",
+      "sources": [
+        {
+          "name": "Reuters · 10 nov. 2026",
+          "url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/"
+        }
+      ],
+      "audioFullTextEs": "El fabricante taiwanés de semiconductores TSMC aprobó posibles inversiones de hasta mil millones de dólares en dos empresas dedicadas a la inteligencia artificial. De acuerdo con Reuters, la autorización contempla hasta quinientos millones de dólares para Anthropic y otros quinientos millones para OpenAI. La noticia corresponde al anuncio del diez de noviembre de dos mil veintiséis. TSMC es una compañía central en la fabricación de chips utilizados por la industria tecnológica, incluidos componentes que permiten entrenar y ejecutar sistemas de inteligencia artificial. Su decisión muestra el interés de las empresas de infraestructura por participar también en el crecimiento del sector desde el lado de la inversión. Sin embargo, se trata de autorizaciones de inversión, no de la confirmación de que todos los recursos hayan sido entregados. La evolución de estas operaciones y la demanda internacional de semiconductores seguirán siendo temas de atención para la industria.",
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 4,
+      "instagramReelOrder": 4,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO a partir de los hechos atribuidos a las fuentes indicadas",
+      "imageRightsVerified": false,
+      "imageNote": "Logotipo de la fuente. Fotografía pendiente de derechos comprobados."
+    },
+    {
+      "id": "orbiuno-20261111-trm",
+      "category": "Economía",
+      "title": "El dólar registra una TRM de $3.297,07 en Colombia",
+      "summary": "La TRM certificada para el 11 de noviembre de 2026 se situó en $3.297,07 por dólar, $27,19 más que el día anterior, un aumento del 0,83 %.",
+      "why": "Esta tasa de referencia se usa en operaciones y obligaciones que se expresan en dólares, por lo que sus cambios tienen efectos para personas y empresas.",
+      "next": "La cotización de mercado puede cambiar durante la jornada y no debe confundirse con la TRM certificada.",
+      "sources": [
+        {
+          "name": "Registro de TRM con datos de la Superintendencia Financiera · 11 nov.",
+          "url": "https://valorvigente.com/co/trm/2026/noviembre/"
+        },
+        {
+          "name": "Más Colombia · 11 nov. 2026",
+          "url": "https://mascolombia.com/dolar-en-colombia-hoy-trm/"
+        }
+      ],
+      "audioFullTextEs": "La tasa representativa del mercado, o TRM, para este miércoles once de noviembre de dos mil veintiséis fue de tres mil doscientos noventa y siete pesos con siete centavos por dólar estadounidense. El registro presenta un incremento de veintisiete pesos con diecinueve centavos frente a la tasa del martes, equivalente a una variación del cero coma ochenta y tres por ciento. La información procede de datos certificados por la Superintendencia Financiera de Colombia y recopilados en registros públicos de cotización. La TRM es una referencia para operaciones, contratos y obligaciones expresadas en moneda extranjera, aunque no necesariamente coincide con los precios de compra o venta que ofrecen las casas de cambio. Para quienes deben realizar transacciones en dólares, es importante revisar la fecha de vigencia del dato. Seguiremos la evolución del mercado y los próximos registros oficiales.",
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 3,
+      "instagramReelOrder": 3,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO a partir de los hechos atribuidos a las fuentes indicadas",
+      "imageRightsVerified": false,
+      "imageNote": "Logotipo de la fuente. Fotografía pendiente de derechos comprobados."
+    },
+    {
+      "id": "orbiuno-20261111-dialogo-ucrania",
+      "category": "Internacional",
+      "title": "Rusia y Ucrania reportan avances limitados en conversaciones de paz",
+      "summary": "Delegaciones de Rusia y Ucrania reconocieron avances en conversaciones mediadas por Estados Unidos en Abu Dabi, incluido un acuerdo sobre intercambio de prisioneros; siguen diferencias territoriales.",
+      "why": "Los contactos diplomáticos pueden facilitar medidas humanitarias, pero las partes aún mantienen discrepancias sobre cuestiones centrales.",
+      "next": "Los mediadores prevén contactos posteriores; no se ha anunciado un acuerdo definitivo de paz.",
+      "sources": [
+        {
+          "name": "Reuters · 11 nov. 2026",
+          "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/"
+        }
+      ],
+      "audioFullTextEs": "Rusia y Ucrania señalaron que hubo algunos avances después de dos días de conversaciones de paz mediadas por Estados Unidos en Abu Dabi. Según informó Reuters este once de noviembre, las partes alcanzaron un entendimiento importante relacionado con el intercambio de prisioneros de guerra, pero no consiguieron un acuerdo sobre los temas centrales del conflicto. Las diferencias territoriales siguen siendo uno de los mayores obstáculos. Los representantes estadounidenses también reconocieron que todavía existe desconfianza entre las delegaciones. Mientras se realizan las reuniones diplomáticas, los ataques y los combates continúan y afectan a comunidades e infraestructura civil. Por eso, los avances anunciados deben entenderse como un paso en las negociaciones, no como el fin de la guerra. Ahora la atención se concentra en los contactos que puedan mantenerse y en las decisiones de las partes sobre nuevas rondas de diálogo.",
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 2,
+      "instagramReelOrder": 2,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO a partir de los hechos atribuidos a las fuentes indicadas",
+      "imageRightsVerified": false,
+      "imageNote": "Logotipo de la fuente. Fotografía pendiente de derechos comprobados."
+    },
+    {
+      "id": "orbiuno-20261111-andi",
+      "category": "Colombia",
+      "title": "Luz Stella Murgas, nueva presidenta de la ANDI",
+      "summary": "La ANDI eligió el 10 de noviembre a Luz Stella Murgas como su nueva presidenta. Entre sus prioridades estarán la competitividad, la inversión y el empleo formal.",
+      "why": "El gremio representa una parte relevante del sector empresarial colombiano. El nombramiento abre una nueva etapa para sus conversaciones sobre productividad, crecimiento y articulación público-privada.",
+      "next": "Seguir el anuncio de prioridades de la nueva presidenta y sus primeras reuniones con el empresariado y el Gobierno.",
+      "sources": [
+        {
+          "name": "ANDI · Comunicado oficial, 10 nov. 2026",
+          "url": "https://andi.com.co/Home/Noticia/18107-luz-stella-murgas-es-la-nueva-president"
+        }
+      ],
+      "audioFullTextEs": "La Asociación Nacional de Empresarios de Colombia, ANDI, informó que su Junta de Dirección General eligió a Luz Stella Murgas como nueva presidenta del gremio el diez de noviembre de dos mil veintiséis. La decisión siguió un proceso de evaluación de candidatos. La organización señaló que entre los retos de su nueva dirección están mejorar la competitividad de Colombia, impulsar la productividad, atraer inversión y favorecer la generación de empleo formal. El anuncio también destaca la importancia del diálogo entre las empresas y el sector público, junto con la institucionalidad y el desarrollo sostenible. Este cambio en la dirección del gremio empresarial será seguido de cerca por las compañías y por quienes analizan el rumbo de la economía colombiana. Los próximos pasos serán conocer las prioridades específicas de la nueva presidenta y la agenda que presentará para el sector productivo.",
+      "date": "2026-11-11",
+      "editionSlot": "12:00",
+      "priority": 1,
+      "instagramReelOrder": 1,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO a partir de los hechos atribuidos a las fuentes indicadas",
+      "imageRightsVerified": false,
+      "imageNote": "Logotipo de la fuente. Fotografía pendiente de derechos comprobados."
+    },
     {
       "id": "orbiuno-20261111-trm",
       "title": "La TRM del dólar en Colombia se ubicó en $3.297,07",
@@ -21,13 +155,13 @@
       "date": "2026-11-11",
       "editionSlot": "12:00",
       "priority": 1,
-      "instagramReelOrder": 1,
       "level": "Noticia verificada · Fuente original",
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "sourceLanguage": "es",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías.",
+      "editorialNote": "Sustituida por la edición internacional de cinco noticias del 11 de noviembre; conservar en histórico."
     },
     {
       "id": "orbiuno-20261111-ajuste-fiscal",
@@ -49,13 +183,13 @@
       "date": "2026-11-11",
       "editionSlot": "12:00",
       "priority": 2,
-      "instagramReelOrder": 2,
       "level": "Noticia verificada · Fuente original",
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "sourceLanguage": "es",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías.",
+      "editorialNote": "Sustituida por la edición internacional de cinco noticias del 11 de noviembre; conservar en histórico."
     },
     {
       "id": "orbiuno-20261111-ideam",
@@ -77,13 +211,13 @@
       "date": "2026-11-11",
       "editionSlot": "12:00",
       "priority": 3,
-      "instagramReelOrder": 3,
       "level": "Noticia verificada · Fuente original",
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "sourceLanguage": "es",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías.",
+      "editorialNote": "Sustituida por la edición internacional de cinco noticias del 11 de noviembre; conservar en histórico."
     },
     {
       "id": "orbiuno-20261111-inmerxia",
@@ -101,13 +235,13 @@
       "date": "2026-11-11",
       "editionSlot": "12:00",
       "priority": 4,
-      "instagramReelOrder": 4,
       "level": "Noticia verificada · Fuente original",
-      "verification": "editorial_verified",
+      "verification": "editorial_superseded",
       "sourceLanguage": "es",
       "audioIsFullPublisherArticle": false,
       "imageRightsVerified": false,
-      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías."
+      "imageNote": "Se muestran iconos de las fuentes hasta confirmar permiso de uso de fotografías.",
+      "editorialNote": "Sustituida por la edición internacional de cinco noticias del 11 de noviembre; conservar en histórico."
     },
     {
       "id": "rss-f690971f4f6e1ec6",
@@ -16609,8 +16743,8 @@
   "lastNewSourceAtBogota": "2026-11-11T13:44-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición de cuatro noticias preparada para Reel; publicación manual de Instagram pendiente de confirmación. Fotografías sujetas a verificación de derechos.",
-  "editorialFormat": "4 noticias verificadas por edición; cada Reel corresponde a las cuatro notas destacadas de su franja",
+  "editorialNote": "La portada del mediodía contiene 5 noticias verificadas de Colombia y el mundo. Fotografías solo si hay permiso y crédito trazables.",
+  "editorialFormat": "5 noticias por publicación; portada conjunta con titulares resaltados en orden, desarrollo secuencial con fotografías verificadas",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
     "name": "ORBIUNO",
@@ -16894,7 +17028,7 @@
   ],
   "editionSlot": "12:00",
   "openingScriptEs": "Buenos días. Son las ocho de la mañana de este viernes seis de noviembre. Esto es ORBIUNO. Hackers de Corea del Norte: robo de US$6.300 millones. 104 armas de guerra decomisadas en el Caribe. Inflación podría cerrar 2026 en 7,1 %. Jhon Arias brilla: doblete en solo 14 minutos. El papa vuelve a Suramérica tras una operación. Ormuz: barcos reportan nuevos ataques. Anthropic: dudas sobre su millonaria salida a bolsa. Desplome tecnológico golpea a fondos globales. Tribunal ordena libertad de Luis F. Velasco. Piden ahorrar energía entre las 6 y las 9 p. m.. Encuentra el desarrollo completo y las fuentes originales en colombia-al-dia.pages.dev.",
-  "editionLabel": "Edición del 11 de noviembre de 2026 · 4 noticias",
+  "editionLabel": "11 de noviembre de 2026 · Colombia y el mundo",
   "editionSlots": [
     "08:00",
     "12:00",
