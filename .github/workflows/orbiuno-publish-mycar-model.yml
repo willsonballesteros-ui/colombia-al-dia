@@ -50,6 +50,11 @@ jobs:
           name: ${{ inputs.artifact_name }}
           github-token: ${{ github.token }}
           path: dist/orbiuno-approved
+      - name: Comprobar motor y pruebas de validación sin Meta
+        run: |
+          python3 -m unittest discover -s tests -p 'test_orbiuno_binary_publish.py' -v
+          python3 -m py_compile scripts/publish_orbiuno_binary.py
+          ffprobe -version
       - name: Revisar MP4, SHA, aprobaciones y cuenta de ORBIUNO
         env:
           ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
