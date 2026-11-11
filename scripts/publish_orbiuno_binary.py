@@ -87,7 +87,7 @@ def main():
     ap.add_argument("--expected-sha", required=True)
     ap.add_argument("--publish", action="store_true")
     args = ap.parse_args()
-    if not re.fullmatch(r"ORBIUNO-20\\d{2}-\\d{2}-\\d{2}-(0800|1200|1800)", args.edition_key):
+    if not re.fullmatch(r"ORBIUNO-20\d{2}-\d{2}-\d{2}-(0800|1200|1800)", args.edition_key):
         raise RuntimeError("Identificador invalido")
     target_date = args.edition_key[8:18]
     if target_date != datetime.now(ZoneInfo("America/Bogota")).date().isoformat():
@@ -113,7 +113,7 @@ def main():
     if str(profile.get("id")) != user_id or profile.get("username", "").lower() != ACCOUNT:
         raise RuntimeError("Token no autorizado para @resumen.noticias")
     marker = "[" + args.edition_key + "]"
-    caption = caption + "\\n\\n" + marker
+    caption = caption + "\n\n" + marker
     media = graph("GET", user_id + "/media",
                   {"fields": "id,caption,permalink,media_product_type", "limit": "100"})
     for item in media.get("data", []):
@@ -138,7 +138,7 @@ def main():
     if not (cid.isdigit() and url.scheme == "https" and url.hostname == "rupload.facebook.com"
             and url.path == "/ig-api-upload/v27.0/" + cid and not url.query):
         raise RuntimeError("URI de carga no autorizada")
-    cfg = 'header = "Authorization: OAuth ' + token + '"\\n'
+    cfg = 'header = "Authorization: OAuth ' + token + '"\n'
     cp = subprocess.run(
         ["curl", "--silent", "--show-error", "--max-time", "120",
          "--config", "-", "--request", "POST",
@@ -146,9 +146,9 @@ def main():
          "--header", "file_size: " + str(path.stat().st_size),
          "--header", "Content-Type: application/octet-stream",
          "--data-binary", "@" + str(path),
-         "--write-out", "\\n%{http_code}", url.geturl()],
+         "--write-out", "\n%{http_code}", url.geturl()],
         input=cfg, text=True, capture_output=True, timeout=140)
-    body, _, status = cp.stdout.rpartition("\\n")
+    body, _, status = cp.stdout.rpartition("\n")
     try:
         transfer = json.loads(body)
     except ValueError:
