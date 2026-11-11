@@ -1,0 +1,69 @@
+name: ORBIUNO render 2026-11-10
+on:
+  push:
+    branches: [feat/orbiuno-four-news-production-20261110]
+    paths: [.github/workflows/orbiuno-render-20261110.yml]
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg python3-pil
+      - name: Get approved Camila Vega audio
+        env:
+          CAMILA_URL: https://resource2.heygen.ai/text_to_speech/d70926a0957942a08157e6b10d20d467/6ce26db0cb6f4e7881b85452619f7f19/id=76635699c0874400810fb244bdbe2d4b.wav
+        run: |
+          curl -fL --retry 2 "$CAMILA_URL" -o camila.wav
+          ffprobe -v error -show_entries format=duration -of default=nw=1 camila.wav
+      - name: Create editable news cards
+        run: |
+          cat > cards.py <<'PY'
+          from PIL import Image,ImageDraw,ImageFont
+          import textwrap,os
+          os.makedirs('frames',exist_ok=True)
+          F='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          B='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          cards=[
+            ('ORBIUNO','NOTICIAS DEL 10 DE NOVIEMBRE','CUATRO NOTICIAS · COLOMBIA Y EL MUNDO','ORBIUNO',6),
+            ('01 · COLOMBIA','GOBIERNO PROPONE RECORTE','DEL GASTO PÚBLICO EN UN PUNTO DEL PIB','Fuente: Ministerio de Hacienda · 10 nov. 2026',11),
+            ('02 · ECONOMÍA','LUZ STELLA MURGAS','NUEVA PRESIDENTA DE LA ANDI','Fuente: ANDI · 10 nov. 2026',10),
+            ('03 · COLOMBIA','INFLACIÓN ANUAL: 6,30 %','DATO DE OCTUBRE DE 2026','Fuente: DANE · 9 nov. 2026',10),
+            ('04 · CURIOSIDAD POSITIVA','REGRESAN LOS CASTORES','A LA REGIÓN DEL LAGO NESS TRAS 500 AÑOS','Fuente: Beaver Trust · 6 nov. 2026',10),
+            ('SÍGUENOS','@resumen.noticias','LEE Y ESCUCHA EN VOZ ALTA','colombia-al-dia.pages.dev',8)]
+          for i,(tag,title,desc,foot,seconds) in enumerate(cards):
+            im=Image.new('RGB',(720,1280));p=im.load()
+            for y in range(1280):
+              for x in range(720):
+                v=int(15+18*y/1280+15*x/720);p[x,y]=(v,v+8,min(v+31,255))
+            d=ImageDraw.Draw(im)
+            d.rectangle((37,60,683,73),fill=(47,199,207))
+            d.text((44,120),tag,font=ImageFont.truetype(B,34),fill=(57,220,223))
+            y=350
+            for line in textwrap.wrap(title,17):
+              d.text((42,y),line,font=ImageFont.truetype(B,63),fill='white');y+=90
+            y+=36
+            for line in textwrap.wrap(desc,28):
+              d.text((45,y),line,font=ImageFont.truetype(F,32),fill=(214,231,237));y+=51
+            d.line((43,1040,675,1040),fill=(80,156,169),width=3)
+            d.text((44,1092),foot,font=ImageFont.truetype(F,22),fill=(200,220,226))
+            d.text((45,1190),'ORBIUNO   ·   10 NOV 2026',font=ImageFont.truetype(B,22),fill=(67,209,215))
+            im.save('frames/%02d.png'%i)
+          with open('frames.txt','w') as f:
+            for i,card in enumerate(cards):
+              f.write("file 'frames/%02d.png'\n"%(i))
+              f.write("duration %d\n"%card[-1])
+            f.write("file 'frames/05.png'\n")
+          PY
+          python3 cards.py
+      - name: Encode and validate iPhone MP4
+        run: |
+          ffmpeg -y -f concat -safe 0 -i frames.txt -i camila.wav -filter_complex "[1:a]atempo=1.25,apad=pad_dur=14[a]" -map 0:v -map "[a]" -t 55 -r 25 -c:v libx264 -pix_fmt yuv420p -preset veryfast -crf 25 -c:a aac -b:a 160k -movflags +faststart ORBIUNO_2026-11-10_REVISION.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 ORBIUNO_2026-11-10_REVISION.mp4
+          sha256sum ORBIUNO_2026-11-10_REVISION.mp4 > SHA256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-2026-11-10-revision
+          path: |
+            ORBIUNO_2026-11-10_REVISION.mp4
+            SHA256.txt
+          retention-days: 7
