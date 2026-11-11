@@ -90,7 +90,7 @@ def news_slide(day,n,index,out):
     source=n["sources"][0]
     d.rounded_rectangle((43,1011,677,1110),radius=15,fill="#234e68")
     d.text((60,1031),"FUENTE ORIGINAL",font=face(20),fill=TEAL)
-    para(d,source["name"],60,1065,face(18,False),577,WHITE,23,1)
+    para(d,source["name"].split(" · ")[0][:39],60,1065,face(17,False),577,WHITE,23,1)
     im.save(out)
     return bool(valid and local and local.is_file())
 
