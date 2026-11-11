@@ -11,14 +11,14 @@
   },
   "intro": {
     "narration": "Orbiuno. Estas son las cinco noticias clave de Colombia y el mundo. Luz Stella Murgas se convierte en la primera mujer que preside la Andi. Las acciones tecnológicas impulsan los mercados mundiales por el entusiasmo con la inteligencia artificial. MinCiencias recibe ciento treinta y seis proyectos para reconstruir las regiones afectadas por el terremoto. Un estudio descubre por qué algunas especies de mosquitos prefieren picar a ciertas personas. Un video viral moviliza más de setenta y seis mil dólares para apoyar a una cuidadora.",
-    "audioFile": "audio/intro_lead.wav",
-    "leadAudioFile": "audio/intro_lead.wav",
+    "audioFile": "2026-11-11-0800-5news/audio/intro_lead.wav",
+    "leadAudioFile": "2026-11-11-0800-5news/audio/intro_lead.wav",
     "headlineAudioFiles": [
-      "audio/titular_01.wav",
-      "audio/titular_02.wav",
-      "audio/titular_03.wav",
-      "audio/titular_04.wav",
-      "audio/titular_05.wav"
+      "2026-11-11-0800-5news/audio/titular_01.wav",
+      "2026-11-11-0800-5news/audio/titular_02.wav",
+      "2026-11-11-0800-5news/audio/titular_03.wav",
+      "2026-11-11-0800-5news/audio/titular_04.wav",
+      "2026-11-11-0800-5news/audio/titular_05.wav"
     ],
     "headlineTimings": []
   },
@@ -31,13 +31,13 @@
       "verification": "pending",
       "title": "Luz Stella Murgas se convierte en la primera mujer que preside la Andi.",
       "narration": "En Colombia, Luz Stella Murgas fue elegida presidenta de la Andi. Es la primera mujer en dirigir el gremio empresarial en sus ochenta y dos años de historia.",
-      "audioFile": "audio/01.wav",
+      "audioFile": "2026-11-11-0800-5news/audio/01.wav",
       "source": {
         "name": "Caracol Radio",
         "url": "https://caracol.com.co/2026/11/10/luz-stella-murgas-fue-elegida-presidente-de-la-andi-la-primera-mujer-en-ocupar-el-cargo/"
       },
       "image": {
-        "file": "images/01.jpg",
+        "file": "2026-11-11-0800-5news/images/01.jpg",
         "sourceUrl": "",
         "credit": "",
         "license": "",
@@ -52,13 +52,13 @@
       "verification": "pending",
       "title": "Las acciones tecnológicas impulsan los mercados mundiales por el entusiasmo con la inteligencia artificial.",
       "narration": "En el mundo, las acciones tecnológicas repuntaron este miércoles. Reuters atribuye el impulso a nuevas expectativas sobre inteligencia artificial, mientras inversionistas siguen atentos a las tasas de interés.",
-      "audioFile": "audio/02.wav",
+      "audioFile": "2026-11-11-0800-5news/audio/02.wav",
       "source": {
         "name": "Reuters",
         "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
       },
       "image": {
-        "file": "images/02.jpg",
+        "file": "2026-11-11-0800-5news/images/02.jpg",
         "sourceUrl": "",
         "credit": "",
         "license": "",
@@ -73,13 +73,13 @@
       "verification": "pending",
       "title": "MinCiencias recibe ciento treinta y seis proyectos para reconstruir las regiones afectadas por el terremoto.",
       "narration": "En Colombia, MinCiencias recibió ciento treinta y seis propuestas para la reconstrucción después del terremoto de agosto. La convocatoria dispone de setecientos mil millones de pesos para apoyar proyectos seleccionados.",
-      "audioFile": "audio/03.wav",
+      "audioFile": "2026-11-11-0800-5news/audio/03.wav",
       "source": {
         "name": "Ministerio de Ciencia, Tecnología e Innovación",
         "url": "https://minciencias.gov.co/sala_de_prensa/la-ciencia-responde-al-terremoto-convocatoria-emergencia-cierra-con-136-proyectos"
       },
       "image": {
-        "file": "images/03.jpg",
+        "file": "2026-11-11-0800-5news/images/03.jpg",
         "sourceUrl": "",
         "credit": "",
         "license": "",
@@ -94,13 +94,13 @@
       "verification": "pending",
       "title": "Un estudio descubre por qué algunas especies de mosquitos prefieren picar a ciertas personas.",
       "narration": "En ciencia, una investigación encontró que distintas especies de mosquitos reaccionan a combinaciones diferentes de olores y sustancias de la piel humana. El hallazgo podría orientar nuevos repelentes.",
-      "audioFile": "audio/04.wav",
+      "audioFile": "2026-11-11-0800-5news/audio/04.wav",
       "source": {
         "name": "ScienceDaily",
         "url": "https://www.sciencedaily.com/releases/2026/11/261106174541.htm"
       },
       "image": {
-        "file": "images/04.jpg",
+        "file": "2026-11-11-0800-5news/images/04.jpg",
         "sourceUrl": "",
         "credit": "",
         "license": "",
@@ -115,13 +115,13 @@
       "verification": "pending",
       "title": "Un video viral moviliza más de setenta y seis mil dólares para apoyar a una cuidadora.",
       "narration": "Y nuestra historia viral: un video de solidaridad con una repartidora que cuida a su madre de ochenta y dos años impulsó donaciones por más de setenta y seis mil dólares. Una historia de empatía.",
-      "audioFile": "audio/05.wav",
+      "audioFile": "2026-11-11-0800-5news/audio/05.wav",
       "source": {
         "name": "Good News Network",
         "url": "https://www.goodnewsnetwork.org/viral-video-raises-76000-for-caregiver/"
       },
       "image": {
-        "file": "images/05.jpg",
+        "file": "2026-11-11-0800-5news/images/05.jpg",
         "sourceUrl": "",
         "credit": "",
         "license": "",
@@ -133,7 +133,7 @@
   ],
   "outro": {
     "narration": "Síguenos en Instagram, arroba resumen punto noticias, y mantente informado. Visita colombia al día punto pages punto dev para leer y escuchar las noticias. ¡Orbiuno, las noticias que importan!",
-    "audioFile": "audio/outro.wav"
+    "audioFile": "2026-11-11-0800-5news/audio/outro.wav"
   },
   "approval": {
     "editorialApproved": false,
@@ -144,7 +144,7 @@
     "finalReviewApproved": false
   },
   "music": {
-    "file": "audio/music.mp3",
+    "file": "2026-11-11-0800-5news/audio/music.mp3",
     "sourceUrl": "",
     "credit": "",
     "license": "",
