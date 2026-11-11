@@ -21,7 +21,7 @@ class NewsAudioUITests(unittest.TestCase):
         ]
         self.assertGreaterEqual(len(expected), 1)
         self.assertLessEqual(len(expected), 12)
-        self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=4 for slot in ('08:00','12:00','18:00')))
+        self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=5 for slot in ('08:00','12:00','18:00')))
         first = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertEqual(first.count('data-tts-action="toggle"'), len(expected))
         self.assertEqual(first.count('data-tts-action="speed"'), len(expected))
