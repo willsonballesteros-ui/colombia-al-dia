@@ -2,7 +2,10 @@
 import hashlib
 import json
 import os
+import sys
+import time
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import urlopen
 
@@ -10,8 +13,17 @@ SITE = "https://colombia-al-dia.pages.dev"
 
 
 def download(url):
-    with urlopen(url, timeout=30) as response:
-        return response.read()
+    for attempt in range(3):
+        try:
+            with urlopen(url, timeout=30) as response:
+                return response.read()
+        except HTTPError as error:
+            if error.code not in {408, 429, 500, 502, 503, 504} or attempt == 2:
+                raise
+        except (URLError, TimeoutError):
+            if attempt == 2:
+                raise
+        time.sleep(2 ** attempt)
 
 
 def caption_for(manifest, site):
@@ -38,15 +50,27 @@ def caption_for(manifest, site):
     if public_sources != [(s["id"], s["title"], s["url"]) for s in sources]:
         raise ValueError("El sitio público y el Reel difieren en noticias, orden o fuentes")
 
+    return build_caption(manifest)
+
+
+def build_caption(manifest):
+    sources = manifest["sources"]
     lines = [f"ORBIUNO | {manifest['date']} · {manifest['slot']}", ""]
     for index, source in enumerate(sources, 1):
-        lines.extend([f"{index}. {source['title']}", source["url"]])
+        title = " ".join(source["title"].split())
+        lines.extend([f"{index}. {title}", source["url"]])
     lines.extend(["", "👇 Síguenos en colombia-al-dia.pages.dev y escucha en voz alta la noticia que más te interese. Enlace en el perfil."])
     return "\n".join(lines)
 
 
 def main():
-    manifest = json.loads((Path(os.environ["EDITION_DIR"]) / "manifest.json").read_text())
+    directory = Path(os.environ["EDITION_DIR"])
+    manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+    if sys.argv[1:] == ["--caption-only"]:
+        (directory / "descripcion_instagram.txt").write_text(
+            build_caption(manifest) + "\n", encoding="utf-8"
+        )
+        return
     site = json.loads(download(f"{SITE}/noticias.json"))
     caption = caption_for(manifest, site)
     video_url = (

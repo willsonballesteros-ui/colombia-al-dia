@@ -63,11 +63,16 @@ jobs:
           assert video.stat().st_size > 100000 and hashlib.sha256(video.read_bytes()).hexdigest()==p["sha256"]
           print("VALIDADO",video,video.stat().st_size,p["duration"])
           PY
+      - name: Generar descripción para entrega manual
+        run: python scripts/prepare_instagram_reel.py --caption-only
       - name: Guardar MP4 en artifacts (descarga sin Metricool)
         uses: actions/upload-artifact@v4
         with:
           name: ORBIUNO-5-NOTICIAS
-          path: dist/orbiuno-*/ORBIUNO_*.mp4
+          path: |
+            ${{ env.EDITION_DIR }}/ORBIUNO_*.mp4
+            ${{ env.EDITION_DIR }}/descripcion_instagram.txt
+            ${{ env.EDITION_DIR }}/manifest.json
           retention-days: 30
           if-no-files-found: error
       - name: Guardar pruebas y créditos
