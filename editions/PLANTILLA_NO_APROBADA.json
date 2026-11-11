@@ -11,7 +11,15 @@
   "intro": {
     "narration": "Orbiuno. Estas son las noticias más importantes de Colombia y el mundo. [NARRAR AQUÍ LOS CINCO TITULARES EN EL ORDEN DE PANTALLA]",
     "audioFile": "audio/intro.wav",
-    "headlineTimings": []
+    "headlineTimings": [],
+    "leadAudioFile": "audio/intro_lead.wav",
+    "headlineAudioFiles": [
+      "audio/titular_01.wav",
+      "audio/titular_02.wav",
+      "audio/titular_03.wav",
+      "audio/titular_04.wav",
+      "audio/titular_05.wav"
+    ]
   },
   "news": [
     {
