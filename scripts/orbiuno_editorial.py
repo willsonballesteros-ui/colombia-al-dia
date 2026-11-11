@@ -58,9 +58,9 @@ def choose(candidates: list, edition_date: str) -> list:
             continue
     regular = [x for x in found if x.get("tone") not in ("positive", "curious")]
     closing = [x for x in found if x.get("tone") in ("positive", "curious")]
-    if len(regular) < 3 or not closing:
-        raise ValueError("BLOCKED: need 3 sourced news items plus a positive/curious closer")
-    return regular[:3] + [closing[0]]
+    if len(regular) < 4 or not closing:
+        raise ValueError("BLOCKED: need 4 sourced news items plus a positive/curious closer")
+    return regular[:4] + [closing[0]]
 
 def build(candidates: list, edition_date: str, slot: str, template_path: Path = TEMPLATE) -> dict:
     date.fromisoformat(edition_date)
@@ -73,6 +73,9 @@ def build(candidates: list, edition_date: str, slot: str, template_path: Path = 
     data["editionDate"], data["slot"] = edition_date, slot
     data["voice"]["speed"], data["voice"]["recordedAtSpeed"] = 1.25, 1.0
     data["intro"]["audioFile"] = "audio/intro.wav"
+    data["intro"]["narration"] = "Orbiuno. Estas son las cinco noticias más importantes de Colombia y el mundo. " + " ".join(x["title"].strip() + "." for x in chosen)
+    data["intro"]["headlineTimings"] = []  # Created from actual title voice recordings, never equal intervals
+    data["format"] = "5_news_official"
     data["outro"]["audioFile"] = "audio/outro.wav"
     data["news"] = []
     for i, item in enumerate(chosen, 1):
