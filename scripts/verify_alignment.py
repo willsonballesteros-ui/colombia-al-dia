@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Revisar coincidencia exacta de los cuatro IDs entre Reel, JSON web y web pública.
+"""Revisar coincidencia exacta de los cinco IDs entre Reel, JSON web y web pública.
 La ausencia de respuesta de la web bloquea aprobación, no se interpreta como OK.
 """
 import argparse, json, urllib.request
@@ -14,7 +14,7 @@ def check(manifest, newsdb, html):
                    x.get('verification')=='editorial_verified' and isinstance(x.get('instagramReelOrder'),int) and
                    not isinstance(x.get('instagramReelOrder'),bool) and x['instagramReelOrder']>0),key=lambda x:x['instagramReelOrder'])
     ids=[x['id'] for x in actual]
-    if ids!=expected or [x['instagramReelOrder'] for x in actual] != [1,2,3,4]:
+    if ids!=expected or [x['instagramReelOrder'] for x in actual] != [1,2,3,4,5]:
         raise RuntimeError(f'WEB NO SINCRONIZADA. Reel={expected}; web={ids}')
     for i,item in enumerate(m['news']):
         if actual[i].get('title')!=item['title']:
@@ -38,6 +38,6 @@ def main():
         check(args.manifest,args.newsdb,html)
     except Exception as e:
         p.exit(2,'BLOQUEO DE SINCRONIZACIÓN: '+str(e)+'\n')
-    print('WEB Y REEL COINCIDEN: cuatro IDs, orden, titulares, fuentes y fichas visibles.')
+    print('WEB Y REEL COINCIDEN: cinco IDs, orden, titulares, fuentes y fichas visibles.')
 
 if __name__=='__main__':main()
