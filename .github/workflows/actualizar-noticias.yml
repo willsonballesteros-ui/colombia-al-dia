@@ -39,6 +39,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Ejecutar pruebas de regresión
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
       - name: Incorporar titulares
         run: python scripts/sync_sources.py --data noticias.json
 
@@ -58,9 +61,7 @@ jobs:
           python scripts/generate_web_voice.py
 
       - name: Validar integridad y clasificación
-        run: |
-          python -m unittest discover -s tests -p 'test_*.py'
-          python scripts/validate_news.py noticias.json
+        run: python scripts/validate_news.py noticias.json
 
       - name: Actualizar portada HTML accesible
         run: python scripts/prepare_site.py
@@ -71,7 +72,7 @@ jobs:
           import re
           from pathlib import Path
           raw=Path('index.html').read_text(encoding='utf-8')
-          scripts=re.findall(r'<script(?:\\s+[^>]*)?>(.*?)</script>',raw,re.S)
+          scripts=re.findall(r'<script(?:\s+[^>]*)?>(.*?)</script>',raw,re.S)
           assert scripts and 'const player=new Audio()' in scripts[-1], 'Reproductor de audio ausente'
           Path('/tmp/orbiuno-frontend.js').write_text(scripts[-1], encoding='utf-8')
           PY
