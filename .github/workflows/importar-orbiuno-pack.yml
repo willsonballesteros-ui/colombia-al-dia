@@ -1,0 +1,60 @@
+name: ORBIUNO - Importar ZIP Claude desde Drive sin publicar
+on:
+  push:
+    branches: [feat/carrusel-orbiuno]
+    paths: ['.github/workflows/importar-orbiuno-pack.yml']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/carrusel-orbiuno
+      - name: Descargar y validar ZIP exacto
+        env:
+          DRIVE_FILE: '1Ovs9HU6ljTN7caAJ6v4_oztIS-TKlr0X'
+          EXPECTED_SHA: '1f95487ae05d24fbe8f3323a9e5b310c653a31a7e8cc7c912d3f0b04e5135ff0'
+        run: |
+          python - <<'PY'
+          import hashlib, os, urllib.request
+          fid=os.environ['DRIVE_FILE']; expected=os.environ['EXPECTED_SHA']
+          for suffix in ('', '&confirm=t'):
+              try:
+                  url=f'https://drive.google.com/uc?export=download&id={fid}{suffix}'
+                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+                  with urllib.request.urlopen(req,timeout=35) as r: raw=r.read(250000)
+                  if hashlib.sha256(raw).hexdigest()==expected:
+                      open('/tmp/orbiuno-pack.zip','wb').write(raw)
+                      print('SHA-256 OK');break
+              except Exception as exc: print(type(exc).__name__)
+          else: raise SystemExit('BLOQUEADO: Drive no entrega el ZIP autorizado')
+          PY
+      - name: Copiar únicamente los archivos del paquete (sin tocar preflight)
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          names=['scripts/orbiuno_audio_check.py','scripts/orbiuno_approval.py','scripts/orbiuno_gate.py','scripts/orbiuno_meta_publish.py','scripts/orbiuno_media_registry.py','scripts/orbiuno_idempotency.py','branding/logos/registry.example.json','tests/test_orbiuno_gate.py','docs/INTEGRACION_ORBIUNO_PACK.md']
+          with ZipFile('/tmp/orbiuno-pack.zip') as z:
+              for name in names:
+                  dst=Path(name)
+                  if dst.exists(): raise SystemExit('BLOQUEADO: archivo existente '+name)
+                  info=z.getinfo('pack/'+name)
+                  if info.file_size>200000: raise SystemExit('Archivo de tamaño excesivo')
+                  dst.parent.mkdir(parents=True,exist_ok=True)
+                  dst.write_bytes(z.read(info))
+                  print('Importado '+name)
+          PY
+          python -m py_compile scripts/orbiuno_*.py tests/test_orbiuno_gate.py
+      - name: Registrar cambios únicamente en rama de desarrollo
+        run: |
+          test "$(git branch --show-current)" = 'feat/carrusel-orbiuno'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/orbiuno_*.py tests/test_orbiuno_gate.py branding/logos/registry.example.json docs/INTEGRACION_ORBIUNO_PACK.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'Importar módulos Claude verificados; publicación bloqueada'
+          git push origin HEAD:feat/carrusel-orbiuno

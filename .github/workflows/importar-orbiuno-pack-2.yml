@@ -1,0 +1,59 @@
+name: ORBIUNO - Importar segundo paquete verificado
+on:
+  push:
+    branches: [feat/carrusel-orbiuno]
+    paths: ['.github/workflows/importar-orbiuno-pack-2.yml']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/carrusel-orbiuno
+      - name: Descargar archivo de Drive y verificar integridad
+        env:
+          DRIVE_ID: '1Y1ICjkk5DtZSukw_6CTrrV3M0xjGymH3'
+          EXPECTED_SHA: '45bc8cdc7bdaec2e4d814232e699cafb7a905521de0cc32277a6f2fe907da1ce'
+        run: |
+          python - <<'PY'
+          import hashlib,os,urllib.request
+          ident=os.environ['DRIVE_ID']; expect=os.environ['EXPECTED_SHA']
+          for query in ('','&confirm=t'):
+              try:
+                  link=f'https://drive.google.com/uc?export=download&id={ident}{query}'
+                  with urllib.request.urlopen(urllib.request.Request(link,headers={'User-Agent':'Mozilla/5.0'}),timeout=35) as response: data=response.read(500000)
+                  if hashlib.sha256(data).hexdigest()==expect:
+                      open('/tmp/orbiuno-pack-2.zip','wb').write(data)
+                      print('SHA-256 correcto; ZIP idéntico al adjunto')
+                      break
+              except Exception as exc: print(type(exc).__name__)
+          else: raise SystemExit('BLOQUEADO: el archivo Drive no coincide con SHA esperado')
+          PY
+      - name: Extraer únicamente los cinco módulos nuevos
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          allowed=['scripts/orbiuno_carousel.py','scripts/orbiuno_web.py','scripts/orbiuno_media_manager.py','scripts/orbiuno_voice.py','tests/test_orbiuno_build.py']
+          with ZipFile('/tmp/orbiuno-pack-2.zip') as z:
+              for relative in allowed:
+                  dst=Path(relative)
+                  if dst.exists(): raise SystemExit('BLOQUEADO: no se sustituye '+relative)
+                  info=z.getinfo('pack/'+relative)
+                  if info.file_size>200000 or info.is_dir(): raise SystemExit('Archivo no permitido')
+                  dst.parent.mkdir(parents=True,exist_ok=True)
+                  dst.write_bytes(z.read(info))
+                  print('Añadido:',relative)
+          PY
+          python -m py_compile scripts/orbiuno_carousel.py scripts/orbiuno_web.py scripts/orbiuno_media_manager.py scripts/orbiuno_voice.py tests/test_orbiuno_build.py
+      - name: Registrar solamente en rama de PR
+        run: |
+          test "$(git branch --show-current)" = 'feat/carrusel-orbiuno'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/orbiuno_carousel.py scripts/orbiuno_web.py scripts/orbiuno_media_manager.py scripts/orbiuno_voice.py tests/test_orbiuno_build.py
+          git commit -m 'ORBIUNO: integrar carrusel, web, gestor de fotos y voz del paquete Claude 2'
+          git push origin HEAD:feat/carrusel-orbiuno

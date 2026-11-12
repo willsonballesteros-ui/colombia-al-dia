@@ -1,0 +1,12 @@
+{
+  "fuentes": {
+    "el-tiempo": {
+      "nombre_oficial": "El Tiempo",
+      "dominios": ["eltiempo.com"],
+      "archivo": "el-tiempo.svg",
+      "url_origen": "COMPLETAR: página oficial de identidad/prensa del medio",
+      "sha256": "COMPLETAR: sha256 del archivo",
+      "condiciones_uso": "COMPLETAR: autorización o términos que permiten usarlo"
+    }
+  }
+}
