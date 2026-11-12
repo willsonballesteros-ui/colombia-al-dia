@@ -1,0 +1,74 @@
+name: ORBIUNO | Publicar directo sin Metricool
+on:
+  workflow_dispatch:
+    inputs:
+      image_url:
+        description: 'URL HTTPS pública de imagen con permiso de uso'
+        required: true
+        type: string
+      caption:
+        description: 'Texto de publicación, incluyendo enlace a la fuente'
+        required: true
+        type: string
+      rights_confirmed:
+        description: 'Confirmo derechos de uso de la imagen'
+        required: true
+        type: boolean
+        default: false
+      destination:
+        description: 'Red social'
+        required: true
+        type: choice
+        options:
+          - instagram
+          - facebook
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-publish-manual
+  cancel-in-progress: false
+jobs:
+  publicar:
+    if: inputs.rights_confirmed == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.ORBIUNO_FB_PAGE_ID }}
+      FB_PAGE_ACCESS_TOKEN: ${{ secrets.ORBIUNO_FB_PAGE_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enviar publicación oficial de Meta
+        shell: bash
+        env:
+          IMAGE_URL: ${{ inputs.image_url }}
+          CAPTION_TEXT: ${{ inputs.caption }}
+          DESTINATION: ${{ inputs.destination }}
+        run: |
+          python - <<'PY'
+          import os, pathlib
+          pathlib.Path('/tmp/orbiuno_caption.txt').write_text(os.environ['CAPTION_TEXT'], encoding='utf-8')
+          PY
+          if [ "$DESTINATION" = instagram ]; then
+            python scripts/publish_instagram_direct.py \
+              --image-url "$IMAGE_URL" \
+              --caption-file /tmp/orbiuno_caption.txt \
+              --rights-confirmed --confirm-publish | tee /tmp/orbiuno_publish_result.json
+          else
+            python scripts/publish_facebook_direct.py \
+              --image-url "$IMAGE_URL" \
+              --caption-file /tmp/orbiuno_caption.txt \
+              --rights-confirmed --confirm-publish | tee /tmp/orbiuno_publish_result.json
+          fi
+      - name: Guardar resultado verificable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-publicacion-resultado
+          path: /tmp/orbiuno_publish_result.json
+          if-no-files-found: ignore
+          retention-days: 30
