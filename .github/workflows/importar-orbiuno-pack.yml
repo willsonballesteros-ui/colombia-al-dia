@@ -37,7 +37,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           from zipfile import ZipFile
-          names=['.github/workflows/carrusel-publicar.yml','scripts/orbiuno_audio_check.py','scripts/orbiuno_approval.py','scripts/orbiuno_gate.py','scripts/orbiuno_meta_publish.py','scripts/orbiuno_media_registry.py','scripts/orbiuno_idempotency.py','branding/logos/registry.example.json','tests/test_orbiuno_gate.py','docs/INTEGRACION_ORBIUNO_PACK.md']
+          names=['scripts/orbiuno_audio_check.py','scripts/orbiuno_approval.py','scripts/orbiuno_gate.py','scripts/orbiuno_meta_publish.py','scripts/orbiuno_media_registry.py','scripts/orbiuno_idempotency.py','branding/logos/registry.example.json','tests/test_orbiuno_gate.py','docs/INTEGRACION_ORBIUNO_PACK.md']
           with ZipFile('/tmp/orbiuno-pack.zip') as z:
               for name in names:
                   dst=Path(name)
@@ -54,7 +54,7 @@ jobs:
           test "$(git branch --show-current)" = 'feat/carrusel-orbiuno'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add scripts/orbiuno_*.py tests/test_orbiuno_gate.py branding/logos/registry.example.json docs/INTEGRACION_ORBIUNO_PACK.md .github/workflows/carrusel-publicar.yml
+          git add scripts/orbiuno_*.py tests/test_orbiuno_gate.py branding/logos/registry.example.json docs/INTEGRACION_ORBIUNO_PACK.md
           git diff --cached --quiet && exit 0
           git commit -m 'Importar módulos Claude verificados; publicación bloqueada'
           git push origin HEAD:feat/carrusel-orbiuno
