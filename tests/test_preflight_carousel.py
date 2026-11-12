@@ -1,7 +1,10 @@
 import hashlib, importlib.util, json, subprocess, tempfile, unittest
 from pathlib import Path
 from unittest.mock import patch
-from PIL import Image
+try:
+    from PIL import Image
+except ImportError:
+    Image = None  # El job dedicado instala Pillow y ejecuta estas pruebas obligatoriamente.
 root = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("carousel_preflight", root/"scripts/preflight_carousel.py")
 mod = importlib.util.module_from_spec(spec)
@@ -9,6 +12,8 @@ spec.loader.exec_module(mod)
 
 class CarouselSafety(unittest.TestCase):
     def setUp(self):
+        if Image is None:
+            self.skipTest('Pillow no está instalado; el workflow carrusel-pr-audit exige las pruebas completas')
         self.tmp=tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.root=Path(self.tmp.name)
