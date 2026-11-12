@@ -1,0 +1,43 @@
+name: ORBIUNO | Diagnóstico seguro de conexión Meta
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-verificar-meta.yml'
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.ORBIUNO_FB_PAGE_ID }}
+      FB_PAGE_ACCESS_TOKEN: ${{ secrets.ORBIUNO_FB_PAGE_ACCESS_TOKEN }}
+    steps:
+      - name: Comprobar existencia de autorización sin revelar secretos
+        shell: bash
+        run: |
+          python - <<'PY'
+          import os,sys,urllib.request,urllib.parse,json
+          uid=os.environ.get("IG_USER_ID","")
+          token=os.environ.get("IG_ACCESS_TOKEN","")
+          if not uid or not token:
+              print("ESTADO: PENDIENTE. Instagram Login aún no tiene ID/token configurados en secretos GitHub.")
+              sys.exit(2)
+          url="https://graph.instagram.com/v26.0/me?fields=id,username"
+          try:
+              req=urllib.request.Request(url,headers={"Authorization":"Bearer "+token})
+              with urllib.request.urlopen(req,timeout=20) as r:
+                  data=json.load(r)
+              if str(data.get("id")) != uid:
+                  print("ESTADO: ERROR. El usuario de Instagram no corresponde al ID configurado.")
+                  sys.exit(3)
+              print("ESTADO: TOKEN VÁLIDO. Cuenta @"+str(data.get("username","sin_nombre")))
+              print("NOTA: La verificación del token no confirma aún el permiso de publicación.")
+          except Exception:
+              print("ESTADO: ERROR. No se pudo validar la conexión de Instagram con Meta.")
+              sys.exit(4)
+          PY
