@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -61,17 +62,33 @@ def validate(manifest_file, web_manifest_file=None):
             errors.append(tag + ": logo: " + str(exc))
         try:
             audiopath = valid_path(root, note["audio"]["archivo"])
-            p = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0",
-                "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1",
-                str(audiopath)], capture_output=True, text=True, check=True, timeout=15)
-            dur = float(p.stdout.strip())
+            if audiopath.stat().st_size < 10_240:
+                raise ValueError("Archivo de audio demasiado pequeño")
+            probe = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_entries",
+                 "format=duration:stream=codec_type,codec_name,sample_rate,channels",
+                 "-of", "json", str(audiopath)],
+                capture_output=True, text=True, check=True, timeout=15)
+            info = json.loads(probe.stdout)
+            streams = [x for x in info.get("streams", []) if x.get("codec_type") == "audio"]
+            if not streams:
+                raise ValueError("Falta pista de audio")
+            track = streams[0]
+            if track.get("codec_name") not in ("mp3", "aac"):
+                raise ValueError("Códec no admitido; usar MP3 o AAC")
+            if int(track.get("sample_rate", 0)) not in (22050, 24000, 32000, 44100, 48000):
+                raise ValueError("Frecuencia de muestreo no admitida")
+            if int(track.get("channels", 0)) not in (1, 2):
+                raise ValueError("Número de canales no admitido")
+            dur = float(info["format"]["duration"])
             expected = float(note["audio"]["duracion_s"])
-            if dur < 2 or abs(dur - expected) > max(1.0, expected * 0.03):
+            if not math.isfinite(dur) or dur < 2 or abs(dur - expected) > max(1.0, expected * 0.03):
                 raise ValueError("Duración fuera de tolerancia")
-            decode = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audiopath),
-                "-f", "null", "-"], capture_output=True, text=True, timeout=60)
+            decode = subprocess.run(
+                ["ffmpeg", "-v", "error", "-i", str(audiopath), "-f", "null", "-"],
+                capture_output=True, text=True, timeout=60)
             if decode.returncode != 0:
-                raise ValueError("Audio no se decodifica")
+                raise ValueError("Audio no se puede decodificar")
         except Exception as exc:
             errors.append(tag + ": audio: " + str(exc))
     if web_manifest_file is None:
