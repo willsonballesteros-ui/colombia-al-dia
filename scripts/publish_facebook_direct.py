@@ -1,44 +1,27 @@
 #!/usr/bin/env python3
-"""Publish one licensed photo to a Facebook Page using the Meta Graph API."""
-import argparse
-import json
-import os
-import sys
-import urllib.parse
-import urllib.request
-import urllib.error
+"""Facebook Page photo publishing via official Meta Graph API."""
+import argparse,json,os,urllib.parse,urllib.request
 
-def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('--image-url', required=True)
-    p.add_argument('--caption-file', required=True)
-    p.add_argument('--rights-confirmed', action='store_true')
-    p.add_argument('--confirm-publish', action='store_true')
-    a = p.parse_args()
-    if not (a.rights_confirmed and a.confirm_publish):
-        p.error('Require --rights-confirmed and --confirm-publish')
-    url = urllib.parse.urlsplit(a.image_url)
-    if url.scheme != 'https' or not url.netloc or url.username:
-        p.error('A public HTTPS image URL is required.')
-    page = os.getenv('FB_PAGE_ID', '').strip()
-    token = os.getenv('FB_PAGE_ACCESS_TOKEN', '').strip()
-    if not (page and token):
-        p.error('Configure FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN as secrets.')
-    caption = open(a.caption_file, encoding='utf-8').read().strip()
-    if not caption:
-        p.error('Caption is required')
-    version = os.getenv('FB_GRAPH_VERSION', 'v24.0')
-    endpoint = f'https://graph.facebook.com/{version}/{page}/photos'
-    payload = urllib.parse.urlencode({'url': a.image_url, 'caption': caption, 'access_token': token, 'published': 'true'}).encode()
-    try:
-        with urllib.request.urlopen(urllib.request.Request(endpoint, data=payload, method='POST'), timeout=50) as res:
-            result = json.load(res)
-        if not result.get('id') and not result.get('post_id'):
-            raise RuntimeError('No publication ID from Meta')
-        print(json.dumps({'status':'published','media_id':result.get('id'), 'post_id':result.get('post_id')}, ensure_ascii=False))
-    except urllib.error.HTTPError as exc:
-        print(f'Facebook publication failed: HTTP {exc.code}: {exc.read().decode()[:400]}', file=sys.stderr)
-        sys.exit(1)
+def publish_photo(image_url,caption):
+    page=os.environ.get("FB_PAGE_ID","")
+    token=os.environ.get("FB_PAGE_ACCESS_TOKEN","")
+    if not page or not token: raise RuntimeError("Missing Facebook Page credentials")
+    url=urllib.parse.urlsplit(image_url)
+    if url.scheme!="https" or not url.netloc or url.username: raise ValueError("Public HTTPS photo required")
+    payload=urllib.parse.urlencode({"url":image_url,"caption":caption,"access_token":token,"published":"true"}).encode()
+    req=urllib.request.Request(f"https://graph.facebook.com/v26.0/{page}/photos",data=payload,method="POST")
+    with urllib.request.urlopen(req,timeout=40) as r: response=json.load(r)
+    post_id=response.get("post_id") or response.get("id")
+    if not post_id: raise RuntimeError("Meta did not confirm a post ID")
+    return {"post_id":str(post_id),"media_id":str(response.get("id",""))}
 
-if __name__ == '__main__':
-    main()
+if __name__=="__main__":
+    p=argparse.ArgumentParser()
+    p.add_argument("--image-url",required=True)
+    p.add_argument("--caption-file",required=True)
+    p.add_argument("--rights-confirmed",action="store_true")
+    p.add_argument("--confirm-publish",action="store_true")
+    args=p.parse_args()
+    if not args.rights_confirmed or not args.confirm_publish: p.error("Rights and publication confirmation required")
+    with open(args.caption_file,encoding="utf-8") as file: caption=file.read()
+    print(json.dumps(publish_photo(args.image_url,caption)))
