@@ -74,3 +74,27 @@ class CarouselSafety(unittest.TestCase):
     def test_unapproved_blocks(self):
         self.manifest["status"]="blocked"
         self.assertTrue(any("no aprobada" in e for e in self.check()))
+
+    def real_audio_fixture(self, silent=False):
+        source = "anullsrc=r=44100:cl=mono" if silent else "sine=frequency=440:sample_rate=44100:duration=3"
+        cmd = ["ffmpeg", "-y", "-nostdin", "-hide_banner", "-loglevel", "error",
+               "-f", "lavfi", "-i", source]
+        if silent:
+            cmd += ["-t", "3"]
+        cmd += ["-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "192k",
+                str(self.root / "voice.mp3")]
+        subprocess.run(cmd, check=True, timeout=30)
+        for note in self.manifest["noticias"]:
+            note["audio"]["duracion_s"] = 3.0
+        self.input.write_text(json.dumps(self.manifest), encoding="utf-8")
+        self.web.write_text(json.dumps(self.manifest), encoding="utf-8")
+
+    def test_real_ffmpeg_silence_blocks(self):
+        self.real_audio_fixture(silent=True)
+        problems = mod.validate(self.input, self.web)
+        self.assertTrue(any("silencioso" in e for e in problems), problems)
+
+    def test_real_ffmpeg_tone_passes_audio_preflight(self):
+        self.real_audio_fixture(silent=False)
+        problems = mod.validate(self.input, self.web)
+        self.assertEqual([], problems)
