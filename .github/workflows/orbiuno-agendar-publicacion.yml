@@ -1,0 +1,77 @@
+name: ORBIUNO | Crear publicación sin Metricool
+on:
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: 'Identificador único, ej. orbiuno-20261112-extra-02'
+        required: true
+        type: string
+      platform:
+        description: 'Destino'
+        required: true
+        type: choice
+        options:
+          - instagram
+          - facebook
+      media_url:
+        description: 'Enlace HTTPS público a una foto JPEG real y autorizada'
+        required: true
+        type: string
+      source_url:
+        description: 'Enlace original de la noticia'
+        required: true
+        type: string
+      caption:
+        description: 'Pie de foto; incluir fecha y fuente'
+        required: true
+        type: string
+      scheduled_at:
+        description: 'Fecha y hora ISO con zona, ej. 2026-11-13T08:00:00-05:00'
+        required: true
+        type: string
+      rights_confirmed:
+        description: 'Tengo derecho a publicar esta imagen'
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-meta-publisher
+  cancel-in-progress: false
+jobs:
+  enqueue:
+    if: inputs.rights_confirmed == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Crear entrada revisada
+        env:
+          POST_ID: ${{ inputs.post_id }}
+          PLATFORM: ${{ inputs.platform }}
+          MEDIA_URL: ${{ inputs.media_url }}
+          SOURCE_URL: ${{ inputs.source_url }}
+          CAPTION: ${{ inputs.caption }}
+          SCHEDULED_AT: ${{ inputs.scheduled_at }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path('/tmp/orbiuno_caption.txt').write_text(os.environ['CAPTION'],encoding='utf-8')
+          PY
+          python scripts/enqueue_publication.py \
+            --id "$POST_ID" --platform "$PLATFORM" \
+            --media-url "$MEDIA_URL" --source-url "$SOURCE_URL" \
+            --caption-file /tmp/orbiuno_caption.txt --scheduled-at "$SCHEDULED_AT" --rights-confirmed
+      - name: Guardar programación sin duplicar
+        run: |
+          git config user.name 'orbiuno-publisher-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/publishing_queue.json
+          git commit -m 'schedule: ORBIUNO publication [skip ci]'
+          git push
