@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b43de786fd3676f4",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia retoma su preparación con amistoso ante Chile, a beneficio de los afectados por el terremoto en el país",
+      "summary": "Titular difundido por ELHERALDO.CO a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ELHERALDO.CO · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSzhNaGZDVTBXOVpFejNtbHlBVEh5dXdlU1NydmlDeWtjSEU5aXhXN2ZnUFRNaW1oZHAzWGZWQW1Ycmg2WXNQMEJENDdoRGZucU5OUWhlU0F5YU52WlFwOE84NEZlbS0zVExSNFdwb1l3MnBqWGc0TU9iU1RtMHc5Rndic3FHOVpxY0JJdWVSTnNKakUyandVNFlCU0JXRnNsUVdnM3BZdEZrQWZBemxaWGx3cHdSNzFYWHJSR3Q3WW9FUENvVWhmdXpUSHMxRVJjNm9ZY2pqTU5lS3lmVkI3STdVUEViaGpuUWItNVlR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T14:49-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-fd122b24fcba6b6e",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nvidia cierra la era de Jensen Huang: así transformó una empresa de gráficos en gigante de inteligencia artificial",
+      "summary": "Titular difundido por Portafolio.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Portafolio.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQenRpbTFLZlVWTS1kX3EyNXFZRHBHckxCY0VFcnJqNUM1eVg0WWFjZ3BqZjdFN0FkekhRMGRjZmJuWVZqbmxmeURFWnBZWUcxS240aF9iam1wSkV6NUpBb1dxWjRGLWFTV2xpdVVDTGpRWnhIOFVhS1NNSUdBQm5wMmlQVzhxSTV6elBrRzFHczNnTkgyUzF2Sk1zZllsUHMyWUNOWjBpUURrVXFpNDN3Vk16bUdRVWM2ZkdoanJOYm5WOXdBaGxIR0hZbzhDLTE0VnZiQ29panNwdmd2X1BsNWlLRUM5WEZRRWJwZzJtdkY5RGVBb3ZB0gH8AUFVX3lxTE1VTUM5c3JxcUgya3FKR2ZhbzRfLU9VcXAtcWZVS1pFQWZiRFpleVlzSTBmczQwTzZ3Z2pnaXRlaFptQm81VlFUZ20xMHNkMGFsN0MwcVZkMG1WS2xlS3kwaEpwek1fZFpaejR3ZElXZVZRZVB1MzJUVk4tei1DRktiYVlPTF9tQ0d0TDV1YWh1cWFyOVNJTjZTc2lDREptcTE4X2d3dnlPSWVuUkczOGUzT2xaTlZkSVJGQkhrRW05V1k3T1dGVklqakR3ZU8xTHdoUEVxWXhHekJVT01pUmFpclFYN2pTemNRRlpfMENGdk14cXF3eTNBWmFkdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T14:21-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e01d88892ceada94",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Jonathan Haidt, psicólogo, sobre la tecnología en las aulas: «La herida autoinfligida más cara que hemos tenido nunca en educación»",
+      "summary": "Titular difundido por La Razón a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Razón · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQNzN3aTVpeFdqLW1PaFNLajdZcFVUTkRzTWdSd25MLS14bWVwbmJqaHdheEY0YnE1Z2hHZHIyNUY2X2ExV3ZJUjJWWGxiRHVpel9QSkw1NzJ4QmFLWUlmcE5IM0dGYzYxQ2JFU1JyOFRFWklSSjJHTklTbkljTjFrUDdvU1FXUF8xMnQ5eHhNdE9QS1c2ejVHdk01RHR6TDdvR3ZmdUlvNFg3bnFaTHM2Sm5PY3V6Rk5NNUpiWnNMdDM0TzdRZEJfLWh5ZmNKQUg4aG1rNFJrNktlaV81Q3NxSXJlRnN1UGRZOTRiVTBnaE02dEtSaWpXazdfbWwyeW1ZSEl4QlFveWhaSTlwNUxNTHBYMzZhZDl3WkhDbUJpeExBMjJDbTA4?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T14:11-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5dbc0e94863a18c2",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Homenaje a Chile antes del partido frente a Colombia por apoyo de ese país a víctimas del terremoto",
+      "summary": "Titular difundido por Blu Radio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Blu Radio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVjBDRVNuZEUzY2VMU3lNX2lpZFpwcXN1X3IybHdTeWQwOXNWOGR0LURtdVpxZXFPV21rWDZfRzRYN1p2a0t6TW9KM1BKS0dIS3FZQ0ZoNFAxaTVTNkVhWnVSZU9wVVJvNkNJbGV1YUtRWDUwQlZMUnBxUUJ6YmIzM3d0WTZncXFZZTlVclRoVU1nZXFUbmprRkotNERmd1pUUnFud29qeG1BU2E1dUNVX3dpY3NrWXlxQm9Qb0dnYU5oN3ZZeDFZT3Z0X2ZwUFNkNGoxZjQwZ0FYdGRENXp1cw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T14:09-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-22c61302bee1f181",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Próxima parada, Catar: Lista de jugadores que representarán a Colombia en el Mundial",
+      "summary": "Titular difundido por Colombia.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Colombia.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWDVyal9xbnplYUZXSGNvclJCQnBCcUtFRnZqb0ktNlNfSmRHS0hOT0wzRXJrVFZHVGZIV3hCNjhiekdTbFlSTmJlMXdDNGowNlRjNmo5UnQtOVZ0Ti03UmJBQWtDbGJFS0hEdWFqOVpjMmRzX2U0eFAySURDLXlLLUlBYmM4Skg1R0R5RVBuRkVCWXl3cjk5TGhDY1hBcmtBZXRLRklNeEg0UzlXVnRPMFI5Y3p2aEZBMFduQmpXaERTUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T13:55-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-21a07298d5db6d5f",
+      "date": "2026-11-12",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¡Fallo del TAS sacude la Liga BetPlay! América pierde tres puntos y se queda sin punto invisible",
+      "summary": "Titular difundido por Alerta a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Alerta · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTEFrdUpRS1p3ZEUtZXhmM1RBTTIzU1Z3YUcwTWF2bWJ1bmFqOFUtNC1vbS1BX0RWbnltVHc1RW8yS1dySDM1dWhzLWw1aHYxaTZZSzNnS3k2Slp1dmlVdEJ5Nm9DSlJTVl8xRXpldkNBa29Lajd4RDJCRGZKcVdmLVZSWGVWWFU0N1p4TlZzVlN4Qjhwd3ZiRjRhMWEwZEHSAZ8BQVVfeXFMUHp6ZXlFeXowU3BsX2dXeGYwV0tqaGdjRmtzVml0engzQUtQLXhCTExoR0xhVkd2S3dSejJ4T2drWTdCS2w1ZExOdzZVVHpuc1VJako5cmg0bWJrbkExWmlkRk9FVEl2MVU5aEZJUjc2VE5WMU92QmY0UUdWV3Q1M1lNOEJzeVJKQzJHSFl1X3hiOXZqWXczZXF2VnJNQlo0?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T13:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-c60a9895a9767787",
+      "date": "2026-11-11",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Los extranjeros de la Liga Betplay son pocos, pero rinden bastante: análisis",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRFZNaWR3ZkFmV1BadlNtOU1UTUowRHJvWVB4Y1NlaDNfMVE0SXcwR2JQdWVBLWtyZ3Y5a0RTS05HczNxZmZTc2UyVXhfUHdTTk1NcWFyOTlJU3FlUlJ3a0lsM0hqRGE5LUhtdGc2cHRKTkRBbk90ZVY4dEgxaG53YXptdm1uZU9heXk2ZmdQczdyWTBDYVJqdFlVSlRldFhEMk80cFhLak9vTzBnZGJHaE1oS1hvVTJmM1Nnd1otOEVZMHlmNWRiX2NxMVpMME9t0gHWAUFVX3lxTFBnakViaHpVb3Fwb1pUUmdZUUpoX3dBSGNyWVNSYUZWVzk4RUpLRXNESDZRa0FkRWJnV3hXN1duZ2lxdGYwQWppSTBiMUVNRXR4Ri1Cd1ZOTW1Sb3Mzdl9sUWVKM3RQcVh1U2ItdEFvamw0UFFJMmFQTTVSYWd4VUJkLUIteEhzMXloVi1VVjJJbVRCS05LNm52U3JuYjlWNUZXQjQzX3lndTg4OFpYWWUtMVlJY2xRME1IQUVWZ1dza3NMMGdyTXBBb0tOWHo0SWJYQ0JCV2c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-11T23:02-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-6d256a18f5948870",
       "date": "2026-11-12",
       "category": "Colombia",
@@ -18050,8 +18183,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T16:23-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T16:23-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T16:24-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T16:24-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "La portada del mediodía contiene 5 noticias verificadas de Colombia y el mundo. Fotografías solo si hay permiso y crédito trazables.",
