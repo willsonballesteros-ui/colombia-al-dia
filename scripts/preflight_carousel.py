@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import math
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -89,6 +90,14 @@ def validate(manifest_file, web_manifest_file=None):
                 capture_output=True, text=True, timeout=60)
             if decode.returncode != 0:
                 raise ValueError("Audio no se puede decodificar")
+            volume = subprocess.run(
+                ["ffmpeg", "-nostdin", "-i", str(audiopath), "-af", "volumedetect", "-f", "null", "-"],
+                capture_output=True, text=True, timeout=60)
+            if volume.returncode != 0:
+                raise ValueError("No se pudo medir el volumen")
+            measured = re.search(r"mean_volume:\s*(-?(?:\d+(?:\.\d+)?|inf))\s*dB", volume.stderr)
+            if not measured or float(measured.group(1)) < -50:
+                raise ValueError("Audio silencioso o demasiado bajo")
         except Exception as exc:
             errors.append(tag + ": audio: " + str(exc))
     if web_manifest_file is None:
@@ -96,9 +105,9 @@ def validate(manifest_file, web_manifest_file=None):
     else:
         try:
             web = json.loads(web_manifest_file.read_text(encoding="utf-8"))
-            fields = ("id", "titular", "fecha", "fuente", "url_fuente")
-            a = [{**{k: n[k] for k in fields}, "foto_sha256": n["foto"]["sha256"]} for n in manifest["noticias"]]
-            b = [{**{k: n[k] for k in fields}, "foto_sha256": n["foto"]["sha256"]} for n in web["noticias"]]
+            fields = ("id", "titular", "resumen", "fecha", "fuente", "url_fuente", "logo_fuente")
+            a = [{**{k: n[k] for k in fields}, "foto_sha256": n["foto"]["sha256"], "audio_archivo": n["audio"]["archivo"]} for n in manifest["noticias"]]
+            b = [{**{k: n[k] for k in fields}, "foto_sha256": n["foto"]["sha256"], "audio_archivo": n["audio"]["archivo"]} for n in web["noticias"]]
             if a != b or manifest["edition_id"] != web["edition_id"]:
                 errors.append("Web e Instagram no coinciden en orden, datos o hash fotográfico")
         except Exception as exc:
