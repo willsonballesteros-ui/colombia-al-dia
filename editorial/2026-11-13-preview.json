@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-13",
+  "status": "BORRADOR_REQUIERE_APROBACION_USUARIO",
+  "publicationAuthorized": false,
+  "orbiuno": [
+    {
+      "title": "Bogotá tendrá Noche de Museos con más de 80 espacios",
+      "source": "Alcaldía de Bogotá",
+      "source_url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratuitos-en-bogota-noche-de-los-museos-13-noviembre-2026",
+      "photo_query": "Museo del Oro Bogota Colombia",
+      "voice": "Bogotá se prepara para una noche cultural con más de ochenta museos y espacios que abrirán con recorridos, talleres y actividades. La programación es este viernes trece de noviembre y muchos lugares ofrecen entrada libre. Fuente: Alcaldía de Bogotá."
+    },
+    {
+      "title": "Casi seis mil estudiantes competirán en las finales Intercolegiadas",
+      "source": "Alcaldía de Bogotá",
+      "source_url": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-recibe-la-final-nacional-juegos-intercolegiados-2026-noviembre",
+      "photo_query": "school sport athletics Colombia youth",
+      "voice": "Bogotá recibe desde hoy las finales nacionales de los Juegos Intercolegiados. Está prevista la participación de cinco mil novecientos cincuenta y siete estudiantes de los treinta y dos departamentos en diferentes deportes. Fuente: Alcaldía de Bogotá."
+    },
+    {
+      "title": "La Unión Europea debate el futuro de la inteligencia artificial",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+      "photo_query": "European Parliament building Brussels",
+      "voice": "Líderes de la Unión Europea se reúnen en Dublín para una cumbre dedicada a la inteligencia artificial. Debaten inversión, competitividad, regulación y seguridad tecnológica. Todavía se trata de conversaciones, no de acuerdos definitivos. Fuente: Reuters."
+    },
+    {
+      "title": "Un atlas de 25,5 millones de células abre nuevas vías para estudiar el cerebro",
+      "source": "Financial Times",
+      "source_url": "https://www.ft.com/content/e9ce1070-0c61-450a-ac75-ddabb0edfa69",
+      "photo_query": "human brain model anatomy museum",
+      "voice": "Un equipo internacional de científicos presentó un extenso atlas de células de una región del cerebro relacionada con el movimiento y las emociones. El mapa abarca veinticinco millones y medio de células de varias especies y podría impulsar futuras investigaciones. No es todavía un tratamiento médico. Fuente: Financial Times."
+    }
+  ],
+  "mycar": [
+    {
+      "title": "Renault Kwid 2027 llega a Colombia desde $49.990.000",
+      "source": "Renault-Sofasa",
+      "source_url": "https://prensa.renault.com.co/prensa/el-renault-kwid-evoluciona-con-mas-tecnologia-diseno-renovado-y-seis-airbags/",
+      "photo_query": "Renault Kwid hatchback car",
+      "voice": "Renault anunció la llegada del Kwid dos mil veintisiete a sus concesionarios de Colombia este trece de noviembre. El precio de lanzamiento comienza en cuarenta y nueve millones novecientos noventa mil pesos. La marca destaca seis airbags y cambios de equipamiento."
+    },
+    {
+      "title": "Volkswagen programó hoy el regreso del Golf GTI a Colombia",
+      "source": "El Carro Colombiano",
+      "source_url": "https://www.elcarrocolombiano.com/noticias/volkswagen-golf-gti-regresa-colombia-fecha-estreno-datos/",
+      "photo_query": "Volkswagen Golf GTI hatchback",
+      "voice": "Volkswagen programó para hoy el regreso del Golf GTI al mercado colombiano, durante el Salón del Automóvil de Bogotá. Antes de afirmar que se realizó el lanzamiento, hay que confirmar la presentación oficial. Fuente: El Carro Colombiano."
+    },
+    {
+      "title": "Toyota revive Scion con una pequeña camioneta eléctrica",
+      "source": "MarkLines",
+      "source_url": "https://www.marklines.com/en/e-newsletter/latest-contents-20261113",
+      "photo_query": "Toyota mini truck kei Japan",
+      "voice": "Toyota presentó el regreso de la marca Scion con la KEI cero uno, una pequeña camioneta eléctrica de formato ultracompacto destinada a Estados Unidos. Su anuncio fue incluido en el reporte de novedades automotrices del trece de noviembre de MarkLines."
+    },
+    {
+      "title": "iCaur muestra versiones Retro y Armor del eléctrico V23",
+      "source": "El Carro Colombiano",
+      "source_url": "https://www.elcarrocolombiano.com/novedades/icaur-v23-versiones-retro-armor-salon-automovil-bogota/",
+      "photo_query": "electric compact SUV car",
+      "voice": "La marca iCaur exhibe en el Salón del Automóvil de Bogotá las propuestas Retro y Armor de su SUV eléctrica V veintitrés. Son configuraciones de exhibición con accesorios y estilo diferentes, no nuevos modelos confirmados para la venta. Fuente: El Carro Colombiano."
+    }
+  ]
+}
