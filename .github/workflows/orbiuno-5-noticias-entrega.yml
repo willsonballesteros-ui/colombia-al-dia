@@ -1,11 +1,15 @@
 name: ORBIUNO · MP4 cinco noticias (entrega)
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/render_orbiuno_5_noticias.py'
-      - '.github/workflows/orbiuno-5-noticias-entrega.yml'
+    inputs:
+      slot:
+        description: Franja de la edición
+        type: choice
+        options: ['08:00', '12:00', '18:00']
+        default: '12:00'
+  schedule:
+    - cron: '0 13 * * *'
+    - cron: '0 23 * * *'
 permissions:
   contents: write
 concurrency:
@@ -15,11 +19,23 @@ jobs:
   video:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
+    outputs:
+      video_url: ${{ steps.instagram.outputs.video_url }}
+      caption: ${{ steps.instagram.outputs.caption }}
+      edition_key: ${{ steps.instagram.outputs.edition_key }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Fijar fecha y franja de Bogotá
+        env:
+          SLOT: ${{ inputs.slot || (github.event.schedule == '0 13 * * *' && '08:00') || '18:00' }}
+        run: |
+          day=$(TZ=America/Bogota date +%F)
+          echo "ORBIUNO_EDITION_SLOT=$SLOT" >> "$GITHUB_ENV"
+          echo "EDITION_DATE=$day" >> "$GITHUB_ENV"
+          echo "EDITION_DIR=dist/orbiuno-$day-${SLOT/:/}" >> "$GITHUB_ENV"
       - name: Validar sintaxis del generador
         run: python -m py_compile scripts/render_orbiuno_5_noticias.py
       - name: Preparar FFmpeg y voz
@@ -34,17 +50,12 @@ jobs:
           echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum -c
           echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum -c
       - name: Renderizar portada y cinco noticias
-        env:
-          ORBIUNO_EDITION_SLOT: '12:00'
         run: python scripts/render_orbiuno_5_noticias.py
       - name: Comprobar MP4 y fuentes
         run: |
           python - <<'PY'
-          import json,pathlib,hashlib
-          from datetime import datetime
-          from zoneinfo import ZoneInfo
-          day=datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
-          folder=pathlib.Path("dist")/("orbiuno-"+day+"-1200")
+          import json,pathlib,hashlib,os
+          folder=pathlib.Path(os.environ["EDITION_DIR"])
           p=json.loads((folder/"manifest.json").read_text(encoding="utf-8"))
           video=folder/p["video"]
           assert p["newsCount"] == 5 and p["voice"] == "ef_dora" and p["speed"] == 1.25
@@ -52,11 +63,16 @@ jobs:
           assert video.stat().st_size > 100000 and hashlib.sha256(video.read_bytes()).hexdigest()==p["sha256"]
           print("VALIDADO",video,video.stat().st_size,p["duration"])
           PY
+      - name: Generar descripción para entrega manual
+        run: python scripts/prepare_instagram_reel.py --caption-only
       - name: Guardar MP4 en artifacts (descarga sin Metricool)
         uses: actions/upload-artifact@v4
         with:
           name: ORBIUNO-5-NOTICIAS
-          path: dist/orbiuno-*/ORBIUNO_*.mp4
+          path: |
+            ${{ env.EDITION_DIR }}/ORBIUNO_*.mp4
+            ${{ env.EDITION_DIR }}/descripcion_instagram.txt
+            ${{ env.EDITION_DIR }}/manifest.json
           retention-days: 30
           if-no-files-found: error
       - name: Guardar pruebas y créditos
@@ -65,24 +81,57 @@ jobs:
           name: ORBIUNO-5-FUENTES
           path: dist/orbiuno-*/manifest.json
           retention-days: 30
-      - name: Publicar copia MP4 descargable en repo (no en Instagram)
+      - name: Archivar copia MP4 en el repositorio
+        id: archive
+        if: github.ref == 'refs/heads/main'
         run: |
           set -e
-          day=$(TZ=America/Bogota date +%F)
-          folder="dist/orbiuno-$day-1200"
-          mkdir -p "media/$day"
-          cp "$folder/ORBIUNO_"*"_5_NOTICIAS.mp4" "media/$day/"
-          cp "$folder/manifest.json" "media/$day/manifest_5_noticias.json"
+          day="$EDITION_DATE"
+          archive_dir="media/$day"
+          if [ "$ORBIUNO_EDITION_SLOT" != '12:00' ]; then
+            archive_dir="$archive_dir/${ORBIUNO_EDITION_SLOT/:/}"
+          fi
+          mkdir -p "$archive_dir"
+          video="ORBIUNO_${day}_5_NOTICIAS.mp4"
+          cp "$EDITION_DIR/$video" "$archive_dir/"
+          cp "$EDITION_DIR/manifest.json" "$archive_dir/manifest_5_noticias.json"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "media/$day/"
-          git diff --cached --quiet && exit 0
+          git add "$archive_dir/"
+          if git diff --cached --quiet; then
+            echo "path=$archive_dir/$video" >> "$GITHUB_OUTPUT"
+            echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           git commit -m "ORBIUNO: entregar MP4 verificado $day, cinco noticias"
           for i in 1 2 3; do
             git fetch origin main
             git rebase origin/main
-            if git push origin HEAD:main; then exit 0; fi
+            if git push origin HEAD:main; then
+              echo "path=$archive_dir/$video" >> "$GITHUB_OUTPUT"
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             sleep "$i"
           done
           echo "No se pudo publicar copia en main; artifact conserva video" >&2
           exit 1
+      - name: Comprobar la edición pública antes de entregar a Instagram
+        id: instagram
+        if: github.event_name == 'schedule' && vars.ORBIUNO_AUTO_PUBLISH == 'true'
+        env:
+          ARCHIVE_SHA: ${{ steps.archive.outputs.sha }}
+          ARCHIVE_PATH: ${{ steps.archive.outputs.path }}
+        run: python scripts/prepare_instagram_reel.py
+  instagram:
+    needs: video
+    if: needs.video.outputs.edition_key != ''
+    uses: ./.github/workflows/meta-directo.yml
+    with:
+      edition_key: ${{ needs.video.outputs.edition_key }}
+      video_url: ${{ needs.video.outputs.video_url }}
+      caption: ${{ needs.video.outputs.caption }}
+      publish: true
+    secrets:
+      ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
