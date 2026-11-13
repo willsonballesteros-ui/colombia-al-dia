@@ -1,0 +1,59 @@
+name: ORBIUNO | Reparar audio web sin esperar síntesis de voz
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'audio-fix.js'
+      - 'scripts/prepare_site.py'
+      - '.github/workflows/reparar-audio-web.yml'
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-audio-web-repair
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar JavaScript y generador
+        run: |
+          node --check audio-fix.js
+          python -m py_compile scripts/prepare_site.py
+      - name: Incorporar reproductor en index.html
+        run: |
+          python scripts/prepare_site.py
+          python - <<'PY'
+          from pathlib import Path
+          import re,json
+          html=Path('index.html').read_text(encoding='utf-8')
+          assert '<script defer src="./audio-fix.js?v=20261113b"></script>' in html
+          match=re.search(r'<script type="application/json" id="initial-news">(.*?)</script>',html,re.S)
+          assert match and json.loads(match.group(1)).get('news')
+          assert 'data-tts-action="toggle"' in html
+          print('Audio cargado en portada; MP3 y alternativa en la misma web.')
+          PY
+      - name: Confirmar cambios sobre main actual
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/prepare_site.py
+            git add index.html
+            if git diff --cached --quiet; then
+              echo "Portada ya actualizada"
+              exit 0
+            fi
+            git commit -m "fix(web): habilitar reproductor de audio en ORBIUNO"
+            if git push origin HEAD:main; then
+              echo "Portada actualizada y subida"
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "No se pudo publicar sin conflicto; no forzar." >&2
+          exit 1
