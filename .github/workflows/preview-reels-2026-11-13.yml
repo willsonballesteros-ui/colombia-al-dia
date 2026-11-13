@@ -1,4 +1,4 @@
-name: ORBIUNO y MyCar | Vistas previas 13 noviembre (NO publicar)
+name: ORBIUNO y MyCar | Vistas previas 13 noviembre (revisión)
 on:
   push:
     branches: [main]
