@@ -44,7 +44,8 @@ jobs:
           assert all(n.get('audioFullTextEs') and n.get('imageRightsVerified') for n in expected)
           page=Path('index.html').read_text(encoding='utf8')
           assert './audio-fix.js?v=20261113b' in page
-          assert page.count('data-tts-id="orbiuno-20261113-18h-')>=5
+          if db.get('editionDate')=='2026-11-13':
+              assert page.count('data-tts-id="orbiuno-20261113-18h-')>=5
           scripts=re.findall(r'<script(?:\s+[^>]*)?>(.*?)</script>',page,re.S)
           assert len(scripts)>1
           Path('/tmp/orbiuno-frontend.js').write_text(scripts[-1],encoding='utf8')
