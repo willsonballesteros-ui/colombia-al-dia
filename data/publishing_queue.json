@@ -1,4 +1,16 @@
 {
   "schema_version": 1,
-  "posts": []
+  "posts": [
+    {
+      "id": "microsoft-caida-20261113-extra",
+      "account": "orbiuno",
+      "platform": "instagram",
+      "media_url": "https://static.metricool.com/planner/202611/7759167-file-10477614747244880527.png",
+      "caption": "🚨 ÚLTIMA HORA | MICROSOFT 365\n\nMicrosoft trabaja para recuperar Outlook, Teams, Copilot y otros servicios de Microsoft 365 tras una interrupción mundial iniciada el jueves 12 de noviembre. Este viernes 13 reporta mejoras, aunque advierte que aún pueden presentarse fallas intermitentes y retrasos en correos electrónicos.\n\nLa compañía no ha encontrado indicios de un ciberataque y continúa investigando las causas.\n\nFuentes: Associated Press (13/11/2026), Reuters (13/11/2026).\nImagen: logotipo de Microsoft, Wikimedia Commons.\n\nSigue @resumen.noticias para más actualizaciones verificadas.\n\n#ORBIUNO #ÚltimaHora #Microsoft #Outlook #Teams #Microsoft365",
+      "source_url": "https://apnews.com/article/d92547a821930290db2964388016979a",
+      "rights_confirmed": true,
+      "scheduled_at": "2026-11-13T09:06:00-05:00",
+      "status": "scheduled"
+    }
+  ]
 }
