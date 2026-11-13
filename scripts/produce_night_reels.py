@@ -36,6 +36,10 @@ def choose_photo(query):
  })
  obj=get_json(endpoint)
  for p in sorted(obj.get("query",{}).get("pages",{}).values(),key=lambda p:p.get("index",999)):
+  title=p.get("title","").lower()
+  if "Ford Transit" in query and "transit" not in title: continue
+  if "FAW automobile" in query and not any(w in title for w in ("faw","bestune","hongqi","joyee")): continue
+  if "Scout Motors" in query and "scout" not in title: continue
   info=(p.get("imageinfo") or [{}])[0];meta=info.get("extmetadata") or {}
   license_name=re.sub("<[^>]+>","",meta.get("LicenseShortName",{}).get("value","")).strip()
   artist=re.sub("<[^>]+>","",meta.get("Artist",{}).get("value","")).strip()[:160]
@@ -116,10 +120,10 @@ def orbiuno():
  if len(stories)!=4:raise RuntimeError("Four verified night stories required")
  queries=["boxing ring sports arena","Bogota historic buildings colombia","Google Glass wearable","Twitter headquarters San Francisco"]
  texts=[
-  "Colombia celebra: Evelin Trejos ganó plata en boxeo en los Juegos Olímpicos de la Juventud de Dakar. Fuente: Comité Olímpico Colombiano.",
-  "Bogotá inauguró La Divina Forma Humana, exposición de Valeriano Lanchas, con dibujos de gran formato. Fuente: Alcaldía de Bogotá.",
-  "Google presentó su apuesta por nuevas gafas inteligentes con inteligencia artificial Gemini y controles de privacidad. Fuente: Agencia EFE.",
-  "La plataforma X amplió a veinte los archivos multimedia permitidos por publicación. La función puede desplegarse gradualmente. Fuente: Agencia EFE."
+  "Colombia celebra una medalla en los Juegos Olímpicos de la Juventud. Evelin Trejos ganó plata en boxeo en Dakar, categoría de cincuenta y cuatro kilogramos. El Comité Olímpico Colombiano confirmó la noticia este jueves doce de noviembre. Esta es una imagen de archivo del deporte, no de la boxeadora.",
+  "Bogotá inauguró La Divina Forma Humana, exposición de dibujos de gran formato del cantante y artista Valeriano Lanchas. Según la agenda cultural de la Alcaldía, la muestra podrá visitarse hasta febrero de dos mil veintisiete. Fotografía de archivo de Bogotá.",
+  "Google anunció una nueva generación de gafas inteligentes con inteligencia artificial Gemini. La compañía enfatiza avances en privacidad. La información fue publicada por la agencia EFE el doce de noviembre. Imagen histórica de Google Glass para mostrar la tecnología, no el producto recién anunciado.",
+  "La plataforma X amplió a veinte la cantidad de imágenes y videos que admite en una sola publicación, frente al antiguo límite de cuatro. La disponibilidad puede variar según la actualización de la aplicación. Fuente: Agencia EFE. Imagen de archivo de su antigua sede."
  ]
  audios=dora(texts,"orbiuno")
  for story,q in zip(stories,queries):
@@ -131,10 +135,10 @@ def mycar():
  if len(stories)!=4:raise RuntimeError("4 car stories required")
  queries=["Ford Transit van exterior","FAW automobile SUV","Stellantis automobile manufacturing plant","Scout Motors pickup truck"]
  texts=[
-  "Ford presenta Transit City, nueva furgoneta eléctrica diseñada para el reparto urbano. Su autonomía anunciada llega a trescientos ochenta y un kilómetros.",
-  "En Colombia llega FAWCAR Joyee S cero ocho, una camioneta híbrida enchufable. La cifra de autonomía anunciada corresponde a pruebas de homologación.",
-  "Stellantis y Leapmotor colaborarán en futuros vehículos eléctricos económicos para Europa, con planes de producción en Italia. Fuente: Reuters.",
-  "Scout Motors inició el ensamblaje de vehículos de validación Terra y Traveler en Carolina del Sur. Son pruebas, todavía no ventas."
+  "Ford presentó Transit City, una nueva furgoneta eléctrica diseñada para el reparto y el trabajo urbano. Su autonomía anunciada llega a trescientos ochenta y un kilómetros. Usamos una foto de referencia de la familia Transit, no del modelo nuevo.",
+  "En Colombia llega la FAWCAR Joyee S cero ocho, una camioneta híbrida enchufable. La autonomía publicitada corresponde al ciclo de homologación CLTC, no a una medición independiente en carretera. La imagen es referencial, de otro modelo de la marca.",
+  "Stellantis y Leapmotor colaborarán en futuros vehículos eléctricos más económicos para Europa. La producción en Italia forma parte de planes anunciados, no de vehículos ya disponibles. Fuente: Reuters. Imagen de archivo industrial.",
+  "Scout Motors inició el ensamblaje de vehículos de validación de sus modelos Terra y Traveler en Carolina del Sur. Son unidades para pruebas de producción, no automóviles disponibles para entrega al público. Fuente: Motor uno."
  ]
  audios=dora(texts,"mycar")
  for story,q in zip(stories,queries):
