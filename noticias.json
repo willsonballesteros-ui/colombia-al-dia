@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b711f8fb98fccc96",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IA, tecnología, sociedad y capitalismo: Paula Bach, Lucas Rubinich y Micaela Mantegna",
+      "summary": "Titular difundido por La Izquierda Diario a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Izquierda Diario · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY0RMUUFZalVuN1dyU2I4NC1HSXoyVlVMTXlwS2xuNG1oM3NqRGNaQ0N3YUpEcFN1Tmp4V25RVG02SE0xMWF4MmVaODlVSGpjZTZiZWVWNkdnTUM5X05JbF9qSWFPVFlPSzVBMmVjNHdPSXM0d0dlUHdYOVBEMFZYNmQwSWRmMXV2dG1jZWJCc0dHWFdSekRwVXN3RWdZVTAtUjFmbmZIVFlBUWxzcGlHTWdYS3BYUdIBvgFBVV95cUxOY1pTOEpzUzBrVC1xY2tEMzlSbGltNHc2YVFpeENVRnEzUGIxbk9hTmhaVmFxLUxIZkJIZTlWQ2IxYVp6VEVpemhNaUtQMW1ENDhFZ2U3aHBGWkFUeFZUaFN1SXZTVThCOXp6MzRjcTlheW9Reklkd0Z2TGxueWdvQXR6UTk5eDREZTN5c0lQNHFIUDZRUlI3WnFZWXdnOF9PT1A1Y2UteDFZMFJJR0JGTUFuaGMxQUwyRHl0czRn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e9eadc2db86e0460",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nariño apuesta por la inteligencia artificial para transformar sus territorios",
+      "summary": "Titular difundido por Diario del Cauca a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario del Cauca · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVTNGLVZrUXpYV2syeDM5U1pEOVZlVE5DSTRZSVV0Tm5kYnNwTWVFUEN6U3FrcmxCb2wwc1ZnakYtSDg1dU1nNnpFekdyX1Z6STZOSVZETmdjUFQ2TGJsZ0RzOG82R2ZBSjJYZUxtakNwZmtJVS00LU16bjA1b2ZzRkJ2eENRTlQ3bC0zLVJrODBSU0hGalFUU1BVcTZsODJFaU1ET2tVSVp5RE5vY3BOY3VmVXdabHF1Q3ZyOWNB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0af57fba0741429d",
+      "date": "2026-11-12",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¡Golpe para América de Cali! El TAS le quita tres puntos y lo deja sin la ventaja del punto invisible en la Liga BetPlay",
+      "summary": "Titular difundido por https://www.alerta.com.co/ a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "https://www.alerta.com.co/ · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTEFrdUpRS1p3ZEUtZXhmM1RBTTIzU1Z3YUcwTWF2bWJ1bmFqOFUtNC1vbS1BX0RWbnltVHc1RW8yS1dySDM1dWhzLWw1aHYxaTZZSzNnS3k2Slp1dmlVdEJ5Nm9DSlJTVl8xRXpldkNBa29Lajd4RDJCRGZKcVdmLVZSWGVWWFU0N1p4TlZzVlN4Qjhwd3ZiRjRhMWEwZEE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T13:30-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-a7c98a5738322283",
       "date": "2026-11-12",
       "category": "Colombia",
@@ -18872,8 +18929,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T21:19-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T21:19-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T21:23-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T21:23-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
