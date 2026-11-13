@@ -170,6 +170,10 @@ def build(data, page):
         slots=(("21:00","9:00 p. m."),)+slots
     if any(n.get("editionSlot") == "20:00" for n in published):
         slots=(("20:00","8:00 p. m."),)+slots
+    # Ocultar franjas vacías cuando existe una edición extraordinaria verificable.
+    # Si no hay ninguna, conservar un único aviso honesto y no tres franjas antiguas.
+    active_slots=[pair for pair in slots if any(n.get("editionSlot")==pair[0] for n in published)]
+    slots=tuple(active_slots) if active_slots else slots[:1]
     sections=[]
     reel_limits={"08:00":5,"12:00":5,"18:00":5,"20:00":5,"21:00":5}
     for slot,label in slots:
