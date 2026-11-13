@@ -1,10 +1,110 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-11",
-  "editedAtBogota": "2026-11-11 14:10",
+  "editionDate": "2026-11-12",
+  "editedAtBogota": "2026-11-12T21:20:00-05:00",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
+    {
+      "id": "orbiuno-20261112-2100-x-carrusel",
+      "category": "Tecnología · Mundo",
+      "title": "La red social X eleva a veinte el límite de fotos y videos por publicación",
+      "summary": "X amplió de cuatro a veinte el número de archivos multimedia por publicación, de acuerdo con EFE y un anuncio de su equipo de ingeniería.",
+      "why": "La actualización cambia el formato de las publicaciones visuales en la plataforma.",
+      "next": "La función podría aparecer de forma gradual según la versión de la aplicación.",
+      "sources": [
+        {
+          "name": "Agencia EFE · 12 nov. 2026",
+          "url": "https://efe.com/ciencia-y-tecnologia/2026-11-12/actualizacion-x-imagenes-publicacion/"
+        }
+      ],
+      "audioFullTextEs": "La red social X anunció un cambio importante para quienes comparten fotografías y videos. La plataforma amplió de cuatro a veinte los archivos multimedia que pueden incluirse en una sola publicación. El anuncio fue recogido este jueves doce de noviembre por la agencia EFE y compartido por un responsable de ingeniería móvil de la compañía. La nueva capacidad permitirá agrupar más imágenes en una misma entrada, con un formato que se aproxima al de los carruseles utilizados en otras redes sociales. El cambio no significa que todas las cuentas tengan necesariamente la función activada al mismo tiempo, porque la disponibilidad puede variar según la aplicación y su actualización. Para quienes publican contenido informativo, creativo o visual, la herramienta amplía las opciones de presentación. La información corresponde a la actualización anunciada por X, no a una promesa sobre su alcance futuro.",
+      "sourceLanguage": "es",
+      "date": "2026-11-12",
+      "editionSlot": "21:00",
+      "priority": 4,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO de hechos atribuidos a las fuentes citadas",
+      "imageRightsVerified": false,
+      "imageNote": "Pendiente imagen real con permiso explícito para difusión en redes."
+    },
+    {
+      "id": "orbiuno-20261112-2100-google-gafas",
+      "category": "Tecnología · Mundo",
+      "title": "Google presenta nuevas gafas inteligentes con inteligencia artificial",
+      "summary": "Google vuelve al mercado de las gafas inteligentes con tecnología Gemini y nuevas medidas de privacidad, según la agencia EFE.",
+      "why": "El anuncio abre una nueva etapa para los dispositivos personales de inteligencia artificial.",
+      "next": "Los usuarios deberán evaluar sus características y garantías de privacidad cuando estén disponibles.",
+      "sources": [
+        {
+          "name": "Agencia EFE · 12 nov. 2026",
+          "url": "https://efe.com/ciencia-y-tecnologia/2026-11-12/google-lanzamiento-gafas-inteligentes/"
+        }
+      ],
+      "audioFullTextEs": "Google presentó una nueva apuesta por las gafas inteligentes. De acuerdo con la agencia EFE, la compañía incorpora capacidades de inteligencia artificial Gemini y busca diferenciarse de las primeras Google Glass, lanzadas hace más de una década. Uno de los puntos centrales del anuncio es la privacidad: la empresa explica que ha reforzado protocolos de seguridad para responder a las preocupaciones sobre grabaciones no consentidas y uso de cámaras en espacios públicos. Esta tecnología combina funciones digitales con dispositivos que se llevan puestos, pero su aceptación dependerá tanto de la utilidad real como de la confianza que generen sus controles. EFE publicó la información este jueves doce de noviembre. ORBIUNO seguirá las pruebas, la disponibilidad comercial y las condiciones de privacidad sin asumir funciones que todavía no hayan sido verificadas.",
+      "sourceLanguage": "es",
+      "date": "2026-11-12",
+      "editionSlot": "21:00",
+      "priority": 3,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO de hechos atribuidos a las fuentes citadas",
+      "imageRightsVerified": false,
+      "imageNote": "Pendiente imagen real con permiso explícito para difusión en redes."
+    },
+    {
+      "id": "orbiuno-20261112-2100-cultura-bogota",
+      "category": "Cultura · Colombia",
+      "title": "Bogotá inaugura la exposición artística La Divina Forma Humana",
+      "summary": "La Galería Sextante abrió el 12 de noviembre una muestra de dibujos de gran formato del cantante lírico y artista plástico Valeriano Lanchas.",
+      "why": "La oferta cultural de Bogotá incorpora una nueva exposición accesible al público.",
+      "next": "La muestra está anunciada hasta el 12 de febrero de 2027.",
+      "sources": [
+        {
+          "name": "Alcaldía Mayor de Bogotá · Agenda cultural",
+          "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-6-al-12-de-noviembre-2026"
+        }
+      ],
+      "audioFullTextEs": "Bogotá suma una nueva propuesta cultural este jueves doce de noviembre. La Galería Sextante anunció la inauguración de La Divina Forma Humana, una exposición individual de Valeriano Lanchas, reconocido por su trayectoria como cantante lírico y por su trabajo en las artes plásticas. Según la agenda cultural oficial de Bogotá, la muestra reúne dibujos de gran formato que exploran los recuerdos de infancia y distintas maneras de entender la figura humana. La apertura estaba programada para las seis de la tarde, y la exposición permanecerá en cartelera hasta el doce de febrero de dos mil veintisiete. Es una oportunidad para conocer otra faceta artística de una figura de la cultura colombiana y para acercarse a la agenda de galerías de la ciudad. Las condiciones de visita deben consultarse directamente con el espacio cultural.",
+      "sourceLanguage": "es",
+      "date": "2026-11-12",
+      "editionSlot": "21:00",
+      "priority": 2,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO de hechos atribuidos a las fuentes citadas",
+      "imageRightsVerified": false,
+      "imageNote": "Pendiente imagen real con permiso explícito para difusión en redes."
+    },
+    {
+      "id": "orbiuno-20261112-2100-evelin-trejos",
+      "category": "Deportes · Colombia",
+      "title": "Evelin Trejos ganó plata para Colombia en el boxeo de Dakar 2026",
+      "summary": "La boxeadora colombiana terminó segunda en los 54 kilogramos de los Juegos Olímpicos de la Juventud, según el Comité Olímpico Colombiano.",
+      "why": "El resultado suma otra medalla al deporte juvenil colombiano.",
+      "next": "El Comité Olímpico Colombiano publicará los balances de su delegación.",
+      "sources": [
+        {
+          "name": "Comité Olímpico Colombiano · 12 nov. 2026",
+          "url": "https://olimpicocol.co/web/evelin-trejos-medallista-de-plata-en-el-boxeo-de-dakar-2026/"
+        }
+      ],
+      "audioFullTextEs": "Colombia tiene una nueva razón para celebrar en el deporte juvenil. Evelin Trejos ganó la medalla de plata en la categoría de cincuenta y cuatro kilogramos del boxeo de los Juegos Olímpicos de la Juventud Dakar dos mil veintiséis. El Comité Olímpico Colombiano confirmó que la deportista terminó en segundo lugar este jueves doce de noviembre. En su camino a la final superó a representantes de Rumania, Australia y Japón, y disputó el combate decisivo frente a Sabrina Chakomanova, de Uzbekistán. La medalla reconoce el esfuerzo y la preparación de una joven atleta colombiana en una competencia internacional de alto nivel. El Comité Olímpico también destacó que el resultado se suma al bronce logrado por Izzon Galea en la misma disciplina. Esta noticia está confirmada por el organismo olímpico nacional y no anticipa resultados pendientes.",
+      "sourceLanguage": "es",
+      "date": "2026-11-12",
+      "editionSlot": "21:00",
+      "priority": 1,
+      "level": "Información contrastada con fuente directa",
+      "verification": "editorial_verified",
+      "audioIsFullPublisherArticle": false,
+      "audioEditorialSource": "Narración original ORBIUNO de hechos atribuidos a las fuentes citadas",
+      "imageRightsVerified": false,
+      "imageNote": "Pendiente imagen real con permiso explícito para difusión en redes."
+    },
     {
       "id": "rss-6c4b3a6625d71af2",
       "date": "2026-11-12",
@@ -18700,7 +18800,7 @@
   "lastNewSourceAtBogota": "2026-11-12T21:19-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "La portada del mediodía contiene 5 noticias verificadas de Colombia y el mundo. Fotografías solo si hay permiso y crédito trazables.",
+  "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
   "editorialFormat": "5 noticias por publicación; portada conjunta con titulares resaltados en orden, desarrollo secuencial con fotografías verificadas",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
