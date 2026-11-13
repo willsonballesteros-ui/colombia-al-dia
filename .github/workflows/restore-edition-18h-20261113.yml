@@ -1,0 +1,51 @@
+name: ORBIUNO | Recuperar la edición verificada 13 noviembre 18h
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore-edition-18h-20261113.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-restaurar-edicion-18h
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar recuperación editorial sin inventar datos
+        run: |
+          python maintenance/restore_20261113_evening.py
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+          node --check audio-fix.js
+          python -m unittest tests/test_news_audio_ui.py
+      - name: Guardar recuperación sin borrar publicaciones
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python maintenance/restore_20261113_evening.py
+            python scripts/validate_news.py noticias.json
+            python scripts/prepare_site.py
+            git add noticias.json index.html
+            if git diff --cached --quiet; then
+              echo "Edición ya estaba recuperada"
+              exit 0
+            fi
+            git commit -m "restore(editorial): cinco noticias verificadas 18h, 13 noviembre"
+            if git push origin HEAD:main; then
+              echo "Edición guardada de forma segura"
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          exit 1
