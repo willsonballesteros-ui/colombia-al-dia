@@ -386,6 +386,7 @@ const render=()=>{
  if(todayView){
   const slots=[['08:00','8:00 a. m.'],['12:00','12:00 m.'],['18:00','6:00 p. m.']];
   if(matching.some(x=>x.editionSlot==='20:00')) slots.unshift(['20:00','8:00 p. m.']);
+  if(matching.some(x=>x.editionSlot==='21:00')) slots.unshift(['21:00','9:00 p. m.']);
   const groups=slots.map(([slot,label])=>{
    const ed=matching.filter(x=>x.editionSlot===slot).sort((a,b)=>(a.priority??999)-(b.priority??999));
    const maxReel=4;
@@ -431,7 +432,7 @@ const availableAudio=n=>{
 };
 const canNarrate=n=>!!(n&&(availableAudio(n)||(nativeSynth&&narrationText(n).length>30)));
 const speedLabel=()=>speechRates[speechRateIndex]+'x';
-const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified'&&['20:00','08:00','12:00','18:00'].includes(n.editionSlot)).sort((a,b)=>['20:00','08:00','12:00','18:00'].indexOf(a.editionSlot)-['20:00','08:00','12:00','18:00'].indexOf(b.editionSlot)||(a.priority??999)-(b.priority??999));
+const editionItems=()=>db.news.filter(n=>n.date===db.editionDate&&n.verification==='editorial_verified'&&['21:00','20:00','08:00','12:00','18:00'].includes(n.editionSlot)).sort((a,b)=>['21:00','20:00','08:00','12:00','18:00'].indexOf(a.editionSlot)-['21:00','20:00','08:00','12:00','18:00'].indexOf(b.editionSlot)||(a.priority??999)-(b.priority??999));
 let audioStatus=el('audio-status');
 if(!audioStatus){
  audioStatus=document.createElement('p');audioStatus.id='audio-status';
