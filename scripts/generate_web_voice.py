@@ -5,7 +5,7 @@ import numpy as np
 import onnxruntime as ort
 from kokoro_onnx import Kokoro
 ROOT=Path(__file__).resolve().parents[1]
-from scripts.prepare_site import original_article_ready
+from prepare_site import original_article_ready
 data=json.loads((ROOT/'noticias.json').read_text());out=ROOT/'media/web-voice';out.mkdir(parents=True,exist_ok=True)
 manifest={'voice':'ef_dora','baseRate':1.25,'items':{}}
 old=json.loads((out/'manifest.json').read_text()) if (out/'manifest.json').exists() else {'items':{}}
