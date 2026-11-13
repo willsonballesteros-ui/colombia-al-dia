@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-aaa81c23632086ba",
+      "date": "2026-11-12",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia en Cali: Fútbol solidario tras sismo",
+      "summary": "Titular difundido por Estrella Digital Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Estrella Digital Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14YXA2WFdXbmVmeWZEbnpKVml2Qjl0N0RPQ3ppRm14Nl9wZTJLYzdrcTdINmlLdWJ5cWtzSTFFQ183Y25SbndtbHl3Ulh5RGpXTEdOdDF5RjRhUmZjTlVpSHJTeHF5bTF1NGpJam5kX1JZc0Na?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:47-05:00",
+      "relevanceScore": 9
+    },
+    {
+      "id": "rss-6551dd07fb820323",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Selección Colombia vuelve al ruedo",
+      "summary": "Titular difundido por El Meridiano a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Meridiano · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMF9LMVExUUZ6c2s1RjFwS2NoMmlCTng5M0Q2UDlBZThOUTF2NkFPdmx0QjFmbWZxRUZISDNNTXh3WWdJTTdFTnZTYlU2LWoyRjhITlBfczVGQm41YmFiZVh2TnB1UDZMdUg4b0ZtT2NJZm1lTm5QeHZsa2ZUTjVpQ2VYak1tUGxR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T00:03-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-69a53761dc2bd2ec",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¡Todo listo en Cali! La Selección Colombia afina los últimos detalles para medirse a Chile",
+      "summary": "Titular difundido por Federación Colombiana de Futbol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Federación Colombiana de Futbol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObzNvQzUwUlVJNEo2N1YzX2pQWVg2bTFqRWdlUm1GLUI5WHRGNTZWQWlQQmhLRnRWTllaWkJPYTRiNk1XcFE2cnpmVnRpZDdFVWxhNnd0dGdUbS1yOWw2TWFvbmduT2RmaTBsQkF3dmQ1UjNyRGZ1dy1lQTkxOEJKa0xQWHVvWDFZNUVvMmtmY3M2clJqX1JCeDhkbkNfVTljY2Vfa1pnLVNhVTZkQUxrMU4xM2NOMDQzSmZN?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T23:08-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-59c80ae5bc6d6017",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Malas noticias para Jefferson Lerma: mientras está en Selección Colombia se confirma lo peor",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZFpUd3p0b2g4TTFDXzZDTFd2RzN4b0Q0RkNfcWVXVzlNdjZUYVA2ak5TbVpaTUpnV05OYTNxYTVSTWJ2U1JIcjZTWXgyQi0yVm85bWZmbHFxOFpsWGFwS3EzSmlJamRwNmNheGdEaU01bnM3a05ZNTk1TmlZM2xZTDRvcFFwSlNJZFlWR0ppN0Z0UnllTGV2Z0YtbHNKZEF4V2tpRUhjdEFwVmJ5REgxSFVWNzlQVEVrbHNoZUx5YTFiNGV0SWZfZUdOV3Y3eEZiMVdJVlJPa9IB3AFBVV95cUxQRy12dlhnaDJLOTR3bTV6Q2xmTmdyM0N5dU10LS02aGNBQ2lXWmRGVGVkdkxkSVRkTTFYb0w0WDFlX2VvLUdBUUNYMklzem1PenFTdzRpalhlN3N5QWoxSWp3dlRUUF9EdXVmN3dyYUlSdF83UERsdGdEZUZKRl9SYk15cFV2cVc3dVF1b1FaZWo0VnN2V19OYjBpQi1sTnprbE1xanQ1MDhTVTZ0TnRzY1JhWUttZVNwRHVVUjQ0MzZwMnRXcHZZSFRlOGc3bnVTVk9GUnlJOFRHNUIt?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T22:58-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-b3c0fcd0a1a8424d",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Renuncia Jensen Huang a Nvidia en medio de un escándalo que sacude al gigante mundial de la inteligencia artificial",
+      "summary": "Titular difundido por Focus Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Focus Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORkFoN2x2TzdtcDMzcnJkU3llTjBFZ2Q2TVE3clZBU1BveFZ3c1hvaFpsMVR2b1hUV1FWRGEzOGVEWFhQY3RoRkhEV0Mxd1E5SC1wMVl2NDFtSG9wUTNCVFdYbldxbUJiMV9IY1ZvMW1Saks0bUo0QlBjWmZhcHFtWTc2d1RxQlNLMVVfZ2J3OXc0QXRWTDA3Q0xPOVE3T2oyNWxUel9CXzVFWkJUVHcwbVliQzZPeEpob01vcDVMRnlLZ3dqbUdXU3diNVJyQ3MxOEtTZkNoVy14QQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T11:09-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-641662dc76f86b4b",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La caída global de Microsoft coincide con la demanda del 86% de españoles de tener tecnología europea",
+      "summary": "Titular difundido por Europa Press a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Europa Press · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQLVJ4dE5uMktQdVZIUjNvZjVXbzdWMHhsak9PZFZiWERFVmJVeFI0c0piRkFmVnBLSi1fOWhnY19fc3d6SjE1c3ZPZXpXUkMtRVcxaEV1UnVrbmRGTGlQZzhHSWxUZHZUSElTM1pFcHREUHRTdnNBV1pLZlFsY1lSeVpBODdiS25JdGtXai02OHpkSUozeGk4TlJWbFo5R2ZQTWRfTks3WEpxaUxycjA0SUd1RTBuLTh4TmlIclNPRVhuUGdza3dqdXN2c29GbEVqQy1DdEtqdUo?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T05:59-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e52042c11147c9b4",
+      "date": "2026-11-12",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Presidente de Llaneros FC anuncia nueva sede para disputar la Liga BetPlay en la temporada 2027",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTFRPSklPZ2x6dWdZTjRWUXBpUjMtM3k4LUdsTGJ5b2lJLXFRSlp6aE9oRGR4QXFhR0ZjMS0xOGRjbTB3UUNGS1VocklyYnFmdmlEQkk5WjRwWjVheTRaM2FzMHZTUzZfSkt5MmVIYVI3V0ctS1phYzI2c05WdUIxR3NiLU42MFY2T1AyUk5kZ3J5X1RfMTNTLW9kYWQxc1lUX05nTzFJTi1nYUkyXzZVVGRMVk5mMGI1clMzNmNFUXRCbHBsQ19rOGd6N25ZWk1mZnVGUU8yREdnYVB2VlVQcW1Ka0HSAeoBQVVfeXFMTjFvZnZ4STFKbmN5b09HYk5YTHN5X0ZqeVBSaVJFWWoxN3RlLUlIemh5Rm9fRjhzQ09MYUFSOGtlbDZQZHNmdUV0UXpOaUFyc1lUdWZmeWhmRjBsV3lxVDlOeDRMMzdqMENHMS1seEJBdDFjTVBhWHlCY1J2R3NKNXg1Z3UwRFN6cmI5WVJpZy1GS3o5b19ibVd1c1AzX0UtMlpxMk9HWHhXcGhVUFBUZW50ZkFobEQwLUs5SWtESi16OUFWMFE3alpDemhtQkdVNExHTTg3RUpvMmdDU1pxZDVBdDZMaGxRbmpB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:28-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-b25065acb1a804a0",
       "date": "2026-11-12",
       "category": "Tecnología e IA",
@@ -19328,8 +19461,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T22:41-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T22:41-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T06:03-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T06:03-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
