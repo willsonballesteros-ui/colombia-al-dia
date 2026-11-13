@@ -1,0 +1,59 @@
+{
+  "brand": "MYCAR",
+  "date": "2026-11-12",
+  "duration": 29.567667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Ford presenta Transit City, nueva van eléctrica para trabajo urbano",
+      "source": "https://www.elcarrocolombiano.com/lanzamientos/ford-transit-city-van-electrica-precio-colombia/",
+      "photo": {
+        "file": "File:Union Station 20190515 120526.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AUnion_Station_20190515_120526.jpg",
+        "artist": "SecretName101",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Union_Station_20190515_120526.jpg/1280px-Union_Station_20190515_120526.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "La FAWCAR Joyee S08 híbrida enchufable llega a Colombia",
+      "source": "https://www.elcarrocolombiano.com/lanzamientos/fawcar-joyee-s08-colombia-precio-ficha-tecnica-suv-hibrida/",
+      "photo": {
+        "file": "File:Bestune T99 facelift IMG005.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3ABestune_T99_facelift_IMG005.jpg",
+        "artist": "Zotyefan",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Bestune_T99_facelift_IMG005.jpg/1280px-Bestune_T99_facelift_IMG005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Stellantis y Leapmotor colaborarán en eléctricos económicos para Europa",
+      "source": "https://www.reuters.com/world/stellantis-face-billion-euro-surcharges-raw-materials-chips-2027-2028-ceo-says-2026-11-12/",
+      "photo": {
+        "file": "File:Fiat - Mirafiori building (Italy, 2020).png",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AFiat_-_Mirafiori_building_%28Italy%2C_2020%29.png",
+        "artist": "Bruce The Deus",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Fiat_-_Mirafiori_building_%28Italy%2C_2020%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Scout inicia las primeras pruebas de fabricación de sus nuevos vehículos",
+      "source": "https://www.motor1.com/news/815073/scout-builds-terra-traveler-prototypes-factory/",
+      "photo": {
+        "file": "File:Scout Terra, IAA Summit 2025, Munich (20250908-P1050112).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AScout_Terra%2C_IAA_Summit_2025%2C_Munich_%2820250908-P1050112%29.jpg",
+        "artist": "Matti Blume",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Scout_Terra%2C_IAA_Summit_2025%2C_Munich_%2820250908-P1050112%29.jpg/1280px-Scout_Terra%2C_IAA_Summit_2025%2C_Munich_%2820250908-P1050112%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-12-2200/mycar-2026-11-12-noche.mp4",
+  "sha256": "05e32339563866699255c07731cd14158deff21708ae048d545eef4e4e06003b",
+  "status": "VIDEO_RENDERED_NOT_PUBLISHED"
+}

@@ -1,0 +1,59 @@
+{
+  "brand": "ORBIUNO",
+  "date": "2026-11-12",
+  "duration": 28.842667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Evelin Trejos ganó plata para Colombia en el boxeo de Dakar 2026",
+      "source": "https://olimpicocol.co/web/evelin-trejos-medallista-de-plata-en-el-boxeo-de-dakar-2026/",
+      "photo": {
+        "file": "File:US Navy 070119-N-4965F-007 A boxing trainer from USA Boxing Hawaii Association, Inc., adjust the headgear of Electronics Technician 3rd Class Anthony Skillman.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AUS_Navy_070119-N-4965F-007_A_boxing_trainer_from_USA_Boxing_Hawaii_Association%2C_Inc.%2C_adjust_the_headgear_of_Electronics_Technician_3rd_Class_Anthony_Skillman.jpg",
+        "artist": "U.S. Navy photo by Mass Communication Specialist 1st Class James E. Foehl",
+        "license": "Public domain",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/US_Navy_070119-N-4965F-007_A_boxing_trainer_from_USA_Boxing_Hawaii_Association%2C_Inc.%2C_adjust_the_headgear_of_Electronics_Technician_3rd_Class_Anthony_Skillman.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Bogotá inaugura la exposición artística La Divina Forma Humana",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-6-al-12-de-noviembre-2026",
+      "photo": {
+        "file": "File:Facade of a historic building in Bogotá, Colombia..jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AFacade_of_a_historic_building_in_Bogot%C3%A1%2C_Colombia..jpg",
+        "artist": "ArmandoCasitasS",
+        "license": "CC BY 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Facade_of_a_historic_building_in_Bogot%C3%A1%2C_Colombia..jpg/1280px-Facade_of_a_historic_building_in_Bogot%C3%A1%2C_Colombia..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Google presenta nuevas gafas inteligentes con inteligencia artificial",
+      "source": "https://efe.com/ciencia-y-tecnologia/2026-11-12/google-lanzamiento-gafas-inteligentes/",
+      "photo": {
+        "file": "File:Google executive Amanda Rosenberg modeling the Google Glass face mounted wearable computer.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AGoogle_executive_Amanda_Rosenberg_modeling_the_Google_Glass_face_mounted_wearable_computer.jpg",
+        "artist": "Max Braun from San Francisco, USA",
+        "license": "CC BY-SA 2.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Google_executive_Amanda_Rosenberg_modeling_the_Google_Glass_face_mounted_wearable_computer.jpg/1280px-Google_executive_Amanda_Rosenberg_modeling_the_Google_Glass_face_mounted_wearable_computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "La red social X eleva a veinte el límite de fotos y videos por publicación",
+      "source": "https://efe.com/ciencia-y-tecnologia/2026-11-12/actualizacion-x-imagenes-publicacion/",
+      "photo": {
+        "file": "File:Twitter headquarters in San Francisco (TK2).JPG",
+        "commons": "https://commons.wikimedia.org/wiki/File%3ATwitter_headquarters_in_San_Francisco_%28TK2%29.JPG",
+        "artist": "Tobias Kleinlercher / Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Twitter_headquarters_in_San_Francisco_%28TK2%29.JPG/1280px-Twitter_headquarters_in_San_Francisco_%28TK2%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-12-2200/orbiuno-2026-11-12-noche.mp4",
+  "sha256": "6da5341b056e7c29ca25e812166f2550eba46f83392dc925348e8f9cd6e3990e",
+  "status": "VIDEO_RENDERED_NOT_PUBLISHED"
+}
