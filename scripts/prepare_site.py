@@ -235,6 +235,14 @@ def build(data, page):
     # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
                       "Hasta cinco noticias verificadas por edición, con fuentes originales.")
+    # Reparación de reproducción en Safari/iPhone: cargar el reproductor
+    # local con MP3 y voz nativa de respaldo, sin abrir fuentes externas.
+    # Se inserta una única vez para mantener idempotencia del generador.
+    audio_loader = '<script defer src="./audio-fix.js?v=20261113b"></script>'
+    if audio_loader not in page:
+        if '</head>' not in page:
+            raise ValueError("No se localizó cierre del encabezado HTML")
+        page = page.replace('</head>', audio_loader + '\n</head>', 1)
     return page
 
 
