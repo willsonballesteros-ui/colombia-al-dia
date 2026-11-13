@@ -10,7 +10,7 @@ class CaptionTests(unittest.TestCase):
     def setUpClass(cls):
         cls.db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
         slots={n.get("editionSlot") for n in cls.db["news"] if n.get("date")==cls.db["editionDate"] and n.get("verification")=="editorial_verified"}
-        candidate=next((k for k,v in (("8am","08:00"),("12m","12:00"),("6pm","18:00")) if v in slots),None)
+        candidate=next((k for k,v in (("9pm","21:00"),("8am","08:00"),("12m","12:00"),("6pm","18:00")) if v in slots),None)
         assert candidate, "No hay noticias verificadas para probar"
         original=os.environ.get("ORBIUNO_EDITION_SLOT")
         os.environ["ORBIUNO_EDITION_SLOT"]=candidate
