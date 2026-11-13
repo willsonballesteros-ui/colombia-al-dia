@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-47238f33cb44a930",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "De la inteligencia artificial a los cuidados en casa: los retos de la innovación sanitaria en Gipuzkoa",
+      "summary": "Titular difundido por Donostitik.com a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Donostitik.com · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNb01RcnlzUElVYTE2ZHhVZ1JqRDlqQlkxTDg1T1loMmszbmtLbGgzS0dIa2NnRS1Hd3dNTldldGZxS0ZLcHFPOEQtSWQ1ek5hYzkzVWdhdmxaVmFxOHlMS1JmUVRRQU5tcVlaR3UtVXhwLXFGeGxHM3l6YUVrRDhXVmVYTkFySlBFM0xRclczQ21qNUdVR3IwNF9UVWVFS3dwNVd1b1N2a0RpcW14NFFJWklRQ1pjSTFPS1dqdXZ5dk5icEJiX3BLSg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T05:34-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-8ceac8f9be207ccc",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "México necesita una inteligencia artificial que pueda seguir funcionando",
+      "summary": "Titular difundido por El Financiero a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Financiero · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPanhvN3hDb3ZtMEV0OE9RX0hzZ2IxNUxoUUkzWFNENDJ6bVF4R1BPU3FEclI4NzlzdGtXS2VDVTdINGh6ZTBCaHZvM2gxLS1ZTGM5MGtzRG1SV0o0ZU1Rbm1aLUtqLWR1Vi1wamdLVFpXblluU0dkbDZ1a3RrWTNTZUNURFdoam42TV9Fdm5uMzZSVHF5WVAzRmdjS1QyOVBYZjJsOWRwS1dGMlJka010ZVZLRDBNdy1aY2RVLVJIM0RlRElSNmk5Qnp2RTNuNWU2YVV5eg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T05:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-1fe56c5275321b4f",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia enfrenta a Chile a beneficio de los damnificados por el terremoto",
+      "summary": "Titular difundido por Zona Cero a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Zona Cero · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdmNrNU13S0hlRWtZN1BxZnZ5ZU9YR0RfM0VwV0thRWZqVzQ3UXpNeW5hZXZudHlvQXJGR21BaFU5dHJHMDd5NzZFN1R5RzdRMzl4emFmTHdNZ0hUT2ZodklucnFBS3B0VDR2TzdPcms5azdhYUdkNXE3b2pyb2pjZU9aRUI5Q29ueHdQUUdUcG8wRUVMMTBaNnJyMVI0bE5SUUE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:52-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7625f66e777b036e",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia vs. Chile: hora, canales y dónde ver en vivo por TV y online el amistoso de la Selección",
+      "summary": "Titular difundido por MARCA a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MARCA · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTlBvaEpBYVU2ekhFTFROd0hvV0gyczFFME9TVTd0N1pMc0hRSUpRWFM1cDNPc242MHFUblJZcFFvYzVWNmVQdV8xTnpjbFdfMkw0c3dCVEI2aG9qWXlrT3g1VUhleUJFYzJrM3BQQ1NmYjM1VmwwcU01NDYtaEk2Q2I0Z0xRTTEzNmo2aEh6MXZsTWthX0xwOWRXUWNLMW1mTGtZcFViVElnaHVQTVHSAa4BQVVfeXFMUHdIM1ByZ0FaVVdxdFk3anJPd3RzbFUxanBjOV9UTzhJR1duNkwta0FjUTVncnRXS2duZE04NE41WFVjUVltSXRWVDctX1l1OUNZLTVrVk1YYVJXRU5NM0RydWpkd2s1M0pMalN5X0hnVWdGdi1FOWVTNXlSUWU4SGUyRE44S0dfU1ZXeGtWRjMwVHZJQThDWTNXWGhtdDBZaDhpRTljZk01cUlQSWxB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T16:20-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-aaa81c23632086ba",
       "date": "2026-11-12",
       "category": "Deportes",
@@ -19461,8 +19537,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T06:03-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T06:03-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T06:04-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T06:04-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
