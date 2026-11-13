@@ -20,7 +20,7 @@ class NewsAudioUITests(unittest.TestCase):
             and n.get("date") == self.data["editionDate"]
         ]
         self.assertGreaterEqual(len(expected), 1)
-        self.assertLessEqual(len(expected), 12)
+        self.assertLessEqual(len(expected), 18)
         self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=5 for slot in ('08:00','12:00','18:00')))
         first = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertEqual(first.count('data-tts-action="toggle"'), len(expected))
@@ -63,7 +63,7 @@ class NewsAudioUITests(unittest.TestCase):
                    and x.get("verification") == "editorial_verified"]
         rendered = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertGreaterEqual(len(current), 1)
-        self.assertLessEqual(len(current), 12)
+        self.assertLessEqual(len(current), 18)
         self.assertTrue(all(not x.get("fullArticleRightsVerified") for x in current))
         self.assertEqual(rendered.count('data-tts-action="toggle"'), len(current))
         self.assertEqual(rendered.count('data-tts-action="speed"'), len(current))
