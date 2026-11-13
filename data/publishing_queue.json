@@ -10,7 +10,8 @@
       "source_url": "https://apnews.com/article/d92547a821930290db2964388016979a",
       "rights_confirmed": true,
       "scheduled_at": "2026-11-13T09:06:00-05:00",
-      "status": "scheduled"
+      "status": "publishing",
+      "attempted_at": "2026-11-13T14:57:31.906120+00:00"
     }
   ]
 }
