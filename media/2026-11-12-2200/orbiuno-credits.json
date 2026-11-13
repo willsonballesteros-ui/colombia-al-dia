@@ -1,7 +1,7 @@
 {
   "brand": "ORBIUNO",
   "date": "2026-11-12",
-  "duration": 28.842667,
+  "duration": 55.744667,
   "voice": "Kokoro ef_dora 1.25x",
   "license_photos": [
     {
@@ -54,6 +54,6 @@
     }
   ],
   "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-12-2200/orbiuno-2026-11-12-noche.mp4",
-  "sha256": "6da5341b056e7c29ca25e812166f2550eba46f83392dc925348e8f9cd6e3990e",
+  "sha256": "2be61d8cc84661d2a2da9655e8c3592d561968c8bca46f06cd59198ac27b26d0",
   "status": "VIDEO_RENDERED_NOT_PUBLISHED"
 }

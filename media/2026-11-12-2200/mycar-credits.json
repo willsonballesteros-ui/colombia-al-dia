@@ -1,18 +1,18 @@
 {
   "brand": "MYCAR",
   "date": "2026-11-12",
-  "duration": 29.567667,
+  "duration": 47.381667,
   "voice": "Kokoro ef_dora 1.25x",
   "license_photos": [
     {
       "headline": "Ford presenta Transit City, nueva van eléctrica para trabajo urbano",
       "source": "https://www.elcarrocolombiano.com/lanzamientos/ford-transit-city-van-electrica-precio-colombia/",
       "photo": {
-        "file": "File:Union Station 20190515 120526.jpg",
-        "commons": "https://commons.wikimedia.org/wiki/File%3AUnion_Station_20190515_120526.jpg",
-        "artist": "SecretName101",
-        "license": "CC BY-SA 4.0",
-        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Union_Station_20190515_120526.jpg/1280px-Union_Station_20190515_120526.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "file": "File:Ford Transit Custom.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AFord_Transit_Custom.jpg",
+        "artist": "Bull-Doser",
+        "license": "Public domain",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ford_Transit_Custom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       },
       "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
     },
@@ -54,6 +54,6 @@
     }
   ],
   "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-12-2200/mycar-2026-11-12-noche.mp4",
-  "sha256": "05e32339563866699255c07731cd14158deff21708ae048d545eef4e4e06003b",
+  "sha256": "bebe16ce719eea3fc1436dd305708c9becf3fa973556a68812d9a038ca91851a",
   "status": "VIDEO_RENDERED_NOT_PUBLISHED"
 }
