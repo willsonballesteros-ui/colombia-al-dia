@@ -387,7 +387,8 @@ const render=()=>{
   const slots=[['08:00','8:00 a. m.'],['12:00','12:00 m.'],['18:00','6:00 p. m.']];
   if(matching.some(x=>x.editionSlot==='20:00')) slots.unshift(['20:00','8:00 p. m.']);
   if(matching.some(x=>x.editionSlot==='21:00')) slots.unshift(['21:00','9:00 p. m.']);
-  const groups=slots.map(([slot,label])=>{
+  const visible=slots.filter(([slot])=>matching.some(x=>x.editionSlot===slot));
+  const groups=(visible.length?visible:slots.slice(0,1)).map(([slot,label])=>{
    const ed=matching.filter(x=>x.editionSlot===slot).sort((a,b)=>(a.priority??999)-(b.priority??999));
    const maxReel=4;
    const reel=ed.filter(x=>Number.isInteger(x.instagramReelOrder)&&x.instagramReelOrder>0).sort((a,b)=>a.instagramReelOrder-b.instagramReelOrder).slice(0,maxReel);
