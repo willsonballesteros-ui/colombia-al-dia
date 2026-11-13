@@ -72,13 +72,14 @@ def main():
     db = json.loads(DB.read_text(encoding="utf-8"))
     existing = {n["id"] for n in db["news"]}
     additions = [n for n in build() if n["id"] not in existing]
-    if db.get("editionDate") != "2026-11-13":
-        raise ValueError("La edición activa ya cambió; recuperación manual requerida")
+    # Restaurar como archivo histórico si la portada ya avanzó a una nueva fecha.
+    # No retroceder editionDate ni sustituir las noticias actuales.
     if additions and len(additions) != 5:
         raise ValueError("Recuperación parcial: no incorporar noticias incompletas")
     db["news"].extend(additions)
     from datetime import datetime
-    db["editedAtBogota"] = "2026-11-13T18:00:00-05:00"
+    if db.get("editionDate") == "2026-11-13":
+        db["editedAtBogota"] = "2026-11-13T18:00:00-05:00"
     DB.write_text(json.dumps(db, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Noticias de las 18 h recuperadas:", len(additions))
 
