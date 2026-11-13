@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-a7ca54640e1e9a59",
+      "date": "2026-11-12",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Ramón Jesurún, presidente de la FCF habló previo al encuentro con Chile: “Traer la Selección Colombia a Cali era un sueño”",
+      "summary": "Titular difundido por El País a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El País · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOXBsZU1iQ2xnWG1WY0Y5TVRCQTk0Q1EyUmdGc0lRRkZfVmpKSDVNZWprN2xiVFd3cWxhNlpvMHJmbkY4aDNtV2FUZWJEYld4V2VMWk1GaGNxSnNqeUFHZkNldFQ2SkFwUWhkN3hVNldqQl9taWhEbGx6a0NzWDRaZjJZM1BlaGgtZXppb21TSTh3QVJyT3Y5Yzg3eUZWQ1puLVlSbEQyS081S3N5ZTZRcnhuajVIMkpHS2VYVUltY3BMbWJDZ2d2ZjBaOVpDUW5iSV93NFUzbFNrdnRoTjFTbTVTMU5xdVRybEN4a3RtLWR6Y3RPekHSAfsBQVVfeXFMT0FiNlcyZTJHNWRSMUNxdEwza3hMT1ZXMTJ3Z1N2aEJtNDE0VVhBNzlEVTM5RWhTZm9ELTgyZHFFc2tzUEY5NUZxRThqNFBkREs1ZF9McndFSnhaMk03bi0ydDJwVDZYZERtdjYtMEFhLVZJTzhRQTBqRHhCUWZuNDZRN1ViLWR2clpEMG5iRFk2OG13OUk0RC1tUVhhWlQxekNfRW9reHJEWWVUUkNfUjNIUllaYlZQWGt1ZnpHUkRMcHZZdS1idEMwaVRNc2lhUXJVMEpscnF3ZThKMGx3d0RjMEJmdFNUN1c2eHhUMkpDUG5OZDVNbF80ZXc?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T17:58-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-654c2a3f86a0341d",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El grupo de trabajo sobre inteligencia artificial de Trump se reunió el jueves para abordar los ciberataques basados en esta tecnología, según la Administración",
+      "summary": "Titular difundido por MarketScreener España a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MarketScreener España · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOd0JEOWZ0d3JNcWcyVVBQUGZfOTNRM2hheEtfM0xKN2pPR2IwLUFPNWdDZGlNWFd5ZUZRUmxueFo3dDhlTUU5Y3N0YUdadjVpb3dHLWNfeFE1STFHUU5WNnVWdlRNNE96MWhiR25hSGk4aHBvTnRuZDZGN0QzY0NCVkJObmFnZ2VaNWMzZ05MbHcxcVg2TWNqVFAzMGE0QnhOdllZMklBM04xYU9rOWRvcXdOSWF5UXBPckJWSTZDeVRuT21WZEVtYnZkbFBFTFpVd0FxMlFza3FnTHlkMzZ6TEJvNjgtV1Vpcl8w?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:34-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3f4b8e1526484275",
+      "date": "2026-11-12",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Llaneros FC y Boyacá Chicó empatan sin goles en un disputado encuentro de la Liga BetPlay Colombia",
+      "summary": "Titular difundido por Futbolred a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Futbolred · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVlQ0a0RJakR6ZWh5ekZEUEN0dHhqM1ozVkN6RXB0SmdoRnBJT0IybnpfWDEzVWpqeVZ5U1B5WXZzMUNMSnBnUnNCcVhVb09SaXZWZjF3RVNyUWp4NEg2MDFYakJ2bGtINldJWWp4ckdtTGxNbVp1SGU2VjZaU0dUZmI5YTd4ZV9VTHlQNDFULTFHUnd0dENfQmxWNXFJcTBleGVjTHVkbVA3MUNUaXFULXBFczh5Q2lIeUtTQ2xuMFJVZ0Vfd3B1XzE1WlI1Q0xSUHppUTRQdmgxc1BNWW5GTE9NUUp2NEM3Q0dtQUZQUm93bTBV0gH6AUFVX3lxTE1STUs3YXdlNUxCLVhhNEt2LUN5RWdiWkZ1OGdyc2JBSWlKVG5OSDZtNVYwenQ2aXJ0aXU0cHJqQTZRUEZTbUxJdzZMNnNEV2NNdldIUjhfN1V2R2ktZWxpOVBaV0RKVmo0RmV3bTF3SEdUMGxELXJEdlota19zOTZ0a1JrV0t5dnlGekNScTFXaXBBVmR1VldyQ3JrRlZ6RG5IcEF2S1lPcXRHblBZam1tWlVqZHU5Q0RSUHNkcjVmSlFnbVQtMHhDaWtwM2dkWkxWYTUtLTdUVk11SElyaW5uMzJReklpXzlXbGxQMWIySWNUWjNBZUR1Q3c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:20-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-a2aa8dbd7e162f40",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "CTC enseña a emprendedores dominicanos a incorporar la inteligencia artificial en sus negocios",
+      "summary": "Titular difundido por Acento a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Acento · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZEtubGVzTTVISnMxT2R5alpod29PTUlQQmR3dVZGUTdWQ2QyelY4Qk1objZXQ2dZRWdQcHVoYjV6eVo2Sm1tbnFrMEpFbW8tLVhxd2NPUlRldHlSbzBhZmdhMVFEb3cxWjNIUlNmU0lqdWNFZlFfT1gxQlZQZkgyQndMR2liRThQQ204cWRKSVoxYXhCSWRITjBoRzZsdmxmcVlPT2pFNm9Tek85TE1TSmZmV0preWpJeWpicEp0a21MeEFJWmV6MVJ0SXdTSnBBU1BqM0FIT084YTJVZ1HSAd4BQVVfeXFMUGRLbmxlc001SEpzMU9keWpaaHdvT01JUEJkd3VWRlE3VkNkMnpWOEJNaG42V0NnWUVnUHB1aGI1enlaNkptbW5xazBKRW1vLS1YcXdjT1JUZXR5Um8wYWZnYTFRRG93MVozSFJTZlNJanVjRWZRX09YMUJWUGZIMkJ3TEdpYkU4UENtOHFkSklaMWF4QklkSE4waEc2bHZsZnFZT09qRTZvU3pPOUxNU0pmZldKa3lqSXlqYnBKdGttTHhBSVplejFSdEl3U0pwQVNQajNBSE9POGEyVWdR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:00-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-d8951100cbd27241",
       "date": "2026-11-12",
       "category": "Colombia",
