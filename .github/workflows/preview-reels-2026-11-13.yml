@@ -1,0 +1,64 @@
+name: ORBIUNO y MyCar | Vistas previas 13 noviembre (NO publicar)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/preview-reels-2026-11-13.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: previews-20261113
+  cancel-in-progress: false
+jobs:
+  previews_sin_publicar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar audio, fotos y video
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install Pillow numpy soundfile kokoro-onnx==0.6.1
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+          python scripts/produce_preview_2026_11_13.py
+      - name: Comprobar que ambas vistas previas tienen audio y video
+        run: |
+          python - <<'PY'
+          import subprocess,json
+          from pathlib import Path
+          for brand in ("orbiuno","mycar"):
+            file=Path("media/2026-11-13-preview")/(brand+"-2026-11-13-BORRADOR.mp4")
+            p=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(file)]))
+            assert float(p["format"]["duration"])>25
+            assert any(s.get("codec_type")=="video" and s.get("width")==720 and s.get("height")==1280 for s in p["streams"])
+            assert any(s.get("codec_type")=="audio" for s in p["streams"])
+            print(file,float(p["format"]["duration"]),file.stat().st_size)
+          PY
+      - name: Conservar videos de revisión sin publicar
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-13-preview/*.mp4 media/2026-11-13-preview/*.jpg media/2026-11-13-preview/*.json
+          git commit -m 'preview only: ORBIUNO and MyCar 13 Nov Reels pending human approval'
+          for i in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$i"
+          done
+          exit 1
+      - name: Archivos para revisar antes de publicar
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-MYCAR-2026-11-13-SOLO-PREVIA
+          path: media/2026-11-13-preview/
+          retention-days: 30
+          if-no-files-found: warn
