@@ -20276,6 +20276,146 @@
           "url": "https://www.reuters.com/world/europe/russian-strikes-cut-power-thousands-ukraine-drones-damage-russian-facility-2026-11-01/"
         }
       ]
+    },
+    {
+      "id": "orbiuno-20261113-18h-1",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 1,
+      "category": "Colombia",
+      "title": "Bogotá: noche de más de 80 museos",
+      "summary": "Más de 80 museos y espacios participarán en la jornada cultural del 13 de noviembre.",
+      "executiveSummary": "Más de 80 museos y espacios participarán en la jornada cultural del 13 de noviembre.",
+      "sources": [
+        {
+          "name": "Alcaldía de Bogotá / IDPC",
+          "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratuitos-en-bogota-noche-de-los-museos-13-noviembre-2026"
+        }
+      ],
+      "sourceLanguage": "es",
+      "verification": "editorial_verified",
+      "audioFullTextEs": "Bogotá celebra este viernes 13 de noviembre la séptima Noche de Museos, vinculada con la cuarta Noche Iberoamericana. La programación reúne museos y espacios culturales distribuidos por distintas localidades, con recorridos, exposiciones y actividades para diferentes públicos. La Alcaldía presenta una agenda organizada por zonas para facilitar la planeación de las visitas. Maloka describe una participación de más de ochenta espacios. Los horarios y las condiciones de acceso varían según la sede; por eso, conviene revisar la programación oficial antes de salir. No todos los lugares ofrecen las mismas actividades ni permanecen abiertos hasta la misma hora. La fotografía que acompaña esta nota es una imagen de archivo del Museo del Oro, utilizada como referencia cultural y no como registro de la jornada de hoy.",
+      "audioIsFullPublisherArticle": false,
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageLicense": "CC BY 4.0",
+      "imageCredit": "GRDN711",
+      "imageSourceUrl": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+      "imageUrl": "./media/2026-11-13/foto-1.jpg",
+      "imageAlt": "Museo del Oro, archivo",
+      "imageCaption": "Museo del Oro, archivo"
+    },
+    {
+      "id": "orbiuno-20261113-18h-2",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 2,
+      "category": "Deportes",
+      "title": "Final nacional Intercolegiada: 5.957 jóvenes",
+      "summary": "La fase nacional inicia en Bogotá con 5.957 estudiantes deportistas de todo el país.",
+      "executiveSummary": "La fase nacional inicia en Bogotá con 5.957 estudiantes deportistas de todo el país.",
+      "sources": [
+        {
+          "name": "IDRD / Alcaldía de Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-recibe-la-final-nacional-juegos-intercolegiados-2026-noviembre"
+        }
+      ],
+      "sourceLanguage": "es",
+      "verification": "editorial_verified",
+      "audioFullTextEs": "Bogotá recibe del 13 al 30 de noviembre la fase final nacional de los Juegos Intercolegiados de 2026. La Alcaldía informa que la competencia reunirá a cinco mil novecientos cincuenta y siete estudiantes deportistas provenientes de los treinta y dos departamentos del país. La final cierra el calendario de encuentros escolares y permite que jóvenes de diferentes regiones compartan escenarios deportivos en la capital. La información consultada corresponde al anuncio institucional de la programación; no presenta resultados, medallas ni ganadores de competencias que todavía están en desarrollo. Para conocer sedes, jornadas y posibles ajustes, consulta las comunicaciones oficiales enlazadas en esta nota. La fotografía es una instalación deportiva de archivo y no representa una competencia de estos Juegos ni un escenario identificado como sede en Bogotá.",
+      "audioIsFullPublisherArticle": false,
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Basotxerri",
+      "imageSourceUrl": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+      "imageUrl": "./media/2026-11-13/foto-2.jpg",
+      "imageAlt": "Instalación deportiva de archivo; no es una sede identificada de Bogotá",
+      "imageCaption": "Instalación deportiva de archivo; no es una sede identificada de Bogotá"
+    },
+    {
+      "id": "orbiuno-20261113-18h-3",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 3,
+      "category": "Tecnología",
+      "title": "Europa debate seguridad y futuro de la IA",
+      "summary": "Una cumbre en Dublín aborda financiación, competitividad y seguridad de la IA.",
+      "executiveSummary": "Una cumbre en Dublín aborda financiación, competitividad y seguridad de la IA.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/"
+        }
+      ],
+      "sourceLanguage": "en",
+      "verification": "editorial_verified",
+      "audioFullTextEs": "Los dirigentes de la Unión Europea se reúnen en Dublín este viernes para una cumbre dedicada a la inteligencia artificial. Según Reuters, la agenda incluye inversión, financiación, competitividad y medidas de seguridad. La discusión busca examinar cómo fortalecer las capacidades tecnológicas europeas frente a Estados Unidos y China. También se consideran los obstáculos regulatorios y la infraestructura necesaria para desarrollar esta tecnología. Esta nota describe los asuntos incluidos en la reunión, sin presentar como aprobadas decisiones que la información consultada no confirma. Conviene distinguir entre una propuesta, un debate político y una medida formalmente adoptada. La imagen muestra el Parlamento Europeo en Bruselas: es una fotografía de archivo y no corresponde al lugar ni a los asistentes de la cumbre en Dublín.",
+      "audioIsFullPublisherArticle": false,
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Steven Lek",
+      "imageSourceUrl": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+      "imageUrl": "./media/2026-11-13/foto-3.jpg",
+      "imageAlt": "Parlamento Europeo en Bruselas, archivo; no es Dublín",
+      "imageCaption": "Parlamento Europeo en Bruselas, archivo; no es Dublín"
+    },
+    {
+      "id": "orbiuno-20261113-18h-4",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 4,
+      "category": "Colombia",
+      "title": "Maloka ofrece actividades gratuitas esta noche",
+      "summary": "Programación gratuita del 13 de noviembre entre 5 y 8 p. m., con Cine Domo y títeres.",
+      "executiveSummary": "Programación gratuita del 13 de noviembre entre 5 y 8 p. m., con Cine Domo y títeres.",
+      "sources": [
+        {
+          "name": "Maloka",
+          "url": "https://maloka.org/noticias/maloka-y-mutibo-se-unen-para-celebrar-la-vii-noche-de-museos-de-bogota-y-la-iv-noche-iberoamericana-de-museos/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "verification": "editorial_verified",
+      "audioFullTextEs": "Maloka participa este viernes 13 de noviembre en la Noche de Museos con una jornada de cinco de la tarde a ocho de la noche. La entidad anuncia entrada libre hasta completar el aforo y precisa que el último ingreso será a las siete. La programación contempla recorridos por espacios interactivos, experiencias relacionadas con ciencia y naturaleza, proyecciones en el Cine Domo y actividades con el Museo Virtual del Títere de Bogotá. El acceso a cada experiencia depende de la disponibilidad y del momento de llegada; la entrada gratuita no garantiza un cupo ilimitado para todas las funciones. Consulta la información oficial antes de desplazarte. La imagen es una fotografía histórica de Maloka, empleada como referencia del lugar, y no una fotografía tomada durante la actividad anunciada.",
+      "audioIsFullPublisherArticle": false,
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageLicense": "CC BY 2.0",
+      "imageCredit": "Edgar Jiménez",
+      "imageSourceUrl": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+      "imageUrl": "./media/2026-11-13/foto-4.jpg",
+      "imageAlt": "Maloka, archivo",
+      "imageCaption": "Maloka, archivo"
+    },
+    {
+      "id": "orbiuno-20261113-18h-5",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 5,
+      "category": "Ciencia",
+      "title": "¡WOW! El mensaje de oro que lleva Voyager",
+      "summary": "El Disco de Oro inspira una charla en Maloka el 21 de noviembre, con inscripción previa.",
+      "executiveSummary": "El Disco de Oro inspira una charla en Maloka el 21 de noviembre, con inscripción previa.",
+      "sources": [
+        {
+          "name": "Maloka / NASA",
+          "url": "https://maloka.org/noticias/agenda-cultural-y-cientifica-noviembre-2026/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "verification": "editorial_verified",
+      "audioFullTextEs": "El Disco de Oro que acompaña a las sondas Voyager contiene una selección de sonidos e imágenes de la Tierra. Maloka lo convierte este mes en tema de una charla interactiva de astronomía, donde el público explorará ese mensaje como si intentara interpretarlo desde otra civilización. La actividad está programada para el sábado 21 de noviembre de 2026, entre las dos y las seis de la tarde, en el Laboratorio BIO de Maloka. La entidad anuncia entrada libre con inscripción previa mediante el enlace de su agenda oficial. No se trata de una actividad anunciada para esta noche. La fotografía muestra la sonda Voyager y procede del archivo de NASA y JPL; es una imagen histórica, no una fotografía nueva capturada en el espacio interestelar.",
+      "audioIsFullPublisherArticle": false,
+      "imageType": "official_photo",
+      "imageRightsVerified": true,
+      "imageLicense": "Dominio público",
+      "imageCredit": "NASA/JPL-Caltech",
+      "imageSourceUrl": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+      "imageUrl": "./media/2026-11-13/foto-5.jpg",
+      "imageAlt": "Sonda Voyager, archivo",
+      "imageCaption": "Sonda Voyager, archivo"
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-13T18:10-05:00",
