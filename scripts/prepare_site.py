@@ -158,6 +158,14 @@ def article_html(n):
 
 def build(data, page):
     """Mantener las tres franjas verificadas, con fotos y lectura, en UNA portada."""
+    # Evitar que el botón lea una sinopsis cuando existe la redacción integral
+    # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
+    # la vista desarrollada y el reproductor (incluido el fallback nativo).
+    from copy import deepcopy
+    data = deepcopy(data)
+    for news in data.get("news", []):
+        if original_article_ready(news):
+            news["audioFullTextEs"] = news["originalArticleTextEs"].strip()
     today=data.get("editionDate")
     published=[
         n for n in data["news"]
