@@ -1,0 +1,74 @@
+name: ORBIUNO | Producir seis noticias 13 noviembre
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-seis-noticias-20261113.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-6-20261113
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar motor y validar modelos de voz
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install 'kokoro-onnx==0.6.1' 'Pillow' 'numpy' 'soundfile'
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Producir seis láminas con fotos auténticas y audio femenino
+        run: |
+          python scripts/produce_orbiuno_6_20261113.py
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          p=Path('media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4')
+          m=json.loads(Path('media/2026-11-13/orbiuno-credits.json').read_text())
+          data=json.loads(Path('noticias.json').read_text())
+          assert len(m['license_photos'])==6 and m['news_count']==6
+          assert len(set(m['story_ids']))==6
+          assert any(n.get('id')=='orbiuno-20261113-18h-6' and n.get('imageRightsVerified') for n in data['news'])
+          streams=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
+          assert float(streams['format']['duration'])>=35
+          assert any(s.get('codec_type')=='audio' for s in streams['streams'])
+          assert any(s.get('codec_type')=='video' and s.get('width')==720 and s.get('height')==1280 for s in streams['streams'])
+          print('SIX_NEWS_REEL_VERIFIED',str(p),m['sha256'])
+          PY
+      - name: Conservar edición final sin sobrescribir otros MP4
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add noticias.json index.html media/2026-11-13/foto-6.jpg media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4 media/2026-11-13/orbiuno-credits.json
+          git commit -m 'ORBIUNO 13 noviembre: seis noticias verificadas y Reel final'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep $((attempt * 3))
+          done
+          echo 'No publicar ante conflicto de versiones' >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ORBIUNO-13-NOV-6-NOTICIAS
+          path: |
+            media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4
+            media/2026-11-13/orbiuno-credits.json
+          if-no-files-found: ignore
+          retention-days: 30
