@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-437a6ef0705b69fe",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Qué viene después de la inteligencia artificial? Un congreso de acceso gratuito reunirá a especialistas en...",
+      "summary": "Titular difundido por Rosario3 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Rosario3 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPSy1SVU44TU0teWYwQnNWT1c0MGJHaWxMN1VQeG9ERG9vY0tyR1hNNm9CTWxGcmtpY3JhUU1IcF80REtYN2RDT244VHMwazZoQjN4RXJhV3VvUmItbndTaUxYT3IzWEdkLXhMRE9UbDU3dC1YdnVUaGszdkZuVmJCYml2S2NUT2NFWGtfX1lmVU1kb05sRUEteXB4V2R5eWl5YXkyVnplRkRnal9jSThVdW9tbWwzSWZPcHJZQ0VqTldKVm92a0VNWDNNVEx5RUNSeW1mMUlxS3JOdG1qZDhMemlxdFZfYVlZN3NuR29FSEoxak1tNUR5ZGlvRmoyYjNmUXhSaU1mZ1NvZXN2Y2djZzlUcHlPOXJxZTIzWkJGbGbSAaACQVVfeXFMT0stUlVOOE1NLXlmMEJzVk9XNDBiR2lsTDdVUHhvRERvb2NLckdYTTZvQk1sRnJraWNyYVFNSHBfNERLWDdkQ09uOFRzMGs2aEIzeEVyYVd1b1JiLW53U2lMWE9yM1hHZC14TERPVGw1N3QtWHZ1VGhrM3ZGblZiQmJpdktjVE9jRVhrX19ZZlVNZG9ObEVBLXlweFdkeXlpeWF5MlZ6ZUZEZ2pfY0k4VXVvbW1sM0lmT3ByWUNFak5XSlZvdmtFTVgzTVRMeUVDUnltZjFJcUtyTnRtamQ4THppcXRWX2FZWTdzbkdvRUhKMWpNbTVEeWRpb0ZqMmIzZlF4UmlNZmdTb2VzdmNnY2c5VHB5TzlycWUyM1pCRmxm?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T06:00-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-5ace4211b6b42a8e",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "The AI Business y las decisiones empresariales que la inteligencia artificial toma en milisegundos",
+      "summary": "Titular difundido por Crónica Global a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Crónica Global · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZHBYN3l4QjY2VnZWdk42X2ZRS09JVWgwbWJuNm9jUE5TNElNTnI3a1BzUUVKSmJXYmxMRDQ3cm9iYXR4M2pGc3IwZ04yeXpUWWFyUXN4X29QV0ZhaHpRTGctOWE4dXdjaEVZb091anNvaDZtVFJLTHhSTjJPb2xkay14Uk85NUZFS1FtNk1jN3gwblhFZDYwR2RDOEVleTJYSmxmeU8wREdIUVl2SW12Y1BDWEhreFMxNEo3MEZLNks3a3hZcGlWdlBMelg1MFhkRVUzNG1QbHhKcDB5cEHSAeMBQVVfeXFMTkVzVjZ5d0I1RTNkczYyWE9BSkxkV1VPQW9CSVZZUzU5SXhCb3FIYlZuT1pjaFc1NWR4YmtfUWFzYkNHM2sxX21NcFJIV0ozV3dXaWdqVXNHSjI3MjU3a0wyWW1rSmkyZkNTclRVVHpVeDdWWjBPOGZVdW1hZDRJN3RiYTZ5a2Z2ZmpwSEtjLWo2ZS0zM1hXeDVLTkxSQ190MTdQQVRHLWxZXzFjX0oySkdqYm5obGJVN2NXbnVpUVZheUduYW1RU1B4SEZGcDBzeUdTMkduU3FkWm5pX0dSM21tTUU?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T05:27-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-47238f33cb44a930",
       "date": "2026-11-13",
       "category": "Tecnología e IA",
@@ -19537,8 +19575,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T06:04-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T06:04-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T06:07-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T06:07-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
