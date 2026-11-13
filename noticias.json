@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-8c38475964ae0181",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Corina Rogovsky y Francisco Chamorro: “Hay conceptos que los chicos tienen que aprender, no podemos soltarlos libremente a la inteligencia artificial para que les resuelva todo”",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQaFBsdk5Qd3EtN0lxWE9oMWo4dG1LZkQ0cUktNnZqWGRpYkFvMTd1Vl95ZHFhVGV6QTdYNGlrN3BqckhtNlowUTNSR0VzY0dPVkRKVHFRQWl3eHVUUEdDNHRSWWVmajhmbWE3ei1SbDBJMDkwZm9lWl9ydUNQNDVzc1FDc0xtRGtJejU3dlFsbEV6OGRLa1ZtMHhfSnBPdXRUaUZRZGhZVDNIQW9jTzlZNHBDVkxfOUJoTTN0eE9udkpCemFJMVlLM2lvZEttTE5DRkk4dklQRU1mejE2bGtVR2JNU0tNTjFiZ2ZScE1sVHBzT2dQQ3p5WkdDcFZXbUtwVHQzMV9VazlwRlNmNlBLOXhLM19wbWc0SXZaZDVqc29fcUo5WFRwaUFvVHdYbEN4MGFjTkh3YmEzam1VRVNnQdIB2wJBVV95cUxPRUZrUjA0ZFRDZ20tcW1hYXIzbS1oNDREYU5yNFdWUTJTaEptTmFkbldQTTI1T3djWS1Yak5jNUt4ZnRoUWJWVEx3cy1jUjNoMVFIcW1IWVFyM1pCTVBWYzVsa0xkWlRSeXlvWFpWcHJFZmU0SE5CUHk5SS12MV9mdnVLX1FYRF9IVDllckJPQjB4UEpKcEFfbEg4Xy0zQW9kbGVldThuaE9NZkx6ZXB5dWhEa3I4X0pOV3NZbThiRW5CTFRFYW10WFJCT0dEY0N5MnAtXzdJYmE1OFFpNnR0VDNEaGptNHNmLUJ0ZjVqVHk2VGxXdk5FQWJmZ3pXVXo0SlNUUkJPVGx0NTZtUEpzbEVTMklkMXM0WjkwcEVyVGU1Q1cyMVBERXVKanNDRU5uV1BfMDc1NHdyZmdIUDhyaFN0NFlTQ2JwSGM0aGFYWHM0QktwT1RESXQzdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T22:20-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f7fbec9254051d4c",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La infraestructura digital, clave para el futuro de la IA en la región",
+      "summary": "Titular difundido por CAF -banco de desarrollo de América Latina a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "CAF -banco de desarrollo de América Latina · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMXpYMUtwRk81Y3o1TkpTdDl5VW1hUDVxbjJlOE9ZYWFHc3FFcmNxbHRILWI5LVpmSFNWRk9KdjVSWmRnQVR3ZUxUSV9PbVRmTGJqck5QYVE2OW1LcF8xek53M2UzSzQtVkN5WFFlYmx3eExIbnpCcTAtZlNrdEY2VXh2VEFQQlZacUE1VGxnVXpIU2d6T3l0TE5VSS0zREQ1SFFidHlSZ3VWa1dLTXRydjJSVQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T21:27-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-a7ca54640e1e9a59",
       "date": "2026-11-12",
       "category": "Deportes",
@@ -19214,8 +19252,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T22:33-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T22:33-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T22:36-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T22:36-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
