@@ -63,7 +63,10 @@ def make_frame(name,num,title,source,photo,credit):
  draw=ImageDraw.Draw(img)
  draw.rectangle((0,0,720,97),fill=(6,22,41))
  draw.text((28,17),name,font=font(49,True),fill=(255,214,56))
- draw.text((28,75),"12 NOV 2026 · NOCHE",font=font(18,True),fill="white")
+ draw.text((28,75),os.environ.get("EDITION_DATE_LABEL","12 NOV 2026 · NOCHE"),font=font(18,True),fill="white")
+ if os.environ.get("PREVIEW_ONLY")=="1":
+  draw.rectangle((0,775,720,839),fill=(89,22,29))
+  draw.text((180,789),"BORRADOR · NO PUBLICADO",font=font(28,True),fill="white")
  draw.rectangle((0,845,720,1280),fill=(5,20,36))
  draw.rectangle((27,855,140,904),fill=(255,212,51))
  draw.text((43,863),f"{num:02d} / 04",font=font(24,True),fill=(5,20,36))
