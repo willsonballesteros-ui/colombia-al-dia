@@ -34,6 +34,8 @@ def choose_photo(query):
   "gsrlimit":20,"prop":"imageinfo","iiprop":"url|size|extmetadata","iiurlwidth":1000,
   "format":"json"
  })
+ if "Ford Transit" in query:
+  endpoint="https://commons.wikimedia.org/w/api.php?"+urllib.parse.urlencode({"action":"query","titles":"File:Ford Transit Custom.jpg","prop":"imageinfo","iiprop":"url|size|extmetadata","iiurlwidth":1000,"format":"json"})
  obj=get_json(endpoint)
  for p in sorted(obj.get("query",{}).get("pages",{}).values(),key=lambda p:p.get("index",999)):
   title=p.get("title","").lower()
