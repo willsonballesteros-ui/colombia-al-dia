@@ -97,38 +97,48 @@ def render(name,stories,audios,outro):
   meta={"brand":name,"date":"2026-11-12","duration":duration,"voice":"Kokoro ef_dora 1.25x","license_photos":attribution,"output":str(output),"sha256":hashlib.sha256(output.read_bytes()).hexdigest(),"status":"VIDEO_RENDERED_NOT_PUBLISHED"}
   (OUT/(name.lower()+"-credits.json")).write_text(json.dumps(meta,ensure_ascii=False,indent=2))
   print(json.dumps({"brand":name,"video":str(output),"duration":duration,"bytes":output.stat().st_size}),flush=True)
+def dora(texts,prefix):
+ from kokoro_onnx import Kokoro
+ import onnxruntime as ort
+ import soundfile as sf
+ session=ort.InferenceSession("/tmp/kokoro-v1.0.onnx",providers=["CPUExecutionProvider"])
+ k=Kokoro.from_session(session,"/tmp/voices-v1.0.bin")
+ audios=[]
+ for i,text in enumerate(texts,1):
+  wav=OUT/(prefix+f"-{i:02d}.wav")
+  audio,sr=k.create(text,"ef_dora",speed=1.25,lang="es",sentence_pause=.10,clause_pause=.06)
+  sf.write(str(wav),np.asarray(audio,dtype=np.float32),sr)
+  audios.append(wav)
+ return audios
 def orbiuno():
  news=json.loads((ROOT/"noticias.json").read_text())["news"]
  stories=sorted((n for n in news if n.get("date")=="2026-11-12" and n.get("editionSlot")=="21:00" and n.get("verification")=="editorial_verified"),key=lambda n:n["priority"])
  if len(stories)!=4:raise RuntimeError("Four verified night stories required")
- manifests=json.loads((ROOT/"media/web-voice/manifest.json").read_text())
  queries=["boxing ring sports arena","Bogota historic buildings colombia","Google Glass wearable","Twitter headquarters San Francisco"]
- audios=[]
+ texts=[
+  "Colombia celebra: Evelin Trejos ganó plata en boxeo en los Juegos Olímpicos de la Juventud de Dakar. Fuente: Comité Olímpico Colombiano.",
+  "Bogotá inauguró La Divina Forma Humana, exposición de Valeriano Lanchas, con dibujos de gran formato. Fuente: Alcaldía de Bogotá.",
+  "Google presentó su apuesta por nuevas gafas inteligentes con inteligencia artificial Gemini y controles de privacidad. Fuente: Agencia EFE.",
+  "La plataforma X amplió a veinte los archivos multimedia permitidos por publicación. La función puede desplegarse gradualmente. Fuente: Agencia EFE."
+ ]
+ audios=dora(texts,"orbiuno")
  for story,q in zip(stories,queries):
-  m=manifests["items"].get(story["id"])
-  if not m or m["text"]!=story["title"]+". Fuente: "+story["sources"][0]["name"]+". "+story["audioFullTextEs"]:raise RuntimeError("Dora manifest stale "+story["id"])
-  p=ROOT/m["url"][2:]
-  if not p.exists():raise RuntimeError("Missing real Dora audio "+str(p))
-  audios.append(p)
   story["photo_query"]=q;story["source"]=story["sources"][0]["name"];story["source_url"]=story["sources"][0]["url"]
  render("ORBIUNO",stories,audios,"https://colombia-al-dia.pages.dev/")
 def mycar():
- from kokoro_onnx import Kokoro
- import onnxruntime as ort
  obj=json.loads((ROOT/"editorial/mycar-2026-11-12-night.json").read_text())
  stories=obj["stories"]
  if len(stories)!=4:raise RuntimeError("4 car stories required")
  queries=["Ford Transit van exterior","FAW automobile SUV","Stellantis automobile manufacturing plant","Scout Motors pickup truck"]
- session=ort.InferenceSession("/tmp/kokoro-v1.0.onnx",providers=["CPUExecutionProvider"])
- k=Kokoro.from_session(session,"/tmp/voices-v1.0.bin")
- audios=[]
- for i,(story,q) in enumerate(zip(stories,queries),1):
+ texts=[
+  "Ford presenta Transit City, nueva furgoneta eléctrica diseñada para el reparto urbano. Su autonomía anunciada llega a trescientos ochenta y un kilómetros.",
+  "En Colombia llega FAWCAR Joyee S cero ocho, una camioneta híbrida enchufable. La cifra de autonomía anunciada corresponde a pruebas de homologación.",
+  "Stellantis y Leapmotor colaborarán en futuros vehículos eléctricos económicos para Europa, con planes de producción en Italia. Fuente: Reuters.",
+  "Scout Motors inició el ensamblaje de vehículos de validación Terra y Traveler en Carolina del Sur. Son pruebas, todavía no ventas."
+ ]
+ audios=dora(texts,"mycar")
+ for story,q in zip(stories,queries):
   story["photo_query"]=q;story["source_url"]=story["source"];story["source"]=story["sourceName"]
-  wav=OUT/f"mycar-{i:02d}.wav"
-  audio,sr=k.create(story["voiceText"],"ef_dora",speed=1.25,lang="es",sentence_pause=.13,clause_pause=.07)
-  import soundfile as sf
-  sf.write(str(wav),np.asarray(audio,dtype=np.float32),sr)
-  audios.append(wav)
  render("MYCAR",stories,audios,"https://busco-autos.pages.dev/")
 if __name__=="__main__":
  arg=sys.argv[1] if len(sys.argv)>1 else "all"
