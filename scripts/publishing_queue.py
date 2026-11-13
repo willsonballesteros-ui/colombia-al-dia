@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import subprocess
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -55,23 +56,32 @@ def dispatch(post):
     from publish_facebook_direct import publish_photo
     return publish_photo(post["media_url"],post["caption"])
 
-def run(path="data/publishing_queue.json", sender=dispatch, dry_run=False, at=None):
+def persist_attempt(path):
+    subprocess.run(["git", "add", "--", str(path)], check=True)
+    subprocess.run(["git", "commit", "-m", "chore: record ORBIUNO publication attempt [skip ci]"], check=True)
+    subprocess.run(["git", "push", "origin", "HEAD:refs/heads/main"], check=True)
+
+
+def run(path="data/publishing_queue.json", sender=dispatch, dry_run=False, at=None,
+        checkpoint=None):
     data=load(path)
     events=[]
     at=at or clock()
     for post in data["posts"]:
         if post["status"]!="scheduled" or when(post["scheduled_at"])>at: continue
+        if dry_run:
+            events.append({"id": post["id"], "status": "due" if post["rights_confirmed"] else "needs_review"})
+            continue
         if not post["rights_confirmed"]:
             post["status"]="needs_review"
             post["error"]="Image rights not confirmed"
-        elif dry_run:
-            events.append({"id":post["id"],"status":"due"})
-            continue
         else:
             # Lock and persist BEFORE network requests; fail closed if the result is ambiguous.
             post["status"]="publishing"
             post["attempted_at"]=clock().isoformat()
             save(path,data)
+            if checkpoint is not None:
+                checkpoint(path)
             try:
                 result=sender(post)
                 post_id=result.get("post_id") or result.get("media_id")
@@ -90,6 +100,9 @@ def run(path="data/publishing_queue.json", sender=dispatch, dry_run=False, at=No
     return events
 
 if __name__=="__main__":
-    events=run(dry_run="--dry-run" in sys.argv)
+    events = run(
+        dry_run="--dry-run" in sys.argv,
+        checkpoint=persist_attempt if "--persist-attempt" in sys.argv else None,
+    )
     print(json.dumps({"events":events},ensure_ascii=False))
     if any(x["status"]=="needs_review" for x in events):sys.exit(2)
