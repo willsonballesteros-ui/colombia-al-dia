@@ -136,6 +136,16 @@ class NewsAudioUITests(unittest.TestCase):
             generated = next(n for n in payload["news"] if n["id"] == article["id"])
             self.assertEqual(generated["audioFullTextEs"], article["originalArticleTextEs"].strip())
 
+    def test_mobile_audio_repair_is_injected_without_redirect(self):
+        from pathlib import Path
+        self.assertIn('<script defer src="./audio-fix.js?v=20261113b"></script>', self.out)
+        script = (ROOT / "audio-fix.js").read_text(encoding="utf-8")
+        self.assertIn("player.play()", script)
+        self.assertIn("SpeechSynthesisUtterance", script)
+        self.assertIn("manifest.json", script)
+        self.assertIn("stopImmediatePropagation()", script)
+        self.assertNotIn("window.location.href", script)
+
     def test_recorded_audio_keeps_controls_and_edition_queue(self):
         # La edición de hoy vive en #ediciones-hoy, no en #cards.
         # Los clics se delegan en document para cubrir ambos contenedores.
