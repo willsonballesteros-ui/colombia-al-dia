@@ -126,7 +126,9 @@ class NewsAudioUITests(unittest.TestCase):
         self.assertIn('Fuente ↗', page)
 
     def test_recorded_audio_keeps_controls_and_edition_queue(self):
-        self.assertIn("el('cards').addEventListener('click'", self.page)
+        # La edición de hoy vive en #ediciones-hoy, no en #cards.
+        # Los clics se delegan en document para cubrir ambos contenedores.
+        self.assertIn("document.addEventListener('click',event=>{\n const btn=event.target.closest('button[data-tts-action]')", self.page)
         self.assertIn('player.pause()', self.page)
         self.assertIn('await player.play()', self.page)
         self.assertIn("player.addEventListener('ended'", self.page)
