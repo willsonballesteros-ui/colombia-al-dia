@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-840adf7e107f0c3c",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Hace una semana nadie hubiera creído que Jensen Huang iba a dejar Nvidia. Link en comentarios 👇",
+      "summary": "Titular difundido por Facebook a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Facebook · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOb3RUU3pLV3VfMTc5UV9ZbS1MbDd0VVJhYjlqRkhxS3QwaGVkTi1yQ3YyX0E1SEpRNnNLUDI3SE1Cd1hQMVZ4V3ZkVGFOblZWcFNDdV9HNGt5dUppdUZpdjdvQmdJaGF6UVJzek9PeDRDdVF5dWNCV0UzRDdCVDBxWVRoc2I5SHV0Uk5GblctSzVxdGdPRUJLcWJwcVc0UU9zWEpKSTU1X3BPUFNIWU5IdzZ2RmVfb2wtYVNYTEVweVFYNGpNSldqY0lUOGVzd29jUUZhRXFmMVV0Y2JuMTM5cA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T17:35-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-007b106f26729542",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Regulaciones europeas para la inteligencia artificial",
+      "summary": "Titular difundido por Diario del Cauca a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario del Cauca · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbnkyZktnUkh4WEVmQ3JDRzZPVGV4RElpcFVjdW1Gb1lfbjVKR3JNdlZ6c3h6NkNCbHBVWGxma0hXdkpWb3JIX1h6d3RqcnJYdGp2WnFlRzVSVUZ6cHNTU183WVBJTW1hREhsbmowV3dSS1BVVDhJWGliOERyNTItdlduMEgxWTI5SUVvRzNqVVNhY1ZGSHR2aE1uSjQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T17:03-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-8c38475964ae0181",
       "date": "2026-11-12",
       "category": "Tecnología e IA",
@@ -19252,8 +19290,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T22:36-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T22:36-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T22:38-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T22:38-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
