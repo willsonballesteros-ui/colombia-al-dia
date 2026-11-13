@@ -1,0 +1,71 @@
+name: Reels corregidos ORBIUNO y MyCar | 12 noviembre
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reels-corregidos-2026-11-12.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: reels-corrected-20261112
+  cancel-in-progress: false
+jobs:
+  producir:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar FFmpeg, bibliotecas de imagen y Dora
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install Pillow numpy soundfile kokoro-onnx==0.6.1
+      - name: Descargar modelo de voz ef_dora con hash verificado
+        run: |
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Generar fotos reales licenciadas, voz y Reels
+        run: python scripts/produce_night_reels.py all
+      - name: Validar clips y evidencias
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess
+          base=Path('media/2026-11-12-2200')
+          for name in ('orbiuno','mycar'):
+            f=base/(name+'-2026-11-12-noche.mp4')
+            credits=json.loads((base/(name+'-credits.json')).read_text())
+            assert f.stat().st_size>300000
+            assert len(credits['license_photos'])==4
+            assert credits['voice']=='Kokoro ef_dora 1.25x'
+            probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-of','json',str(f)]))
+            assert any(s.get('codec_type')=='video' and s.get('width')==720 and s.get('height')==1280 for s in probe['streams'])
+            assert any(s.get('codec_type')=='audio' for s in probe['streams'])
+            print(f, f.stat().st_size, credits['duration'])
+          PY
+      - name: Guardar videos reales en GitHub (sin reescribir archivos ajenos)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-12-2200/*.mp4 media/2026-11-12-2200/*.json media/2026-11-12-2200/*.jpg
+          git commit -m 'media: dos Reels 12 nov con fotos licenciadas y Dora'
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$i"
+          done
+          exit 1
+      - name: Adjuntar MP4 y metadatos para verificación
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reels-correctos-orbiuno-mycar
+          path: media/2026-11-12-2200/
+          retention-days: 30
+          if-no-files-found: ignore
