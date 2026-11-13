@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-b25065acb1a804a0",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "México recibirá inversión de 250 mdd de WEG para producción de tecnología e inteligencia artificial",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVWRaSE1RZ3Q2V3hIdWg5SlV0RnctTXIyLXJPWkFZekdxY1hUdjdrS0diSF9PLVVQc01FbzFINDFyRENhVkgyZ0NQdFg4WWFoZjBpLXRLT3YzamRWMURVeU1qUnFqeEdKRGk4bnhmclpiaS1VMkpxd0hhck5sVGdvMXhzSzJ3RHlHeUQ3QjVaX1lRSUR2VUFvTXMwYnBGWURrcTBKQUJUeUUtdFpuTVVpTFlUSnMtZU1VdXFVNDFYZlJ0NC01aks3SmZkZ2JNV09YQ3FQS3F1WjVrZ9IB9AFBVV95cUxQdkJjWGM4R2NXaTY4ajFaWUw0Rm1JejFoclNUZmpWd1RMYTFHenl3VkRNMHJ0NU5mT29YZ05DanhPTWxrNzc1OFFoOTNlY3k1S3c4LV9kZ2lrazdXZVU2X2dNbnZ0aXhxN1pjaEdoSVNVQjF4d25LZWZoX1o4di1nSV8tTkdONTlxZVFHaDdSWTZsLVBlNU4tYU54X1VtTkx2NmJpUnVZQzVxd2NnZUdBcTg2YlYtLUZJZVJDUmtOSWFFYkdncUZYT2prcFZSX1VvaFBpNFB2RUlzd3A4MDVzOWtfOF93RnpHSE1DWU05N1FjX3h3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T16:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9e9970aec0bafef7",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Medellín es sede de la Semana de la Inteligencia Artificial que conecta tecnología, innovación y negocios",
+      "summary": "Titular difundido por Análisis Urbano a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Análisis Urbano · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYy12Zjh0S1N2cnBqN0pvZm15LW9TN0NTeEk5VlE4TVlNMFRWUGQwRVFHVE9JaHl5VGJsYnVhclpHeGdsQ3FnTXlDN05ZMkx0X3lNZVBiSkN0aGNGdkRLdjJQcm52SkRsaUpCVU1pRXNUMDNmX3Axakd1WlRBLS1sZU1WZHFpd01hd1N4TXZOS3VmS296aDkxWWdWdmMzdU1sZS1ldndoUXBPakxkam9RQmtaZWRSOFhvNWRTbDNMLW1JLWN5QTFPWE9xeDY1Um5acVVCcFh3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T16:31-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-840adf7e107f0c3c",
       "date": "2026-11-12",
       "category": "Tecnología e IA",
@@ -19290,8 +19328,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T22:38-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T22:38-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T22:41-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T22:41-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
