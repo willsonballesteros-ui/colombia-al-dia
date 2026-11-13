@@ -15,12 +15,14 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publicacion:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -39,15 +41,17 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "$DRY_RUN" = "true" ]; then
             python scripts/publishing_queue.py --dry-run
           else
-            python scripts/publishing_queue.py
+            git config user.name 'orbiuno-publisher-bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            python scripts/publishing_queue.py --persist-attempt
           fi
       - name: Guardar estado verificado o error para evitar duplicados
-        if: always()
+        if: always() && (github.event_name != 'workflow_dispatch' || !inputs.dry_run)
         run: |
           if ! git diff --quiet -- data/publishing_queue.json; then
             git config user.name 'orbiuno-publisher-bot'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add data/publishing_queue.json
             git commit -m 'chore: persist ORBIUNO publishing state [skip ci]'
-            git push
+            git push origin HEAD:refs/heads/main
           fi
