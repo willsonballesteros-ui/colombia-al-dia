@@ -42,6 +42,24 @@ class QueueTests(unittest.TestCase):
         at=dt.datetime(2026,11,12,22,tzinfo=dt.timezone.utc)
         self.assertEqual(q.run(self.path,failing,at=at)[0]["status"],"needs_review")
         self.assertEqual(q.run(self.path,failing,at=at),[])
+    def test_checkpoint_precedes_send_and_failure_blocks_send(self):
+        self.set_posts(example())
+        at = dt.datetime(2026, 11, 12, 22, tzinfo=dt.timezone.utc)
+        def failing_checkpoint(path):
+            state = q.load(path)["posts"][0]["status"]
+            self.assertEqual(state, "publishing")
+            raise OSError("checkpoint failed")
+        with self.assertRaises(OSError):
+            q.run(self.path, lambda p: self.fail("sent"), at=at, checkpoint=failing_checkpoint)
+        self.assertEqual(q.run(self.path, lambda p: self.fail("sent"), at=at), [])
+
+    def test_dry_run_does_not_mutate_unlicensed_post(self):
+        self.set_posts(example(rights_confirmed=False))
+        original = self.path.read_bytes()
+        at = dt.datetime(2026, 11, 12, 22, tzinfo=dt.timezone.utc)
+        q.run(self.path, lambda p: self.fail("sent"), at=at, dry_run=True)
+        self.assertEqual(self.path.read_bytes(), original)
+
     def test_future(self):
         self.set_posts(example(scheduled_at="2026-11-14T15:00:00-05:00"))
         self.assertEqual(q.run(self.path,lambda p:self.fail("sent"),at=dt.datetime(2026,11,12,22,tzinfo=dt.timezone.utc)),[])
