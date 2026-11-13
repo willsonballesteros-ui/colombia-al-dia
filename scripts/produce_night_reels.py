@@ -69,7 +69,7 @@ def make_frame(name,num,title,source,photo,credit):
   draw.text((180,789),"BORRADOR · NO PUBLICADO",font=font(28,True),fill="white")
  draw.rectangle((0,845,720,1280),fill=(5,20,36))
  draw.rectangle((27,855,140,904),fill=(255,212,51))
- draw.text((43,863),f"{num:02d} / 04",font=font(24,True),fill=(5,20,36))
+ draw.text((43,863),f"{num:02d} / {int(os.environ.get('ORBIUNO_REEL_COUNT', '4')):02d}",font=font(24,True),fill=(5,20,36))
  y=925
  for line in text_lines(draw,title,font(36,True),654)[:5]:
   draw.text((30,y),line,font=font(36,True),fill="white");y+=49
