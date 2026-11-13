@@ -1,0 +1,66 @@
+name: ORBIUNO | Recuperar edición 18h y activar escucha
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recuperar-edicion-audio-20261113.yml'
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-recuperacion-18h
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar archivos fuente y script de audio
+        run: |
+          python -m py_compile maintenance/restore_20261113_evening.py scripts/prepare_site.py
+          node --check audio-fix.js
+      - name: Recuperar, validar y publicar sin duplicar
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python maintenance/restore_20261113_evening.py
+            python scripts/validate_news.py noticias.json
+            python scripts/prepare_site.py
+            python - <<'PY'
+          import json,re
+          from pathlib import Path
+          db=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          expected=[n for n in db['news'] if n.get('date')=='2026-11-13' and n.get('editionSlot')=='18:00' and n.get('verification')=='editorial_verified']
+          assert len(expected)==5,(len(expected), 'edición incompleta')
+          assert all(n.get('audioFullTextEs') and n.get('imageRightsVerified') for n in expected)
+          page=Path('index.html').read_text(encoding='utf8')
+          assert './audio-fix.js?v=20261113b' in page
+          assert page.count('data-tts-id="orbiuno-20261113-18h-')>=5
+          scripts=re.findall(r'<script(?:\s+[^>]*)?>(.*?)</script>',page,re.S)
+          assert len(scripts)>1
+          Path('/tmp/orbiuno-frontend.js').write_text(scripts[-1],encoding='utf8')
+          PY
+            node --check /tmp/orbiuno-frontend.js
+            git add noticias.json index.html
+            if git diff --cached --quiet; then
+              echo "La edición ya estaba recuperada"
+              exit 0
+            fi
+            git commit -m "fix(ORBIUNO): publicar edición 18h recuperada con audio web"
+            if git push origin HEAD:main; then
+              echo "Edición verificada publicada a main"
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "No se pudo publicar sin conflictos; sin forzar" >&2
+          exit 1
