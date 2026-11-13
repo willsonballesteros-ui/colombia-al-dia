@@ -638,7 +638,7 @@ el('listen-edition').addEventListener('click',()=>{
 el('stop-edition').addEventListener('click',stopSpeech);
 // Si el alojamiento de una foto externa falla, conservar su fuente visible
 // en lugar de exhibir una imagen rota.
-el('cards').addEventListener('error',event=>{
+document.addEventListener('error',event=>{
  const image=event.target;
  if(!(image instanceof HTMLImageElement))return;
  if(image.closest('.news-photo')){
@@ -649,7 +649,7 @@ el('cards').addEventListener('error',event=>{
 },true);
 const photoViewer=el('photo-viewer');
 let photoTrigger=null;
-el('cards').addEventListener('click',event=>{
+document.addEventListener('click',event=>{
  const trigger=event.target.closest('button[data-photo-id]');if(!trigger)return;
  const item=db.news.find(n=>n.id===trigger.dataset.photoId);if(!item||!editorialImage(item))return;
  const full=String(item.imageFullUrl||item.imageUrl);
@@ -663,7 +663,7 @@ el('cards').addEventListener('click',event=>{
 el('close-photo').addEventListener('click',()=>photoViewer.close());
 photoViewer.addEventListener('click',event=>{if(event.target===photoViewer){const box=photoViewer.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)photoViewer.close();}});
 photoViewer.addEventListener('close',()=>{el('photo-viewer-image').removeAttribute('src');if(photoTrigger?.isConnected)photoTrigger.focus();});
-el('cards').addEventListener('click',event=>{
+document.addEventListener('click',event=>{
  const btn=event.target.closest('button[data-tts-action]');if(!btn)return;
  if(btn.dataset.ttsAction==='stop')stopSpeech();
  else if(btn.dataset.ttsAction==='speed')changeSpeechRate();
