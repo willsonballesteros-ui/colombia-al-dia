@@ -1,4 +1,4 @@
-name: Reels corregidos ORBIUNO y MyCar | 12 noviembre (cortos)
+name: Reels corregidos ORBIUNO y MyCar | 12 noviembre (fotos y voz)
 on:
   push:
     branches: [main]
