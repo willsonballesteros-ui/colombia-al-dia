@@ -158,6 +158,14 @@ def article_html(n):
 
 def build(data, page):
     """Mantener las tres franjas verificadas, con fotos y lectura, en UNA portada."""
+    # Evitar que el botón lea una sinopsis cuando existe la redacción integral
+    # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
+    # la vista desarrollada y el reproductor (incluido el fallback nativo).
+    from copy import deepcopy
+    data = deepcopy(data)
+    for news in data.get("news", []):
+        if original_article_ready(news):
+            news["audioFullTextEs"] = news["originalArticleTextEs"].strip()
     today=data.get("editionDate")
     published=[
         n for n in data["news"]
@@ -227,6 +235,14 @@ def build(data, page):
     # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
                       "Hasta cinco noticias verificadas por edición, con fuentes originales.")
+    # Reparación de reproducción en Safari/iPhone: cargar el reproductor
+    # local con MP3 y voz nativa de respaldo, sin abrir fuentes externas.
+    # Se inserta una única vez para mantener idempotencia del generador.
+    audio_loader = '<script defer src="./audio-fix.js?v=20261113b"></script>'
+    if audio_loader not in page:
+        if '</head>' not in page:
+            raise ValueError("No se localizó cierre del encabezado HTML")
+        page = page.replace('</head>', audio_loader + '\n</head>', 1)
     return page
 
 
