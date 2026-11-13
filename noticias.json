@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-9dd30d78c9811116",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Vietnam y Corea del Sur firman ocho acuerdos de cooperación en materia de inteligencia artificial y semiconductores.",
+      "summary": "Titular difundido por Vietnam.vn a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Vietnam.vn · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWmx2WEhNeEV1QUhHX3lBYU50Zlk4UmVGdDNFX2hfbnlUOFJSU2tCQVB1bWdadWw3OXlnQ0RrM2QtQ3M2bENzdVQtTGN1cFVUSko3enlEVEJSYzNDQ010N0Z3V0dKUlhMbWJoSUFMWWk2Mm9udmlFZC15X3ByWUxiNTlQU05SY19od3JpdjFCRGN4UQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:12-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e7bc6ca0e6036f95",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nvidia confirmó en privado que podía rastrear chips para combatir el contrabando, a pesar de que el sector cuestionaba públicamente su viabilidad",
+      "summary": "Titular difundido por MIT Technology Review en español a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MIT Technology Review en español · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQdVVUZXh2dzh1MXBZSUJnYmkwMWR2X0I3MGhtWjItOWhtVWQ5QzZsVlBaekVnWkNsSTcwYTlGNzVrUTNVQW5yT3BzYnNwNkp2WnMyZXhTNGJNMFltbkprMXhwTmdYOVgtZHVGNWtnZ0gxUjJYTGMwekVLaFJrd2pLQThKcmE1SDZOSmhPUmpPQ1UzeldEakZSV1VNbTh1aFFkUnUtT0NMblBvNHBLU0UzX1FVVGhiTXhWQWxEVElMSXdCcXVjM1pBdXpCbmtnSy00LVE5SmpHRWRTNzJhREMxUGdzM0ZXUXJ6LS1SUUFONzctWDN5VlNYUU9Uc21oN0tIYTJnTE5pUGI5ZWVaenhEOFRn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:03-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-b711f8fb98fccc96",
       "date": "2026-11-12",
       "category": "Tecnología e IA",
@@ -18929,8 +18967,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T21:23-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T21:23-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T21:28-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T21:28-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
