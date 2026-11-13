@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c87318ee54a2a0e0",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Google relanza sus gafas inteligentes con énfasis en privacidad e inteligencia artificial",
+      "summary": "Titular difundido por Metro Puerto Rico a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Metro Puerto Rico · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVG83emJEUjMyTWs3OGVVNlZhRHpiOGVZYUVnSEI5MUJac3BZaW9vNGozdVp0NkpSWUpWMDR1elRvSGpzYnFlcEd2S1M4SmlXZlZhQkJMUFFoNEFmVU1GV01DdkUybXphQ0dDZmtBNjEtNjhzX3EybDFzZTgxQnhNNW51YTZqWC10Q2xla3BfdXBsVXN1UEw0ckJEUktFSmNMYVlnbWVHQzlmbnFOdjRHSGZNOXl1Um1DbmFkdmVLTkZ5LVNmRVpDdllZZnRVTGxXcmhacHBITGhXd2di?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T18:03-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-54ac20265588d0da",
+      "date": "2026-11-12",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial: del entusiasmo a los resultados en empresas y gobiernos",
+      "summary": "Titular difundido por SNIP Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "SNIP Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV0haRUl6Vy0xQmhuUi1PT0MwYVpCV2I3ZGhMeVNiU0w3b28yNVhsSWNqQWQxSnRGNVZXUU11eGN6U2JrR3o3UVlBSnZ4MmF5cTktZU9kVmJkc1dMVEMwWllPWjU4aWlVOEJacU9lVTRTQUlOdTNzdm9KbEUydXN1SDRkTXFNa3BiTFJ1Ull5cjF1aUwtaG04SGJBUUxmSzV2RkxiQ3l3aTZHZ1ZUR1oxbWhhOEZjZk5kUFE?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T17:53-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-9dd30d78c9811116",
       "date": "2026-11-12",
       "category": "Tecnología e IA",
@@ -18967,8 +19005,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-12T21:28-05:00",
-  "lastNewSourceAtBogota": "2026-11-12T21:28-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-12T21:29-05:00",
+  "lastNewSourceAtBogota": "2026-11-12T21:29-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
