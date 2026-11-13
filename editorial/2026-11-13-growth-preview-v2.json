@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-13",
+  "approval": "PREVIEW_ONLY_DO_NOT_PUBLISH",
+  "editorialStatus": "FACT_CHECK_AND_RIGHTS_REQUIRED_BEFORE_PRODUCTION",
+  "orbiuno": [
+    {
+      "title": "Bogotá enciende la Noche de Museos",
+      "summary": "Más de 80 museos y espacios participarán en la jornada cultural del 13 de noviembre.",
+      "source": "BOGOTÁ",
+      "sourceDetails": "Alcaldía de Bogotá / IDPC",
+      "source_url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratuitos-en-bogota-noche-de-los-museos-13-noviembre-2026",
+      "photo": "File:Maloka.jpg",
+      "voice": "Bogotá prepara hoy la Noche de Museos, con más de ochenta espacios culturales y actividades gratuitas o de acceso especial. Consulta horarios y aforo de cada sede. Fuente: Alcaldía de Bogotá."
+    },
+    {
+      "title": "Casi seis mil jóvenes en la final Intercolegiada",
+      "summary": "La fase nacional inicia en Bogotá con 5.957 estudiantes deportistas de todo el país.",
+      "source": "IDRD",
+      "sourceDetails": "IDRD / Alcaldía de Bogotá",
+      "source_url": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-recibe-la-final-nacional-juegos-intercolegiados-2026-noviembre",
+      "photoQuery": "stadium sport athletes colombia",
+      "voice": "Bogotá recibe la final de los Juegos Intercolegiados, del trece al treinta de noviembre. Participan cinco mil novecientos cincuenta y siete jóvenes atletas de todo el país. Fuente: Alcaldía de Bogotá."
+    },
+    {
+      "title": "Europa se reúne para debatir inteligencia artificial",
+      "summary": "Una cumbre en Dublín aborda financiación, competitividad y seguridad de la IA.",
+      "source": "REUTERS",
+      "sourceDetails": "Reuters",
+      "source_url": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+      "photoQuery": "European Parliament Brussels building",
+      "voice": "En Dublín, líderes europeos analizan cómo impulsar la inteligencia artificial sin descuidar la seguridad y la competitividad. Son debates en curso, no acuerdos ya adoptados. Fuente: Reuters."
+    },
+    {
+      "title": "Maloka abre puertas a la ciencia esta noche",
+      "summary": "Programación gratuita del 13 de noviembre entre 5 y 8 p. m., con Cine Domo y títeres.",
+      "source": "MALOKA",
+      "sourceDetails": "Maloka",
+      "source_url": "https://maloka.org/noticias/maloka-y-mutibo-se-unen-para-celebrar-la-vii-noche-de-museos-de-bogota-y-la-iv-noche-iberoamericana-de-museos/",
+      "photo": "File:Maloka in Bogotá Colombia.jpg",
+      "voice": "El museo interactivo Maloka se une hoy a la Noche de Museos con entrada gratuita, Cine Domo y actividades con títeres entre las cinco y las ocho de la noche. El último ingreso será a las siete. Fuente: Maloka."
+    },
+    {
+      "title": "¡Wow! La historia del disco de oro de Voyager",
+      "summary": "Maloka propone una charla interactiva sobre el disco que viaja en el espacio interestelar.",
+      "source": "MALOKA",
+      "sourceDetails": "Maloka / NASA",
+      "source_url": "https://maloka.org/noticias/agenda-cultural-y-cientifica-noviembre-2026/",
+      "photo": "File:Voyager.jpg",
+      "voice": "Y el dato sorprendente: Maloka propone conocer el Disco de Oro de la sonda Voyager, que lleva sonidos e imágenes de la Tierra hacia el espacio interestelar. ¿Qué le mostrarías de Colombia a otra civilización? Fuente: Maloka y NASA."
+    }
+  ],
+  "mycar": [
+    {
+      "title": "Renault Kwid 2027 desde $49.990.000",
+      "summary": "La marca anuncia seis airbags y novedades de equipamiento para Colombia.",
+      "source": "RENAULT",
+      "sourceDetails": "Renault-Sofasa",
+      "source_url": "https://prensa.renault.com.co/prensa/el-renault-kwid-evoluciona-con-mas-tecnologia-diseno-renovado-y-seis-airbags/",
+      "photo": "File:Renault Kwid - Facelift (2026).png",
+      "voice": "Renault presenta el nuevo Kwid dos mil veintisiete en Colombia. Su precio anunciado comienza en cuarenta y nueve millones novecientos noventa mil pesos y destaca seis airbags. Fuente: Renault Sofasa."
+    },
+    {
+      "title": "Volkswagen Golf GTI: regreso anunciado",
+      "summary": "El regreso del Golf GTI al país está anunciado para el Salón del Automóvil; confirmar presentación.",
+      "source": "EL CARRO COLOMBIANO",
+      "sourceDetails": "El Carro Colombiano",
+      "source_url": "https://www.elcarrocolombiano.com/noticias/volkswagen-golf-gti-regresa-colombia-fecha-estreno-datos/",
+      "photoQuery": "Volkswagen Golf GTI",
+      "voice": "Volkswagen anunció el regreso del Golf G T I al mercado colombiano durante el Salón del Automóvil de Bogotá. La presentación debe confirmarse antes de afirmar que ya ocurrió. Fuente: El Carro Colombiano."
+    },
+    {
+      "title": "Híbridos crecen 59,8 % en Colombia",
+      "summary": "Entre enero y octubre se registraron 85.081 matrículas de híbridos, según Fenalco, ANDI y RUNT.",
+      "source": "LA REPÚBLICA",
+      "sourceDetails": "La República / Fenalco / ANDI / RUNT",
+      "source_url": "https://www.larepublica.co/empresas/ventas-de-carros-hibridos-crecen-en-colombia-2026",
+      "photo": "File:Corolla-Cross-Hybrid-2026-Facelift.jpg",
+      "voice": "Los vehículos híbridos ganan terreno en Colombia. Entre enero y octubre se registraron ochenta y cinco mil ochenta y una matrículas, con crecimiento de cincuenta y nueve coma ocho por ciento. Fuente: cifras de Fenalco, la ANDI y el RUNT recogidas por La República."
+    },
+    {
+      "title": "iCaur V23: estilos Retro y Armor",
+      "summary": "La marca presenta dos propuestas estéticas del V23 en el Salón del Automóvil de Bogotá.",
+      "source": "EL CARRO COLOMBIANO",
+      "sourceDetails": "El Carro Colombiano",
+      "source_url": "https://www.elcarrocolombiano.com/novedades/icaur-v23-versiones-retro-armor-salon-automovil-bogota/",
+      "photo": "File:ICAR V23.jpg",
+      "voice": "La SUV eléctrica iCaur V veintitrés exhibe los estilos Retro y Armor en Bogotá, con diferencias estéticas y accesorios. Una fotografía de archivo muestra el modelo base, no necesariamente esas configuraciones. Fuente: El Carro Colombiano."
+    }
+  ]
+}
