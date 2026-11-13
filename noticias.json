@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-eed4e67e0d2f0f5d",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Avanza el recambio en Selección: Colombia recibe a Chile en Cali",
+      "summary": "Titular difundido por AS Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "AS Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb21lZmJKZk1uXzYwMzI2Z0RURmV6VVpTLTRuQ3VnV0ZVYWVHUjVkS3dETjNLS2RmYmlTd3pPNmJUemh6NU5WeWFDQUxYdTkyQk5zQlRXQnN1cEc0aXpZR0ZUQUtOUTQ5LWRubjJJY3pWdE9qRTZDVXg0NkZ4V1ZabmJhRDZlUmZ6MXR6RjFfbTdCTTdNUi1xdlNxN1Bma0VIcC10MWdyLUvSAbwBQVVfeXFMTkQ4b3phOXllVm05eGdfQjhHSGhxb2Q2b2ZKOElYYWh6RHlQdG96LUw4U1JHTkRRV3dyS1E2YlhRY0ZQWnhQZDg0Yk1DM1JfMEo3ai1haWFYQTZ1OWhZUzZNRXFRa1VJeXJlT2hHaVY4di1lQms0alE1ekpIeS1McU5pOTRQZC1WR2g4NUI5TXJrcnFPZUNkcUZ4MlNTWFdYdGR0UWE0U0l3a3lNVVdCci1yX2wxQ0llTDN3RUw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T06:14-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-5e28e6ac7bac29ec",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Milei defendió el impacto de la tecnología en el empleo y destacó el potencial de la inteligencia artificial",
+      "summary": "Titular difundido por Radiofonica 100.7 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radiofonica 100.7 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdWtJZGkzNl9mZWZWc2hFTWlSb2JBbzBNNTh4Y0k1WUlCN3NFLTRKUTdWaXhGMGhySHJqS1JNazM4QXVSQjdTNHlrN0xnYnN5V2dRbW5URVR0UnpMSUJjV1Z2Tk9pWklBbmdZdHF5MUtZSmJPUUI5MEF4RThuZTh6Wnhya1dneUl0NlZUTlNMUXpVTktqUHo5ZDRSRlQ1c3VIMmVPNEFFcVlFTFRUNVVZWWp6cXRqdGJPTE9xQ2liSEpja25yV0JSdk9XSVJndw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T06:45-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-566d9773c9fa2534",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "“La tecnología tiene que estar al servicio de la humanidad”",
+      "summary": "Titular difundido por El Diario del centro del país a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Diario del centro del país · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYjVtUTZqNzU3VHdPUEstdlVVWV9mbW8yVThpZk9SN0ZzMXlkUWtLcWV0dHEtdVdXVE9aZkhqbEkzbW1obFYwWFR4OTNueWdMTzFaS1NKd051YXpIOUhOYUdyYnZFX2FjSHdQd2s3NG44a2ZSLU1yTjRSTzN4Vjh1Smp0aHRSYTlMamNpTXJmNzVuRkllMG5YTkNMOHF0dHlMaGJoR2V4ZUFnX2lMeURJM3d1LUZ0b3c4T2VaM1ZXWnNtQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T06:30-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-793677c59481b35f",
+      "date": "2026-11-12",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Skandia entra al negocio de minigranjas solares y las primeras plantas de un plan de $ 68.000 millones ya generan energía",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOVmdBTDRELVdxdzlkcDQ4TXI3YTJsN201VDdYbHdEVHRJLUd3Y0I1QjFZZl9UYVVjdnJMaUs3LThyUE9kaXU3dEx0LWgtMlp1OU9EcVdtR0tVWFJmc1lfOU1DOGFPMFh4dS1LYkVGY1pzRnRmOFdOVzdSWGs4QWhkeXFnSkZiYkJtMmRwbldjdC1VNzVxQ284M3V0VmJHb1h2S0ZnMHhvdVdJZU1idmJVdG1hcjdzWWZRb2ttdVAtN0puRFI3YTVXY1lZNkU2OGl5NmEtRndmTUFQZ3kxRnRkNkM0TE56WHppZUlsdWRrUWRkcjI2N0NneHhqTnFYbmPSAYQCQVVfeXFMT3dzcFg2TDgxbUpBVU9hOV9MMTNuLUVmeGs5QmZpTmZFRWpybDUxSkFwX04yYjl5Y1lpTWc1NHpzLXlncXlkX2hWREFJNGExdG9pX0M5Z3ItRkdKZ0RXNk9IcDBhd0M2czYtc0tFVEtiQVMzOGRLY3k1WWNVY2FJODAtbzJmbDRoU1piVl8xMENFVlVrdnUwOEhkUWVab2ttMFhSRUJDUDUzRUFuR2V4bzVYemN6T1ZuRWsyWk9ydkR1dVU1bktka0RZU1RPOFJkSEhJN1NkcHdIZDZUYjNEQXF1RlNDN1N2SndoMFd2MElYbXJQSUh3dEppTmNJWE1POEJReTM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-12T15:12-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-437a6ef0705b69fe",
       "date": "2026-11-13",
       "category": "Tecnología e IA",
@@ -19575,8 +19651,8 @@
       ]
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T06:07-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T06:07-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T06:48-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T06:48-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
