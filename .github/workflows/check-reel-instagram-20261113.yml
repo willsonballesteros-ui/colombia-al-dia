@@ -1,0 +1,40 @@
+name: ORBIUNO | Verificación final del Reel para Instagram
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/check-reel-instagram-20261113.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar video, edición y audio antes de Meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          p=Path("media/2026-11-13/ORBIUNO_2026-11-13.mp4")
+          assert p.is_file(), "BLOQUEADO: no existe MP4 final"
+          print("MP4 bytes:",p.stat().st_size)
+          assert p.stat().st_size>1000000,"BLOQUEADO: MP4 demasiado pequeño para considerarlo final sin revisión"
+          v=subprocess.run(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(p)],capture_output=True,text=True)
+          assert v.returncode==0,"BLOQUEADO: video inválido o incompleto: "+v.stderr[:350]
+          meta=json.loads(v.stdout)
+          streams=meta.get('streams',[])
+          assert any(x.get('codec_type')=='video' and x.get('width',0)>=720 and x.get('height',0)>=1280 for x in streams),"BLOQUEADO: falta video vertical"
+          assert any(x.get('codec_type')=='audio' for x in streams),"BLOQUEADO: audio ausente"
+          data=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          edition=[n for n in data.get('news',[]) if n.get('date')=='2026-11-13' and n.get('editionSlot')=='18:00' and n.get('verification')=='editorial_verified']
+          print("Noticias verificadas 18h:",len(edition))
+          assert len(edition)==6,"BLOQUEADO: ORBIUNO debe tener seis noticias, sexta de farándula"
+          assert all(n.get('imageRightsVerified') and n.get('sources') for n in edition),"BLOQUEADO: faltan imágenes/fuentes autorizadas"
+          assert any(str(n.get('category','')).lower() in ('farándula','entretenimiento') for n in edition),"BLOQUEADO: falta farándula"
+          print("REEL_VALIDATED — aún se requiere constatar publicación Meta y evitar duplicados")
+          PY
