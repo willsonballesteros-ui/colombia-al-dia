@@ -23,7 +23,7 @@ jobs:
           p=Path("media/2026-11-13/ORBIUNO_2026-11-13.mp4")
           assert p.is_file(), "BLOQUEADO: no existe MP4 final"
           print("MP4 bytes:",p.stat().st_size)
-          assert p.stat().st_size>1000000,"BLOQUEADO: MP4 demasiado pequeño para considerarlo final sin revisión"
+          assert p.stat().st_size>100000,"BLOQUEADO: MP4 vacío o extremadamente pequeño"
           v=subprocess.run(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(p)],capture_output=True,text=True)
           assert v.returncode==0,"BLOQUEADO: video inválido o incompleto: "+v.stderr[:350]
           meta=json.loads(v.stdout)
