@@ -123,7 +123,7 @@ def mycar():
  k=Kokoro.from_session(session,"/tmp/voices-v1.0.bin")
  audios=[]
  for i,(story,q) in enumerate(zip(stories,queries),1):
-  story["photo_query"]=q;story["source"]=story["sourceName"];story["source_url"]=story["source"]
+  story["photo_query"]=q;story["source_url"]=story["source"];story["source"]=story["sourceName"]
   wav=OUT/f"mycar-{i:02d}.wav"
   audio,sr=k.create(story["voiceText"],"ef_dora",speed=1.25,lang="es",sentence_pause=.13,clause_pause=.07)
   import soundfile as sf
