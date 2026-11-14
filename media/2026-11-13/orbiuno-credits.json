@@ -1,0 +1,96 @@
+{
+  "brand": "ORBIUNO",
+  "date": "2026-11-13",
+  "duration": 47.211333,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Bogotá: noche de más de 80 museos",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratuitos-en-bogota-noche-de-los-museos-13-noviembre-2026",
+      "photo": {
+        "file": "Museo del Oro, archivo",
+        "commons": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+        "artist": "GRDN711",
+        "license": "CC BY 4.0"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Final nacional Intercolegiada: 5.957 jóvenes",
+      "source": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-recibe-la-final-nacional-juegos-intercolegiados-2026-noviembre",
+      "photo": {
+        "file": "Instalación deportiva de archivo; no es una sede identificada de Bogotá",
+        "commons": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+        "artist": "Basotxerri",
+        "license": "CC BY-SA 4.0"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Europa debate seguridad y futuro de la IA",
+      "source": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+      "photo": {
+        "file": "Parlamento Europeo en Bruselas, archivo; no es Dublín",
+        "commons": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+        "artist": "Steven Lek",
+        "license": "CC BY-SA 4.0"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Maloka ofrece actividades gratuitas esta noche",
+      "source": "https://maloka.org/noticias/maloka-y-mutibo-se-unen-para-celebrar-la-vii-noche-de-museos-de-bogota-y-la-iv-noche-iberoamericana-de-museos/",
+      "photo": {
+        "file": "Maloka, archivo",
+        "commons": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+        "artist": "Edgar Jiménez",
+        "license": "CC BY 2.0"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "¡WOW! El mensaje de oro que lleva Voyager",
+      "source": "https://maloka.org/noticias/agenda-cultural-y-cientifica-noviembre-2026/",
+      "photo": {
+        "file": "Sonda Voyager, archivo",
+        "commons": "https://drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR/view",
+        "artist": "NASA/JPL-Caltech",
+        "license": "Dominio público"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "J Balvin homenajea a Daddy Yankee en los Latin Grammy",
+      "source": "https://www.vanguardia.com/entretenimiento/tendencias/2026/11/13/j-balvin-conmovio-a-daddy-yankee-al-entregarle-el-premio-persona-del-ano-en-los-latin-grammy-2026/",
+      "photo": {
+        "file": "File:J Balvin 2013.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AJ_Balvin_2013.jpg",
+        "artist": "kodeak01",
+        "license": "CC0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/J_Balvin_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4",
+  "sha256": "8ff2a46615a7857c4bc6096ef79295b2fd0397488bb6b0400471775e3b582dec",
+  "status": "READY_FOR_INSTAGRAM_PREFLIGHT",
+  "editionSlot": "18:00",
+  "news_count": 6,
+  "story_ids": [
+    "orbiuno-20261113-18h-1",
+    "orbiuno-20261113-18h-2",
+    "orbiuno-20261113-18h-3",
+    "orbiuno-20261113-18h-4",
+    "orbiuno-20261113-18h-5",
+    "orbiuno-20261113-18h-6"
+  ],
+  "source_urls": [
+    "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratuitos-en-bogota-noche-de-los-museos-13-noviembre-2026",
+    "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-recibe-la-final-nacional-juegos-intercolegiados-2026-noviembre",
+    "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+    "https://maloka.org/noticias/maloka-y-mutibo-se-unen-para-celebrar-la-vii-noche-de-museos-de-bogota-y-la-iv-noche-iberoamericana-de-museos/",
+    "https://maloka.org/noticias/agenda-cultural-y-cientifica-noviembre-2026/",
+    "https://www.vanguardia.com/entretenimiento/tendencias/2026/11/13/j-balvin-conmovio-a-daddy-yankee-al-entregarle-el-premio-persona-del-ano-en-los-latin-grammy-2026/"
+  ]
+}

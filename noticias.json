@@ -20682,6 +20682,34 @@
       "imageUrl": "./media/2026-11-13/foto-5.jpg",
       "imageAlt": "Sonda Voyager, archivo",
       "imageCaption": "Sonda Voyager, archivo"
+    },
+    {
+      "id": "orbiuno-20261113-18h-6",
+      "date": "2026-11-13",
+      "editionSlot": "18:00",
+      "priority": 6,
+      "category": "Farándula",
+      "title": "J Balvin homenajea a Daddy Yankee en los Latin Grammy",
+      "summary": "J Balvin destacó la influencia de Daddy Yankee al rendirle homenaje durante los Latin Grammy 2026.",
+      "executiveSummary": "J Balvin destacó la influencia de Daddy Yankee al rendirle homenaje durante los Latin Grammy 2026.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Vanguardia",
+          "url": "https://www.vanguardia.com/entretenimiento/tendencias/2026/11/13/j-balvin-conmovio-a-daddy-yankee-al-entregarle-el-premio-persona-del-ano-en-los-latin-grammy-2026/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "El cantante colombiano J Balvin protagonizó un momento emotivo durante los Latin Grammy de dos mil veintiséis. Al entregar un reconocimiento a Daddy Yankee, destacó la huella que ha dejado el artista puertorriqueño en la música urbana y en la proyección internacional de la cultura latina. En su intervención, Balvin recordó que el crecimiento de este movimiento musical no solo benefició a los intérpretes: también abrió espacios para compositores, productores, bailarines y otros profesionales. El homenaje pone en primer plano la influencia de Daddy Yankee en distintas generaciones de artistas y explica por qué el momento ha llamado la atención de la prensa de entretenimiento. La información fue publicada este viernes trece de noviembre por el diario Vanguardia. La fotografía que acompaña esta noticia es de archivo y no corresponde necesariamente a la ceremonia de este año.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13/foto-6.jpg",
+      "imageAlt": "J Balvin, fotografía de archivo; no corresponde a los Latin Grammy de 2026",
+      "imageCaption": "J Balvin, fotografía de archivo",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AJ_Balvin_2013.jpg",
+      "imageCredit": "kodeak01",
+      "imageLicense": "CC0"
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-13T19:00-05:00",
