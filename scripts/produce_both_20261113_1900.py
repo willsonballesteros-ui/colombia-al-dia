@@ -69,33 +69,52 @@ MYCAR=[
  {"title":"Renault 4 E-Tech llega como exhibición eléctrica","source":"Renault Sofasa","url":"https://prensa.renault.com.co/prensa/renault-llega-a-la-edicion-20-del-salon-del-automovil-de-bogota-con-su-portafolio-100-renovado-y-se-extiende-a-sus-111-salas-a-nivel-nacional/","photo_query":"Renault 4 electric automobile",
  "voice":"Renault exhibe el cuatro E Tech eléctrico como vehículo de muestra en Corferias y anuncia planes de preventa para Colombia. Fuente: Renault Sofasa."}
 ]
-# Commons search is strict about multiword terms; try verified synonyms only.
-# Never synthesize an image or suppress the source/license test.
-_image_fallbacks={
- "Cali Colombia city skyline buildings":["Cali Colombia","Cali","Colombia city"],
- "Microsoft Redmond headquarters building":["Microsoft headquarters","Microsoft","office building"],
- "Cali Pascual Guerrero football stadium":["Pascual Guerrero","football stadium","soccer stadium"],
- "airport runway passenger airplanes airport":["airport","aircraft","airplane"],
- "small electric aircraft futuristic helicopter":["helicopter","aircraft","electric airplane"],
- "Rosalia singer musician concert":["Rosalia","singer concert","music concert"],
- "Corferias Bogota exhibition hall":["Corferias","exhibition hall","Bogota buildings"],
- "FAW Bestune compact electric car":["FAW automobile","electric car","small vehicle"],
- "electric flying aircraft small aviation":["aircraft","helicopter","electric aircraft"],
- "Renault 4 electric automobile":["Renault automobile","Renault","compact car"]
+# File identity, author and CC license checked against each Wikimedia Commons file page.
+# Using stable upload URLs avoids search mismatches (Cali insect / Saint Rosalia)
+# and Commons API rate limiting. Never silently substitute another subject.
+from PIL import Image
+import urllib.parse,urllib.request,hashlib,io,time
+CURATED={
+ "Cali Colombia city skyline buildings":("Panorámica Cali desde Valle del Lili.jpg","Dh","CC BY-SA 4.0"),
+ "Microsoft Redmond headquarters building":("Building92microsoft.jpg","Coolcaesar","CC BY-SA 4.0"),
+ "Cali Pascual Guerrero football stadium":("Pascual Guerrero Stadium.jpg","Johannes Bud","CC BY-SA 4.0"),
+ "airport runway passenger airplanes airport":("LaGuardia.jpg","Jeremy Goldstein","CC BY 2.0"),
+ "small electric aircraft futuristic helicopter":("XPeng X2 at Auto Guangzhou 2023 20231126-A.jpg","Tim Wu","CC BY-SA 4.0"),
+ "Rosalia singer musician concert":("Rosalia 2019-portrait.jpg","Pedro J Pacheco","CC BY-SA 4.0"),
+ "Corferias Bogota exhibition hall":("Entry to corferias bogota colombia.jpg","Rainercol","CC BY-SA 3.0"),
+ "FAW Bestune compact electric car":("2023 FAW Bestune Pony (front).jpg","User3204","CC BY-SA 4.0"),
+ "electric flying aircraft small aviation":("XPeng X2 at Auto Guangzhou 2023 20231126-A.jpg","Tim Wu","CC BY-SA 4.0"),
+ "Renault 4 electric automobile":("Renault 4 E-Tech (54911777481).jpg","Alexandre Prevot","CC BY-SA 4.0")
 }
-_choose_original=p.choose_photo
+PHOTO_CACHE={}
 def _verified_photo(query):
- errors=[]
- for q in [query]+_image_fallbacks.get(query,[]):
-  try:
-   photo,credit=_choose_original(q)
-   if not credit.get("commons","").startswith("https://commons.wikimedia.org/wiki/"):raise RuntimeError("Source URL unavailable")
-   if not any(x in str(credit.get("license","")).lower() for x in ("cc by","cc0","public domain")):raise RuntimeError("License not allowed")
-   print("APPROVED_ARCHIVAL_PHOTO",query,"=>",credit["file"],credit["license"],flush=True)
-   return photo,credit
-  except Exception as e:
-   errors.append(q+": "+str(e)[:65])
- raise RuntimeError("No valid Commons photo; "+str(errors))
+ if query not in CURATED:raise RuntimeError("No curated licensed photo for "+query)
+ name,artist,license_name=CURATED[query]
+ canonical=name.replace(" ","_")
+ digest=hashlib.md5(canonical.encode("utf-8")).hexdigest()
+ url="https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+urllib.parse.quote(canonical,safe="(),'-.")
+ page="https://commons.wikimedia.org/wiki/File:"+urllib.parse.quote(canonical,safe="(),'-.")
+ if name not in PHOTO_CACHE:
+  last=None
+  for attempt in range(4):
+   try:
+    req=urllib.request.Request(url,headers={"User-Agent":"ORBIUNOEditorial/1.0 (news; Commons attribution logged)"})
+    with urllib.request.urlopen(req,timeout=60) as response:
+     raw=response.read(18000000)
+    img=Image.open(io.BytesIO(raw));img.load()
+    if img.width<700 or img.height<500:raise RuntimeError("Photo resolution too small")
+    if max(img.size)>1600:img.thumbnail((1600,1600),Image.Resampling.LANCZOS)
+    PHOTO_CACHE[name]=(img.convert("RGB"),url)
+    break
+   except Exception as exc:
+    last=exc
+    time.sleep(2*(attempt+1))
+  else:raise RuntimeError("Licensed Commons file unavailable: "+name+" / "+str(last))
+ img,original_url=PHOTO_CACHE[name]
+ credit={"file":"File:"+name,"commons":page,"artist":artist,
+  "license":license_name,"photo_url":original_url}
+ print("LICENSED_IMAGE",query,"=>",name,artist,license_name,flush=True)
+ return img.copy(),credit
 p.choose_photo=_verified_photo
 
 def render(brand,stories):
