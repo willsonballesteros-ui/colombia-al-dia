@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-4b7af1759d28678e",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Rus destacó el uso de inteligencia artificial y tecnología para reforzar la seguridad de los turistas en Mendoza",
+      "summary": "Titular difundido por ADNPais a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ADNPais · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNYzZLTTdQWnNNa2NhTkhtWERsTWtRWjJteEJDMkFhZmY3X21CQlE0MW1obVViVTdBYkNzZDE4blBoeGsyMmZUZlZ2SzhjT3otSXk1M21KNldxclNWWXNZUkdhV05EcDNLalpnZVRzX21LQm1pTFI4b3Etd1IzZU5IeHpjbUlRZjhZakFxRmh5LURfdHYtZ29paWVuV0ZUVmg4SngxRUsyREE0QzFHNnRaUHRjQ2ZNM1NmTHpOd2I1Y0t0R3ZmcXdFaTBmWXZKbC1HYVJ0UkVTQkZndTR1X00tUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T19:27-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-69e5014798b497fe",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "RDEco: cuánto cuesta incorporar inteligencia artificial en una PyME y qué procesos se pueden automatizar",
+      "summary": "Titular difundido por Perfil a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Perfil · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQZ1pGNXFXcVNic3ZGZTNYM3hxQmNQNTBRRWRhY091QWVtRUtpcGwxNHNnaGtUaGVKQ29wb0Njb2V2QUVyVjd3Z1V1MEtVYmxZM0Y1SkFSSUN1OHVVSUhMbWZWS201d1A5MVM1SVJFZFZ3S2p0Tk9qR3lwYnlnc1FBMUYwcGwydTJXRXh3Y3Y0aVNJSlZURWtybXQya2xuRWJxMVpWMkpTZlF4TDJaLU16WWhfQzNySzFKVmtLZXhORHFpUU5ldHdyODVqLW1RZFB1c0dncFJqVzgwTFVwRDhz?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T17:04-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-885b917802e79fa3",
       "date": "2026-11-13",
       "category": "Tecnología e IA",
@@ -21092,10 +21130,10 @@
       "imageLicense": "CC0"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T19:27-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T19:27-05:00",
-  "autoSyncOkSources": 6,
-  "autoSyncFailedSources": 0,
+  "autoSyncCheckedAtBogota": "2026-11-13T19:31-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T19:31-05:00",
+  "autoSyncOkSources": 5,
+  "autoSyncFailedSources": 1,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
   "editorialFormat": "5 noticias por publicación; portada conjunta con titulares resaltados en orden, desarrollo secuencial con fotografías verificadas",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
