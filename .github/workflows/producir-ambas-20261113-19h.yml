@@ -1,0 +1,106 @@
+name: ORBIUNO MyCar | Nueva edición 19h con 6 y 4 noticias
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/producir-ambas-20261113-19h.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: editorial-orbiuno-mycar-19h-20261113
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar síntesis femenina, render y validación MP4
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install 'kokoro-onnx==0.6.1' Pillow numpy soundfile
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Generar dos MP4 y las seis noticias de la web
+        run: |
+          python scripts/produce_both_20261113_1900.py
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+      - name: Revisar video, fotos y coincidencia de titulares
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          path=Path('media/2026-11-13-1900')
+          data=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          rows=sorted([n for n in data['news'] if n.get('editionSlot')=='19:00' and n.get('date')=='2026-11-13'],key=lambda x:x.get('priority',999))
+          assert len(rows)==6 and rows[5]['category']=='Farándula'
+          page=Path('index.html').read_text(encoding='utf8')
+          assert all(n['title'] in page and n['imageRightsVerified'] for n in rows)
+          for brand,count in [('ORBIUNO',6),('MYCAR',4)]:
+            file=path/(brand+'-2026-11-13_19H_'+str(count)+'_NOTICIAS.mp4')
+            metadata=json.loads((path/(brand.lower()+'-credits.json')).read_text())
+            assert len(metadata['license_photos'])==count
+            p=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(file)]))
+            assert float(p['format']['duration'])>25
+            assert any(s['codec_type']=='audio' for s in p['streams'])
+            assert any(s['codec_type']=='video' and s.get('width')==720 and s.get('height')==1280 for s in p['streams'])
+            print('REEL_VALIDATED',brand,file.stat().st_size,metadata['sha256'],flush=True)
+          PY
+      - name: Guardar nuevos videos sin sobrescribir publicaciones anteriores
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git reset --hard origin/main
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          from produce_both_20261113_1900 import sync_web
+          out=Path('media/2026-11-13-1900')
+          assert (out/'ORBIUNO-2026-11-13_19H_6_NOTICIAS.mp4').exists()
+          assert (out/'MYCAR-2026-11-13_19H_4_NOTICIAS.mp4').exists()
+          sync_web(json.loads((out/'orbiuno-credits.json').read_text(encoding='utf8')))
+          PY
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+          git add noticias.json index.html media/2026-11-13-1900/*-2026-11-13_19H_*_NOTICIAS.mp4 media/2026-11-13-1900/*-credits.json media/2026-11-13-1900/orbiuno-0*.jpg media/2026-11-13-1900/mycar-0*.jpg
+          git commit -m 'ORBIUNO y MyCar 19h: diez noticias y dos Reels verificados [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo 'REELS_COMMITTED'
+              exit 0
+            fi
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          from produce_both_20261113_1900 import sync_web
+          sync_web(json.loads(Path('media/2026-11-13-1900/orbiuno-credits.json').read_text()))
+          PY
+            python scripts/prepare_site.py
+            git add noticias.json index.html media/2026-11-13-1900/*-2026-11-13_19H_*_NOTICIAS.mp4 media/2026-11-13-1900/*-credits.json media/2026-11-13-1900/orbiuno-0*.jpg media/2026-11-13-1900/mycar-0*.jpg
+            git commit -m 'ORBIUNO y MyCar 19h: diez noticias y dos Reels verificados [skip ci]' || true
+            sleep $((attempt * 2))
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ORBIUNO-MYCAR-20261113-19h-REVISION
+          path: |
+            media/2026-11-13-1900/*-2026-11-13_19H_*_NOTICIAS.mp4
+            media/2026-11-13-1900/*-credits.json
+          retention-days: 30
+          if-no-files-found: ignore
