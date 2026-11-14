@@ -92,7 +92,7 @@ def _verified_photo(query):
  name,artist,license_name=CURATED[query]
  canonical=name.replace(" ","_")
  digest=hashlib.md5(canonical.encode("utf-8")).hexdigest()
- url="https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+urllib.parse.quote(canonical,safe="(),'-.")
+ url="https://upload.wikimedia.org/wikipedia/commons/thumb/"+digest[0]+"/"+digest[:2]+"/"+urllib.parse.quote(canonical,safe="(),\'-.")+"/960px-"+urllib.parse.quote(canonical,safe="(),\'-.")
  page="https://commons.wikimedia.org/wiki/File:"+urllib.parse.quote(canonical,safe="(),'-.")
  if name not in PHOTO_CACHE:
   last=None
