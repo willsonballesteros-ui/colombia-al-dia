@@ -8,11 +8,11 @@
       "headline": "Renault 4 eléctrico abre preventa por 99,99 millones",
       "source": "https://prensa.renault.com.co/prensa/el-regreso-de-un-icono-renault-4-llega-a-colombia-en-version-100-electrica/",
       "photo": {
-        "file": "File:Renault Megane E-Tech IAA 2021 1X7A0073.jpg",
-        "commons": "https://commons.wikimedia.org/wiki/File%3ARenault_Megane_E-Tech_IAA_2021_1X7A0073.jpg",
-        "artist": "Alexander Migl",
+        "file": "File:Renault 4 E-Tech (54911777481).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_(54911777481).jpg",
+        "artist": "Alexandre Prevot",
         "license": "CC BY-SA 4.0",
-        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Renault_Megane_E-Tech_IAA_2021_1X7A0073.jpg/1280px-Renault_Megane_E-Tech_IAA_2021_1X7A0073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Renault_4_E-Tech_(54911777481).jpg/960px-Renault_4_E-Tech_(54911777481).jpg"
       },
       "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
     },
@@ -54,7 +54,7 @@
     }
   ],
   "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-14-mycar-tarde/mycar-2026-11-12-noche.mp4",
-  "sha256": "7355ec6d5e726d1afb07c9cca2b5e8a8ed5b0eea3389b0eef16bfae1d7a12424",
+  "sha256": "24d8a361b3441deb9f36991580f97450cf8b03015e41d4bc057b54f747afe3e2",
   "status": "RENDERED_NOT_PUBLISHED",
   "edition": "16:00",
   "video": "MYCAR-2026-11-14_TARDE_4_NOTICIAS.mp4",
