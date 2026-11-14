@@ -1,0 +1,111 @@
+{
+  "brand": "ORBIUNO",
+  "date": "2026-11-14",
+  "duration": 56.789667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Bogotá recibe festival de cultura mexicana",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratis-festival-mexico-en-el-corazon-de-bogota-noviembre14-y-15",
+      "photo": {
+        "file": "File:Plaque at the Plaza de Bolívar, Bogotá.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3APlaque_at_the_Plaza_de_Bol%C3%ADvar%2C_Bogot%C3%A1.jpg",
+        "artist": "Bernard Gagnon",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Plaque_at_the_Plaza_de_Bol%C3%ADvar%2C_Bogot%C3%A1.jpg/1280px-Plaque_at_the_Plaza_de_Bol%C3%ADvar%2C_Bogot%C3%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Bogotá celebra a escritoras y lectoras",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-13-al-19-de-noviembre-2026",
+      "photo": {
+        "file": "File:Terraza Biblioteca Virgilio Barco.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3ATerraza_Biblioteca_Virgilio_Barco.jpg",
+        "artist": "Dragonmystical librarian",
+        "license": "CC BY 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Terraza_Biblioteca_Virgilio_Barco.jpg/1280px-Terraza_Biblioteca_Virgilio_Barco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Estados Unidos normaliza vuelos tras fallas",
+      "source": "https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/",
+      "photo": {
+        "file": "File:JFK Airport aerial, New York City (20100325-DSC01275).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:JFK_Airport_aerial,_New_York_City_(20100325-DSC01275).jpg",
+        "artist": "Matti Blume",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/JFK_Airport_aerial,_New_York_City_(20100325-DSC01275).jpg/960px-JFK_Airport_aerial,_New_York_City_(20100325-DSC01275).jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Denza, marca de lujo de BYD, debuta en India",
+      "source": "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/",
+      "photo": {
+        "file": "File:Denza D9 011.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3ADenza_D9_011.jpg",
+        "artist": "JustAnotherCarDesigner",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Denza_D9_011.jpg/1280px-Denza_D9_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "¡WOW! Starship despliega satélites en órbita",
+      "source": "https://www.reuters.com/science/spacex-attempt-first-starship-spacecraft-recovery-land-15th-flight-2026-11-13/",
+      "photo": {
+        "file": "File:The launch of the SpaceX Starship 6 rocket seen from the space station (iss072e220043).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AThe_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_%28iss072e220043%29.jpg",
+        "artist": "NASA/Don Pettit",
+        "license": "Public domain",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_%28iss072e220043%29.jpg/1280px-The_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_%28iss072e220043%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Karol G obtiene dos Latin Grammy",
+      "source": "https://abc7.com/amp/post/lista-completa-de-ganadores-del-latin-grammy-2026/20037510/",
+      "photo": {
+        "file": "File:Karol G en 2018.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AKarol_G_en_2018.jpg",
+        "artist": "Programas Telemedellín",
+        "license": "CC BY 3.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Karol_G_en_2018.jpg/1280px-Karol_G_en_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-14-publicable/orbiuno-2026-11-12-noche.mp4",
+  "sha256": "b7acf983cc395b32c7f5d7b00c71ba6976e9c92e0cbc26dd413e2682835dcddd",
+  "status": "PRODUCED_PENDING_INSTAGRAM",
+  "edition": "2026-11-14-12h",
+  "stories": [
+    {
+      "title": "Bogotá recibe festival de cultura mexicana",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratis-festival-mexico-en-el-corazon-de-bogota-noviembre14-y-15"
+    },
+    {
+      "title": "Bogotá celebra a escritoras y lectoras",
+      "source": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-13-al-19-de-noviembre-2026"
+    },
+    {
+      "title": "Estados Unidos normaliza vuelos tras fallas",
+      "source": "https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/"
+    },
+    {
+      "title": "Denza, marca de lujo de BYD, debuta en India",
+      "source": "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/"
+    },
+    {
+      "title": "¡WOW! Starship despliega satélites en órbita",
+      "source": "https://www.reuters.com/science/spacex-attempt-first-starship-spacecraft-recovery-land-15th-flight-2026-11-13/"
+    },
+    {
+      "title": "Karol G obtiene dos Latin Grammy",
+      "source": "https://abc7.com/amp/post/lista-completa-de-ganadores-del-latin-grammy-2026/20037510/"
+    }
+  ],
+  "video": "ORBIUNO-2026-11-14_FINAL_6_NOTICIAS.mp4"
+}

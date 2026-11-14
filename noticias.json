@@ -1,6 +1,6 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-13",
+  "editionDate": "2026-11-14",
   "editedAtBogota": "2026-11-12T21:20:00-05:00",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
@@ -21426,6 +21426,222 @@
       "imageCredit": "Pedro J Pacheco",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Rosalia_2019-portrait.jpg",
       "instagramReelOrder": 6
+    },
+    {
+      "id": "orbiuno-20261114-12h-1",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 1,
+      "category": "Bogotá",
+      "title": "Bogotá recibe festival de cultura mexicana",
+      "summary": "Hoy y mañana, la Plaza de Bolívar recibe el festival México en el corazón de Bogotá. Más de ochenta emprendimientos presentan gastronomía, artesanías y música. La entrada es gratuita. Fuente: Alcaldía de Bogotá.",
+      "executiveSummary": "Hoy y mañana, la Plaza de Bolívar recibe el festival México en el corazón de Bogotá. Más de ochenta emprendimientos presentan gastronomía, artesanías y música. La entrada es gratuita. Fuente: Alcaldía de Bogotá.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Alcaldía de Bogotá",
+          "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratis-festival-mexico-en-el-corazon-de-bogota-noviembre14-y-15"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Bogotá recibe durante el sábado catorce y el domingo quince de noviembre el festival México en el Corazón de Bogotá, una programación de gastronomía, expresiones culturales y emprendimientos en la Plaza de Bolívar. La agenda anunciada por el Distrito reúne a más de ochenta iniciativas que acercan tradiciones mexicanas a los visitantes del centro de la ciudad.\n\nEl encuentro es una opción cultural para residentes y turistas, pero los horarios de actividades específicas pueden cambiar. Quienes planeen asistir deben consultar la información actualizada de la Alcaldía y tener en cuenta las condiciones de movilidad alrededor de la Plaza de Bolívar. ORBIUNO presenta la invitación a partir de la programación oficial, sin afirmar aforos ni cifras de asistentes que todavía no estén verificadas.\n\nLa fotografía de archivo utilizada para ilustrar esta noticia corresponde a un elemento de la Plaza de Bolívar y no pretende documentar una presentación del festival. La fuente original incluye los detalles del evento y permite comprobar qué actividades están anunciadas para cada jornada.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratis-festival-mexico-en-el-corazon-de-bogota-noviembre14-y-15"
+      ],
+      "originalArticleTextEs": "Bogotá recibe durante el sábado catorce y el domingo quince de noviembre el festival México en el Corazón de Bogotá, una programación de gastronomía, expresiones culturales y emprendimientos en la Plaza de Bolívar. La agenda anunciada por el Distrito reúne a más de ochenta iniciativas que acercan tradiciones mexicanas a los visitantes del centro de la ciudad.\n\nEl encuentro es una opción cultural para residentes y turistas, pero los horarios de actividades específicas pueden cambiar. Quienes planeen asistir deben consultar la información actualizada de la Alcaldía y tener en cuenta las condiciones de movilidad alrededor de la Plaza de Bolívar. ORBIUNO presenta la invitación a partir de la programación oficial, sin afirmar aforos ni cifras de asistentes que todavía no estén verificadas.\n\nLa fotografía de archivo utilizada para ilustrar esta noticia corresponde a un elemento de la Plaza de Bolívar y no pretende documentar una presentación del festival. La fuente original incluye los detalles del evento y permite comprobar qué actividades están anunciadas para cada jornada.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-01.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Bernard Gagnon",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3APlaque_at_the_Plaza_de_Bol%C3%ADvar%2C_Bogot%C3%A1.jpg"
+    },
+    {
+      "id": "orbiuno-20261114-12h-2",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 2,
+      "category": "Cultura Bogotá",
+      "title": "Bogotá celebra a escritoras y lectoras",
+      "summary": "Bogotá propone una ruta literaria por sus distritos creativos para reconocer las voces de escritoras colombianas y latinoamericanas. Consulta los horarios oficiales. Fuente: Alcaldía de Bogotá.",
+      "executiveSummary": "Bogotá propone una ruta literaria por sus distritos creativos para reconocer las voces de escritoras colombianas y latinoamericanas. Consulta los horarios oficiales. Fuente: Alcaldía de Bogotá.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Bogotá.gov.co",
+          "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-13-al-19-de-noviembre-2026"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "La agenda cultural de Bogotá incluye una ruta literaria orientada a destacar la obra y la presencia de mujeres y niñas en distintos espacios creativos de la ciudad. La propuesta forma parte de los planes anunciados para el período del trece al diecinueve de noviembre y está vinculada con los Distritos Creativos y actividades de lectura.\n\nLa ruta busca conectar el público con la literatura y con experiencias culturales en espacios de Bogotá. Como las actividades pueden tener horarios, ubicaciones o requisitos de inscripción diferentes, conviene verificar cada encuentro en el calendario del Distrito. No se debe asumir que todas las sedes estarán abiertas permanentemente ni que existe entrada libre para cualquier sesión si el anuncio no lo especifica.\n\nORBIUNO presenta esta historia como una alternativa cultural positiva y recomienda acudir a la fuente oficial para conocer la programación vigente. La imagen que acompaña la publicación es de archivo y representa un espacio de lectura, no una fotografía tomada durante la ruta literaria de este fin de semana.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-del-13-al-19-de-noviembre-2026"
+      ],
+      "originalArticleTextEs": "La agenda cultural de Bogotá incluye una ruta literaria orientada a destacar la obra y la presencia de mujeres y niñas en distintos espacios creativos de la ciudad. La propuesta forma parte de los planes anunciados para el período del trece al diecinueve de noviembre y está vinculada con los Distritos Creativos y actividades de lectura.\n\nLa ruta busca conectar el público con la literatura y con experiencias culturales en espacios de Bogotá. Como las actividades pueden tener horarios, ubicaciones o requisitos de inscripción diferentes, conviene verificar cada encuentro en el calendario del Distrito. No se debe asumir que todas las sedes estarán abiertas permanentemente ni que existe entrada libre para cualquier sesión si el anuncio no lo especifica.\n\nORBIUNO presenta esta historia como una alternativa cultural positiva y recomienda acudir a la fuente oficial para conocer la programación vigente. La imagen que acompaña la publicación es de archivo y representa un espacio de lectura, no una fotografía tomada durante la ruta literaria de este fin de semana.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-02.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "CC BY 4.0",
+      "imageCredit": "Dragonmystical librarian",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ATerraza_Biblioteca_Virgilio_Barco.jpg"
+    },
+    {
+      "id": "orbiuno-20261114-12h-3",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 3,
+      "category": "Mundo",
+      "title": "Estados Unidos normaliza vuelos tras fallas",
+      "summary": "Estados Unidos reanuda gradualmente operaciones aéreas después de una falla de comunicaciones. Los pasajeros deben verificar directamente con sus aerolíneas. Fuente: información de aviación divulgada el catorce de noviembre.",
+      "executiveSummary": "Estados Unidos reanuda gradualmente operaciones aéreas después de una falla de comunicaciones. Los pasajeros deben verificar directamente con sus aerolíneas. Fuente: información de aviación divulgada el catorce de noviembre.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Estados Unidos reportó afectaciones en la operación aérea por problemas de comunicaciones y posteriormente comenzaron a normalizarse los despegues. Las autoridades aeronáuticas y los operadores trabajan bajo protocolos de seguridad, por lo que el regreso de los vuelos no necesariamente se produce al mismo tiempo en todos los aeropuertos.\n\nUna suspensión temporal de salidas afecta la planificación de los viajeros, pero no significa que todos los aviones que estaban en vuelo hayan quedado detenidos. La duración de los retrasos puede variar según el aeropuerto, la aerolínea y la ruta. Las personas que tengan tiquetes para viajar deben consultar el estado específico de su vuelo antes de desplazarse al terminal.\n\nLa información se basa en reportes periodísticos de la situación y se presenta como actualización, no como una afirmación de que todos los servicios hayan vuelto completamente a la normalidad. La fotografía empleada muestra un aeropuerto estadounidense de archivo; no corresponde al momento de la falla ni constituye una imagen del operativo de la autoridad.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/"
+      ],
+      "originalArticleTextEs": "Estados Unidos reportó afectaciones en la operación aérea por problemas de comunicaciones y posteriormente comenzaron a normalizarse los despegues. Las autoridades aeronáuticas y los operadores trabajan bajo protocolos de seguridad, por lo que el regreso de los vuelos no necesariamente se produce al mismo tiempo en todos los aeropuertos.\n\nUna suspensión temporal de salidas afecta la planificación de los viajeros, pero no significa que todos los aviones que estaban en vuelo hayan quedado detenidos. La duración de los retrasos puede variar según el aeropuerto, la aerolínea y la ruta. Las personas que tengan tiquetes para viajar deben consultar el estado específico de su vuelo antes de desplazarse al terminal.\n\nLa información se basa en reportes periodísticos de la situación y se presenta como actualización, no como una afirmación de que todos los servicios hayan vuelto completamente a la normalidad. La fotografía empleada muestra un aeropuerto estadounidense de archivo; no corresponde al momento de la falla ni constituye una imagen del operativo de la autoridad.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-03.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Matti Blume",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:JFK_Airport_aerial,_New_York_City_(20100325-DSC01275).jpg"
+    },
+    {
+      "id": "orbiuno-20261114-12h-4",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 4,
+      "category": "Economía",
+      "title": "Denza, marca de lujo de BYD, debuta en India",
+      "summary": "La marca de lujo Denza, propiedad de BYD, debuta en India con la miniván eléctrica D nueve y el deportivo Z nueve G T. Compite en el segmento prémium. Fuente: Reuters.",
+      "executiveSummary": "La marca de lujo Denza, propiedad de BYD, debuta en India con la miniván eléctrica D nueve y el deportivo Z nueve G T. Compite en el segmento prémium. Fuente: Reuters.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Denza, la marca de vehículos de gama alta del grupo automotor BYD, amplía su presencia internacional con su presentación en India. La oferta anunciada incluye la miniván eléctrica D9 y el modelo deportivo Z9 GT, con los que la compañía busca competir en el segmento prémium y diversificar su presencia fuera de China.\n\nEl movimiento refleja una estrategia de expansión de fabricantes chinos hacia nuevos mercados, especialmente en categorías de mayor valor. La entrada de una marca a otro país no significa que sus vehículos estén homologados, disponibles o con precios confirmados para Colombia. Es importante distinguir el anuncio comercial en India de una eventual oferta futura para nuestro mercado.\n\nORBIUNO recoge los principales datos del anuncio reportado por Reuters y los contextualiza sin añadir cifras de ventas o cuotas de mercado que no se hayan confirmado. La fotografía es una referencia del modelo Denza D9, no una imagen oficial de la ceremonia realizada en India.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/"
+      ],
+      "originalArticleTextEs": "Denza, la marca de vehículos de gama alta del grupo automotor BYD, amplía su presencia internacional con su presentación en India. La oferta anunciada incluye la miniván eléctrica D9 y el modelo deportivo Z9 GT, con los que la compañía busca competir en el segmento prémium y diversificar su presencia fuera de China.\n\nEl movimiento refleja una estrategia de expansión de fabricantes chinos hacia nuevos mercados, especialmente en categorías de mayor valor. La entrada de una marca a otro país no significa que sus vehículos estén homologados, disponibles o con precios confirmados para Colombia. Es importante distinguir el anuncio comercial en India de una eventual oferta futura para nuestro mercado.\n\nORBIUNO recoge los principales datos del anuncio reportado por Reuters y los contextualiza sin añadir cifras de ventas o cuotas de mercado que no se hayan confirmado. La fotografía es una referencia del modelo Denza D9, no una imagen oficial de la ceremonia realizada en India.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-04.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "JustAnotherCarDesigner",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ADenza_D9_011.jpg"
+    },
+    {
+      "id": "orbiuno-20261114-12h-5",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 5,
+      "category": "Tecnología",
+      "title": "¡WOW! Starship despliega satélites en órbita",
+      "summary": "La misión número quince de Starship alcanzó órbita y desplegó satélites Starlink. El propulsor no completó la recuperación prevista. Fuente: Reuters.",
+      "executiveSummary": "La misión número quince de Starship alcanzó órbita y desplegó satélites Starlink. El propulsor no completó la recuperación prevista. Fuente: Reuters.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/science/spacex-attempt-first-starship-spacecraft-recovery-land-15th-flight-2026-11-13/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "SpaceX realizó el decimoquinto vuelo de prueba de Starship, un vehículo diseñado para desarrollar capacidades de transporte espacial reutilizable. Durante la misión se reportó la llegada a la órbita y el despliegue de satélites Starlink, dos hitos operativos incluidos entre los objetivos de la prueba.\n\nEl regreso del propulsor no concluyó como estaba previsto, un resultado que recuerda el carácter experimental del programa. Los vuelos de prueba pueden combinar avances y fallas, y sus resultados deben evaluarse por etapas, no solo por un indicador de éxito o fracaso. Las declaraciones sobre futuros lanzamientos o cambios en el diseño requieren nuevos anuncios oficiales.\n\nLa historia forma parte de la selección sorprendente de ORBIUNO por su interés tecnológico y científico. La fotografía que aparece en la noticia es una imagen real de archivo de otro vuelo de Starship, con crédito a la NASA; no debe confundirse con una captura de esta misión número quince.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/science/spacex-attempt-first-starship-spacecraft-recovery-land-15th-flight-2026-11-13/"
+      ],
+      "originalArticleTextEs": "SpaceX realizó el decimoquinto vuelo de prueba de Starship, un vehículo diseñado para desarrollar capacidades de transporte espacial reutilizable. Durante la misión se reportó la llegada a la órbita y el despliegue de satélites Starlink, dos hitos operativos incluidos entre los objetivos de la prueba.\n\nEl regreso del propulsor no concluyó como estaba previsto, un resultado que recuerda el carácter experimental del programa. Los vuelos de prueba pueden combinar avances y fallas, y sus resultados deben evaluarse por etapas, no solo por un indicador de éxito o fracaso. Las declaraciones sobre futuros lanzamientos o cambios en el diseño requieren nuevos anuncios oficiales.\n\nLa historia forma parte de la selección sorprendente de ORBIUNO por su interés tecnológico y científico. La fotografía que aparece en la noticia es una imagen real de archivo de otro vuelo de Starship, con crédito a la NASA; no debe confundirse con una captura de esta misión número quince.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-05.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "Public domain",
+      "imageCredit": "NASA/Don Pettit",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_launch_of_the_SpaceX_Starship_6_rocket_seen_from_the_space_station_%28iss072e220043%29.jpg"
+    },
+    {
+      "id": "orbiuno-20261114-12h-6",
+      "date": "2026-11-14",
+      "editionSlot": "12:00",
+      "priority": 6,
+      "category": "Farándula",
+      "title": "Karol G obtiene dos Latin Grammy",
+      "summary": "Karol G ganó el premio a mejor álbum de música urbana por Tropicoqueta y, junto a Feid, mejor interpretación de reguetón por Verano Rosa. Fuente: Associated Press.",
+      "executiveSummary": "Karol G ganó el premio a mejor álbum de música urbana por Tropicoqueta y, junto a Feid, mejor interpretación de reguetón por Verano Rosa. Fuente: Associated Press.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://abc7.com/amp/post/lista-completa-de-ganadores-del-latin-grammy-2026/20037510/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Karol G aparece entre los artistas colombianos reconocidos en la edición de los Latin Grammy dos mil veintiséis. En la información sobre los ganadores se destaca el premio a mejor álbum de música urbana por Tropicoqueta y la distinción compartida con Feid por la interpretación de reguetón Verano Rosa.\n\nLa premiación reúne representantes de distintas escenas musicales latinoamericanas y ofrece visibilidad internacional a los proyectos de artistas y productores. El resultado de una categoría no equivale necesariamente a una clasificación de popularidad o al número de reproducciones en plataformas. ORBIUNO evita atribuir cifras de audiencia o de seguidores que no estén documentadas en los resultados.\n\nEsta nota está construida a partir del listado de premiados y se enfoca en los reconocimientos reportados, no en especulaciones sobre los artistas. La fotografía es un retrato de archivo de Karol G tomado años antes de la premiación y se publica con el crédito y la licencia correspondientes.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://abc7.com/amp/post/lista-completa-de-ganadores-del-latin-grammy-2026/20037510/"
+      ],
+      "originalArticleTextEs": "Karol G aparece entre los artistas colombianos reconocidos en la edición de los Latin Grammy dos mil veintiséis. En la información sobre los ganadores se destaca el premio a mejor álbum de música urbana por Tropicoqueta y la distinción compartida con Feid por la interpretación de reguetón Verano Rosa.\n\nLa premiación reúne representantes de distintas escenas musicales latinoamericanas y ofrece visibilidad internacional a los proyectos de artistas y productores. El resultado de una categoría no equivale necesariamente a una clasificación de popularidad o al número de reproducciones en plataformas. ORBIUNO evita atribuir cifras de audiencia o de seguidores que no estén documentadas en los resultados.\n\nEsta nota está construida a partir del listado de premiados y se enfoca en los reconocimientos reportados, no en especulaciones sobre los artistas. La fotografía es un retrato de archivo de Karol G tomado años antes de la premiación y se publica con el crédito y la licencia correspondientes.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-14-publicable/orbiuno-06.jpg",
+      "imageAlt": "Fotografía real de archivo referencial; no corresponde a este evento",
+      "imageCaption": "Foto real de archivo para contextualizar la noticia",
+      "imageLicense": "CC BY 3.0",
+      "imageCredit": "Programas Telemedellín",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AKarol_G_en_2018.jpg"
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-13T19:33-05:00",

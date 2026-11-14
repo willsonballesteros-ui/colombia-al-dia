@@ -1,0 +1,79 @@
+{
+  "brand": "MYCAR",
+  "date": "2026-11-14",
+  "duration": 37.567667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Frontier Pro híbrida llega a Colombia",
+      "source": "https://www.elcarrocolombiano.com/lanzamientos/nissan-frontier-pro-colombia-hibrida-precios-ficha-tecnica/",
+      "photo": {
+        "file": "File:Nissan Frontier Pro PHEV 001.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Nissan_Frontier_Pro_PHEV_001.jpg",
+        "artist": "JustAnotherCarDesigner",
+        "license": "CC0 1.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Nissan_Frontier_Pro_PHEV_001.jpg/960px-Nissan_Frontier_Pro_PHEV_001.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Golf GTI regresa con 261 caballos",
+      "source": "https://www.elcarrocolombiano.com/novedades/volkswagen-golf-gti-colombia-lanzamiento-precio/",
+      "photo": {
+        "file": "File:Volkswagen Golf GTI (Mk VIII) Washington DC Metro Area, USA (3).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_(Mk_VIII)_Washington_DC_Metro_Area,_USA_(3).jpg",
+        "artist": "OWS Photography",
+        "license": "CC BY 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Volkswagen_Golf_GTI_(Mk_VIII)_Washington_DC_Metro_Area,_USA_(3).jpg/960px-Volkswagen_Golf_GTI_(Mk_VIII)_Washington_DC_Metro_Area,_USA_(3).jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Próxima Honda CR-V será solo híbrida",
+      "source": "https://www.elcarrocolombiano.com/autos-del-mundo/honda-cr-v-le-dice-adios-a-la-gasolina-la-proxima-generacion-sera-100-hibrida/",
+      "photo": {
+        "file": "File:2018 Honda CR-V (RW MY18) +Sport 2WD wagon (2018-10-22) 01.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3A2018_Honda_CR-V_%28RW_MY18%29_%2BSport_2WD_wagon_%282018-10-22%29_01.jpg",
+        "artist": "EurovisionNim",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/2018_Honda_CR-V_%28RW_MY18%29_%2BSport_2WD_wagon_%282018-10-22%29_01.jpg/1280px-2018_Honda_CR-V_%28RW_MY18%29_%2BSport_2WD_wagon_%282018-10-22%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Denza estrena sus eléctricos de lujo en India",
+      "source": "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/",
+      "photo": {
+        "file": "File:Denza D9 011.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3ADenza_D9_011.jpg",
+        "artist": "JustAnotherCarDesigner",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Denza_D9_011.jpg/1280px-Denza_D9_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-14-publicable/mycar-2026-11-12-noche.mp4",
+  "sha256": "f48136a1d3ea16842c3b27f57a5cd334f520816c4d2defaebe92028b7df7d188",
+  "status": "PRODUCED_PENDING_INSTAGRAM",
+  "edition": "2026-11-14-12h",
+  "stories": [
+    {
+      "title": "Frontier Pro híbrida llega a Colombia",
+      "source": "https://www.elcarrocolombiano.com/lanzamientos/nissan-frontier-pro-colombia-hibrida-precios-ficha-tecnica/"
+    },
+    {
+      "title": "Golf GTI regresa con 261 caballos",
+      "source": "https://www.elcarrocolombiano.com/novedades/volkswagen-golf-gti-colombia-lanzamiento-precio/"
+    },
+    {
+      "title": "Próxima Honda CR-V será solo híbrida",
+      "source": "https://www.elcarrocolombiano.com/autos-del-mundo/honda-cr-v-le-dice-adios-a-la-gasolina-la-proxima-generacion-sera-100-hibrida/"
+    },
+    {
+      "title": "Denza estrena sus eléctricos de lujo en India",
+      "source": "https://www.reuters.com/markets/emerging/byd-launches-luxury-brand-denza-india-taking-mercedes-toyota-2026-11-13/"
+    }
+  ],
+  "video": "MYCAR-2026-11-14_FINAL_4_NOTICIAS.mp4"
+}
