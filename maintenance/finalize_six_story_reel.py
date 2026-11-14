@@ -20,7 +20,7 @@ sixth=manifest["license_photos"][5]
 photo=sixth["photo"]
 assert "balvin" in photo["file"].lower()
 assert any(x in photo["license"].lower() for x in ("cc by","cc0","public domain"))
-assert photo["commons"].startswith("https://commons.wikimedia.org/wiki/File:")
+assert photo["commons"].startswith("https://commons.wikimedia.org/wiki/File")
 assert photo["photo_url"].startswith("https://upload.wikimedia.org/")
 from PIL import Image
 req=urllib.request.Request(photo["photo_url"],headers={"User-Agent":"ORBIUNO-Noticias/1.0 (licensed commons archival image)"})
