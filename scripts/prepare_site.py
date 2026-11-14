@@ -21,7 +21,8 @@ def image_verified(news):
         and news.get("imageRightsVerified") is True
         and bool(news.get("imageLicense"))
         and bool(news.get("imageCredit"))
-        and str(news.get("imageSourceUrl", "")).startswith("https://")
+        and (str(news.get("imageSourceUrl", "")).startswith("https://")
+             or str(news.get("imageSourceUrl", "")).startswith("./media/"))
         and (
             str(news.get("imageUrl", "")).startswith("https://")
             or str(news.get("imageUrl", "")).startswith("./media/")
