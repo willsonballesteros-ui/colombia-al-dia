@@ -39,10 +39,15 @@ jobs:
       - name: Comprobar ambas páginas y permisos sin publicar
         if: github.event_name == 'push'
         run: |
+          failures=0
           for brand in orbiuno mycar; do
             echo "Comprobando $brand"
-            python scripts/publish_facebook_reels.py --brand "$brand" || true
+            python scripts/publish_facebook_reels.py --brand "$brand" || failures=$((failures+1))
           done
+          if [ "$failures" -ne 0 ]; then
+            echo "::error::Faltan credenciales de las páginas o Meta negó permisos. Ningún Reel se publicó."
+            exit 1
+          fi
       - name: Comprobar o publicar cuenta elegida
         if: github.event_name == 'workflow_dispatch'
         env:
