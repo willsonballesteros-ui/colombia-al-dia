@@ -1,0 +1,58 @@
+name: ORBIUNO | Eliminar Drive de fotografías y probar visor
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reparar-fuente-fotos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-photo-provenance-cleanup
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reparar fuentes y ejecutar validaciones
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python maintenance/clean_photo_drive_links.py
+            python scripts/prepare_site.py
+            node --check photo-viewer.js
+            python - <<'PY'
+          from pathlib import Path
+          import re,json
+          page=Path('index.html').read_text(encoding='utf8')
+          db=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          assert './photo-viewer.js?v=20261113c' in page
+          assert 'drive.google.com/file/d/1QLNHugtA3SiaX3GMA_UJxSrLHSGrt-sR' not in page
+          assert 'href="https://drive.google.com/' not in page
+          for i in range(1,6):
+              news=next(x for x in db['news'] if x['id']==f'orbiuno-20261113-18h-{i}')
+              assert news['imageSourceUrl'].startswith('./media/')
+              assert news['imageCredit'] and news['imageLicense']
+              assert news['sources'][0]['url'].startswith('https://')
+          assert 'class="photo-open"' in page
+          assert 'Fuente ↗' in page
+          print('OK: visor local; fuentes periodísticas; sin redirecciones a Drive')
+          PY
+            git add noticias.json index.html
+            if git diff --cached --quiet;then
+              echo 'Ya arreglado'
+              exit 0
+            fi
+            git commit -m 'fix(ORBIUNO): enlaces públicos y visor de imagen local'
+            if git push origin HEAD:main;then exit 0;fi
+            sleep $((attempt * 2))
+          done
+          echo 'Conflicto de versiones. No forzar.' >&2
+          exit 1
