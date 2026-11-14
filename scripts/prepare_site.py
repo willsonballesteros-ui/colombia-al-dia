@@ -35,6 +35,7 @@ def esc(s):
 
 
 def image_markup(n):
+    """La imagen es un botón de visor; el crédito nunca navega a Drive."""
     if not image_verified(n):
         return ""
     return (
@@ -42,12 +43,11 @@ def image_markup(n):
         'data-photo-id="{id}" aria-label="Ampliar fotografía: {alt}">'
         '<img src="{url}" loading="lazy" decoding="async" alt="{alt}" width="320" height="180">'
         '<span class="photo-expand" aria-hidden="true">⤢</span></button>'
-        '<figcaption>{caption}<br><a href="{origin}" target="_blank" rel="noopener noreferrer">'
-        '{credit}</a> · {license}</figcaption></figure>'
-    ).format(id=esc(n['id']),url=esc(n['imageUrl']),alt=esc(n.get('imageAlt') or n['title']),
-             caption=esc(n.get('imageCaption') or 'Fotografía'),origin=esc(n['imageSourceUrl']),
-             credit=esc(n['imageCredit']),license=esc(n['imageLicense']))
-
+        '<figcaption>{caption}<br>{credit} · {license}</figcaption></figure>'
+    ).format(id=esc(n['id']), url=esc(n['imageUrl']),
+             alt=esc(n.get('imageAlt') or n['title']),
+             caption=esc(n.get('imageCaption') or 'Fotografía'),
+             credit=esc(n['imageCredit']), license=esc(n['imageLicense']))
 
 def source_thumbnail(n):
     """Mostrar el favicon real del dominio citado; no es foto del hecho."""
