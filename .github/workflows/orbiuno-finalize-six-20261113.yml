@@ -33,6 +33,7 @@ jobs:
           gh run download 43531096010 -n ORBIUNO-13-NOV-6-NOTICIAS -D /tmp/orbiuno-six-final --repo "$GH_REPO"
           ls -lh /tmp/orbiuno-six-final/
           python -m pip install Pillow numpy
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Integrar sobre la última main y validar
         shell: bash
         run: |
