@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/mycar-20261114-tarde.yml'
+      - 'scripts/produce_mycar_20261114_tarde.py'
   workflow_dispatch:
 permissions:
   contents: write
