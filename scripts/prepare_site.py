@@ -237,6 +237,13 @@ def build(data, page):
     # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
                       "Hasta cinco noticias verificadas por edición, con fuentes originales.")
+    # El botón de fotografía abre un visor local, separado de la fuente.
+    # Nunca debe enviar al repositorio ni a un Drive del editor.
+    photo_loader = '<script defer src="./photo-viewer.js?v=20261113c"></script>'
+    if photo_loader not in page:
+        if '</head>' not in page:
+            raise ValueError("No se localizó cierre del encabezado HTML")
+        page = page.replace('</head>', photo_loader + '\n</head>', 1)
     # Reparación de reproducción en Safari/iPhone: cargar el reproductor
     # local con MP3 y voz nativa de respaldo, sin abrir fuentes externas.
     # Se inserta una única vez para mantener idempotencia del generador.
