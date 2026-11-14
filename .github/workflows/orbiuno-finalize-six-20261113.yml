@@ -1,0 +1,69 @@
+name: ORBIUNO | Conservar Reel 6 aprobado sin conflictos
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-finalize-six-20261113.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: orbiuno-six-finalize-main
+  cancel-in-progress: false
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Descargar MP4 de la ejecución que pasó ffprobe
+        env:
+          GH_REPO: ${{ github.repository }}
+        run: |
+          mkdir -p /tmp/orbiuno-six-final
+          gh run download 43531096010 -n ORBIUNO-13-NOV-6-NOTICIAS -D /tmp/orbiuno-six-final --repo "$GH_REPO"
+          ls -lh /tmp/orbiuno-six-final/
+          python -m pip install Pillow numpy
+      - name: Integrar sobre la última main y validar
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python maintenance/finalize_six_story_reel.py /tmp/orbiuno-six-final
+            python scripts/validate_news.py noticias.json
+            python scripts/prepare_site.py
+            python - <<'PY'
+          import json,subprocess,re
+          from pathlib import Path
+          db=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          n=[x for x in db['news'] if x.get('date')=='2026-11-13' and x.get('editionSlot')=='18:00' and x.get('verification')=='editorial_verified']
+          assert len(n)==6 and n[-1]['category']=='Farándula'
+          html=Path('index.html').read_text(encoding='utf8')
+          if db['editionDate']=='2026-11-13':
+            assert 'orbiuno-20261113-18h-6' in html
+          p=Path('media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4')
+          out=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
+          assert any(s.get('codec_type')=='audio' for s in out['streams'])
+          assert any(s.get('codec_type')=='video' for s in out['streams'])
+          print('REEL_READY: six licensed articles, mp4 audio/video',p.stat().st_size)
+          PY
+            git add noticias.json index.html media/2026-11-13/foto-6.jpg media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4 media/2026-11-13/orbiuno-credits.json
+            if git diff --cached --quiet; then echo 'Ya conservado; no duplicar';exit 0;fi
+            git commit -m 'ORBIUNO: seis noticias y Reel final verificado [skip ci]'
+            if git push origin HEAD:main; then exit 0;fi
+            sleep $((attempt * 3))
+          done
+          echo 'Conflicto: no forzar escritura' >&2
+          exit 1
