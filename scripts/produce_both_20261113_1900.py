@@ -102,7 +102,7 @@ def _verified_photo(query):
     with urllib.request.urlopen(req,timeout=60) as response:
      raw=response.read(18000000)
     img=Image.open(io.BytesIO(raw));img.load()
-    if img.width<700 or img.height<500:raise RuntimeError("Photo resolution too small")
+    if img.width<700 or img.height<400:raise RuntimeError("Photo resolution too small")
     if max(img.size)>1600:img.thumbnail((1600,1600),Image.Resampling.LANCZOS)
     PHOTO_CACHE[name]=(img.convert("RGB"),url)
     break
