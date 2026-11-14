@@ -44,7 +44,22 @@ def commons_subject(query):
   if not any(s in title for s in checks[query]):
    raise RuntimeError("Commons photo title does not match: "+query+" "+title)
   return photo,credit
-engine.choose_photo=commons_subject if False else engine.choose_photo
+original_choose=engine.choose_photo
+def choose_exact(query):
+  if query!="Renault 4 E Tech":
+    return original_choose(query)
+  filename="Renault 4 E-Tech (54911777481).jpg"
+  stem=filename.replace(" ","_")
+  md5=hashlib.md5(stem.encode("utf-8")).hexdigest()
+  escaped=urllib.parse.quote(stem,safe="(),'-.")
+  url="https://upload.wikimedia.org/wikipedia/commons/thumb/"+md5[0]+"/"+md5[:2]+"/"+escaped+"/960px-"+escaped
+  req=urllib.request.Request(url,headers={"User-Agent":"MyCarEditorial/1.0 (Commons attribution)"})
+  with urllib.request.urlopen(req,timeout=50) as response:
+    im=Image.open(io.BytesIO(response.read())).convert("RGB")
+  assert im.width>=700
+  return im,{"file":"File:"+filename,"commons":"https://commons.wikimedia.org/wiki/File:"+escaped,
+    "artist":"Alexandre Prevot","license":"CC BY-SA 4.0","photo_url":url}
+engine.choose_photo=choose_exact
 STORIES=[
  {"title":"Renault 4 eléctrico abre preventa por 99,99 millones",
  "source":"Renault Sofasa","source_url":"https://prensa.renault.com.co/prensa/el-regreso-de-un-icono-renault-4-llega-a-colombia-en-version-100-electrica/",
