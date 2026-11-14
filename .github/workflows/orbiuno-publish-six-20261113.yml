@@ -20,7 +20,7 @@ jobs:
       VIDEO_URL: https://colombia-al-dia.pages.dev/media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4
     steps:
       - uses: actions/checkout@v4
-      - name: Preflight estricto: seis noticias, fuentes, archivo y cuenta
+      - name: 'Preflight estricto: seis noticias, fuentes, archivo y cuenta'
         run: |
           python - <<'PY'
           import json,hashlib,os,sys,time,urllib.request
