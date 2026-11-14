@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/producir-ambas-20261113-19h.yml'
+      - 'scripts/produce_both_20261113_1900.py'
   workflow_dispatch:
 permissions:
   contents: write
