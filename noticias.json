@@ -1,6 +1,6 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-12",
+  "editionDate": "2026-11-13",
   "editedAtBogota": "2026-11-12T21:20:00-05:00",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
@@ -21204,6 +21204,228 @@
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AJ_Balvin_2013.jpg",
       "imageCredit": "kodeak01",
       "imageLicense": "CC0"
+    },
+    {
+      "id": "orbiuno-20261113-19h-1",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 1,
+      "category": "Colombia",
+      "title": "Explosión cerca de la Escuela de Carabineros en Cali",
+      "summary": "En Cali, una explosión cerca de la Escuela de Carabineros movilizó a la Fuerza Pública. Hasta el reporte de EFE no había confirmación oficial de víctimas. Fuente: EFE.",
+      "executiveSummary": "En Cali, una explosión cerca de la Escuela de Carabineros movilizó a la Fuerza Pública. Hasta el reporte de EFE no había confirmación oficial de víctimas. Fuente: EFE.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "Agencia EFE",
+          "url": "https://efe.com/mundo/2026-11-13/cali-colombia-explosion-escuela-carabineros-bomba/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Una fuerte explosión se registró en las cercanías de la Escuela de Carabineros de Cali. La agencia EFE informó el trece de noviembre que la detonación ocurrió la noche anterior y provocó un operativo de seguridad en el sector. Según la información que recogió la agencia, las autoridades señalaron que una motocicleta con explosivos habría sido detonada cerca de la instalación policial.\n\nLa detonación fue percibida en diferentes zonas de la capital del Valle del Cauca. Las autoridades desplegaron personal y acordonaron el área para adelantar las verificaciones correspondientes. En el momento del reporte no existía una confirmación oficial sobre víctimas, por lo que no corresponde dar cifras definitivas de personas afectadas ni atribuir responsabilidades sin resultados de la investigación.\n\nLa noticia coincide con los preparativos de seguridad para el encuentro amistoso de fútbol entre Colombia y Chile. La Policía había anunciado un dispositivo especial de uniformados alrededor del estadio Pascual Guerrero. ORBIUNO seguirá el desarrollo de los hechos a partir de comunicados oficiales y de reportes contrastados. La fotografía que ilustra esta nota es una imagen de archivo de la ciudad y no documenta el lugar exacto de la explosión.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://efe.com/mundo/2026-11-13/cali-colombia-explosion-escuela-carabineros-bomba/"
+      ],
+      "originalArticleTextEs": "Una fuerte explosión se registró en las cercanías de la Escuela de Carabineros de Cali. La agencia EFE informó el trece de noviembre que la detonación ocurrió la noche anterior y provocó un operativo de seguridad en el sector. Según la información que recogió la agencia, las autoridades señalaron que una motocicleta con explosivos habría sido detonada cerca de la instalación policial.\n\nLa detonación fue percibida en diferentes zonas de la capital del Valle del Cauca. Las autoridades desplegaron personal y acordonaron el área para adelantar las verificaciones correspondientes. En el momento del reporte no existía una confirmación oficial sobre víctimas, por lo que no corresponde dar cifras definitivas de personas afectadas ni atribuir responsabilidades sin resultados de la investigación.\n\nLa noticia coincide con los preparativos de seguridad para el encuentro amistoso de fútbol entre Colombia y Chile. La Policía había anunciado un dispositivo especial de uniformados alrededor del estadio Pascual Guerrero. ORBIUNO seguirá el desarrollo de los hechos a partir de comunicados oficiales y de reportes contrastados. La fotografía que ilustra esta nota es una imagen de archivo de la ciudad y no documenta el lugar exacto de la explosión.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-01.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Dh",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_Cali_desde_Valle_del_Lili.jpg",
+      "instagramReelOrder": 1
+    },
+    {
+      "id": "orbiuno-20261113-19h-2",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 2,
+      "category": "Tecnología",
+      "title": "Microsoft reporta recuperación generalizada de sus servicios",
+      "summary": "Microsoft atribuye la caída de Outlook, Teams y otros servicios a un fallo técnico y anuncia una recuperación generalizada. Puede haber diferencias entre usuarios. Fuente: EFE.",
+      "executiveSummary": "Microsoft atribuye la caída de Outlook, Teams y otros servicios a un fallo técnico y anuncia una recuperación generalizada. Puede haber diferencias entre usuarios. Fuente: EFE.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "Agencia EFE",
+          "url": "https://efe.com/ciencia-y-tecnologia/2026-11-13/microsoft-recuperacion-servicios-outlook-teams-copilot-fallo-tecnico/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Microsoft comunicó una recuperación generalizada tras la interrupción que afectó a varios de sus servicios digitales. La información difundida por la agencia EFE el trece de noviembre menciona plataformas utilizadas diariamente por empresas y usuarios, entre ellas Outlook, Teams y Copilot. El incidente se convirtió en un asunto internacional por el alcance de sus efectos sobre comunicaciones y trabajo.\n\nDe acuerdo con la explicación de la compañía recogida por EFE, el problema estuvo relacionado con una ampliación previa de la capacidad de su red. Microsoft descartó que el origen identificado correspondiera a un incidente de ciberseguridad. Esa conclusión es la comunicada por la empresa, no el resultado de una auditoría independiente publicada por ORBIUNO.\n\nLa recuperación generalizada no significa que todas las personas hayan recuperado necesariamente el servicio en el mismo instante. Pueden existir diferencias por región, cuenta o producto. Para verificar una incidencia concreta conviene consultar el estado oficial del servicio y los avisos de la organización que lo administra. Esta nota presenta la actualización más reciente de la fuente y no repite como novedad la caída inicial del jueves.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://efe.com/ciencia-y-tecnologia/2026-11-13/microsoft-recuperacion-servicios-outlook-teams-copilot-fallo-tecnico/"
+      ],
+      "originalArticleTextEs": "Microsoft comunicó una recuperación generalizada tras la interrupción que afectó a varios de sus servicios digitales. La información difundida por la agencia EFE el trece de noviembre menciona plataformas utilizadas diariamente por empresas y usuarios, entre ellas Outlook, Teams y Copilot. El incidente se convirtió en un asunto internacional por el alcance de sus efectos sobre comunicaciones y trabajo.\n\nDe acuerdo con la explicación de la compañía recogida por EFE, el problema estuvo relacionado con una ampliación previa de la capacidad de su red. Microsoft descartó que el origen identificado correspondiera a un incidente de ciberseguridad. Esa conclusión es la comunicada por la empresa, no el resultado de una auditoría independiente publicada por ORBIUNO.\n\nLa recuperación generalizada no significa que todas las personas hayan recuperado necesariamente el servicio en el mismo instante. Pueden existir diferencias por región, cuenta o producto. Para verificar una incidencia concreta conviene consultar el estado oficial del servicio y los avisos de la organización que lo administra. Esta nota presenta la actualización más reciente de la fuente y no repite como novedad la caída inicial del jueves.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-02.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Coolcaesar",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Building92microsoft.jpg",
+      "instagramReelOrder": 2
+    },
+    {
+      "id": "orbiuno-20261113-19h-3",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 3,
+      "category": "Deportes",
+      "title": "Colombia y Chile se enfrentan esta noche en Cali",
+      "summary": "Colombia recibe hoy a Chile en un amistoso programado para las siete de la noche en el estadio Pascual Guerrero de Cali. Fuente: Federación Colombiana de Fútbol.",
+      "executiveSummary": "Colombia recibe hoy a Chile en un amistoso programado para las siete de la noche en el estadio Pascual Guerrero de Cali. Fuente: Federación Colombiana de Fútbol.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "Federación Colombiana de Fútbol",
+          "url": "https://www.fcf.com.co/2026/11/06/convocatoria-de-la-seleccion-colombia-de-mayores-amistosos-internacionales-de-noviembre-2026/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "La Selección Colombia de mayores tiene programado un partido amistoso contra Chile para este viernes trece de noviembre. De acuerdo con el calendario oficial publicado por la Federación Colombiana de Fútbol, el encuentro se disputa en el estadio Pascual Guerrero, en Cali, con inicio previsto para las siete de la noche, hora colombiana.\n\nEl compromiso forma parte del cierre del calendario internacional del año y permite al cuerpo técnico, encabezado por Néstor Lorenzo, evaluar alternativas de juego. La convocatoria fue difundida por la Federación antes de la concentración del equipo. La información de esta edición se refiere a la programación del encuentro, no a un marcador o resultado que todavía no estuviera confirmado al preparar el material.\n\nAmbas selecciones también tienen previsto enfrentarse el diecisiete de noviembre en Santiago de Chile. Los horarios y eventuales cambios de última hora deben verificarse en los canales oficiales. ORBIUNO no anticipa un resultado ni atribuye declaraciones no documentadas a jugadores o entrenadores. La fotografía utilizada es una referencia de archivo del entorno deportivo, no una imagen del juego disputado hoy.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.fcf.com.co/2026/11/06/convocatoria-de-la-seleccion-colombia-de-mayores-amistosos-internacionales-de-noviembre-2026/"
+      ],
+      "originalArticleTextEs": "La Selección Colombia de mayores tiene programado un partido amistoso contra Chile para este viernes trece de noviembre. De acuerdo con el calendario oficial publicado por la Federación Colombiana de Fútbol, el encuentro se disputa en el estadio Pascual Guerrero, en Cali, con inicio previsto para las siete de la noche, hora colombiana.\n\nEl compromiso forma parte del cierre del calendario internacional del año y permite al cuerpo técnico, encabezado por Néstor Lorenzo, evaluar alternativas de juego. La convocatoria fue difundida por la Federación antes de la concentración del equipo. La información de esta edición se refiere a la programación del encuentro, no a un marcador o resultado que todavía no estuviera confirmado al preparar el material.\n\nAmbas selecciones también tienen previsto enfrentarse el diecisiete de noviembre en Santiago de Chile. Los horarios y eventuales cambios de última hora deben verificarse en los canales oficiales. ORBIUNO no anticipa un resultado ni atribuye declaraciones no documentadas a jugadores o entrenadores. La fotografía utilizada es una referencia de archivo del entorno deportivo, no una imagen del juego disputado hoy.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-03.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Johannes Bud",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pascual_Guerrero_Stadium.jpg",
+      "instagramReelOrder": 3
+    },
+    {
+      "id": "orbiuno-20261113-19h-4",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 4,
+      "category": "Mundo",
+      "title": "Estados Unidos detuvo despegues por problemas de comunicaciones",
+      "summary": "Estados Unidos ordenó suspender temporalmente despegues por problemas de comunicaciones. El alcance y la duración deben seguirse en los avisos oficiales. Fuente: Ecuavisa.",
+      "executiveSummary": "Estados Unidos ordenó suspender temporalmente despegues por problemas de comunicaciones. El alcance y la duración deben seguirse en los avisos oficiales. Fuente: Ecuavisa.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "Ecuavisa",
+          "url": "https://www.ecuavisa.com/mundo/eeuu-ordena-suspender-vuelo-todo-el-pais-20261113-0060.html"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Una suspensión general de despegues fue reportada en Estados Unidos este viernes trece de noviembre debido a problemas en las comunicaciones. El medio Ecuavisa informó sobre la medida y recordó que interrupciones de alcance nacional son eventos poco frecuentes en la operación de la aviación comercial estadounidense.\n\nUna orden de detener los despegues no equivale a declarar que todos los aviones que ya se encuentran en el aire estén inmovilizados. Las decisiones sobre los vuelos en curso y sobre la reanudación de salidas dependen de los procedimientos que apliquen las autoridades de aviación y los operadores. Al preparar esta información no se atribuye una duración definitiva a la medida.\n\nLos pasajeros con itinerarios hacia o desde Estados Unidos deben contrastar el estado de sus vuelos con las aerolíneas y con los organismos oficiales. No es prudente deducir que cada aeropuerto presenta las mismas demoras ni que todas las rutas serán afectadas de la misma manera. La fotografía que acompaña la publicación es una imagen aeronáutica de archivo con fines ilustrativos.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.ecuavisa.com/mundo/eeuu-ordena-suspender-vuelo-todo-el-pais-20261113-0060.html"
+      ],
+      "originalArticleTextEs": "Una suspensión general de despegues fue reportada en Estados Unidos este viernes trece de noviembre debido a problemas en las comunicaciones. El medio Ecuavisa informó sobre la medida y recordó que interrupciones de alcance nacional son eventos poco frecuentes en la operación de la aviación comercial estadounidense.\n\nUna orden de detener los despegues no equivale a declarar que todos los aviones que ya se encuentran en el aire estén inmovilizados. Las decisiones sobre los vuelos en curso y sobre la reanudación de salidas dependen de los procedimientos que apliquen las autoridades de aviación y los operadores. Al preparar esta información no se atribuye una duración definitiva a la medida.\n\nLos pasajeros con itinerarios hacia o desde Estados Unidos deben contrastar el estado de sus vuelos con las aerolíneas y con los organismos oficiales. No es prudente deducir que cada aeropuerto presenta las mismas demoras ni que todas las rutas serán afectadas de la misma manera. La fotografía que acompaña la publicación es una imagen aeronáutica de archivo con fines ilustrativos.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-04.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY 2.0",
+      "imageCredit": "Jeremy Goldstein",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:LaGuardia.jpg",
+      "instagramReelOrder": 4
+    },
+    {
+      "id": "orbiuno-20261113-19h-5",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 5,
+      "category": "Tecnología y viral",
+      "title": "Un vehículo volador Xpeng X2 sorprende en el Salón del Automóvil",
+      "summary": "Y el dato sorprendente de hoy: el Salón del Automóvil de Bogotá exhibe el Xpeng X2, un vehículo volador que llama la atención de visitantes. Fuente: El Carro Colombiano.",
+      "executiveSummary": "Y el dato sorprendente de hoy: el Salón del Automóvil de Bogotá exhibe el Xpeng X2, un vehículo volador que llama la atención de visitantes. Fuente: El Carro Colombiano.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "El Carro Colombiano",
+          "url": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "El Salón Internacional del Automóvil de Bogotá 2026 reúne una exhibición que va más allá de los carros de uso cotidiano. Entre las novedades mencionadas por El Carro Colombiano aparece el Xpeng X2, un vehículo volador presentado como una de las atracciones tecnológicas del evento que se desarrolla en Corferias.\n\nLa presencia del prototipo permite observar tendencias relacionadas con la movilidad aérea y las nuevas formas de transporte personal. Sin embargo, mostrar un vehículo de este tipo en una feria no implica que se encuentre homologado para circular libremente ni que esté disponible en Colombia como un automóvil de venta masiva. Su exhibición debe distinguirse de una oferta comercial definitiva.\n\nEl evento, abierto del doce al veintidós de noviembre, reúne modelos convencionales, eléctricos e híbridos y varias marcas que llegan al mercado. Para conocer la ubicación de las exhibiciones, los visitantes deben consultar la programación oficial. La imagen utilizada aquí es una fotografía aeronáutica real de referencia; no se presenta como una fotografía del Xpeng X2 en Corferias.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+      ],
+      "originalArticleTextEs": "El Salón Internacional del Automóvil de Bogotá 2026 reúne una exhibición que va más allá de los carros de uso cotidiano. Entre las novedades mencionadas por El Carro Colombiano aparece el Xpeng X2, un vehículo volador presentado como una de las atracciones tecnológicas del evento que se desarrolla en Corferias.\n\nLa presencia del prototipo permite observar tendencias relacionadas con la movilidad aérea y las nuevas formas de transporte personal. Sin embargo, mostrar un vehículo de este tipo en una feria no implica que se encuentre homologado para circular libremente ni que esté disponible en Colombia como un automóvil de venta masiva. Su exhibición debe distinguirse de una oferta comercial definitiva.\n\nEl evento, abierto del doce al veintidós de noviembre, reúne modelos convencionales, eléctricos e híbridos y varias marcas que llegan al mercado. Para conocer la ubicación de las exhibiciones, los visitantes deben consultar la programación oficial. La imagen utilizada aquí es una fotografía aeronáutica real de referencia; no se presenta como una fotografía del Xpeng X2 en Corferias.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-05.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Tim Wu",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg",
+      "instagramReelOrder": 5
+    },
+    {
+      "id": "orbiuno-20261113-19h-6",
+      "date": "2026-11-13",
+      "editionSlot": "19:00",
+      "priority": 6,
+      "category": "Farándula",
+      "title": "Rosalía se lleva seis premios en los Latin Grammy 2026",
+      "summary": "En farándula, Rosalía fue una de las protagonistas de los Latin Grammy dos mil veintiséis, con seis premios. Juanes participó en la entrega de uno de los reconocimientos. Fuente: Teleantioquia.",
+      "executiveSummary": "En farándula, Rosalía fue una de las protagonistas de los Latin Grammy dos mil veintiséis, con seis premios. Juanes participó en la entrega de uno de los reconocimientos. Fuente: Teleantioquia.",
+      "verification": "editorial_verified",
+      "sources": [
+        {
+          "name": "Teleantioquia",
+          "url": "https://www.teleantioquia.co/entretenimiento/en-video-rosalia-lloro-al-recibir-un-latin-grammy-de-juanes-conozca-los-antioquenos-y-colombianos-que-tambien-ganaron-626037"
+        }
+      ],
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "La cantante española Rosalía se convirtió en una de las grandes protagonistas de los Latin Grammy de dos mil veintiséis. Teleantioquia informó este viernes trece de noviembre que la artista obtuvo seis gramófonos y protagonizó uno de los momentos emotivos de la ceremonia al recibir un reconocimiento de manos del colombiano Juanes.\n\nLa premiación también reunió a intérpretes, productores y compositores de distintos países latinoamericanos. Además de los premios de Rosalía, el cubrimiento destacó la participación de artistas colombianos en varias categorías. Las menciones de la gala se basan en el reporte publicado por el medio y no en cifras de audiencia o reproducciones que no hayan sido corroboradas.\n\nEl episodio se ha convertido en noticia de entretenimiento por el resultado de la ceremonia y por la conexión entre artistas de España y Colombia. Las cifras concretas de seguidores, visualizaciones o tendencias no se presentan como medidas oficiales de popularidad si no existe una fuente verificable. La fotografía que acompaña esta nota es una imagen de archivo de la cantante.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.teleantioquia.co/entretenimiento/en-video-rosalia-lloro-al-recibir-un-latin-grammy-de-juanes-conozca-los-antioquenos-y-colombianos-que-tambien-ganaron-626037"
+      ],
+      "originalArticleTextEs": "La cantante española Rosalía se convirtió en una de las grandes protagonistas de los Latin Grammy de dos mil veintiséis. Teleantioquia informó este viernes trece de noviembre que la artista obtuvo seis gramófonos y protagonizó uno de los momentos emotivos de la ceremonia al recibir un reconocimiento de manos del colombiano Juanes.\n\nLa premiación también reunió a intérpretes, productores y compositores de distintos países latinoamericanos. Además de los premios de Rosalía, el cubrimiento destacó la participación de artistas colombianos en varias categorías. Las menciones de la gala se basan en el reporte publicado por el medio y no en cifras de audiencia o reproducciones que no hayan sido corroboradas.\n\nEl episodio se ha convertido en noticia de entretenimiento por el resultado de la ceremonia y por la conexión entre artistas de España y Colombia. Las cifras concretas de seguidores, visualizaciones o tendencias no se presentan como medidas oficiales de popularidad si no existe una fuente verificable. La fotografía que acompaña esta nota es una imagen de archivo de la cantante.",
+      "imageType": "licensed_press_photo",
+      "imageRightsVerified": true,
+      "imageUrl": "./media/2026-11-13-1900/orbiuno-06.jpg",
+      "imageAlt": "Imagen real de archivo de referencia, no del acontecimiento",
+      "imageCaption": "Fotografía de archivo ilustrativa",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageCredit": "Pedro J Pacheco",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Rosalia_2019-portrait.jpg",
+      "instagramReelOrder": 6
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-13T19:33-05:00",
