@@ -1,0 +1,56 @@
+name: Facebook | Reels ORBIUNO y MyCar (Meta API oficial)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/facebook-reels-directo.yml'
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: 'Página de Facebook'
+        required: true
+        type: choice
+        options: [orbiuno, mycar]
+      publish:
+        description: 'Publicar después de verificar permisos, Reel y duplicados'
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: facebook-reels-seguro
+  cancel-in-progress: false
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      ORBIUNO_FB_PAGE_ID: ${{ secrets.ORBIUNO_FB_PAGE_ID }}
+      ORBIUNO_FB_PAGE_ACCESS_TOKEN: ${{ secrets.ORBIUNO_FB_PAGE_ACCESS_TOKEN }}
+      MYCAR_FB_PAGE_ID: ${{ secrets.MYCAR_FB_PAGE_ID }}
+      MYCAR_FB_PAGE_ACCESS_TOKEN: ${{ secrets.MYCAR_FB_PAGE_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar scripts y video
+        run: |
+          python -m py_compile scripts/publish_facebook_reels.py
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Comprobar ambas páginas y permisos sin publicar
+        if: github.event_name == 'push'
+        run: |
+          for brand in orbiuno mycar; do
+            echo "Comprobando $brand"
+            python scripts/publish_facebook_reels.py --brand "$brand" || true
+          done
+      - name: Comprobar o publicar cuenta elegida
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          BRAND: ${{ inputs.brand }}
+          PUBLISH: ${{ inputs.publish }}
+        run: |
+          if [ "$PUBLISH" = "true" ]; then
+            python scripts/publish_facebook_reels.py --brand "$BRAND" --publish
+          else
+            python scripts/publish_facebook_reels.py --brand "$BRAND"
+          fi
