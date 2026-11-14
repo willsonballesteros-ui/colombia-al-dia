@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/orbiuno-finalize-six-20261113.yml'
+      - 'maintenance/finalize_six_story_reel.py'
   workflow_dispatch:
 permissions:
   contents: write
