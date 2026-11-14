@@ -1,0 +1,81 @@
+name: ORBIUNO MyCar | Finales del 14 de noviembre con fotos corregidas
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finales-orbiuno-mycar-20261114.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: noticias-finales-14-noviembre-2026
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar motor de voz, ffmpeg y fotografías verificadas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install 'kokoro-onnx==0.6.1' Pillow numpy soundfile
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Crear MP4 nuevos y portada sincronizada
+        run: |
+          python scripts/produce_corrected_20261114.py
+          python scripts/validate_news.py noticias.json
+          python scripts/prepare_site.py
+      - name: Verificar coincidencia de portada, fuentes, imagen exacta y audio
+        run: |
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          out=Path('media/2026-11-14-publicable')
+          news=json.loads(Path('noticias.json').read_text(encoding='utf8'))
+          rows=sorted([x for x in news['news'] if x.get('date')=='2026-11-14' and x.get('editionSlot')=='12:00'],key=lambda x:x['priority'])
+          assert len(rows)==6 and rows[-1]['category']=='Farándula'
+          page=Path('index.html').read_text(encoding='utf8')
+          assert all(n['title'] in page and n['imageRightsVerified'] and n['imageCredit'] for n in rows)
+          for brand,total in [('ORBIUNO',6),('MYCAR',4)]:
+           file=out/(brand+'-2026-11-14_FINAL_'+str(total)+'_NOTICIAS.mp4')
+           manifest=json.loads((out/(brand.lower()+'-credits.json')).read_text())
+           assert manifest['sha256']==hashlib.sha256(file.read_bytes()).hexdigest()
+           assert len(manifest['license_photos'])==total
+           mp4=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(file)]))
+           assert any(x['codec_type']=='audio' for x in mp4['streams'])
+           assert any(x['codec_type']=='video' and x.get('width')==720 and x.get('height')==1280 for x in mp4['streams'])
+           assert 25<=float(mp4['format']['duration'])<=60
+           print('FINAL_VALIDATED',brand,mp4['format']['duration'],file.stat().st_size)
+          photo=json.loads((out/'mycar-credits.json').read_text())['license_photos']
+          assert 'Frontier Pro PHEV' in photo[0]['photo']['file']
+          assert 'Golf GTI (Mk VIII)' in photo[1]['photo']['file']
+          orbiuno_photo=json.loads((out/'orbiuno-credits.json').read_text())['license_photos']
+          assert 'JFK Airport' in orbiuno_photo[2]['photo']['file']
+          PY
+      - name: Publicar archivos en repositorio y web, nunca en redes sociales
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add noticias.json index.html media/2026-11-14-publicable
+          git commit -m "ORBIUNO MyCar: finales 14 noviembre y web sincronizada [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ORBIUNO-MYCAR-14-NOV-FINAL
+          path: |
+            media/2026-11-14-publicable/*_FINAL_*_NOTICIAS.mp4
+            media/2026-11-14-publicable/*-credits.json
+          retention-days: 30
+          if-no-files-found: ignore
