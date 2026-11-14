@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-c3dbb2d7a98fc947",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Perú está expuesto a la dependencia tecnológica. Intelectuales reclaman una estrategia nacional de inteligencia artificial",
+      "summary": "Titular difundido por altavoz.pe a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "altavoz.pe · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTnk1UWoyTWFUd0xxTlBVMGhEN1o4Y19fU2xCcDNadlJIQW1qd0ZBZzczR0xyNy1TamdsR254aEtOT3lidnlmdDVlczAtUTVBZjBUMmRlRjNRUjZsSS1YSVN0cTNTNlhmNHozOUN3MkpIRXBxblRmUl9ZcHB5NkdOdmQ4SGNrN2p6ZjN3N0NJSC1KY3ZHNG1tTjZlRVdaT05PYXJRWF9BRXBXYXBJQ1MyYy05M3pOemE0WnBFcDR2S0JiUTloUkplWHUtS3NaejlpV0c2ZGZuSFNzUTZKS2tkaXVGTGI?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T17:27-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-28e203b2cf1984b7",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Expertos en inteligencia artificial lo tienen claro con Nvidia: \"La información sustraída por China puede ser muy valiosa, no es lo mismo tener los planos de un avión que tener los ingenieros\"",
+      "summary": "Titular difundido por COPE a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "COPE · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxONlUwV3dsV3BNZ1Y0dVpjNlpfNU1pSDRsbC11VGh1aEZtSFRjTjhfNlVOODl1ZUU4Tk1XeXg3TjlERmlySWlreWhjdmRWMUNmRlEyR25ZMm9mYnJjQU5QQVlOSVRkTmYxMmlGSXlibks5TVY1ZjdCSFI2dDBGZXlNQWI0aUJEX3QwQkw4TFBpOWVuSXBBWHdMWExqQm9nSE0xQnVqbWN3MHlTTUltS05XUmhnbTZiVGFfZ0JZYUxQYW1lZWo3SXVhY2ZtaDg3bE5HZS1ITFhQbThpRXJSWTdqbWtZRjVEWDJDZGRIZGp1RjNsYkFUOXR3dVByX1NxcTRhMjN0MTVUTnZvQV93WXBDcDlYbTBtdmtDekhxZ0JRWnjSAaYCQVVfeXFMT0NlY0JjOHZvaC1tZTEzTzdWSlphWG96VnRQRVpSelc1SkY0VngzRGNPb2d5UFhXWUxWdzhwcThlWXd6UkdkSU9UUDlkNDY3ajMtSG9pZ0NzcVRBR01TclQ5WDBqOWhYU3FDLXl4a0tEZ0xtMzgwbk9PSThLWXB6TllwQVFtNnFTc1ZQd2dkWFFXY1Yxa0pnMXNrOTU2dU1ya3k1MEx3RFkya3ZjWV9oNWotXzJEQkdkMmxhN0ZXOU5RVjZrbTd0VEVXTHQ1VlllUDFzV1BjS1Y3cElKWURtX0k2dFZrampMTlVuR3B3N3pCR1gyaGJWY2tnT0g5djF3TF9JOURrSEJweVVyU0hwRmdDTTRKbzhXeEZWTk5KOFBHUEk1bm9R?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T17:22-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-395b226580c032d1",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Temblor en Colombia hoy 13 de noviembre: epicentro y magnitud del sismo",
+      "summary": "Titular difundido por Minuto60 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Minuto60 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaFNlcDlEenpVellqalBqdVowMkNzOWNCQnZwRFE3MkhNeFZLUEZJdEI0bmU2RkNyOTg1a25XYnpmTklfMUxZZDUtUVBTZHlUMFMwRUZmZDZzcTZvbEFsb3dMbUp3LVQ1QnBtY1J2TzJJbTVySEVUakdYc3JPNEY5eVBLd1Ryc3pVeEJQekIwdnNIWnhuY2pkSmdDSEhuU2RYNC1mRWp6VjhycTB0?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T15:56-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5e81463503f679df",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Estas son las imágenes de evacuaciones tras fuerte sismo este viernes en Colombia",
+      "summary": "Titular difundido por NTN24 a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "NTN24 · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVDRSMDVSY0R1ZDhpbGljNmZIRmRJVXU5WkdCU01VM3JiS2liaTNqWUhOQ1NCbTczVWxUT19qZ0NaUlhSMzd1SG9fMnpTUjRwS0tNUm1ma0xaOXAzUjhMdERicUpRYlR6NU92aEZxWUpjZTVUVG1JM2RiRWhTdmdtSU80cllrcjdaOW1FSjloQ00tdS1oZGg1OWd5dU9aOXUwZkpIX0dpZmJhcW91cUlESGxoamUzc2IwVVpVSkd6Q0ZlU19uS0hkVjJB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T15:56-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7d01799343baa938",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Seguidilla de temblores en Tolima: videos muestran evacuaciones de edificios en Ibagué tras los sismos de este viernes 13 de noviembre",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbDBwdkl5eFBrZXJyU245cDJuNGhxelVaVV9QQTRNTmlGbXhGSmdzVWk0Yk53TWRwek1pTy1lTVVnZm5mcGlqdklhNnRUWFZzU25lMjNRRnFicVJxVWF0cTVUNktYaGlyWnN3UzEtMFhaRWstc2ExZkRxdjhLTzhWVVZJMFY4dVZfYTNzTnVCRjBYQXpkdkduXzVLdXV3NGxxeGVQR0tJV053RjdocUtKbUhTMnUtclB1cEo3X1FISktwTXFZN0MyMENmNklrem14Y3hOSGpvUmVFSDY0cUtydndVbFlhdVM2WFVNZE5QY0NYVmMtMncwWDNtdkVXd25JaWRDMGNxMW9SRnFMVVlBNmNTT0lwOVQ2REHSAZ8CQVVfeXFMT29xSU00YVZQdURLLWJMckFkb3NRU3NJalhkZjd6dnVKRXJ0SGdPTU5sUmtLdTJtS3ZqTkd4UDVtVUFmU1dHTENrekpFcElhd2lzMGlhVldHazJFM0lWUkJIdkNmWE0yRHc1Y1JkTFg5ZXpxWnc5cUJzb0xoalZCU0FtM0h5UjhqdnJKTGhzZkVpU2FncFRjRmQ1Rm5oQ0p2TFFNampkcF90c3liNWZZb0dEMVFxNkZWZXpaNHlrck04YXJpLXV3c2lUbnAtT1JOZ2FHWm1oZkFZTTcwSjZBZ0ZWNjN2MHZsSDZpNktrRFN4Mkdqb09KLTJqb18tZU04ZDc2Zzh2cnVKc2l1cGZkUmJLLUtfdTItLWV3TXhaTUk?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T15:15-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-4c969e61ec7ede2b",
       "date": "2026-11-13",
       "category": "Colombia",
@@ -20921,8 +21016,8 @@
       "imageLicense": "CC0"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T19:21-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T19:21-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T19:23-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T19:23-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
