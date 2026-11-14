@@ -6,6 +6,120 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-960f48ddd4c6caa1",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Posible alineación de la Selección Colombia para juego contra Chile",
+      "summary": "Titular difundido por Futbolred a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Futbolred · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTkNsWHhSWjF4MWFoMEk3Z3dURGJmcXY0SWxpUC1pQVVkeGRObTBObmFBMFdqQmROUjF4VWdqWkI0ZmlOQndJNUl3MUVXY0l1Ny1kd0lkUnNuU0lMZ0hoSzkxT0xLYWwydTlhUVg0dVhnQVdGQzg1WF9NRTc2dnE2UWxSWE14NXZ2cHJobEQ4aGZ4c3FlcUdER2MyNDhLMHVVMUFXSWJmdEpUTzdBcmtiTllyM0tqTU5MVm530gHAAUFVX3lxTE1FeHlTandabGRZOFNEbEZmQkhlY1pfUnR4LXlHeWJGTWQ4OUdOdlZOZTFITzR6VE9BUUZBX09XcG5kdHhKUTRRWDUtOGpXMGxULXZDN0Q0WmRZb0FmZGtnMlNSdFg1OGxFQndCdVBGcC14M3pvM19XT1h1TUk1TnhHZ09LUy1VM2VaM1U3NXQ4X2ZmVVBYUFRhOHVKMWp5LUhra25iRFlBZ1NVeGRZeUc3b1FjMjc1V0xERnJ6eFVBTA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T08:00-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-12ef0f6aa52eb225",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia vs. Chile: siga EN VIVO la reacción al amistoso de la Selección en Cali",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRFZwdUlzY2VqMVBTUmdUcktKbFgtY01McUY0R3o1cUxKcUxnYVREWmdiTWY2RkVoU0dMaWVLa3J6RDBlUWYzbXdvdHRaWVpObEhQME0ybXMtckJzcjVZYzZDYXFZVmRLdllsZlJMTnA4amU5bUZfQ01rajg2MHpkQTJhTFpGOUFmTnlEeTdQN0pOejlmVlJKQjJVMHBad1JOdXVz0gGoAUFVX3lxTE9hc05jeGJIZW82SHBoVHp6NHpRSWNIZFZhNF83bUFTYzcxdEt1TFhhLW5ZTm1XLWotUkZFUElnVm82bC1Zdzl4ZnNPbUtUSmVUNzFma05SWkZMUWRGQjVRdnBIa3FpTXN0cll4dU83MGhwWjJkNExPS1J3QlZlWkJZdE93U1A1QlU2SHRna3JEX3ZhMHhzMWRuSFFFZXB4eERQOVVUemhZSQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T19:01-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7ee6ded86c58e206",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IA para la salud: AWS destinará USD 100 millones en tecnología",
+      "summary": "Titular difundido por La República a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La República · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVDNfdmVxUHgtdEJkNVZlc1RuVXRrVHRaQkhwSnVEVDBQX0h4eTJOQjdEZWNYcG81NGNOdmgwYU1yLXpIaWtwSkI3NWZuTW96RHRKZG9BY0xjZF9WaXVfa09EV2paaUdtYzFmWnRyaVJKVnVXSjhEVDRkM1Y4dThEeTFmZEJqRVZwamNuenBWSTRzbXBvS0YzUWVZLUhIVlRkNHpPdTZOMlhSOHJFOFhSUF96a2dCOHAyNk9ZeUpDczQwQnIzMU1UMlRSQW81eGF3bkI5eHZIMGFOVVk?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T18:37-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-4b311c35dde02bbc",
+      "date": "2026-11-13",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Mabe muestra robótica industrial en su planta de Córdoba",
+      "summary": "Titular difundido por El Ecosistema Startup a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Ecosistema Startup · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdmdZUmRLUnhsU2todW9sUUhFSElEQVNSLVNOMzQxTnZQX3ZMb09weXVNai1yUGZPc3lMT3M3VndYVWIzYXBlTjllc1VmR0NPZ3FGOW9VWVZUNTIwNEppQUhnTmtuTUZMR0ZYc3UydHN3Z1ZWc3VXeVU0OEZJNnpaSGpYalJEcDhRVXdMSHZCMnQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T18:33-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b1e11ad6e3e4e71c",
+      "date": "2026-11-13",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia vs Chile EN VIVO: la Selección vive la fiesta en Cali",
+      "summary": "Titular difundido por Futbolred a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Futbolred · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNWJVZ1o0T2V2QWxfUXJuNVNnTVJFS2JZcHEzWFJvbDZZcjBXNnM3T1ZyZy02UHdXa21JR1Z2TTc1V1RKNjQxQk5nNHd2SFNCZktCcVh2OF9FbDV6WElpQ016Q1ZsM0hCVmo2NENDbDFnc0phMFR6bXA2Sk95NzNlaS1TWVppRVA0dTFIUHZ1Q0RmWVJrQ0RmS1ZvRW96MDI1bENubXlMNUU2UHhTYjlPbkdpM1lWckJZUE82cG1tMTdkdnlkSDFoejVhYUd5ZDlHWXZZSEhiRmZnSlJOMk0tLUpJRdIB6AFBVV95cUxPcFZtQWxHZTByRDRxZG9qbGNORnRkOC1WdUMyNEhGbmpvSThsSm1jY0o3TjJZZ240NkNuNlI2TnJ5VzZxYmRZU1lXOHpCQ3NUaXh6YVRSaVBSRnhWUlpNclJtWlBBamltaXZvN0ZNeE5wcm1pdEZtVTFZcE9VTTNmTktxVVRBY1B4Nm1ILU56VTQwOE1xU19KaW5Lbnc3dEVPaFF6Q2dOMXZfSzhIRmN2LXVqbndpOWwtVjVoR3JMb3hVT1JBSElBbVdDZjAtOHpHZUY3dXBfYTJSdmRLbnZsdThpeG9pdTBo?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T18:32-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b38f4dc1274ee5a9",
+      "date": "2026-11-13",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Joya colombiana que juega en Alemania se ilusiona con la Selección: “Mi cultura y mi sangre”",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdllRNVlKVDNQdXhFV21QSVhWT1Q3UFFLZ1lUV2hjOEVGS2dJSk1mbmxSbG8xUVRaSHprbVE5aDJxVVNMRlA2QWhhTjVSOWdweGhqWmVCVXhSclBJZldER0lBTnhGR2Q0VEt0MUUwLXJrSExIUUEwS29YdlFpMlRxdnA2MW9YbEtSeGxIWEVrYldMQTlISUlQbGt0d3g1N1A2aUozVWFRNVlQOGwySWNwbDJEZ0R4OFJoY3dndk42LUZ0Zk45c2xBZGpTTnJKQ2tQYW1HNtIB2gFBVV95cUxORHBtTHVyUXg3UUREZ080UHF0M0RvekFpSEV6d0Vxb0FSX3IyMDlEN0h5Q21KQjRMSWtEaU9JNS00dWo0UVZhdkhPZlBmdlRsSEkzZFMzcWFSaU5qN05mcDVLSVU3dm9HRWlmY045T1Y3UG1xSHNHVmhjS055UmZhb3FtT0JscUtKWHYxOGZjbklQVGUzNE1Fb21vWXFWeGxINmU1YlJzVFQ5TTZPX2tETzRYOXVHak9uandLV0hUVWtNanpCQkFXRFpfZ05oODJ2enRkQVd0OTFpQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-13T14:35-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-44b00632e7f562bb",
       "date": "2026-11-13",
       "category": "Colombia",
@@ -20712,8 +20826,8 @@
       "imageLicense": "CC0"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-13T19:00-05:00",
-  "lastNewSourceAtBogota": "2026-11-13T19:00-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-13T19:20-05:00",
+  "lastNewSourceAtBogota": "2026-11-13T19:20-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
