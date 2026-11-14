@@ -1,0 +1,77 @@
+name: ORBIUNO | Publicar Reel 6 por API oficial de Meta
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-publish-six-20261113.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-instagram-20261113-1800
+  cancel-in-progress: false
+jobs:
+  instagram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+      ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      VIDEO_URL: https://colombia-al-dia.pages.dev/media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preflight estricto: seis noticias, fuentes, archivo y cuenta
+        run: |
+          python - <<'PY'
+          import json,hashlib,os,sys,time,urllib.request
+          from pathlib import Path
+          data=json.loads(Path("noticias.json").read_text(encoding="utf8"))
+          six=sorted([n for n in data["news"] if n.get("date")=="2026-11-13" and n.get("editionSlot")=="18:00" and n.get("verification")=="editorial_verified"],key=lambda n:n.get("priority",999))
+          assert len(six)==6 and six[-1]["category"]=="Farándula","BLOQUEADO: seis noticias/farándula incompletas"
+          assert all(n.get("imageRightsVerified") and n.get("sources") for n in six),"BLOQUEADO: faltan fuentes o fotografías"
+          index=Path("index.html").read_text(encoding="utf8")
+          assert six[-1]["id"] in index,"BLOQUEADO: sexta noticia no visible en web"
+          movie=Path("media/2026-11-13/ORBIUNO_2026-11-13_18H_6_NOTICIAS.mp4")
+          m=json.loads(Path("media/2026-11-13/orbiuno-credits.json").read_text())
+          assert movie.stat().st_size>1000000 and hashlib.sha256(movie.read_bytes()).hexdigest()==m["sha256"]
+          assert len(m["license_photos"])==6 and len(m["story_ids"])==6
+          assert os.getenv("ORBIUNO_IG_USER_ID") and os.getenv("ORBIUNO_IG_ACCESS_TOKEN"),"BLOQUEADO: faltan credenciales de Meta en GitHub Secrets"
+          u=os.environ["VIDEO_URL"]
+          for i in range(24):
+            try:
+              req=urllib.request.Request(u,headers={"Range":"bytes=0-31","User-Agent":"ORBIUNO-Preflight/1.0"})
+              with urllib.request.urlopen(req,timeout=18) as response:
+                head=response.read(32)
+                if len(head)>=8 and head[4:8]==b"ftyp":
+                  print("PUBLIC_MP4_READY",response.status, len(head),flush=True)
+                  break
+            except Exception as exc:
+              print("Waiting Pages deploy",i+1,type(exc).__name__,flush=True)
+            time.sleep(15)
+          else:raise RuntimeError("BLOQUEADO: MP4 no accesible públicamente para Meta")
+          titles=[n["title"] for n in six]
+          sources=[n["sources"][0]["name"] for n in six]
+          rows=["📰 ORBIUNO | Viernes 13 de noviembre · 6 noticias",
+            "","Las noticias que debes conocer, con fuentes verificadas:",
+            *[f"{i}. {title}" for i,title in enumerate(titles,1)],
+            "","🎧 Escucha cada noticia completa directamente en colombia-al-dia.pages.dev",
+            "","Fuentes: "+", ".join(dict.fromkeys(sources))+".",
+            "Fotografías de archivo acreditadas: "+", ".join(c["photo"]["artist"][:35] for c in m["license_photos"])+".",
+            "","Sigue @resumen.noticias y comparte este resumen.",
+            "#ORBIUNO #NoticiasColombia #NoticiasDelMundo #Farándula #LatinGrammy"]
+          caption="\n".join(rows)
+          assert len(caption)<2100
+          Path("/tmp/orbiuno_caption_final.txt").write_text(caption,encoding="utf8")
+          print("PRECHECK_OK",len(caption),flush=True)
+          PY
+      - name: Publicar una sola vez en @resumen.noticias usando Instagram Login
+        shell: bash
+        run: |
+          python scripts/publish_meta_direct.py             --video-url "$VIDEO_URL"             --caption "$(cat /tmp/orbiuno_caption_final.txt)"             --edition-key ORBIUNO-2026-11-13-1800             --publish | tee /tmp/orbiuno_meta_result.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ORBIUNO-IG-6-NOTICIAS-RESULTADO
+          path: /tmp/orbiuno_meta_result.json
+          retention-days: 30
+          if-no-files-found: ignore
