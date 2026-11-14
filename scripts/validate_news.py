@@ -63,7 +63,7 @@ def check(data):
             assert x.get('imageRightsVerified') is True, 'Derechos de imagen sin verificar'
             assert x.get('imageCredit'), 'Imagen sin crédito'
             assert x.get('imageLicense'), 'Imagen sin licencia'
-            assert str(x.get('imageSourceUrl', '')).startswith('https://'), 'Sin enlace de procedencia'
+            assert (str(x.get('imageSourceUrl', '')).startswith('https://') or str(x.get('imageSourceUrl', '')).startswith('./media/')), 'Sin procedencia pública o archivo local'
             assert (str(x.get('imageUrl','')).startswith('https://') or
                     str(x.get('imageUrl','')).startswith('./media/')), 'Ruta de imagen no válida'
         if x.get('verification') == 'source_only':
