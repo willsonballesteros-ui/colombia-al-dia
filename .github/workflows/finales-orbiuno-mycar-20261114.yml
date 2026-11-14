@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/finales-orbiuno-mycar-20261114.yml'
+      - 'scripts/validate_news.py'
+      - 'scripts/produce_corrected_20261114.py'
   workflow_dispatch:
 permissions:
   contents: write
