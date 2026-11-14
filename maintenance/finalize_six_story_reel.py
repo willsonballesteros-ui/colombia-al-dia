@@ -5,6 +5,8 @@ Run only after the generation workflow confirms the MP4's audio/video and photo 
 import hashlib,io,json,re,shutil,sys,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts"))
 OUT=ROOT/"media/2026-11-13"
 OUT.mkdir(parents=True,exist_ok=True)
 CACHE=Path(sys.argv[1]) if len(sys.argv)>1 else Path("/tmp/orbiuno-six-final")
