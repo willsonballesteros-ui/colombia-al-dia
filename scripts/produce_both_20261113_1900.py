@@ -69,6 +69,35 @@ MYCAR=[
  {"title":"Renault 4 E-Tech llega como exhibición eléctrica","source":"Renault Sofasa","url":"https://prensa.renault.com.co/prensa/renault-llega-a-la-edicion-20-del-salon-del-automovil-de-bogota-con-su-portafolio-100-renovado-y-se-extiende-a-sus-111-salas-a-nivel-nacional/","photo_query":"Renault 4 electric automobile",
  "voice":"Renault exhibe el cuatro E Tech eléctrico como vehículo de muestra en Corferias y anuncia planes de preventa para Colombia. Fuente: Renault Sofasa."}
 ]
+# Commons search is strict about multiword terms; try verified synonyms only.
+# Never synthesize an image or suppress the source/license test.
+_image_fallbacks={
+ "Cali Colombia city skyline buildings":["Cali Colombia","Cali","Colombia city"],
+ "Microsoft Redmond headquarters building":["Microsoft headquarters","Microsoft","office building"],
+ "Cali Pascual Guerrero football stadium":["Pascual Guerrero","football stadium","soccer stadium"],
+ "airport runway passenger airplanes airport":["airport","aircraft","airplane"],
+ "small electric aircraft futuristic helicopter":["helicopter","aircraft","electric airplane"],
+ "Rosalia singer musician concert":["Rosalia","singer concert","music concert"],
+ "Corferias Bogota exhibition hall":["Corferias","exhibition hall","Bogota buildings"],
+ "FAW Bestune compact electric car":["FAW automobile","electric car","small vehicle"],
+ "electric flying aircraft small aviation":["aircraft","helicopter","electric aircraft"],
+ "Renault 4 electric automobile":["Renault automobile","Renault","compact car"]
+}
+_choose_original=p.choose_photo
+def _verified_photo(query):
+ errors=[]
+ for q in [query]+_image_fallbacks.get(query,[]):
+  try:
+   photo,credit=_choose_original(q)
+   if not credit.get("commons","").startswith("https://commons.wikimedia.org/wiki/"):raise RuntimeError("Source URL unavailable")
+   if not any(x in str(credit.get("license","")).lower() for x in ("cc by","cc0","public domain")):raise RuntimeError("License not allowed")
+   print("APPROVED_ARCHIVAL_PHOTO",query,"=>",credit["file"],credit["license"],flush=True)
+   return photo,credit
+  except Exception as e:
+   errors.append(q+": "+str(e)[:65])
+ raise RuntimeError("No valid Commons photo; "+str(errors))
+p.choose_photo=_verified_photo
+
 def render(brand,stories):
  os.environ["ORBIUNO_REEL_COUNT"]=str(len(stories))
  refs=[{"title":n["title"],"source":n["source"],"source_url":n["url"],"photo_query":n["photo_query"]} for n in stories]
