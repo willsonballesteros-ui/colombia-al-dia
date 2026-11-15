@@ -15,7 +15,7 @@ let news=entries();
 const byId=id=>news.find(n=>n.id===id);
 const clean=s=>String(s||'').replace(/\s+/g,' ').trim();
 const textOf=n=>(n?.originalArticleReviewed===true && n?.originalArticleByline==='Redacción ORBIUNO' && n?.originalArticleTextEs?.trim()) || n?.audioFullTextEs?.trim() || n?.executiveSummary || n?.summary || '';
-const narration=n=>n?.title+'. Fuente: '+(n?.sources?.[0]?.name||'ORBIUNO')+'. '+textOf(n);
+const narration=n=>textOf(n);
 const urlFor=n=>{
  const a=manifest?.items?.[n?.id];
  if(!a?.url || !a?.text || clean(a.text)!==clean(narration(n)))return '';
@@ -73,6 +73,7 @@ const nativeSpeak=(id,body)=>{
  usingNative=true;const token=++nativeToken;
  const voices=synth.getVoices();
  const voice=voices.find(v=>v.lang?.toLowerCase()==='es-co')||voices.find(v=>v.lang?.toLowerCase().startsWith('es-'))||null;
+ // Se solicita español de Colombia. La voz local depende de las voces instaladas en iOS.
  let part=0;
  const speakPart=()=>{
    if(token!==nativeToken)return;
