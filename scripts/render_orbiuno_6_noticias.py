@@ -88,12 +88,15 @@ def story(day,stamp,n,position,path):
     image,draw=base(day,stamp)
     draw.text((101,658),f"NOTICIA {position} DE 6",font=face(37),fill=GOLD)
     paragraph(draw,n["title"],101,740,54,878,5,leading=1.3)
-    draw.rounded_rectangle((100,1110,980,1475),radius=24,fill=PANEL)
-    draw.text((135,1140),"FUENTE ORIGINAL",font=face(30),fill=TEAL)
-    paragraph(draw,n["sources"][0]["name"],135,1210,53,805,2)
+    draw.rounded_rectangle((100,1100,980,1490),radius=24,fill=GOLD)
+    draw.text((135,1130),"FUENTE VERIFICADA",font=face(31),fill=BG)
+    # Nombre editorial de la fuente destacado, NO fingir logotipo oficial
+    source=n["sources"][0]["name"].upper()
+    source_size=76 if len(source)<16 else 59
+    paragraph(draw,source,135,1210,source_size,790,2,ink=BG,leading=1.15)
     from urllib.parse import urlsplit
     domain=urlsplit(n["sources"][0]["url"]).hostname or ""
-    paragraph(draw,domain.removeprefix("www."),135,1340,25,790,2,ink=GOLD)
+    paragraph(draw,domain.removeprefix("www."),135,1405,27,790,2,ink=BG)
     image.save(path)
 
 
@@ -111,7 +114,7 @@ def main():
     db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
     day=datetime.now(BOGOTA).date().isoformat()
     slot=os.getenv("ORBIUNO_EDITION_SLOT","08:00")
-    if slot not in ("08:00","12:00","18:00"):
+    if slot not in ("08:00","12:00","18:00","19:00"):
         raise RuntimeError("Franja inválida")
     if db["editionDate"]!=day:
         raise RuntimeError("Edición caducada. No utilizar noticias del día anterior")
@@ -137,8 +140,8 @@ def main():
     bank=os.environ.get("ORBIUNO_VOICE_BANK","/tmp/voices-v1.0.bin")
     session=ort.InferenceSession(model,sess_options=options,providers=["CPUExecutionProvider"])
     voice=Kokoro.from_session(session,bank)
-    stamp=datetime.now(BOGOTA).strftime("%I:%M %p")
-    scene_text=["Seis noticias del quince de noviembre. Colombia y el mundo, con fuentes verificadas."]
+    stamp=slot+" HORA COLOMBIA"
+    scene_text=["Seis noticias de Colombia y el mundo. Edición de las siete de la noche."]
     for n in notes:
         phrase=str(n.get("reelLine") or n["summary"]).strip()
         if len(phrase.split())>27:
@@ -182,7 +185,7 @@ def main():
             f"file '{p}'\nduration {dur:.6f}\n"
             for p,dur in zip(images,durations)
         )+f"file '{images[-1]}'\n",encoding="utf-8")
-        video=out/("ORBIUNO_"+day+"_6_NOTICIAS.mp4")
+        video=out/("ORBIUNO_"+day+"_"+slot.replace(":","")+"_6_NOTICIAS.mp4")
         run("ffmpeg","-hide_banner","-loglevel","error","-nostdin","-y",
             "-f","concat","-safe","0","-i",str(concat),
             "-i",str(sound),"-map","0:v","-map","1:a",
