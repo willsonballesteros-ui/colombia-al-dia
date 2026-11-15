@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7717f15f1350a372",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Las mujeres que lideran la inteligencia artificial",
+      "summary": "Titular difundido por UDG TV a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "UDG TV · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPY2NqMUc0RG1NdlJmby11a2FHdzEwWTBlMzNjNUhhQWxIamNmbnoxdnJFbUhtNmVCemVJTWJQaHAwZUE3ODBhYVlBZHgzRjlObG9YVVdSaGgyR21hMHExN0FOZVUzWGFWWDAydnZ6dFE0WG5TWDB5Z3lmTGVOdW9sV3pncG5nbTFna3l0Y1V3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T09:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6e7c3e446644dd93",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La IA, una aliada clave en la previsión de huracanes",
+      "summary": "Titular difundido por UDG TV a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "UDG TV · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYjBYc1A3M1lMZVVJS2h2ZmQ5RU5YUjliSEFoNVVJcXd1Vm5oNV9YNTNFbXU0T1E5WWlLcHBaRzlVYVVJald4WnZsb0ZYY3dvRF9RaURoakFxeG5RUWExMGZuNDMzWE1HMUVyVGhDeUJXSlgyaEF0SFFVS0pOVGxweDkwTWF6OFVrZWg2cHhB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T09:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-847adf6d46591557",
+      "date": "2026-11-14",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cuadrangulares Liga BetPlay: Así quedaron los grupos, tras el sorteo",
+      "summary": "Titular difundido por ESPN Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ESPN Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNa3RvTE9GdGU3X0VsRTlIclU4a0pXa2pRelRhSzhEeHltRHE4UkxJZlFuM0VhYXV3YmF4ZlZKYWZaVzVDQmtMY0VoUkxhdm0xMjY3VDVVNV85dWRGS092OWxsc3B1Smt4M01LY1NrdlNKWnpOVm41LUFZd0trWWtQN3F2dWU3TzA5VXh1LWRlNVYxYlZJWUh6WTNuMzBaVmVwTlBfQ1UzcDRWWWNZYnJBcnVncE01aUthZUg0QXoyOHVKMkIz?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-14T18:26-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6b43d5e92da73817",
+      "date": "2026-11-14",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Así quedaron los grupos de cuadrangulares tras el sorteo de la Liga BetPlay luego de la última fecha de partidos",
+      "summary": "Titular difundido por RED+ Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "RED+ Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQd1NiRnNpZGZEQWpCQlk4UjBYand1bDVDOWdoMDRtZUNWSFBxZmhSYkF2SVZIbmN1b3doa3R5T3RhOHZ4eGxvWUk4Q3RyT1d4YllMblBpWXdyU0pVZXhkMy1pSi15bTlPVkhIOWtRbEpZcThoT19BMnlmZFdlOUFaejZYWkV5WUgwUFp2WlRuQktpLVl0aS1QOXl5ek1NSGhjRnJxcWtqaG9SZ01RTWQ5d1RXaGlHSTA4eTFDeVNVVDdzZ0JlRW1XWmZveWpBUVMzSVhkekZzMmV2TklOcGdvU0JsUTZwNEVKUTlUSWI5d0JNMkp3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-14T18:04-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6a09548652484d9c",
+      "date": "2026-11-14",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Estos son los ocho clasificados a los cuadrangulares de la Liga Betplay II-2026",
+      "summary": "Titular difundido por El País a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El País · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMDk5Q3hvSndLTDYyM0NXQllXNUtEb2w1R3E2Wl96X3B2VWNqN2dfNXF4Qmt5a2xpVVNrYTZwb2VvWFFBN0JUc2RNdWRLR0o4RXJEZTM2NlpTWGVOT3B5MGV1cnY3NG9VempneXNMWVNwbnY3VkZHdFhpWEFPNURXRi0tbFlUcklGeEFQLVpLSzRVb3BNSVJpMzhlTmpqM09kcEhVR1BNZWVna29DLUZCVHZjQU5EeDNDN0pQbGM2aDMyQUk2SjNz0gHHAUFVX3lxTE4wOTlDeG9Kd0tMNjIzQ1dCWVc1S0RvbDVHcTZaX3pfcHZVY2o3Z181cXhCa3lrbGlVU2thNnBvZW9YUUE3QlRzZE11ZEtHSjhFckRlMzY2WlNYZU5PcHkwZXVydjc0b1V6amd5c0xZU3BudjdWRkd0WGlYQU81RFdGLS1sWVRySUZ4QVAtWktLNFVvcE1JUmkzOGVOamozT2RwSFVHUE1lZWdrb0MtRkJUdmNBTkR4M0M3SlBsYzZoMzJBSTZKM3M?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-14T18:02-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-354f308050bf48ef",
       "date": "2026-11-15",
       "category": "Tecnología e IA",
@@ -22417,8 +22512,8 @@
       "reelLine": "Una nueva fábrica en Hungría retoma la producción del cubo de Rubik, creado hace más de cincuenta años."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T10:27-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T10:27-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T10:28-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T10:28-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "Edición 15/11 08:00 preparada con retraso. Publicación pendiente de preflight web, audio, MP4, coincidencia de IDs, permisos y verificación Meta; ninguna imagen ajena copiada. No presentar como publicada.",
