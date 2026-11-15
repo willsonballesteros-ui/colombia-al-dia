@@ -6,6 +6,120 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-fb5b93950e384e77",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La otra EIMA: relevo generacional, IA, robótica, ciberseguridad, competitividad, agricultura de precisión…",
+      "summary": "Titular difundido por Interempresas Media a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Interempresas Media · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZTM1Yzg1ZnZuNDVsTFdoTFc5OUg2TjlfS0lIeS0yOEtsQVNoTzhFLThqdWNMN1dCUVFWUFBqaUF0cDhBMDctZ04wOWdud01nVmJsNEJpWFJ0VkNMY285cmxDbWNWQ0NTZ1pzUzYwOG0tOFdNakNIU1pxaUdoU0RKQnpGeUZzaWgyNVNlcHZUcXNzTXFxalUwc1dYR1FEV3pJX2hSTTlncFZ1cUg1SjlGZzl0a2tqcW82M19Obk1mQldxNkE4VG1nb0lmRXg3cWM?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5ea023388e924e5e",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Tourplan apuesta por una tecnología que refuerce el factor humano en el turismo",
+      "summary": "Titular difundido por Hosteltur a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Hosteltur · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNF94TzFUVWpHLVJsMVlsMHF0R2l3amZZaktJYjREZ2Y3Zm1pZ3dEV2dxbFJmS012a2g4R2pXb3BQSVFWYVFvelVBVXptdnFGR2hHb01PN2FlbmYyeG93bTc2NzhSMjl5T3JJWGJ6VU5CNDRXRGNEMUVucVJIcC1Cdmg0SkdlLUpISUxDbVdfU25pUUJRLWV6OFg0dTVrRThHUTItN3oxZHljSE9GREhJOGF3UHF3XzQt?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e19da638fc535b8e",
+      "date": "2026-11-15",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Gutiérrez, Cundinamarca, será sede de la primera Copa Mundial de Highline en Colombia",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZTNmVFJZTFViNVBnejBQZERHZ2dCVWlXd3FvdjlHeUZfV0pYWHlvZ2FMNmpaMmREV1NGeWlBNklOanFjNVNxTHJYSjVVbU9fWjQ1Njl3RzVpMnlMT3FXSjMzVTdSWElFa0RRSUZMejlNUFNNSWxVc1pneldvX2hDMEdSNVN4S2JQS2tEaFZZbXQ1YVQ1dXh3ZklFSzAzclpCcDNqcjBtZjVoWi1hV2F2THM3LVA5aWwzMWN1aWp1Y1lnb29Mc2JJdXdmWQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:17-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0446e43d215113ee",
+      "date": "2026-11-15",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Dimayor confirmó el fixture de los cuadrangulares de la Liga BetPlay: así se jugarán",
+      "summary": "Titular difundido por El Espectador a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Espectador · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNzRpS1RrdS0zcU5HbHhscWFMUmxVVnZjdDNBSExrUWdnbWQ5VFZHeERJUzJHLUpaTDZWWFRsUkRhRVVJS3M0VDlZeERadzY3YWxsSWdjdUdsQ3d5NXNxaDdXM3h0bUxRczZfdVVyd2xqNHQ3Tk01QW94dU5XXzAyQzlSdnA1QkROZ09DSjdIdEJoZ3NXSEN1cFVLcWJaN3Jtb0pRalpNcXY3c2ZGNUFYUE1qZHNDQ1FfUVJWcWVUSGVvd09Fdng0a0YzTnRlWHNTdllzMDFQVdIB6wFBVV95cUxQVnhvb0FxbFB5N19CZ3MtMnpOVzBvYjVSRllBVU1BaGctVGNyOEFuTG5NVWlWVmsyRXZoODR5SmxHZDBEUmdzUFhnUkJoSENkMDBfcDRtNjhLdDNTVE1vSm9BTEdtcElhLVdXbVNCMW5fNkhHNEEtTjFnbTU1N2g0akZ1SmV1TFlSTTdSVzF2N1pJQ18wZ1NHS1pxdksxVTc2U25UWGFyeFU2ZTF3M0hiazZ0U1AtZ1lDTUtVUFJvN0g3V1pSelN4emFyanN3Vk1CWW1zNlVVVnhES2xCYmhqZ09uRjF5Nk5kVGpj?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T11:43-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7985991c647971ab",
+      "date": "2026-11-15",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia tiene talento de sobra en el exterior: estos son los jugadores que podrían dar el salto a la Selección | El Colombiano",
+      "summary": "Titular difundido por El Colombiano a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Colombiano · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSHZkcWprOWJJR1FLT09JdEdOS0p1NFpaczVTTkNSOERGMUVzN3hzOGk2cHNhZ1FtaTFWUHl1aUtrZFVvQmNtZHU0aTRyY1RxNDU3UkNmdjVjZTV3MS1fNmRuWS1MSDA3aG5TYWktSWdkUjBXanRSVjF0SWFnQjhPbFZHVlBpOFhISmdjZUJ5SWF4eExMWEdUWkdicVFJXy1UbjZiRzJXTFNKOXVfVE9tZlJDa2lwZ2VXUnU5d3NfWlctVlJDdGhKMUhZSXA1OGJXckdsOdIB2gFBVV95cUxPZDItOFhDX1F1Nlo2akJERVU1cDBkZFFSSTctVElaZXNVZFNHYU8zak1yc25pekJMMG5iR19EMkZSb1RtbklQSnUzZzhwN0NIZktBR09EaVdQc3N3MTNrLTRDaG90M2x3R2VQQ1ZRMXBHZEFjRWhLNU1rU0lJRDZNaGVlUGk3eUdZRFRrWktGdmNUb2NYZHpBUmN0Q2RKQWxFTnFRalFhOS1PLUZBT2pVakpPa3IwYmxqelVNNjFuQmVzZXJkdnlyaTlSblhhLTJxaG5HaWU3NVR3UQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T11:17-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9b98f3c18507dbab",
+      "date": "2026-11-15",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Liga BetPlay 2026-II: así quedó el ‘fixture’ completo de cuadrangulares con partidos y fechas",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNkZNMGpBdnNrUkNxSzVoa0xrcjNZeG55V1ZzajlBUm1GRVp6N3R0WV8yWlkwR2NIaTFxcmxvVzhHU2RqaVdwSWM0Q2xSbzhkdk5yaWI2OTVJakp4T2MtRzFhZ0JSSjhvTXhnV3FpQU9HVzhucU9keXJSUWhXSnpYY0o4SVhOZlZhZGc5UlJIeXZQME1sbXFuZXdTM2ZZU2lxRUtZRjF3SzJiNTBvVXJGeWk3VWtLcXVOeDdGUEpYWlV3M294ZjF5ZmJpQTNvVkRKMUlaM1RR0gHbAUFVX3lxTE5wc3FXZmxHM1NhcHQ3SmJValJVaHQtSlJBVUpITEZWQ011aHBtTVZsTnhjMUYzWG5VSkI4cnp1MHUyM2l4dmI3amh4SVBXR05vQThmMF91U2xldDhaTDBPd1o4NG9aRVRxODE4Wks4TG9Eb3JxQ1k0MVRUcmhsNVktMi1fVzJ5UkpzWU53bmlhNkhGSF9vLXFzYWg1Z2hzWms5WEZCcUpwVnVHRFFjRmJEVzBjQ0pkNGxRT09BZnZVTzhwUmQ4ZHhldUlFakJ3ZENSTTdMZTY3RkxObw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T07:43-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-02de47501bc5f140",
       "date": "2026-11-15",
       "category": "Tecnología e IA",
@@ -23096,8 +23210,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T18:26-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T18:26-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T18:29-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T18:29-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
