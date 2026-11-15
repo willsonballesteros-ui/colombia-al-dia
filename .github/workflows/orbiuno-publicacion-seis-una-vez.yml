@@ -1,0 +1,106 @@
+name: ORBIUNO · edición seis noticias · entrega y publicación verificada
+
+on:
+  # Esta ejecución se dispara UNA VEZ al introducir este workflow en main.
+  # No contiene cron. Repetir manualmente es seguro solo con conciliación Meta.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/orbiuno-publicacion-seis-una-vez.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orbiuno-2026-11-15-0800-publicacion
+  cancel-in-progress: false
+
+jobs:
+  produce_publish:
+    name: Producir, verificar web y publicar si todo está autorizado
+    runs-on: ubuntu-24.04
+    timeout-minutes: 85
+    steps:
+      - name: Leer repositorio original
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pruebas del proyecto (sin llamar Meta)
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/validate_news.py noticias.json
+          python -m py_compile scripts/render_orbiuno_6_noticias.py scripts/orbiuno_publish_6.py
+      - name: Dependencias de producción libres
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
+      - name: Modelos Dora con SHA256 obligatorio
+        run: |
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
+          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
+          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
+          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+      - name: Generar audio íntegro de las seis noticias para web
+        run: python scripts/generate_web_voice.py
+      - name: Actualizar HTML con las seis noticias del día
+        run: python scripts/prepare_site.py
+      - name: Renderizar Reel de seis noticias en español a 1.25x
+        env:
+          ORBIUNO_EDITION_SLOT: '08:00'
+        run: python scripts/render_orbiuno_6_noticias.py
+      - name: Verificar paquete y almacenar archivos web y MP4 en main
+        run: |
+          set -euo pipefail
+          day=$(TZ=America/Bogota date +%F)
+          test "$day" = "2026-11-15"
+          folder="dist/orbiuno-$day-0800"
+          test -s "$folder/manifest.json"
+          test -s "$folder/ORBIUNO_$day"_"6_NOTICIAS.mp4"
+          python - <<'PY'
+          import json,hashlib,pathlib
+          day="2026-11-15"
+          folder=pathlib.Path("dist")/("orbiuno-"+day+"-0800")
+          data=json.loads((folder/"manifest.json").read_text())
+          video=folder/data["video"]
+          assert data["newsCount"]==6 and len(set(data["newsIds"]))==6
+          assert data["voice"]=="ef_dora" and data["voiceSpeed"]==1.25
+          assert data["width"]==1080 and data["height"]==1920
+          assert 50<=data["duration"]<=60
+          assert hashlib.sha256(video.read_bytes()).hexdigest()==data["sha256"]
+          print("EVIDENCIA MP4 OK",data["duration"],data["sha256"])
+          PY
+          mkdir -p "media/$day"
+          cp "$folder/ORBIUNO_$day"_"6_NOTICIAS.mp4" "media/$day/"
+          cp "$folder/manifest.json" "media/$day/orbiuno_6_noticias_manifest.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add noticias.json index.html media/web-voice "media/$day/"
+          if ! git diff --cached --quiet; then
+            git commit -m "ORBIUNO web y Reel seis noticias verificados $day"
+            for i in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$i" = 3 ]; then echo "GitHub push conflictivo, no publicar" >&2; exit 1; fi
+              sleep "$((i * 3))"
+            done
+          fi
+      - name: Comprobar despliegue de Cloudflare, audio y cuenta Meta; publicar una vez
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: |
+          python scripts/orbiuno_publish_6.py             --manifest dist/orbiuno-2026-11-15-0800/manifest.json
+      - name: Conservar video y evidencias incluso ante bloqueo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-2026-11-15-0800-SEIS-RESULTADOS
+          path: |
+            dist/orbiuno-2026-11-15-0800/
+          if-no-files-found: warn
+          retention-days: 30
