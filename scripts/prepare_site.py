@@ -163,10 +163,15 @@ def build(data, page):
     # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
     # la vista desarrollada y el reproductor (incluido el fallback nativo).
     from copy import deepcopy
+    from narration_body import narration_for
     data = deepcopy(data)
     for news in data.get("news", []):
-        if original_article_ready(news):
-            news["audioFullTextEs"] = news["originalArticleTextEs"].strip()
+        if news.get("verification") == "editorial_verified":
+            body = narration_for(news, original_article_ready)
+            if body:
+                news["audioFullTextEs"] = body
+                if original_article_ready(news):
+                    news["originalArticleTextEs"] = body
     today=data.get("editionDate")
     published=[
         n for n in data["news"]
