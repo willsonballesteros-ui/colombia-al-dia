@@ -44,11 +44,14 @@ def image_markup(n):
         'data-photo-id="{id}" aria-label="Ampliar fotografía: {alt}">'
         '<img src="{url}" loading="lazy" decoding="async" alt="{alt}" width="320" height="180">'
         '<span class="photo-expand" aria-hidden="true">⤢</span></button>'
-        '<figcaption>{caption}<br>{credit} · {license}</figcaption></figure>'
+        '<figcaption>{caption}<br>{credit} · {license} · '
+        '<a href="{source}" target="_blank" rel="noopener noreferrer">Origen de la fotografía</a>'
+        '</figcaption></figure>'
     ).format(id=esc(n['id']), url=esc(n['imageUrl']),
              alt=esc(n.get('imageAlt') or n['title']),
              caption=esc(n.get('imageCaption') or 'Fotografía'),
-             credit=esc(n['imageCredit']), license=esc(n['imageLicense']))
+             credit=esc(n['imageCredit']), license=esc(n['imageLicense']),
+             source=esc(n['imageSourceUrl']))
 
 def source_thumbnail(n):
     """Mostrar el favicon real del dominio citado; no es foto del hecho."""
