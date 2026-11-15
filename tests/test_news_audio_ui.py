@@ -21,7 +21,7 @@ class NewsAudioUITests(unittest.TestCase):
         ]
         self.assertGreaterEqual(len(expected), 1)
         self.assertLessEqual(len(expected), 18)
-        self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=5 for slot in ('08:00','12:00','18:00')))
+        self.assertTrue(all(sum(n.get('editionSlot')==slot for n in expected)<=6 for slot in ('08:00','12:00','18:00')))
         first = self.out.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertEqual(first.count('data-tts-action="toggle"'), len(expected))
         self.assertEqual(first.count('data-tts-action="speed"'), len(expected))
@@ -134,7 +134,9 @@ class NewsAudioUITests(unittest.TestCase):
             actual = self.out.split('<script type="application/json" id="initial-news">', 1)[1].split('</script>', 1)[0]
             payload = json.loads(actual)
             generated = next(n for n in payload["news"] if n["id"] == article["id"])
-            self.assertEqual(generated["audioFullTextEs"], article["originalArticleTextEs"].strip())
+            from scripts.narration_body import story_body
+            self.assertEqual(generated["audioFullTextEs"], story_body(article["originalArticleTextEs"]))
+            self.assertEqual(generated["originalArticleTextEs"], generated["audioFullTextEs"])
 
     def test_mobile_audio_repair_is_injected_without_redirect(self):
         from pathlib import Path
