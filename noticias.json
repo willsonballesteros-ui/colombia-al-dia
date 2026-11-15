@@ -1,7 +1,7 @@
 {
   "brand": "ORBIUNO | Colombia al Día",
-  "editionDate": "2026-11-14",
-  "editedAtBogota": "2026-11-12T21:20:00-05:00",
+  "editionDate": "2026-11-15",
+  "editedAtBogota": "2026-11-15T10:11:03-05:00",
   "siteVersion": "3.0",
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
@@ -21642,13 +21642,210 @@
       "imageLicense": "CC BY 3.0",
       "imageCredit": "Programas Telemedellín",
       "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AKarol_G_en_2018.jpg"
+    },
+    {
+      "id": "orbiuno-20261115-08h-1",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 1,
+      "category": "Colombia",
+      "title": "Colombia presentará 250 proyectos en la Milagro Week de Nueva York",
+      "summary": "El Gobierno anunció un portafolio de 250 iniciativas para atraer inversión en Nueva York. La meta de más de US$10.000 millones es una expectativa, no dinero obtenido.",
+      "executiveSummary": "El Gobierno anunció un portafolio de 250 iniciativas para atraer inversión en Nueva York. La meta de más de US$10.000 millones es una expectativa, no dinero obtenido.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Caracol Radio",
+          "url": "https://caracol.com.co/2026/11/15/gobierno-espera-atraer-mas-de-us10000-millones-en-inversion-durante-la-milagro-week/"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Colombia prepara una presentación de proyectos de inversión en Nueva York durante la denominada Milagro Week. En una entrevista con Caracol Radio divulgada este domingo, el vicepresidente José Manuel Restrepo dijo que la delegación llevará un portafolio de doscientas cincuenta iniciativas, valoradas en más de cuarenta y un mil millones de dólares. El evento está previsto para los próximos días y busca conectar a promotores de proyectos con inversionistas internacionales.\n\nEl Gobierno aspira a conseguir más de diez mil millones de dólares en nuevos compromisos. Esa cifra corresponde a una meta anunciada y no a recursos que ya hayan ingresado al país. Según la entrevista, la agenda incluye reuniones de negocios y propuestas en sectores como infraestructura, energía, tecnología, farmacéutica, agroindustria y minería.\n\nLa lista de empresas y fondos mencionados por el vicepresidente corresponde a asistentes o contactos de la agenda, no a inversiones confirmadas por esas compañías. La eficacia del encuentro deberá evaluarse después mediante acuerdos verificables, montos efectivamente comprometidos y el avance de los proyectos. La noticia procede de la entrevista publicada este quince de noviembre por Caracol Radio.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/15/gobierno-espera-atraer-mas-de-us10000-millones-en-inversion-durante-la-milagro-week/"
+      ],
+      "originalArticleTextEs": "Colombia prepara una presentación de proyectos de inversión en Nueva York durante la denominada Milagro Week. En una entrevista con Caracol Radio divulgada este domingo, el vicepresidente José Manuel Restrepo dijo que la delegación llevará un portafolio de doscientas cincuenta iniciativas, valoradas en más de cuarenta y un mil millones de dólares. El evento está previsto para los próximos días y busca conectar a promotores de proyectos con inversionistas internacionales.\n\nEl Gobierno aspira a conseguir más de diez mil millones de dólares en nuevos compromisos. Esa cifra corresponde a una meta anunciada y no a recursos que ya hayan ingresado al país. Según la entrevista, la agenda incluye reuniones de negocios y propuestas en sectores como infraestructura, energía, tecnología, farmacéutica, agroindustria y minería.\n\nLa lista de empresas y fondos mencionados por el vicepresidente corresponde a asistentes o contactos de la agenda, no a inversiones confirmadas por esas compañías. La eficacia del encuentro deberá evaluarse después mediante acuerdos verificables, montos efectivamente comprometidos y el avance de los proyectos. La noticia procede de la entrevista publicada este quince de noviembre por Caracol Radio.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight"
+    },
+    {
+      "id": "orbiuno-20261115-08h-2",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 2,
+      "category": "Bogotá",
+      "title": "Mercados Campesinos de Bogotá tienen jornadas este domingo",
+      "summary": "La agenda oficial anuncia Mercados Campesinos este 15 de noviembre en cinco espacios de Bogotá, de 7:00 a. m. a 4:00 p. m.",
+      "executiveSummary": "La agenda oficial anuncia Mercados Campesinos este 15 de noviembre en cinco espacios de Bogotá, de 7:00 a. m. a 4:00 p. m.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-en-bogota-compra-en-mercados-campesinos-14-y-15-noviembre-2026"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "El programa Mercados Campesinos de Bogotá tiene actividades anunciadas para este domingo quince de noviembre en distintos sectores de la ciudad. Según el Portal Bogotá, el horario previsto va desde las siete de la mañana hasta las cuatro de la tarde. La iniciativa permite que habitantes de la capital compren alimentos frescos directamente a productores rurales y emprendedores de la región.\n\nPara la jornada dominical, la programación oficial incluye la plazoleta del Centro Nacional de Artes Delia Zapata Olivella, el parque de la urbanización Cedritos, el parque Gratamira, el parque Provenza en Lagos de Córdoba y la plazoleta del centro comercial Ciudad Tunal. Las ubicaciones y los horarios fueron publicados por la administración distrital; los cambios operativos deben comprobarse con la entidad antes de desplazarse.\n\nLa Secretaría Distrital de Desarrollo Económico destaca que estos encuentros apoyan a productores de zonas rurales de Bogotá y municipios de Cundinamarca. La información institucional habla de más de sesenta participantes durante el fin de semana y de una iniciativa que beneficia a familias campesinas. No se presenta una cifra de ventas ni de asistentes de hoy porque esos resultados aún no están comprobados.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-en-bogota-compra-en-mercados-campesinos-14-y-15-noviembre-2026"
+      ],
+      "originalArticleTextEs": "El programa Mercados Campesinos de Bogotá tiene actividades anunciadas para este domingo quince de noviembre en distintos sectores de la ciudad. Según el Portal Bogotá, el horario previsto va desde las siete de la mañana hasta las cuatro de la tarde. La iniciativa permite que habitantes de la capital compren alimentos frescos directamente a productores rurales y emprendedores de la región.\n\nPara la jornada dominical, la programación oficial incluye la plazoleta del Centro Nacional de Artes Delia Zapata Olivella, el parque de la urbanización Cedritos, el parque Gratamira, el parque Provenza en Lagos de Córdoba y la plazoleta del centro comercial Ciudad Tunal. Las ubicaciones y los horarios fueron publicados por la administración distrital; los cambios operativos deben comprobarse con la entidad antes de desplazarse.\n\nLa Secretaría Distrital de Desarrollo Económico destaca que estos encuentros apoyan a productores de zonas rurales de Bogotá y municipios de Cundinamarca. La información institucional habla de más de sesenta participantes durante el fin de semana y de una iniciativa que beneficia a familias campesinas. No se presenta una cifra de ventas ni de asistentes de hoy porque esos resultados aún no están comprobados.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight"
+    },
+    {
+      "id": "orbiuno-20261115-08h-3",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 3,
+      "category": "Mundo",
+      "title": "SpaceX logra capturar una Starship al regresar del espacio",
+      "summary": "Tras un vuelo orbital de unas 22 horas, la nave Starship fue sujetada por los brazos mecánicos de la torre en Texas; el propulsor no completó la captura prevista.",
+      "executiveSummary": "Tras un vuelo orbital de unas 22 horas, la nave Starship fue sujetada por los brazos mecánicos de la torre en Texas; el propulsor no completó la captura prevista.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://es.euronews.com/2026/11/15/spacex-atrapa-con-brazos-mecanicos-la-etapa-superior-de-starship-por-primera-vez"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "SpaceX consiguió recuperar la etapa superior de su nave Starship mediante los brazos mecánicos de la torre de lanzamiento en Texas. El acontecimiento tuvo lugar el sábado catorce de noviembre y fue reportado este domingo por Euronews. La nave había salido el viernes y regresó después de aproximadamente veintidós horas de viaje, en un ensayo que puso a prueba su retorno desde órbita.\n\nEl reporte señala que la nave completó catorce órbitas de la Tierra y desplegó veintiséis satélites de la red Starlink antes de regresar. La captura de la nave es un nuevo resultado técnico para el desarrollo de vehículos espaciales reutilizables. Esa novedad es diferente del despliegue de satélites que ya había sido informado previamente, por lo que se presenta como una actualización sustantiva.\n\nNo se completó, sin embargo, la doble captura que estaba prevista. La etapa propulsora Super Heavy no regresó a la torre y SpaceX investiga por qué terminó anticipadamente su maniobra de retorno. El avance deberá contrastarse en pruebas futuras antes de dar por alcanzada una reutilización completa y rutinaria del sistema.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://es.euronews.com/2026/11/15/spacex-atrapa-con-brazos-mecanicos-la-etapa-superior-de-starship-por-primera-vez"
+      ],
+      "originalArticleTextEs": "SpaceX consiguió recuperar la etapa superior de su nave Starship mediante los brazos mecánicos de la torre de lanzamiento en Texas. El acontecimiento tuvo lugar el sábado catorce de noviembre y fue reportado este domingo por Euronews. La nave había salido el viernes y regresó después de aproximadamente veintidós horas de viaje, en un ensayo que puso a prueba su retorno desde órbita.\n\nEl reporte señala que la nave completó catorce órbitas de la Tierra y desplegó veintiséis satélites de la red Starlink antes de regresar. La captura de la nave es un nuevo resultado técnico para el desarrollo de vehículos espaciales reutilizables. Esa novedad es diferente del despliegue de satélites que ya había sido informado previamente, por lo que se presenta como una actualización sustantiva.\n\nNo se completó, sin embargo, la doble captura que estaba prevista. La etapa propulsora Super Heavy no regresó a la torre y SpaceX investiga por qué terminó anticipadamente su maniobra de retorno. El avance deberá contrastarse en pruebas futuras antes de dar por alcanzada una reutilización completa y rutinaria del sistema.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight",
+      "editorialUpdate": {
+        "substantial": true,
+        "newFacts": "Primera captura de nave de retorno orbital, posterior al despliegue satelital ya citado",
+        "verifiedSource": "https://es.euronews.com/2026/11/15/spacex-atrapa-con-brazos-mecanicos-la-etapa-superior-de-starship-por-primera-vez"
+      }
+    },
+    {
+      "id": "orbiuno-20261115-08h-4",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 4,
+      "category": "Mundo",
+      "title": "Canadá obtiene dos oros en el Grand Prix de judo de Zagreb",
+      "summary": "Jessica Klimkait y François Gauthier-Drapeau ganaron dos oros para Canadá en la segunda jornada del Grand Prix de Zagreb.",
+      "executiveSummary": "Jessica Klimkait y François Gauthier-Drapeau ganaron dos oros para Canadá en la segunda jornada del Grand Prix de Zagreb.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://es.euronews.com/2026/11/15/canada-conquista-dos-oros-en-la-segunda-jornada-de-zagreb"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Canadá terminó la segunda jornada del Grand Prix de judo de Zagreb con dos medallas de oro. La información publicada este quince de noviembre por Euronews, en colaboración con la Federación Internacional de Judo, identifica como vencedores a Jessica Klimkait y François Gauthier-Drapeau. La competición se celebra en la capital croata y reúne a deportistas de varias regiones.\n\nKlimkait se impuso en la categoría femenina de menos sesenta y tres kilogramos, mientras que Gauthier-Drapeau consiguió el oro en la división masculina de menos ochenta y un kilogramos. Los combates se resolvieron con puntuaciones decisivas en momentos clave, según la cobertura de la jornada. El resultado representa dos títulos concretos para la delegación canadiense en esta fecha del torneo.\n\nTambién hubo primeros oros de Grand Prix para Giorgi Loladze, de Georgia, y Nauana Silva, de Brasil. La judoca croata Iva Oberan obtuvo una medalla de bronce ante el público local. Las posiciones se citan como resultados de la jornada ya disputada, no como pronósticos de las categorías que aún faltan por competir.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://es.euronews.com/2026/11/15/canada-conquista-dos-oros-en-la-segunda-jornada-de-zagreb"
+      ],
+      "originalArticleTextEs": "Canadá terminó la segunda jornada del Grand Prix de judo de Zagreb con dos medallas de oro. La información publicada este quince de noviembre por Euronews, en colaboración con la Federación Internacional de Judo, identifica como vencedores a Jessica Klimkait y François Gauthier-Drapeau. La competición se celebra en la capital croata y reúne a deportistas de varias regiones.\n\nKlimkait se impuso en la categoría femenina de menos sesenta y tres kilogramos, mientras que Gauthier-Drapeau consiguió el oro en la división masculina de menos ochenta y un kilogramos. Los combates se resolvieron con puntuaciones decisivas en momentos clave, según la cobertura de la jornada. El resultado representa dos títulos concretos para la delegación canadiense en esta fecha del torneo.\n\nTambién hubo primeros oros de Grand Prix para Giorgi Loladze, de Georgia, y Nauana Silva, de Brasil. La judoca croata Iva Oberan obtuvo una medalla de bronce ante el público local. Las posiciones se citan como resultados de la jornada ya disputada, no como pronósticos de las categorías que aún faltan por competir.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight"
+    },
+    {
+      "id": "orbiuno-20261115-08h-5",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 5,
+      "category": "Mundo",
+      "title": "Cabo Verde celebra elección presidencial con seis candidaturas",
+      "summary": "Los votantes de Cabo Verde acuden a las urnas este domingo. Joana Rosa participa en una elección que podría llevar por primera vez a una mujer a la presidencia.",
+      "executiveSummary": "Los votantes de Cabo Verde acuden a las urnas este domingo. Joana Rosa participa en una elección que podría llevar por primera vez a una mujer a la presidencia.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://es.euronews.com/2026/11/15/cabo-verde-vota-hoy-y-podria-elegir-a-su-primera-presidenta-de-la-republica"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "Cabo Verde celebra este domingo quince de noviembre una elección presidencial con seis candidaturas, según Euronews. Entre ellas figuran el mandatario José Maria Neves, que busca un segundo mandato, y Joana Rosa Amado, exministra de Justicia. Su candidatura abre la posibilidad histórica de que el país elija por primera vez a una mujer para ocupar la presidencia desde su independencia.\n\nLa votación estaba programada para comenzar a las ocho de la mañana y extenderse durante diez horas, según el reporte publicado antes del cierre de las urnas. En caso de que ninguna candidatura reúna la mayoría exigida, se contempla una segunda vuelta el veintinueve de noviembre. Por tratarse de un proceso en curso, esta noticia no adjudica victorias ni anuncia resultados no publicados.\n\nEl país africano tiene un régimen en el que el primer ministro ejerce la mayor parte de las funciones ejecutivas y el presidente cumple atribuciones constitucionales específicas. La información electoral debe distinguir entre candidaturas, declaraciones de campaña y resultados oficiales. La referencia principal para esta nota es la cobertura fechada hoy por Euronews.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://es.euronews.com/2026/11/15/cabo-verde-vota-hoy-y-podria-elegir-a-su-primera-presidenta-de-la-republica"
+      ],
+      "originalArticleTextEs": "Cabo Verde celebra este domingo quince de noviembre una elección presidencial con seis candidaturas, según Euronews. Entre ellas figuran el mandatario José Maria Neves, que busca un segundo mandato, y Joana Rosa Amado, exministra de Justicia. Su candidatura abre la posibilidad histórica de que el país elija por primera vez a una mujer para ocupar la presidencia desde su independencia.\n\nLa votación estaba programada para comenzar a las ocho de la mañana y extenderse durante diez horas, según el reporte publicado antes del cierre de las urnas. En caso de que ninguna candidatura reúna la mayoría exigida, se contempla una segunda vuelta el veintinueve de noviembre. Por tratarse de un proceso en curso, esta noticia no adjudica victorias ni anuncia resultados no publicados.\n\nEl país africano tiene un régimen en el que el primer ministro ejerce la mayor parte de las funciones ejecutivas y el presidente cumple atribuciones constitucionales específicas. La información electoral debe distinguir entre candidaturas, declaraciones de campaña y resultados oficiales. La referencia principal para esta nota es la cobertura fechada hoy por Euronews.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight"
+    },
+    {
+      "id": "orbiuno-20261115-08h-6",
+      "date": "2026-11-15",
+      "editionSlot": "08:00",
+      "priority": 6,
+      "category": "Mundo",
+      "title": "La fabricación del cubo de Rubik regresa a Hungría",
+      "summary": "Una fábrica automatizada en Hungría retomará la producción del cubo de Rubik, inventado por Ernő Rubik hace más de medio siglo.",
+      "executiveSummary": "Una fábrica automatizada en Hungría retomará la producción del cubo de Rubik, inventado por Ernő Rubik hace más de medio siglo.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/video/2026/11/14/rubiks-cube-production-returns-to-hungary-more-than-50-years-after-invention"
+        }
+      ],
+      "audioIsFullPublisherArticle": false,
+      "audioFullTextEs": "El cubo de Rubik vuelve a tener una línea de fabricación en Hungría, el país donde nació este conocido rompecabezas tridimensional. Euronews informó el catorce de noviembre sobre la apertura de instalaciones en Jászberény, que utilizarán sistemas automatizados para ensamblar y comprobar las piezas. El anuncio coincide con más de cinco décadas desde la invención del juego.\n\nErnő Rubik desarrolló el rompecabezas en mil novecientos setenta y cuatro mientras enseñaba diseño en Budapest. La nueva línea fue presentada por el propio inventor y, de acuerdo con la información publicada, está proyectada para producir hasta un millón de unidades al año. Esa cifra describe la capacidad prevista y no una producción ya alcanzada.\n\nEl regreso de la fabricación al país de origen combina patrimonio cultural, industria y automatización. El producto se comercializó inicialmente como cubo mágico antes de convertirse en un fenómeno internacional. La noticia se refiere a la inauguración de la línea y a sus objetivos; no atribuye ventas recientes ni cifras de empleo que la fuente no haya confirmado.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobado",
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.euronews.com/video/2026/11/14/rubiks-cube-production-returns-to-hungary-more-than-50-years-after-invention"
+      ],
+      "originalArticleTextEs": "El cubo de Rubik vuelve a tener una línea de fabricación en Hungría, el país donde nació este conocido rompecabezas tridimensional. Euronews informó el catorce de noviembre sobre la apertura de instalaciones en Jászberény, que utilizarán sistemas automatizados para ensamblar y comprobar las piezas. El anuncio coincide con más de cinco décadas desde la invención del juego.\n\nErnő Rubik desarrolló el rompecabezas en mil novecientos setenta y cuatro mientras enseñaba diseño en Budapest. La nueva línea fue presentada por el propio inventor y, de acuerdo con la información publicada, está proyectada para producir hasta un millón de unidades al año. Esa cifra describe la capacidad prevista y no una producción ya alcanzada.\n\nEl regreso de la fabricación al país de origen combina patrimonio cultural, industria y automatización. El producto se comercializó inicialmente como cubo mágico antes de convertirse en un fenómeno internacional. La noticia se refiere a la inauguración de la línea y a sus objetivos; no atribuye ventas recientes ni cifras de empleo que la fuente no haya confirmado.",
+      "visualMode": "source_only",
+      "imageRightsVerified": false,
+      "editorialVerifiedAtBogota": "2026-11-15",
+      "publicationStatus": "pending_preflight"
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-13T19:33-05:00",
   "lastNewSourceAtBogota": "2026-11-13T19:33-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
-  "editorialNote": "Edición extraordinaria de las 9 p. m.: cuatro noticias verificadas, dos buenas noticias de Colombia y dos novedades tecnológicas del mundo. Sin fotografías de terceros hasta comprobar derechos de uso.",
+  "editorialNote": "Edición 15/11 08:00 preparada con retraso. Publicación pendiente de preflight web, audio, MP4, coincidencia de IDs, permisos y verificación Meta; ninguna imagen ajena copiada. No presentar como publicada.",
   "editorialFormat": "5 noticias por publicación; portada conjunta con titulares resaltados en orden, desarrollo secuencial con fotografías verificadas",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
   "branding": {
@@ -21931,9 +22128,9 @@
       ]
     }
   ],
-  "editionSlot": "12:00",
-  "openingScriptEs": "Buenos días. Son las ocho de la mañana de este viernes seis de noviembre. Esto es ORBIUNO. Hackers de Corea del Norte: robo de US$6.300 millones. 104 armas de guerra decomisadas en el Caribe. Inflación podría cerrar 2026 en 7,1 %. Jhon Arias brilla: doblete en solo 14 minutos. El papa vuelve a Suramérica tras una operación. Ormuz: barcos reportan nuevos ataques. Anthropic: dudas sobre su millonaria salida a bolsa. Desplome tecnológico golpea a fondos globales. Tribunal ordena libertad de Luis F. Velasco. Piden ahorrar energía entre las 6 y las 9 p. m.. Encuentra el desarrollo completo y las fuentes originales en colombia-al-dia.pages.dev.",
-  "editionLabel": "11 de noviembre de 2026 · Colombia y el mundo",
+  "editionSlot": "08:00",
+  "openingScriptEs": "Seis noticias verificadas de Colombia y el mundo: proyectos de inversión, mercados campesinos, un avance espacial, judo, elecciones en Cabo Verde y el regreso de un invento clásico.",
+  "editionLabel": "Edición matutina tardía del 15 de noviembre de 2026",
   "editionSlots": [
     "08:00",
     "12:00",
