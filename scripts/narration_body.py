@@ -1,8 +1,4 @@
-"""Narración de noticias: únicamente el cuerpo editorial, sin presentación de marca.
-
-Mantiene los párrafos y elimina únicamente frases de autopromoción sobre ORBIUNO.
-El mismo texto debe alimentar el reproductor y el contenido desarrollado visible.
-"""
+"""Texto editorial narrado: mantiene párrafos completos y excluye autopromoción."""
 import re
 
 
@@ -10,7 +6,18 @@ def story_body(raw):
     paragraphs = []
     for paragraph in str(raw or "").strip().split("\n\n"):
         sentences = re.split(r"(?<=[.!?])\s+", paragraph.strip())
-        kept = [s for s in sentences if s and not re.search(r"\bORBIUNO\b", s, flags=re.I)]
+        kept = []
+        for sentence in sentences:
+            if not sentence:
+                continue
+            # Las promociones independientes NO son parte del reportaje.
+            if re.match(r"(?i)^\s*(?:síguenos|sigue a orbiuno|visita nuestra web|escucha en nuestra página)", sentence):
+                continue
+            # Evita perder hechos porque una oración mencione la marca.
+            sentence = re.sub(r"(?i)\b(?:redacción\s+)?ORBIUNO(?:\s+Noticias)?\b", "", sentence)
+            sentence = re.sub(r"\s{2,}", " ", sentence).strip(" ·—:-,;")
+            if sentence:
+                kept.append(sentence)
         if kept:
             paragraphs.append(" ".join(kept))
     return "\n\n".join(paragraphs).strip()
