@@ -81,6 +81,15 @@ def cover(day,stamp,notes,path):
         draw.rounded_rectangle((100,y,980,y+112),radius=15,fill=PANEL)
         draw.text((122,y+18),f"{i+1:02d}",font=face(37),fill=GOLD)
         paragraph(draw,n["title"],210,y+18,27,720,2)
+    # Franja de fuentes visible también en la portada, no solo en cada noticia.
+    # Son nombres editoriales de las fuentes, no logotipos oficiales no verificados.
+    names=list(dict.fromkeys(n["sources"][0]["name"].upper() for n in notes))
+    draw.rounded_rectangle((100,1500,980,1555),radius=12,fill=GOLD)
+    label="FUENTES: "+"  ·  ".join(names)
+    font_size=25
+    while draw.textbbox((0,0),label,font=face(font_size))[2]>830 and font_size>17:
+        font_size-=1
+    draw.text((125,1511),label,font=face(font_size),fill=BG)
     image.save(path)
 
 
