@@ -235,9 +235,9 @@ def build(data, page):
     page,count=re.subn(marker,lambda m:m.group(1)+encoded+m.group(2),page,count=1,flags=re.S)
     if count!=1:
         raise ValueError("No se localizó #initial-news")
-    # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
+    # El SEO debe describir seis noticias por edición, no el formato anterior.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
-                      "Hasta cinco noticias verificadas por edición, con fuentes originales.")
+                      "Seis noticias por edición, con fuentes originales.")
     # El botón de fotografía abre un visor local, separado de la fuente.
     # Nunca debe enviar al repositorio ni a un Drive del editor.
     photo_loader = '<script defer src="./photo-viewer.js?v=20261113c"></script>'
