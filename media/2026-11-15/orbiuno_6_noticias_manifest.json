@@ -1,0 +1,56 @@
+{
+  "edition": "2026-11-15",
+  "slot": "08:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261115-08h-1",
+    "orbiuno-20261115-08h-2",
+    "orbiuno-20261115-08h-3",
+    "orbiuno-20261115-08h-4",
+    "orbiuno-20261115-08h-5",
+    "orbiuno-20261115-08h-6"
+  ],
+  "voice": "ef_dora",
+  "voiceSpeed": 1.25,
+  "width": 1080,
+  "height": 1920,
+  "duration": 51.0,
+  "sha256": "a6823b2b1b76d1f6eb538caaf3b2ddf0087ad0e3d1edc30c714bfda4bda9afc5",
+  "video": "ORBIUNO_2026-11-15_6_NOTICIAS.mp4",
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261115-08h-1",
+      "title": "Colombia presentará 250 proyectos en la Milagro Week de Nueva York",
+      "sourceUrl": "https://caracol.com.co/2026/11/15/gobierno-espera-atraer-mas-de-us10000-millones-en-inversion-durante-la-milagro-week/"
+    },
+    {
+      "id": "orbiuno-20261115-08h-2",
+      "title": "Mercados Campesinos de Bogotá tienen jornadas este domingo",
+      "sourceUrl": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-en-bogota-compra-en-mercados-campesinos-14-y-15-noviembre-2026"
+    },
+    {
+      "id": "orbiuno-20261115-08h-3",
+      "title": "SpaceX logra capturar una Starship al regresar del espacio",
+      "sourceUrl": "https://es.euronews.com/2026/11/15/spacex-atrapa-con-brazos-mecanicos-la-etapa-superior-de-starship-por-primera-vez"
+    },
+    {
+      "id": "orbiuno-20261115-08h-4",
+      "title": "Canadá obtiene dos oros en el Grand Prix de judo de Zagreb",
+      "sourceUrl": "https://es.euronews.com/2026/11/15/canada-conquista-dos-oros-en-la-segunda-jornada-de-zagreb"
+    },
+    {
+      "id": "orbiuno-20261115-08h-5",
+      "title": "Cabo Verde celebra elección presidencial con seis candidaturas",
+      "sourceUrl": "https://es.euronews.com/2026/11/15/cabo-verde-vota-hoy-y-podria-elegir-a-su-primera-presidenta-de-la-republica"
+    },
+    {
+      "id": "orbiuno-20261115-08h-6",
+      "title": "La fabricación del cubo de Rubik regresa a Hungría",
+      "sourceUrl": "https://www.euronews.com/video/2026/11/14/rubiks-cube-production-returns-to-hungary-more-than-50-years-after-invention"
+    }
+  ],
+  "published": false,
+  "instagramId": null,
+  "instagramPermalink": null
+}
