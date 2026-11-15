@@ -49,8 +49,8 @@ class PipelineContractTests(unittest.TestCase):
         self.assertEqual(manifest["editionSlot"],"12m")
         self.assertEqual(len(manifest["sourceLinks"]),1)
         self.assertFalse(manifest["publicationReady"])
-        self.assertIn("edicion_incompleta_requiere_cinco_noticias",manifest["blockers"])
-        midday["news"]=[dict(candidate,id=f"test-mediodia-{i}") for i in range(5)]
+        self.assertIn("edicion_incompleta_requiere_seis_noticias",manifest["blockers"])
+        midday["news"]=[dict(candidate,id=f"test-mediodia-{i}") for i in range(6)]
         with patch.dict(os.environ,{"ORBIUNO_EDITION_SLOT":"12m"}):
             complete=build(midday)
         self.assertEqual(complete["verifiedSports"],0)
