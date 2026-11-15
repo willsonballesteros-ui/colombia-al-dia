@@ -6,14 +6,23 @@
   "display_date": "DOMINGO 15 DE NOVIEMBRE DE 2026",
   "display_time": "6:00 A. M.",
   "created_after_slot": true,
-  "production_status": "EDITORIAL_DRAFT_NOT_PUBLISHED",
-  "headline_policy": "Six recent fact-checked international-interest news candidates; no unsupported views ranking",
+  "production_status": "EDITORIAL_DRAFT_NOT_PUBLISHED_REVIEW_PENDING",
+  "headline_policy": "Six recent relevant news candidates; starting mix 2 Colombia + 4 world, adaptable to verified interest. No fabricated views.",
   "photo_policy": "Exact-event real photos only, licensed or explicitly authorized; large publisher logo and photographer credit; no AI images, no stock substitutes",
   "voice": "Female Colombian Spanish at 1.25x",
   "intro": "Hola, esto es ORBIUNO Noticias. Hoy, domingo 15 de noviembre, estas son seis noticias del mundo.",
   "outro": "Escucha las noticias completas en colombia-al-dia.pages.dev. ¡Sigue a ORBIUNO Noticias!",
   "web_audio_policy": "Every full original ORBIUNO story read verbatim on site",
   "stories": [
+    {
+      "id": "juanes-daviarena",
+      "country": "Colombia",
+      "headline": "Juanes inaugura DAVIarena en Sabaneta con concierto",
+      "summary": "Juanes inauguró el nuevo recinto de espectáculos de Sabaneta durante un concierto celebrado el fin de semana.",
+      "publisher": "La República / El Tiempo",
+      "source_url": "https://www.larepublica.co/",
+      "source_verification_status": "Needs article-level link and event photo license"
+    },
     {
       "id": "starship-capture",
       "headline": "Starship regresa del espacio y es capturada por su torre",
@@ -22,25 +31,20 @@
       "source_url": "https://www.reuters.com/business/aerospace-defense/spacexs-starship-aces-first-return-texas-2026-11-14/"
     },
     {
+      "id": "icetex-acuerdos-noviembre",
+      "country": "Colombia",
+      "headline": "ICETEX anuncia acuerdos de pago y condonación de intereses",
+      "summary": "Del 18 al 30 de noviembre se anuncian acuerdos para beneficiarios con créditos en mora y posibles condonaciones de intereses, sujetos a requisitos.",
+      "publisher": "RTVC Noticias / ICETEX",
+      "source_url": "https://www.rtvcnoticias.com/",
+      "source_verification_status": "Needs original ICETEX release and image license"
+    },
+    {
       "id": "korea-ai-exam",
       "headline": "Primer puesto en examen surcoreano admite uso de IA para copiar",
       "summary": "El aspirante reconoció que utilizó una microcámara y herramientas de inteligencia artificial.",
       "publisher": "Reuters",
       "source_url": "https://www.reuters.com/world/asia-pacific/top-scorer-south-korean-tax-exam-confesses-cheating-with-ai-2026-11-15/"
-    },
-    {
-      "id": "canarias-rescues",
-      "headline": "Canarias registra 1.488 rescates de migrantes en un día",
-      "summary": "Los servicios marítimos españoles atendieron 14 embarcaciones durante el sábado.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/world/africa/nearly-1500-migrants-arrive-canary-islands-one-day-2026-11-15/"
-    },
-    {
-      "id": "philippines-australia-pact",
-      "headline": "Filipinas y Australia firman acuerdo de cooperación en defensa",
-      "summary": "El arreglo facilita ejercicios e intercambio de información entre sus fuerzas.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/world/china/philippines-australia-sign-defence-pact-with-eye-china-2026-11-15/"
     },
     {
       "id": "voyager-light-day",
@@ -68,5 +72,10 @@
     "instagram_published": false,
     "facebook_published": false
   },
-  "note": "Draft only. Do not dispatch any publishing workflow from this file. Actual posting must follow verified video/photo/audio, account and no-duplicate checks."
+  "note": "Draft only. Do not dispatch any publishing workflow from this file. Actual posting must follow verified video/photo/audio, account and no-duplicate checks.",
+  "mix_proposal": {
+    "colombia": 2,
+    "world": 4,
+    "rule": "Editorial test, not fixed quotas; current relevance and verifiable interest take priority"
+  }
 }
