@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-02de47501bc5f140",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Arderá la Inteligencia Artificial?",
+      "summary": "Titular difundido por El Correo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Correo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQjZIc1pMdkNTYTFCSUNUdXNFN1B4SnlJRHJkaW5tRVZPeFVxaC1OS1c1N1JuRzJpVU1tMWR5T2pPQ0x4Q1lYUmFONTI0Nk84SGVQMHRVdElPWjY4X3RUcnE5V0VBZGVlamRKVlBvMG9VaksxTFd3ZDFlbFBQcWhpS0dFUmRNcTJGcXFWZHdfNkjSAZYBQVVfeXFMT1QzbG9sUURHQm1wblAzanJ3dXlaOGNiOW9BYV83M1pvS01PQzE2Uk9Qb2VxQTNncWJ2NFcyS1pfTGVQT2g0ZDhUSlltMVpWbXpvYkxQSWt2bmlZQUxjemZZLVhTNlgzMURFUm03SDVKcWZFejRuSThpVkx4ZDVwNVBCQXhPaVhncUdpd1Q2bjNFMUthYzdB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b0abca7653991770",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IBM y el Instituto IMDEA Nutrición integran inteligencia artificial y tecnologías avanzadas para impulsar un nuevo modelo de ensayos clínicos en salud y nutrición",
+      "summary": "Titular difundido por Interempresas Media a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Interempresas Media · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9TQm00cFRPelhfblhFRm9EaC1BZi1yeUdSQmRtU2NrZVNSMDVwSXQzUmxDd1N4dUk2RXJQdlRvcGRfOGRKNVp5bGxXenR3UQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-2cec90b2af50cb52",
+      "date": "2026-11-15",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El Niño pone en alerta a Colombia: inteligencia artificial podría ayudar a anticipar incendios forestales",
+      "summary": "Titular difundido por La Nota Económica a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Nota Económica · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPalNaUXRwRHlMNFBmdUdrNVJuTlhURnVlWEd6QUd4REI1dndBYzlSTDNLdEdIOXBDcDVhcnZ2c2FSOVRXUHZTX3JqV3RTRWYyNjNQcDhLcXJqcTdyZnBhM18xQVEtamZkQ1g0NjlEUlhRd1lKZ2Jjc3B5aFdpQmFMQmFXY3FCSlA3cW4xRXRtUFdNQ0ZmdmhXOTFzTVVoMGEyN3M4Yl9SMWxqd0hiS21HTllKaER3cnRtUFdaLUdMQlZkTy1xcVVUTmhmY1hNd01rWXV5TDAzQ1V4OURRQ1dSNXZlMm43VFpOUTRUZg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T15:04-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-91e1910da90e5165",
+      "date": "2026-11-15",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "El médico conservador Amaury García será embajador de Colombia en Uruguay: Presidencia publicó su hoja de vida",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTUJBWk9NcTJkUmEwMDZRVmFSdWdPV2YzODN1MXJDOElLMGVmeDQ0T1ZHT1dYbnVYNE9hODZnOHRtZUZ2Z2lUVnNyazQ1N0tlRGdsVFkzaDlXMlRuZ3BqUTRuMVZvYWFvYm9JZGRMT25MelRsZGtjd25kQzNWNklBeHU2RlN2OFkzVVItdEtrNkk0OHppYzc1aWdET2tBNjNrdmplMVdUUVZPUjZXYjFiYkhvZlFjQlNiU2dIUXB1M2F4eklwNE5FdGVfWTRsWFBBYWNTNEdfME9jaWU3UDNMN093d2pzNF9UUGfSAYQCQVVfeXFMTnhSNnM0NWtyREk2U2NNUnBQejNuYTBIMC1Ba2xXek16T0pZTHMwbnJZZVFEOXpKQnQ4emNuOWRHVzhJcUlHalp4QkQ2TGpnRHBYeUFZTnphSTJ3MXBFN0RIX1JUS1NVSy1xb1p4Vm1sNnV6UWF0QS1CT19DZ0xnRHp4aXVRcW44YVdPQ1hCZE1pQzhUT3lnVFljdkhUOXBLa2g0NG53c2otZk9YM3FaYjlZVnFjclZMWXVQMTdkQkFkaDJpV3RVdERDb3lKWWI0WlRXV1lvRUtpRG4telhmS0V2SDZXaTNieGNUU2I1bmtDdHlWclBJdkp4aEtCZWl4dDd0R2w?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T13:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-ba7d35949aae6fd2",
+      "date": "2026-11-15",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Chile vs Colombia en vivo: horario, alineaciones y dónde ver el partido amistoso de la Selección",
+      "summary": "Titular difundido por Claro Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Claro Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOE1CZU5EUEFjTGRfWWkxdVpBNFdvZXB5NG43RW5aUW9jRnV6NktLQU9VaHJSM1ZRUFZTUmxJTDZqVEVjMmZUNmdGQTFqZFJKZHhzU2pVVG9JcEE1Z0t3aTczbjhEbmdnT0lZYW1yRHlVM0N5R0RPcXk4cUZfRTRmSFQ0eG1pMjVFLVphWGpoRkx0SGJibkFr?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:51-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-f3fd55f042def8d3",
+      "date": "2026-11-15",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Así se jugarán los cuadrangulares de la Liga BetPlay 2026-2: hay varios clásicos",
+      "summary": "Titular difundido por Alerta a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Alerta · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZWRXMjJwVXpBcEpjcnRmX1hXYUdTekdIa19NMlRURlFNUWNkZ3B0SjItdUNCWlg3cWhjbzNvTC1HZV9tTUducVEzZXhxYkJoY25BZkxGSElYRlByamtUazNMaC1URS1Fd2VWbmZVYWtoWlFCTzlfelFxLWl1SVVWdEJmNWF6RW8ybVRwY1A5ay1UclZTd2RvUXM3cVUzUGNfQXRDR2t2N1BOWFRLV3JFakc4czZaa2hIRVHSAboBQVVfeXFMUE5ybUlZM0J3YkNpX3VUSWhLYnRON2Ryb0M2WGVyeWhrc3RyeU55VWdib1NxVVkyMC1XVV9JaFpJZ210SEhZVlRTemhVbThhZ2c0bUNkLUNsclkzMHA1YWdBU0pTVXFCVU9OcXNkdnZZdkJ0RnFVbGRlR0NyeW5pR29iZ0FlWnpxVng4OWFCRTlVem9XclBCNVdDaVFLU0RUcll1a2V1UUh5N1hpbE40N2RoV0NuVUFVSTN3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:14-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-9b755ce2468dde3d",
+      "date": "2026-11-15",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Liga BetPlay 2026-2: mira el fixture de las 6 fechas de cuadrangulares",
+      "summary": "Titular difundido por Win Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Win Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0ZNQUV6T0lXdmExQ2pvQ2I4ajYxbXpjbE5teGRlUl9ZVE9RMmlvUnF5NzBCc1ZXM3hxYmYzbzhtVWJfdmEzbGx3XzFCNUk5Z2dNUXpiRDlmbmdlcjgtMmUxbWc0UHRFSGFORS0wYzhVVFdfaFZoQWhPam5tX0JVbGNVank3b3ZPdV9WcmhYdElGQkkwTTR4VmlQLVh0YnVjcGd6WEVCZnFZSDF3SjY0NUROOUtESnBfdVVaSnJaODQ0VkFuamZ3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T11:44-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-a0b3caab19a13e89",
       "date": "2026-11-15",
       "category": "Deportes",
@@ -22963,8 +23096,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T17:40-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T17:40-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T18:26-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T18:26-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
