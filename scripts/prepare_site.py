@@ -163,7 +163,10 @@ def build(data, page):
     # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
     # la vista desarrollada y el reproductor (incluido el fallback nativo).
     from copy import deepcopy
-    from narration_body import narration_for
+    try:
+        from scripts.narration_body import narration_for
+    except ModuleNotFoundError:
+        from narration_body import narration_for
     data = deepcopy(data)
     for news in data.get("news", []):
         if news.get("verification") == "editorial_verified":
