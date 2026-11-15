@@ -21844,7 +21844,8 @@
       "visualMode": "source_only",
       "imageRightsVerified": false,
       "editorialVerifiedAtBogota": "2026-11-15",
-      "publicationStatus": "pending_preflight"
+      "publicationStatus": "pending_preflight",
+      "reelLine": "Colombia prepara doscientos cincuenta proyectos para Nueva York. Busca inversión extranjera, pero la cifra anunciada sigue siendo una meta."
     },
     {
       "id": "orbiuno-20261115-08h-2",
@@ -21876,7 +21877,8 @@
       "visualMode": "source_only",
       "imageRightsVerified": false,
       "editorialVerifiedAtBogota": "2026-11-15",
-      "publicationStatus": "pending_preflight"
+      "publicationStatus": "pending_preflight",
+      "reelLine": "Este domingo hay mercados campesinos en cinco espacios de Bogotá, con alimentos directamente de productores rurales."
     },
     {
       "id": "orbiuno-20261115-08h-3",
@@ -21913,7 +21915,8 @@
         "substantial": true,
         "newFacts": "Primera captura de nave de retorno orbital, posterior al despliegue satelital ya citado",
         "verifiedSource": "https://es.euronews.com/2026/11/15/spacex-atrapa-con-brazos-mecanicos-la-etapa-superior-de-starship-por-primera-vez"
-      }
+      },
+      "reelLine": "SpaceX capturó una Starship que regresó del espacio, aunque no consiguió recuperar el propulsor de esa misión."
     },
     {
       "id": "orbiuno-20261115-08h-4",
@@ -21945,7 +21948,8 @@
       "visualMode": "source_only",
       "imageRightsVerified": false,
       "editorialVerifiedAtBogota": "2026-11-15",
-      "publicationStatus": "pending_preflight"
+      "publicationStatus": "pending_preflight",
+      "reelLine": "Canadá obtuvo dos medallas de oro en el Grand Prix de judo de Zagreb."
     },
     {
       "id": "orbiuno-20261115-08h-5",
@@ -21977,7 +21981,8 @@
       "visualMode": "source_only",
       "imageRightsVerified": false,
       "editorialVerifiedAtBogota": "2026-11-15",
-      "publicationStatus": "pending_preflight"
+      "publicationStatus": "pending_preflight",
+      "reelLine": "Cabo Verde celebra elecciones presidenciales este domingo, con seis candidaturas y una posible primera presidenta."
     },
     {
       "id": "orbiuno-20261115-08h-6",
@@ -22009,7 +22014,8 @@
       "visualMode": "source_only",
       "imageRightsVerified": false,
       "editorialVerifiedAtBogota": "2026-11-15",
-      "publicationStatus": "pending_preflight"
+      "publicationStatus": "pending_preflight",
+      "reelLine": "Una nueva fábrica en Hungría retoma la producción del cubo de Rubik, creado hace más de cincuenta años."
     }
   ],
   "autoSyncCheckedAtBogota": "2026-11-15T10:21-05:00",
