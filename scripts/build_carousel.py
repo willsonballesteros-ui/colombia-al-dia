@@ -155,7 +155,7 @@ def source_panel(image,note):
 def news_card(note,num,day,out):
     image=base()
     d=ImageDraw.Draw(image)
-    d.text((65,175),f"{num:02d} / 10   ·   {note['category'].upper()}",font=font(25,True),fill=MUTED)
+    d.text((65,175),f"{num:02d} / 06   ·   {note['category'].upper()}",font=font(25,True),fill=MUTED)
     photo=verified_photo(note)
     if photo:
         with Image.open(photo) as real:
@@ -181,7 +181,7 @@ def news_card(note,num,day,out):
 
 
 def cover(day, news, out):
-    """Diez noticias con jerarquía EQUITATIVA: cinco filas por dos columnas."""
+    """Seis noticias con jerarquía equitativa: tres filas por dos columnas."""
     im=Image.new("RGB",(W,H),"#F5F7FD"); d=ImageDraw.Draw(im)
     navy="#121A35"
     d.rectangle((0,0,W,183),fill=navy)
@@ -198,9 +198,9 @@ def cover(day, news, out):
     d.text((46,229),f"{len(news)} NOTICIAS. TODAS EN PORTADA.",font=font(30,True),fill="#E9466B")
     fills=["#FFF0E6","#E3F8F6","#F1EAFE","#E6F1FF","#FFF0F5"]
     accents=["#FF6747","#00AFA7","#8A57DE","#3184D5","#E84682"]
-    for i,n in enumerate(news[:10]):
+    for i,n in enumerate(news[:6]):
         col=i%2; row=i//2
-        x=42+col*505; y=285+row*173
+        x=42+col*505; y=285+row*235
         accent=accents[row]; bg=fills[row]
         d.rounded_rectangle((x,y,x+491,y+162),radius=16,fill=bg)
         d.rounded_rectangle((x,y,x+10,y+162),radius=5,fill=accent)
@@ -302,7 +302,7 @@ def single_card(note,num,day,out):
     d.text((60,42),"ORBIUNO",font=font(64,True),fill="#FFFFFF")
     d.text((62,128),f"{day}  /  "+("EDICIÓN DE LA MAÑANA" if datetime.now(ZoneInfo("America/Bogota")).hour<11 else "EDICIÓN DE MEDIODÍA" if datetime.now(ZoneInfo("America/Bogota")).hour<17 else "EDICIÓN DE LAS 18:00"),font=font(24,True),fill=accent)
     d.rounded_rectangle((60,207,1020,288),radius=16,fill=accent)
-    d.text((87,224),f"{num:02d} / 10  ·  {note['category'].upper()}",font=font(31,True),fill="#162044")
+    d.text((87,224),f"{num:02d} / 06  ·  {note['category'].upper()}",font=font(31,True),fill="#162044")
     title=note.get("socialHeadline") or note["title"]
     ft=font_for_lines(d,title,940,5,preferred=68,minimum=48,bold=True)
     paragraph(d,title,65,345,ft,"#FFFFFF",940,5,15)
