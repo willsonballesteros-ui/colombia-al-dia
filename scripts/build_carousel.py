@@ -375,8 +375,8 @@ def main():
                 x.get("verification")=="editorial_verified" and
                 x.get("editionSlot")==slot_time),
                 key=lambda x:x.get("priority",999))
-    if not (1 <= len(news) <= 4) or len({x["id"] for x in news}) != len(news):
-        raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren entre una y cuatro noticias verificadas únicas")
+    if not (1 <= len(news) <= 6) or len({x["id"] for x in news}) != len(news):
+        raise RuntimeError("CONTROL EDITORIAL: no publicar carruseles incompletos; se requieren entre una y seis noticias verificadas únicas")
     for x in news:
         if not x.get("sources") or not str(x["sources"][0]["url"]).startswith("https://"):
             raise RuntimeError("Falta fuente HTTPS")
@@ -397,7 +397,7 @@ def main():
        "sourceNewsIds":[n["id"] for n in news],
        "fullAudioInImages":False,
        "noRepublishWithoutSubstantiveUpdates":True,
-       "note":"Portada y hasta dos láminas de dos noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
+       "note":"Portada y hasta tres láminas de dos noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
     }
     (out/"instagram-compacto.json").write_text(json.dumps(compact,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Generadas portada y láminas editoriales de máximo dos noticias cada una.")
