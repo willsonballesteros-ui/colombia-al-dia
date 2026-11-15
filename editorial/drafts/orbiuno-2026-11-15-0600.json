@@ -3,65 +3,80 @@
   "edition_date": "2026-11-15",
   "edition_slot": "06:00",
   "timezone": "America/Bogota",
-  "display_date": "DOMINGO 15 DE NOVIEMBRE DE 2026",
+  "display_date": "DOMINGO 15 NOVIEMBRE 2026",
   "display_time": "6:00 A. M.",
   "created_after_slot": true,
-  "production_status": "EDITORIAL_DRAFT_NOT_PUBLISHED_REVIEW_PENDING",
+  "production_status": "SIX_SOURCE_BACKED_REEL_SCRIPT_READY__PHOTO_RIGHTS_AND_MP4_PENDING",
   "headline_policy": "Six recent relevant news candidates; starting mix 2 Colombia + 4 world, adaptable to verified interest. No fabricated views.",
   "photo_policy": "Exact-event real photos only, licensed or explicitly authorized; large publisher logo and photographer credit; no AI images, no stock substitutes",
   "voice": "Female Colombian Spanish at 1.25x",
-  "intro": "Hola, esto es ORBIUNO Noticias. Hoy, domingo 15 de noviembre, estas son seis noticias del mundo.",
-  "outro": "Escucha las noticias completas en colombia-al-dia.pages.dev. ¡Sigue a ORBIUNO Noticias!",
+  "intro": "Hola, esto es ORBIUNO Noticias. Hoy, domingo quince de noviembre, estas son las seis noticias del día.",
+  "outro": "Escucha las noticias completas en nuestra página: colombia al día, punto pages, punto dev. Sigue a ORBIUNO Noticias.",
   "web_audio_policy": "Every full original ORBIUNO story read verbatim on site",
   "stories": [
     {
-      "id": "juanes-daviarena",
+      "id": "juan-daviarena",
       "country": "Colombia",
-      "headline": "Juanes inaugura DAVIarena en Sabaneta con concierto",
-      "summary": "Juanes inauguró el nuevo recinto de espectáculos de Sabaneta durante un concierto celebrado el fin de semana.",
-      "publisher": "La República / El Tiempo",
-      "source_url": "https://www.larepublica.co/",
-      "source_verification_status": "Needs article-level link and event photo license"
+      "headline": "Juanes inaugura el DAVIarena de Sabaneta",
+      "reel_voice": "Juanes estrenó con un concierto el DAVIarena, nuevo recinto de espectáculos en Sabaneta.",
+      "source": "El Colombiano",
+      "source_url": "https://www.com.elcolombiano.com/cultura/musica/juanes-daviarena-concierto-inaugural-medellin-sabaneta-NA43614458",
+      "photo_target": "Fotografía del concierto del 14 de noviembre de 2026, autor Manuel Saldarriaga",
+      "photo_permission": "NOT_CONFIRMED"
+    },
+    {
+      "id": "bogota-cycling",
+      "country": "Colombia",
+      "headline": "Bogotá reúne válidas de ciclismo y patinaje",
+      "reel_voice": "Entre el catorce y el dieciséis de noviembre, Bogotá reúne pruebas nacionales de ciclismo en pista y patinaje.",
+      "source": "Bogotá.gov.co / IDRD",
+      "source_url": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/bogota-nacionales-ciclismo-patinaje-bmx-y-juegos-intercolegiados-2026",
+      "photo_target": "Foto del velódromo con ciclistas, crédito IDRD, de la publicación oficial",
+      "photo_permission": "NOT_CONFIRMED"
     },
     {
       "id": "starship-capture",
-      "headline": "Starship regresa del espacio y es capturada por su torre",
-      "summary": "SpaceX recuperó la nave después de 14 órbitas terrestres y más de 22 horas de vuelo.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/business/aerospace-defense/spacexs-starship-aces-first-return-texas-2026-11-14/"
+      "country": "Mundo",
+      "headline": "SpaceX logra capturar Starship tras su vuelo orbital",
+      "reel_voice": "SpaceX recuperó la nave Starship mediante los brazos de su torre, después de completar catorce órbitas.",
+      "source": "Associated Press / SpaceX",
+      "source_url": "https://apnews.com/article/df394c1b5a0f85e11194f9ff7db9ee6b",
+      "photo_target": "Imagen de captura de nave Starship vuelo quince del catorce de noviembre, crédito SpaceX",
+      "photo_permission": "NOT_CONFIRMED"
     },
     {
-      "id": "icetex-acuerdos-noviembre",
-      "country": "Colombia",
-      "headline": "ICETEX anuncia acuerdos de pago y condonación de intereses",
-      "summary": "Del 18 al 30 de noviembre se anuncian acuerdos para beneficiarios con créditos en mora y posibles condonaciones de intereses, sujetos a requisitos.",
-      "publisher": "RTVC Noticias / ICETEX",
-      "source_url": "https://www.rtvcnoticias.com/",
-      "source_verification_status": "Needs original ICETEX release and image license"
-    },
-    {
-      "id": "korea-ai-exam",
-      "headline": "Primer puesto en examen surcoreano admite uso de IA para copiar",
-      "summary": "El aspirante reconoció que utilizó una microcámara y herramientas de inteligencia artificial.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/world/asia-pacific/top-scorer-south-korean-tax-exam-confesses-cheating-with-ai-2026-11-15/"
+      "id": "ai-korea",
+      "country": "Mundo",
+      "headline": "Aspirante surcoreano admite haber usado IA para copiar",
+      "reel_voice": "El primer puesto de un examen para contadores tributarios en Corea del Sur admitió haber utilizado inteligencia artificial para copiar.",
+      "source": "Yonhap",
+      "source_url": "https://en.yna.co.kr/view/AEN20261115000700315",
+      "photo_target": "Fotograma de la declaración publicada por Yonhap, con crédito Yonhap y creador original",
+      "photo_permission": "NOT_CONFIRMED"
     },
     {
       "id": "voyager-light-day",
-      "headline": "Voyager 1 se aproxima a un día luz de la Tierra",
-      "summary": "NASA prevé que la sonda alcance esa distancia el miércoles 18 de noviembre.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/science/nasas-voyager-1-probe-poised-achieve-mega-distance-milestone-2026-11-14/"
+      "country": "Mundo",
+      "headline": "Voyager 1 se acerca a un día luz de la Tierra",
+      "reel_voice": "La NASA calcula que Voyager uno alcanzará un día luz de distancia de la Tierra el dieciocho de noviembre.",
+      "source": "NASA",
+      "source_url": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+      "photo_target": "Fotografía auténtica de Voyager 1 proporcionada por NASA/JPL, no ilustración generada por IA",
+      "photo_permission": "NASA_US_GOV_VERIFY_ASSET"
     },
     {
-      "id": "bts-kids-choice",
-      "headline": "BTS obtiene tres reconocimientos en los Kids' Choice Awards",
-      "summary": "El grupo recibió los premios de álbum, grupo y canción favoritos.",
-      "publisher": "Reuters",
-      "source_url": "https://www.reuters.com/business/media-telecom/kids-choice-awards-honor-chris-pratt-bts-2026-11-15/"
+      "id": "bts-awards",
+      "country": "Mundo",
+      "headline": "BTS obtiene tres premios Kids’ Choice Awards",
+      "reel_voice": "El grupo BTS recibió reconocimientos por álbum, canción y grupo favorito en los Kids Choice Awards de dos mil veintiséis.",
+      "source": "Yonhap",
+      "source_url": "https://sp.yna.co.kr/view/ASP20261115000700883",
+      "photo_target": "Fotografía de BTS de la nota de Yonhap, crédito BigHit Music, aclarando que es de archivo si lo es",
+      "photo_permission": "NOT_CONFIRMED"
     }
   ],
   "checks": {
+    "source_articles_verified": true,
     "prior_publication_checked": false,
     "ranking_by_verified_views": false,
     "photographs_exact_event_licensed": false,
@@ -77,5 +92,17 @@
     "colombia": 2,
     "world": 4,
     "rule": "Editorial test, not fixed quotas; current relevance and verifiable interest take priority"
+  },
+  "edition_status": "DRAFT_AFTER_SCHEDULED_TIME",
+  "design": {
+    "portrait": "720x1280",
+    "date_header": "VERY_LARGE",
+    "time_header": "VERY_LARGE",
+    "source_logo": "VERY_LARGE",
+    "credit": "VISIBLE",
+    "first_card": "six-headline-summary",
+    "six_news_cards": true,
+    "final_cta": true,
+    "news_photos_exact_event": true
   }
 }
