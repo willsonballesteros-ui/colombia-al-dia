@@ -6,8 +6,9 @@ import onnxruntime as ort
 from kokoro_onnx import Kokoro
 ROOT=Path(__file__).resolve().parents[1]
 from prepare_site import original_article_ready
+from narration_body import narration_for
 data=json.loads((ROOT/'noticias.json').read_text());out=ROOT/'media/web-voice';out.mkdir(parents=True,exist_ok=True)
-manifest={'voice':'ef_dora','baseRate':1.25,'items':{}}
+manifest={'voice':'ef_dora','language':'es-CO','baseRate':1.25,'items':{}}
 old=json.loads((out/'manifest.json').read_text()) if (out/'manifest.json').exists() else {'items':{}}
 manifest['items'].update(old.get('items',{}))
 o=ort.SessionOptions();o.intra_op_num_threads=2;o.inter_op_num_threads=1;o.enable_cpu_mem_arena=False;o.enable_mem_pattern=False;o.graph_optimization_level=ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
@@ -16,8 +17,8 @@ k=Kokoro.from_session(session,os.environ.get('ORBIUNO_VOICE_BANK','/tmp/voices-v
 for n in sorted(data['news'],key=lambda x:x.get('priority',999)):
  if n.get('date')!=data['editionDate'] or n.get('verification')!='editorial_verified':continue
  # Narrar la redacción original completa cuando está revisada, no su sinopsis.
- body=n['originalArticleTextEs'].strip() if original_article_ready(n) else n['audioFullTextEs']
- text=n['title']+'. Fuente: '+n['sources'][0]['name']+'. '+body
+ text=narration_for(n,original_article_ready)
+ if not text:continue
  digest=hashlib.sha256(text.encode()).hexdigest();name=digest[:20]+'.mp3';p=out/name
  if not p.exists():
   audio,sr=k.create(text,'ef_dora',speed=1.25,lang='es',sentence_pause=.18,clause_pause=.09)

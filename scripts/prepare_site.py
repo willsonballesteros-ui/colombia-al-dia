@@ -44,11 +44,14 @@ def image_markup(n):
         'data-photo-id="{id}" aria-label="Ampliar fotografía: {alt}">'
         '<img src="{url}" loading="lazy" decoding="async" alt="{alt}" width="320" height="180">'
         '<span class="photo-expand" aria-hidden="true">⤢</span></button>'
-        '<figcaption>{caption}<br>{credit} · {license}</figcaption></figure>'
+        '<figcaption>{caption}<br>{credit} · {license} · '
+        '<a href="{source}" target="_blank" rel="noopener noreferrer">Origen de la fotografía</a>'
+        '</figcaption></figure>'
     ).format(id=esc(n['id']), url=esc(n['imageUrl']),
              alt=esc(n.get('imageAlt') or n['title']),
              caption=esc(n.get('imageCaption') or 'Fotografía'),
-             credit=esc(n['imageCredit']), license=esc(n['imageLicense']))
+             credit=esc(n['imageCredit']), license=esc(n['imageLicense']),
+             source=esc(n['imageSourceUrl']))
 
 def source_thumbnail(n):
     """Mostrar el favicon real del dominio citado; no es foto del hecho."""
@@ -163,10 +166,18 @@ def build(data, page):
     # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
     # la vista desarrollada y el reproductor (incluido el fallback nativo).
     from copy import deepcopy
+    try:
+        from scripts.narration_body import narration_for
+    except ModuleNotFoundError:
+        from narration_body import narration_for
     data = deepcopy(data)
     for news in data.get("news", []):
-        if original_article_ready(news):
-            news["audioFullTextEs"] = news["originalArticleTextEs"].strip()
+        if news.get("verification") == "editorial_verified":
+            body = narration_for(news, original_article_ready)
+            if body:
+                news["audioFullTextEs"] = body
+                if original_article_ready(news):
+                    news["originalArticleTextEs"] = body
     today=data.get("editionDate")
     published=[
         n for n in data["news"]
@@ -235,9 +246,9 @@ def build(data, page):
     page,count=re.subn(marker,lambda m:m.group(1)+encoded+m.group(2),page,count=1,flags=re.S)
     if count!=1:
         raise ValueError("No se localizó #initial-news")
-    # El SEO no debe prometer diez noticias cuando el formato vigente es de cuatro por franja.
+    # El SEO debe describir seis noticias por edición, no el formato anterior.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
-                      "Hasta cinco noticias verificadas por edición, con fuentes originales.")
+                      "Seis noticias por edición, con fuentes originales.")
     # El botón de fotografía abre un visor local, separado de la fuente.
     # Nunca debe enviar al repositorio ni a un Drive del editor.
     photo_loader = '<script defer src="./photo-viewer.js?v=20261113c"></script>'
