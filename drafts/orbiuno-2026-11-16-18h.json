@@ -3,7 +3,7 @@
   "editionDate": "2026-11-16",
   "editionSlot": "18:00",
   "status": "draft_not_publishable",
-  "note": "Fuente contrastada; la verificación editorial, licencias de fotos, MP3 y sincronización web/reel requieren pruebas. No activar automatismos.",
+  "note": "Edición 16/11: diseño editorial propio sin fotos de terceros. Mantener logos auténticos de las fuentes en tamaño grande, sujetos a verificación de procedencia y carga. No omitir revisiones, MP4, iPhone/Android y sincronía.",
   "news": [
     {
       "id": "orbiuno-20261116-18h-1",
@@ -32,13 +32,16 @@
       "originalArticleSourceUrls": [
         "https://bogota.gov.co/internacional/2026-11/bogota-llega-nueva-york-con-15-iniciativas-de-inversion-milagro-week"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     },
     {
       "id": "orbiuno-20261116-18h-2",
@@ -67,13 +70,16 @@
       "originalArticleSourceUrls": [
         "https://bogota.gov.co/internacional/2026-11/bogota-presenta-potencial-de-inversion-en-salud-medica-2026-alemania"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     },
     {
       "id": "orbiuno-20261116-18h-3",
@@ -102,13 +108,16 @@
       "originalArticleSourceUrls": [
         "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/montaje-nuevo-puente-bicipeatonal-av-boyaca-con-canal-salitre-bogota"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     },
     {
       "id": "orbiuno-20261116-18h-4",
@@ -137,13 +146,16 @@
       "originalArticleSourceUrls": [
         "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/listado-66-proyectos-editoriales-seleccionados-para-la-vuelta-2026"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     },
     {
       "id": "orbiuno-20261116-18h-5",
@@ -172,13 +184,16 @@
       "originalArticleSourceUrls": [
         "https://www.ansalatina.com/americalatina/noticia/ciencia_y_tecnologia/2026/11/16/parlamento-italiano-contra-los-bots-en-los-call-center_a83ecc99-4446-4c75-bd6e-2312df5b9401.html"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     },
     {
       "id": "orbiuno-20261116-18h-6",
@@ -207,13 +222,27 @@
       "originalArticleSourceUrls": [
         "https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/"
       ],
-      "visualMode": "pending_licensed_photo",
+      "visualMode": "source_logo_large",
       "imageRightsVerified": false,
-      "publicationStatus": "pending_preflight",
+      "publicationStatus": "pending_source_logo_and_media_preflight",
       "imageUrl": null,
       "imageCredit": null,
       "imageLicense": null,
-      "imageSourceUrl": null
+      "imageSourceUrl": null,
+      "sourceLogoVerified": false,
+      "sourceLogoUrl": null,
+      "sourceLogoAttribution": "Identificación editorial del medio citado; sin atribuir patrocinio"
     }
-  ]
+  ],
+  "visualPolicy": {
+    "mode": "source_logo_large",
+    "logoMandatory": true,
+    "minLogoBoxPx": [
+      240,
+      180
+    ],
+    "noThirdPartyPhotos": true,
+    "noGeneratedOrFakeLogos": true,
+    "sourceNameFallbackDoesNotCountAsVerifiedLogo": true
+  }
 }
