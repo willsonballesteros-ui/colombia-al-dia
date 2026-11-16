@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-1d7920723a91fd2b",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Despidos récord en tecnología: la IA acelera los recortes",
+      "summary": "Titular difundido por Identidad Correntina a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Identidad Correntina · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSEQ0VWlNRHlFeTR5bm9WYmM2bDZXcE9idURsdWk5YlZ0R0FlRlN0MlhhamRyVERuaThuRDJGU2U2Tm4wYjZCTUIwWG84Q3I5UWdvNzF2eDZ1X1hrRVVDMWdKUDlRLTl1dWJxUGZ5YnVmTzVvTWU5aDMyeWlNc2hHNTd3OHFtVFU1RnRPVkRXQ1h1YzBRWXpWd0g1RVNDcVA1bnR4MEdkRW5uUGxHRUZrUw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T13:25-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-bec67c01b53a2e29",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Despidos en tecnología: 200.000 empleos menos en lo que va de 2026",
+      "summary": "Titular difundido por La Verdad Noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Verdad Noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFNnb0xkbkxCT3JTY1F5YlZKdGR2dHhTWXpFcWtscnZELXZVMjFsa05GZ1Q1Y3JMWkRPd2lVc2hNYXVrenh6VmE4aUNhQXowM2ktMFBsZFhwczZ4ZWZodE83Q201ZzNCTUs0Q2pvLWNDNF91bzBTZWZoLWpGYVd0T1lIX1NsUFNYd1AzdUJPVEttcHZPSlA3WG130gGiAUFVX3lxTE1hZkJMQ2tDcHVSTzkzU3ktWDh3cEVKRjZiME1Sd1g0Q3NaOEcyNERyYWFWT3ZDRWkzZEpNY1FhS0hOSmdvMHZIamZ0M184Z1BLbTFiVHBzcjUwNUxnU3JISWVmRnMxLVVkbzk0R3kzVWNsYTZoN2JUcUxLYzE4OUZLOFNtOWV5clBsbDhXNnJvc3hFY3dZUzllQkxjN004aXlEQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:57-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-c1a60d628a25307f",
       "date": "2026-11-15",
       "category": "Tecnología e IA",
@@ -23856,8 +23894,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T22:20-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T22:20-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T22:22-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T22:22-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
