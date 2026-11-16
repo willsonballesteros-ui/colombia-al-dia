@@ -39,6 +39,16 @@ class PublishPreflightTests(unittest.TestCase):
         result=preflight(db,slot="8am",now=NOW,web_ids=ids,reel_ids=ids)
         self.assertIn("noticia_1_foto_sin_derechos",result["blockers"])
 
+    def test_19h_archive_requires_explicit_authorization(self):
+        items=[dict(news(i),date="2026-11-15",editionSlot="19:00") for i in range(1,7)]
+        db={"editionDate":"2026-11-15","news":items}
+        ids=[f"n-{i}" for i in range(1,7)]
+        later=datetime(2026,11,16,9,0,tzinfo=ZoneInfo("America/Bogota"))
+        blocked=preflight(db,slot="7pm",now=later,web_ids=ids,reel_ids=ids)
+        self.assertFalse(blocked["ready"])
+        allowed=preflight(db,slot="7pm",now=later,web_ids=ids,reel_ids=ids,allow_archive=True)
+        self.assertTrue(allowed["ready"])
+
     def test_stale_or_incomplete_never_publication_ready(self):
         db={"editionDate":"2026-11-09","news":[news(i) for i in range(1,6)]}
         self.assertFalse(preflight(db,slot="8am",now=NOW)["ready"])
