@@ -1,0 +1,93 @@
+{
+  "editionKey": "ORBIUNO-2026-11-15-2200-RESUMEN",
+  "editionDate": "2026-11-15",
+  "editionSlot": "22:00",
+  "type": "resumen_del_dia",
+  "status": "DRAFT_SOURCE_CHECKED_NOT_PUBLISHED",
+  "replacesDraft": "ORBIUNO-2026-11-15-1900",
+  "publishReady": false,
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261115-cierre-1",
+      "priority": 1,
+      "title": "Barranquilla prepara el nuevo Supermetro para una final de Conmebol",
+      "category": "Colombia",
+      "source": "Noticias RCN",
+      "url": "https://www.noticiasrcn.com/emisiones/emision-noticias-rcn-7-00-p-m-domingo-15-de-noviembre-de-2026-1082444",
+      "summary": "Noticias RCN recorrió con el alcalde Alejandro Char el nuevo Supermetro de Barranquilla, una obra que se prepara para recibir una final de Conmebol en los próximos días.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "orbiuno-20261115-cierre-2",
+      "priority": 2,
+      "title": "El balance de cien días del Gobierno pone el foco en seguridad y déficit fiscal",
+      "category": "Colombia",
+      "source": "El País",
+      "url": "https://elpais.com/america-colombia/2026-11-15/cien-dias-de-la-patria-milagro-la-seguridad-vuelve-a-ser-protagonista-pero-con-el-deficit-fiscal-como-amenaza.html",
+      "summary": "El País analizó los primeros cien días del Gobierno de Abelardo de la Espriella: destacó el protagonismo de la seguridad y los desafíos del déficit fiscal y la reforma tributaria.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "orbiuno-20261115-cierre-3",
+      "priority": 3,
+      "title": "El papa León XIV visita comunidades de los Andes y la Amazonía de Perú",
+      "category": "Internacional",
+      "source": "Associated Press vía Washington Post",
+      "url": "https://www.washingtonpost.com/world/wires/?isMobile=1%2C1",
+      "summary": "Associated Press informó sobre el recorrido del papa León XIV por Perú, con atención a los pueblos indígenas y la protección de la Amazonía.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "orbiuno-20261115-cierre-4",
+      "priority": 4,
+      "title": "Una cantante filipina gana la primera edición de Eurovisión Asia",
+      "category": "Cultura",
+      "source": "Associated Press vía Washington Post",
+      "url": "https://www.washingtonpost.com/world/wires/?isMobile=1%2C1",
+      "summary": "La cantante filipina Carmelle ganó la primera edición asiática de Eurovisión, celebrada en Bangkok, frente a otras diez propuestas.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "orbiuno-20261115-cierre-5",
+      "priority": 5,
+      "title": "Estados Unidos recupera gradualmente su tráfico aéreo tras una interrupción nacional",
+      "category": "Internacional",
+      "source": "Anadolu",
+      "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489",
+      "summary": "Autoridades aeronáuticas estadounidenses señalaron que el sistema de control de tráfico aéreo permanecía estable, aunque las aerolíneas seguían recuperando sus operaciones y se esperaban cancelaciones.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    },
+    {
+      "id": "orbiuno-20261115-cierre-6",
+      "priority": 6,
+      "title": "Miles de personas se manifiestan en Praga por la financiación de medios públicos",
+      "category": "Internacional",
+      "source": "The World in Summary",
+      "url": "https://worldinsummary.com/editions/2026-11-15/",
+      "summary": "Una multitud se congregó en Praga contra la propuesta de financiar los medios públicos desde el presupuesto estatal en lugar de las tasas de licencia, por temor a perder independencia editorial.",
+      "verification": "source_only",
+      "originalArticleReviewed": false,
+      "imageRightsVerified": false
+    }
+  ],
+  "requirementsBeforePublication": [
+    "Contrastar cada noticia con fuente primaria o segundo medio",
+    "Redactar seis articulos originales completos y revisados",
+    "Publicar primero seis noticias en web y comprobar orden e IDs",
+    "Generar y escuchar MP4 con voz es-CO 1.25x",
+    "Verificar derechos de cada fotografia o usar tarjetas propias",
+    "Comprobar credenciales Meta y ausencia de duplicados",
+    "Registrar ID y permalink tras publicar"
+  ]
+}
