@@ -6,6 +6,7 @@ La edición se identifica con edition_key para prevenir publicaciones repetidas.
 """
 import argparse
 import json
+from pathlib import Path
 import os
 import re
 import sys
@@ -96,6 +97,14 @@ def main():
         sys.exit("Se bloquea una edicion futura")
     if age > 0 and (not args.allow_archive or age > 7):
         sys.exit("Edicion anterior: requiere --allow-archive y antiguedad maxima de 7 dias")
+    # Fail closed: a generated video with source-only news is not editorially approved.
+    if match.group(1) == "2026-11-15" and match.group(2) == "1900":
+        manifest_path = Path(__file__).resolve().parents[1] / "media/2026-11-15/orbiuno_1900_dora_regenerado_manifest.json"
+        if not manifest_path.is_file():
+            sys.exit("Falta manifiesto verificable de la edicion")
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest.get("sourceOnly") is not False or manifest.get("newsCount") != 6:
+            sys.exit("BLOQUEADO: noticias source_only; requieren verificacion editorial y web antes de Meta")
     if not args.caption.strip():
         sys.exit("La descripcion editorial no puede estar vacia")
     if len(args.caption) + 2 + len("[" + args.edition_key + "]") > 2200:
