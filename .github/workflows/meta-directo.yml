@@ -14,6 +14,10 @@ on:
         description: 'Texto propio de la edición y fuentes, sin datos secretos'
         required: true
         type: string
+      allow_archive:
+        description: 'Autorizar expresamente edicion anterior (maximo 7 dias); nunca futura'
+        type: boolean
+        default: false
       publish:
         description: 'Publicar ahora; desactivado = comprobación segura'
         type: boolean
@@ -40,9 +44,11 @@ jobs:
           CAPTION: ${{ inputs.caption }}
           EDITION_KEY: ${{ inputs.edition_key }}
           PUBLISH: ${{ inputs.publish }}
+          ALLOW_ARCHIVE: ${{ inputs.allow_archive }}
         run: |
           args=()
           if [ "$PUBLISH" = "true" ]; then args+=(--publish); fi
+          if [ "$ALLOW_ARCHIVE" = "true" ]; then args+=(--allow-archive); fi
           python scripts/publish_meta_direct.py \
             --video-url "$VIDEO_URL" --caption "$CAPTION" \
             --edition-key "$EDITION_KEY" "${args[@]}"
