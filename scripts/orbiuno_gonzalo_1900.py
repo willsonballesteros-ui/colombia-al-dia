@@ -21,7 +21,30 @@ async def main():
  sentences += ["Escucha las noticias completas en nuestra página web, colombia al día punto pages punto dev."]
  with tempfile.TemporaryDirectory() as td:
   tmp=Path(td); audio=tmp/"gonzalo.mp3"
-  await edge_tts.Communicate(text=" ".join(sentences),voice="es-CO-GonzaloNeural",rate="+20%").save(str(audio))
+  # No volver a producir una voz continua que se desincronice de las laminas.
+  # Se requiere un mapa comprobado de los ocho cortes de escena.
+  boundaries=SRC.parent/"orbiuno_1900_scene_boundaries.json"
+  if not boundaries.is_file():
+   raise RuntimeError("Sin tiempos de escena verificados; se bloquea la exportacion para evitar desincronizacion")
+  times=json.loads(boundaries.read_text())
+  if len(times)!=9 or times[0]!=0 or any(b<=a for a,b in zip(times,times[1:])):
+   raise RuntimeError("Se requieren nueve limites ordenados para ocho escenas")
+  vd=float(probe(SRC)["format"]["duration"])
+  if abs(times[-1]-vd)>0.2: raise RuntimeError("El ultimo corte no coincide con el video")
+  clips=[]
+  for i,phrase in enumerate(sentences):
+   clip=tmp/f"gonzalo-{i}.mp3"
+   await edge_tts.Communicate(text=phrase,voice="es-CO-GonzaloNeural",rate="+20%").save(str(clip))
+   allotted=times[i+1]-times[i]
+   spoken=float(probe(clip)["format"]["duration"])
+   if spoken>allotted-0.15:
+    raise RuntimeError(f"Escena {i}: voz {spoken:.2f}s supera ventana {allotted:.2f}s")
+   padded=tmp/f"padded-{i}.wav"
+   cmd("ffmpeg","-y","-loglevel","error","-i",str(clip),"-af",f"apad=whole_dur={allotted:.3f}","-t",f"{allotted:.3f}","-ar","48000","-ac","2",str(padded))
+   clips.append(padded)
+  concat=tmp/"audio-list.txt"
+  concat.write_text("".join("file '"+str(p)+"'\\n" for p in clips))
+  cmd("ffmpeg","-y","-loglevel","error","-f","concat","-safe","0","-i",str(concat),"-c:a","libmp3lame","-q:a","2",str(audio))
   assert audio.stat().st_size>10000,"No se genero voz Gonzalo"
   vd=float(probe(SRC)["format"]["duration"]);ad=float(probe(audio)["format"]["duration"])
   if ad>vd-0.3: raise RuntimeError(f"Audio {ad:.2f}s supera video {vd:.2f}s: no recortar")
