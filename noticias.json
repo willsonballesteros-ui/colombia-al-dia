@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-336f12f3004ec373",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La inteligencia artificial crece en las empresas, pero ¿quién controla cuánto cuesta?",
+      "summary": "Titular difundido por MDZ Online a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "MDZ Online · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPS01tN0VKd2hMdGlwZ2ZRS3lVR2dya3dIeDB1UzQ0TmtZOGVqQ2tGRFBuNnJ6UzdnQnYyNVBKOW5TMFhkX0RTMUNHNUZqVVlVWmR1bGpSWVBPZ1ptTzVNSVNyRFdMWW1lT1lRbHd1aldXTmJmRWttVHB6NllVVXlqdFN0R1pMRGRhbng1SGMteE1fcG5neHdVS2ZDVWNvaTlua3ZPUkhVblNLaHlwMlFiXzZVZENOeGgzTUpKekNMZzlQSWRZTU1pM1poMHpuV2U2eEUw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:28-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-18c71d27194ee23e",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Pony.ai y el plan B de China ante los chips de Nvidia",
+      "summary": "Titular difundido por El Ecosistema Startup a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Ecosistema Startup · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTFVMVVljMHdjdHhsR2JqdThtUDA0ZHRVX2dpRFhwTkFoUDRJUFJmWUtReU4xaktpdmpZQVNnVWNyeE5ORDBJMEt6enBtcjYtMEJST2VwZ012d0NNYVRmbHRZVFNlZHdIbWhNbFdDMVZPZEJLcThoUUlTMVdKNnM3UjNORm9yaHpJWDl2Nw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:21-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-ee560d5292f1a530",
       "date": "2026-11-15",
       "category": "Tecnología e IA",
@@ -23932,8 +23970,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T22:23-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T22:23-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T22:24-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T22:24-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
