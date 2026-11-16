@@ -1,0 +1,19 @@
+{
+  "edition": "2026-11-15",
+  "slot": "19:00",
+  "voice": "es-CO-GonzaloNeural",
+  "rate": "+20%",
+  "newsIds": [
+    "orbiuno-20261115-19h-1",
+    "orbiuno-20261115-19h-2",
+    "orbiuno-20261115-19h-3",
+    "orbiuno-20261115-19h-4",
+    "orbiuno-20261115-19h-5",
+    "orbiuno-20261115-19h-6"
+  ],
+  "duration": 51.0,
+  "audioDuration": 43.488,
+  "sha256": "e45c61b0c40ee0e378e9c7181ae245ca443a0683fe1c3dcc141c048be68d1c95",
+  "published": false,
+  "audioListeningVerified": false
+}
