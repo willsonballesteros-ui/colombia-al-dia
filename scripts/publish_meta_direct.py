@@ -10,7 +10,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, date
 from zoneinfo import ZoneInfo
 import urllib.error
 import urllib.parse
@@ -81,16 +81,21 @@ def main():
     parser.add_argument("--caption", required=True)
     parser.add_argument("--edition-key", required=True)
     parser.add_argument("--publish", action="store_true")
+    parser.add_argument("--allow-archive", action="store_true", help="Autorizar expresamente una edicion de hasta 7 dias de antiguedad")
     args = parser.parse_args()
     parsed = urllib.parse.urlparse(args.video_url)
     if parsed.scheme != "https" or not parsed.hostname:
         sys.exit("Se requiere video_url HTTPS publico")
-    match = re.fullmatch(r"ORBIUNO-(\d{4}-\d{2}-\d{2})-(0800|1200|1800)", args.edition_key)
+    match = re.fullmatch(r"ORBIUNO-(\d{4}-\d{2}-\d{2})-(0800|1200|1800|1900|2100|2200)", args.edition_key)
     if not match:
         sys.exit("edition_key invalida: ORBIUNO-AAAA-MM-DD-HHMM")
-    today = datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
-    if match.group(1) != today:
-        sys.exit("Se bloquea publicacion retroactiva o futura: hoy en Colombia es " + today)
+    today = datetime.now(ZoneInfo("America/Bogota")).date()
+    edition_day = date.fromisoformat(match.group(1))
+    age = (today - edition_day).days
+    if age < 0:
+        sys.exit("Se bloquea una edicion futura")
+    if age > 0 and (not args.allow_archive or age > 7):
+        sys.exit("Edicion anterior: requiere --allow-archive y antiguedad maxima de 7 dias")
     if not args.caption.strip():
         sys.exit("La descripcion editorial no puede estar vacia")
     if len(args.caption) + 2 + len("[" + args.edition_key + "]") > 2200:
