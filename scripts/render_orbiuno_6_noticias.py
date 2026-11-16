@@ -121,7 +121,7 @@ def run(*args):
 
 def main():
     db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
-    day=datetime.now(BOGOTA).date().isoformat()
+    day=os.getenv("ORBIUNO_EDITION_DATE") or datetime.now(BOGOTA).date().isoformat()
     slot=os.getenv("ORBIUNO_EDITION_SLOT","08:00")
     if slot not in ("08:00","12:00","18:00","19:00"):
         raise RuntimeError("Franja inválida")
