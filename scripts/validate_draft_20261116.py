@@ -24,8 +24,10 @@ def validate(edition):
             errors.append(f"{i}:revision_editorial")
         if not n.get("originalArticleTextEs","").strip() or n.get("audioFullTextEs","").strip()!=n.get("originalArticleTextEs","").strip():
             errors.append(f"{i}:integridad_audio_texto")
-        if not (n.get("imageRightsVerified") is True and n.get("imageUrl") and n.get("imageCredit") and n.get("imageLicense") and n.get("imageSourceUrl")):
-            errors.append(f"{i}:foto_real_derechos")
+        if n.get("visualMode")!="source_logo_large" or n.get("imageUrl"):
+            errors.append(f"{i}:modo_visual_debe_ser_logo_sin_fotos")
+        if n.get("sourceLogoVerified") is not True or not n.get("sourceLogoUrl"):
+            errors.append(f"{i}:logo_fuente_no_verificado")
         if n.get("verification")!="editorial_verified":
             errors.append(f"{i}:verificacion_pendiente")
     for condition,tag in [
