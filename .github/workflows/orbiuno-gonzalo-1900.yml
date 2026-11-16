@@ -39,3 +39,5 @@ jobs:
             media/2026-11-15/ORBIUNO_2026-11-15_1900_GONZALO_FINAL.mp4
             media/2026-11-15/orbiuno_1900_gonzalo_manifest.json
           if-no-files-found: warn
+
+# Ejecucion solicitada: generar Gonzalo 15 noviembre 2026, sin publicar automaticamente.
