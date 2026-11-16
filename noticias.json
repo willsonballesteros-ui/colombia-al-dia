@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-ee560d5292f1a530",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cinco cambios que marcarán la infraestructura tecnológica en 2027",
+      "summary": "Titular difundido por Technocio a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Technocio · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdlFuU2VrZXdCM1VELUtqNmZ4dm91RzNJcW5UWVhtZmx3QjdsbDNoVkV5QWo3LWRONkJPcWcwUmN6bjFXb1JJa01QaE1ocDZuc1J5RENrUGFyRzJ5ME1CMG5HcHNJanRXN01JN19tX0d1VEdnOUd0QTZ4MWZ1YjVmVFRRSHN5Y1NhTnlOaEpsamZaWGxZNXE00gGcAUFVX3lxTFBQQTRHTmVkZ29kXzdXc05jVXRvLTZmN2t6MERtRi1TeklfLVNuRmdQQWtiLXU2dF9ra0FHWDh2Y3VZaHI2UDhTU1NuWVp4Y1MweDlTTHNaRHFINUJZMzIxSncwVnJZUUctRFVNazRyRWFUbkl6Q3AteVlxTG1zX1VvQnZQQi1EVDROTGxfUlJBdHExQXFEMHpET1JSWg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:55-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-38f136c4b5f39a43",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La IPO de Anthropic pone a prueba la apuesta tecnológica por la inteligencia artificial",
+      "summary": "Titular difundido por DiarioBitcoin a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "DiarioBitcoin · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNclNuNXhtV1FLTTUzM2tCd2FnTkM0azlMMzVMNDAyckh5YzJvZXNTdkh5X2JPQms5UGs4TGs0N3lKZU1MV1JKdG1JVGJMVmcwSjhHQlhBc1BrTHRBSzJmQW9ZLXNUNmlibDA5bmRLOW16NXU5R3E3ZXRrMzZLcGZ1MGFsNGxyanBkcEVzYVk4ekZuQmRwSGVPRVFvUTJkdllwbnlQQzBoWExqUzJLQzI1QVliWm1mOGJjdUFzM3pKa3ctOVRkLU9yMA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T12:41-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-1d7920723a91fd2b",
       "date": "2026-11-15",
       "category": "Tecnología e IA",
@@ -23894,8 +23932,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T22:22-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T22:22-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T22:23-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T22:23-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
