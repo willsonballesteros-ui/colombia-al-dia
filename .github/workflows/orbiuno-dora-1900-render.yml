@@ -32,6 +32,7 @@ jobs:
       - name: Generar seis noticias con Dora sin publicar
         env:
           ORBIUNO_EDITION_SLOT: '19:00'
+          ORBIUNO_EDITION_DATE: '2026-11-15'
         run: python scripts/render_orbiuno_6_noticias.py
       - name: Conservar video en repositorio sin alterar edicion anterior
         run: |
@@ -42,7 +43,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add media/2026-11-15/ORBIUNO_2026-11-15_1900_DORA_REGENERADO.mp4 media/2026-11-15/orbiuno_1900_dora_regenerado_manifest.json
-          git commit -m 'ORBIUNO 19h: MP4 Dora validado, sin publicar'
+          git diff --cached --quiet || git commit -m 'ORBIUNO 19h: MP4 Dora validado, sin publicar'
           git pull --rebase origin main
           git push origin HEAD:main
       - name: Evidencia MP4
@@ -54,3 +55,5 @@ jobs:
           if-no-files-found: warn
 
 # Solicitud de regeneracion Dora y validacion previa a publicacion.
+
+# Correccion de fecha historica: 2026-11-15.
