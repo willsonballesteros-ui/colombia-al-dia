@@ -6,6 +6,63 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-9745213254bb8829",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Infotep incorpora inteligencia artificial y simuladores a su oferta formativa",
+      "summary": "Titular difundido por Acento a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Acento · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNUdrNHZ0Q1o2cHZCMDlwbkRGSVZhVlA1X0lDR05lUnJXNW1OaGdjbU12NlJzZ2lNdERuYkhPaC1BeVFGcXJsb3NST2VSRzVTaWpBdVhMQkYwVVp4Y09IVmMyaXRLdjFqY1dGeUxSVHprNWFkTEhnckhVRDhoUFhOQm44WEh1WDZRa054Sy12ZDhtM0NPRGp4bHJvLXRpdlgwbEhYcjI4bldxTHZ2QWVkOW9Wa1RmS25Ucmd5a01kYzbSAcABQVVfeXFMUDVHazR2dENaNnB2QjA5cG5ERklWYVZQNV9JQ0dOZVJyVzVtTmhnY21NdjZSc2dpTXREbmJIT2gtQXlRRnFybG9zUk9lUkc1U2lqQXVYTEJGMFVaeGNPSFZjMml0S3YxamNXRnlMUlR6azVhZExIZ3JIVUQ4aFBYTkJuOFhIdVg2UWtOeEstdmQ4bTNDT0RqeGxyby10aXZYMGxIWHIyOG5XcUx2dkFlZDlvVmtUZktuVHJneWtNZGM2?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T18:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3d9e490e3f0bb609",
+      "date": "2026-11-15",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Qué equipo sería campeón de la Liga BetPlay 2026-II según la IA?",
+      "summary": "Titular difundido por AS Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "AS Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZVNJQS1EUEptallkblVCb1dCQVRLTnJXbnNjNEoybUgtSFdVakNMUXh4MDNmQ3ZOM1l6WThmQXhfaXNVVmR4d3YxZ2hkQ05DR2traVNvUG9DYlZFbG5BR0lIdzAxNC0xbEJ3NnlXcjdMZW5SS25YSXdQRXJKWng5VDhyTS1pV0FkdGNJaTR5cXBFdV9sTEo3cDJBS0pUYjNoRlFzallKdkF2cXNJWmZ5OFpGRnJGa3A5eHJZc9IBvAFBVV95cUxOZVNJQS1EUEptallkblVCb1dCQVRLTnJXbnNjNEoybUgtSFdVakNMUXh4MDNmQ3ZOM1l6WThmQXhfaXNVVmR4d3YxZ2hkQ05DR2traVNvUG9DYlZFbG5BR0lIdzAxNC0xbEJ3NnlXcjdMZW5SS25YSXdQRXJKWng5VDhyTS1pV0FkdGNJaTR5cXBFdV9sTEo3cDJBS0pUYjNoRlFzallKdkF2cXNJWmZ5OFpGRnJGa3A5eHJZcw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T17:26-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3b6081e41556aa8b",
+      "date": "2026-11-15",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Modernización e inteligencia artificial en el Poder Judicial se discutió en la Filven 2026",
+      "summary": "Titular difundido por Ministerio del Poder Popular para la Cultura a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Ministerio del Poder Popular para la Cultura · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZ1BJTFpFdHRuS0NDMXhNZXVhZWlzSU5yclJlX0tteFM2Y0ZHUjdpdFVqX2JYOUw3ZVBVU3NBT2hFZ2NOZ1B1YjRoTHQ5U3Etb3BvZUpmNWhONFJ3UFVZYlYtOWhha3NQYlhjWDJUWTBRaDV6aVdSZl9oVk9GRmltN3JWdzE5MWdqSkdZS056TGRHMWs3WHc2UGJzbUpjQlltMGViblBKYzBtQ0hEaEdrQk9NTXpqTjMzT0ZRRlVRRFJVVUtrRDVoSkZ3?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-15T15:40-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-b7864ccc9a53755c",
       "date": "2026-11-15",
       "category": "Colombia",
@@ -23400,8 +23457,8 @@
       "publicationStatus": "draft_19h_pending_media_and_web_preflight"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-15T18:48-05:00",
-  "lastNewSourceAtBogota": "2026-11-15T18:48-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-15T19:26-05:00",
+  "lastNewSourceAtBogota": "2026-11-15T19:26-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
