@@ -1,0 +1,219 @@
+{
+  "brand": "ORBIUNO | Colombia al Día",
+  "editionDate": "2026-11-16",
+  "editionSlot": "18:00",
+  "status": "draft_not_publishable",
+  "note": "Fuente contrastada; la verificación editorial, licencias de fotos, MP3 y sincronización web/reel requieren pruebas. No activar automatismos.",
+  "news": [
+    {
+      "id": "orbiuno-20261116-18h-1",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 1,
+      "category": "Inversión",
+      "title": "Bogotá lleva 15 proyectos a Nueva York para buscar inversión",
+      "socialHeadline": "Bogotá lleva 15 proyectos a Nueva York para buscar inversión",
+      "summary": "Bogotá-Región presentó quince iniciativas en Milagro Week, entre ellas movilidad, infraestructura aeroportuaria e innovación. Los recursos aún no están comprometidos.",
+      "executiveSummary": "Bogotá-Región presentó quince iniciativas en Milagro Week, entre ellas movilidad, infraestructura aeroportuaria e innovación. Los recursos aún no están comprometidos.",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/internacional/2026-11/bogota-llega-nueva-york-con-15-iniciativas-de-inversion-milagro-week"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "El dieciséis de noviembre comenzó en Nueva York la agenda de Milagro Week. Bogotá-Región llevó quince iniciativas ante potenciales inversionistas internacionales. Entre los proyectos anunciados aparecen Bogotá Ciudad Aeropuerto, la línea cuatro del Metro, RegioTram del Norte y Campus 2600. Invest in Bogotá acompaña las reuniones para explorar financiación y alianzas. La convocatoria nacional recibió doscientas cincuenta propuestas, pero la expectativa de inversión no debe confundirse con dinero ya obtenido. Los resultados se podrán medir posteriormente a partir de acuerdos documentados y proyectos efectivamente financiados.",
+      "audioFullTextEs": "El dieciséis de noviembre comenzó en Nueva York la agenda de Milagro Week. Bogotá-Región llevó quince iniciativas ante potenciales inversionistas internacionales. Entre los proyectos anunciados aparecen Bogotá Ciudad Aeropuerto, la línea cuatro del Metro, RegioTram del Norte y Campus 2600. Invest in Bogotá acompaña las reuniones para explorar financiación y alianzas. La convocatoria nacional recibió doscientas cincuenta propuestas, pero la expectativa de inversión no debe confundirse con dinero ya obtenido. Los resultados se podrán medir posteriormente a partir de acuerdos documentados y proyectos efectivamente financiados.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/internacional/2026-11/bogota-llega-nueva-york-con-15-iniciativas-de-inversion-milagro-week"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    },
+    {
+      "id": "orbiuno-20261116-18h-2",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 2,
+      "category": "Salud",
+      "title": "Bogotá presenta sus proyectos de salud en la feria MEDICA 2026",
+      "socialHeadline": "Bogotá presenta sus proyectos de salud en la feria MEDICA 2026",
+      "summary": "Invest in Bogotá participa en MEDICA, en Alemania, para mostrar oportunidades en dispositivos médicos, ciencia e innovación.",
+      "executiveSummary": "Invest in Bogotá participa en MEDICA, en Alemania, para mostrar oportunidades en dispositivos médicos, ciencia e innovación.",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/internacional/2026-11/bogota-presenta-potencial-de-inversion-en-salud-medica-2026-alemania"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "Bogotá-Región participa entre el dieciséis y el diecinueve de noviembre en MEDICA dos mil veintiséis, encuentro internacional del sector salud celebrado en Düsseldorf, Alemania. La agencia Invest in Bogotá busca presentar las capacidades de la ciudad y conversar con potenciales inversionistas en dispositivos médicos y ciencias de la salud. La agenda incluye proyectos como Bogotá BIO y Campus 2600. Se trata de una actividad de promoción y búsqueda de alianzas, no de contratos o inversiones que ya puedan darse por cerrados. La fuente institucional publicó el anuncio este lunes.",
+      "audioFullTextEs": "Bogotá-Región participa entre el dieciséis y el diecinueve de noviembre en MEDICA dos mil veintiséis, encuentro internacional del sector salud celebrado en Düsseldorf, Alemania. La agencia Invest in Bogotá busca presentar las capacidades de la ciudad y conversar con potenciales inversionistas en dispositivos médicos y ciencias de la salud. La agenda incluye proyectos como Bogotá BIO y Campus 2600. Se trata de una actividad de promoción y búsqueda de alianzas, no de contratos o inversiones que ya puedan darse por cerrados. La fuente institucional publicó el anuncio este lunes.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/internacional/2026-11/bogota-presenta-potencial-de-inversion-en-salud-medica-2026-alemania"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    },
+    {
+      "id": "orbiuno-20261116-18h-3",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 3,
+      "category": "Infraestructura",
+      "title": "Puente bicipeatonal de Boyacá completa el montaje de su estructura",
+      "socialHeadline": "Puente bicipeatonal de Boyacá completa el montaje de su estructura",
+      "summary": "Finalizó el izaje de 280 metros de estructura junto al canal Salitre; la obra supera el 87 % de avance, según Bogotá.",
+      "executiveSummary": "Finalizó el izaje de 280 metros de estructura junto al canal Salitre; la obra supera el 87 % de avance, según Bogotá.",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/montaje-nuevo-puente-bicipeatonal-av-boyaca-con-canal-salitre-bogota"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "Durante la madrugada del lunes dieciséis de noviembre finalizó el izaje de doscientos ochenta metros de estructura metálica del nuevo puente bicipeatonal de la avenida Boyacá con calle ochenta y seis A, junto al canal Salitre. La Alcaldía de Bogotá informó que el proyecto ya supera el ochenta y siete por ciento de avance en su fase de obra. La infraestructura busca conectar recorridos peatonales y ciclistas en el entorno de Titán Plaza. La terminación completa se proyecta para diciembre de dos mil veintiséis, por lo que la instalación de la estructura todavía no equivale a la apertura definitiva del puente.",
+      "audioFullTextEs": "Durante la madrugada del lunes dieciséis de noviembre finalizó el izaje de doscientos ochenta metros de estructura metálica del nuevo puente bicipeatonal de la avenida Boyacá con calle ochenta y seis A, junto al canal Salitre. La Alcaldía de Bogotá informó que el proyecto ya supera el ochenta y siete por ciento de avance en su fase de obra. La infraestructura busca conectar recorridos peatonales y ciclistas en el entorno de Titán Plaza. La terminación completa se proyecta para diciembre de dos mil veintiséis, por lo que la instalación de la estructura todavía no equivale a la apertura definitiva del puente.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/montaje-nuevo-puente-bicipeatonal-av-boyaca-con-canal-salitre-bogota"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    },
+    {
+      "id": "orbiuno-20261116-18h-4",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 4,
+      "category": "Cultura",
+      "title": "La Vuelta 2026 selecciona 66 editoriales independientes",
+      "socialHeadline": "La Vuelta 2026 selecciona 66 editoriales independientes",
+      "summary": "La feria se realizará del 10 al 13 de diciembre en la Biblioteca Virgilio Barco y tendrá entrada libre.",
+      "executiveSummary": "La feria se realizará del 10 al 13 de diciembre en la Biblioteca Virgilio Barco y tendrá entrada libre.",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/listado-66-proyectos-editoriales-seleccionados-para-la-vuelta-2026"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "Bogotá anunció este lunes la selección de sesenta y seis editoriales independientes y emergentes para La Vuelta dos mil veintiséis. La convocatoria recibió ochenta y dos propuestas y reunió proyectos editoriales con sede u operaciones en la capital. La sexta edición de la feria se celebrará del diez al trece de diciembre en la Biblioteca Pública Virgilio Barco, con entrada libre. La iniciativa forma parte de las actividades culturales vinculadas con los veinticinco años de BibloRed. La publicación institucional divulgó también la lista de sellos y colectivos seleccionados para que lectores y participantes consulten la programación.",
+      "audioFullTextEs": "Bogotá anunció este lunes la selección de sesenta y seis editoriales independientes y emergentes para La Vuelta dos mil veintiséis. La convocatoria recibió ochenta y dos propuestas y reunió proyectos editoriales con sede u operaciones en la capital. La sexta edición de la feria se celebrará del diez al trece de diciembre en la Biblioteca Pública Virgilio Barco, con entrada libre. La iniciativa forma parte de las actividades culturales vinculadas con los veinticinco años de BibloRed. La publicación institucional divulgó también la lista de sellos y colectivos seleccionados para que lectores y participantes consulten la programación.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/listado-66-proyectos-editoriales-seleccionados-para-la-vuelta-2026"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    },
+    {
+      "id": "orbiuno-20261116-18h-5",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 5,
+      "category": "Tecnología",
+      "title": "En Italia impulsan atención humana frente a bots telefónicos",
+      "socialHeadline": "En Italia impulsan atención humana frente a bots telefónicos",
+      "summary": "Dos iniciativas legislativas buscan reforzar la posibilidad de hablar con operadores humanos en centros de llamadas.",
+      "executiveSummary": "Dos iniciativas legislativas buscan reforzar la posibilidad de hablar con operadores humanos en centros de llamadas.",
+      "sources": [
+        {
+          "name": "ANSA Latina",
+          "url": "https://www.ansalatina.com/americalatina/noticia/ciencia_y_tecnologia/2026/11/16/parlamento-italiano-contra-los-bots-en-los-call-center_a83ecc99-4446-4c75-bd6e-2312df5b9401.html"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "En Italia, dos propuestas parlamentarias impulsadas por partidos distintos plantean que los ciudadanos conserven la posibilidad de hablar con una persona real en los servicios de atención telefónica. La agencia ANSA informó del asunto este dieciséis de noviembre. El debate pone el foco en el uso creciente de sistemas automatizados en centros de llamadas y en el acceso a operadores humanos cuando la interacción lo requiere. Las iniciativas se encuentran en discusión legislativa; no deben presentarse como una ley ya aprobada ni como una prohibición general de la inteligencia artificial.",
+      "audioFullTextEs": "En Italia, dos propuestas parlamentarias impulsadas por partidos distintos plantean que los ciudadanos conserven la posibilidad de hablar con una persona real en los servicios de atención telefónica. La agencia ANSA informó del asunto este dieciséis de noviembre. El debate pone el foco en el uso creciente de sistemas automatizados en centros de llamadas y en el acceso a operadores humanos cuando la interacción lo requiere. Las iniciativas se encuentran en discusión legislativa; no deben presentarse como una ley ya aprobada ni como una prohibición general de la inteligencia artificial.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.ansalatina.com/americalatina/noticia/ciencia_y_tecnologia/2026/11/16/parlamento-italiano-contra-los-bots-en-los-call-center_a83ecc99-4446-4c75-bd6e-2312df5b9401.html"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    },
+    {
+      "id": "orbiuno-20261116-18h-6",
+      "date": "2026-11-16",
+      "editionSlot": "18:00",
+      "priority": 6,
+      "category": "Mundo",
+      "title": "Estados Unidos endurece controles sobre chips avanzados de IA",
+      "socialHeadline": "Estados Unidos endurece controles sobre chips avanzados de IA",
+      "summary": "La nueva norma amplía exigencias de licencia para ciertos envíos de chips y centros de datos que faciliten capacidad de cómputo a empresas chinas.",
+      "executiveSummary": "La nueva norma amplía exigencias de licencia para ciertos envíos de chips y centros de datos que faciliten capacidad de cómputo a empresas chinas.",
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/"
+        }
+      ],
+      "verification": "pending_editorial_review",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleReviewed": false,
+      "originalArticleReviewStatus": "pendiente",
+      "originalArticleTextEs": "Estados Unidos anunció el dieciséis de noviembre nuevas restricciones para impedir que empresas chinas accedan indirectamente a chips avanzados de inteligencia artificial mediante centros de datos en otros países. Reuters informó que la norma exige licencias para determinados envíos a Singapur, Tailandia, Malasia, Indonesia y Brasil, además de establecer requisitos para proveedores extranjeros que entreguen grandes volúmenes de cómputo a firmas con sede en China. Hay excepciones para determinadas operaciones estadounidenses y otros servicios. La noticia trata de controles regulatorios anunciados, no de una suspensión total del mercado mundial de semiconductores.",
+      "audioFullTextEs": "Estados Unidos anunció el dieciséis de noviembre nuevas restricciones para impedir que empresas chinas accedan indirectamente a chips avanzados de inteligencia artificial mediante centros de datos en otros países. Reuters informó que la norma exige licencias para determinados envíos a Singapur, Tailandia, Malasia, Indonesia y Brasil, además de establecer requisitos para proveedores extranjeros que entreguen grandes volúmenes de cómputo a firmas con sede en China. Hay excepciones para determinadas operaciones estadounidenses y otros servicios. La noticia trata de controles regulatorios anunciados, no de una suspensión total del mercado mundial de semiconductores.",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleIsPublisherVerbatim": false,
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/"
+      ],
+      "visualMode": "pending_licensed_photo",
+      "imageRightsVerified": false,
+      "publicationStatus": "pending_preflight",
+      "imageUrl": null,
+      "imageCredit": null,
+      "imageLicense": null,
+      "imageSourceUrl": null
+    }
+  ]
+}
