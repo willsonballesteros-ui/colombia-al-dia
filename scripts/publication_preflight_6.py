@@ -13,17 +13,17 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 BOGOTA=ZoneInfo("America/Bogota")
-SLOTS={"8am":"08:00","12m":"12:00","6pm":"18:00","9pm":"21:00"}
+SLOTS={"8am":"08:00","12m":"12:00","6pm":"18:00","7pm":"19:00","9pm":"21:00","10pm":"22:00"}
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def preflight(data, *, slot, now=None, web_ids=None, reel_ids=None):
+def preflight(data, *, slot, now=None, web_ids=None, reel_ids=None, allow_archive=False):
     now=now or datetime.now(BOGOTA)
     errors=[]
     day=str(data.get("editionDate") or "")
     try:
         age=(now.date()-date.fromisoformat(day)).days
-        if age not in (0, 1):
+        if age < 0 or (age > 0 and (not allow_archive or age > 7)):
             errors.append("edicion_caducada_o_futura")
     except ValueError:
         errors.append("fecha_edicion_invalida")
@@ -81,6 +81,7 @@ def main(argv=None):
     parser=argparse.ArgumentParser()
     parser.add_argument("--data",default=str(ROOT/"noticias.json"))
     parser.add_argument("--slot",choices=tuple(SLOTS),required=True)
+    parser.add_argument("--allow-archive",action="store_true",help="Solo ediciones anteriores autorizadas, maximo 7 dias")
     parser.add_argument("--web-ids-json",help="Seis IDs verificados en la URL pública")
     parser.add_argument("--reel-ids-json",help="Seis IDs que aparecen realmente en el video")
     parser.add_argument("--output",default="dist/orbiuno-preflight.json")
@@ -88,7 +89,7 @@ def main(argv=None):
     db=json.loads(Path(args.data).read_text(encoding="utf-8"))
     web=json.loads(Path(args.web_ids_json).read_text(encoding="utf-8")) if args.web_ids_json else None
     reel=json.loads(Path(args.reel_ids_json).read_text(encoding="utf-8")) if args.reel_ids_json else None
-    result=preflight(db,slot=args.slot,web_ids=web,reel_ids=reel)
+    result=preflight(db,slot=args.slot,web_ids=web,reel_ids=reel,allow_archive=args.allow_archive)
     path=Path(args.output);path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("ORBIUNO",result["editionDate"],args.slot,
