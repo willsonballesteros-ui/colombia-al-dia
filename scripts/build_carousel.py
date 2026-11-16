@@ -139,15 +139,16 @@ def source_panel(image,note):
     box=(60,207,1020,684)
     d.rounded_rectangle(box,radius=18,fill="#E7EFFA")
     d.rounded_rectangle((91,245,989,647),radius=14,fill=NAVY)
+    # Logo auténtico del sitio citado, más grande; nunca sintetizar marcas.
     icon=favicon(note)
     if icon is not None:
-        icon.thumbnail((158,158),resample=Image.Resampling.LANCZOS)
+        icon.thumbnail((260,205),resample=Image.Resampling.LANCZOS)
         x=540-icon.width//2
-        y=286
+        y=259+(205-icon.height)//2
         image.paste(icon,(x,y),icon)
         d=ImageDraw.Draw(image)
-    d.text((126,472),"FUENTE PERIODÍSTICA",font=font(22,True),fill=GOLD)
-    paragraph(d,note["sources"][0]["name"],124,519,font(48,True),WHITE,840,2,10)
+    d.text((126,482),"FUENTE PERIODÍSTICA",font=font(24,True),fill=GOLD)
+    paragraph(d,note["sources"][0]["name"],124,525,font(58,True),WHITE,840,2,10)
     # En caso de no estar accesible un favicon, el nombre verídico de la fuente
     # sigue visible y NO se simula ninguna fotografía.
 
