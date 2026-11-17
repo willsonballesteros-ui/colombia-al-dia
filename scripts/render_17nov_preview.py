@@ -6,6 +6,7 @@ se registran en archivos junto a los MP4. No inventa imágenes de acontecimiento
 """
 import json,os,re,sys,subprocess,shutil,html,math
 from pathlib import Path
+from urllib.parse import urlsplit
 from PIL import Image,ImageDraw,ImageFont,ImageOps,ImageFilter
 import requests
 
@@ -67,6 +68,26 @@ def get_photo(query,folder,filename):
             "author":author or "Autor identificado en Commons","visual":"Fotografía real de contexto o archivo"}
   except Exception as exc:problems.append(str(exc)[:130])
  raise RuntimeError("Sin fotografía real con licencia para "+query+"; "+repr(problems[:3]))
+def fetch_source_icon(source_url, dest):
+    """Icono servido para el dominio ORIGINAL, nunca inventar logo.
+    Verificar que sea una imagen PNG cuadrada legible; si no, usar texto de fuente.
+    """
+    try:
+        host=urlsplit(source_url).hostname
+        if not host or not re.fullmatch(r"[a-z0-9.-]+",host.lower()):return None
+        url="https://www.google.com/s2/favicons?domain="+host+"&sz=256"
+        res=SESSION.get(url,timeout=15);res.raise_for_status()
+        if len(res.content)<150:return None
+        dest.write_bytes(res.content)
+        with Image.open(dest) as im:
+            im.load()
+            if min(im.size)<32 or abs(im.width-im.height)>max(im.size)*.1:
+                dest.unlink(missing_ok=True);return None
+        return dest
+    except Exception:
+        dest.unlink(missing_ok=True)
+        return None
+
 def font(size,bold=True):
  return ImageFont.truetype(FONT+("-Bold" if bold else "")+".ttf",size)
 def wrap(draw,text,size,maxw,maxlines=4):
@@ -82,7 +103,7 @@ def wrap(draw,text,size,maxw,maxlines=4):
  if len(lines)>maxlines:raise RuntimeError("Titular fuera de zona segura: "+text)
  return lines,f
 def rect(draw,xy,r,fill):draw.rounded_rectangle(xy,radius=r,fill=fill)
-def slide(brand,item,photo,day,part,index,total,out,cover=False):
+def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None):
  W,H=1080,1920
  base=Image.new("RGB",(W,H),(5,18,34));draw=ImageDraw.Draw(base)
  with Image.open(photo) as f:
@@ -107,7 +128,17 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False):
            font=font(34),fill=(96,239,222,255) if brand=="ORBIUNO" else (239,196,53,255))
  rect(draw,(76,1600,1004,1725),22,(240,197,57,252) if brand=="MYCAR" else (82,233,224,244))
  sfsize=min(54,max(34,760//max(1,len(item["source"]))*19))
- draw.text((105,1627),item["source"].upper(),font=font(sfsize),fill=(6,20,35,255))
+ icon_x=105
+ if source_icon and Path(source_icon).is_file():
+  try:
+   with Image.open(source_icon) as im:
+    icon=ImageOps.contain(im.convert("RGBA"),(92,92))
+    base.paste(icon,(106,1616),icon)
+    icon_x=225
+  except Exception:pass
+ # No pretender que un favicon sea el logotipo oficial completo.
+ draw=ImageDraw.Draw(base,"RGBA")
+ draw.text((icon_x,1627),item["source"].upper(),font=font(sfsize),fill=(6,20,35,255))
  # Brand, date and no fake original logos.
  rect(draw,(52,60,1028,152),24,(5,18,34,230))
  draw.text((83,80),brand,font=font(52),fill=(255,255,255,255))
@@ -117,10 +148,13 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False):
 def render(brand,config):
  folder=OUT/brand.lower();folder.mkdir(exist_ok=True)
  news=config["news"];ids=["saludo"]+[f"n{i:02d}" for i in range(1,len(news)+1)]+["despedida"]
- photo=[];ledger=[]
+ photo=[];ledger=[];icons=[]
  for i,n in enumerate(news):
   info=get_photo(n["image_query"],folder,f"photo-{i:02d}.jpg")
-  photo.append(folder/info["image_file"]);ledger.append({"headline":n["title"],"source":n["url"],**info})
+  photo.append(folder/info["image_file"])
+  icon=fetch_source_icon(n["url"],folder/f"sourceicon-{i:02d}.png")
+  icons.append(icon)
+  ledger.append({"headline":n["title"],"source":n["url"],"source_icon":icon.name if icon else None,**info})
  # Build audio script matching all displayed headlines, NOT the old sample.
  input_file=folder/"audio_input.json"
  parts=[config["intro"]]+[n["say"] for n in news]+[config["outro"]]
@@ -142,7 +176,8 @@ def render(brand,config):
  scenes.append(({"title":"Escucha las noticias completas en nuestra web","source":"ORBIUNO" if brand=="ORBIUNO" else "BUSCO AUTOS"},photo[0],False))
  for i,(item,ph,iscover) in enumerate(scenes):
   dest=folder/f"slide-{i:02d}.jpg"
-  slide(brand,item,ph,"17 NOV 2026 · 08:00",len(news),i,len(news),dest,iscover)
+  icon_index=coveridx if i==0 else min(i-1,len(icons)-1)
+  slide(brand,item,ph,"17 NOV 2026 · 08:00",len(news),i,len(news),dest,iscover,icons[icon_index])
   slides.append(dest)
  manifest=folder/"slides.txt"
  # Duration of full audio must match frames and natural scene time.
