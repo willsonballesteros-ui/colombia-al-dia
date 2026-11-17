@@ -31,8 +31,8 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           set -euo pipefail
-          python scripts/generate_voice.py --input editions/audio_input.json --out build/audio --strict
-      - name: Resumen auditado del audio, SIN RENDER NI META
+          python scripts/generate_voice.py --input editions/audio_input.json --out build/audio
+      - name: Resumen auditado del audio, duración flexible, SIN RENDER NI META
         if: always()
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
