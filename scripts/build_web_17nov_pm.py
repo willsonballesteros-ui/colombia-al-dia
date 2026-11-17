@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera página web editorial de ORBIUNO alineada al Reel de las 08:00 (17/11).
+"""Genera página web editorial de ORBIUNO alineada al Reel de las 18:00 (17/11).
 Cada audio es un RESUMEN, no se afirma que lea los artículos completos.
 """
 import html,json,shutil
@@ -45,7 +45,7 @@ header p{{max-width:800px}} .chip{{color:var(--gold);font-weight:800}}a{{color:#
 .kicker{{font-weight:900;color:var(--teal);font-size:13px}}.media{{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #456073;padding:12px 0;margin:14px 0}}.sourcename{{font-weight:900;font-size:19px;display:flex;gap:10px;align-items:center}}.source-icon{{height:37px;width:37px;object-fit:contain}}
 label{{display:block;color:var(--gold);font-weight:800;margin-bottom:6px}}audio{{width:100%}}small{{display:block;color:#c4d8e2;margin-top:12px}}
 .cta{{background:#0c3949;border-radius:14px;padding:16px;margin-top:24px}}@media(max-width:680px){{.news{{grid-template-columns:1fr}}.photo img{{height:300px;min-height:0}}}}
-</style></head><body><header><div class="chip">17 DE NOVIEMBRE DE 2026 · 8:00 A. M. · COLOMBIA</div>
+</style></head><body><header><div class="chip">17 DE NOVIEMBRE DE 2026 · 6:00 P. M. · COLOMBIA</div>
 <h1>ORBIUNO Noticias</h1><p>Seis noticias verificadas de Colombia y el mundo, con fotografías reales acreditadas, resúmenes narrados con la voz Salomé y enlaces originales de las fuentes.</p>
 <div class="cta">▶ <a href="media/2026-11-17/orbiuno-pm/ORBIUNO_17_NOV_2026_1800_REEL_PUBLICAR.mp4">Ver el Reel completo de hoy</a> · Voz sintética en español colombiano a 1,25×</div>
 </header><main>{''.join(parts)}</main><footer><p>Edición de ORBIUNO @resumen.noticias · Fotos históricas o de contexto, no imágenes del acontecimiento salvo indicación expresa. Audios presentados como resúmenes editoriales, no lecturas íntegras de los artículos externos.</p><p><a href="/">Volver a colombia-al-dia.pages.dev</a></p></footer></body></html>'''
