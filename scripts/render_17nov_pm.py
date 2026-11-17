@@ -19,7 +19,18 @@ SESSION=requests.Session();SESSION.headers.update({"User-Agent":UA})
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
 # Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
-FIXED={}  # ningún archivo fijo de la mañana coincide con el contenido de la tarde
+FIXED={
+ ("orbiuno","photo-00.jpg"):"File:Colombia NT presidential send-off for World Cup, Jun 2026 (68).jpg",
+ ("orbiuno","photo-01.jpg"):"File:Caravana de medallistas olímpicos (7794788422).jpg",
+ ("orbiuno","photo-02.jpg"):"File:Universidad nacional de colombia.JPG",
+ ("orbiuno","photo-03.jpg"):"File:Transmilenio bogota.jpg",
+ ("orbiuno","photo-04.jpg"):"File:Gold Mine Landscape.jpg",
+ ("orbiuno","photo-05.jpg"):"File:Renewable energy park.jpg",
+ ("mycar","photo-00.jpg"):"File:Zeekr 9X 001.jpg",
+ ("mycar","photo-01.jpg"):"File:JMEV 01 001.jpg",
+ ("mycar","photo-02.jpg"):"File:Working on Robonaut 2.jpg",
+ ("mycar","photo-03.jpg"):"File:Jetour X70 Plus 2026 facelift 002.jpg",
+}
 N=24
 def probe(file):
  r=subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","default=nw=1:nk=1",str(file)],capture_output=True,text=True,check=True)
@@ -28,7 +39,8 @@ def get_photo(query,folder,filename):
  # Search only Wikimedia Commons File namespace, with license metadata on each original file.
  api="https://commons.wikimedia.org/w/api.php"
  fixed=FIXED.get((folder.name,filename))
- phrases=([fixed] if fixed else [])+[query,query.replace("electric","").replace("vehicle","").strip(),"solar panels" if "solar" in query else "science"]
+ if not fixed:raise RuntimeError("Sin fotografía editorial autorizada para "+filename)
+ phrases=[fixed]
  problems=[]
  for term in phrases:
   try:
