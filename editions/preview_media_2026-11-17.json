@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-17",
+  "slot": "08:00",
+  "orbiuno": {
+    "cover": {
+      "title": "¡75 tortugas nacieron en California!",
+      "news_index": 5
+    },
+    "intro": "Buenos días. Esto es ORBIUNO Noticias. Seis historias verificadas de Colombia y el mundo. Comenzamos.",
+    "outro": "Escucha las noticias completas y consulta las fuentes originales en colombia al día punto pages punto dev. Comparte esta edición.",
+    "news": [
+      {
+        "title": "ICETEX abre 50 becas para maestrías virtuales",
+        "hook": "50 becas para estudiar en España",
+        "source": "ICETEX",
+        "url": "https://web.icetex.gov.co/es/-/becas-45-maestrias-virtuales-universitat-oberta-catalunya",
+        "image_query": "universitat oberta de catalunya university campus",
+        "say": "En Colombia, ICETEX abre una convocatoria de cincuenta becas para maestrías virtuales en la Universitat Oberta de Catalunya. El beneficio cubre el cuarenta y cinco por ciento de la matrícula. Las postulaciones tienen plazo hasta diciembre."
+      },
+      {
+        "title": "Colombia estudia los virus del dengue con IA",
+        "source": "EL HERALDO",
+        "url": "https://www.elheraldo.co/atlantico/barranquilla/2026/11/17/rastrean-los-virus-que-causan-fiebre-en-barranquilla-y-municipios-del-atlantico/",
+        "image_query": "science laboratory microscope research",
+        "say": "En Barranquilla, investigadores rastrean los virus que causan fiebre en el Atlántico. La Universidad Simón Bolívar desarrolla proyectos que combinan análisis genético e inteligencia artificial para comprender el dengue."
+      },
+      {
+        "title": "Puerto Rico conecta baterías para evitar apagones",
+        "source": "ASSOCIATED PRESS",
+        "url": "https://apnews.com/article/152a4162d4a41c8eff37c2c9bb168747",
+        "image_query": "residential rooftop solar panels Puerto Rico",
+        "say": "Puerto Rico aprovecha baterías instaladas en miles de viviendas para sostener su red eléctrica. Una planta virtual utiliza energía almacenada en los hogares y ayuda a reducir el riesgo de apagones."
+      },
+      {
+        "title": "Paneles solares flotantes abren nuevas opciones",
+        "source": "ASSOCIATED PRESS",
+        "url": "https://apnews.com/article/ef1138ee8804f96094ab521f7e1d0224",
+        "image_query": "floating solar panels on water",
+        "say": "En Florida, los paneles solares flotantes sobre estanques aprovechan superficies de agua para generar electricidad. Expertos evalúan su potencial y los efectos ambientales de esta innovación."
+      },
+      {
+        "title": "El ADN neandertal revela secretos del cerebro",
+        "source": "EL PAÍS",
+        "url": "https://elpais.com/ciencia/2026-11-16/una-variante-genetica-heredada-de-los-neandertales-reduce-el-volumen-del-cerebro-y-el-riesgo-de-esquizofrenia-en-humanos-actuales.html",
+        "image_query": "Neanderthal skull museum fossil",
+        "say": "Una investigación científica relaciona una variante genética heredada de los neandertales con pequeñas diferencias en el cerebro humano y con un menor riesgo estadístico de esquizofrenia. El hallazgo ofrece nuevas pistas sobre nuestra evolución."
+      },
+      {
+        "title": "75 tortugas nacen en una playa de California",
+        "source": "THE GUARDIAN",
+        "url": "https://www.theguardian.com/us-news/2026/nov/16/california-sea-turtle-eggs-hatched",
+        "image_query": "Olive Ridley Sea Turtle Hatchlings",
+        "say": "Y una noticia sorprendente de naturaleza. Setenta y cinco tortugas marinas nacieron tras el primer registro de nidos de su especie en la costa occidental de Estados Unidos. Las crías fueron liberadas en el Pacífico."
+      }
+    ]
+  },
+  "mycar": {
+    "cover": {
+      "title": "¡El Renault 4 vuelve, ahora eléctrico!",
+      "news_index": 0
+    },
+    "intro": "Bienvenidos a MyCar al Día. Cuatro noticias verificadas del mundo automotor para Colombia.",
+    "outro": "Visita busco autos punto pages punto dev. Conoce las fuentes y comparte MyCar al Día.",
+    "news": [
+      {
+        "title": "Renault 4 eléctrico regresa a Colombia",
+        "source": "EL ESPECTADOR",
+        "url": "https://www.elespectador.com/autos/el-iconico-renault-4-regreso-a-colombia-ahora-100-electrico/",
+        "image_query": "Renault 4 E-Tech Electric vehicle",
+        "say": "El histórico Renault cuatro regresa a Colombia en versión totalmente eléctrica. La marca presentó el modelo durante el Salón del Automóvil de Bogotá, combinando su diseño clásico con nuevas tecnologías."
+      },
+      {
+        "title": "Nissan presenta Frontier Pro híbrida enchufable",
+        "source": "AUTOS DE PRIMERA",
+        "url": "https://autosdeprimera.com/autos-de-primera/lanzamientos/nueva-nissan-frontier-pro-colombia-2026/",
+        "image_query": "Nissan Frontier Pro PHEV pickup",
+        "say": "Nissan presenta en Colombia la Frontier Pro híbrida enchufable. La camioneta combina motor eléctrico y combustión, con tracción para quienes buscan una pick up de trabajo y aventura."
+      },
+      {
+        "title": "Tesla anuncia inversión de 3.000 millones de euros",
+        "source": "REUTERS",
+        "url": "https://www.reuters.com/business/tesla-announces-33-billion-expansion-germany-plant-2026-11-16/",
+        "image_query": "Tesla Gigafactory Berlin factory",
+        "say": "Tesla anunció una inversión cercana a tres mil millones de euros para ampliar su fábrica en Alemania. El plan busca aumentar la capacidad de producción y apoyar sus próximos vehículos autónomos."
+      },
+      {
+        "title": "Salón del Automóvil exhibe cientos de modelos",
+        "source": "CORFERIAS",
+        "url": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+        "image_query": "Corferias Bogota aerial exhibition center",
+        "say": "En Bogotá, el Salón del Automóvil reúne más de ochenta marcas y cientos de vehículos hasta el veintidós de noviembre. Los visitantes pueden comparar modelos eléctricos, híbridos y de combustión en Corferias."
+      }
+    ]
+  }
+}
