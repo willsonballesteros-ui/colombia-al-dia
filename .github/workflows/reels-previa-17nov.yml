@@ -1,0 +1,43 @@
+name: ORBIUNO y MyCar | Reels finales previa visual 17 noviembre
+on:
+  pull_request:
+    paths:
+      - "editions/preview_media_2026-11-17.json"
+      - "scripts/render_17nov_preview.py"
+      - ".github/workflows/reels-previa-17nov.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  producir-previas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar FFmpeg y dependencias sin Kokoro
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow requests edge-tts
+      - name: Verificar que no se altere producción
+        run: |
+          python -m json.tool editions/preview_media_2026-11-17.json >/dev/null
+          ffprobe -version | head -1
+          test "$GITHUB_EVENT_NAME" = "pull_request" || test "$GITHUB_EVENT_NAME" = "workflow_dispatch"
+      - name: Producir dos MP4 con fotos CC y narración Salomé
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/render_17nov_preview.py
+      - name: Guardar ambos MP4, créditos, audio, subtítulos editoriales y fuentes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PREVIAS-ORBIUNO-MYCAR-17NOV
+          path: build/preview_17nov/
+          if-no-files-found: warn
+          retention-days: 30
