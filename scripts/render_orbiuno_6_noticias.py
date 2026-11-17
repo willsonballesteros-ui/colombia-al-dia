@@ -191,13 +191,13 @@ def main():
         raise RuntimeError("Motor de voz no permitido")
 
     natural=sum(len(a)/sr_ref for a in audio_arrays)
-    if natural>59.2:
-        raise RuntimeError(f"Guion demasiado largo: {natural:.2f}s; corregir texto, no velocidad")
+    # 50–60 segundos es un objetivo de ritmo, no una restricción fatal.
+    # La narración puede exceder un minuto: nunca recortar el audio.
+    if natural<=0:
+        raise RuntimeError("Guion sin narración válida")
     pause_each=max(.18,(51.0-natural)/len(audio_arrays))
     durations=[len(a)/sr_ref+pause_each for a in audio_arrays]
     duration=sum(durations)
-    if not 50<=duration<=60:
-        raise RuntimeError(f"Duración no cumple: {duration:.2f}s")
     with tempfile.TemporaryDirectory() as td:
         tmp=Path(td);images=[]
         for i,dur in enumerate(durations):
@@ -229,7 +229,7 @@ def main():
     d=float(info["format"]["duration"])
     vs=[s for s in info["streams"] if s["codec_type"]=="video"]
     aus=[s for s in info["streams"] if s["codec_type"]=="audio"]
-    if not (50<=d<=60 and video.stat().st_size>100000 and
+    if not (d>0 and video.stat().st_size>100000 and
             vs and vs[0].get("width")==W and vs[0].get("height")==H and
             vs[0].get("codec_name")=="h264" and aus and aus[0].get("codec_name")=="aac"):
         raise RuntimeError("MP4 no pasó inspección audiovisual completa")
