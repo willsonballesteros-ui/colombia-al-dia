@@ -17,6 +17,15 @@ UA="ORBIUNO-Editorial-Preview/1.0 (https://colombia-al-dia.pages.dev; Wikimedia 
 SESSION=requests.Session();SESSION.headers.update({"User-Agent":UA})
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
+# Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
+FIXED={
+ ("orbiuno","photo-00.jpg"):"File:Antic rectorat de la UOC - P1100490.jpg",
+ ("orbiuno","photo-02.jpg"):"File:Solar Panels on Caguas, Puerto Rico Walmart.jpg",
+ ("orbiuno","photo-04.jpg"):"File:Em - Homo sapiens neanderthalensis skull.jpg",
+ ("orbiuno","photo-05.jpg"):"File:Olive Ridley Sea Turtle Hatchlings.jpg",
+ ("mycar","photo-00.jpg"):"File:Renault 4 E-Tech Electric - 04.jpg",
+ ("mycar","photo-03.jpg"):"File:Agora and Corferias event and buissines district.png",
+}
 N=24
 def probe(file):
  r=subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","default=nw=1:nk=1",str(file)],capture_output=True,text=True,check=True)
@@ -24,15 +33,21 @@ def probe(file):
 def get_photo(query,folder,filename):
  # Search only Wikimedia Commons File namespace, with license metadata on each original file.
  api="https://commons.wikimedia.org/w/api.php"
- phrases=[query,query.replace("electric","").replace("vehicle","").strip(),"solar panels" if "solar" in query else "science"]
+ fixed=FIXED.get((folder.name,filename))
+ phrases=[fixed] if fixed else [query,query.replace("electric","").replace("vehicle","").strip(),"solar panels" if "solar" in query else "science"]
  problems=[]
  for term in phrases:
   try:
-   p={"action":"query","generator":"search","gsrsearch":term,"gsrnamespace":6,"gsrlimit":15,
-      "prop":"imageinfo","iiprop":"url|extmetadata|size","iiurlwidth":1280,"format":"json","formatversion":2}
+   p={"action":"query","prop":"imageinfo","iiprop":"url|extmetadata|size",
+      "iiurlwidth":1280,"format":"json","formatversion":2}
+   if fixed:p["titles"]=term
+   else:p.update({"generator":"search","gsrsearch":term,"gsrnamespace":6,"gsrlimit":15})
    res=SESSION.get(api,params=p,timeout=25);res.raise_for_status()
    pages=res.json().get("query",{}).get("pages",[])
    for page in pages:
+    title=page.get("title","")
+    if not title.lower().endswith((".jpg",".jpeg",".png",".webp")):continue
+    if fixed and title!=fixed:continue
     info=(page.get("imageinfo") or [{}])[0];ext=info.get("extmetadata",{})
     lic=html.unescape(re.sub("<[^>]*>","",ext.get("LicenseShortName",{}).get("value",""))).strip()
     url=info.get("thumburl") or info.get("url") or ""
