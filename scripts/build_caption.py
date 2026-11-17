@@ -18,7 +18,7 @@ HANDLE="@resumen.noticias"
 
 def edition_slot():
     requested=os.getenv("ORBIUNO_EDITION_SLOT","").lower()
-    if requested in ("8am","12m","6pm","9pm"):
+    if requested in ("8am","12m","6pm","7pm","9pm"):
         return requested
     hour=datetime.now(ZoneInfo("America/Bogota")).hour
     return "8am" if hour<11 else "12m" if hour<17 else "6pm" if hour<21 else "9pm"
@@ -35,7 +35,7 @@ def tracked_url(day,medium,slot):
 def build(db):
     day=db["editionDate"]
     slot=edition_slot()
-    slot_time={"8am":"08:00","12m":"12:00","6pm":"18:00","9pm":"21:00"}[slot]
+    slot_time={"8am":"08:00","12m":"12:00","6pm":"18:00","7pm":"19:00","9pm":"21:00"}[slot]
     news=sorted((n for n in db["news"] if n.get("date")==day
                  and n.get("verification")=="editorial_verified"
                  and n.get("editionSlot")==slot_time),
@@ -70,7 +70,7 @@ def build(db):
     story_link=tracked_url(day,"story",slot)
     caption=(
         "ORBIUNO | "+display+"\n\n"
-        "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la noche","9pm":"extraordinaria de las 9 p. m."}[slot]+" · "+str(len(news))+" noticias verificadas.\n\n"
+        "Edición "+{"8am":"de la mañana","12m":"del mediodía","6pm":"de la tarde","7pm":"de las 7 p. m.","9pm":"extraordinaria de las 9 p. m."}[slot]+" · "+str(len(news))+" noticias verificadas.\n\n"
         "🎧 Las noticias también se escuchan en nuestra web.\n"
         "Escucha nuestra voz en español y ajusta la velocidad.\n\n"
         "👇 Escucha el audio y consulta las fuentes originales:\n"
