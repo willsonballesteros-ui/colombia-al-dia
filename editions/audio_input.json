@@ -2,40 +2,39 @@
   "segments": [
     {
       "id": "saludo",
-      "text": "Muy buenos días. Bienvenidos a ORBIUNO Noticias. Este es el resumen verificado de Colombia y el mundo. Comenzamos con seis historias que vale la pena conocer."
+      "text": "Buenos días. ORBIUNO Noticias presenta seis historias verificadas de Colombia y el mundo. Esta es nuestra edición de la mañana."
     },
     {
       "id": "n01",
-      "text": "En Colombia, una nueva convocatoria de becas internacionales abre oportunidades de formación virtual a profesionales. ICETEX publica los requisitos y fechas de postulación. Consulta el enlace oficial en nuestra página web."
+      "text": "ICETEX ofrece becas para estudiar maestrías virtuales en España. Revisa los requisitos, el descuento de matrícula y las fechas oficiales."
     },
     {
       "id": "n02",
-      "text": "Investigadores de Barranquilla avanzan en el análisis genético del dengue. La inteligencia artificial ayuda a comprender mejor los virus que circulan en la región y sus posibles complicaciones."
+      "text": "Investigadores colombianos analizan con inteligencia artificial los virus asociados al dengue en el Atlántico y sus complicaciones."
     },
     {
       "id": "n03",
-      "text": "En Puerto Rico, miles de baterías instaladas en viviendas trabajan en conjunto para apoyar la red eléctrica. La tecnología permite responder mejor cuando aumenta el riesgo de apagones."
+      "text": "En Puerto Rico, miles de baterías instaladas en viviendas apoyan la red eléctrica y ayudan a reducir el impacto de los apagones."
     },
     {
       "id": "n04",
-      "text": "En Florida, un proyecto estudia paneles solares flotantes sobre estanques. La innovación busca producir energía aprovechando superficies de agua, sin ocupar nuevos terrenos."
+      "text": "Florida estudia paneles solares flotantes en estanques de agua lluvia para generar electricidad sin ocupar nuevos terrenos."
     },
     {
       "id": "n05",
-      "text": "En Europa, investigadores estudian cómo una variante del ADN neandertal se relaciona con diferencias cerebrales. El hallazgo abre nuevas preguntas sobre la evolución humana."
+      "text": "Un nuevo estudio relaciona una variante del ADN neandertal con diferencias en el cerebro y con el riesgo estadístico de esquizofrenia."
     },
     {
       "id": "n06",
-      "text": "Y cerramos con una buena noticia ambiental: las primeras tortugas marinas nacidas en nidos registrados en una playa de California fueron liberadas en el océano Pacífico."
+      "text": "En California nacieron decenas de tortugas marinas en nidos registrados por primera vez en esa costa. Las crías fueron liberadas al mar."
     },
     {
       "id": "despedida",
-      "text": "Gracias por acompañarnos en ORBIUNO Noticias. Escucha el desarrollo completo de las seis noticias y consulta sus fuentes originales en colombia al día punto pages punto dev. Hasta pronto."
+      "text": "Gracias por informarte con ORBIUNO. Escucha las seis noticias completas y revisa todas las fuentes en colombia al día punto pages punto dev."
     }
   ],
   "metadata": {
     "type": "voice_preview_only",
-    "publication_allowed": false,
-    "source": "Revisión auditiva; no constituye edición nueva"
+    "publication_allowed": false
   }
 }
