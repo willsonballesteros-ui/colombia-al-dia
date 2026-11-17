@@ -1,4 +1,10 @@
 """Narración fija Dora de los reportajes propios; audio base a 1.25x."""
+import os
+if os.environ.get("ORBIUNO_VOICE_ENGINE")=="salome":
+    from generate_web_voice_salome import main
+    main()
+    raise SystemExit(0)
+
 import hashlib,json,subprocess,os
 from pathlib import Path
 import numpy as np
