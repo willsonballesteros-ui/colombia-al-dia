@@ -150,7 +150,8 @@ def main():
     session=ort.InferenceSession(model,sess_options=options,providers=["CPUExecutionProvider"])
     voice=Kokoro.from_session(session,bank)
     stamp=slot+" HORA COLOMBIA"
-    scene_text=["Seis noticias de Colombia y el mundo. Edición de las siete de la noche."]
+    slot_name={"08:00":"ocho de la mañana","12:00":"doce del mediodía","18:00":"seis de la tarde","19:00":"siete de la noche"}[slot]
+    scene_text=["Saludos. Estas son seis noticias de Colombia y el mundo. Edición de las "+slot_name+"."]
     for n in notes:
         phrase=str(n.get("reelLine") or n["summary"]).strip()
         if len(phrase.split())>27:

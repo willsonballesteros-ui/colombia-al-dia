@@ -71,9 +71,14 @@ class NewsAudioUITests(unittest.TestCase):
         full_count=sum(has_complete_audio(item) for item in current)
         self.assertEqual(rendered.count('data-tts-full="true"'), full_count)
         self.assertEqual(rendered.count('data-tts-full="false"'), len(current)-full_count)
+        # La voz propia se integra al generar la web, no tiene que estar
+        # precargada en noticias.json. Comprobar el HTML final renderizado.
+        embedded = self.out.split('<script type="application/json" id="initial-news">', 1)[1].split('</script>', 1)[0]
+        generated = {n["id"]: n for n in json.loads(embedded)["news"]}
         for item in current:
-            self.assertGreaterEqual(len(item["audioFullTextEs"].split()), 110)
-            self.assertLessEqual(len(item["audioFullTextEs"].split()), 250)
+            audible = generated[item["id"]].get("audioFullTextEs", "")
+            self.assertGreaterEqual(len(audible.split()), 110)
+            self.assertLessEqual(len(audible.split()), 250)
             self.assertIn('data-tts-id="'+item["id"]+'" data-tts-full="'+
                           ('true' if has_complete_audio(item) else 'false')+'"', rendered)
         self.assertEqual(rendered.count('class="source"'), len(current))
