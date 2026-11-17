@@ -79,17 +79,30 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
+          python -m pip install edge-tts kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
 
-      - name: Modelos oficiales y hash fijo
+      - name: Construir y generar voz Salomé de la edición real
+        env:
+          ORBIUNO_EDITION_DATE: '${{ steps.edition.outputs.day }}'
+          ORBIUNO_EDITION_SLOT: '${{ steps.edition.outputs.slot }}'
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
-          set -euo pipefail
-          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
-          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
-          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
-          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+          python scripts/build_orbiuno_voice_input.py
+          python scripts/generate_voice.py --input editions/audio_input.json --out build/audio --strict
+
+      - name: Bloqueo obligatorio si no hay aprobación auditiva
+        env:
+          VOICE_SAMPLE_APPROVED: ${{ vars.SALOME_VOICE_APPROVED }}
+        run: |
+          python scripts/voice_render_guard.py
 
       - name: Generar voz de articulos completos y actualizar web
+        env:
+          ORBIUNO_VOICE_ENGINE: salome
+          VOICE_SAMPLE_APPROVED: ${{ vars.SALOME_VOICE_APPROVED }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           python scripts/generate_web_voice.py
           python scripts/prepare_site.py
@@ -99,6 +112,8 @@ jobs:
         env:
           ORBIUNO_EDITION_DATE: '${{ steps.edition.outputs.day }}'
           ORBIUNO_EDITION_SLOT: '${{ steps.edition.outputs.slot }}'
+          ORBIUNO_VOICE_ENGINE: salome
+          VOICE_SAMPLE_APPROVED: ${{ vars.SALOME_VOICE_APPROVED }}
         run: python scripts/render_orbiuno_6_noticias.py
 
       - name: Comprobar MP4, audio, duracion e integridad
@@ -115,7 +130,7 @@ jobs:
           p=out/m['video']
           assert m['edition']==day and m['slot'].replace(':','')==stamp
           assert m['newsCount']==6 and len(set(m['newsIds']))==6
-          assert m['voice']=='ef_dora' and m['voiceSpeed']==1.25 and 50<=m['duration']<=60
+          assert m['voice']=='es-CO-SalomeNeural' and m['voiceEngine']=='salome' and m['voiceSpeed']==1.25 and 50<=m['duration']<=60
           assert p.stat().st_size>100000 and hashlib.sha256(p.read_bytes()).hexdigest()==m['sha256']
           info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_name,width,height','-of','json',str(p)]))
           assert any(x.get('codec_name')=='h264' and x.get('width')==1080 and x.get('height')==1920 for x in info['streams'])
@@ -157,6 +172,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: orbiuno-daily-six
-          path: dist/
+          path: |
+            dist/
+            build/audio/
+            build/web_audio/
           if-no-files-found: warn
           retention-days: 30
