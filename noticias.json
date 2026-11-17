@@ -6,6 +6,177 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-91edc3bf2951e4fb",
+      "date": "2026-11-17",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Inteligencia artificial podría elevar un 5,6% el PIB de Costa Rica en diez años, según el BID",
+      "summary": "Titular difundido por El Financiero Costa Rica a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Financiero Costa Rica · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORklWQXVYZFFHQktORXNMYl8yM2FnTFoyLWpaUmJxbkFVdVZuWXRwYVJ5ZnFBbkFNZ3R0cHg5eHp2SUNtVVZCMnFzdVg4RDJ3WDFwOFp0dFIzV3lPSzNnUzdyYkw4SmtNMmRWb0xhLW53YU5JVmxTbHdBNXdpVU11RjRQUmJob1QyM2d6OThwd1N3a1dueDZSMjZta2t4U3lGXzlZclFlREwwNmM5a0pZbmxxdlZ2Smx0enB0NlEtNGkwWFZX?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-17T08:00-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-77d57a6106267646",
+      "date": "2026-11-17",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Luis Suárez habló sobre la ausencia de James Rodríguez en la selección Colombia: “Todos lo extrañamos”",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOc1JDUm1UTWNobDlJY29pSURjUFZwYmgtMGRiVFNYUG1pQ2JfYTlFamVTaDhnaExjdGhjWDNqcWp4VkdJZHZOYU5UU3ZjRTVJekV4bV9nSGpxX2V4RXNDdVBPZVJGdWdGblY0dzNMMHhYT0xtd1lpT1FaN3ExT1pGZ05uY19JS0xXNG5rMXpMUUlDd05nUHBmaGM5YjBnaGY4OURWVDl3R29vdFNnaWxrZExxT1NaUDh4SFUtejM2cEZaWXIzakpYcUxhM0tRejRnSTNkUE5vaWIzYndfOWx5TzVJZk1qSjBV0gGDAkFVX3lxTE9ndllLQUl5Sk9YQ1NyclFUUUdaRndrY3lrVGpzQ1RnQWRkWW5PRDlRZTBqc2MtejFSODlqY09KM1B6eTFrZXNMWjlIdlRRLTRPcjdpamxPZmNKSE13OG05Z2lYRVY1SENEWkgwWFBsUzRtaWVfdE52YzE2LTNXRVEycmx4X2NUQ0tESXdxR3EyUTlNZU5SSkNhNWgyN2tjelA0WGtXa2tGcTNqX3FocHBibTNXTEdvWHk3YV9BNzdienNGamJCNTFyY3JTdVRXamNpYmFyS21UUTVEMDlRTlB0eVp0cjYxeE1vc0VucHdBYVFzbWFNRmdNNFA3THM4OUZaT0U?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-17T07:36-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-b712eb3d63010f3a",
+      "date": "2026-11-16",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección Colombia cerrará el 2026 con un partido de fogueo frente a Chile, en medio del recambio",
+      "summary": "Titular difundido por Noticias Caracol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias Caracol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQUkdpOV9sbGxSWVZCaEFldDZ0aUFmVExmTXVJSF9xbkI4OGZVNVlUUjdwSTdUaWNUb1A3WXgzM1NkcVJXVHFyUVBvSTBzb3dVNVFpM3RiOFAyS0dUdDhpdUxBeFFWdHhXQ1l5LXRRV0Mtb1JqZkNIcnd0a0g2dVY5em5WckFlOTNTMmx3anppLUxBWERJaWZlTWxWZG9oYXZ1WDhwTlBuZFVRd2J0OUU0cEQwYXIwZDcwUWwwUlQzalNPOFRGOVRSTXJoUnVRMGMyV0YxcW5OLXpTVldhR3RsclZFc3hlNkF2QUM2MDR4c1RZQVFNSUlFVUJB0gGHAkFVX3lxTE1Gb2ptSjlCcWMxMC1IbkZVaTV3Z3MxWjlUWVdtR1hjdlJJSjgzZ29MamY0enYzX2l2REhTYVJQTlZxSGdmYkhMaUZBcXI5WmdtVzkwZGhOYXVEemlkdjFycE5ETkJuNUNEVlNZN1ZmS0VyeXktVDVPbXc2c2xzYjY4VF80S1ZnNWNTeC1vMjFXV0pfYzNaMU9NLTZVcEVxeVdWaGNtT0ZKVXlTb0J4alhhUk5IX3oyUlR4TnFYaWlaNGxFR1VzRWQ4N2thQTdXS1lIekpxaENQQV9oXy1TencxRjhNeDZkRF9NWF9MdzFjNWdzRmFwYTB1dGhDVVFMWG9TNnptSWRB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-16T21:20-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-901079b23b207d8c",
+      "date": "2026-11-16",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "¿Por qué Montreal se convirtió en la capital mundial de la inteligencia artificial?",
+      "summary": "Titular difundido por Grupo Animal a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Grupo Animal · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEZpWkQyekU1M3h0X3JqUThESW02U3hTRDh1R0tsVURWLXVtWVAxMldEd0xicXdKcVpUVGJ0MGx1UzNYM3ZjUDBiRS1FcmowNDNOUnZBTlZSeHpYTXFjS0g1b1RZRVkxalhzM3pUdzFwdFVESmxXSFFyclJwZy1FcDIzLXVSdnNScm1XT3ZBNWRlR1BRR2pYNEJxX1Q5VXBYRVlrTXRIUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-16T18:54-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-ccb2d3b056a9ea4b",
+      "date": "2026-11-16",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Luis Javier Suárez, jugador de la selección Colombia, pidió perdón por la declaración en la que retó a sus críticos: “Soy un hombre y doy la cara”",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOSmQ5di10LXVDVmZFZUc3aDY4UDRXXy0zUkNSNUpCYlRIak1nQm9rSWJmNVExN1dIeE4tTGhjdXBUZTlKTHhJWUtWS1VDTDRsWFB6VHNjdURPdE9URjJIVEVtWVVKT2hraVZtV01YSVVtRHBXWGJxWHZZMGpEbDRJNWEtN044OTdyejRMa0xQQmwwQm5Pa3k4WVhid1QwcXFaQkNLeUpFRFo4ek9kMWVYUmNPa0hNVGtKTkNUenRhMGRjMzRZNzNlb3RZM2dXSWN4cUZCXzBUUVpPaUJfSDZDVUVTVUtkRXdiM2gzQ1NfWmpNSWRJaE03ZGdUNVk5aFRnN0JFNThsc1BIRWR1N0t5Rm43YUVhOENpTzREZFdfbDbSAbsCQVVfeXFMT3pKTWczNEIzTnpQTmNqcE01bXlmT1I1NTFTQ1M5WjdITVhTVWJWSG5YWFd1ME93UnlXVkxUTVZ2R0ZHeEZ1ZXZZRGR2bHE1TU5SQ1FqLWhiM1hlNnFoYTZ4T3hkZmV3TTB5SnlKSzYwYVFHWXFHS09OUzNmY2xuRUZ6bTA5NlJNaE9YLUpvWGtERFJJNE95SlNOOXJ4UUMtVEt2VUVfYWN5eDIzeHZCdS1mc3l4TE4tMXMzVDFMYzlRNmRaN1llaXl1VGtfUXRqMkNQcFphN01iQzNtZDJlWXd5dG9QVjBydURacXpSOGt2ZGpwYlVnLXZRWHdyMlhuYUdCRXFwMElWbGZNcjV3Z0IwTFpGZlJtOHNpSFd2ME9JZzBLa3k1YWVUcXBGVU9iNXlDVU9nMU9nRmlj?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-16T18:20-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-1bf8335b5d4195ed",
+      "date": "2026-11-16",
+      "category": "Economía",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Terremoto de agosto habría restado hasta 0,8 puntos porcentuales al crecimiento del PIB del tercer trimestre",
+      "summary": "Titular difundido por Portafolio.co a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Portafolio.co · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRFVIX0wwNll6SXk3VFNxc0RLV3RfVk9IcDhRNzBabmd2bHUwUEF1dy1rMGtwTFg5REhxdUZxeFNnYkZCVmFTaWxNaS1hNkpPV3ZnSndLblhuVUVxN0g3eE40QmFHQTUxWXBxeXZHRXRHVWxJTGEtSDJXSXI2eVZwaVdBVWxGVlNrMkYzbEdReGNXaDU0QXdrRUc3RVFnQ2hxRi1ONFIybnRJUlRhWVdBZmwtM1Q3VWpuOWZaRDMxNW5aX0NTUC1rbFoza2NWNjZSTzBpZWRfa3NkSDhIc3NyZEJleTPSAeoBQVVfeXFMT0hYR001ZnFVTDdrTVZwQ0lZOHRFa3JVNEkzc1FMTzVmbzMxc1o3SDhqRGpzdF9kR0FTQ0t0bWowTUFlMTRWUnVIZFJLSGxFS0JoYTlVd090cXhIVzB4ZFdOTkFDVlQwTTFVcm0zTXZSb0xpc0pHUWhIdUxXRi1fR1JRZUR3Rk9xRXRzYjFsUVcwSTd6b3gzN1pfVHlTSDdtQkJMVk42YjZQLUNQOTFxUVhqNFVBZFZGb0J5X2U3VnQ2eFN6c2RTR2FZUnRsUTRSZkdMeUxQaEtfM09nZ0dBR051VkVBbURmRVVn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-16T18:10-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-f487c9443a47e30c",
+      "date": "2026-11-16",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Cambio de estadio: Selección de Chile vs. Selección Colombia – amistoso fecha FIFA de noviembre 2026",
+      "summary": "Titular difundido por Federación Colombiana de Futbol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Federación Colombiana de Futbol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXFTQWgtRVR2RHVBTTBzLUNBd3E1MWVNOEpsdkxUY1lJY1NiRXhHRjdsUGN2WGtjcmtiV2FaSVdNaEV3TnNNY0Z4aXNUejZmOHFocFltS1NhR1BXaWVjN1NiMDVWVFZZaTlXOVZucVV6aXFTMU5xRFliYmRCV3NOYzlIMzJBNWhpMVctbEhIRl96Q3llanA5M2trMGpKaVkwdXZBNEpZUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-16T16:23-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-248acd5b91cad71c",
+      "date": "2026-11-17",
+      "category": "Mundo",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "\"Vi decenas de cadáveres para reconocer a mi hermano de 14 años tras los terremotos de Venezuela y aún no sé si está enterrado o desaparecido\"",
+      "summary": "Titular difundido por BBC News Mundo. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "BBC News Mundo",
+          "url": "https://www.bbc.com/mundo/articles/cwm25nnnp5yxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-17T06:59-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3a4c36481dcc6fe0",
+      "date": "2026-11-17",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Chile vs. Colombia: esta sería la probable alineación de la Selección dirigida por Néstor Lorenzo en su último partido de la temporada",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxORmJFZEFMQWRJQjQ2Y1NDQktoUzk0UnNTTjlQazBRLTU5N3k5QTFibFFvUHRqZk1fQkJYcnVPMHlqLTFjcGw0R3lpNlBRTkg3eGltVGZYMHdMSUVaU0d3MHdWNktHSkpaQ21mMUtuTDJnWmdEUV9MTEFhZnEyNmlJMWhHS1RIcnU0NkFJS0M0M2kyT09XTk5nRWJEMktuT1h6WFRnQ2dzYzI5RUtZNzlKVG40MjVqdnNRcUV2RTMtSFVxTmZoLU50Y1dNUVJreHBxczhxNzBody1qa3VIcmZ0RWRmb0VFQXVWa3lyWWJPQmhtR1Y1QVRTSlNiakpyUkJWYk1RRGtDNTMzZ3AzTFpyV2tQNFF5TDJDekRNeDNFQm_SAaYCQVVfeXFMUGEyZk8xV2VVNWhmdkY5TzctYkUxYjV6cjZRdFZNM0NfZWtqOGlFT3FLZk1WVnZOTmxjQTM1ZUtpNmpZUmMwcHBtbEJ5SWRIdWZoZkFmdFI4aWVVVUpuanBtdHlzZzhhSU5lUHRaQ0hCaDE3aUl0dWZhSTJHSFlFT2hIZmVmZ1NOcExNdGxjNWtSREg2aE9Va3VxYkZ0OUtNd2NMbkxZams1SzQxMV9RMXQwSWtzcnFVZ1k3RzRqWDBmbEdTc21YdFZCSXJXeGthZFY2cFUxNzhYTlBZaXA4dmdqNGZVOHBTYTRlZ0E3UHVQRzBONnR0RUZTeVg3MVNxc2d0V2JLRFF3aDd0VHRvM2NLeHV3Y0dfcmtTWEdNdlRZRVpsblBB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-17T06:51-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-79e962ec5c6442f6",
       "date": "2026-11-16",
       "category": "Deportes",
@@ -24669,10 +24840,10 @@
       "imageRightsVerified": false
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-16T23:22-05:00",
-  "lastNewSourceAtBogota": "2026-11-16T23:22-05:00",
-  "autoSyncOkSources": 4,
-  "autoSyncFailedSources": 2,
+  "autoSyncCheckedAtBogota": "2026-11-17T08:05-05:00",
+  "lastNewSourceAtBogota": "2026-11-17T08:05-05:00",
+  "autoSyncOkSources": 6,
+  "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
   "editorialFormat": "5 noticias por publicación; portada conjunta con titulares resaltados en orden, desarrollo secuencial con fotografías verificadas",
   "tagline": "Las noticias más importantes de Colombia y el mundo, en un solo lugar",
