@@ -10,6 +10,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: orbiuno-mycar-pm-17nov
+  cancel-in-progress: true
 jobs:
   producir-previas:
     runs-on: ubuntu-24.04
@@ -51,6 +54,7 @@ jobs:
               assert report["status"]=="ok" and len(report["segments"])==num+2
               credits=json.loads((out/brand.lower()/"credits.json").read_text())
               assert len(credits)==num and all(x["license"] and x["author"] and x["commons"] for x in credits)
+              assert len(set(x["image_title"] for x in credits))==num, "BLOCKED: fotografías repetidas o no relevantes"
               meta=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(video)]))
               assert float(meta["format"]["duration"])>25
               assert any(x.get("codec_name")=="h264" and x.get("width")==1080 and x.get("height")==1920 for x in meta["streams"])
@@ -69,7 +73,11 @@ jobs:
           git fetch origin main
           git worktree add -B publicar-17nov-1800 "$RUNNER_TEMP/orbiuno-public" origin/main
           cd "$RUNNER_TEMP/orbiuno-public"
-          test ! -e media/2026-11-17/orbiuno-pm/ORBIUNO_17_NOV_2026_1800_REEL_PUBLICAR.mp4 || { echo 'Edition already hosted; no overwrite'; exit 1; }
+          # Solo reemplazar las dos versiones de PM defectuosas aún NO publicadas.
+          if test -e media/2026-11-17/orbiuno-pm/ORBIUNO_17_NOV_2026_1800_REEL_PUBLICAR.mp4; then
+            test "$(stat -c%s media/2026-11-17/orbiuno-pm/ORBIUNO_17_NOV_2026_1800_REEL_PUBLICAR.mp4)" = "2537370"
+            test "$(stat -c%s media/2026-11-17/mycar-pm/MYCAR_17_NOV_2026_1800_REEL_PUBLICAR.mp4)" = "1801870"
+          fi
           mkdir -p media/2026-11-17/orbiuno-pm/audio media/2026-11-17/mycar-pm
           cp "$GITHUB_WORKSPACE/build/pm_17nov/ORBIUNO_17_NOV_2026_1800_REEL_PREVIA.mp4" media/2026-11-17/orbiuno-pm/ORBIUNO_17_NOV_2026_1800_REEL_PUBLICAR.mp4
           cp "$GITHUB_WORKSPACE/build/pm_17nov/MYCAR_17_NOV_2026_1800_REEL_PREVIA.mp4" media/2026-11-17/mycar-pm/MYCAR_17_NOV_2026_1800_REEL_PUBLICAR.mp4
