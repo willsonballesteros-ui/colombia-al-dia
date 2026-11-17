@@ -1,0 +1,59 @@
+name: Salome es-CO | Muestra de voz y reporte (SIN PUBLICAR)
+on:
+  pull_request:
+    paths:
+      - 'scripts/generate_voice.py'
+      - 'scripts/voice_render_guard.py'
+      - 'editions/audio_input.json'
+      - '.github/workflows/voice-salome-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preescucha:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar edge-tts, FFmpeg y ffprobe
+        run: |
+          python -m pip install edge-tts
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+      - name: Síntesis de muestra por Azure F0 o respaldo edge-tts
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python scripts/generate_voice.py --input editions/audio_input.json --out build/audio --strict
+      - name: Resumen auditado del audio, SIN RENDER NI META
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          p=Path('build/audio/audio_report.json')
+          if not p.exists():
+              print('**BLOCKED:** audio_report.json ausente; revisar ejecución. NO renderizar ni publicar.')
+          else:
+              d=json.loads(p.read_text())
+              print('Estado:',d.get('status'),'| duración:',d.get('total_seconds'),'s | voz:',d.get('voice'))
+              print('| Segmento | Motor | Segundos |\n|---|---|---|')
+              for s in d.get('segments',[]):print('|',s['id'],'|',s['engine'],'|',s['seconds'],'|')
+              for e in d.get('errors',[]): print('ERROR',e.get('id'),':',e.get('error'))
+          print('**NO hay aprobación de muestra; no se permite render ni publicar.**')
+          PY
+      - name: Guardar audio y audio_report.json incluso si falla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: salome-audio-muestra-orbiuno
+          path: build/audio/
+          if-no-files-found: warn
+          retention-days: 30
