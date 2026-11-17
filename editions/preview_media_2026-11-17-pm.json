@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-17",
+  "slot": "18:00",
+  "orbiuno": {
+    "cover": {
+      "title": "¡Colombia juega contra Chile!",
+      "news_index": 0
+    },
+    "intro": "Buenas tardes. Este es el resumen de las seis de ORBIUNO Noticias. Seis noticias verificadas de Colombia y el mundo.",
+    "outro": "Escucha los resúmenes, lee las noticias y consulta sus fuentes en colombia al día punto pages punto dev. Comparte esta edición.",
+    "news": [
+      {
+        "title": "¡Colombia juega contra Chile esta noche!",
+        "source": "FEDERACIÓN COLOMBIANA DE FÚTBOL",
+        "url": "https://www.fcf.com.co/2026/11/17/hoy-juega-colombia-380/",
+        "image_query": "Colombia national football team players yellow kit football",
+        "say": "La selección Colombia disputa esta noche un amistoso contra Chile a partir de las seis, hora de Colombia. La Federación confirmó el encuentro y el cambio de escenario a Santiago. Sigue los resultados en su canal oficial."
+      },
+      {
+        "title": "Colombia consiguió ocho medallas en Dakar",
+        "source": "MINISTERIO DEL DEPORTE",
+        "url": "https://www.mindeporte.gov.co/sala-de-prensa/noticias/iv-juegos-olimpicos-juventud-2026-impulso-reserva-deportiva",
+        "image_query": "Colombian athletics gold medal runner olympics youth podium",
+        "say": "Colombia cerró los Juegos Olímpicos de la Juventud Dakar dos mil veintiséis con ocho medallas: un oro, dos platas y cinco bronces. El Ministerio del Deporte destacó la formación de las nuevas generaciones."
+      },
+      {
+        "title": "Último día para solicitar tres mil becas",
+        "source": "AGENCIA ATENEA",
+        "url": "https://www.agenciaatenea.gov.co/noticias/bogota-abre-3000-becas-para-estudiar-en-39-universidades-privadas",
+        "image_query": "Universidad Nacional Colombia Bogota university campus students",
+        "say": "En Bogotá hay hasta tres mil becas para estudiar en treinta y nueve universidades privadas. La Agencia Atenea abrió inscripciones hasta mañana dieciocho de noviembre. Consulta los requisitos oficiales y comparte esta oportunidad."
+      },
+      {
+        "title": "Bogotá informa marchas y posibles desvíos",
+        "source": "BOGOTÁ.GOV.CO",
+        "url": "https://bogota.gov.co/mi-ciudad/gobierno/2026-11/conoce-marchas-y-manifestaciones-en-bogota-17-al-22-de-noviembre-2026",
+        "image_query": "Bogota Colombia TransMilenio downtown city public transport street",
+        "say": "Si vas a movilizarte por Bogotá, revisa la agenda de marchas y manifestaciones prevista del diecisiete al veintidós de noviembre. La Alcaldía recomienda consultar los reportes oficiales y anticipar tus recorridos."
+      },
+      {
+        "title": "Anuncian inversión minera de cien millones de dólares",
+        "source": "REUTERS",
+        "url": "https://www.reuters.com/business/collective-mining-invest-100-million-colombia-2027-with-more-hinging-permit-2026-11-17/",
+        "image_query": "Colombia Caldas mining exploration geology open pit mine",
+        "say": "La empresa canadiense Collective Mining proyecta invertir cien millones de dólares en Colombia durante dos mil veintisiete. El plan se concentra en exploración y permisos en Caldas, y depende del avance de los trámites."
+      },
+      {
+        "title": "Más de treinta países impulsan la electrificación",
+        "source": "REUTERS",
+        "url": "https://www.reuters.com/sustainability/cop/can-cop31s-proposed-age-electricity-slow-global-warming-2026-11-17/",
+        "image_query": "solar power farm wind turbines renewable energy electricity",
+        "say": "En la cumbre climática COP treinta y uno, más de treinta países respaldan una propuesta voluntaria para ampliar el uso de electricidad en el consumo mundial al treinta y cinco por ciento en dos mil treinta y cinco."
+      }
+    ]
+  },
+  "mycar": {
+    "cover": {
+      "title": "¡Zeekr presenta tres modelos en Bogotá!",
+      "news_index": 0
+    },
+    "intro": "Buenas tardes. MyCar al Día presenta cuatro novedades del mundo automotor, sin repetir los titulares de la mañana.",
+    "outro": "Conoce más noticias y encuentra carros en busco autos punto pages punto dev. Comparte esta edición de MyCar.",
+    "news": [
+      {
+        "title": "Zeekr trae tres novedades de lujo a Bogotá",
+        "source": "AUTOCOSMOS COLOMBIA",
+        "url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/12/sia-2026-zeekr-presenta-en-colombia-los-nuevos-9x-7gt-y-001-fr-edition-awd",
+        "image_query": "Zeekr 9X electric SUV car automotive",
+        "say": "Zeekr presenta en el Salón del Automóvil de Bogotá tres modelos de lujo: nueve equis, siete ge te y cero cero uno efe erre. La marca amplía así su oferta de vehículos premium para Colombia."
+      },
+      {
+        "title": "JMEV GSX promete hasta 610 kilómetros",
+        "source": "AUTOCOSMOS COLOMBIA",
+        "url": "https://noticias.autocosmos.com.co/2026/09/22/jmev-gsx-el-nuevo-suv-electrico-que-llega-a-colombia-con-610-km-de-autonomia",
+        "image_query": "JMEV GSX electric SUV vehicle",
+        "say": "JMEV ofrece en Colombia su camioneta eléctrica ge ese equis con hasta seiscientos diez kilómetros anunciados de autonomía en el ciclo de pruebas CLTC. La autonomía real puede ser diferente según la conducción."
+      },
+      {
+        "title": "General Motors quiere más robots en fábricas",
+        "source": "REUTERS",
+        "url": "https://www.reuters.com/business/autos-transportation/gm-plans-20-boost-robotics-factory-costs-rise-2026-11-17/",
+        "image_query": "General Motors automotive factory industrial robotics car production",
+        "say": "General Motors planea aumentar cerca de veinte por ciento la utilización de robótica en sus plantas de producción. El objetivo es mejorar la eficiencia ante el aumento de los costos de fabricación."
+      },
+      {
+        "title": "Jetour acuerda producir vehículos en Brasil",
+        "source": "REUTERS",
+        "url": "https://www.reuters.com/world/china/chinas-jetour-reaches-deal-produce-vehicles-brazil-sources-say-2026-11-17/",
+        "image_query": "Jetour X70 Chinese SUV car",
+        "say": "La marca china Jetour llegó a un acuerdo con autoridades de Río de Janeiro para producir vehículos en Brasil, según fuentes citadas por Reuters. Es una nueva apuesta de la industria automotriz asiática en Latinoamérica."
+      }
+    ]
+  }
+}
