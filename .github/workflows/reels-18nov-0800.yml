@@ -6,7 +6,7 @@ on:
       - 'scripts/render_18nov_am.py'
       - 'scripts/build_web_18nov_am.py'
       - 'editions/preview_media_2026-11-18-am.json'
-      - '.github/workflows/reels-17nov-1800.yml'
+      - '.github/workflows/reels-18nov-0800.yml'
   workflow_dispatch:
 permissions:
   contents: write
