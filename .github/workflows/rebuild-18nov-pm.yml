@@ -26,17 +26,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Instalar dependencias multimedia
+      - name: Instalar FFmpeg y FFprobe binarios verificados sin apt
         run: |
-          python -m pip install --prefer-binary Pillow requests edge-tts
-          if ! command -v ffmpeg >/dev/null 2>&1; then
-            timeout 100s sudo apt-get install -y -qq ffmpeg || {
-              timeout 90s sudo apt-get update -qq
-              timeout 120s sudo apt-get install -y -qq ffmpeg
-            }
-          fi
-          command -v ffmpeg
-          command -v ffprobe
+          python -m pip install --prefer-binary Pillow requests edge-tts portable-ffmpeg-full==0.5.0
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from portable_ffmpeg import get_ffmpeg
+          ffmpeg,ffprobe=get_ffmpeg()
+          folder=Path(os.environ['RUNNER_TEMP'])/'orbiuno-video-bin'
+          folder.mkdir(parents=True,exist_ok=True)
+          for exe,source in [('ffmpeg',ffmpeg),('ffprobe',ffprobe)]:
+              p=folder/exe
+              p.symlink_to(Path(source))
+              assert p.is_file()
+          with open(os.environ['GITHUB_PATH'],'a') as h:
+              h.write(str(folder)+'\n')
+          print('FFMPEG_VERIFIED',str(folder))
+          PY
           test -f scripts/generate_voice.py
       - name: Generar solo el Reel corregido con seis fotos reales
         run: python scripts/render_18nov_pm.py
