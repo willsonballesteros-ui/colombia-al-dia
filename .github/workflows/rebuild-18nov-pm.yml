@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: orbiuno-20261118-pm-corregido
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   producir-corregido:
@@ -29,7 +29,12 @@ jobs:
       - name: Instalar dependencias multimedia
         run: |
           python -m pip install --prefer-binary Pillow requests edge-tts
-          if ! command -v ffmpeg >/dev/null 2>&1; then sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; fi
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            timeout 100s sudo apt-get install -y -qq ffmpeg || {
+              timeout 90s sudo apt-get update -qq
+              timeout 120s sudo apt-get install -y -qq ffmpeg
+            }
+          fi
           command -v ffmpeg
           command -v ffprobe
           test -f scripts/generate_voice.py
