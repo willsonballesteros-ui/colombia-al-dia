@@ -44,55 +44,54 @@ def para(draw, text, x, y, f, width, ink=WHITE, step=None, limit=4):
         y += step or int(f.size * 1.35)
     return y
 
-def base(day, label):
-    im=Image.new("RGB",(W,H), BG)
-    d=ImageDraw.Draw(im)
-    d.rectangle((0,0,W,15),fill=TEAL)
-    d.text((44,48),"ORBIUNO",font=face(62),fill=WHITE)
-    d.text((47,125),day+" · COLOMBIA Y EL MUNDO",font=face(20,False),fill=TEAL)
-    d.rounded_rectangle((40,1160,680,1240),radius=19,fill=PANEL)
-    d.text((62,1182),"@resumen.noticias",font=face(24),fill=WHITE)
-    d.text((62,1212),"colombia-al-dia.pages.dev",font=face(18,False),fill=TEAL)
-    return im,d
+def base():
+    im = Image.new("RGB", (W, H), BG)
+    draw = ImageDraw.Draw(im)
+    draw.rectangle((0, 0, W, 15), fill=TEAL)
+    return im, draw
 
-def cover(day,notes,active,out):
-    im,d=base(day,"PORTADA")
-    d.text((44,198),"5 NOTICIAS · EDICIÓN DE HOY",font=face(27),fill=GOLD)
-    for i,n in enumerate(notes):
-        y=276+i*162
-        d.rounded_rectangle((41,y,679,y+148),radius=17,fill=TEAL if i==active else PANEL)
-        ink=BG if i==active else WHITE
-        d.text((58,y+15),f"{i+1:02d}",font=face(31),fill=ink)
-        name=n["category"].upper()[:27]
-        d.text((128,y+17),name,font=face(18),fill=ink)
-        para(d,n["title"],128,y+51,face(23),510,ink,31,3)
+
+def cover(day, slot, notes, active, out):
+    im, draw = base()
+    # Keep the entire cover inside the centered 720 x 720 feed crop.
+    draw.text((48, 306), "ORBIUNO", font=face(55), fill=WHITE)
+    draw.text((50, 374), f"{day}  ·  EDICIÓN {slot}  ·  5 NOTICIAS", font=face(22), fill=GOLD)
+    for index, note in enumerate(notes):
+        y = 422 + index * 99
+        selected = index == active
+        ink = BG if selected else WHITE
+        draw.rounded_rectangle((47, y, 673, y + 91), radius=14, fill=TEAL if selected else PANEL)
+        draw.text((62, y + 12), f"{index + 1:02d}", font=face(29), fill=ink)
+        draw.text((119, y + 7), note["category"].upper()[:27], font=face(16), fill=ink)
+        para(draw, note["title"], 119, y + 28, face(22), 535, ink, 20, 3)
+    draw.text((51, 931), "@resumen.noticias · colombia-al-dia.pages.dev", font=face(18), fill=TEAL)
     im.save(out)
 
-def news_slide(day,n,index,out):
-    im,d=base(day,"NOTICIA")
-    d.text((44,198),f"NOTICIA {index}/5 · {n['category'].upper()[:24]}",font=face(25),fill=GOLD)
-    y=280
-    y=para(d,n["title"],43,y,face(36),634,WHITE,49,4)
-    # Fotografía únicamente cuando existe archivo local y permiso documentado.
-    photo=n.get("imageUrl","")
-    valid=n.get("imageRightsVerified") is True and n.get("imageLicense") and n.get("imageCredit")
-    local=(ROOT/photo.removeprefix("./")) if photo.startswith("./media/") else None
-    if valid and local and local.is_file():
-        picture=Image.open(local).convert("RGB")
-        picture.thumbnail((626,390))
-        im.paste(picture,(47+(626-picture.width)//2,570+(390-picture.height)//2))
-        d=ImageDraw.Draw(im)
-        d.text((47,980),"FOTO: "+n["imageCredit"][:42],font=face(18,False),fill=TEAL)
+
+def news_slide(day, note, index, out):
+    im, draw = base()
+    draw.text((48, 306), "ORBIUNO", font=face(42), fill=WHITE)
+    draw.text((49, 364), f"{day} · {index}/5 · {note['category'].upper()[:24]}", font=face(19), fill=GOLD)
+    para(draw, note["title"], 48, 404, face(31), 620, WHITE, 36, 3)
+    photo = note.get("imageUrl", "")
+    valid = note.get("imageRightsVerified") is True and note.get("imageLicense") and note.get("imageCredit")
+    local = (ROOT / photo.removeprefix("./")) if photo.startswith("./media/") else None
+    has_photo = bool(valid and local and local.is_file())
+    if has_photo:
+        with Image.open(local) as original:
+            picture = original.convert("RGB")
+        picture.thumbnail((624, 286))
+        im.paste(picture, (48 + (624 - picture.width) // 2, 524 + (286 - picture.height) // 2))
+        draw.text((48, 817), "FOTO DE REFERENCIA" if note.get("imageCaption") else "FOTOGRAFÍA", font=face(15), fill=TEAL)
+        para(draw, note["imageCredit"] + " · " + note["imageLicense"], 48, 842, face(16, False), 624, WHITE, 20, 2)
     else:
-        d.rounded_rectangle((43,550,677,946),radius=24,fill=PANEL)
-        d.text((72,606),"PANORAMA INFORMATIVO",font=face(26),fill=TEAL)
-        para(d,n["summary"],73,674,face(25,False),568,WHITE,39,6)
-    source=n["sources"][0]
-    d.rounded_rectangle((43,1011,677,1110),radius=15,fill="#234e68")
-    d.text((60,1031),"FUENTE ORIGINAL",font=face(20),fill=TEAL)
-    para(d,source["name"].split(" · ")[0][:39],60,1065,face(17,False),577,WHITE,23,1)
+        draw.rounded_rectangle((48, 525, 672, 826), radius=18, fill=PANEL)
+        para(draw, note["summary"], 67, 550, face(23, False), 585, WHITE, 31, 8)
+    source = note["sources"][0]["name"].split(" · ")[0]
+    draw.rounded_rectangle((48, 896, 672, 952), radius=12, fill="#234e68")
+    para(draw, "FUENTE · " + source, 64, 912, face(22), 594, WHITE, 23, 1)
     im.save(out)
-    return bool(valid and local and local.is_file())
+    return has_photo
 
 def cmd(*args):
     return subprocess.run(args,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
@@ -113,7 +112,7 @@ def main():
     opts=ort.SessionOptions();opts.intra_op_num_threads=2;opts.inter_op_num_threads=1
     session=ort.InferenceSession("/tmp/kokoro-v1.0.onnx",sess_options=opts,providers=["CPUExecutionProvider"])
     voice=Kokoro.from_session(session,"/tmp/voices-v1.0.bin")
-    clips=[];pictures=[];timeline=[];t=0.0
+    clips=[];pictures=[];timeline=[];photos=[];t=0.0
     with tempfile.TemporaryDirectory() as temp:
         scratch=Path(temp)
         # Portada con todos los titulares visibles; realce calculado de la duración de cada frase.
@@ -121,7 +120,7 @@ def main():
         phrases += [f"Noticia {i+1}. {n['title']}." for i,n in enumerate(notes)]
         # Breve desarrollo de cada noticia con fuente atribuida.
         phrases += [f"{n['summary']} Fuente: {n['sources'][0]['name']}." for n in notes]
-        phrases += ["ORBIUNO. Lee y escucha las noticias y sus fuentes en el enlace de nuestro perfil."]
+        phrases += ["ORBIUNO. Síguenos en nuestra página web y escucha en voz alta la noticia que más te interese. El enlace está en el perfil."]
         for j,phrase in enumerate(phrases):
             audio,sr=voice.create(phrase,"ef_dora",speed=1.25,lang="es",sentence_pause=.12,clause_pause=.06)
             arr=np.asarray(audio,dtype=np.float32)
@@ -131,9 +130,17 @@ def main():
             clips.append(clip)
             length=len(clip)/sr
             frame=scratch/f"{j:02d}.png"
-            if j < 6: cover(day,notes,max(0,j-1),frame) if j else cover(day,notes,-1,frame)
-            elif j < 11: news_slide(day,notes[j-6],j-5,frame)
-            else: cover(day,notes,-1,frame)
+            if j < 6: cover(day,slot,notes,max(0,j-1),frame) if j else cover(day,slot,notes,-1,frame)
+            elif j < 11:
+                note = notes[j-6]
+                if news_slide(day, note, j-5, frame):
+                    photos.append({
+                        "newsId": note["id"],
+                        "credit": note["imageCredit"],
+                        "license": note["imageLicense"],
+                        "sourceUrl": note.get("imageSourceUrl", ""),
+                    })
+            else: cover(day,slot,notes,-1,frame)
             pictures.append((frame,length))
             timeline.append({"scene":j,"from":round(t,3),"to":round(t+length,3),"voiceText":phrase,"newsId":notes[j-1]["id"] if 1<=j<=5 else notes[j-6]["id"] if 6<=j<=10 else None})
             t+=length
@@ -156,7 +163,7 @@ def main():
         if not (any(s.get("codec_type")=="audio" for s in streams) and any(s.get("codec_type")=="video" and s.get("width")==W and s.get("height")==H for s in streams) and 35<=runtime<=150):
             raise RuntimeError("MP4 inválido: falta pista o duración fuera de rango")
         digest=hashlib.sha256(target.read_bytes()).hexdigest()
-        meta={"date":day,"slot":slot,"newsCount":5,"voice":"ef_dora","speed":1.25,"duration":runtime,"sha256":digest,"video":target.name,"scenes":timeline,"sources":[{"title":n["title"],"url":n["sources"][0]["url"]} for n in notes],"photoPolicy":"Solo fotografías con licencia verificada y archivo local; si no, lámina editorial con fuente","publishedToInstagram":False}
+        meta={"date":day,"slot":slot,"newsCount":5,"voice":"ef_dora","speed":1.25,"duration":runtime,"sha256":digest,"video":target.name,"scenes":timeline,"photos":photos,"sources":[{"id":n["id"],"title":n["title"],"url":n["sources"][0]["url"]} for n in notes],"photoPolicy":"Solo fotografías con licencia verificada y archivo local; si no, lámina editorial con fuente","publishedToInstagram":False}
         (out/"manifest.json").write_text(json.dumps(meta,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("MP4_VERIFICADO",target,round(runtime,1),digest,flush=True)
 if __name__=="__main__":
