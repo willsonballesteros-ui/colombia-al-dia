@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "brand": "MYCAR AL DÍA",
+  "website": "https://busco-autos.pages.dev/",
+  "updated_date": "2026-11-18",
+  "editions": [
+    {
+      "edition_id": "MYCAR-2026-11-18-AM",
+      "date": "2026-11-18",
+      "slot": "08:00",
+      "title": "Denza se prepara para llegar a Colombia en 2027",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-18/mycar-am/MYCAR_18_NOV_2026_0800_REEL_PUBLICAR.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Denza se prepara para llegar a Colombia en 2027",
+          "summary": "Denza, la marca de lujo del grupo BYD, confirmó su llegada a Colombia para febrero de dos mil veintisiete. Presentó los modelos B cinco, una camioneta híbrida enchufable, y Z nueve ge te, un deportivo eléctrico de lujo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/denza-colombia-modelos-precios-b5-z9gt-marca-lujo-byd/",
+          "image_file_title": "File:Denza Z9 GT IAA 2025 DSC 2253.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Denza_Z9_GT_IAA_2025_DSC_2253.jpg"
+        },
+        {
+          "title": "BYD Sealion 7 anuncia 440 kilómetros de autonomía",
+          "summary": "La nueva BYD Sealion siete, de tracción trasera, llega al mercado colombiano con doscientos veintiocho caballos, batería Blade y hasta cuatrocientos cuarenta kilómetros bajo ciclo W L T C. Su precio inicial anunciado es de ciento dieciséis millones novecientos noventa mil pesos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+          "image_file_title": "File:BYD SEALION 7 on display in front of JR Gate Tower - 2.jpg",
+          "photo_credit": "Kyu3a",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BYD_SEALION_7_on_display_in_front_of_JR_Gate_Tower_-_2.jpg"
+        },
+        {
+          "title": "Nueve de cada diez Renault Kwid colombianos se exportan",
+          "summary": "La planta Renault Sofasa de Envigado exporta cerca del noventa por ciento de los Kwid que fabrica hacia otros países latinoamericanos, según la compañía. El modelo dos mil veintisiete incorpora mejoras y continúa mostrando el talento industrial colombiano.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/industria/renault-kwid-2027-hecho-en-colombia-envigado-exportacion/",
+          "image_file_title": "File:Renault Kwid.jpg",
+          "photo_credit": "Jason Lawrence",
+          "photo_license": "CC BY 2.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_Kwid.jpg"
+        },
+        {
+          "title": "El nuevo BMW X5 se presenta en Colombia con 400 caballos",
+          "summary": "BMW presentó la nueva generación de su equis cinco para Colombia. Inicialmente llega con motor de seis cilindros, tecnología microhíbrida de cuarenta y ocho voltios y cuatrocientos caballos de potencia. La imagen de archivo muestra la generación anterior del modelo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/bmw-x5-2027-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:BMW X5 xDrive50e M Sport Plug Hybrid Electric Vehicle PHEV AWD 2025 (23).jpg",
+          "photo_credit": "Captainmorlypogi1959",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BMW_X5_xDrive50e_M_Sport_Plug_Hybrid_Electric_Vehicle_PHEV_AWD_2025_(23).jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-17-PM",
+      "date": "2026-11-17",
+      "slot": "18:00",
+      "title": "Zeekr trae tres novedades de lujo a Bogotá",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-17/mycar-pm/MYCAR_17_NOV_2026_1800_REEL_PUBLICAR.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df3HTN2HEMC/",
+      "items": [
+        {
+          "title": "Zeekr trae tres novedades de lujo a Bogotá",
+          "summary": "Zeekr presenta en el Salón del Automóvil de Bogotá tres modelos de lujo: nueve equis, siete ge te y cero cero uno efe erre. La marca amplía así su oferta de vehículos premium para Colombia.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/12/sia-2026-zeekr-presenta-en-colombia-los-nuevos-9x-7gt-y-001-fr-edition-awd",
+          "image_file_title": "File:Zeekr 9X 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Zeekr_9X_001.jpg"
+        },
+        {
+          "title": "JMEV GSX promete hasta 610 kilómetros",
+          "summary": "JMEV ofrece en Colombia su camioneta eléctrica ge ese equis con hasta seiscientos diez kilómetros anunciados de autonomía en el ciclo de pruebas CLTC. La autonomía real puede ser diferente según la conducción.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/09/22/jmev-gsx-el-nuevo-suv-electrico-que-llega-a-colombia-con-610-km-de-autonomia",
+          "image_file_title": "File:JMEV 01 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:JMEV_01_001.jpg"
+        },
+        {
+          "title": "General Motors quiere más robots en fábricas",
+          "summary": "General Motors planea aumentar cerca de veinte por ciento la utilización de robótica en sus plantas de producción. El objetivo es mejorar la eficiencia ante el aumento de los costos de fabricación.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/business/autos-transportation/gm-plans-20-boost-robotics-factory-costs-rise-2026-11-17/",
+          "image_file_title": "File:Working on Robonaut 2.jpg",
+          "photo_credit": "NASA",
+          "photo_license": "Public domain",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Working_on_Robonaut_2.jpg"
+        },
+        {
+          "title": "Jetour acuerda producir vehículos en Brasil",
+          "summary": "La marca china Jetour llegó a un acuerdo con autoridades de Río de Janeiro para producir vehículos en Brasil, según fuentes citadas por Reuters. Es una nueva apuesta de la industria automotriz asiática en Latinoamérica.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/world/china/chinas-jetour-reaches-deal-produce-vehicles-brazil-sources-say-2026-11-17/",
+          "image_file_title": "File:Jetour X70 Plus 2026 facelift 002.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Jetour_X70_Plus_2026_facelift_002.jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-17-AM",
+      "date": "2026-11-17",
+      "slot": "08:00",
+      "title": "Renault 4 eléctrico regresa a Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-17/mycar/MYCAR_17_NOV_2026_REEL_PUBLICAR.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df2CGlsj_Bz/",
+      "items": [
+        {
+          "title": "Renault 4 eléctrico regresa a Colombia",
+          "summary": "El histórico Renault cuatro regresa a Colombia en versión totalmente eléctrica. La marca presentó el modelo durante el Salón del Automóvil de Bogotá, combinando su diseño clásico con nuevas tecnologías.",
+          "source": "EL ESPECTADOR",
+          "source_url": "https://www.elespectador.com/autos/el-iconico-renault-4-regreso-a-colombia-ahora-100-electrico/",
+          "image_file_title": "File:Renault 4 E-Tech Electric - 04.jpg",
+          "photo_credit": "Y.Leclercq",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_Electric_-_04.jpg"
+        },
+        {
+          "title": "Nissan presenta Frontier Pro híbrida enchufable",
+          "summary": "Nissan presenta en Colombia la Frontier Pro híbrida enchufable. La camioneta combina motor eléctrico y combustión, con tracción para quienes buscan una pick up de trabajo y aventura.",
+          "source": "AUTOS DE PRIMERA",
+          "source_url": "https://autosdeprimera.com/autos-de-primera/lanzamientos/nueva-nissan-frontier-pro-colombia-2026/",
+          "image_file_title": "File:Nissan Frontier Pro PHEV 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_Frontier_Pro_PHEV_001.jpg"
+        },
+        {
+          "title": "Tesla anuncia inversión de 3.000 millones de euros",
+          "summary": "Tesla anunció una inversión cercana a tres mil millones de euros para ampliar su fábrica en Alemania. El plan busca aumentar la capacidad de producción y apoyar sus próximos vehículos autónomos.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/business/tesla-announces-33-billion-expansion-germany-plant-2026-11-16/",
+          "image_file_title": "File:Gigafactory 4, Apr 20, Grunheide.jpg",
+          "photo_credit": "Silas Heineken",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Gigafactory_4,_Apr_20,_Grunheide.jpg"
+        },
+        {
+          "title": "Salón del Automóvil exhibe cientos de modelos",
+          "summary": "En Bogotá, el Salón del Automóvil reúne más de ochenta marcas y cientos de vehículos hasta el veintidós de noviembre. Los visitantes pueden comparar modelos eléctricos, híbridos y de combustión en Corferias.",
+          "source": "CORFERIAS",
+          "source_url": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+          "image_file_title": "File:Agora and Corferias event and buissines district.png",
+          "photo_credit": "Mriobomorales",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Agora_and_Corferias_event_and_buissines_district.png"
+        }
+      ]
+    }
+  ]
+}
