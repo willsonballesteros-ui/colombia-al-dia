@@ -23,7 +23,7 @@ FIXED={
  ("orbiuno","photo-00.jpg"):"File:Voyager, 1977-Present (8981696768).jpg",
  ("orbiuno","photo-01.jpg"):"File:Myeloid leukemia.jpg",
  ("orbiuno","photo-02.jpg"):"File:Colombia NT presidential send-off for World Cup, Jun 2026 (68).jpg",
- ("orbiuno","photo-03.jpg"):"File:Bogotá Colombia panorama.jpg",
+ ("orbiuno","photo-03.jpg"):"File:Vista a la ciudad de Bogotá.jpg",
  ("orbiuno","photo-04.jpg"):"File:Annenberg Wildlife Crossing construction westward April 2025.jpg",
  ("orbiuno","photo-05.jpg"):"File:Donald Trump visit to China, May 2026 P20260514DT-1642.jpg",
  ("mycar","photo-00.jpg"):"File:Denza Z9 GT IAA 2025 DSC 2253.jpg",
