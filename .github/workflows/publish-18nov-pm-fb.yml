@@ -1,0 +1,113 @@
+name: "ORBIUNO | Verificar IG y Facebook Reel corregido 18 nov"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-18nov-pm-fb.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orbiuno-18nov-corrected-meta-once
+  cancel-in-progress: false
+
+jobs:
+  verificar-y-publicar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      IG_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      FB_PAGE: ${{ secrets.ORBIUNO_FB_PAGE_ID }}
+      FB_TOKEN: ${{ secrets.ORBIUNO_FB_PAGE_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recuperar enlace oficial del Reel y enviar video corregido a FB
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,time,urllib.request,urllib.parse,urllib.error
+          from pathlib import Path
+          ROOT=Path('media/2026-11-18/orbiuno-pm-corregido')
+          manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'))
+          video=ROOT/manifest['video']
+          assert manifest['newsCount']==manifest['imagesCount']==6
+          assert manifest['voice']=='es-CO-SalomeNeural'
+          assert hashlib.sha256(video.read_bytes()).hexdigest()==manifest['sha256']
+          caption=(ROOT/'descripcion.txt').read_text(encoding='utf-8')
+          assert 'ORBIUNO · 18 de noviembre de 2026 · 6:00 p. m.' in caption
+          status={'instagram':{'media_id':'18042256037894203','published_by':'Windsor.ai'}}
+          def call(url,token,params=None,method='GET'):
+              if params and method=='GET':
+                  url=url+'?'+urllib.parse.urlencode(params)
+                  body=None
+              else:
+                  body=urllib.parse.urlencode(params).encode() if params is not None else None
+              req=urllib.request.Request(url,data=body,method=method,headers={'Authorization':'Bearer '+token})
+              with urllib.request.urlopen(req,timeout=45) as response:return json.load(response)
+          igtoken=os.environ.get('IG_TOKEN','')
+          if igtoken:
+              try:
+                  info=call('https://graph.instagram.com/v26.0/18042256037894203',igtoken,
+                            {'fields':'id,permalink,media_type'})
+                  if info.get('id')=='18042256037894203' and info.get('permalink','').startswith('https://'):
+                      status['instagram']['permalink']=info['permalink']
+                      status['instagram']['readback_verified']=True
+                      print('IG_LINK_VERIFIED',info['permalink'])
+              except Exception as e:print('IG_READBACK_UNAVAILABLE',type(e).__name__)
+          page=os.environ.get('FB_PAGE','')
+          token=os.environ.get('FB_TOKEN','')
+          if not page or not token:
+              status['facebook']={'state':'BLOCKED_MISSING_PAGE_CREDENTIALS'}
+          elif page!='1516359454884058':
+              status['facebook']={'state':'BLOCKED_PAGE_MISMATCH'}
+          else:
+              graph='https://graph.facebook.com/v27.0'
+              try:
+                  who=call(graph+'/'+page,token,{'fields':'id,name'})
+                  assert str(who.get('id'))==page
+                  existing=call(graph+'/'+page+'/video_reels',token,{'fields':'id,description','limit':100})
+                  marker='ORBIUNO · 18 de noviembre de 2026 · 6:00 p. m.'
+                  prior=[row for row in existing.get('data',[]) if marker in row.get('description','')]
+                  if prior:
+                      status['facebook']={'state':'ALREADY_PRESENT','media_id':str(prior[0]['id'])}
+                  else:
+                      init=call(graph+'/'+page+'/video_reels',token,{'upload_phase':'start'},method='POST')
+                      vid=init.get('video_id')
+                      upload_url=init.get('upload_url','')
+                      if not vid or not upload_url.startswith('https://rupload.facebook.com/'):
+                          raise RuntimeError('No verified upload session')
+                      req=urllib.request.Request(upload_url,data=video.read_bytes(),method='POST',
+                          headers={'Authorization':'OAuth '+token,'offset':'0','file_size':str(video.stat().st_size),
+                                   'Content-Type':'application/octet-stream'})
+                      with urllib.request.urlopen(req,timeout=120) as response:up=json.load(response)
+                      if up.get('success') is False:raise RuntimeError('Upload rejected')
+                      finish=call(graph+'/'+page+'/video_reels',token,{
+                          'upload_phase':'finish','video_id':vid,'video_state':'PUBLISHED',
+                          'description':caption,'title':'ORBIUNO Noticias | 18 noviembre 6 p. m.'
+                      },method='POST')
+                      if finish.get('success') is not True:raise RuntimeError('Meta finish not confirmed')
+                      status['facebook']={'state':'META_FINISH_ACCEPTED','video_id':str(vid),
+                                          'post_id':str(finish.get('post_id',''))}
+                      try:
+                          read=call(graph+'/'+str(vid),token,{'fields':'status,permalink_url'})
+                          status['facebook']['readback']=read
+                      except Exception:pass
+                      print('FB_REEL_FINISH_ACCEPTED',vid)
+              except Exception as e:
+                  status['facebook']={'state':'BLOCKED_META_ERROR','reason':type(e).__name__+': '+str(e)[:160]}
+                  print('FACEBOOK_NOT_CONFIRMED',status['facebook']['reason'])
+          (ROOT/'publication_state.json').write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n')
+          print('STATE',json.dumps(status,ensure_ascii=False))
+          PY
+      - name: Guardar resultado oficial sin cambiar el MP4
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-18/orbiuno-pm-corregido/publication_state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'ORBIUNO: registrar estado de reel corregido 18 nov'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
