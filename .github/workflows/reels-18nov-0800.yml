@@ -24,10 +24,12 @@ jobs:
           python-version: "3.11"
       - name: Instalar FFmpeg y dependencias sin Kokoro
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           python -m pip install --upgrade pip
-          python -m pip install pillow requests edge-tts
+          python -m pip install --prefer-binary pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null 2>&1; then sudo apt-get install -y -qq ffmpeg; fi
+          if ! command -v ffprobe >/dev/null 2>&1; then echo 'BLOCKED: ffprobe no instalado'; exit 1; fi
+          if test ! -e /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf; then sudo apt-get install -y -qq fonts-dejavu-core; fi
+          ffmpeg -version | head -1
       - name: Verificar que no se altere producción
         run: |
           python -m json.tool editions/preview_media_2026-11-18-am.json >/dev/null
