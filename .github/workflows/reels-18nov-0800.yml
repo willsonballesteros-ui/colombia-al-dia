@@ -1,0 +1,122 @@
+name: ORBIUNO y MyCar | Publicación edición 18 noviembre 08h
+on:
+  push:
+    branches: [feat/edicion-2026-11-18-0800-orbiuno-mycar]
+    paths:
+      - 'scripts/render_18nov_am.py'
+      - 'scripts/build_web_18nov_am.py'
+      - 'editions/preview_media_2026-11-18-am.json'
+      - '.github/workflows/reels-17nov-1800.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-mycar-am-18nov
+  cancel-in-progress: true
+jobs:
+  producir-previas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar FFmpeg y dependencias sin Kokoro
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow requests edge-tts
+      - name: Verificar que no se altere producción
+        run: |
+          python -m json.tool editions/preview_media_2026-11-18-am.json >/dev/null
+          ffprobe -version | head -1
+          test "$GITHUB_EVENT_NAME" = "push" || test "$GITHUB_EVENT_NAME" = "workflow_dispatch"
+      - name: Producir dos MP4 con fotos CC y narración Salomé
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/render_18nov_am.py
+      - name: Preparar una página web que refleje las 6 noticias
+        run: python scripts/build_web_18nov_am.py
+
+      - name: Verificar MP4, fuentes, imágenes y web
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          out=Path("build/am_18nov")
+          for brand,num in (("ORBIUNO",6),("MYCAR",4)):
+              video=out/(brand+"_18_NOV_2026_0800_REEL_PREVIA.mp4")
+              assert video.stat().st_size>500000, "Video faltante: "+brand
+              report=json.loads((out/brand.lower()/"audio"/"audio_report.json").read_text())
+              assert report["status"]=="ok" and len(report["segments"])==num+2
+              credits=json.loads((out/brand.lower()/"credits.json").read_text())
+              assert len(credits)==num and all(x["license"] and x["author"] and x["commons"] for x in credits)
+              assert len(set(x["image_title"] for x in credits))==num, "BLOCKED: fotografías repetidas o no relevantes"
+              meta=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(video)]))
+              assert float(meta["format"]["duration"])>25
+              assert any(x.get("codec_name")=="h264" and x.get("width")==1080 and x.get("height")==1920 for x in meta["streams"])
+              assert any(x.get("codec_name")=="aac" for x in meta["streams"])
+              print("READY_FOR_HOSTING",brand,meta["format"]["duration"],video.stat().st_size)
+          web_report=json.loads((out/"orbiuno"/"web-audio"/"audio_report.json").read_text())
+          assert web_report["status"]=="ok" and len(web_report["segments"])==6
+          assert (out/"orbiuno"/"web-audio"/"full.mp3").stat().st_size>10000
+          for i in range(1,7):
+              assert (out/"orbiuno"/"web-audio"/f"n{i:02d}.mp3").stat().st_size>10000
+          assert (out/"edicion-2026-11-18-0800.html").stat().st_size>3000
+          PY
+
+      - name: Alojar MP4 y web en main después de QA
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git worktree add -B publicar-18nov-0800 "$RUNNER_TEMP/orbiuno-public" origin/main
+          cd "$RUNNER_TEMP/orbiuno-public"
+          # No sobrescribir ninguna edición de hoy ni publicar dos veces.
+          test ! -e media/2026-11-18/orbiuno-am/ORBIUNO_18_NOV_2026_0800_REEL_PUBLICAR.mp4 || { echo 'BLOCKED: ORBIUNO ya tiene MP4 de hoy'; exit 1; }
+          test ! -e media/2026-11-18/mycar-am/MYCAR_18_NOV_2026_0800_REEL_PUBLICAR.mp4 || { echo 'BLOCKED: MyCar ya tiene MP4 de hoy'; exit 1; }
+          mkdir -p media/2026-11-18/orbiuno-am/audio media/2026-11-18/mycar-am
+          cp "$GITHUB_WORKSPACE/build/am_18nov/ORBIUNO_18_NOV_2026_0800_REEL_PREVIA.mp4" media/2026-11-18/orbiuno-am/ORBIUNO_18_NOV_2026_0800_REEL_PUBLICAR.mp4
+          cp "$GITHUB_WORKSPACE/build/am_18nov/MYCAR_18_NOV_2026_0800_REEL_PREVIA.mp4" media/2026-11-18/mycar-am/MYCAR_18_NOV_2026_0800_REEL_PUBLICAR.mp4
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/"*.jpg media/2026-11-18/orbiuno-am/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/"*.png media/2026-11-18/orbiuno-am/ 2>/dev/null || true
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/audio/"*.mp3 media/2026-11-18/orbiuno-am/audio/
+          mkdir -p media/2026-11-18/orbiuno-am/web-audio
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/web-audio/"*.mp3 media/2026-11-18/orbiuno-am/web-audio/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/web-audio/audio_report.json" media/2026-11-18/orbiuno-am/web-audio/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/editorial.json" media/2026-11-18/orbiuno-am/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/mycar/editorial.json" media/2026-11-18/mycar-am/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/orbiuno/credits.json" media/2026-11-18/orbiuno-am/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/mycar/credits.json" media/2026-11-18/mycar-am/
+          cp "$GITHUB_WORKSPACE/build/am_18nov/edicion-2026-11-18-0800.html" edicion-2026-11-18-0800.html
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path("index.html")
+          t=p.read_text(encoding="utf-8")
+          phrase='edicion-2026-11-18-0800.html'
+          if phrase not in t:
+              banner='<div role="region" aria-label="Edición de hoy" style="background:#12374c;color:white;text-align:center;padding:12px;font:700 17px system-ui"><a href="/edicion-2026-11-18-0800.html" style="color:#81f3e8">▶ EDICIÓN DEL 18 NOV · 8:00 A. M. · SEIS NOTICIAS Y SUS AUDIOS</a></div>'
+              t,n=re.subn(r'(<body\b[^>]*>)',lambda m:m.group(1)+banner,t,count=1,flags=re.I)
+              if n!=1:raise SystemExit("BLOCKED: cuerpo HTML no encontrado")
+              p.write_text(t,encoding="utf-8")
+          PY
+          git add media/2026-11-18 edicion-2026-11-18-0800.html index.html
+          git diff --cached --quiet && { echo 'Nothing to upload'; exit 1; }
+          git commit -m 'ORBIUNO y MyCar: videos del 17 nov y web con seis audios'
+          git push origin HEAD:main
+
+      - name: Guardar ambos MP4, créditos, audio, subtítulos editoriales y fuentes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: EDICION-18NOV-ORBIUNO-MYCAR
+          path: build/am_18nov/
+          if-no-files-found: warn
+          retention-days: 30
