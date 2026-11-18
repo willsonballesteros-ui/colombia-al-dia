@@ -2,7 +2,7 @@
   "edition": "2026-11-18",
   "slot": "18:00",
   "type": "CORRECCION_VISUAL_Y_VOZ",
-  "status": "RENDERED_NOT_META_PUBLISHED",
+  "status": "PUBLISHED_CONFIRMED",
   "video": "ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4",
   "sha256": "da8f33d67a828c588d9fa10a8c0d0a982112c05c90928570fdabc2622b88e4fd",
   "voice": "es-CO-SalomeNeural",
@@ -48,5 +48,10 @@
       "license": "Public domain",
       "commons": "https://commons.wikimedia.org/wiki/File:Andromeda_galaxy.jpg"
     }
-  ]
+  ],
+  "instagramMediaId": "18042256037894203",
+  "instagramPublicationStatus": "PUBLISHED_CONFIRMED",
+  "facebookPostId": "1516359454884058_122111879613535309",
+  "facebookPublicationFormat": "link_post_to_corrected_reel_mp4",
+  "facebookNativeReel": false
 }
