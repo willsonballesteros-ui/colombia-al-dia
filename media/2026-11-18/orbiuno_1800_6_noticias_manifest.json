@@ -74,11 +74,13 @@
   "facebookPermalink": "https://www.facebook.com/122110008351535309/posts/122111875449535309",
   "facebookFormat": "link_post_to_instagram_reel",
   "facebookPublishedAt": "2026-11-18T23:22:11Z",
-  "confirmedAt": "2026-11-18T23:24:00Z",
+  "confirmedAt": "2026-11-18T23:23:40Z",
   "publicationProvider": "Windsor.ai",
   "publicationReadbackVerified": {
     "instagram": true,
     "instagramStory": true,
     "facebook": true
-  }
+  },
+  "instagramPublishedAt": "2026-11-18T23:19:52Z",
+  "instagramStoryPublishedAt": "2026-11-18T23:21:38Z"
 }
