@@ -1,0 +1,53 @@
+{
+  "voice": "es-CO-SalomeNeural",
+  "tempo": 1.25,
+  "total_seconds": 287.1,
+  "duration_in_target": false,
+  "full_audio": "full.mp3",
+  "segments": [
+    {
+      "id": "n01",
+      "file": "n01.mp3",
+      "engine": "edge-tts",
+      "seconds": 50.18,
+      "chars": 998
+    },
+    {
+      "id": "n02",
+      "file": "n02.mp3",
+      "engine": "edge-tts",
+      "seconds": 51.33,
+      "chars": 1054
+    },
+    {
+      "id": "n03",
+      "file": "n03.mp3",
+      "engine": "edge-tts",
+      "seconds": 43.83,
+      "chars": 879
+    },
+    {
+      "id": "n04",
+      "file": "n04.mp3",
+      "engine": "edge-tts",
+      "seconds": 50.83,
+      "chars": 985
+    },
+    {
+      "id": "n05",
+      "file": "n05.mp3",
+      "engine": "edge-tts",
+      "seconds": 44.75,
+      "chars": 934
+    },
+    {
+      "id": "n06",
+      "file": "n06.mp3",
+      "engine": "edge-tts",
+      "seconds": 46.18,
+      "chars": 944
+    }
+  ],
+  "errors": [],
+  "status": "ok"
+}
