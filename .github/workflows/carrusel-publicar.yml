@@ -1,0 +1,56 @@
+name: ORBIUNO - Compuerta editorial y ensayo sin publicar
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Directorio de la edición, por ejemplo editions/2026-11-12-am'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-dry-run
+  cancel-in-progress: false
+jobs:
+  gate:
+    environment: editorial-approval
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias reales
+        run: |
+          python -m pip install 'jsonschema>=4.20,<5' 'Pillow>=10,<12'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Comp puerta y aprobación externa (bloquea si falta un recurso)
+        env:
+          EDITION: ${{ inputs.edition }}
+          ORBIUNO_APPROVAL_KEY: ${{ secrets.ORBIUNO_APPROVAL_KEY }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, re
+          edition=os.environ['EDITION']
+          if not re.fullmatch(r'editions/\d{4}-\d{2}-\d{2}-(am|pm)',edition):
+              raise SystemExit('BLOQUEADO: nombre de edición inválido')
+          PY
+          python scripts/orbiuno_gate.py "$EDITION" --web-manifest "$EDITION/web-manifest.json" --ledger editorial/publicaciones.json --approvers editorial/approvers.json --logo-registry branding/logos/registry.json
+  dry-run:
+    needs: gate
+    environment: instagram-production
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Sin publicación real
+        run: |
+          echo 'Compuerta superada, pero ejecución SIMULADA. No se invoca API Meta.'
+          echo 'No se autoriza publicar hasta disponer de fotografías licenciadas, cinco audios, web desplegada y revisión humana.'

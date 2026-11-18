@@ -1,0 +1,78 @@
+{
+  "fecha": "2026-11-12",
+  "edicion": "08:00",
+  "estado": "blocked",
+  "razon": "Faltan cinco fotos reales con autorizaciones revisadas, cinco audios colombianos comprobados, seis PNG definitivos y verificación con web desplegada. NO PUBLICAR.",
+  "noticias": [
+    {
+      "id": "co-machin-20261112",
+      "titular": "El Servicio Geológico presenta un nuevo mapa de amenaza del Cerro Machín",
+      "resumen": "El mapa actualizado identifica escenarios de amenaza en las regiones cercanas al volcán y sirve para la planificación del riesgo. Su presentación no significa que haya una erupción inminente.",
+      "fecha_fuente": "2026-11-11",
+      "fuente": "El Espectador",
+      "url_fuente": "https://www.elespectador.com/ciencia/este-es-el-nuevo-mapa-de-amenaza-del-volcan-cerro-machin-que-presento-el-servicio-geologico/",
+      "foto": {
+        "estado": "pendiente_autorizacion"
+      },
+      "audio": {
+        "estado": "pendiente_generacion_y_pruebas"
+      }
+    },
+    {
+      "id": "co-fmi-20261112",
+      "titular": "Colombia negocia con el FMI un crédito cercano a US$15.000 millones",
+      "resumen": "El reporte indica que el Gobierno estudia un acuerdo de financiamiento con el Fondo Monetario Internacional. Las conversaciones no equivalen a un crédito aprobado ni a un desembolso.",
+      "fecha_fuente": "2026-11-10",
+      "fuente": "El Espectador / Bloomberg",
+      "url_fuente": "https://www.elespectador.com/economia/macroeconomia/colombia-negocia-credito-de-usd-15-000-millones-con-el-fmi-en-medio-de-la-crisis-fiscal/",
+      "foto": {
+        "estado": "pendiente_autorizacion"
+      },
+      "audio": {
+        "estado": "pendiente_generacion_y_pruebas"
+      }
+    },
+    {
+      "id": "world-cop31-20261112",
+      "titular": "Banco multilateral acuerda financiación climática de US$1.600 millones para Turquía",
+      "resumen": "El Banco Asiático de Inversión en Infraestructura anunció apoyo para reformas de política climática de Turquía durante la COP31. El programa contempla medidas sobre energías renovables y resiliencia.",
+      "fecha_fuente": "2026-11-12",
+      "fuente": "Reuters",
+      "url_fuente": "https://www.reuters.com/sustainability/cop/cop31-host-turkey-aiib-strike-record-16-billion-climate-policy-deal-2026-11-12/",
+      "foto": {
+        "estado": "pendiente_autorizacion"
+      },
+      "audio": {
+        "estado": "pendiente_generacion_y_pruebas"
+      }
+    },
+    {
+      "id": "world-ai-20261112",
+      "titular": "Goldman Sachs prevé que la IA seguirá impulsando la inversión empresarial en 2027",
+      "resumen": "El banco proyecta un crecimiento del gasto estadounidense relacionado con hardware y propiedad intelectual de inteligencia artificial hasta 2027. Es una estimación, no una cifra ejecutada.",
+      "fecha_fuente": "2026-11-12",
+      "fuente": "Reuters",
+      "url_fuente": "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+      "foto": {
+        "estado": "pendiente_autorizacion"
+      },
+      "audio": {
+        "estado": "pendiente_generacion_y_pruebas"
+      }
+    },
+    {
+      "id": "world-uk-20261112",
+      "titular": "Economía del Reino Unido crece 0,7 % en el tercer trimestre",
+      "resumen": "La economía británica avanzó 0,7 % entre julio y septiembre, según los datos reportados por Reuters. La actividad tecnológica contribuyó al resultado, aunque persisten presiones sobre precios y crédito.",
+      "fecha_fuente": "2026-11-12",
+      "fuente": "Reuters",
+      "url_fuente": "https://www.reuters.com/world/uk/uk-economy-grows-07-q3-ons-data-shows-2026-11-12/",
+      "foto": {
+        "estado": "pendiente_autorizacion"
+      },
+      "audio": {
+        "estado": "pendiente_generacion_y_pruebas"
+      }
+    }
+  ]
+}

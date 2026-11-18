@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ORBIUNO edición de carrusel — revisión previa",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["edition_id", "fecha", "hora", "status", "noticias"],
+  "properties": {
+    "edition_id": {"type": "string", "minLength": 5},
+    "fecha": {"type": "string", "format": "date"},
+    "hora": {"enum": ["08:00", "18:00"]},
+    "status": {"enum": ["blocked", "approved"]},
+    "noticias": {
+      "type": "array", "minItems": 5, "maxItems": 5,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "titular", "resumen", "fecha", "fuente", "url_fuente", "logo_fuente", "foto", "audio"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "titular": {"type": "string", "minLength": 8},
+          "resumen": {"type": "string", "minLength": 35},
+          "fecha": {"type": "string", "format": "date"},
+          "fuente": {"type": "string", "minLength": 2},
+          "url_fuente": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "logo_fuente": {"type": "string", "minLength": 3},
+          "foto": {
+            "type": "object", "additionalProperties": false,
+            "required": ["archivo", "url_origen", "autor", "licencia", "credito", "sha256", "revision_humana"],
+            "properties": {
+              "archivo": {"type": "string", "minLength": 5},
+              "url_origen": {"type": "string", "format": "uri", "pattern": "^https://"},
+              "autor": {"type": "string", "minLength": 2},
+              "licencia": {"type": "string", "minLength": 3},
+              "credito": {"type": "string", "minLength": 2},
+              "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "revision_humana": {"const": true}
+            }
+          },
+          "audio": {
+            "type": "object", "additionalProperties": false,
+            "required": ["archivo", "duracion_s", "voz_colombiana_validada"],
+            "properties": {
+              "archivo": {"type": "string", "pattern": "\\.(mp3|m4a)$"},
+              "duracion_s": {"type": "number", "minimum": 2},
+              "voz_colombiana_validada": {"const": true}
+            }
+          }
+        }
+      }
+    }
+  }
+}
