@@ -50,9 +50,9 @@
       "sourceUrl": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
     }
   ],
-  "published": false,
-  "instagramId": null,
-  "instagramPermalink": null,
+  "published": true,
+  "instagramId": "18114915620159596",
+  "instagramPermalink": "https://www.instagram.com/reel/Df5q4ncFO9F/",
   "qa": {
     "state": "PREFLIGHT_PASS",
     "workflowRunId": 44417835619,
@@ -65,6 +65,20 @@
     "voiceAccentAudited": false,
     "visualMode": "source_cards"
   },
-  "publicationStatus": "INSTAGRAM_ATTEMPT_STARTED",
-  "editionKey": "ORBIUNO-2026-11-18-1800"
+  "publicationStatus": "PUBLISHED_CONFIRMED",
+  "editionKey": "ORBIUNO-2026-11-18-1800",
+  "instagramStoryId": "18128066825293526",
+  "instagramStoryPermalink": "https://www.instagram.com/stories/resumen.noticias/4033444438105986908",
+  "facebookPageId": "1516359454884058",
+  "facebookPostId": "1516359454884058_122111875449535309",
+  "facebookPermalink": "https://www.facebook.com/122110008351535309/posts/122111875449535309",
+  "facebookFormat": "link_post_to_instagram_reel",
+  "facebookPublishedAt": "2026-11-18T23:22:11Z",
+  "confirmedAt": "2026-11-18T23:24:00Z",
+  "publicationProvider": "Windsor.ai",
+  "publicationReadbackVerified": {
+    "instagram": true,
+    "instagramStory": true,
+    "facebook": true
+  }
 }
