@@ -7,6 +7,8 @@ on:
       - 'media/**/mycar*/editorial.json'
       - 'media/**/mycar*/credits.json'
       - 'media/**/mycar*/*.mp4'
+      - 'scripts/build_mycar_news_feed.py'
+      - '.github/workflows/mycar-news-feed.yml'
   schedule:
     - cron: '40 13,23 * * *' # 08:40 y 18:40 hora de Bogotá
 permissions:
