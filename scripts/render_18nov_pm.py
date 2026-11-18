@@ -184,7 +184,7 @@ def render(brand,config):
  manifest=folder/"slides.txt"
  # Duration of full audio must match frames and natural scene time.
  manifest.write_text("".join(f"file '{p.absolute()}'\nduration {max(.5,t):.6f}\n" for p,t in zip(slides,durations))+f"file '{slides[-1].absolute()}'\n")
- vid=OUT/(brand+"_18_NOV_2026_0800_REEL_PREVIA.mp4")
+ vid=OUT/(brand+"_18_NOV_2026_1800_REEL_CORREGIDO.mp4")
  subprocess.run(["ffmpeg","-y","-v","error","-f","concat","-safe","0","-i",str(manifest),"-i",str(audio/"full.mp3"),
                  "-map","0:v","-map","1:a","-vf","fps=24,format=yuv420p","-c:v","libx264","-preset","veryfast","-crf","24",
                  "-c:a","aac","-b:a","160k","-movflags","+faststart","-shortest",str(vid)],check=True)
