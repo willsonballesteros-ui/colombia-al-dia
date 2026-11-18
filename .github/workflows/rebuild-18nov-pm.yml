@@ -1,0 +1,107 @@
+name: "ORBIUNO | Corregir emisión tarde 18 noviembre: fotos y Salomé"
+on:
+  push:
+    branches: [fix/orbiuno-18nov-pm-salome-fotos]
+    paths:
+      - ".github/workflows/rebuild-18nov-pm.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orbiuno-20261118-pm-corregido
+  cancel-in-progress: false
+
+jobs:
+  producir-corregido:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Obtener versión aprobada de la mañana con corrección de tarde
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar dependencias multimedia
+        run: |
+          python -m pip install --prefer-binary Pillow requests edge-tts
+          command -v ffmpeg
+          command -v ffprobe
+          test -f scripts/generate_voice.py
+      - name: Generar solo el Reel corregido con seis fotos reales
+        run: python scripts/render_18nov_pm.py
+      - name: Control estricto antes de alojar el MP4
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          root=Path('build/pm_18nov')
+          media=root/'ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4'
+          editorial=json.loads((root/'orbiuno/editorial.json').read_text())
+          credits=json.loads((root/'orbiuno/credits.json').read_text())
+          report=json.loads((root/'orbiuno/audio/audio_report.json').read_text())
+          assert len(editorial)==len(credits)==6
+          assert len(set(x['image_title'] for x in credits))==6
+          assert all(x['license'] and x['commons'] and x['author'] and x['source'] for x in credits)
+          assert report['status']=='ok' and report['voice']=='es-CO-SalomeNeural' and report['tempo']==1.25
+          assert len(report['segments'])==8
+          assert len(list((root/'orbiuno').glob('slide-*.jpg')))==8
+          assert media.stat().st_size>500000
+          p=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(media)]))
+          assert 35<float(p['format']['duration'])<140
+          assert any(x.get('codec_name')=='h264' and x.get('width')==1080 and x.get('height')==1920 for x in p['streams'])
+          assert any(x.get('codec_name')=='aac' for x in p['streams'])
+          caption=(root/'ORBIUNO_caption.txt').read_text().lower()
+          assert all(x not in caption for x in ['voz sintética','ef_dora','kokoro','instrucciones internas','pipeline','render'])
+          assert '18 de noviembre de 2026 · 6:00 p. m.' in caption
+          assert caption.count('https://')>=13
+          print('QA_OK',media.stat().st_size,round(float(p['format']['duration']),1),'seconds','6 licensed photos','Salome es-CO 1.25x')
+          PY
+      - name: Guardar copia del video validado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-18NOV-1800-CORREGIDO
+          path: build/pm_18nov
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Alojar archivo corregido sin alterar ni publicar el anterior
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git worktree add -B corregido-pm "$RUNNER_TEMP/orbiuno-corrected" origin/main
+          cd "$RUNNER_TEMP/orbiuno-corrected"
+          target=media/2026-11-18/orbiuno-pm-corregido
+          test ! -e "$target/ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4"
+          mkdir -p "$target/audio"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4" "$target/"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/ORBIUNO_caption.txt" "$target/descripcion.txt"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/orbiuno/"*.jpg "$target/"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/orbiuno/"*.png "$target/" 2>/dev/null || true
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/orbiuno/credits.json" "$target/"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/orbiuno/editorial.json" "$target/"
+          cp "$GITHUB_WORKSPACE/build/pm_18nov/orbiuno/audio/audio_report.json" "$target/audio/"
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          d=Path('media/2026-11-18/orbiuno-pm-corregido')
+          p=d/'ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4'
+          n=json.loads((d/'editorial.json').read_text())
+          c=json.loads((d/'credits.json').read_text())
+          m={'edition':'2026-11-18','slot':'18:00','type':'CORRECCION_VISUAL_Y_VOZ','status':'RENDERED_NOT_META_PUBLISHED',
+             'video':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+             'voice':'es-CO-SalomeNeural','voiceSpeed':1.25,
+             'newsCount':len(n),'imagesCount':len(c),
+             'sources':[x['url'] for x in n], 'credits':[{'author':x['author'],'license':x['license'],'commons':x['commons']} for x in c]}
+          (d/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git add "$target"
+          git commit -m 'ORBIUNO: reel corregido de las 18h con seis fotos y Salome'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
