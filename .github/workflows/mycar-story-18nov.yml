@@ -1,0 +1,33 @@
+name: Portada historia MyCar 18 noviembre
+on:
+  push:
+    branches: [feat/edicion-2026-11-18-0800-orbiuno-mycar]
+    paths:
+      - '.github/workflows/mycar-story-18nov.yml'
+permissions:
+  contents: write
+jobs:
+  portada:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extraer portada exacta del Reel verificado y alojarla
+        run: |
+          set -euo pipefail
+          command -v ffmpeg
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git worktree add -B story-mycar "$RUNNER_TEMP/story-mycar" origin/main
+          cd "$RUNNER_TEMP/story-mycar"
+          video="media/2026-11-18/mycar-am/MYCAR_18_NOV_2026_0800_REEL_PUBLICAR.mp4"
+          cover="media/2026-11-18/mycar-am/slide-00.jpg"
+          test -f "$video" && test ! -f "$cover"
+          ffmpeg -nostdin -v error -ss 0.25 -i "$video" -frames:v 1 -q:v 3 "$cover"
+          test "$(stat -c%s "$cover")" -gt 10000
+          dimensions="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$cover")"
+          test "$dimensions" = "1080,1920"
+          git add "$cover"
+          git commit -m 'MyCar: portada real del Reel de 18 noviembre para Historia'
+          git push origin HEAD:main
