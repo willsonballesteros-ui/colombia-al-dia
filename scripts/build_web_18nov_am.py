@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera página web editorial de ORBIUNO alineada al Reel de las 18:00 (17/11).
+"""Genera página web editorial de ORBIUNO alineada al Reel de las 08:00 (18/11).
 Cada audio reproduce el ARTÍCULO EDITORIAL PROPIO completo, sin recortes.
 """
 import html,json,shutil,subprocess,sys
@@ -17,7 +17,7 @@ h=lambda s:html.escape(str(s),quote=True)
 # Voz Salomé: cada MP3 reproduce exactamente el artículo original que aparece en la web.
 voice_input=OUT/"orbiuno"/"web_articles_input.json"
 full_voice=OUT/"orbiuno"/"web-audio"
-assert all(len(n.get("article",""))>=700 and "\\n\\n" in n["article"] for n in news), "BLOCKED: artículos íntegros insuficientes"
+assert all(len(n.get("article",""))>=700 and "\n\n" in n["article"] for n in news), "BLOCKED: artículos íntegros insuficientes"
 voice_input.write_text(json.dumps({"segments":[{"id":f"n{i:02d}","text":n["article"]} for i,n in enumerate(news,1)]},ensure_ascii=False,indent=2),encoding="utf-8")
 subprocess.run([sys.executable,str(ROOT/"scripts"/"generate_voice.py"),"--input",str(voice_input),"--out",str(full_voice)],check=True)
 audio_report=json.loads((full_voice/"audio_report.json").read_text(encoding="utf-8"))
@@ -30,7 +30,7 @@ for i,(n,c) in enumerate(zip(news,credits),1):
     photo=rel+c["image_file"]
     audio=rel+"web-audio/n%02d.mp3"%i
     icon=(f'<img class="source-icon" src="{h(rel+c["source_icon"])}" alt="Icono de {h(n["source"])}">' if c.get("source_icon") else "")
-    article_html="".join("<p>"+h(p)+"</p>" for p in n["article"].split("\\n\\n") if p.strip())
+    article_html="".join("<p>"+h(p)+"</p>" for p in n["article"].split("\n\n") if p.strip())
     parts.append(f'''<article class="news" id="noticia-{i}">
 <div class="photo"><img loading="lazy" src="{h(photo)}" alt="Fotografía de contexto verificada para {h(n["title"])}"></div>
 <div class="story"><span class="kicker">NOTICIA {i} DE 6 · 18 NOV 2026</span>
