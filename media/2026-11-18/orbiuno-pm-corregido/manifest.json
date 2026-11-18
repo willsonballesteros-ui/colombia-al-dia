@@ -1,0 +1,52 @@
+{
+  "edition": "2026-11-18",
+  "slot": "18:00",
+  "type": "CORRECCION_VISUAL_Y_VOZ",
+  "status": "RENDERED_NOT_META_PUBLISHED",
+  "video": "ORBIUNO_18_NOV_2026_1800_REEL_CORREGIDO.mp4",
+  "sha256": "da8f33d67a828c588d9fa10a8c0d0a982112c05c90928570fdabc2622b88e4fd",
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "newsCount": 6,
+  "imagesCount": 6,
+  "sources": [
+    "https://www.rainforesttrust.org/our-impact/rainforest-news/rainforest-trust-announces-15-million-commitment-to-advance-conservation-in-colombia/",
+    "https://www.radionacional.co/actualidad/educacion/icetex-deuda",
+    "https://efe.com/mundo/2026-11-18/reunion-trump-sheinbaum-carney/",
+    "https://www.reuters.com/world/india/india-sees-better-growth-prospects-compared-start-year-chief-economic-adviser-2026-11-18/",
+    "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/watch-live-hera-s-first-images-of-post-impact-asteroid-dimorphos",
+    "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+  ],
+  "credits": [
+    {
+      "author": "Juandareina",
+      "license": "CC BY 4.0",
+      "commons": "https://commons.wikimedia.org/wiki/File:Selva_húmeda_tropical_de_Guapi.jpg"
+    },
+    {
+      "author": "Rojasyesid",
+      "license": "CC BY-SA 4.0",
+      "commons": "https://commons.wikimedia.org/wiki/File:Icetex.jpg"
+    },
+    {
+      "author": "U.S. Department of State",
+      "license": "Public domain",
+      "commons": "https://commons.wikimedia.org/wiki/File:FIFA_World_Cup_2026_Official_Draw_(54966258098).jpg"
+    },
+    {
+      "author": "Niyantha Shekhar",
+      "license": "CC BY 2.0",
+      "commons": "https://commons.wikimedia.org/wiki/File:BSE_-_Bombay_Stock_Exchange_Building.jpg"
+    },
+    {
+      "author": "National Aeronautics and Space Administration",
+      "license": "Public domain",
+      "commons": "https://commons.wikimedia.org/wiki/File:Dimorphos_high_res_image.jpg"
+    },
+    {
+      "author": "NASA/JPL/California Institute of Technology",
+      "license": "Public domain",
+      "commons": "https://commons.wikimedia.org/wiki/File:Andromeda_galaxy.jpg"
+    }
+  ]
+}
