@@ -326,9 +326,11 @@ const cardHTML=x=>{
  const fullAllowed=hasCompleteAudio(x);
  const sourceUrl=main?esc(main.url):'';
  const sourceName=main?esc(main.name):'';
+ const reportText=hasOriginalOrbiunoArticle(x)
+  ?x.originalArticleTextEs:x.audioFullTextEs;
  const longReport=x.verification==='editorial_verified'&&
-  typeof x.audioFullTextEs==='string'&&(hasOriginalOrbiunoArticle(x)||x.audioFullTextEs.trim().split(/\s+/u).length>=110)
-  ?x.audioFullTextEs.trim():'';
+  typeof reportText==='string'&&(hasOriginalOrbiunoArticle(x)||reportText.trim().split(/\s+/u).length>=110)
+  ?reportText.trim():'';
  const label=fullAllowed?'Escuchar completo':longReport?'Escuchar noticia':'Escuchar resumen';
  const transcript=longReport?'<details class="news-transcript"><summary>Leer noticia desarrollada</summary>'+longReport.split(/\n\n/u).map(p=>'<p>'+esc(p)+'</p>').join('')+'</details>':'';
  const controls='<button class="listen-btn" type="button" data-tts-action="toggle" data-tts-full="'+(fullAllowed?'true':'false')+'" data-tts-id="'+esc(x.id)+'" aria-label="'+label+'" aria-pressed="false" title="'+(hasOriginalOrbiunoArticle(x)?'Escuchar artículo íntegro de ORBIUNO':(fullAllowed?'Escuchar artículo íntegro autorizado':'Escuchar el resumen sin salir de ORBIUNO'))+'">▶ '+label+'</button>'
