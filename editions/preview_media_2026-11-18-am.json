@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-18",
+  "slot": "08:00",
+  "orbiuno": {
+    "cover": {
+      "title": "¡Voyager 1: un día luz de la Tierra!",
+      "news_index": 0
+    },
+    "intro": "Buenos días. Estas son seis noticias de Colombia y del mundo en ORBIUNO.",
+    "outro": "Escucha el desarrollo de cada noticia y consulta sus fuentes originales en colombia al día punto pages punto dev. Comparte este resumen.",
+    "news": [
+      {
+        "title": "¡Voyager 1 habría alcanzado un día luz de distancia!",
+        "source": "NASA / REUTERS",
+        "url": "https://www.reuters.com/science/nasa-voyager-1-probe-believed-have-reached-light-day-milestone-2026-11-18/",
+        "image_query": "NASA Voyager 1 spacecraft photo",
+        "say": "La sonda Voyager uno habría alcanzado una distancia histórica: un día luz de la Tierra. Según cálculos de la NASA, ninguna otra nave humana había llegado tan lejos. La señal tarda casi veinticuatro horas en viajar en una sola dirección."
+      },
+      {
+        "title": "Vacuna experimental muestra avances contra la leucemia",
+        "source": "MEMORIAL SLOAN KETTERING",
+        "url": "https://www.mskcc.org/news/vaccine-improves-survival-in-people-with-acute-myeloid-leukemia-aml",
+        "image_query": "acute myeloid leukemia microscopy",
+        "say": "Una vacuna experimental contra la leucemia mieloide aguda mostró una mejora significativa de supervivencia en un ensayo clínico de fase tres. Fue estudiada en pacientes que habían logrado una nueva remisión. Aún requiere evaluación regulatoria; no está aprobada para todos."
+      },
+      {
+        "title": "Colombia empató con Chile y terminó su año futbolístico",
+        "source": "CARACOL RADIO",
+        "url": "https://caracol.com.co/2026/11/18/colombia-empata-con-chile-preocupacion-por-las-lesiones-de-gustavo-puerta-y-davinson-sanchez/",
+        "image_query": "Colombia national football team players",
+        "say": "Colombia empató cero a cero con Chile en Santiago y cerró sus amistosos internacionales del año. Luis Javier Suárez desperdició un penalti y las lesiones de Gustavo Puerta y Dávinson Sánchez generan preocupación."
+      },
+      {
+        "title": "Bogotá inicia pagos a más de 190 mil hogares",
+        "source": "BOGOTÁ.GOV.CO",
+        "url": "https://bogota.gov.co/mi-ciudad/integracion-social/2026-11/inician-pagos-ingreso-minimo-garantizado-en-bogota-de-noviembre-2026",
+        "image_query": "Bogota panorama skyline",
+        "say": "En Bogotá iniciaron los pagos de noviembre del Ingreso Mínimo Garantizado. Más de ciento noventa mil hogares recibirán transferencias en distintos componentes, con una inversión distrital superior a cuarenta y cinco mil millones de pesos. Los pagos son escalonados."
+      },
+      {
+        "title": "California prepara un gran puente para la fauna",
+        "source": "ASSOCIATED PRESS",
+        "url": "https://apnews.com/article/af2a0788528d85d6624c5b78b0fe427c",
+        "image_query": "Wallis Annenberg wildlife crossing California",
+        "say": "Sobre una autopista de Los Ángeles se prepara para abrir uno de los mayores pasos de fauna silvestre del mundo. El puente, cubierto de vegetación nativa, facilitará el desplazamiento de animales y busca reducir sus riesgos al cruzar la carretera."
+      },
+      {
+        "title": "Trump llega a China ante una importante cita diplomática",
+        "source": "ASSOCIATED PRESS",
+        "url": "https://apnews.com/article/trump-xi-marcos-apec-china-philippines-3fc8110f4b4414bfb2c03596f61da862",
+        "image_query": "Trump Xi Jinping China official meeting",
+        "say": "El presidente estadounidense Donald Trump llegó a China antes de una reunión prevista con sus homólogos de China y Rusia. Su visita ocurre en medio de fallas tecnológicas registradas en Estados Unidos y debates sobre cooperación y seguridad."
+      }
+    ]
+  },
+  "mycar": {
+    "cover": {
+      "title": "¡Denza confirma su llegada a Colombia!",
+      "news_index": 0
+    },
+    "intro": "Buenos días. MyCar al Día presenta cuatro novedades verificadas del mundo automotor.",
+    "outro": "Para conocer noticias y encontrar vehículos visita busco autos punto pages punto dev. Compártelo con quien ama los carros.",
+    "news": [
+      {
+        "title": "Denza se prepara para llegar a Colombia en 2027",
+        "source": "EL CARRO COLOMBIANO",
+        "url": "https://www.elcarrocolombiano.com/lanzamientos/denza-colombia-modelos-precios-b5-z9gt-marca-lujo-byd/",
+        "image_query": "Denza Z9 GT 2025 electric car",
+        "say": "Denza, la marca de lujo del grupo BYD, confirmó su llegada a Colombia para febrero de dos mil veintisiete. Presentó los modelos B cinco, una camioneta híbrida enchufable, y Z nueve ge te, un deportivo eléctrico de lujo."
+      },
+      {
+        "title": "BYD Sealion 7 anuncia 440 kilómetros de autonomía",
+        "source": "AUTOCOSMOS COLOMBIA",
+        "url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+        "image_query": "BYD Sealion 7 electric SUV",
+        "say": "La nueva BYD Sealion siete, de tracción trasera, llega al mercado colombiano con doscientos veintiocho caballos, batería Blade y hasta cuatrocientos cuarenta kilómetros bajo ciclo W L T C. Su precio inicial anunciado es de ciento dieciséis millones novecientos noventa mil pesos."
+      },
+      {
+        "title": "Nueve de cada diez Renault Kwid colombianos se exportan",
+        "source": "EL CARRO COLOMBIANO",
+        "url": "https://www.elcarrocolombiano.com/industria/renault-kwid-2027-hecho-en-colombia-envigado-exportacion/",
+        "image_query": "Renault Kwid automobile real photograph",
+        "say": "La planta Renault Sofasa de Envigado exporta cerca del noventa por ciento de los Kwid que fabrica hacia otros países latinoamericanos, según la compañía. El modelo dos mil veintisiete incorpora mejoras y continúa mostrando el talento industrial colombiano."
+      },
+      {
+        "title": "El nuevo BMW X5 se presenta en Colombia con 400 caballos",
+        "source": "EL CARRO COLOMBIANO",
+        "url": "https://www.elcarrocolombiano.com/lanzamientos/bmw-x5-2027-colombia-lanzamiento-precio-caracteristicas/",
+        "image_query": "BMW X5 SUV 2025 archive",
+        "say": "BMW presentó la nueva generación de su equis cinco para Colombia. Inicialmente llega con motor de seis cilindros, tecnología microhíbrida de cuarenta y ocho voltios y cuatrocientos caballos de potencia. La imagen de archivo muestra la generación anterior del modelo."
+      }
+    ]
+  }
+}
