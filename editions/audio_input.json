@@ -1,0 +1,40 @@
+{
+  "segments": [
+    {
+      "id": "saludo",
+      "text": "Buenos días. ORBIUNO Noticias presenta seis historias verificadas de Colombia y el mundo. Esta es nuestra edición de la mañana."
+    },
+    {
+      "id": "n01",
+      "text": "ICETEX ofrece becas para estudiar maestrías virtuales en España. Revisa los requisitos, el descuento de matrícula y las fechas oficiales."
+    },
+    {
+      "id": "n02",
+      "text": "Investigadores colombianos analizan con inteligencia artificial los virus asociados al dengue en el Atlántico y sus complicaciones."
+    },
+    {
+      "id": "n03",
+      "text": "En Puerto Rico, miles de baterías instaladas en viviendas apoyan la red eléctrica y ayudan a reducir el impacto de los apagones."
+    },
+    {
+      "id": "n04",
+      "text": "Florida estudia paneles solares flotantes en estanques de agua lluvia para generar electricidad sin ocupar nuevos terrenos."
+    },
+    {
+      "id": "n05",
+      "text": "Un nuevo estudio relaciona una variante del ADN neandertal con diferencias en el cerebro y con el riesgo estadístico de esquizofrenia."
+    },
+    {
+      "id": "n06",
+      "text": "En California nacieron decenas de tortugas marinas en nidos registrados por primera vez en esa costa. Las crías fueron liberadas al mar."
+    },
+    {
+      "id": "despedida",
+      "text": "Gracias por informarte con ORBIUNO. Escucha las seis noticias completas y revisa todas las fuentes en colombia al día punto pages punto dev."
+    }
+  ],
+  "metadata": {
+    "type": "voice_preview_only",
+    "publication_allowed": false
+  }
+}

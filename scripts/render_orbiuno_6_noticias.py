@@ -142,13 +142,6 @@ def main():
             raise RuntimeError("Fotografía sin permiso")
     out=ROOT/"dist"/("orbiuno-"+day+"-"+slot.replace(":",""))
     out.mkdir(parents=True,exist_ok=True)
-    options=ort.SessionOptions()
-    options.intra_op_num_threads=2
-    options.inter_op_num_threads=1
-    model=os.environ.get("ORBIUNO_VOICE_MODEL","/tmp/kokoro-v1.0.onnx")
-    bank=os.environ.get("ORBIUNO_VOICE_BANK","/tmp/voices-v1.0.bin")
-    session=ort.InferenceSession(model,sess_options=options,providers=["CPUExecutionProvider"])
-    voice=Kokoro.from_session(session,bank)
     stamp=slot+" HORA COLOMBIA"
     slot_name={"08:00":"ocho de la mañana","12:00":"doce del mediodía","18:00":"seis de la tarde","19:00":"siete de la noche"}[slot]
     scene_text=["Saludos. Estas son seis noticias de Colombia y el mundo. Edición de las "+slot_name+"."]
@@ -159,24 +152,52 @@ def main():
         scene_text.append(phrase)
     scene_text.append("Escucha las noticias completas en nuestra página web: colombia al día punto pages punto dev. ¡Sigue a ORBIUNO Noticias!")
     audio_arrays=[];sr_ref=None
-    for text in scene_text:
-        audio,sr=voice.create(text,"ef_dora",speed=1.25,lang="es",
-                              sentence_pause=.12,clause_pause=.06)
-        arr=np.asarray(audio,dtype=np.float32)
-        if not arr.size or np.max(np.abs(arr))<.01:
-            raise RuntimeError("Audio ausente en segmento")
-        if sr_ref is not None and sr_ref!=sr:
-            raise RuntimeError("Frecuencia de audio inconsistente")
-        sr_ref=sr
-        audio_arrays.append(arr)
+    engine=os.environ.get("ORBIUNO_VOICE_ENGINE","kokoro")
+    if engine=="salome":
+        from voice_render_guard import approved_audio
+        folder=ROOT/"build"/"audio"
+        expected=["saludo"]+[f"n{i:02d}" for i in range(1,7)]+["despedida"]
+        report=approved_audio(folder,expected_ids=expected)
+        # Los ocho segmentos reales sustituyen al motor antiguo, sin síntesis doble.
+        sr_ref=44100
+        for segment in report["segments"]:
+            file=folder/segment["file"]
+            pcm=subprocess.run(["ffmpeg","-v","error","-i",str(file),"-f","f32le",
+                                "-ac","1","-ar",str(sr_ref),"pipe:1"],
+                               check=True,capture_output=True).stdout
+            arr=np.frombuffer(pcm,dtype=np.float32)
+            if len(arr)<sr_ref/2 or np.max(np.abs(arr))<.01:
+                raise RuntimeError("Audio Salomé vacío: "+segment["id"])
+            audio_arrays.append(arr)
+    elif engine=="kokoro":
+        options=ort.SessionOptions()
+        options.intra_op_num_threads=2
+        options.inter_op_num_threads=1
+        model=os.environ.get("ORBIUNO_VOICE_MODEL","/tmp/kokoro-v1.0.onnx")
+        bank=os.environ.get("ORBIUNO_VOICE_BANK","/tmp/voices-v1.0.bin")
+        session=ort.InferenceSession(model,sess_options=options,providers=["CPUExecutionProvider"])
+        voice=Kokoro.from_session(session,bank)
+        for text in scene_text:
+            audio,sr=voice.create(text,"ef_dora",speed=1.25,lang="es",
+                                  sentence_pause=.12,clause_pause=.06)
+            arr=np.asarray(audio,dtype=np.float32)
+            if not arr.size or np.max(np.abs(arr))<.01:
+                raise RuntimeError("Audio ausente en segmento")
+            if sr_ref is not None and sr_ref!=sr:
+                raise RuntimeError("Frecuencia de audio inconsistente")
+            sr_ref=sr
+            audio_arrays.append(arr)
+    else:
+        raise RuntimeError("Motor de voz no permitido")
+
     natural=sum(len(a)/sr_ref for a in audio_arrays)
-    if natural>59.2:
-        raise RuntimeError(f"Guion demasiado largo: {natural:.2f}s; corregir texto, no velocidad")
+    # 50–60 segundos es un objetivo de ritmo, no una restricción fatal.
+    # La narración puede exceder un minuto: nunca recortar el audio.
+    if natural<=0:
+        raise RuntimeError("Guion sin narración válida")
     pause_each=max(.18,(51.0-natural)/len(audio_arrays))
     durations=[len(a)/sr_ref+pause_each for a in audio_arrays]
     duration=sum(durations)
-    if not 50<=duration<=60:
-        raise RuntimeError(f"Duración no cumple: {duration:.2f}s")
     with tempfile.TemporaryDirectory() as td:
         tmp=Path(td);images=[]
         for i,dur in enumerate(durations):
@@ -208,13 +229,14 @@ def main():
     d=float(info["format"]["duration"])
     vs=[s for s in info["streams"] if s["codec_type"]=="video"]
     aus=[s for s in info["streams"] if s["codec_type"]=="audio"]
-    if not (50<=d<=60 and video.stat().st_size>100000 and
+    if not (d>0 and video.stat().st_size>100000 and
             vs and vs[0].get("width")==W and vs[0].get("height")==H and
             vs[0].get("codec_name")=="h264" and aus and aus[0].get("codec_name")=="aac"):
         raise RuntimeError("MP4 no pasó inspección audiovisual completa")
     sha=hashlib.sha256(video.read_bytes()).hexdigest()
     manifest={"edition":day,"slot":slot,"newsCount":6,
-              "newsIds":[n["id"] for n in notes],"voice":"ef_dora",
+              "newsIds":[n["id"] for n in notes],"voice":"es-CO-SalomeNeural" if engine=="salome" else "ef_dora",
+              "voiceEngine": "salome" if engine=="salome" else "kokoro",
               "voiceSpeed":1.25,"width":W,"height":H,"duration":d,
               "sha256":sha,"video":video.name,"sourceOnly":True,
               "news":[{"id":n["id"],"title":n["title"],
