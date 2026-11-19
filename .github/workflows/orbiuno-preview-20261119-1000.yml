@@ -1,0 +1,75 @@
+name: "ORBIUNO | PREVIA 19 nov 10:00 · seis noticias (no publicar)"
+on:
+  push:
+    branches:
+      - preview/orbiuno-20261119-1000
+    paths:
+      - .github/workflows/orbiuno-preview-20261119-1000.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-preview-20261119-1000-only
+  cancel-in-progress: false
+jobs:
+  previo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --prefer-binary Pillow requests edge-tts
+          python -m py_compile scripts/generate_voice.py scripts/render_orbiuno_19nov_6_preview.py
+      - name: Renderizar SOLO vista previa
+        run: python scripts/render_orbiuno_19nov_6_preview.py
+      - name: QA seis fotos, voz Salomé, audio y MP4
+        run: |
+          python - <<'PY'
+          import json, subprocess, hashlib
+          from pathlib import Path
+          d=Path('build/orbiuno_19nov6')
+          p=d/'ORBIUNO_19_NOV_2026_1000_6_NOTICIAS.mp4'
+          report=json.loads((d/'orbiuno/audio/audio_report.json').read_text())
+          news=json.loads((d/'orbiuno/editorial.json').read_text())
+          photos=json.loads((d/'orbiuno/credits.json').read_text())
+          assert len(news)==len(photos)==6
+          assert len({n['url'] for n in news})==6
+          assert report['voice']=='es-CO-SalomeNeural' and report['tempo']==1.25 and report['status']=='ok'
+          assert len(report['segments'])==8
+          assert len(list((d/'orbiuno').glob('slide-*.jpg')))==8
+          assert all(x['license'] and x['author'] and 'commons.wikimedia.org/wiki/File:' in x['commons'] for x in photos)
+          data=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1080 and s.get('height')==1920 for s in data['streams'])
+          assert any(s.get('codec_name')=='aac' for s in data['streams'])
+          assert p.stat().st_size>300000
+          print('ORBIUNO_PREVIEW_QA_PASS',hashlib.sha256(p.read_bytes()).hexdigest(),data['format']['duration'])
+          PY
+      - name: Guardar PREVIA en rama aislada, nunca a main ni Meta
+        run: |
+          test "$GITHUB_REF_NAME" = "preview/orbiuno-20261119-1000"
+          mkdir -p previews/2026-11-19/orbiuno-1000-6
+          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1000_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1000-6/
+          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1000-6/
+          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1000-6/
+          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1000-6/
+          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1000-6/
+          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1000-6/
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add previews/2026-11-19/orbiuno-1000-6
+          git commit -m 'preview ORBIUNO 19 nov 10am, no publicado'
+          git push origin HEAD:preview/orbiuno-20261119-1000
+      - name: Archivo de revisión descargable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-19NOV-1000-6-PREVIA
+          path: build/orbiuno_19nov6/
+          retention-days: 14
+          if-no-files-found: warn
