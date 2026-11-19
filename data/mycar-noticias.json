@@ -5,6 +5,66 @@
   "updated_date": "2026-11-19",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-18-PM-5",
+      "date": "2026-11-18",
+      "slot": "Noche",
+      "title": "MINI lanza Cooper Paul Smith y Oxford en Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-18/mycar-pm-5/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "MINI lanza Cooper Paul Smith y Oxford en Colombia",
+          "summary": "MINI presentó en Bogotá dos ediciones especiales del Cooper. La versión Paul Smith tendrá quince unidades para Colombia, mientras que las tres unidades Oxford ya encontraron comprador.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/mini-cooper-paul-smith-oxford-edition-colombia-precio-unidades/",
+          "image_file_title": "File:Mini Hatch (F65) Paul Smith Edition Pro Auto Zuerich 2026 IMG 9161.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Mini_Hatch_(F65)_Paul_Smith_Edition_Pro_Auto_Zuerich_2026_IMG_9161.jpg"
+        },
+        {
+          "title": "Deepal S09 inicia preventa en Colombia",
+          "summary": "Deepal exhibe en Bogotá la S cero nueve, una camioneta con seis puestos, sistema de rango extendido, tracción integral y casi quinientos caballos de potencia.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/deepal-s09-colombia-precio-preventa-ficha-tecnica-suv/",
+          "image_file_title": "File:Deepal S09 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Deepal_S09_001.jpg"
+        },
+        {
+          "title": "Lynk & Co 01 debuta como híbrido enchufable",
+          "summary": "Lynk y Co debutó en Colombia con la SUV cero uno. Ofrece un sistema híbrido enchufable y una potencia combinada de doscientos setenta y siete caballos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/lynk-and-co-01-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:Lynk & Co 01 154924.jpg",
+          "photo_credit": "Trop86",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Lynk_&_Co_01_154924.jpg"
+        },
+        {
+          "title": "Jetour T2 híbrido 4x4 llega a Colombia",
+          "summary": "Jetour presentó la T dos híbrida con tracción cuatro por cuatro. Su ficha técnica anuncia seiscientos caballos de potencia conjunta y nuevos recursos para conducir fuera del asfalto.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/jetour-t2-4x4-colombia-precio-caracteristicas/",
+          "image_file_title": "File:Front view of Jetour T2 i-DM during GIIAS 2026 in Bandung 20260911 195917.jpg",
+          "photo_credit": "M Raisfath",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Front_view_of_Jetour_T2_i-DM_during_GIIAS_2026_in_Bandung_20260911_195917.jpg"
+        },
+        {
+          "title": "Carros eléctricos crecen más del 60 % en Europa",
+          "summary": "Las matriculaciones de carros totalmente eléctricos en dieciocho mercados europeos aumentaron más del sesenta por ciento en octubre frente al año anterior, informó Reuters.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/markets/europe/europe-ev-sales-jump-october-high-oil-prices-subsidies-fuel-demand-2026-11-18/",
+          "image_file_title": "File:Elektroauto beim Laden.jpg",
+          "photo_credit": "Wega14",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Elektroauto_beim_Laden.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-18-AM",
       "date": "2026-11-18",
       "slot": "08:00",
