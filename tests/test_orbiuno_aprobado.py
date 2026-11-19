@@ -56,7 +56,7 @@ def build_fixture(tmp):
     news, credits, web = [], [], {"items": {}}
     for i in range(1, 7):
         id_ = "n" + str(i)
-        text = "Artículo propio completo " * 100
+        text = ("Artículo propio completo " * 100).strip()
         Image.new("RGB", (1000, 800), (100+i, 110, 130)).save(tmp / f"photo-{i:02}.jpg")
         logo = Image.new("RGB", (100, 100), (255, 255, 255))
         for xx in range(100):
