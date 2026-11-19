@@ -39,6 +39,7 @@ def validate(manifest: dict, *, folder: Path, assets: Path, news: dict, webvoice
         icon = assets / f"logo-{i:02}.png"
         if not icon.is_file() or icon.stat().st_size < 150:
             errors.append("missing_source_icon_" + str(i))
+            errors.append("missing_visual_asset_" + str(i))  # backwards-compatible fail-closed gate
         else:
             from PIL import Image, UnidentifiedImageError
             try:
