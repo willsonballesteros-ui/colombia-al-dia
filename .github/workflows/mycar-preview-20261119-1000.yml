@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: mycar-preview-20261119-1000-apt-refresh-v3
+  group: mycar-preview-17h-fast-v2
   cancel-in-progress: false
 jobs:
   previo:
@@ -20,11 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Preparar dependencias
+      - name: Preparar dependencias rápido, sin apt-get update
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install --prefer-binary Pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get install -y -qq ffmpeg
+          fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          python -m pip install --disable-pip-version-check --timeout 20 --retries 1 --prefer-binary Pillow requests edge-tts
           python -m py_compile scripts/generate_voice.py scripts/render_mycar_19nov_5_preview.py
       - name: Renderizar SOLO vista previa
         run: python scripts/render_mycar_19nov_5_preview.py
@@ -53,16 +55,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main o Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/mycar-20261119-1700"
-          mkdir -p previews/2026-11-19/mycar-1700-5
-          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5/
-          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5/
-          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5/
-          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5/
-          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5/
-          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5/
+          mkdir -p previews/2026-11-19/mycar-1700-5-fast
+          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5-fast/
+          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5-fast/
+          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5-fast/
+          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5-fast/
+          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5-fast/
+          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5-fast/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/mycar-1700-5
+          git add previews/2026-11-19/mycar-1700-5-fast
           git commit -m 'preview MyCar 19 nov 17h, no publicado'
           git fetch origin preview/mycar-20261119-1700
           git rebase origin/preview/mycar-20261119-1700
@@ -75,3 +77,5 @@ jobs:
           path: build/mycar_19nov5/
           retention-days: 14
           if-no-files-found: warn
+
+# Reejecución segura V2: sin modificar main ni publicar Meta.
