@@ -4,6 +4,15 @@ on:
   push:
     branches: [main]
     paths: ['editions/daily/*.json']
+  pull_request:
+    paths:
+      - 'scripts/orbiuno_media_assets.py'
+      - 'scripts/generate_web_voice_colombia.py'
+      - 'scripts/render_orbiuno_aprobado.py'
+      - 'scripts/orbiuno_qa_aprobado.py'
+      - 'scripts/orbiuno_daily_preflight.py'
+      - 'tests/test_orbiuno_aprobado.py'
+      - '.github/workflows/orbiuno-edicion-diaria.yml'
   workflow_dispatch:
     inputs:
       edition_file:
@@ -19,7 +28,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  verificacion_pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Pruebas adversariales aisladas, sin publicar
+        run: |
+          python -m pip install Pillow
+          PYTHONPATH=. python -m unittest -v tests.test_orbiuno_aprobado
+          python -m py_compile scripts/orbiuno_media_assets.py scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/generate_web_voice_colombia.py
+
   producir:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 85
     steps:
@@ -70,58 +98,53 @@ jobs:
         env:
           FILE: '${{ steps.edition.outputs.path }}'
         run: |
-          python -m unittest discover -s tests -p 'test_*.py'
+          python -m pip install Pillow
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'
           python scripts/orbiuno_import_daily.py --edition "$FILE"
           python scripts/validate_news.py noticias.json
-          python -m py_compile scripts/render_orbiuno_6_noticias.py scripts/orbiuno_daily_preflight.py
+          python -m py_compile scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/orbiuno_daily_preflight.py
 
       - name: Instalar voz y ffmpeg
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install kokoro-onnx==0.6.1 numpy Pillow soundfile onnxruntime
+          python -m pip install Pillow edge-tts
 
-      - name: Modelos oficiales y hash fijo
+      - name: Obtener y comprobar las seis fotos reales y logos oficiales
+        env:
+          FILE: '${{ steps.edition.outputs.path }}'
+          DAY: '${{ steps.edition.outputs.day }}'
+          STAMP: '${{ steps.edition.outputs.stamp }}'
         run: |
-          set -euo pipefail
-          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx -o /tmp/kokoro-v1.0.onnx
-          curl --fail --location --retry 3 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin -o /tmp/voices-v1.0.bin
-          echo '7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5  /tmp/kokoro-v1.0.onnx' | sha256sum --check
-          echo 'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d  /tmp/voices-v1.0.bin' | sha256sum --check
+          PYTHONPATH=. python scripts/orbiuno_media_assets.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
 
-      - name: Generar voz de articulos completos y actualizar web
+      - name: Generar la voz Salome es-CO 1.25x para articulos completos y actualizar web
+        env:
+          DAY: '${{ steps.edition.outputs.day }}'
+          SLOT: '${{ steps.edition.outputs.slot }}'
         run: |
-          python scripts/generate_web_voice.py
+          PYTHONPATH=. python scripts/generate_web_voice_colombia.py --day "$DAY" --slot "$SLOT" --news noticias.json
           python scripts/prepare_site.py
           python scripts/build_feed.py
 
-      - name: Renderizar seis laminas y portada con fecha y hora
+      - name: Renderizar seis laminas con fotos reales y Salome, sin limite de 60 segundos
         env:
-          ORBIUNO_EDITION_DATE: '${{ steps.edition.outputs.day }}'
-          ORBIUNO_EDITION_SLOT: '${{ steps.edition.outputs.slot }}'
-        run: python scripts/render_orbiuno_6_noticias.py
+          DAY: '${{ steps.edition.outputs.day }}'
+          SLOT: '${{ steps.edition.outputs.slot }}'
+          STAMP: '${{ steps.edition.outputs.stamp }}'
+        run: |
+          python scripts/render_orbiuno_aprobado.py --day "$DAY" --slot "$SLOT" --assets "media/$DAY/${STAMP}_assets" --out "dist/orbiuno-$DAY-$STAMP"
 
-      - name: Comprobar MP4, audio, duracion e integridad
+      - name: BLOQUEO DURO - fotos, logos, voz, web completa, MP4 y SHA
         env:
           DAY: '${{ steps.edition.outputs.day }}'
           STAMP: '${{ steps.edition.outputs.stamp }}'
         run: |
-          python - <<'PY'
-          import hashlib,json,os,subprocess
-          from pathlib import Path
-          day=os.environ['DAY'];stamp=os.environ['STAMP']
-          out=Path('dist')/('orbiuno-'+day+'-'+stamp)
-          m=json.loads((out/'manifest.json').read_text(encoding='utf-8'))
-          p=out/m['video']
-          assert m['edition']==day and m['slot'].replace(':','')==stamp
-          assert m['newsCount']==6 and len(set(m['newsIds']))==6
-          assert m['voice']=='ef_dora' and m['voiceSpeed']==1.25 and 50<=m['duration']<=60
-          assert p.stat().st_size>100000 and hashlib.sha256(p.read_bytes()).hexdigest()==m['sha256']
-          info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_name,width,height','-of','json',str(p)]))
-          assert any(x.get('codec_name')=='h264' and x.get('width')==1080 and x.get('height')==1920 for x in info['streams'])
-          assert any(x.get('codec_name')=='aac' for x in info['streams'])
-          print('MP4_VALIDATED',p,m['duration'],m['sha256'])
-          PY
+          PYTHONPATH=. python scripts/orbiuno_qa_aprobado.py \
+            --manifest "dist/orbiuno-$DAY-$STAMP/manifest.json" \
+            --assets "media/$DAY/${STAMP}_assets" \
+            --news noticias.json \
+            --webvoice media/web-voice/manifest.json
 
       - name: Guardar sin tocar videos anteriores
         env:
