@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verificar pruebas sin Meta ni publicaciones
-        run: python -m unittest discover -s tests -p 'test_*.py' -v
+        run: |
+          python -m pip install Pillow
+          python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Completar metadatos de idioma como hace el flujo de producción
         run: python scripts/prepare_audio.py noticias.json
       - name: Validar datos editoriales
