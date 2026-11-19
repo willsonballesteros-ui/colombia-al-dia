@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Colombia busca US$500 millones del BID para impulsar el agro",
+    "source": "MINAGRICULTURA",
+    "url": "https://www.minagricultura.gov.co/el-ministerio/sala-de-p/noticias/colombia-gestiona-us500-millones-con-el-bid-para-impulsar-la-palma-de-aceite-y-fortalecer-nuevas-apuestas-productivas-del-campo",
+    "say": "Colombia gestiona con el Banco Interamericano de Desarrollo una financiación de quinientos millones de dólares para apoyar la palma de aceite y otras actividades productivas del campo. El anuncio es una gestión en curso, no un desembolso confirmado.",
+    "image_query": "File:Photo of an oil plam plantation.jpg"
+  },
+  {
+    "title": "Colombia anuncia alianzas de inversión para innovación médica",
+    "source": "INVIMA",
+    "url": "https://www.invima.gov.co/blog/sala-de-prensa-13/milagro-week-en-nueva-york-colombia-atrae-nuevas-inversiones-y-alianzas-para-fortalecer-la-salud-y-acelerar-la-innovacion-medica-687",
+    "say": "En Nueva York, Colombia presentó avances de alianzas e interés de inversión para fortalecer la investigación clínica, los servicios médicos y la innovación. Los acuerdos anunciados están sujetos a futuras etapas de ejecución.",
+    "image_query": "File:Laboratory Microscope.jpg"
+  },
+  {
+    "title": "Un mapa de obras de Bogotá representará a Colombia en premios mundiales",
+    "source": "CONTRALORÍA",
+    "url": "https://contraloriabogota.gov.co/noticias/el-mapa-interactivo-del-programa-vamos-la-obra-valo-proyecto-ganador-para-representar",
+    "say": "El mapa interactivo Vamos a la Obra, de la Contraloría de Bogotá, fue seleccionado para representar a Colombia en los World Summit Awards. La herramienta permite consultar y seguir proyectos de infraestructura de la capital.",
+    "image_query": "File:Bogotà - skyline.jpg"
+  },
+  {
+    "title": "COP31 suma compromisos voluntarios para ampliar la electrificación",
+    "source": "REUTERS",
+    "url": "https://www.reuters.com/sustainability/cop31-split-over-fossil-fuels-ai-electrification-2026-11-19/",
+    "say": "En la cumbre climática de Antalya, más de treinta países se han adherido a un compromiso voluntario para aumentar la electrificación. Los negociadores mantienen diferencias sobre los combustibles fósiles y el alcance del acuerdo final.",
+    "image_query": "File:Solar Panel Farm.jpg"
+  },
+  {
+    "title": "Voyager 1 supera un día luz de distancia; NASA espera confirmar señales",
+    "source": "NASA",
+    "url": "https://science.nasa.gov/blogs/voyager/2026/11/18/voyager-1-engineers-analyze-data-issue-ready-to-confirm-light-day/",
+    "say": "Voyager uno alcanzó una distancia de la Tierra equivalente a la que recorre la luz en veinticuatro horas. La NASA sigue analizando una interrupción de datos de la sonda mientras espera confirmar la señal de este hito histórico.",
+    "image_query": "File:NASA's Voyager 1 Spacecraft Light-Day (NHQ202611170012).jpg"
+  },
+  {
+    "title": "La NASA encuentra pistas de hielo antiguo más allá de Neptuno",
+    "source": "NASA",
+    "url": "https://science.nasa.gov/blogs/science-news/2026/11/18/nasa-scientists-find-clues-to-ancient-ice-beyond-neptune/",
+    "say": "Investigadores de la NASA hallaron nuevas pistas químicas que ayudan a estudiar el hielo antiguo en regiones más allá de Neptuno. Los resultados permiten entender mejor el origen y la evolución de materiales del sistema solar exterior.",
+    "image_query": "File:False color image of Neptune.jpg"
+  }
+]
