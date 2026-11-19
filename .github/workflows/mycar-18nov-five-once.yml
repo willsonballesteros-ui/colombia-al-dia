@@ -1,0 +1,95 @@
+name: "MyCar | Edición nocturna cinco noticias 18 nov, producir una vez"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/mycar-18nov-five-once.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-18nov-five-video-once
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Preparar motor de voz y render
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --prefer-binary Pillow requests edge-tts
+          python -m py_compile scripts/generate_voice.py scripts/render_mycar_18nov_5.py
+      - name: Renderizar cinco noticias con fotos reales
+        run: python scripts/render_mycar_18nov_5.py
+      - name: Comprobar MP4, textos, derechos y fuente antes de alojar
+        run: |
+          python - <<'PY'
+          import json, hashlib, subprocess
+          from pathlib import Path
+          b=Path('build/mycar_18nov5')
+          mp4=b/'MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4'
+          cap=(b/'MYCAR_caption.txt').read_text(encoding='utf-8')
+          src=json.loads((b/'mycar/editorial.json').read_text(encoding='utf-8'))
+          lic=json.loads((b/'mycar/credits.json').read_text(encoding='utf-8'))
+          aud=json.loads((b/'mycar/audio/audio_report.json').read_text(encoding='utf-8'))
+          assert len(src)==len(lic)==5
+          assert len(set(x['url'] for x in src))==5
+          assert len(set(x['image_title'] for x in lic))==5
+          assert all(x.get('license') and x.get('author') and x.get('commons') for x in lic)
+          assert all(x['url'] in cap for x in src)
+          assert all(x['commons'] in cap for x in lic)
+          assert len(cap)<=2200
+          assert not any(x in cap.lower() for x in ['voz sintética','motor de voz','1,25×','pipeline','instrucciones internas','dora','kokoro','salome'])
+          assert aud['status']=='ok' and aud['voice']=='es-CO-SalomeNeural' and aud['tempo']==1.25
+          assert len(aud['segments'])==7
+          assert len(list((b/'mycar').glob('slide-*.jpg')))==7
+          assert mp4.stat().st_size>300000
+          m=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(mp4)]))
+          assert 30<float(m['format']['duration'])<180
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1080 and s.get('height')==1920 for s in m['streams'])
+          assert any(s.get('codec_name')=='aac' for s in m['streams'])
+          print('VIDEO_VALIDATED',hashlib.sha256(mp4.read_bytes()).hexdigest(),m['format']['duration'])
+          PY
+      - name: Registrar MP4 y créditos nuevos sin tocar la mañana
+        run: |
+          set -euo pipefail
+          base=media/2026-11-18/mycar-pm-5
+          test ! -e "$base/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4"
+          mkdir -p "$base"
+          cp build/mycar_18nov5/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4 "$base/"
+          cp build/mycar_18nov5/MYCAR_caption.txt "$base/descripcion.txt"
+          cp build/mycar_18nov5/mycar/editorial.json "$base/"
+          cp build/mycar_18nov5/mycar/credits.json "$base/"
+          cp build/mycar_18nov5/mycar/slide-*.jpg "$base/"
+          cp build/mycar_18nov5/mycar/photo-*.jpg "$base/"
+          cp build/mycar_18nov5/mycar/sourceicon-*.png "$base/" 2>/dev/null || true
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('media/2026-11-18/mycar-pm-5/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4')
+          d={'edition_id':'MYCAR-2026-11-18-PM-5','date':'2026-11-18','news_count':5,'status':'RENDERED_NOT_PUBLISHED',
+          'video_file':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'voice':'es-CO-SalomeNeural','speed':1.25}
+          (p.parent/'manifest.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$base"
+          git commit -m "MyCar: render de cinco noticias 18 nov noche, pendiente publicación"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MYCAR-18NOV-NOCHE-5-RENDER
+          path: build/mycar_18nov5/
+          retention-days: 30
+          if-no-files-found: warn
