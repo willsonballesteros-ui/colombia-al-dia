@@ -6,6 +6,139 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-999ea9b51febd056",
+      "date": "2026-11-18",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "IUB amplía su oferta académica con 12 nuevos programas, destacando en ingeniería de inteligencia artificial",
+      "summary": "Titular difundido por Noticias Coopercom a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias Coopercom · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVEpXd3NSeDBpV21nZnRxZk9fMThjMVdac2NMdHhEekpLZ3BHZVluakFxZHhNc3JTS050aHNpOWp2R3BYNFJaM0F5Z1BwZDl2LWlyRGNDaTdUMHZ2bm1zQzVaM0lWVHZxV1Y3SUt0cHRlWmhyblZ0Y3pJMnl1NWQ3R0lIUU1hTjBfWnJGOFlNYXhtS0ZlMVNSZVc3LVdtdHM4UDRrUGlrN3hqLUdQTENlNXVjTm1vQkJibmNVRDlsdU15aWwwR01kaThkM0pVVl9HU3c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T19:52-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-0cbfbd195c4eacae",
+      "date": "2026-11-18",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Pete Hegseth, secretario de Guerra de EE. UU., habló sobre la relación con Colombia tras su llegada",
+      "summary": "Titular difundido por Noticias Caracol a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Noticias Caracol · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQWQ5OVFhMnBJc2MzMTRnbjVqaWhBVmVCN2VEQnJrTEJDaGtvOHNEaVpNLWJ6OVRGN2wxN05PR3NGd0JtRHlfWXNRNm1Hb3NfbW1jZ0lLXzBxMDEwZWstYzVaSDZnUWhNSXVCcDR1UkFTN1FYN0ZPVmtaNEluS2MwZ2s3bjZGNE9WaFVxUXFKc1BVTWlPc2FEQndrWTZpZnRwT3N3dGdlRXEzMm5fTkZ6eGd3YXdSVE40Um1IQmRIb0tsTzBudHo3T2lVejcxUkViWHpNbtIB4gFBVV95cUxQQ3JNdHJnQzZrdFlmZlN4TzRuUG5qVUR2bWFjcGdDX3pldEdkUnJ4OXdoMWJMa0RXRHN2OHBLcUZXQmNKcUtLdS1IejVJelh3RlByUC11ekRQdy0xS1RTNTNOT2ZWZ3FUY1o5UWFKeGtOTE1iWG1lMTdmWW0xZGVwWHY1XzZtdkZtSWRCcVN4d19YVEZqMzRTdktRYWw0UEJRLWNZQmowSlNzZ0dleUdtY1laWTQwcDhscXh0NXYxY3JQWDU2bHllMGdmbk1XU1ZtQWo4U19TLUdET1g0dDZKODJR?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T19:34-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-d017743f670719b1",
+      "date": "2026-11-18",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La IUB tendrá 12 nuevas carreras, entre ellas Ingeniería en Inteligencia Artificial, única en la región Caribe: alcalde Char",
+      "summary": "Titular difundido por Alcaldía de Barranquilla, Distrito Especial, Industrial y Portuario a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Alcaldía de Barranquilla, Distrito Especial, Industrial y Portuario · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNWF84ZTAxMFhTd1NjOGpyVW5oMGFMdkhLRXBEVzBIS051azNNRXlMN1VXQVg3bnM5cF83b0g5LXV2cE1mU2dpLVZzWGhhVnBmRUZHR3ZLaGJOVjJTc1djWjRsYlEyRWpScGotb3BsZ2xoYXZMRnJlcVF3YWgyN1NkNEhGYkZieG03TF96Vnp1eEp6RDZVNk5mWS1BbXBoak9DNExzZzktWF96QnZKaWozclYwTXdLSEpWcmdxSHBYNXFJcGFQUDBHZWxSUnlXSlNkbjRvQS1PVEtUbU5kYVkwdFhyTXRiYlRFSWsyd1l5MVQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T19:22-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6fbfe05c23cdb10b",
+      "date": "2026-11-18",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Gran Premio de Las Vegas Colombia de la Fórmula 1 2026: dónde y a qué hora ver la carrera en Colombia",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNN1RCNVBHMlBBNmFMYlZ6R2VJc3I3QzUzMzFrR001VGR2QTJNMFNtNzZyWklxd0hvRFZYYUZvVVhKT2pHOWRDTGdtYnFKZ3FyX2VvTjRzZEt4aTRuR1FKdXV1OGo1bHdjRGtCbmhsTEVySThrQk9JcmI2d0t3M2FHWXRMakJrQlVRekNQQU53QkJNaS1jNDB3V2NQS0Z0SzRydmRRXy1BNUl4b19YX1ZnUlhlWUI2YjFPWnlPc0xaazFic2dpVHpxOXhWYjBjSms5QVFfOS1TdkpKR1Q1WGx0LW12ei1LbVNjYWfSAYQCQVVfeXFMT2ZtYzJ6eFZINGREQzFXRTdSdmZSRzNEWEo2dkh3cGJvTkx5Z0hqaFUwdktjbWJ6aWhqYzAxSlhuVURWQ1M0VUIyclpGSVpqZ3BHdmYxRlVETlJlTXpYV3JxdWhNcHFkZjRIQ2E4eUE3bEIycXFoZFY1eWQwNWllQV94eENvakVfSWw1SmlzYW54bjRPZmlqc2RQQTVDMHU0a1lTNFlHSnEtVG9vYVNqVW9fUmxGOElxT2JMNl9tQkxfTW9TbmljWjZQbnBDb3JSMS03SVBmMDhGOXNycm55bWpKZVE0RGFueVFsLUhIblV5bXI5OWhMaVkxRnBsVDFWSmN6UFY?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T18:46-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-013d231115f2ae27",
+      "date": "2026-11-18",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Así será el recorrido del Tour Colombia 2027: presentaron las seis etapas de la competencia de ciclismo",
+      "summary": "Titular difundido por Infobae a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Infobae · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNDZtSG9icktITFZpQ1B0alROYXFQS3VVQWVzanZscnRFNWFmVE8tNElqYnAtajBXbGE5Ym51NTh5OUR2aEppR0pJaXdMbGlTS1kyclItWF96bVk4UXlRRWVjUDZPaW5aTHdON3NfWFBmZUgzYm5NVUhCNEJhdmRSWkJvSHE4cnFUZDQteTAwMjJmYzdIYTdIMjhwcWE1dlh4cEI2S0lrc0RvRTdJd04xMm9aMGZQY0l0Tkc3RTNVdmw2NTZzUGxtMkNYdWxEQ05uVXBXdjFTX1FPQS12ejB6eWtqY0d3VWR2YzF6edIBhwJBVV95cUxQVTA5aHFvaXI1S1p5TkRQNDNibVh5eGhtbUNCMGlic0hWN3paajhxeGNLYnlKdktHTmZtSUt1V2NjRWkzMGEzcmV3Z2o5Tnc5Z1R0c2d3aFUzODJmd2kwclgyTlY0VWpUaUpUdjNQVlNsVnR2UkhsRjF6ME51YXhCVmZWeVpCWkRNX0JwdERfX1JmVXUtWENURnZrcVJ6X0UzZU8wWG0yODB6X0Y0ak5mN1oxSVJkOUpiUWFaVG1XcnpxSHdRek5yWkVqZThaazFYb2Q2alR0NTJsd0tQZnZUZjRPT2h1Z1I2QmpLOWtFVGd6Z0s3WTJMUkloWWtvem9QV3dMelBWcw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T18:41-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-12787e0763944d84",
+      "date": "2026-11-18",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Amigo de Norberto Peluffo se pronunció: así está el técnico colombiano tras ser hospitalizado",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQam9lZDFkR2NYY1M0TXNQckZKcFozekNCbTlSOG5IZl9lQ0xzbTBGb3V5TUVqZE1wUng3b0JlZ0lpcURDRFBHdXFveW9vclJhSHZjWDN6Y0ZHSy1mM0xQYUpWekFMU2R2N0M2UG5GcEQtdktlQnFTaUR4cm5zRWV6TFM4eUU2MnlvZF9TZ19fbkZqd2k5QnJkdHJ6X3prTElISVpDdC10djVsVlFWQW1ZMV9SWFhITmx5ZzZlaTJOV1hsM2w3bl9NOTlESnFkU0hfemJQbTFxcm3SAd4BQVVfeXFMTWVSc2Y5c2hZQUNRYmdCSDh2Sk1wc0RJdkd1Nmg5dUViRFJvUmFQMmhrWTE5UFNpY3QtbDRoa0JRMkIycUViVDdTWnpsZUNjMDM4XzlrZVJ0RV9wb0pOR1RGcl9wdUlkOG1VUUx4Qjctb3pmcUR6LTJUVW9pNlBDRmJ5cEFmSHdOd056Nk5lSVRGYUxCVkxxVTI5RmlVRGdSUm14VXY4QUlrTkZFeHkxU3lIZlFQUlJMc285eDhjYnZId3hLSmJia0U4YVNkamFIdGpzTWtIekJaaTRyWENB?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T13:26-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-07616cfea0f2c0d3",
+      "date": "2026-11-18",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección: Nada ven mis ojos",
+      "summary": "Titular difundido por AS Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "AS Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOXNfWjJWeWpmSi1hc19WVHZWNzRKX3g0RE82LVFJVFBwUExkcXVsbFc1Y3JYSnZ1MXNrRnZsaUhoOFF4SzBlY2g3YW1sdkFnQlBtRkFJNU9MRWo1c1JVa2I5ZGhkUWs5dGs2ZW5aTEhBd3VyQXNFYzRZYTV4ZXRjSDI1ZllfVGh1S1RzcnhhSVbSAZABQVVfeXFMUDlzX1oyVnlqZkotYXNfVlR2Vjc0Sl94NERPNi1RSVRQcFBMZHF1bGxXNWNyWEp2dTFza0Z2bGlIaDhReEswZWNoN2FtbHZBZ0JQbUZBSTVPTEVqNXNSVWtiOWRoZFFrOXRrNmVuWkxIQXd1ckFzRWM0WWE1eGV0Y0gyNWZZX1RodUtUc3J4YUlW?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-18T11:20-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-de9cc775ff94c5ba",
       "date": "2026-11-18",
       "category": "Colombia",
@@ -26344,8 +26477,8 @@
       "editorialReviewedAt": "2026-11-18T18:10:00-05:00"
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-18T19:55-05:00",
-  "lastNewSourceAtBogota": "2026-11-18T19:55-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-18T19:56-05:00",
+  "lastNewSourceAtBogota": "2026-11-18T19:56-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
