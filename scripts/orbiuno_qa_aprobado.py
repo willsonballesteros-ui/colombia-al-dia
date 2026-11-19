@@ -85,6 +85,18 @@ def main():
     errors = validate(manifest, folder=path.parent, assets=Path(a.assets), news=news, webvoice=web)
     if errors:
         raise SystemExit("BLOCKED_QA: " + ",".join(errors))
+    for item in manifest["news"]:
+        voice_item = web["items"][item["id"]]
+        audio_file = Path(a.webvoice).parent / Path(voice_item["url"]).name
+        if not audio_file.is_file() or audio_file.stat().st_size < 3000:
+            raise SystemExit("BLOCKED_QA: missing_web_audio_" + item["id"])
+        if hashlib.sha256(voice_item["text"].encode()).hexdigest() != voice_item.get("sha256"):
+            raise SystemExit("BLOCKED_QA: web_audio_transcript_hash_mismatch_" + item["id"])
+        decoded = subprocess.run(["ffmpeg", "-hide_banner", "-v", "error",
+                                  "-i", str(audio_file), "-f", "null", "-"],
+                                 capture_output=True, text=True)
+        if decoded.returncode:
+            raise SystemExit("BLOCKED_QA: corrupt_web_audio_" + item["id"])
     check_media_decodes(path.parent / manifest["video"])
     print("ORBIUNO_QA_PASS: seis fotos, seis logos, audios íntegros Salome, SHA y decodificación completa; PUBLICATION_AUTHORIZED=false")
 
