@@ -33,8 +33,12 @@ def check(manifest: dict, root: Path) -> dict:
     path = root / manifest["video"]
     if not path.exists() or hashlib.sha256(path.read_bytes()).hexdigest() != manifest["sha256"]:
         raise ValueError("MP4 ausente o diferente a SHA-256")
-    if not (50 <= float(manifest.get("duration", 0)) <= 60):
-        raise ValueError("Duración del MP4 inválida")
+    if float(manifest.get("duration", 0)) < 10:
+        raise ValueError("Duración del MP4 demasiado corta")
+    if (manifest.get("voice") != "es-CO-SalomeNeural" or manifest.get("voiceSpeed") != 1.25 or
+            manifest.get("imagesCount") != 6 or manifest.get("logosCount") != 6 or
+            manifest.get("visualMode") != "verified_real_photos" or manifest.get("sourceOnly") is not False):
+        raise ValueError("Se bloquea video sin voz colombiana, fotos reales o logos")
     home = get(WEB).decode("utf-8")
     matched = re.search(r'<script[^>]*id="initial-news"[^>]*>(.*?)</script>', home, re.S)
     if not matched:
@@ -55,13 +59,22 @@ def check(manifest: dict, root: Path) -> dict:
             raise RuntimeError("Fuente del Reel y web no coinciden")
         if 'id="noticia-' + n["id"] + '"' not in home:
             raise RuntimeError("Falta la lámina desarrollada en la web: " + n["id"])
+        if (n.get("imageRightsVerified") is not True or
+                not str(n.get("imageUrl", "")).startswith("./media/") or
+                not n.get("imageCredit") or not n.get("imageLicense")):
+            raise RuntimeError("Web sin fotografía licenciada para " + n["id"])
+        image_url = WEB + n["imageUrl"].removeprefix("./")
+        if not get(image_url, limit=512):
+            raise RuntimeError("Foto no disponible en la web para " + n["id"])
     if "audio-fix.js" not in home:
         raise RuntimeError("Sin reproductor de audio en el sitio")
     voices = json.loads(get(WEB + "media/web-voice/manifest.json").decode("utf-8"))
+    if voices.get("voice") != "es-CO-SalomeNeural" or voices.get("baseRate") != 1.25:
+        raise RuntimeError("Audios web no son Salome a 1,25x")
     for n in actual:
         item = voices.get("items", {}).get(n["id"])
-        if not item or not item.get("text") or not item.get("url"):
-            raise RuntimeError("Falta audio completo para " + n["id"])
+        if not item or not item.get("text") or not item.get("url") or item.get("voice") != "es-CO-SalomeNeural" or item.get("speed") != 1.25:
+            raise RuntimeError("Falta audio colombiano completo para " + n["id"])
         if not get(WEB + item["url"].removeprefix("./"), limit=512):
             raise RuntimeError("MP3 sin datos: " + n["id"])
     video_url = ("https://raw.githubusercontent.com/" + REPO + "/main/media/" +
