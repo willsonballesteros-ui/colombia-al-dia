@@ -5,6 +5,7 @@ on:
       - preview/approved-v2-20261119-1000
     paths:
       - '_media_staging/2026-11-19/**'
+      - '.github/workflows/assemble-approved-preview-20261119.yml'
 permissions:
   contents: write
 jobs:
@@ -21,8 +22,6 @@ jobs:
           cat _media_staging/2026-11-19/orbiuno/part-*.b64 | base64 --decode > previews/2026-11-19/orbiuno-1000-6-v2/ORBIUNO_19_NOV_2026_1000_6_NOTICIAS_V2_OPTIMIZADO.mp4
           printf '%s\n' '0ad4da834c0860f6a87e1f10dc5f190bec9b1bb58d109b34d01326ba041a339c  previews/2026-11-19/mycar-1000-5-v2/MYCAR_19_NOV_2026_1000_5_NOTICIAS_REVISION_V2.mp4' | sha256sum --check
           printf '%s\n' '75a5c5da3814c64a0174331a84613286dca83563db1df22ef0783de74d622fc8  previews/2026-11-19/orbiuno-1000-6-v2/ORBIUNO_19_NOV_2026_1000_6_NOTICIAS_V2_OPTIMIZADO.mp4' | sha256sum --check
-          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 previews/2026-11-19/mycar-1000-5-v2/MYCAR_19_NOV_2026_1000_5_NOTICIAS_REVISION_V2.mp4
-          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 previews/2026-11-19/orbiuno-1000-6-v2/ORBIUNO_19_NOV_2026_1000_6_NOTICIAS_V2_OPTIMIZADO.mp4
       - name: Save public, versioned previews
         shell: bash
         run: |
