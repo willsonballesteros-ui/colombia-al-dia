@@ -183,11 +183,13 @@ def build(data, page):
         n for n in data["news"]
         if n.get("date")==today
         and n.get("verification")=="editorial_verified"
-        and n.get("editionSlot") in ("08:00","09:30","12:00","18:00","19:00","20:00","21:00")
+        and n.get("editionSlot") in ("08:00","09:30","12:00","17:00","18:00","19:00","20:00","21:00")
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
     if any(n.get("editionSlot") == "09:30" for n in published):
         slots=(("09:30","9:30 a. m. · Edición corregida"),)+slots
+    if any(n.get("editionSlot") == "17:00" for n in published):
+        slots=(("17:00","5:00 p. m. · Edición extraordinaria"),)+slots
     if any(n.get("editionSlot") == "19:00" for n in published):
         slots=(("19:00","7:00 p. m."),)+slots
     if any(n.get("editionSlot") == "21:00" for n in published):
@@ -199,7 +201,7 @@ def build(data, page):
     active_slots=[pair for pair in slots if any(n.get("editionSlot")==pair[0] for n in published)]
     slots=tuple(active_slots) if active_slots else slots[:1]
     sections=[]
-    reel_limits={"08:00":6,"09:30":6,"12:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
+    reel_limits={"08:00":6,"09:30":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
