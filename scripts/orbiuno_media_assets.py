@@ -96,6 +96,8 @@ def validate_editorial_photo(n: dict) -> str:
 def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) -> dict:
     edition = json.loads(edition_path.read_text(encoding="utf-8"))
     day, slot = edition["editionDate"], edition["editionSlot"]
+    if edition.get("sourceOnly") is not False:
+        raise ValueError("source_only no se transforma en revision editorial: BLOQUEADO")
     if day != datetime.now(ZoneInfo("America/Bogota")).date().isoformat():
         raise ValueError("No se procesa una edición de otra fecha")
     if slot not in ("08:00", "18:00", "12:00", "19:00") or len(edition.get("news", [])) != 6:
