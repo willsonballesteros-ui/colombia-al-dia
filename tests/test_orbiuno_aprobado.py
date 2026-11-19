@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from PIL import Image
 
-from scripts.orbiuno_media_assets import commons_info, validate_editorial_photo, decode_image
+from scripts.orbiuno_media_assets import commons_info, validate_editorial_photo, decode_image, stage
 from scripts.orbiuno_qa_aprobado import validate
 
 
@@ -46,6 +46,14 @@ class PhotoEvidenceTests(unittest.TestCase):
     def test_rejects_unreviewed_photo_subject(self):
         with self.assertRaises(ValueError):
             validate_editorial_photo({"photoCommonsTitle": "File:Bosque de Colombia.jpg", "photoCaption": "Bosque amazónico"})
+
+    def test_rejects_source_only_edition_before_media(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            edition = root / "edition.json"
+            edition.write_text(json.dumps({"editionDate": "2026-11-19", "editionSlot": "18:00", "sourceOnly": True, "news": []}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "source_only"):
+                stage(edition, root / "missing.json", root / "images")
 
     def test_rejects_bytes_which_are_not_real_jpeg(self):
         with self.assertRaises(Exception):
