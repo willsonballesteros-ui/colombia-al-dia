@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: mycar-preview-20261119-1000-only
+  group: mycar-preview-20261119-1000-fast-v2
   cancel-in-progress: false
 jobs:
   previo:
