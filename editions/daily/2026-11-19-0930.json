@@ -228,5 +228,8 @@
     }
   ],
   "correctionOf": "ORBIUNO-2026-11-19-0800",
-  "correctionReason": "Corregir edición de las 08:00 sin fotos reales y con voz incorrecta; la publicación original la retira el propietario."
+  "correctionReason": "Corregir edición de las 08:00 sin fotos reales y con voz incorrecta; la publicación original la retira el propietario.",
+  "retryAttempt": 2,
+  "previousFailedRun": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44542957533",
+  "retryReason": "Wikimedia Commons API usa thumb.wikimedia.org para miniaturas oficiales; permitido por PR23 tras pruebas."
 }
