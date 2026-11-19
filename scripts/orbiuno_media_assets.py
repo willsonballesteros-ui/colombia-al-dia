@@ -56,7 +56,7 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", str(value or "")))).strip()
 
 
-def commons_info(title: str, getter=fetch) -> dict:
+def commons_info(title: str, getter=fetch, *, logo: bool = False) -> dict:
     if not isinstance(title, str) or not re.fullmatch(r"File:[^<>\r\n]{5,190}", title):
         raise ValueError("Falta título exacto File:... de Commons")
     query = urlencode({"action": "query", "titles": title, "prop": "imageinfo",
@@ -75,8 +75,14 @@ def commons_info(title: str, getter=fetch) -> dict:
     artist = m("Artist")
     if not artist or artist.lower() in ("unknown", "autor desconocido", "uncredited"):
         raise ValueError("Autor no identificado")
-    if info.get("mime") not in ("image/jpeg", "image/png") or info.get("width", 0) < 650 or info.get("height", 0) < 450:
-        raise ValueError("Foto no es JPG/PNG o resolucion insuficiente")
+    if logo:
+        if info.get("mime") not in ("image/jpeg", "image/png", "image/svg+xml") or info.get("width", 0) < 80 or info.get("height", 0) < 40:
+            raise ValueError("Logo no es imagen válida o resolucion insuficiente")
+        if info.get("mime") == "image/svg+xml" and not str(info.get("thumburl", "")).split("?", 1)[0].lower().endswith(".png"):
+            raise ValueError("Logo SVG no tiene miniatura PNG verificable")
+    else:
+        if info.get("mime") not in ("image/jpeg", "image/png") or info.get("width", 0) < 650 or info.get("height", 0) < 450:
+            raise ValueError("Foto no es JPG/PNG o resolucion insuficiente")
     note = " ".join((page.get("title", ""), m("ImageDescription"), m("Categories"))).lower()
     if any(tag in note for tag in BAD_TAGS):
         raise ValueError("Fotografia posiblemente sintetica, rechazada")
@@ -127,14 +133,19 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
         p = urlsplit(first["url"])
         if p.scheme != "https" or not p.hostname or p.hostname in ("news.google.com", "www.google.com"):
             raise ValueError("Fuente original incorrecta")
-        plans.append((n, commons_info(title, getter=getter), p.hostname))
+        logo_title = n.get("logoCommonsTitle")
+        if logo_title and n.get("logoMatchReviewed") is not True:
+            raise ValueError("Logo de Commons sin revisión editorial")
+        logo_credit = commons_info(logo_title, getter=getter, logo=True) if logo_title else None
+        plans.append((n, commons_info(title, getter=getter), p.hostname, logo_credit))
     output.mkdir(parents=True, exist_ok=True)
     entries = []
-    for i, (n, credit, host) in enumerate(plans, 1):
+    for i, (n, credit, host, logo_credit) in enumerate(plans, 1):
         photo = decode_image(getter(credit["url"]))
         filename = f"photo-{i:02d}.jpg"
         photo.save(output / filename, quality=88, optimize=True)
-        logo_url = "https://www.google.com/s2/favicons?" + urlencode({"domain": host, "sz": 256})
+        logo_url = (logo_credit["url"] if logo_credit else
+                    "https://www.google.com/s2/favicons?" + urlencode({"domain": host, "sz": 256}))
         logo_raw = getter(logo_url)
         logo = Image.open(io.BytesIO(logo_raw))
         logo.load()
@@ -144,6 +155,7 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
         logo.save(output / f"logo-{i:02d}.png")
         entries.append({"id": n["id"], "photoFile": filename,
                         "logoFile": f"logo-{i:02d}.png", "sourceHost": host,
+                        "logoCredit": logo_credit, "logoSource": logo_credit["page"] if logo_credit else logo_url,
                         "caption": n["photoCaption"].strip(), "credit": credit})
     base = "./" + output.relative_to(ROOT).as_posix() + "/"
     for ent in entries:

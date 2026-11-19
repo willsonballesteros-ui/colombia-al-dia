@@ -84,5 +84,33 @@ class WikimediaCdnTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"Redireccion fuera de hosts autorizados"):
                 fetch("https://thumb.wikimedia.org/wikipedia/commons/thumb/abc.jpg")
 
+
+    def test_cc_logo_svg_uses_verified_png_thumbnail(self):
+        doc = mock_commons_doc("thumb.wikimedia.org")
+        page = doc["query"]["pages"]["1"]
+        page["title"] = "File:Logo Ministerio de Educación Nacional Colombia.svg"
+        info = page["imageinfo"][0]
+        info.update(width=512, height=344, mime="image/svg+xml",
+                    thumburl="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Logo.svg/600px-Logo.svg.png")
+        info["extmetadata"]["LicenseShortName"]["value"] = "CC BY 4.0"
+        info["extmetadata"]["Artist"]["value"] = "Gobierno de Colombia"
+        blob = json.dumps(doc).encode()
+        out = commons_info(page["title"], getter=lambda _:blob, logo=True)
+        self.assertEqual(out["author"], "Gobierno de Colombia")
+        self.assertTrue(out["url"].endswith(".png"))
+        with self.assertRaisesRegex(ValueError, "Foto no es JPG/PNG"):
+            commons_info(page["title"], getter=lambda _:blob)
+
+    def test_svg_logo_without_png_thumbnail_is_rejected(self):
+        doc = mock_commons_doc("thumb.wikimedia.org")
+        page = doc["query"]["pages"]["1"]
+        page["title"] = "File:Logo Ministerio de Educación Nacional Colombia.svg"
+        info = page["imageinfo"][0]
+        info.update(width=512, height=344, mime="image/svg+xml",
+                    thumburl="https://thumb.wikimedia.org/wikipedia/commons/6/62/Logo.svg")
+        blob = json.dumps(doc).encode()
+        with self.assertRaisesRegex(ValueError, "miniatura PNG"):
+            commons_info(page["title"], getter=lambda _:blob, logo=True)
+
 if __name__ == "__main__":
     unittest.main()
