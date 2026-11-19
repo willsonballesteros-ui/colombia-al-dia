@@ -8,6 +8,7 @@ import hashlib
 import json
 import subprocess
 from pathlib import Path
+from scripts.narration_body import story_body
 
 VOICE = "es-CO-SalomeNeural"
 
@@ -43,7 +44,7 @@ def validate(manifest: dict, *, folder: Path, assets: Path, news: dict, webvoice
         if not str(n.get("imageUrl", "")).startswith("./media/") or not str(n.get("imageSourceUrl", "")).startswith("https://commons.wikimedia.org/wiki/File:"):
             errors.append("image_origin_unverified_" + str(i))
         v = webvoice.get("items", {}).get(n["id"], {})
-        if v.get("voice") != VOICE or v.get("speed") != 1.25 or v.get("text") != n.get("originalArticleTextEs"):
+        if v.get("voice") != VOICE or v.get("speed") != 1.25 or v.get("text") != story_body(n.get("originalArticleTextEs")):
             errors.append("web_full_audio_mismatch_" + str(i))
         if i <= len(manifest.get("news", [])) and manifest["news"][i-1].get("sourceUrl") != n["sources"][0]["url"]:
             errors.append("source_url_mismatch_" + str(i))
