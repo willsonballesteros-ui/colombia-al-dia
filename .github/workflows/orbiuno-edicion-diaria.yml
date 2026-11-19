@@ -67,12 +67,12 @@ jobs:
           if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
             file="$INPUT_FILE"
           else
-            file="$(git diff --name-only HEAD^ HEAD | grep -E '^editions/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(0800|1200|1800|1900)\.json$' || true)"
+            file="$(git diff --name-only HEAD^ HEAD | grep -E '^editions/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(0800|0930|1200|1800|1900)\.json$' || true)"
             if [ "$(printf '%s\n' "$file" | sed '/^$/d' | wc -l)" -ne 1 ]; then
               echo "Solo un JSON de edicion por push"; exit 1
             fi
           fi
-          if [[ ! "$file" =~ ^editions/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(0800|1200|1800|1900)\.json$ ]] || [ ! -f "$file" ]; then
+          if [[ ! "$file" =~ ^editions/daily/[0-9]{4}-[0-9]{2}-[0-9]{2}-(0800|0930|1200|1800|1900)\.json$ ]] || [ ! -f "$file" ]; then
             echo "Ruta invalida"; exit 1
           fi
           python - "$file" >> "$GITHUB_OUTPUT" <<'PY'
@@ -80,7 +80,7 @@ jobs:
           from pathlib import Path
           p=Path(sys.argv[1]); d=json.loads(p.read_text(encoding='utf-8'))
           day=d['editionDate']; slot=d['editionSlot']
-          assert slot in ('08:00','12:00','18:00','19:00')
+          assert slot in ('08:00','09:30','12:00','18:00','19:00')
           assert p.name==day+'-'+slot.replace(':','')+'.json'
           print('path='+str(p));print('day='+day)
           print('slot='+slot);print('stamp='+slot.replace(':',''))
