@@ -105,10 +105,19 @@ jobs:
           python -m py_compile scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/orbiuno_daily_preflight.py
 
       - name: Instalar voz y ffmpeg
+        timeout-minutes: 6
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install Pillow edge-tts
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            timeout 90s sudo apt-get update -qq || echo "APT_UPDATE_TIMEOUT_USING_CACHED_INDEX"
+            timeout 180s sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          fi
+          if [ ! -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf ]; then
+            timeout 120s sudo apt-get install -y -qq fonts-dejavu-core
+          fi
+          python -m pip install --timeout 30 --retries 2 Pillow edge-tts
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
 
       - name: Obtener y comprobar las seis fotos reales y logos oficiales
         env:

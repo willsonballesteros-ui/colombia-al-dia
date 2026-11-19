@@ -28,11 +28,11 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
     p = urlsplit(url)
     if p.scheme != "https" or p.username or p.password or p.fragment or p.port not in (None, 443):
         raise ValueError("Solo HTTPS sin credenciales ni puertos extraños")
-    if p.hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "www.google.com"):
+    if p.hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org", "www.google.com"):
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
     with urlopen(request, timeout=38) as response:
-        if urlsplit(response.url).hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "www.google.com"):
+        if urlsplit(response.url).hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org", "www.google.com"):
             raise ValueError("Redireccion fuera de hosts autorizados")
         raw = response.read(limit + 1)
     if not raw or len(raw) > limit:
@@ -69,7 +69,7 @@ def commons_info(title: str, getter=fetch) -> dict:
     if any(tag in note for tag in BAD_TAGS):
         raise ValueError("Fotografia posiblemente sintetica, rechazada")
     url = info.get("thumburl") or info.get("url")
-    if not url or urlsplit(url).hostname != "upload.wikimedia.org":
+    if not url or urlsplit(url).hostname not in ("upload.wikimedia.org", "thumb.wikimedia.org"):
         raise ValueError("Archivo no alojado en Wikimedia")
     return {"title": page["title"], "license": lic, "author": artist[:180],
             "page": "https://commons.wikimedia.org/wiki/" + quote(page["title"].replace(" ", "_"), safe="/:()'- ,".replace(" ","")),
