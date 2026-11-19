@@ -22,8 +22,8 @@ jobs:
           python-version: '3.11'
       - name: Preparar dependencias
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get install -y -qq ffmpeg; fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf || sudo apt-get install -y -qq fonts-dejavu-core
           python -m pip install --prefer-binary Pillow requests edge-tts
           python -m py_compile scripts/generate_voice.py scripts/render_mycar_19nov_5_preview.py
       - name: Renderizar SOLO vista previa
