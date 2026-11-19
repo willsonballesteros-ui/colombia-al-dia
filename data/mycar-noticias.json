@@ -5,6 +5,66 @@
   "updated_date": "2026-11-19",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-19-1700",
+      "date": "2026-11-19",
+      "slot": "17:00",
+      "title": "Volkswagen Golf GTI regresa a Colombia con 261 caballos",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261119-1700/previews/2026-11-19/mycar-1700-5-codec-v4/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Volkswagen Golf GTI regresa a Colombia con 261 caballos",
+          "summary": "Después de seis años fuera del mercado colombiano, el Volkswagen Golf GTI regresó al Salón del Automóvil de Bogotá. La nueva versión llega con doscientos sesenta y un caballos y mantiene la tradición del deportivo compacto alemán.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/volkswagen-golf-gti-colombia-lanzamiento-precio/",
+          "image_file_title": "File:Volkswagen Golf VIII GTI Facelift DSC 7803.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_GTI_Facelift_DSC_7803.jpg"
+        },
+        {
+          "title": "BMW M350 y X5 amplían la oferta premium en Colombia",
+          "summary": "BMW aprovecha el Salón del Automóvil de Bogotá para mostrar el M trescientos cincuenta y la actualización del X cinco. La marca apuesta por tecnología y equipamiento para los compradores de vehículos premium en Colombia.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/16/sia-2026-los-nuevos-bmw-m350-y-bmw-x5-llegan-a-colombia",
+          "image_file_title": "File:BMW M350 xDrive Limousine in der BMW Welt Bild 1 2026-10-18.jpg",
+          "photo_credit": "Strubbl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BMW_M350_xDrive_Limousine_in_der_BMW_Welt_Bild_1_2026-10-18.jpg"
+        },
+        {
+          "title": "Nissan Frontier Pro híbrida enchufable llega a la exhibición",
+          "summary": "Nissan exhibe en Colombia la Frontier Pro híbrida enchufable. La camioneta combina motores de combustión y eléctrico y anuncia hasta trescientos cincuenta caballos de potencia. Es uno de los movimientos hacia una oferta de pickups electrificadas.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/13/sia-2026-nissan-frontier-pro-phev-llega-a-colombia-precio-y-caracteristicas",
+          "image_file_title": "File:Nissan Frontier Pro PHEV 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_Frontier_Pro_PHEV_001.jpg"
+        },
+        {
+          "title": "Ram Dakota presenta su nueva generación en Colombia",
+          "summary": "La nueva Ram Dakota amplía la oferta de camionetas de trabajo en Colombia. La marca anunció motor turbodiésel y una capacidad de carga cercana a una tonelada, con precios de referencia a partir de ciento noventa millones de pesos.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/10/08/nueva-ram-dakota-en-colombia-precio-desde-190-millones-y-motor-turbodiesel",
+          "image_file_title": "File:Ram Dakota South America front right - Autosdeprimera (cropped-1).jpg",
+          "photo_credit": "https://www.youtube.com/@AutosdeprimeraYT",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Ram_Dakota_South_America_front_right_-_Autosdeprimera_(cropped-1).jpg"
+        },
+        {
+          "title": "Porsche 911 GT3 Touring aterriza en el mercado colombiano",
+          "summary": "Porsche anunció en Colombia el 911 GT tres Touring, un deportivo atmosférico de quinientos diez caballos. Mantiene una apariencia más discreta que la versión con gran alerón, pero conserva una orientación de altas prestaciones.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/porsche-911-gt3-touring-colombia-precio-caracteristicas/",
+          "image_file_title": "File:Porsche 911 GT3 Touring (992.2) 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_Touring_(992.2)_001.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-19-AM",
       "date": "2026-11-19",
       "slot": "10:00",
