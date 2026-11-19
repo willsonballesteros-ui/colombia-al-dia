@@ -1,0 +1,214 @@
+{
+  "editionDate": "2026-11-19",
+  "editionSlot": "17:00",
+  "editionKey": "ORBIUNO-2026-11-19-1700",
+  "status": "EDITORIAL_VERIFIED_READY_FOR_QA",
+  "format": "six_stories_verified_real_photos",
+  "sourceOnly": false,
+  "news": [
+    {
+      "id": "orbiuno-20261119-1700-1",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 1,
+      "title": "Bogotá fortalece la movilidad escolar de más de 114.000 estudiantes",
+      "category": "Colombia",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "BOGOTÁ.GOV.CO",
+          "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/estudiantes-beneficiados-con-estrategias-de-movilidad-en-bogota-2026"
+        }
+      ],
+      "summary": "Bogotá reportó que más de ciento catorce mil estudiantes han sido beneficiados durante dos mil veintiséis por acciones para llegar al colegio de manera segura. La estrategia incluye desplazamientos escolares protegidos y promueve una movilidad más ordenada para las familias.",
+      "executiveSummary": "Bogotá reportó que más de ciento catorce mil estudiantes han sido beneficiados durante dos mil veintiséis por acciones para llegar al colegio de manera segura. La estrategia incluye desplazamientos escolares protegidos y promueve una movilidad más ordenada para las familias.",
+      "reelLine": "Bogotá reportó que más de ciento catorce mil estudiantes han sido beneficiados durante dos mil veintiséis por acciones para llegar al colegio de manera segura. La",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Durante 2026, el programa Niñas y Niños Primero benefició en Bogotá a 114.439 estudiantes con acciones para mejorar la seguridad de sus desplazamientos escolares. La Secretaría de Movilidad y la Secretaría de Educación trabajan conjuntamente para que llegar al colegio y regresar a casa sea menos riesgoso, especialmente en sectores donde los estudiantes deben compartir las vías con automotores, bicicletas y peatones.\n\nLas estrategias incluyen acompañamiento en recorridos escolares, actividades de formación vial y medidas para promover desplazamientos sostenibles. La administración distrital informó que, sumando las intervenciones de los últimos años, más de 318.000 estudiantes han participado en estas iniciativas. Los datos de 2026 corresponden a beneficiarios de cinco proyectos y no deben confundirse con el acumulado de toda la administración.\n\nEl balance permite dimensionar el alcance de una política que busca que las niñas, niños y jóvenes puedan continuar sus estudios en condiciones más seguras. La cifra procede de la información publicada por el Portal Bogotá el 19 de noviembre. Para las familias, el valor principal está en las rutas, el acompañamiento y las condiciones concretas de movilidad que efectivamente se ofrecen en cada institución.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/estudiantes-beneficiados-con-estrategias-de-movilidad-en-bogota-2026"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Ciclorruta Bogotá kr 12 con cl 25.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Ciclorruta urbana en Bogotá que ilustra infraestructura para desplazamientos sostenibles; no corresponde necesariamente a la actividad escolar informada."
+    },
+    {
+      "id": "orbiuno-20261119-1700-2",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 2,
+      "title": "Colombia presenta compromisos de financiación e inversión",
+      "category": "Colombia",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "PRESIDENCIA",
+          "url": "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-cierra-la-Milagro-Week-de-Nueva-York-con-US-261118.aspx"
+        }
+      ],
+      "summary": "El Gobierno informó que durante la Milagro Week en Nueva York se presentaron compromisos y oportunidades de inversión y financiación por más de cuarenta y tres mil millones de dólares. Son anuncios y compromisos reportados, no recursos desembolsados ni inversiones ya ejecutadas.",
+      "executiveSummary": "El Gobierno informó que durante la Milagro Week en Nueva York se presentaron compromisos y oportunidades de inversión y financiación por más de cuarenta y tres mil millones de dólares. Son anuncios y compromisos reportados, no recursos desembolsados ni inversiones ya ejecutadas.",
+      "reelLine": "El Gobierno informó que durante la Milagro Week en Nueva York se presentaron compromisos y oportunidades de inversión y financiación por más de cuarenta y tres",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El Gobierno colombiano informó el 18 de noviembre que la agenda conocida como Milagro Week, celebrada en Nueva York, cerró con compromisos de inversión y financiación anunciados por 43.205 millones de dólares. La Presidencia indicó que las oportunidades están distribuidas en once sectores económicos y que podrían alcanzar 24 departamentos y Bogotá. Se trata de compromisos y proyectos reportados, no de recursos ya desembolsados.\n\nEntre las áreas mencionadas por el comunicado oficial figuran infraestructura, transporte, energía, agroindustria, salud e inclusión financiera, además de conservación ambiental. Según el balance, se realizaron 223 reuniones individuales con inversionistas y una proporción importante manifestó interés en avanzar con iniciativas concretas. Ese interés deberá traducirse después en contratos, decisiones financieras, autorizaciones y ejecución.\n\nEl anuncio plantea un potencial de generación de empleo que supera las 55.000 oportunidades, pero esa proyección tampoco equivale a puestos ya creados. La información es relevante para seguir la evolución de proyectos y el interés en la economía colombiana. Su impacto real dependerá de la materialización de cada iniciativa, de sus condiciones y del seguimiento público que permita distinguir acuerdos preliminares de inversiones efectivas.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-cierra-la-Milagro-Week-de-Nueva-York-con-US-261118.aspx"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Colombian Flag.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Bandera de Colombia utilizada para ilustrar el anuncio gubernamental de compromisos de inversión."
+    },
+    {
+      "id": "orbiuno-20261119-1700-3",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 3,
+      "title": "La ONU destaca avances globales en gobierno digital",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "NACIONES UNIDAS",
+          "url": "https://www.un.org/sustainabledevelopment/blog/2026/11/media-advisory-launch-of-e-government-survey-2026-19-november-1230-pm-et/"
+        }
+      ],
+      "summary": "Naciones Unidas presenta hoy su estudio de gobierno electrónico dos mil veintiséis, que examina cómo los países usan servicios públicos digitales. El documento permite comparar avances y dificultades en el acceso a herramientas tecnológicas para la ciudadanía.",
+      "executiveSummary": "Naciones Unidas presenta hoy su estudio de gobierno electrónico dos mil veintiséis, que examina cómo los países usan servicios públicos digitales. El documento permite comparar avances y dificultades en el acceso a herramientas tecnológicas para la ciudadanía.",
+      "reelLine": "Naciones Unidas presenta hoy su estudio de gobierno electrónico dos mil veintiséis, que examina cómo los países usan servicios públicos digitales. El documento permite comparar avances",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La Organización de las Naciones Unidas presenta este 19 de noviembre su Estudio de Gobierno Electrónico 2026, una evaluación internacional del desarrollo de los servicios públicos digitales. El informe examina a 193 Estados miembros de la ONU y al Estado de Palestina y cumple 25 años de seguimiento del tema. El propósito es observar cómo las instituciones utilizan la tecnología para facilitar trámites, servicios y relaciones con los ciudadanos.\n\nDe acuerdo con la información de lanzamiento, 151 países alcanzaron puntajes altos o muy altos en el índice de desarrollo del gobierno electrónico. La nueva edición aborda el paso de servicios digitales tradicionales a modelos que incorporan sistemas automatizados y agentes de inteligencia artificial. También advierte que la conectividad, la facilidad de uso y la capacidad institucional siguen siendo desafíos en muchos lugares.\n\nLa ONU subraya que la modernización tecnológica requiere datos confiables, supervisión humana y mecanismos de responsabilidad institucional. No basta con ofrecer más plataformas si parte de la población carece de acceso o si los sistemas no responden adecuadamente. El estudio ofrece un punto de comparación para que gobiernos y ciudadanos evalúen avances y pendientes de inclusión digital, sin asumir que todas las soluciones tecnológicas generan beneficios automáticamente.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.un.org/sustainabledevelopment/blog/2026/11/media-advisory-launch-of-e-government-survey-2026-19-november-1230-pm-et/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:UN headquarters from LIC, May 2026.jpeg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Sede de Naciones Unidas en Nueva York; imagen institucional del organismo que presenta el estudio de gobierno electrónico."
+    },
+    {
+      "id": "orbiuno-20261119-1700-4",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 4,
+      "title": "El James Webb aporta claves sobre una fusión estelar",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "NASA",
+          "url": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+        }
+      ],
+      "summary": "La NASA divulgó una investigación que reúne observaciones del telescopio James Webb y otros datos astronómicos para comprender una fusión poco común entre estrellas. El hallazgo ayuda a reconstruir fenómenos que ocurren a enormes distancias.",
+      "executiveSummary": "La NASA divulgó una investigación que reúne observaciones del telescopio James Webb y otros datos astronómicos para comprender una fusión poco común entre estrellas. El hallazgo ayuda a reconstruir fenómenos que ocurren a enormes distancias.",
+      "reelLine": "La NASA divulgó una investigación que reúne observaciones del telescopio James Webb y otros datos astronómicos para comprender una fusión poco común entre estrellas. El hallazgo",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La NASA divulgó una investigación que reconstruye un proceso poco común de fusión entre dos estrellas en la galaxia de Andrómeda. Los astrónomos estudiaron cómo una estrella algo menos masiva que el Sol se acercó y terminó integrándose con una estrella supergigante. Al objeto que quedó después de ese encuentro le asignaron el nombre de Bao. El caso ofrece una oportunidad poco frecuente para comprender la evolución de sistemas binarios.\n\nLos investigadores combinaron datos de telescopios terrestres y espaciales con observaciones del telescopio espacial James Webb realizadas en diciembre de 2025. Esa información permitió unir las etapas anteriores, el proceso de interacción y las señales que quedaron tras la fusión. La publicación de la NASA, fechada el 18 de noviembre de 2026, explica por qué este evento resulta especial para la investigación estelar.\n\nLas fusiones de estrellas son difíciles de observar directamente porque pueden desarrollarse durante largos períodos y presentar señales complejas. Reconstruir un episodio con múltiples fuentes de información ayuda a contrastar modelos científicos y a estudiar cambios de brillo, materia y estructura. La noticia describe un avance de conocimiento astronómico; no se trata de un fenómeno cercano que represente peligro para la Tierra.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:The Andromeda Galaxy.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Galaxia de Andrómeda, donde fue investigada la fusión de estrellas; fotografía de contexto astronómico."
+    },
+    {
+      "id": "orbiuno-20261119-1700-5",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 5,
+      "title": "La misión Hera obtiene nuevas vistas tridimensionales de asteroides",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "ESA",
+          "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid"
+        }
+      ],
+      "summary": "La Agencia Espacial Europea presentó nuevas vistas en tres dimensiones relacionadas con la misión Hera. El músico y astrofísico Brian May contribuye a acercar al público el estudio de asteroides y el objetivo de mejorar la defensa planetaria.",
+      "executiveSummary": "La Agencia Espacial Europea presentó nuevas vistas en tres dimensiones relacionadas con la misión Hera. El músico y astrofísico Brian May contribuye a acercar al público el estudio de asteroides y el objetivo de mejorar la defensa planetaria.",
+      "reelLine": "La Agencia Espacial Europea presentó nuevas vistas en tres dimensiones relacionadas con la misión Hera. El músico y astrofísico Brian May contribuye a acercar al público",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La Agencia Espacial Europea difundió el 19 de noviembre nuevas vistas estereoscópicas del sistema de asteroides Didymos captadas por la misión Hera. El astrofísico y guitarrista Brian May colaboró en la presentación de imágenes que permiten apreciar rasgos del relieve con una sensación de profundidad. Hera forma parte de las investigaciones internacionales orientadas a comprender cómo responder ante posibles amenazas de asteroides.\n\nSegún la ESA, las imágenes que sirvieron de base se obtuvieron el 6 de noviembre, cuando la nave se encontraba a unos 29,7 kilómetros del sistema observado. Las tomas permiten distinguir mejor la cresta ecuatorial de Didymos y comparar su apariencia con zonas más cubiertas de rocas. La interpretación tridimensional facilita tanto el análisis científico como la divulgación al público.\n\nEstas observaciones no anuncian un impacto inminente contra la Tierra. Su importancia está en reunir información sobre forma, superficie y comportamiento de los cuerpos pequeños del sistema solar. La misión continúa construyendo conocimiento útil para la defensa planetaria y para comprender los resultados de intervenciones experimentales sobre trayectorias de asteroides.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Hera HyperScout H image of Didymos asteroid.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Asteroide Didymos observado por la misión Hera; imagen real de la misión espacial."
+    },
+    {
+      "id": "orbiuno-20261119-1700-6",
+      "date": "2026-11-19",
+      "editionSlot": "17:00",
+      "priority": 6,
+      "title": "UNESCO abre debate sobre cómo financiar la primera infancia",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "UNESCO",
+          "url": "https://indico.un.org/event/1022817/"
+        }
+      ],
+      "summary": "La UNESCO y sus aliados presentan un nuevo análisis mundial sobre los recursos destinados a la atención y educación de la primera infancia. El encuentro busca impulsar mejores decisiones de financiación para los primeros años de vida.",
+      "executiveSummary": "La UNESCO y sus aliados presentan un nuevo análisis mundial sobre los recursos destinados a la atención y educación de la primera infancia. El encuentro busca impulsar mejores decisiones de financiación para los primeros años de vida.",
+      "reelLine": "La UNESCO y sus aliados presentan un nuevo análisis mundial sobre los recursos destinados a la atención y educación de la primera infancia. El encuentro busca",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La UNESCO, junto con UNICEF y la Organización para la Cooperación y el Desarrollo Económicos, desarrolla los días 19 y 20 de noviembre en París el lanzamiento de un informe mundial sobre financiación de la atención y educación de la primera infancia. La reunión reúne representantes de gobiernos, organismos internacionales, especialistas y otros participantes interesados en mejorar el acceso a servicios de calidad durante los primeros años de vida.\n\nEl documento es la segunda edición de un informe bienal y se concentra en cómo distribuir recursos de manera equitativa e inclusiva. La agenda considera los compromisos internacionales sobre educación y cuidado infantil y busca ayudar a que las políticas cuenten con financiación suficiente y mecanismos de implementación. No se presenta como si ya hubiese aprobado presupuestos obligatorios para todos los países.\n\nLa primera infancia influye en el aprendizaje posterior, el bienestar y las oportunidades de desarrollo. Por eso, los debates sobre financiación interesan tanto a las familias como a los sistemas de educación, salud y protección social. El encuentro ofrece un espacio para revisar prioridades, identificar brechas y evaluar cómo los recursos públicos y privados podrían llegar de forma efectiva a quienes más los necesitan.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://indico.un.org/event/1022817/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:UNESCO Paris.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Sede de la UNESCO en París, lugar del encuentro internacional sobre primera infancia."
+    }
+  ]
+}
