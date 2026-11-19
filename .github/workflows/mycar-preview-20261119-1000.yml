@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: mycar-preview-20261119-1000-fast-v2
+  group: mycar-preview-20261119-1000-apt-refresh-v3
   cancel-in-progress: false
 jobs:
   previo:
@@ -22,8 +22,8 @@ jobs:
           python-version: '3.11'
       - name: Preparar dependencias
         run: |
-          if ! command -v ffmpeg >/dev/null; then sudo apt-get install -y -qq ffmpeg; fi
-          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf || sudo apt-get install -y -qq fonts-dejavu-core
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           python -m pip install --prefer-binary Pillow requests edge-tts
           python -m py_compile scripts/generate_voice.py scripts/render_mycar_19nov_5_preview.py
       - name: Renderizar SOLO vista previa
@@ -64,6 +64,8 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add previews/2026-11-19/mycar-1000-5
           git commit -m 'preview MyCar 19 nov 10am, no publicado'
+          git fetch origin preview/mycar-20261119-1000
+          git rebase origin/preview/mycar-20261119-1000
           git push origin HEAD:preview/mycar-20261119-1000
       - name: Archivo de revisión descargable
         if: always()
