@@ -20,7 +20,7 @@ FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
 # Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
 FIXED={
- ("mycar","photo-00.jpg"):"File:Citroën C3 Hybrid 110 ë-DSC6 Max (IV) – f 05042026.jpg",
+ ("mycar","photo-00.jpg"):"File:Volkswagen Golf VIII GTI Facelift DSC 7803.jpg",
  ("mycar","photo-01.jpg"):"File:BMW M350 xDrive Limousine in der BMW Welt Bild 1 2026-10-18.jpg",
  ("mycar","photo-02.jpg"):"File:Nissan Frontier Pro PHEV 001.jpg",
  ("mycar","photo-03.jpg"):"File:Ram Dakota South America front right - Autosdeprimera (cropped-1).jpg",
