@@ -149,9 +149,15 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
         logo_raw = getter(logo_url)
         logo = Image.open(io.BytesIO(logo_raw))
         logo.load()
-        if logo.width < 32 or logo.height < 32:
-            raise ValueError("No hay icono legítimo legible para fuente: " + host)
+        # Some authentic publisher favicons are only 16x16. Keep genuine
+        # pixels and enlarge visibly beside the large source-name label.
+        if logo.width < 16 or logo.height < 16:
+            raise ValueError("No hay icono legítimo identificable para fuente: " + host)
         logo = logo.convert("RGBA")
+        if min(logo.size) < 96:
+            ratio = 96 / min(logo.size)
+            target_size = (round(logo.width * ratio), round(logo.height * ratio))
+            logo = logo.resize(target_size, Image.Resampling.NEAREST)
         logo.save(output / f"logo-{i:02d}.png")
         entries.append({"id": n["id"], "photoFile": filename,
                         "logoFile": f"logo-{i:02d}.png", "sourceHost": host,
