@@ -114,7 +114,17 @@
       "sourceUrl": "https://indico.un.org/event/1022817/"
     }
   ],
-  "published": false,
-  "instagramId": null,
-  "instagramPermalink": null
+  "published": true,
+  "instagramId": "17916123051553968",
+  "instagramPermalink": null,
+  "facebookPostId": "1516359454884058_122112235551535309",
+  "facebookPostType": "link_post_not_native_reel",
+  "status": "META_ACK_CONFIRMED_WEB_PREFLIGHT_PASS",
+  "publicationEvidence": {
+    "instagram": "Windsor.ai create_video_post response Published video post Reel media id 17916123051553968",
+    "facebook": "Windsor.ai create_post response Published post id 1516359454884058_122112235551535309",
+    "githubRun": 44626618387,
+    "webPreflight": "PREFLIGHT_PASS",
+    "permalinksPendingIndependentReadback": true
+  }
 }
