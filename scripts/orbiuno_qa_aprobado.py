@@ -32,10 +32,22 @@ def validate(manifest: dict, *, folder: Path, assets: Path, news: dict, webvoice
     if len(credits) != 6 or len(manifest.get("news", [])) != 6:
         errors.append("credits_incomplete")
     for i, n in enumerate(ordered, 1):
-        for file in (assets / f"photo-{i:02}.jpg", assets / f"logo-{i:02}.png",
+        for file in (assets / f"photo-{i:02}.jpg",
                      folder / "frames" / f"noticia-{i:02}.jpg"):
             if not file.is_file() or file.stat().st_size < 1000:
                 errors.append("missing_visual_asset_" + str(i))
+        icon = assets / f"logo-{i:02}.png"
+        if not icon.is_file() or icon.stat().st_size < 150:
+            errors.append("missing_source_icon_" + str(i))
+        else:
+            from PIL import Image, UnidentifiedImageError
+            try:
+                with Image.open(icon) as im:
+                    im.load()
+                    if im.format != "PNG" or min(im.size) < 32:
+                        errors.append("source_icon_unreadable_" + str(i))
+            except (UnidentifiedImageError, OSError):
+                errors.append("source_icon_corrupt_" + str(i))
         if n.get("imageRightsVerified") is not True or not n.get("imageLicense") or not n.get("imageCredit"):
             errors.append("image_license_missing_" + str(i))
         if i <= len(credits) and (credits[i-1].get("author") != n.get("imageCredit") or
