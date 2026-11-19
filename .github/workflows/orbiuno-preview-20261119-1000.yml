@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: orbiuno-preview-17h-codec-v3
+  group: orbiuno-preview-17h-visual-v4
   cancel-in-progress: false
 jobs:
   previo:
@@ -61,16 +61,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main ni Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/orbiuno-20261119-1700"
-          mkdir -p previews/2026-11-19/orbiuno-1700-6-codec-v3
-          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1700-6-codec-v3/
-          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1700-6-codec-v3/
-          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1700-6-codec-v3/
-          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1700-6-codec-v3/
-          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1700-6-codec-v3/
-          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1700-6-codec-v3/
+          mkdir -p previews/2026-11-19/orbiuno-1700-6-codec-v4
+          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1700-6-codec-v4/
+          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1700-6-codec-v4/
+          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1700-6-codec-v4/
+          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1700-6-codec-v4/
+          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1700-6-codec-v4/
+          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1700-6-codec-v4/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/orbiuno-1700-6-codec-v3
+          git add previews/2026-11-19/orbiuno-1700-6-codec-v4
           git commit -m 'preview ORBIUNO 19 nov 17h, no publicado'
           git push origin HEAD:preview/orbiuno-20261119-1700
       - name: Archivo de revisión descargable
@@ -85,4 +85,6 @@ jobs:
 
 # Reejecución segura V2: sin modificar main ni publicar Meta.
 
-# Revisión V3: npm FFmpeg instalado sin apt ni paquetes stale.
+# Revisión V4: fecha reposicionada despues de QA visual; no publicar.
+
+# QA visual V4 de fecha completa; original sin cambios en main.
