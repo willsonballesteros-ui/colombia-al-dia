@@ -46,6 +46,29 @@ jobs:
           PYTHONPATH=. python -m unittest discover -s tests -p 'test_orbiuno_aprobado.py' -v
           python -m py_compile scripts/orbiuno_media_assets.py scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/generate_web_voice_colombia.py
 
+  validar_binarios_pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Validar binarios H264/AAC y DejaVu sin publicar
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save \
+            --prefix "$RUNNER_TEMP/orbiuno-npm" \
+            @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+          f="$RUNNER_TEMP/orbiuno-npm/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+          p="$RUNNER_TEMP/orbiuno-npm/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+          test -s "$f" && test -s "$p"
+          chmod +x "$f" "$p"
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          "$f" -version | sed -n '1p'
+          "$p" -version | sed -n '1p'
+          "$f" -hide_banner -encoders 2>/dev/null | grep -E 'libx264' >/dev/null
+          "$f" -hide_banner -encoders 2>/dev/null | grep -E '[[:space:]]aac[[:space:]]' >/dev/null
+          echo "BINARY_PREFLIGHT_PASS"
+
   producir:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
