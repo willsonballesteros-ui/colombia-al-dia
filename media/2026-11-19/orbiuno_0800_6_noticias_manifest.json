@@ -50,11 +50,11 @@
       "sourceUrl": "https://yemen.un.org/en/326250-secretary-general-message-world-toilet-day-2026"
     }
   ],
-  "published": false,
-  "instagramId": null,
-  "instagramPermalink": null,
+  "published": true,
+  "instagramId": "18242552854316472",
+  "instagramPermalink": "https://www.instagram.com/reel/Df7KROnlW8X/",
   "editionKey": "ORBIUNO-2026-11-19-0800",
-  "publicationStatus": "INSTAGRAM_ATTEMPT_STARTED",
+  "publicationStatus": "PUBLISHED_CONFIRMED",
   "qa": {
     "state": "PREFLIGHT_PASS",
     "workflowRunId": 44529907739,
@@ -66,5 +66,21 @@
     "checkedAt": "2026-11-19T13:11:22Z",
     "voiceAccentAudited": false,
     "visualMode": "source_cards"
+  },
+  "instagramPublishedAt": "2026-11-19T13:13:16Z",
+  "instagramStoryId": "18160908118569306",
+  "instagramStoryPermalink": "https://www.instagram.com/stories/resumen.noticias/4033863522400440872",
+  "instagramStoryPublishedAt": "2026-11-19T13:14:11Z",
+  "facebookPageId": "1516359454884058",
+  "facebookPostId": "1516359454884058_122112080433535309",
+  "facebookPermalink": "https://www.facebook.com/122110008351535309/posts/122112080433535309",
+  "facebookPublishedAt": "2026-11-19T13:14:41Z",
+  "facebookFormat": "link_post_to_instagram_reel",
+  "publicationProvider": "Windsor.ai",
+  "confirmedAt": "2026-11-19T13:16:40Z",
+  "publicationReadbackVerified": {
+    "instagram": true,
+    "instagramStory": true,
+    "facebook": true
   }
 }
