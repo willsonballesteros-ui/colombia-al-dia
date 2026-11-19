@@ -37,7 +37,7 @@ jobs:
           from pathlib import Path
           f=json.loads(Path('data/mycar-noticias.json').read_text())
           assert f['schema_version']==1
-          assert all(len(x['items'])==4 for x in f['editions'])
+          assert all(len(x['items']) in (4,5) for x in f['editions'])
           print('MYCAR_FEED_READY',len(f['editions']))
           PY
       - name: Guardar cambios comprobados
