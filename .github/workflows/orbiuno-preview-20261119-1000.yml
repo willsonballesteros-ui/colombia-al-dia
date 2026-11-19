@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: orbiuno-preview-20261119-1000-only
+  group: orbiuno-preview-17h-fast-v2
   cancel-in-progress: false
 jobs:
   previo:
@@ -20,11 +20,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Preparar dependencias
+      - name: Preparar dependencias rápido, sin apt-get update
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install --prefer-binary Pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get install -y -qq ffmpeg
+          fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          python -m pip install --disable-pip-version-check --timeout 20 --retries 1 --prefer-binary Pillow requests edge-tts
           python -m py_compile scripts/generate_voice.py scripts/render_orbiuno_19nov_6_preview.py
       - name: Renderizar SOLO vista previa
         run: python scripts/render_orbiuno_19nov_6_preview.py
@@ -53,16 +55,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main ni Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/orbiuno-20261119-1700"
-          mkdir -p previews/2026-11-19/orbiuno-1700-6
-          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1700-6/
-          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1700-6/
-          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1700-6/
-          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1700-6/
-          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1700-6/
-          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1700-6/
+          mkdir -p previews/2026-11-19/orbiuno-1700-6-fast
+          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1700-6-fast/
+          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1700-6-fast/
+          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1700-6-fast/
+          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1700-6-fast/
+          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1700-6-fast/
+          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1700-6-fast/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/orbiuno-1700-6
+          git add previews/2026-11-19/orbiuno-1700-6-fast
           git commit -m 'preview ORBIUNO 19 nov 17h, no publicado'
           git push origin HEAD:preview/orbiuno-20261119-1700
       - name: Archivo de revisión descargable
@@ -74,3 +76,5 @@ jobs:
           retention-days: 14
           if-no-files-found: warn
 # Revisión foto de Neptuno: CC0, 1200x1200
+
+# Reejecución segura V2: sin modificar main ni publicar Meta.
