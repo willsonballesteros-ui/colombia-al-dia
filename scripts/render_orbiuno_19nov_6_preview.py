@@ -202,16 +202,16 @@ def render(brand,config):
                  "-c:a","aac","-b:a","160k","-movflags","+faststart","-shortest",str(vid)],check=True)
  d=probe(vid)
  if abs(d-probe(audio/"full.mp3"))>1.2:raise RuntimeError("duración audio/video no coincide")
- captions=[f"{brand} AL DÍA 🚘 | 19 de noviembre de 2026 · edición 10:00 a. m.","","Seis noticias de Colombia y el mundo:"]
+ captions=[f"{brand} Noticias | 19 de noviembre de 2026 · 10:00 a. m.","","Seis noticias de Colombia y el mundo:"]
  captions.extend("• "+n["title"] for n in news)
- captions.extend(["","Más del sector automotor: https://colombia-al-dia.pages.dev/","", "Fuentes originales:"])
+ captions.extend(["","Lee y escucha las noticias completas: https://colombia-al-dia.pages.dev/","", "Fuentes originales:"])
  captions.extend(n["source"]+": "+n["url"] for n in news)
  captions.extend(["","Créditos de fotografía (Wikimedia Commons):"])
  captions.extend(x["author"]+" · "+x["license"]+" · "+x["commons"] for x in ledger)
- captions.extend(["","#MyCar #BuscoAutos #AutosColombia #NoticiasMotor"])
+ captions.extend(["","#ORBIUNO #Noticias #Colombia #Mundo"])
 
  caption_text="\n".join(captions)
- # Solo vista previa: no se publicará este caption hasta edición y validación independiente
+ if len(caption_text)>2200:raise RuntimeError("Caption IG supera 2200 caracteres")
  (OUT/(brand+"_caption.txt")).write_text(caption_text,encoding="utf-8")
  (folder/"credits.json").write_text(json.dumps(ledger,ensure_ascii=False,indent=2))
  (folder/"editorial.json").write_text(json.dumps(news,ensure_ascii=False,indent=2))
