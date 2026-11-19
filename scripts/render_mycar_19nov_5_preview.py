@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reel vespertino ORBIUNO corregido: fotografías reales CC, voz es-CO, fuentes y QA.
 
-No llama Meta; genera material PM verificado para hospedar una sola vez. Los enlaces originales y los créditos
+No llama Meta; genera un borrador visual PM para hospedar una sola vez. Los enlaces originales y los créditos
 se registran en archivos junto a los MP4. No inventa imágenes de acontecimientos.
 """
 import json,os,re,sys,subprocess,shutil,html,math
@@ -13,18 +13,18 @@ import requests
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"build"/"mycar_19nov5"
 OUT.mkdir(parents=True,exist_ok=True)
-ED=json.loads((ROOT/"editions"/"mycar-2026-11-19-1000-5.json").read_text(encoding="utf-8"))
+ED=json.loads((ROOT/"editions"/"mycar-2026-11-19-1700-5.json").read_text(encoding="utf-8"))
 UA="ORBIUNO-Editorial-Preview/1.0 (https://colombia-al-dia.pages.dev; Wikimedia Commons media selection)"
 SESSION=requests.Session();SESSION.headers.update({"User-Agent":UA})
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
 # Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
 FIXED={
- ("mycar","photo-00.jpg"):"File:Renault Kwid - Facelift (2026).png",
- ("mycar","photo-01.jpg"):"File:BYD Sealion 7, RWD, Japan, 2025, front.jpg",
- ("mycar","photo-02.jpg"):"File:Audi RS 5 Avant (B10) – f 21082026.jpg",
- ("mycar","photo-03.jpg"):"File:2026 Chevrolet Equinox EV.jpg",
- ("mycar","photo-04.jpg"):"File:Toyota bZ4X Z (FWD) '26 (1).jpg",
+ ("mycar","photo-00.jpg"):"File:Citroën C3 Hybrid 110 ë-DSC6 Max (IV) – f 05042026.jpg",
+ ("mycar","photo-01.jpg"):"File:BMW M350 xDrive Limousine in der BMW Welt Bild 1 2026-10-18.jpg",
+ ("mycar","photo-02.jpg"):"File:Nissan Frontier Pro PHEV 001.jpg",
+ ("mycar","photo-03.jpg"):"File:Ram Dakota South America front right - Autosdeprimera (cropped-1).jpg",
+ ("mycar","photo-04.jpg"):"File:Porsche 911 GT3 Touring (992.2) 001.jpg",
 }
 
 N=24
@@ -115,7 +115,26 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None
   base.paste(bg)
   big=ImageOps.contain(raw,(1080,1190))
   base.paste(big,((W-big.width)//2,180+(1180-big.height)//2))
+
  draw=ImageDraw.Draw(base,"RGBA")
+ if cover and item.get("teasers"):
+  # Solo una portada real, sin tarjetas superpuestas ni titular duplicado.
+  rect(draw,(50,52,1030,155),24,(5,18,34,245))
+  draw.text((88,73),brand,font=font(55),fill=(255,255,255,255))
+  draw.text((84,199),day,font=font(37),fill=(255,255,255,255),stroke_width=2,stroke_fill=(5,18,34,255))
+  rect(draw,(48,670,1032,1748),38,(5,19,34,248))
+  draw.text((88,713),"HOY · "+str(len(item["teasers"]))+" NOTICIAS",font=font(56),fill=(239,196,53,255))
+  y=807
+  for k,headline in enumerate(item["teasers"],1):
+   draw.text((89,y),f"{k:02d}",font=font(33),fill=(239,196,53,255))
+   lines,ft=wrap(draw,headline,34,813,3)
+   for j,line in enumerate(lines):
+    draw.text((164,y+j*43),line,font=ft,fill=(255,255,255,255))
+   y+=len(lines)*43+18
+  if y>1725:raise RuntimeError("Portada desbordada por titulares")
+  draw.text((88,1790),"BUSCO-AUTOS.PAGES.DEV",font=font(27),fill=(255,255,255,255))
+  base.save(out,quality=91)
+  return
  # Safe-area dark-glass text panel below image, enormous headline.
  rect(draw,(42,1050,1038,1780),42,(6,20,35,240))
  draw.rectangle((42,1050,1038,1063),fill=(239,196,53,255) if brand=="MYCAR" else (58,227,216,255))
@@ -190,18 +209,18 @@ def render(brand,config):
  for i,(item,ph,iscover) in enumerate(scenes):
   dest=folder/f"slide-{i:02d}.jpg"
   icon_index=coveridx if i==0 else min(i-1,len(icons)-1)
-  slide(brand,item,ph,"19 NOV 2026 · 10:00 A. M.",len(news),i,len(news),dest,iscover,icons[icon_index])
+  slide(brand,item,ph,"19 NOV 2026 · 5:00 P. M.",len(news),i,len(news),dest,iscover,icons[icon_index])
   slides.append(dest)
  manifest=folder/"slides.txt"
  # Duration of full audio must match frames and natural scene time.
  manifest.write_text("".join(f"file '{p.absolute()}'\nduration {max(.5,t):.6f}\n" for p,t in zip(slides,durations))+f"file '{slides[-1].absolute()}'\n")
- vid=OUT/(brand+"_19_NOV_2026_1000_5_NOTICIAS.mp4")
+ vid=OUT/(brand+"_19_NOV_2026_1700_5_NOTICIAS.mp4")
  subprocess.run(["ffmpeg","-y","-v","error","-f","concat","-safe","0","-i",str(manifest),"-i",str(audio/"full.mp3"),
                  "-map","0:v","-map","1:a","-vf","fps=24,format=yuv420p","-c:v","libx264","-preset","veryfast","-crf","24",
                  "-c:a","aac","-b:a","160k","-movflags","+faststart","-shortest",str(vid)],check=True)
  d=probe(vid)
  if abs(d-probe(audio/"full.mp3"))>1.2:raise RuntimeError("duración audio/video no coincide")
- captions=[f"{brand} AL DÍA 🚘 | 19 de noviembre de 2026 · edición 10:00 a. m.","","Cinco novedades del mundo del automóvil:"]
+ captions=[f"{brand} AL DÍA 🚘 | 19 de noviembre de 2026 · edición 5:00 p. m.","","Cinco novedades del mundo del automóvil:"]
  captions.extend("• "+n["title"] for n in news)
  captions.extend(["","Más del sector automotor: https://busco-autos.pages.dev/","", "Fuentes originales:"])
  captions.extend(n["source"]+": "+n["url"] for n in news)
