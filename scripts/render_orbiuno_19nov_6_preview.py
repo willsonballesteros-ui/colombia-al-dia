@@ -25,7 +25,7 @@ FIXED={
  ("orbiuno","photo-02.jpg"):"File:Bogotà - skyline.jpg",
  ("orbiuno","photo-03.jpg"):"File:Solar Panel Farm.jpg",
  ("orbiuno","photo-04.jpg"):"File:NASA\'s Voyager 1 Spacecraft Light-Day (NHQ202611170012).jpg",
- ("orbiuno","photo-05.jpg"):"File:Neptune.jpg",
+ ("orbiuno","photo-05.jpg"):"File:False color image of Neptune.jpg",
 }
 
 N=24
