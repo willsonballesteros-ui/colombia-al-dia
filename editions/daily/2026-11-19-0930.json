@@ -229,7 +229,7 @@
   ],
   "correctionOf": "ORBIUNO-2026-11-19-0800",
   "correctionReason": "Corregir edición de las 08:00 sin fotos reales y con voz incorrecta; la publicación original la retira el propietario.",
-  "retryAttempt": 3,
-  "previousFailedRun": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44545504602",
-  "retryReason": "APT de GitHub agotó timeout; sustitución por FFmpeg/FFprobe npm fijados y probados en PR24, H264/AAC. Wikimedia CDN validado PR23."
+  "retryAttempt": 4,
+  "previousFailedRun": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44546836400",
+  "retryReason": "Favicons Google redirigen a red de distribución gstatic; aceptados únicamente hosts oficiales tras PR25 y pruebas adversariales."
 }
