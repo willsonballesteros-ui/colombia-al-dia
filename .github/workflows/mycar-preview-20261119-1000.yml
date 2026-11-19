@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: mycar-preview-17h-fast-v2
+  group: mycar-preview-17h-codec-v3
   cancel-in-progress: false
 jobs:
   previo:
@@ -20,10 +20,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Preparar dependencias rápido, sin apt-get update
+      - name: Preparar FFmpeg npm y voz Salomé sin apt
         run: |
           if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
-            sudo apt-get install -y -qq ffmpeg
+            mkdir -p "$RUNNER_TEMP/codec-bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/codecs" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codec-bin/ffmpeg"
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/codec-bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            export PATH="$RUNNER_TEMP/codec-bin:$PATH"
+            echo "$RUNNER_TEMP/codec-bin" >> "$GITHUB_PATH"
           fi
           test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
           python -m pip install --disable-pip-version-check --timeout 20 --retries 1 --prefer-binary Pillow requests edge-tts
@@ -55,16 +61,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main o Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/mycar-20261119-1700"
-          mkdir -p previews/2026-11-19/mycar-1700-5-fast
-          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5-fast/
-          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5-fast/
-          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5-fast/
-          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5-fast/
-          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5-fast/
-          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5-fast/
+          mkdir -p previews/2026-11-19/mycar-1700-5-codec-v3
+          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5-codec-v3/
+          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5-codec-v3/
+          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5-codec-v3/
+          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5-codec-v3/
+          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5-codec-v3/
+          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5-codec-v3/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/mycar-1700-5-fast
+          git add previews/2026-11-19/mycar-1700-5-codec-v3
           git commit -m 'preview MyCar 19 nov 17h, no publicado'
           git fetch origin preview/mycar-20261119-1700
           git rebase origin/preview/mycar-20261119-1700
@@ -79,3 +85,5 @@ jobs:
           if-no-files-found: warn
 
 # Reejecución segura V2: sin modificar main ni publicar Meta.
+
+# Revisión V3: npm FFmpeg instalado sin apt ni paquetes stale.
