@@ -1,0 +1,68 @@
+[
+  {
+    "headline": "Bogotá fortalece la movilidad escolar de más de 114.000 estudiantes",
+    "source": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/estudiantes-beneficiados-con-estrategias-de-movilidad-en-bogota-2026",
+    "source_icon": "sourceicon-00.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:Ciclorruta_Bogotá_kr_12_con_cl_25.JPG",
+    "image_file": "photo-00.jpg",
+    "image_title": "File:Ciclorruta Bogotá kr 12 con cl 25.JPG",
+    "license": "CC BY-SA 3.0",
+    "author": "Felipe Restrepo Acosta",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "Colombia presenta compromisos de financiación e inversión",
+    "source": "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-cierra-la-Milagro-Week-de-Nueva-York-con-US-261118.aspx",
+    "source_icon": "sourceicon-01.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:Colombian_Flag.jpg",
+    "image_file": "photo-01.jpg",
+    "image_title": "File:Colombian Flag.jpg",
+    "license": "CC BY 2.0",
+    "author": "Mark Koester",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "La ONU destaca avances globales en gobierno digital",
+    "source": "https://www.un.org/sustainabledevelopment/blog/2026/11/media-advisory-launch-of-e-government-survey-2026-19-november-1230-pm-et/",
+    "source_icon": null,
+    "commons": "https://commons.wikimedia.org/wiki/File:UN_headquarters_from_LIC,_May_2026.jpeg",
+    "image_file": "photo-02.jpg",
+    "image_title": "File:UN headquarters from LIC, May 2026.jpeg",
+    "license": "CC BY-SA 4.0",
+    "author": "Mr.choppers",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "El James Webb aporta claves sobre una fusión estelar",
+    "source": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/",
+    "source_icon": "sourceicon-03.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:The_Andromeda_Galaxy.jpg",
+    "image_file": "photo-03.jpg",
+    "image_title": "File:The Andromeda Galaxy.jpg",
+    "license": "CC BY 4.0",
+    "author": "Ivan Bok",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "La misión Hera obtiene nuevas vistas tridimensionales de asteroides",
+    "source": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
+    "source_icon": null,
+    "commons": "https://commons.wikimedia.org/wiki/File:Hera_HyperScout_H_image_of_Didymos_asteroid.jpg",
+    "image_file": "photo-04.jpg",
+    "image_title": "File:Hera HyperScout H image of Didymos asteroid.jpg",
+    "license": "CC BY-SA 3.0 igo",
+    "author": "ESA",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "UNESCO abre debate sobre cómo financiar la primera infancia",
+    "source": "https://indico.un.org/event/1022817/",
+    "source_icon": "sourceicon-05.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:UNESCO_Paris.JPG",
+    "image_file": "photo-05.jpg",
+    "image_title": "File:UNESCO Paris.JPG",
+    "license": "CC0",
+    "author": "Alf van Beem",
+    "visual": "Fotografía real de contexto o archivo"
+  }
+]
