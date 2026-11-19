@@ -51,5 +51,38 @@ class WikimediaCdnTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"Host multimedia no autorizado"):
                 fetch("https://thumb.wikimedia.org.evil.example/file.jpg")
 
+
+    def test_google_favicon_official_cdn_redirect(self):
+        class Response:
+            url = "https://t0.gstatic.com/faviconV2?type=FAVICON&url=bogota.gov.co"
+            def __enter__(self): return self
+            def __exit__(self,*args): return False
+            def read(self,limit): return b"icon-image-data"
+        with patch("scripts.orbiuno_media_assets.urlopen", return_value=Response()):
+            self.assertEqual(
+                fetch("https://www.google.com/s2/favicons?domain=bogota.gov.co&sz=256"),
+                b"icon-image-data"
+            )
+
+    def test_google_favicon_spoofed_redirect_is_rejected(self):
+        class Response:
+            url = "https://t0.gstatic.com.evil.example/faviconV2"
+            def __enter__(self): return self
+            def __exit__(self,*args): return False
+            def read(self,limit): return b"fake"
+        with patch("scripts.orbiuno_media_assets.urlopen", return_value=Response()):
+            with self.assertRaisesRegex(ValueError,"Redireccion fuera de hosts autorizados"):
+                fetch("https://www.google.com/s2/favicons?domain=bogota.gov.co&sz=256")
+
+    def test_wikimedia_photo_cannot_redirect_to_google(self):
+        class Response:
+            url = "https://t0.gstatic.com/faviconV2"
+            def __enter__(self): return self
+            def __exit__(self,*args): return False
+            def read(self,limit): return b"fake"
+        with patch("scripts.orbiuno_media_assets.urlopen", return_value=Response()):
+            with self.assertRaisesRegex(ValueError,"Redireccion fuera de hosts autorizados"):
+                fetch("https://thumb.wikimedia.org/wikipedia/commons/thumb/abc.jpg")
+
 if __name__ == "__main__":
     unittest.main()

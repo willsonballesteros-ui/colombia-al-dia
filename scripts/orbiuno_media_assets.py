@@ -32,8 +32,20 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
     with urlopen(request, timeout=38) as response:
-        if urlsplit(response.url).hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org", "www.google.com"):
-            raise ValueError("Redireccion fuera de hosts autorizados")
+        final = urlsplit(response.url)
+        commons_hosts = {"commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org"}
+        # Solo los favicons de Google pueden redirigir a las CDN oficiales gstatic.
+        google_favicon_hosts = {"www.google.com", "www.gstatic.com", "t0.gstatic.com", "t1.gstatic.com",
+                                "t2.gstatic.com", "t3.gstatic.com", "encrypted-tbn0.gstatic.com",
+                                "encrypted-tbn1.gstatic.com", "encrypted-tbn2.gstatic.com", "encrypted-tbn3.gstatic.com"}
+        if p.hostname == "www.google.com" and p.path == "/s2/favicons":
+            destinations = google_favicon_hosts
+        elif p.hostname in commons_hosts:
+            destinations = commons_hosts
+        else:
+            destinations = {"www.google.com"}
+        if final.scheme != "https" or final.hostname not in destinations or final.port not in (None, 443):
+            raise ValueError("Redireccion fuera de hosts autorizados: " + str(final.hostname or "sin_host"))
         raw = response.read(limit + 1)
     if not raw or len(raw) > limit:
         raise ValueError("Multimedia vacio o mayor al límite")
