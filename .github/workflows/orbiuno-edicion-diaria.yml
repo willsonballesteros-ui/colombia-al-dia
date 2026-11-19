@@ -122,10 +122,10 @@ jobs:
             echo "$RUNNER_TEMP/orbiuno-bin" >> "$GITHUB_PATH"
           fi
           test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
-          ffmpeg -version | head -1
-          ffprobe -version | head -1
-          ffmpeg -hide_banner -encoders 2>/dev/null | grep -q 'libx264'
-          ffmpeg -hide_banner -encoders 2>/dev/null | grep -Eq '[[:space:]]aac[[:space:]]'
+          ffmpeg -version | sed -n '1p'
+          ffprobe -version | sed -n '1p'
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -E 'libx264' >/dev/null
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -E '[[:space:]]aac[[:space:]]' >/dev/null
           echo "FFMPEG_FFPROBE_H264_AAC_READY"
 
       - name: Obtener y comprobar las seis fotos reales y logos oficiales
