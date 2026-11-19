@@ -72,7 +72,9 @@
       "imageRightsVerified": false,
       "photoCommonsTitle": "File:Salonconestudiantes.jpg",
       "photoMatchReviewed": true,
-      "photoCaption": "Estudiantes de Colombia durante una clase, en el contexto del sistema educativo nacional."
+      "photoCaption": "Estudiantes de Colombia durante una clase, en el contexto del sistema educativo nacional.",
+      "logoCommonsTitle": "File:Logo Ministerio de Educación Nacional Colombia.svg",
+      "logoMatchReviewed": true
     },
     {
       "id": "orbiuno-20261119-0930-3",
@@ -110,7 +112,9 @@
       "imageRightsVerified": false,
       "photoCommonsTitle": "File:Shenzhen Skyline from Nanshan.jpg",
       "photoMatchReviewed": true,
-      "photoCaption": "Vista panorámica de Shenzhen, ciudad china anfitriona del encuentro diplomático."
+      "photoCaption": "Vista panorámica de Shenzhen, ciudad china anfitriona del encuentro diplomático.",
+      "logoCommonsTitle": "File:Europa press logo.svg",
+      "logoMatchReviewed": true
     },
     {
       "id": "orbiuno-20261119-0930-4",
@@ -148,7 +152,9 @@
       "imageRightsVerified": false,
       "photoCommonsTitle": "File:Stacja paliw Orlen Wrocław (2026-01-18).jpg",
       "photoMatchReviewed": true,
-      "photoCaption": "Estación de servicio de ORLEN en Breslavia, Polonia, fotografiada en enero de 2026."
+      "photoCaption": "Estación de servicio de ORLEN en Breslavia, Polonia, fotografiada en enero de 2026.",
+      "logoCommonsTitle": "File:Orlen wordmark logo.svg",
+      "logoMatchReviewed": true
     },
     {
       "id": "orbiuno-20261119-0930-5",
@@ -224,12 +230,14 @@
       "imageRightsVerified": false,
       "photoCommonsTitle": "File:School girls washing hands.jpg",
       "photoMatchReviewed": true,
-      "photoCaption": "Estudiantes se lavan las manos después de usar los servicios sanitarios, en Zimbabue."
+      "photoCaption": "Estudiantes se lavan las manos después de usar los servicios sanitarios, en Zimbabue.",
+      "logoCommonsTitle": "File:Logo of the United Nations.svg",
+      "logoMatchReviewed": true
     }
   ],
   "correctionOf": "ORBIUNO-2026-11-19-0800",
   "correctionReason": "Corregir edición de las 08:00 sin fotos reales y con voz incorrecta; la publicación original la retira el propietario.",
-  "retryAttempt": 4,
-  "previousFailedRun": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44546836400",
-  "retryReason": "Favicons Google redirigen a red de distribución gstatic; aceptados únicamente hosts oficiales tras PR25 y pruebas adversariales."
+  "retryAttempt": 5,
+  "previousFailedRun": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44547337446",
+  "retryReason": "Icono de MinEducación tiene resolución 16px; usar logotipos oficiales de Wikimedia Commons con licencias revisadas."
 }
