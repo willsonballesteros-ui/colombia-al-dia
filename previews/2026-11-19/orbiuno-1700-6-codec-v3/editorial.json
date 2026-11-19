@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Bogotá fortalece la movilidad escolar de más de 114.000 estudiantes",
+    "source": "BOGOTÁ.GOV.CO",
+    "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/estudiantes-beneficiados-con-estrategias-de-movilidad-en-bogota-2026",
+    "say": "Bogotá reportó que más de ciento catorce mil estudiantes han sido beneficiados durante dos mil veintiséis por acciones para llegar al colegio de manera segura. La estrategia incluye desplazamientos escolares protegidos y promueve una movilidad más ordenada para las familias.",
+    "image_query": "File:Ciclorruta Bogotá kr 12 con cl 25.JPG"
+  },
+  {
+    "title": "Colombia presenta compromisos de financiación e inversión",
+    "source": "PRESIDENCIA",
+    "url": "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-cierra-la-Milagro-Week-de-Nueva-York-con-US-261118.aspx",
+    "say": "El Gobierno informó que durante la Milagro Week en Nueva York se presentaron compromisos y oportunidades de inversión y financiación por más de cuarenta y tres mil millones de dólares. Son anuncios y compromisos reportados, no recursos desembolsados ni inversiones ya ejecutadas.",
+    "image_query": "File:Colombian Flag.jpg"
+  },
+  {
+    "title": "La ONU destaca avances globales en gobierno digital",
+    "source": "NACIONES UNIDAS",
+    "url": "https://www.un.org/sustainabledevelopment/blog/2026/11/media-advisory-launch-of-e-government-survey-2026-19-november-1230-pm-et/",
+    "say": "Naciones Unidas presenta hoy su estudio de gobierno electrónico dos mil veintiséis, que examina cómo los países usan servicios públicos digitales. El documento permite comparar avances y dificultades en el acceso a herramientas tecnológicas para la ciudadanía.",
+    "image_query": "File:UN headquarters from LIC, May 2026.jpeg"
+  },
+  {
+    "title": "El James Webb aporta claves sobre una fusión estelar",
+    "source": "NASA",
+    "url": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/",
+    "say": "La NASA divulgó una investigación que reúne observaciones del telescopio James Webb y otros datos astronómicos para comprender una fusión poco común entre estrellas. El hallazgo ayuda a reconstruir fenómenos que ocurren a enormes distancias.",
+    "image_query": "File:The Andromeda Galaxy.jpg"
+  },
+  {
+    "title": "La misión Hera obtiene nuevas vistas tridimensionales de asteroides",
+    "source": "ESA",
+    "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
+    "say": "La Agencia Espacial Europea presentó nuevas vistas en tres dimensiones relacionadas con la misión Hera. El músico y astrofísico Brian May contribuye a acercar al público el estudio de asteroides y el objetivo de mejorar la defensa planetaria.",
+    "image_query": "File:Hera HyperScout H image of Didymos asteroid.jpg"
+  },
+  {
+    "title": "UNESCO abre debate sobre cómo financiar la primera infancia",
+    "source": "UNESCO",
+    "url": "https://indico.un.org/event/1022817/",
+    "say": "La UNESCO y sus aliados presentan un nuevo análisis mundial sobre los recursos destinados a la atención y educación de la primera infancia. El encuentro busca impulsar mejores decisiones de financiación para los primeros años de vida.",
+    "image_query": "File:UNESCO Paris.JPG"
+  }
+]
