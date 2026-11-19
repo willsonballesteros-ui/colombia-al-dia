@@ -14,7 +14,7 @@
   "voiceSpeed": 1.25,
   "width": 1080,
   "height": 1920,
-  "duration": 51.0,
+  "duration": 51,
   "sha256": "689320f2f34b05899a3e12fa0ece9d2b5d2154e8381f23b7472e0690ae87e56c",
   "video": "ORBIUNO_2026-11-19_0800_6_NOTICIAS.mp4",
   "sourceOnly": true,
@@ -52,5 +52,19 @@
   ],
   "published": false,
   "instagramId": null,
-  "instagramPermalink": null
+  "instagramPermalink": null,
+  "editionKey": "ORBIUNO-2026-11-19-0800",
+  "publicationStatus": "INSTAGRAM_ATTEMPT_STARTED",
+  "qa": {
+    "state": "PREFLIGHT_PASS",
+    "workflowRunId": 44529907739,
+    "fullMp3Decode": true,
+    "fullVideoDecode": true,
+    "fullArticleTextsMatch": true,
+    "browserSixArticles": true,
+    "browserSixAudioStarts": true,
+    "checkedAt": "2026-11-19T13:11:22Z",
+    "voiceAccentAudited": false,
+    "visualMode": "source_cards"
+  }
 }
