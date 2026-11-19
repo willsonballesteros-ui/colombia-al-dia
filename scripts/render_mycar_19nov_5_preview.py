@@ -162,7 +162,7 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None
  # Brand, date and no fake original logos.
  rect(draw,(52,60,1028,152),24,(5,18,34,230))
  draw.text((83,80),brand,font=font(52),fill=(255,255,255,255))
- draw.text((658,88),day,font=font(28),fill=(245,230,176,255))
+ draw.text((515,88),day,font=font(28),fill=(245,230,176,255))
  draw.text((84,1735),"FOTO: "+str(item.get("photo_credit","WIKIMEDIA COMMONS"))[:48],font=font(23),fill=(218,225,233,255))
  draw.text((83,1800),"BUSCO-AUTOS.PAGES.DEV · NOTICIAS DE CARROS",font=font(23),fill=(255,255,255,255))
  if cover and item.get("teasers"):
