@@ -1,0 +1,232 @@
+{
+  "editionDate": "2026-11-19",
+  "editionSlot": "09:30",
+  "editionKey": "ORBIUNO-2026-11-19-0930",
+  "status": "EDITORIAL_VERIFIED_READY_FOR_QA",
+  "format": "six_stories_verified_real_photos",
+  "sourceOnly": false,
+  "news": [
+    {
+      "id": "orbiuno-20261119-0930-1",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 1,
+      "title": "Bogotá abre una feria con 800 vacantes tecnológicas",
+      "category": "Colombia",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "Portal Bogotá",
+          "url": "https://bogota.gov.co/mi-ciudad/desarrollo-economico/2026-11/trabajo-si-hay-en-bogota-870-vacantes-disponibles-18-y-19-noviembre"
+        }
+      ],
+      "summary": "Bogotá ofrece ochocientas vacantes tecnológicas en una feria que comienza hoy.",
+      "executiveSummary": "Bogotá ofrece ochocientas vacantes tecnológicas en una feria que comienza hoy.",
+      "reelLine": "Bogotá ofrece ochocientas vacantes tecnológicas en una feria que comienza hoy.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Bogotá ofrece este jueves una nueva oportunidad para quienes buscan empleo en el sector tecnológico. El JobFest de ExpoTech Lago se realizará el diecinueve y veinte de noviembre, entre las diez de la mañana y las cuatro de la tarde, en el parque Lago Gaitán y el Centro de Alta Tecnología.\n\nSegún el Portal Bogotá, la feria reúne ochocientas oportunidades laborales relacionadas con actividades tecnológicas y digitales. Los asistentes podrán conocer perfiles solicitados y establecer contacto con empresas. La publicación oficial incluye un formulario de inscripción y las indicaciones para participar en la jornada.\n\nLa agenda distrital también contempla procesos virtuales para atención bilingüe y soluciones financieras, con requisitos diferentes para cada cargo. Las personas interesadas deben revisar formación, experiencia, horarios y condiciones directamente en la convocatoria. La existencia de una vacante inicia un proceso de selección y su resultado depende de la evaluación de cada empleador.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/mi-ciudad/desarrollo-economico/2026-11/trabajo-si-hay-en-bogota-870-vacantes-disponibles-18-y-19-noviembre"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Bogotá - edificio en el barrio Lago Gaitán.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Edificio del barrio Lago Gaitán, en Bogotá, zona donde se realiza la feria de empleo tecnológico."
+    },
+    {
+      "id": "orbiuno-20261119-0930-2",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 2,
+      "title": "Educación prioriza 20 proyectos de recuperación",
+      "category": "Colombia",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "MinEducación",
+          "url": "https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/431943:Gobierno-nacional-avanza-en-la-recuperacion-educativa-tras-el-terremoto-20-proyectos-priorizados-y-mobiliario-para-mas-de-113-000-estudiantes"
+        }
+      ],
+      "summary": "Educación prioriza veinte proyectos y prevé mobiliario para más de ciento trece mil estudiantes.",
+      "executiveSummary": "Educación prioriza veinte proyectos y prevé mobiliario para más de ciento trece mil estudiantes.",
+      "reelLine": "Educación prioriza veinte proyectos y prevé mobiliario para más de ciento trece mil estudiantes.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El Ministerio de Educación presentó un balance sobre la recuperación del servicio educativo después del terremoto. En la información divulgada el dieciocho de noviembre, la entidad indicó que se priorizaron veinte proyectos mediante Obras por Impuestos y que existe una programación para intervenir sedes afectadas.\n\nEntre las entregas previstas figura mobiliario escolar destinado a ciento trece mil cuarenta y nueve estudiantes. El Ministerio explicó que trabaja con autoridades territoriales para ordenar las intervenciones según la ubicación de las instituciones, la población atendida y las condiciones técnicas de las obras.\n\nLa recuperación combina espacios seguros, jornadas por turnos y apoyos pedagógicos mientras se rehabilitan los edificios. Los proyectos priorizados representan una agenda de ejecución que requiere seguimiento. La entidad informó que un comité revisa semanalmente tanto los trabajos en marcha como los procesos de contratación asociados a la respuesta educativa.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/431943:Gobierno-nacional-avanza-en-la-recuperacion-educativa-tras-el-terremoto-20-proyectos-priorizados-y-mobiliario-para-mas-de-113-000-estudiantes"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Salonconestudiantes.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Estudiantes de Colombia durante una clase, en el contexto del sistema educativo nacional."
+    },
+    {
+      "id": "orbiuno-20261119-0930-3",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 3,
+      "title": "Shenzhen abre diálogo sobre riesgos nucleares",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "Europa Press",
+          "url": "https://www.europapress.es/internacional/noticia-xi-trump-putin-acuerdan-entablar-dialogo-prevenir-proliferacion-armas-nucleares-20261119123527.html"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/"
+        }
+      ],
+      "summary": "China y Rusia difunden una declaración sobre diálogo nuclear tras la reunión con Trump.",
+      "executiveSummary": "China y Rusia difunden una declaración sobre diálogo nuclear tras la reunión con Trump.",
+      "reelLine": "China y Rusia difunden una declaración sobre diálogo nuclear tras la reunión con Trump.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Los presidentes de China, Estados Unidos y Rusia se reunieron en Shenzhen en el marco de la agenda de APEC. Tras el encuentro, China y Rusia difundieron una declaración que plantea mantener conversaciones para reducir riesgos nucleares y prevenir la proliferación de esas armas, según la cobertura de Reuters y Europa Press.\n\nEl texto también aborda la reforma de Naciones Unidas y la estabilidad del suministro energético. Los planteamientos expresan objetivos políticos de los participantes. La información disponible no acredita un calendario de reducción de arsenales ni un mecanismo nuevo de inspección.\n\nEl diálogo ofrece un canal entre potencias con diferencias importantes en seguridad internacional. Su alcance deberá evaluarse a partir de decisiones posteriores, compromisos verificables y resultados concretos. La edición conserva la atribución a quienes difundieron el documento y evita presentar esa declaración como una solución alcanzada para conflictos que continúan abiertos.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.europapress.es/internacional/noticia-xi-trump-putin-acuerdan-entablar-dialogo-prevenir-proliferacion-armas-nucleares-20261119123527.html"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Shenzhen Skyline from Nanshan.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Vista panorámica de Shenzhen, ciudad china anfitriona del encuentro diplomático."
+    },
+    {
+      "id": "orbiuno-20261119-0930-4",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 4,
+      "title": "Orlen y Carlyle estudian inversiones energéticas",
+      "category": "Economía",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "ORLEN",
+          "url": "https://www.orlen.pl/pl/o-firmie/media/komunikaty-prasowe/biezace/2026/listopad-2026/ORLEN-i-Carlyle-podpisaly-porozumienie-o-poszukiwaniu-mozliwosci-inwestycyjnych-w-sektorze-energetycznym"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/energy/orlen-carlyle-sign-mou-joint-energy-investments-2026-11-19/"
+        }
+      ],
+      "summary": "Orlen y Carlyle acuerdan estudiar inversiones en electricidad, combustibles renovables, petróleo y gas.",
+      "executiveSummary": "Orlen y Carlyle acuerdan estudiar inversiones en electricidad, combustibles renovables, petróleo y gas.",
+      "reelLine": "Orlen y Carlyle acuerdan estudiar inversiones en electricidad, combustibles renovables, petróleo y gas.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "pl",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La compañía polaca Orlen y la firma de inversión Carlyle firmaron este diecinueve de noviembre un memorando para explorar oportunidades en el sector energético. El anuncio se realizó durante una reunión de cooperación energética transatlántica celebrada en Varsovia.\n\nEl entendimiento contempla petróleo y gas, combustibles renovables y generación eléctrica en Polonia y otros mercados. Las empresas buscan combinar experiencia operativa y capacidad financiera para evaluar proyectos. Entre los objetivos descritos figuran modernización industrial, eficiencia energética y seguridad del suministro.\n\nOrlen aclara que el documento es de carácter no vinculante. Cada eventual inversión deberá superar evaluaciones, negociación de condiciones comerciales, documentación definitiva y las autorizaciones pertinentes. El acuerdo abre una etapa de análisis empresarial; los montos, ubicaciones y fechas de proyectos específicos dependerán de decisiones que todavía deben concretarse.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.orlen.pl/pl/o-firmie/media/komunikaty-prasowe/biezace/2026/listopad-2026/ORLEN-i-Carlyle-podpisaly-porozumienie-o-poszukiwaniu-mozliwosci-inwestycyjnych-w-sektorze-energetycznym"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Stacja paliw Orlen Wrocław (2026-01-18).jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Estación de servicio de ORLEN en Breslavia, Polonia, fotografiada en enero de 2026."
+    },
+    {
+      "id": "orbiuno-20261119-0930-5",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 5,
+      "title": "NLC India Renewables presenta su proyecto de salida a bolsa",
+      "category": "Economía",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "Moneycontrol",
+          "url": "https://www.moneycontrol.com/news/business/markets/nlc-india-shares-rise-2-as-renewables-unit-files-for-ipo-14084455.html"
+        },
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/business/energy/nlc-indias-green-energy-unit-files-ipo-2026-11-19/"
+        }
+      ],
+      "summary": "NLC India Renewables presenta documentos para salir a bolsa y financiar su estructura empresarial.",
+      "executiveSummary": "NLC India Renewables presenta documentos para salir a bolsa y financiar su estructura empresarial.",
+      "reelLine": "NLC India Renewables presenta documentos para salir a bolsa y financiar su estructura empresarial.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "NLC India Renewables presentó documentación para una oferta pública inicial, según informaron este jueves Reuters y Moneycontrol. La filial de energías renovables de NLC India busca acceder al mercado de capitales dentro de la reorganización y expansión de sus actividades.\n\nMoneycontrol señala que la propuesta combina una emisión de nuevas acciones con la venta de títulos por accionistas existentes. Los recursos de la emisión están previstos para el pago de deuda. La compañía desarrolla proyectos solares y eólicos y forma parte de un grupo que también opera generación térmica y minería.\n\nLa presentación de documentos inicia una etapa regulatoria y comercial. El precio, la fecha y la captación efectiva dependerán de las condiciones finales y las autorizaciones correspondientes. La noticia describe una operación empresarial en preparación y no ofrece una recomendación de inversión ni garantiza resultados a futuros compradores.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.moneycontrol.com/news/business/markets/nlc-india-shares-rise-2-as-renewables-unit-files-for-ipo-14084455.html"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:NLCIL Corp Office.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Oficina corporativa de NLC India Limited en Neyveli, India, grupo de la filial de energías renovables."
+    },
+    {
+      "id": "orbiuno-20261119-0930-6",
+      "date": "2026-11-19",
+      "editionSlot": "09:30",
+      "priority": 6,
+      "title": "La ONU pide saneamiento seguro con igualdad",
+      "category": "Mundo",
+      "level": "Noticia verificada",
+      "sources": [
+        {
+          "name": "ONU",
+          "url": "https://yemen.un.org/en/326250-secretary-general-message-world-toilet-day-2026"
+        },
+        {
+          "name": "ONU-Hábitat",
+          "url": "https://unhabitat.org/events/world-toilet-day-2"
+        }
+      ],
+      "summary": "La ONU dedica el Día Mundial del Retrete al saneamiento seguro y la igualdad.",
+      "executiveSummary": "La ONU dedica el Día Mundial del Retrete al saneamiento seguro y la igualdad.",
+      "reelLine": "La ONU dedica el Día Mundial del Retrete al saneamiento seguro y la igualdad.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Naciones Unidas conmemora este diecinueve de noviembre el Día Mundial del Retrete con un llamado a mejorar el acceso al saneamiento seguro. La campaña de dos mil veintiséis destaca la relación entre estos servicios y la igualdad de oportunidades para mujeres y niñas.\n\nEl mensaje del secretario general subraya la importancia de contar con instalaciones limpias, seguras y fiables, acompañadas de agua e higiene. La disponibilidad de esos servicios influye en la participación en escuelas, lugares de trabajo y espacios públicos, además de proteger salud, privacidad y dignidad.\n\nLa ONU pide incorporar a mujeres y niñas en el diseño y la gestión de las soluciones. El objetivo es que las instalaciones respondan a las necesidades de quienes las utilizan y permitan un acceso equitativo. La jornada busca impulsar acciones hacia el compromiso internacional de agua y saneamiento para todas las personas.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://yemen.un.org/en/326250-secretary-general-message-world-toilet-day-2026"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:School girls washing hands.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Estudiantes se lavan las manos después de usar los servicios sanitarios, en Zimbabue."
+    }
+  ],
+  "correctionOf": "ORBIUNO-2026-11-19-0800",
+  "correctionReason": "Corregir edición de las 08:00 sin fotos reales y con voz incorrecta; la publicación original la retira el propietario."
+}

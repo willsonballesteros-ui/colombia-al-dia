@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 BOGOTA = ZoneInfo("America/Bogota")
-SLOTS = {"08:00", "12:00", "18:00", "19:00"}
+SLOTS = {"08:00", "09:30", "12:00", "18:00", "19:00"}
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -25,7 +25,7 @@ def validated(doc: dict, today: str | None = None) -> tuple[str, str, list[dict]
     if not isinstance(day, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day):
         raise ValueError("Fecha editorial inválida")
     if slot not in SLOTS:
-        raise ValueError("Franja inválida: usar 08:00, 12:00, 18:00 o 19:00")
+        raise ValueError("Franja inválida: usar 08:00, 09:30, 12:00, 18:00 o 19:00")
     if today is not None and day != today:
         raise ValueError("Edición de otra fecha: no se puede publicar como hoy")
     news = doc.get("news")
@@ -109,7 +109,7 @@ def main():
     parser.add_argument("--today", default=datetime.now(BOGOTA).date().isoformat())
     args = parser.parse_args()
     f = Path(args.edition).resolve()
-    if ROOT not in f.parents or not re.fullmatch(r"\d{4}-\d{2}-\d{2}-(0800|1200|1800|1900)\.json", f.name):
+    if ROOT not in f.parents or not re.fullmatch(r"\d{4}-\d{2}-\d{2}-(0800|0930|1200|1800|1900)\.json", f.name):
         raise SystemExit("Se requiere un fichero editions/daily/YYYY-MM-DD-HHMM.json del repositorio")
     if f.parent != ROOT / "editions" / "daily":
         raise SystemExit("Carpeta inesperada para edición")

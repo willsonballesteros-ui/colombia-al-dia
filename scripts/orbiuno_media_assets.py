@@ -100,7 +100,7 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
         raise ValueError("source_only no se transforma en revision editorial: BLOQUEADO")
     if day != datetime.now(ZoneInfo("America/Bogota")).date().isoformat():
         raise ValueError("No se procesa una edición de otra fecha")
-    if slot not in ("08:00", "18:00", "12:00", "19:00") or len(edition.get("news", [])) != 6:
+    if slot not in ("08:00", "09:30", "18:00", "12:00", "19:00") or len(edition.get("news", [])) != 6:
         raise ValueError("Edición o franja incorrecta")
     db = json.loads(news_path.read_text(encoding="utf-8"))
     items = {x.get("id"): x for x in db["news"]}
