@@ -38,18 +38,22 @@ def produce():
             datetime.date.fromisoformat(date)
         except ValueError:
             continue
-        slot="18:00" if dir.name.endswith("-pm") else "08:00"
-        key="MYCAR-"+date+("-PM" if slot=="18:00" else "-AM")
+        if dir.name.endswith("-pm-5"):
+            slot="Noche"
+            key="MYCAR-"+date+"-PM-5"
+        else:
+            slot="18:00" if dir.name.endswith("-pm") else "08:00"
+            key="MYCAR-"+date+("-PM" if slot=="18:00" else "-AM")
         editorial=dir/"editorial.json"
         credits=dir/"credits.json"
-        mp4s=list(dir.glob("MYCAR_*_REEL_PUBLICAR.mp4"))
+        mp4s=list(dir.glob("MYCAR_*_REEL_PUBLICAR.mp4")) if dir.name!="mycar-pm-5" else list(dir.glob("MYCAR_*_5_NOTICIAS.mp4"))
         if not editorial.exists() or not credits.exists() or len(mp4s)!=1:
             continue
         mp4=mp4s[0]
         if mp4.stat().st_size<100000:
             continue
         notes=load(editorial); rights=load(credits)
-        if not isinstance(notes,list) or len(notes)!=4 or not isinstance(rights,list) or len(rights)!=4:
+        if not isinstance(notes,list) or len(notes) not in (4,5) or not isinstance(rights,list) or len(rights)!=len(notes):
             raise RuntimeError("Estructura editorial inválida: "+str(dir))
         news=[]
         for note,credit in zip(notes,rights):
@@ -70,7 +74,7 @@ def produce():
             additions+=1
         previous[key]=row
     rows=sorted(previous.values(),key=lambda x:(x.get("date",""),x.get("slot","")),reverse=True)
-    if any(len(e.get("items",[]))!=4 or not valid_source(e.get("video_url")) for e in rows):
+    if any(len(e.get("items",[])) not in (4,5) or not valid_source(e.get("video_url")) for e in rows):
         raise RuntimeError("No se puede publicar feed inconsistente")
     data={"schema_version":1,"brand":"MYCAR AL DÍA","website":"https://busco-autos.pages.dev/",
           "updated_date":datetime.datetime.now(datetime.timezone.utc).date().isoformat(),
