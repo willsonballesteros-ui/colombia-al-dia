@@ -151,7 +151,7 @@ def main():
     ap.add_argument("--news", default=str(ROOT / "noticias.json"))
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
-    result = stage(Path(args.edition), Path(args.news), Path(args.out))
+    result = stage(Path(args.edition).resolve(), Path(args.news).resolve(), Path(args.out).resolve())
     print("PHOTOS_AND_SOURCE_LOGOS_VERIFIED", result["photosCount"], result["logosCount"])
 
 
