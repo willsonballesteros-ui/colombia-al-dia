@@ -156,11 +156,27 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
         photo = decode_image(getter(credit["url"]))
         filename = f"photo-{i:02d}.jpg"
         photo.save(output / filename, quality=88, optimize=True)
-        logo_url = (logo_credit["url"] if logo_credit else
-                    OFFICIAL_ICONS.get(host, "https://www.google.com/s2/favicons?" + urlencode({"domain": host, "sz": 256})))
-        logo_raw = getter(logo_url)
-        logo = Image.open(io.BytesIO(logo_raw))
-        logo.load()
+        icon_candidates = ([logo_credit["url"]] if logo_credit else [
+            OFFICIAL_ICONS.get(host),
+            "https://www.google.com/s2/favicons?" + urlencode({"domain": host, "sz": 128}),
+            "https://www.google.com/s2/favicons?" + urlencode({"domain_url": "https://" + host, "sz": 64}),
+        ])
+        logo = None
+        icon_errors = []
+        for logo_url in filter(None, icon_candidates):
+            try:
+                print("ICON_ATTEMPT", host, logo_url, flush=True)
+                raw_icon = getter(logo_url)
+                candidate = Image.open(io.BytesIO(raw_icon))
+                candidate.load()
+                if candidate.width >= 16 and candidate.height >= 16:
+                    logo = candidate
+                    break
+                raise ValueError("ícono demasiado pequeño")
+            except Exception as exc:
+                icon_errors.append(str(exc)[:95])
+        if logo is None:
+            raise ValueError("Sin logo/icono real para "+host+": "+repr(icon_errors))
         # Some authentic publisher favicons are only 16x16. Keep genuine
         # pixels and enlarge visibly beside the large source-name label.
         if logo.width < 16 or logo.height < 16:
