@@ -43,7 +43,7 @@ jobs:
       - name: Pruebas adversariales aisladas, sin publicar
         run: |
           python -m pip install Pillow
-          PYTHONPATH=. python -m unittest -v tests.test_orbiuno_aprobado
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_orbiuno_aprobado.py' -v
           python -m py_compile scripts/orbiuno_media_assets.py scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/generate_web_voice_colombia.py
 
   producir:
