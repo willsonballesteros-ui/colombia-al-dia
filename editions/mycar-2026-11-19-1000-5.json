@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-19",
+  "slot": "10:00",
+  "mycar": {
+    "cover": {
+      "title": "Cinco novedades que mueven el mundo del automóvil",
+      "news_index": 0
+    },
+    "intro": "En MyCar, estas son cinco noticias de automóviles en Colombia y el mundo.",
+    "outro": "Conoce más noticias del motor en busco autos punto pages punto dev.",
+    "news": [
+      {
+        "title": "Renault Kwid 2027: seis airbags desde $49,99 millones",
+        "source": "RENAULT SOFASA",
+        "url": "https://prensa.renault.com.co/prensa/el-renault-kwid-evoluciona-con-mas-tecnologia-diseno-renovado-y-seis-airbags/",
+        "say": "Renault presentó en Colombia el Kwid dos mil veintisiete, ensamblado en Envigado. Llega desde cuarenta y nueve millones novecientos noventa mil pesos, con seis airbags y garantía de cinco años o cien mil kilómetros.",
+        "image_query": "File:Renault Kwid - Facelift (2026).png"
+      },
+      {
+        "title": "BYD Sealion 7 eléctrica llega por $116,99 millones",
+        "source": "AUTOCOSMOS",
+        "url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+        "say": "La BYD Sealion siete con tracción trasera llega a Colombia por ciento dieciséis millones novecientos noventa mil pesos. La marca anuncia cuatrocientos cuarenta kilómetros de autonomía en ciclo W L T C y doscientos vehículos para la primera entrega.",
+        "image_query": "File:BYD Sealion 7, RWD, Japan, 2025, front.jpg"
+      },
+      {
+        "title": "Audi RS 5 híbrido enchufable llega con 630 caballos",
+        "source": "AUTOCOSMOS",
+        "url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-audi-rs-5-llega-a-colombia-con-tecnologia-phev-y-630-hp",
+        "say": "Audi presentó en el Salón del Automóvil de Bogotá el nuevo RS cinco híbrido enchufable. Combina un motor V seis biturbo con impulso eléctrico para alcanzar seiscientos treinta caballos de potencia.",
+        "image_query": "File:Audi RS 5 Avant (B10) – f 21082026.jpg"
+      },
+      {
+        "title": "Chevrolet incorporará Gemini en seis modelos de Colombia",
+        "source": "AUTOCOSMOS",
+        "url": "https://noticias.autocosmos.com.co/2026/11/17/chevrolet-incorpora-google-gemini-en-colombia-modelos-compatibles-y-funciones",
+        "say": "Chevrolet incorporará de manera progresiva el asistente Google Gemini en seis modelos dos mil veintisiete en Colombia. Entre ellos figuran Traverse, Tahoe, Suburban, Silverado y los eléctricos Blazer y Equinox.",
+        "image_query": "File:2026 Chevrolet Equinox EV.jpg"
+      },
+      {
+        "title": "Toyota y Pony.ai ponen a operar robotaxis sin conductor",
+        "source": "PONY.AI",
+        "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+        "say": "Toyota y Pony punto ai anunciaron el inicio de un servicio comercial de robotaxis sin conductor en Guangzhou, China. Utiliza vehículos eléctricos basados en el modelo b Z cuatro X y tecnología de conducción autónoma de nivel cuatro.",
+        "image_query": "File:Toyota bZ4X Z (FWD) '26 (1).jpg"
+      }
+    ]
+  }
+}
