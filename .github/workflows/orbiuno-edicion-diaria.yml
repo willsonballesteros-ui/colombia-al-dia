@@ -104,20 +104,29 @@ jobs:
           python scripts/validate_news.py noticias.json
           python -m py_compile scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/orbiuno_daily_preflight.py
 
-      - name: Instalar voz y ffmpeg
-        timeout-minutes: 6
+      - name: Instalar voz y FFmpeg/FFprobe sin APT lento
+        timeout-minutes: 8
         run: |
           set -euo pipefail
-          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
-            timeout 90s sudo apt-get update -qq || echo "APT_UPDATE_TIMEOUT_USING_CACHED_INDEX"
-            timeout 180s sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          fi
-          if [ ! -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf ]; then
-            timeout 120s sudo apt-get install -y -qq fonts-dejavu-core
-          fi
           python -m pip install --timeout 30 --retries 2 Pillow edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/orbiuno-bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save \
+              --prefix "$RUNNER_TEMP/orbiuno-npm" \
+              @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -s "$RUNNER_TEMP/orbiuno-npm/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/orbiuno-bin/ffmpeg"
+            ln -s "$RUNNER_TEMP/orbiuno-npm/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/orbiuno-bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/orbiuno-npm/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            chmod +x "$RUNNER_TEMP/orbiuno-npm/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            export PATH="$RUNNER_TEMP/orbiuno-bin:$PATH"
+            echo "$RUNNER_TEMP/orbiuno-bin" >> "$GITHUB_PATH"
+          fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
           ffmpeg -version | head -1
           ffprobe -version | head -1
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -q 'libx264'
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -Eq '[[:space:]]aac[[:space:]]'
+          echo "FFMPEG_FFPROBE_H264_AAC_READY"
 
       - name: Obtener y comprobar las seis fotos reales y logos oficiales
         env:
