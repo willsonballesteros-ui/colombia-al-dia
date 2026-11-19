@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: mycar-preview-17h-codec-v3
+  group: mycar-preview-17h-visual-v4
   cancel-in-progress: false
 jobs:
   previo:
@@ -61,16 +61,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main o Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/mycar-20261119-1700"
-          mkdir -p previews/2026-11-19/mycar-1700-5-codec-v3
-          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5-codec-v3/
-          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5-codec-v3/
-          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5-codec-v3/
-          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5-codec-v3/
-          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5-codec-v3/
-          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5-codec-v3/
+          mkdir -p previews/2026-11-19/mycar-1700-5-codec-v4
+          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5-codec-v4/
+          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5-codec-v4/
+          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5-codec-v4/
+          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5-codec-v4/
+          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5-codec-v4/
+          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5-codec-v4/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/mycar-1700-5-codec-v3
+          git add previews/2026-11-19/mycar-1700-5-codec-v4
           git commit -m 'preview MyCar 19 nov 17h, no publicado'
           git fetch origin preview/mycar-20261119-1700
           git rebase origin/preview/mycar-20261119-1700
@@ -86,4 +86,6 @@ jobs:
 
 # Reejecución segura V2: sin modificar main ni publicar Meta.
 
-# Revisión V3: npm FFmpeg instalado sin apt ni paquetes stale.
+# Revisión V4: fecha reposicionada despues de QA visual; no publicar.
+
+# QA visual V4 de fecha completa; original sin cambios en main.
