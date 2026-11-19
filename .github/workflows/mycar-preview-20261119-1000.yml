@@ -1,8 +1,8 @@
-name: "MyCar | PREVIA 19 nov 10:00 · cinco noticias (no publicar)"
+name: "MyCar | PREVIA 19 nov 17:00 · cinco noticias (no publicar)"
 on:
   push:
     branches:
-      - preview/mycar-20261119-1000
+      - preview/mycar-20261119-1700
     paths:
       - .github/workflows/mycar-preview-20261119-1000.yml
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
           import json, subprocess, hashlib
           from pathlib import Path
           d=Path('build/mycar_19nov5')
-          p=d/'MYCAR_19_NOV_2026_1000_5_NOTICIAS.mp4'
+          p=d/'MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4'
           report=json.loads((d/'mycar/audio/audio_report.json').read_text())
           news=json.loads((d/'mycar/editorial.json').read_text())
           photos=json.loads((d/'mycar/credits.json').read_text())
@@ -52,26 +52,26 @@ jobs:
           PY
       - name: Guardar PREVIA en rama aislada, nunca a main o Meta
         run: |
-          test "$GITHUB_REF_NAME" = "preview/mycar-20261119-1000"
-          mkdir -p previews/2026-11-19/mycar-1000-5
-          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1000_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1000-5/
-          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1000-5/
-          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1000-5/
-          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1000-5/
-          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1000-5/
-          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1000-5/
+          test "$GITHUB_REF_NAME" = "preview/mycar-20261119-1700"
+          mkdir -p previews/2026-11-19/mycar-1700-5
+          cp build/mycar_19nov5/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4 previews/2026-11-19/mycar-1700-5/
+          cp build/mycar_19nov5/MYCAR_caption.txt previews/2026-11-19/mycar-1700-5/
+          cp build/mycar_19nov5/mycar/credits.json previews/2026-11-19/mycar-1700-5/
+          cp build/mycar_19nov5/mycar/editorial.json previews/2026-11-19/mycar-1700-5/
+          cp build/mycar_19nov5/mycar/slide-*.jpg previews/2026-11-19/mycar-1700-5/
+          cp build/mycar_19nov5/mycar/audio/audio_report.json previews/2026-11-19/mycar-1700-5/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/mycar-1000-5
-          git commit -m 'preview MyCar 19 nov 10am, no publicado'
-          git fetch origin preview/mycar-20261119-1000
-          git rebase origin/preview/mycar-20261119-1000
-          git push origin HEAD:preview/mycar-20261119-1000
+          git add previews/2026-11-19/mycar-1700-5
+          git commit -m 'preview MyCar 19 nov 17h, no publicado'
+          git fetch origin preview/mycar-20261119-1700
+          git rebase origin/preview/mycar-20261119-1700
+          git push origin HEAD:preview/mycar-20261119-1700
       - name: Archivo de revisión descargable
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: MYCAR-19NOV-1000-5-PREVIA
+          name: MYCAR-19NOV-1700-5-PREVIA
           path: build/mycar_19nov5/
           retention-days: 14
           if-no-files-found: warn
