@@ -5,6 +5,64 @@
   "updated_date": "2026-11-19",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-19-AM",
+      "date": "2026-11-19",
+      "slot": "10:00",
+      "title": "Renault Kwid 2027: seis airbags desde $49,99 millones",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/approved-v2-20261119-1000/previews/2026-11-19/mycar-1000-5-v2/MYCAR_19_NOV_2026_1000_5_NOTICIAS_REVISION_V2.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df7t6U_lEgx/",
+      "items": [
+        {
+          "title": "Renault Kwid 2027: seis airbags desde $49,99 millones",
+          "summary": "Renault presentó en Colombia la evolución del Kwid con seis airbags, diseño renovado y nuevas tecnologías. El precio anunciado arranca en $49,99 millones.",
+          "source": "RENAULT SOFASA",
+          "source_url": "https://prensa.renault.com.co/prensa/el-renault-kwid-evoluciona-con-mas-tecnologia-diseno-renovado-y-seis-airbags/",
+          "image_file_title": "File:Renault Kwid - Facelift (2026).png",
+          "photo_credit": "(G)jabz",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_Kwid_-_Facelift_(2026).png"
+        },
+        {
+          "title": "BYD Sealion 7 eléctrica llega por $116,99 millones",
+          "summary": "La BYD Sealion 7 con tracción trasera fue presentada para Colombia con autonomía anunciada de hasta 440 km en ciclo WLTC y un precio inicial de $116,99 millones.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+          "image_file_title": "File:BYD Sealion 7, RWD, Japan, 2025, front.jpg",
+          "photo_credit": "Kazyakuruma",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BYD_Sealion_7,_RWD,_Japan,_2025,_front.jpg"
+        },
+        {
+          "title": "Audi RS 5 híbrido enchufable llega con 630 caballos",
+          "summary": "Audi anunció para Colombia el RS 5 con sistema híbrido enchufable y potencia conjunta informada de 630 caballos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-audi-rs-5-llega-a-colombia-con-tecnologia-phev-y-630-hp",
+          "image_file_title": "File:Audi RS 5 Avant (B10) – f 21082026.jpg",
+          "photo_credit": "© M 93",
+          "photo_license": "CC BY-SA 3.0 de",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Audi_RS_5_Avant_(B10)_–_f_21082026.jpg"
+        },
+        {
+          "title": "Chevrolet incorporará Gemini en seis modelos de Colombia",
+          "summary": "Chevrolet anunció la incorporación de Google Gemini en seis modelos comercializados en Colombia, con nuevas funciones de asistencia y conectividad.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/chevrolet-incorpora-google-gemini-en-colombia-modelos-compatibles-y-funciones",
+          "photo_credit": "BuickCentury04",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2026_Chevrolet_Equinox_EV.jpg"
+        },
+        {
+          "title": "Toyota y Pony.ai ponen a operar robotaxis sin conductor",
+          "summary": "Pony.ai y Toyota anunciaron el inicio de operaciones comerciales de vehículos robotaxi totalmente autónomos.",
+          "source": "PONY.AI",
+          "source_url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+          "photo_credit": "Oq10pass",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Toyota_bZ4X_Z_(FWD)_'26_(1).jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-18-PM-5",
       "date": "2026-11-18",
       "slot": "Noche",
