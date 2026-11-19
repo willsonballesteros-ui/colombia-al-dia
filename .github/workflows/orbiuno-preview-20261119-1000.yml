@@ -1,8 +1,8 @@
-name: "ORBIUNO | PREVIA 19 nov 10:00 · seis noticias (no publicar)"
+name: "ORBIUNO | PREVIA 19 nov 17:00 · seis noticias (no publicar)"
 on:
   push:
     branches:
-      - preview/orbiuno-20261119-1000
+      - preview/orbiuno-20261119-1700
     paths:
       - .github/workflows/orbiuno-preview-20261119-1000.yml
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
           import json, subprocess, hashlib
           from pathlib import Path
           d=Path('build/orbiuno_19nov6')
-          p=d/'ORBIUNO_19_NOV_2026_1000_6_NOTICIAS.mp4'
+          p=d/'ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4'
           report=json.loads((d/'orbiuno/audio/audio_report.json').read_text())
           news=json.loads((d/'orbiuno/editorial.json').read_text())
           photos=json.loads((d/'orbiuno/credits.json').read_text())
@@ -52,24 +52,24 @@ jobs:
           PY
       - name: Guardar PREVIA en rama aislada, nunca a main ni Meta
         run: |
-          test "$GITHUB_REF_NAME" = "preview/orbiuno-20261119-1000"
-          mkdir -p previews/2026-11-19/orbiuno-1000-6
-          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1000_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1000-6/
-          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1000-6/
-          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1000-6/
-          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1000-6/
-          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1000-6/
-          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1000-6/
+          test "$GITHUB_REF_NAME" = "preview/orbiuno-20261119-1700"
+          mkdir -p previews/2026-11-19/orbiuno-1700-6
+          cp build/orbiuno_19nov6/ORBIUNO_19_NOV_2026_1700_6_NOTICIAS.mp4 previews/2026-11-19/orbiuno-1700-6/
+          cp build/orbiuno_19nov6/ORBIUNO_caption.txt previews/2026-11-19/orbiuno-1700-6/
+          cp build/orbiuno_19nov6/orbiuno/credits.json previews/2026-11-19/orbiuno-1700-6/
+          cp build/orbiuno_19nov6/orbiuno/editorial.json previews/2026-11-19/orbiuno-1700-6/
+          cp build/orbiuno_19nov6/orbiuno/slide-*.jpg previews/2026-11-19/orbiuno-1700-6/
+          cp build/orbiuno_19nov6/orbiuno/audio/audio_report.json previews/2026-11-19/orbiuno-1700-6/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-19/orbiuno-1000-6
-          git commit -m 'preview ORBIUNO 19 nov 10am, no publicado'
-          git push origin HEAD:preview/orbiuno-20261119-1000
+          git add previews/2026-11-19/orbiuno-1700-6
+          git commit -m 'preview ORBIUNO 19 nov 17h, no publicado'
+          git push origin HEAD:preview/orbiuno-20261119-1700
       - name: Archivo de revisión descargable
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ORBIUNO-19NOV-1000-6-PREVIA
+          name: ORBIUNO-19NOV-1700-6-PREVIA
           path: build/orbiuno_19nov6/
           retention-days: 14
           if-no-files-found: warn
