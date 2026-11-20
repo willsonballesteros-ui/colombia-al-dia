@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: orbiuno-preview-20261120-0800
+  group: orbiuno-preview-20261120-0800-final
   cancel-in-progress: false
 jobs:
   previo:
@@ -61,16 +61,16 @@ jobs:
       - name: Guardar PREVIA en rama aislada, nunca a main ni Meta
         run: |
           test "$GITHUB_REF_NAME" = "preview/orbiuno-20261120-0800"
-          mkdir -p previews/2026-11-20/orbiuno-0800-6-qa
-          cp build/orbiuno_20nov0800/ORBIUNO_20_NOV_2026_0800_6_NOTICIAS.mp4 previews/2026-11-20/orbiuno-0800-6-qa/
-          cp build/orbiuno_20nov0800/ORBIUNO_caption.txt previews/2026-11-20/orbiuno-0800-6-qa/
-          cp build/orbiuno_20nov0800/orbiuno/credits.json previews/2026-11-20/orbiuno-0800-6-qa/
-          cp build/orbiuno_20nov0800/orbiuno/editorial.json previews/2026-11-20/orbiuno-0800-6-qa/
-          cp build/orbiuno_20nov0800/orbiuno/slide-*.jpg previews/2026-11-20/orbiuno-0800-6-qa/
-          cp build/orbiuno_20nov0800/orbiuno/audio/audio_report.json previews/2026-11-20/orbiuno-0800-6-qa/
+          mkdir -p previews/2026-11-20/orbiuno-0800-6-final
+          cp build/orbiuno_20nov0800/ORBIUNO_20_NOV_2026_0800_6_NOTICIAS.mp4 previews/2026-11-20/orbiuno-0800-6-final/
+          cp build/orbiuno_20nov0800/ORBIUNO_caption.txt previews/2026-11-20/orbiuno-0800-6-final/
+          cp build/orbiuno_20nov0800/orbiuno/credits.json previews/2026-11-20/orbiuno-0800-6-final/
+          cp build/orbiuno_20nov0800/orbiuno/editorial.json previews/2026-11-20/orbiuno-0800-6-final/
+          cp build/orbiuno_20nov0800/orbiuno/slide-*.jpg previews/2026-11-20/orbiuno-0800-6-final/
+          cp build/orbiuno_20nov0800/orbiuno/audio/audio_report.json previews/2026-11-20/orbiuno-0800-6-final/
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add previews/2026-11-20/orbiuno-0800-6-qa
+          git add previews/2026-11-20/orbiuno-0800-6-final
           git commit -m 'preview ORBIUNO 20 nov 08h, no publicado'
           git push origin HEAD:preview/orbiuno-20261120-0800
       - name: Archivo de revisión descargable
@@ -88,3 +88,5 @@ jobs:
 # Revisión V4: fecha reposicionada despues de QA visual; no publicar.
 
 # QA visual V4 de fecha completa; original sin cambios en main.
+
+# Edición final 20/11/2026: fotos auténticas relevantes, autor confirmado, sin publicación Meta.
