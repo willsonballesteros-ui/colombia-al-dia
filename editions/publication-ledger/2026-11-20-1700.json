@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-20",
+  "slot": "17:00",
+  "timezone": "America/Bogota",
+  "edition_key": "2026-11-20-1700",
+  "orbiuno": {
+    "edition_id": "ORBIUNO-2026-11-20-1700",
+    "news_count": 6,
+    "instagram_account": "resumen.noticias",
+    "instagram_account_id": "17841438062554418",
+    "instagram_media_id": "18117609410114818",
+    "instagram_permalink": null,
+    "instagram_publish_confirmation": "Windsor.ai: Published video post (Reel) to Instagram account 17841438062554418",
+    "facebook_page": "Orbiuno Noticias",
+    "facebook_page_account_id": "1516359454884058",
+    "facebook_video_id": "2165426821514086",
+    "facebook_post_id": "1516359454884058_122112599403535309",
+    "facebook_post_type": "native_reel",
+    "facebook_permalink": null,
+    "facebook_publish_confirmation": "Windsor.ai: Published Reel to Facebook Page 1516359454884058",
+    "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-20/ORBIUNO_2026-11-20_1700_6_NOTICIAS.mp4",
+    "video_sha256": "d57ff88a76f2be1b1f8531201150d75bbdaebc235d7d4c9d227e99a55f9ab7e6",
+    "source_file": "editions/daily/2026-11-20-1700.json",
+    "site": "https://colombia-al-dia.pages.dev/",
+    "site_sync_verified": true,
+    "site_sync": "GitHub Actions 44828611804 completed success; PREFLIGHT_PASS date 2026-11-20 slot 17:00 six IDs, six web MP3 and public Cloudflare web checks"
+  },
+  "mycar": {
+    "edition_id": "2026-11-20-pm",
+    "news_count": 5,
+    "instagram_account": "mycar.buscoautos",
+    "facebook_page": "MyCar",
+    "instagram_media_id": null,
+    "facebook_post_id": null,
+    "video_url": null,
+    "site": "https://busco-autos.pages.dev/noticias/",
+    "site_sync_verified": false,
+    "publication_state": "BLOCKED_MISSING_FIVE_EXACT_LICENSED_MODEL_PHOTOS",
+    "status": "NOT_PUBLISHED",
+    "source_file": "willsonballesteros-ui/mycar-al-dia:fix/mycar-20nov-1700-salome-five/editions/2026-11-20-pm.json"
+  },
+  "note": "Distinct from published 08:00 edition. ORBIUNO Meta returned media and video/post IDs; permalink readback had not refreshed; do not fabricate permalinks or republish to retrieve. MyCar remains unpublished until all five exact licensed photos, genuine Salomé audio, MP4 QA and web sync. No paid tools."
+}
