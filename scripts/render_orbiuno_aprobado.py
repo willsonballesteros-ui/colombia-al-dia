@@ -142,13 +142,13 @@ def seconds(path):
 
 def encode(image, audio, target, *, silent_duration=None):
     ff = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-nostdin", "-y",
-          "-loop", "1", "-framerate", "24", "-i", image]
+          "-loop", "1", "-framerate", "30", "-i", image]
     if silent_duration is not None:
         ff += ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(silent_duration)]
     else:
         ff += ["-i", audio, "-t", str(seconds(audio) + .18)]
     ff += ["-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast",
-           "-crf", "25", "-r", "24", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "44100",
+           "-crf", "25", "-r", "30", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", "44100",
            "-ac", "1", "-b:a", "128k", "-movflags", "+faststart", "-shortest", target]
     cmd(*ff)
     if not target.is_file() or target.stat().st_size < 5000:
@@ -205,8 +205,14 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     concat.write_text("".join("file '" + p.resolve().as_posix() + "'\n" for p in parts), encoding="utf-8")
     video_name = "ORBIUNO_" + day + "_" + slot.replace(":", "") + "_6_NOTICIAS.mp4"
     video = output / video_name
+    # Re-encode the final join to constant 30fps: stream-copy of 24fps segments
+    # may declare a misleading 120fps timebase and fail Meta's 24-60fps Reel gate.
     cmd("ffmpeg", "-hide_banner", "-loglevel", "error", "-nostdin", "-y", "-f", "concat",
-        "-safe", "0", "-i", concat, "-c", "copy", "-movflags", "+faststart", video)
+        "-safe", "0", "-i", concat, "-map", "0:v:0", "-map", "0:a:0",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
+        "-r", "30", "-vsync", "cfr", "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+        "-movflags", "+faststart", video)
     duration = seconds(video)
     if duration < 10 or video.stat().st_size < 300_000:
         raise RuntimeError("Video demasiado corto o vacío")
@@ -219,7 +225,7 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     m = {"edition": day, "slot": slot, "newsCount": 6, "newsIds": [n["id"] for n in rows],
          "voice": VOICE, "voiceSpeed": TEMPO, "voiceEngines": [x["engine"] for x in audio_report["segments"]],
          "language": "es-CO", "voiceAccentAudited": False, "width": W, "height": H,
-         "duration": round(duration, 2), "sha256": hashlib.sha256(video.read_bytes()).hexdigest(),
+         "duration": round(duration, 2), "fps": 30, "sha256": hashlib.sha256(video.read_bytes()).hexdigest(),
          "video": video_name, "visualMode": "verified_real_photos", "imagesCount": 6,
          "logosCount": 6, "photoCredits": [x["credit"] for x in entries],
          "sourceOnly": False, "publicationAuthorized": False,
