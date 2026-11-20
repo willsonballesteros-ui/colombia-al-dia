@@ -24,6 +24,14 @@ jobs:
       - name: Preparar paquetes sin solicitudes Wikimedia
         run: |
           python -m pip install --disable-pip-version-check --prefer-binary Pillow edge-tts
+          if ! command -v ffprobe >/dev/null || ! command -v ffmpeg >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/orbiuno-codecs/bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/orbiuno-codecs" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -sf "$RUNNER_TEMP/orbiuno-codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/orbiuno-codecs/bin/ffmpeg"
+            ln -sf "$RUNNER_TEMP/orbiuno-codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/orbiuno-codecs/bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/orbiuno-codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/orbiuno-codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            echo "$RUNNER_TEMP/orbiuno-codecs/bin" >> "$GITHUB_PATH"
+          fi
           python -m py_compile scripts/orbiuno_web_sync_cached_20261120.py scripts/orbiuno_import_daily.py scripts/generate_web_voice_colombia.py scripts/prepare_site.py
       - name: Descargar artefacto ORIGINAL de QA visual del Reel sin republicarlo
         env:
@@ -138,3 +146,5 @@ jobs:
 # Reintento 3: normalizar ruta absoluta del caché verificado sin tocar fotos existentes.
 
 # Reintento 4: resolver importación del paquete scripts sin alterar fuente de audio.
+
+# Reintento 5: instalar FFmpeg y FFprobe para comprobar todos los MP3 sin APT.
