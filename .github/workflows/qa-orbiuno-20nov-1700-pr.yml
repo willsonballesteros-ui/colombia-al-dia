@@ -6,10 +6,14 @@ on:
     paths:
       - '.github/workflows/qa-orbiuno-20nov-1700-pr.yml'
       - 'editions/daily/2026-11-20-1700.json'
+      - 'scripts/render_orbiuno_aprobado.py'
+      - 'scripts/orbiuno_qa_aprobado.py'
   pull_request:
     paths:
       - '.github/workflows/qa-orbiuno-20nov-1700-pr.yml'
       - 'editions/daily/2026-11-20-1700.json'
+      - 'scripts/render_orbiuno_aprobado.py'
+      - 'scripts/orbiuno_qa_aprobado.py'
   workflow_dispatch:
 permissions:
   contents: read
