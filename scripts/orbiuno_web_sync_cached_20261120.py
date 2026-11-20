@@ -94,7 +94,7 @@ def sync(edition_file: Path, cache: Path, news_file: Path, target: Path):
         if not dst.exists():
             shutil.copyfile(src, dst)
         saved = lookup[item["id"]]
-        base = "./" + target.relative_to(ROOT).as_posix() + "/"
+        base = "./" + target.resolve().relative_to(ROOT).as_posix() + "/"
         saved.update(
             imageUrl=base + filename,
             imageType="licensed_press_photo",
