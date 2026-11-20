@@ -1,0 +1,91 @@
+name: "MYCAR | PREVIA 20 nov 08:00 · cinco noticias (no publicar)"
+on:
+  push:
+    branches:
+      - preview/mycar-20261120-0800
+    paths:
+      - .github/workflows/mycar-preview-20261120-0800.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-preview-20261120-0800
+  cancel-in-progress: false
+jobs:
+  previo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar FFmpeg npm y voz Salomé sin apt
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/codec-bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/codecs" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codec-bin/ffmpeg"
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/codec-bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            export PATH="$RUNNER_TEMP/codec-bin:$PATH"
+            echo "$RUNNER_TEMP/codec-bin" >> "$GITHUB_PATH"
+          fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          python -m pip install --disable-pip-version-check --timeout 20 --retries 1 --prefer-binary Pillow requests edge-tts
+          python -m py_compile scripts/generate_voice.py scripts/render_mycar_20nov_0800_preview.py
+      - name: Renderizar SOLO vista previa
+        run: python scripts/render_mycar_20nov_0800_preview.py
+      - name: QA foto real, voz Salomé, audio y MP4
+        run: |
+          python - <<'PY'
+          import json, subprocess, hashlib
+          from pathlib import Path
+          d=Path('build/mycar_20nov0800')
+          p=d/'MYCAR_20_NOV_2026_0800_5_NOTICIAS.mp4'
+          report=json.loads((d/'mycar/audio/audio_report.json').read_text())
+          news=json.loads((d/'mycar/editorial.json').read_text())
+          photos=json.loads((d/'mycar/credits.json').read_text())
+          assert len(news)==len(photos)==5
+          assert len({n['url'] for n in news})==5
+          assert report['voice']=='es-CO-SalomeNeural' and report['tempo']==1.25 and report['status']=='ok'
+          assert len(report['segments'])==7
+          assert len(list((d/'mycar').glob('slide-*.jpg')))==7
+          assert all(x['license'] and x['author'] and 'commons.wikimedia.org/wiki/File:' in x['commons'] for x in photos)
+          data=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1080 and s.get('height')==1920 for s in data['streams'])
+          assert any(s.get('codec_name')=='aac' for s in data['streams'])
+          assert p.stat().st_size>300000
+          print('MYCAR_PREVIEW_QA_PASS',hashlib.sha256(p.read_bytes()).hexdigest(),data['format']['duration'])
+          PY
+      - name: Guardar PREVIA en rama aislada, nunca a main o Meta
+        run: |
+          test "$GITHUB_REF_NAME" = "preview/mycar-20261120-0800"
+          mkdir -p previews/2026-11-20/mycar-0800-5-qa
+          cp build/mycar_20nov0800/MYCAR_20_NOV_2026_0800_5_NOTICIAS.mp4 previews/2026-11-20/mycar-0800-5-qa/
+          cp build/mycar_20nov0800/MYCAR_caption.txt previews/2026-11-20/mycar-0800-5-qa/
+          cp build/mycar_20nov0800/mycar/credits.json previews/2026-11-20/mycar-0800-5-qa/
+          cp build/mycar_20nov0800/mycar/editorial.json previews/2026-11-20/mycar-0800-5-qa/
+          cp build/mycar_20nov0800/mycar/slide-*.jpg previews/2026-11-20/mycar-0800-5-qa/
+          cp build/mycar_20nov0800/mycar/audio/audio_report.json previews/2026-11-20/mycar-0800-5-qa/
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add previews/2026-11-20/mycar-0800-5-qa
+          git commit -m 'preview MyCar 20 nov 08h, no publicado'
+          git fetch origin preview/mycar-20261120-0800
+          git rebase origin/preview/mycar-20261120-0800
+          git push origin HEAD:preview/mycar-20261120-0800
+      - name: Archivo de revisión descargable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MYCAR-20NOV-0800-5-PREVIA
+          path: build/mycar_20nov0800/
+          retention-days: 14
+          if-no-files-found: warn
+
+# Reejecución segura V2: sin modificar main ni publicar Meta.
+
+# Revisión V4: fecha reposicionada despues de QA visual; no publicar.
+
+# QA visual V4 de fecha completa; original sin cambios en main.
