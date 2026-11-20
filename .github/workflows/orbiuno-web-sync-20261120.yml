@@ -134,3 +134,5 @@ jobs:
           PY
 
 # Reintento 2: conservar fotos en 0800_assets cuando su SHA256 y licencia coincidan con preverified_sources.json.
+
+# Reintento 3: normalizar ruta absoluta del caché verificado sin tocar fotos existentes.
