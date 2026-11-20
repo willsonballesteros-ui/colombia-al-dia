@@ -20,9 +20,9 @@ FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
 # Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
 FIXED={
- ("orbiuno","photo-00.jpg"):"File:Panoramica 1DSC00027.JPG",
+ ("orbiuno","photo-00.jpg"):"File:San Jose del Guaviare - panoramio.jpg",
  ("orbiuno","photo-01.jpg"):"File:2019 Bogotá - Edificio Banco de la República.jpg",
- ("orbiuno","photo-02.jpg"):"File:Chapinero, Bogotá, Bogota, Colombia - panoramio.jpg",
+ ("orbiuno","photo-02.jpg"):"File:Vista de Chapinero, Bogotá.jpg",
  ("orbiuno","photo-03.jpg"):"File:Fermi in rocket fairing, labelled.jpg",
  ("orbiuno","photo-04.jpg"):"File:Children-playing.jpg",
  ("orbiuno","photo-05.jpg"):"File:Several wildfires and smoke plumes in California, USA - September 1st, 2020 (50297745651).jpg",
@@ -65,6 +65,7 @@ def get_photo(query,folder,filename):
      if im.width<750 or im.height<450: raise ValueError("image too small")
      im.verify()
     author=html.unescape(re.sub("<[^>]*>","",ext.get("Artist",{}).get("value",""))).strip()[:125]
+    if not author: continue
     return {"commons":"https://commons.wikimedia.org/wiki/"+page["title"].replace(" ","_"),
             "image_file":dest.name,"image_title":page["title"],"license":lic,
             "author":author or "Autor identificado en Commons","visual":"Fotografía real de contexto o archivo"}
