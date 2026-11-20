@@ -1,0 +1,111 @@
+{
+  "edition": "2026-11-20",
+  "slot": "17:00",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261120-1700-1",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "www.oecd.org",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.oecd.org&sz=128",
+      "caption": "Señal de acceso a la sede de la OCDE en París, fotografía de 2019, Nick-D, CC BY-SA 4.0. No representa la divulgación de hoy.",
+      "credit": {
+        "title": "File:Sign in Paris showing the way to the OECD headquarters.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Nick-D",
+        "page": "https://commons.wikimedia.org/wiki/File:Sign_in_Paris_showing_the_way_to_the_OECD_headquarters.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Sign_in_Paris_showing_the_way_to_the_OECD_headquarters.jpg/1280px-Sign_in_Paris_showing_the_way_to_the_OECD_headquarters.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "A sign on the corner of Rue d'Andigné and Rue Maspéro showing the way to the OECD headquarters"
+      }
+    },
+    {
+      "id": "orbiuno-20261120-1700-2",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "www.reuters.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.reuters.com&sz=128",
+      "caption": "Trump y Xi Jinping reunidos en Pekín en mayo de 2026. Fotografía de archivo, Casa Blanca, dominio público. No corresponde a la declaración de noviembre.",
+      "credit": {
+        "title": "File:Donald Trump and Xi Jinping at Zhongnanhai (1)-20260515.jpg",
+        "license": "Public domain",
+        "author": "The White House",
+        "page": "https://commons.wikimedia.org/wiki/File:Donald_Trump_and_Xi_Jinping_at_Zhongnanhai_(1)-20260515.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Donald_Trump_and_Xi_Jinping_at_Zhongnanhai_%281%29-20260515.jpg/1280px-Donald_Trump_and_Xi_Jinping_at_Zhongnanhai_%281%29-20260515.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "US President Donald Trump and CCP General Secretary Xi Jinping at Zhongnanhai on 15 May 2026"
+      }
+    },
+    {
+      "id": "orbiuno-20261120-1700-3",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "www.esa.int",
+      "logoCredit": null,
+      "logoSource": "https://www.esa.int/assets/images/favicon.ico",
+      "caption": "Sede de la Agencia Espacial Europea en París, 2015. Foto ESA/M. Trovatello, CC BY-SA 3.0 IGO. No muestra naves todavía no construidas.",
+      "credit": {
+        "title": "File:ESA Headquarters in Paris, France.JPG",
+        "license": "CC BY-SA 3.0 igo",
+        "author": "ESA, M. Trovatello",
+        "page": "https://commons.wikimedia.org/wiki/File:ESA_Headquarters_in_Paris,_France.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/ESA_Headquarters_in_Paris%2C_France.JPG/1280px-ESA_Headquarters_in_Paris%2C_France.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "The image shows the European Space Agency ESA's Headquarters in Paris, France. The photograph was taken on 23 November 2015, showing the new 22 member state decorations."
+      }
+    },
+    {
+      "id": "orbiuno-20261120-1700-4",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "dimayor.com.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=dimayor.com.co&sz=128",
+      "caption": "Exterior del estadio Pascual Guerrero de Cali, imagen de archivo de junio de 2025, ProtoplasmaKid, CC BY-SA 4.0. Sede de la final programada, no foto de un partido.",
+      "credit": {
+        "title": "File:Estadio Olímpico Pascual Guerrero de Cali - 2025 - 1.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "ProtoplasmaKid",
+        "page": "https://commons.wikimedia.org/wiki/File:Estadio_Ol%C3%ADmpico_Pascual_Guerrero_de_Cali_-_2025_-_1.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Estadio_Ol%C3%ADmpico_Pascual_Guerrero_de_Cali_-_2025_-_1.jpg/1280px-Estadio_Ol%C3%ADmpico_Pascual_Guerrero_de_Cali_-_2025_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Exterior of the Pascual Guerrero Olympic Stadium, Cali, Colombia."
+      }
+    },
+    {
+      "id": "orbiuno-20261120-1700-5",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "elcorazondebogota.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=elcorazondebogota.com&sz=128",
+      "caption": "Juanes en concierto en Ámsterdam, 2012. Fotografía de archivo de Chris Duque, CC BY-SA 3.0. No es imagen del concierto programado en Bogotá.",
+      "credit": {
+        "title": "File:JuanesLive01.JPG",
+        "license": "CC BY-SA 3.0",
+        "author": "Chris Duque",
+        "page": "https://commons.wikimedia.org/wiki/File:JuanesLive01.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/JuanesLive01.JPG/1280px-JuanesLive01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Juanes performing live in Amsterdam"
+      }
+    },
+    {
+      "id": "orbiuno-20261120-1700-6",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "www.guinnessworldrecords.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.guinnessworldrecords.com&sz=128",
+      "caption": "Futa en el zoológico de Chiba, fotografiado en octubre de 2026 por Misei sen, CC BY 4.0. Fotografía del animal protagonista.",
+      "credit": {
+        "title": "File:Futa 20261004 3.jpg",
+        "license": "CC BY 4.0",
+        "author": "Misei sen",
+        "page": "https://commons.wikimedia.org/wiki/File:Futa_20261004_3.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Futa_20261004_3.jpg/1280px-Futa_20261004_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "千葉市動物公園の風太"
+      }
+    }
+  ]
+}
