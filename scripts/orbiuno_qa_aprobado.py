@@ -77,13 +77,21 @@ def check_media_decodes(path: Path):
     if r.returncode:
         raise RuntimeError("El MP4 no decodifica completamente")
     streams = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries",
-                                       "stream=codec_type,codec_name,width,height", "-of", "json", str(path)])
+                                       "stream=codec_type,codec_name,width,height,avg_frame_rate,sample_rate,channels", "-of", "json", str(path)])
     data = json.loads(streams)["streams"]
     if not any(s.get("codec_type") == "video" and s.get("codec_name") == "h264" and
                s.get("width") == 1080 and s.get("height") == 1920 for s in data):
         raise RuntimeError("H264 vertical ausente")
-    if not any(s.get("codec_type") == "audio" and s.get("codec_name") == "aac" for s in data):
-        raise RuntimeError("AAC ausente")
+    if not any(s.get("codec_type") == "audio" and s.get("codec_name") == "aac"
+               and s.get("sample_rate") == "48000" and s.get("channels") == 2 for s in data):
+        raise RuntimeError("AAC estéreo 48kHz ausente")
+    video = next((s for s in data if s.get("codec_type") == "video"), None)
+    if video is None:
+        raise RuntimeError("Video stream ausente")
+    rate = str(video.get("avg_frame_rate", "0/1")).split("/")
+    fps = float(rate[0]) / float(rate[1]) if len(rate) == 2 and float(rate[1]) else 0
+    if not 29.5 <= fps <= 30.5:
+        raise RuntimeError("FPS fuera del formato 30fps: " + str(fps))
 
 
 def main():

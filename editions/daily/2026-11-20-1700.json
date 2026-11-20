@@ -1,0 +1,235 @@
+{
+  "editionDate": "2026-11-20",
+  "editionSlot": "17:00",
+  "editionKey": "ORBIUNO-2026-11-20-1700",
+  "status": "EDITORIAL_FINAL_MEDIA_PENDING",
+  "format": "six_stories_verified_real_photos",
+  "sourceOnly": false,
+  "news": [
+    {
+      "id": "orbiuno-20261120-1700-1",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 1,
+      "title": "OCDE proyecta crecimiento del 2,1 % para Colombia en 2027",
+      "category": "Colombia",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "OCDE",
+          "url": "https://www.oecd.org/en/about/news/press-releases/2026/11/stronger-public-finances-and-higher-productivity-are-key-to-sustained-growth-in-colombia.html"
+        }
+      ],
+      "summary": "La OCDE publicó hoy su estudio económico sobre Colombia. Proyecta un crecimiento del 2,6 % en 2026 y del 2,1 % en 2027; advierte que inflación, productividad y finanzas públicas siguen siendo retos.",
+      "executiveSummary": "La OCDE publicó hoy su estudio económico sobre Colombia. Proyecta un crecimiento del 2,6 % en 2026 y del 2,1 % en 2027; advierte que inflación, productividad y finanzas públicas siguen siendo retos.",
+      "reelLine": "La OCDE proyecta que Colombia crecerá 2,6 % en 2026 y 2,1 % en 2027. También pide fortalecer las finanzas públicas y la productividad.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La Organización para la Cooperación y el Desarrollo Económicos, OCDE, divulgó este viernes 20 de noviembre su nuevo estudio económico sobre Colombia. El organismo estima que el producto interno bruto crecerá un 2,6 % en 2026 y un 2,1 % en 2027. Estas cifras son previsiones, no resultados definitivos.\n\nLa OCDE reconoce la capacidad de recuperación de la economía, pero considera que la baja inversión y el lento avance de la productividad limitan las posibilidades de crecimiento a largo plazo. También señala presiones de inflación: calcula una variación del 6,0 % para 2026 y del 5,9 % para 2027, por encima del objetivo del Banco de la República.\n\nEntre las prioridades mencionadas están la sostenibilidad fiscal, el impulso a la formalización laboral y el aprovechamiento de la digitalización. El documento servirá como una referencia externa para debatir decisiones económicas y reformas en Colombia.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.oecd.org/en/about/news/press-releases/2026/11/stronger-public-finances-and-higher-productivity-are-key-to-sustained-growth-in-colombia.html"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Sign in Paris showing the way to the OECD headquarters.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Señal de acceso a la sede de la OCDE en París, fotografía de 2019, Nick-D, CC BY-SA 4.0. No representa la divulgación de hoy.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
+    },
+    {
+      "id": "orbiuno-20261120-1700-2",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 2,
+      "title": "Estados Unidos y China hablan de control humano sobre la IA militar",
+      "category": "Mundo",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "REUTERS",
+          "url": "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/"
+        }
+      ],
+      "summary": "El secretario del Tesoro estadounidense, Scott Bessent, afirmó que Trump y Xi coincidieron en mantener la intervención humana en las decisiones militares que usen IA. Reuters atribuye la información a Bessent; no es un tratado verificado por separado.",
+      "executiveSummary": "El secretario del Tesoro estadounidense, Scott Bessent, afirmó que Trump y Xi coincidieron en mantener la intervención humana en las decisiones militares que usen IA. Reuters atribuye la información a Bessent; no es un tratado verificado por separado.",
+      "reelLine": "Según Scott Bessent, Trump y Xi coincidieron en mantener supervisión humana sobre decisiones militares con inteligencia artificial. No existe un tratado anunciado.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El secretario del Tesoro de Estados Unidos, Scott Bessent, dijo este viernes 20 de noviembre que los presidentes Donald Trump y Xi Jinping coincidieron en que las decisiones militares apoyadas por inteligencia artificial deben conservar supervisión humana. La declaración fue recogida por Reuters después de la visita del mandatario estadounidense a China.\n\nSegún Bessent, el objetivo expresado durante la reunión fue evitar que sistemas de inteligencia artificial actúen de manera autónoma en grandes operaciones militares. El funcionario sostuvo que este entendimiento no elimina la competencia que mantienen ambos países por el liderazgo tecnológico.\n\nLa información debe leerse con una precisión importante: la fuente reporta la versión del funcionario sobre las conversaciones. No equivale por sí sola a la publicación de un tratado formal ni a una verificación independiente de los mecanismos que se pondrán en práctica. La discusión se da en medio del creciente uso de IA en ámbitos estratégicos.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Donald Trump and Xi Jinping at Zhongnanhai (1)-20260515.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Trump y Xi Jinping reunidos en Pekín en mayo de 2026. Fotografía de archivo, Casa Blanca, dominio público. No corresponde a la declaración de noviembre.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
+    },
+    {
+      "id": "orbiuno-20261120-1700-3",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 3,
+      "title": "Europa selecciona una misión de siete naves para estudiar el plasma",
+      "category": "Ciencia",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "ESA",
+          "url": "https://www.esa.int/articles/about-us/directorates/science/seven-spacecraft-observatory-to-study-plasma-universe"
+        }
+      ],
+      "summary": "La Agencia Espacial Europea seleccionó Plasma Observatory como su próxima misión científica de clase media. Su concepto utiliza siete naves para estudiar las interacciones del viento solar y la magnetosfera terrestre. No está lanzada: lanzamiento previsto para finales de la década de 2030.",
+      "executiveSummary": "La Agencia Espacial Europea seleccionó Plasma Observatory como su próxima misión científica de clase media. Su concepto utiliza siete naves para estudiar las interacciones del viento solar y la magnetosfera terrestre. No está lanzada: lanzamiento previsto para finales de la década de 2030.",
+      "reelLine": "La Agencia Espacial Europea seleccionó Plasma Observatory, misión de siete naves para estudiar el plasma cercano a la Tierra. Aún no ha sido lanzada.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "La Agencia Espacial Europea, ESA, anunció la selección de Plasma Observatory como su próxima misión científica de clase media. El proyecto contempla utilizar siete naves espaciales con mediciones simultáneas para comprender cómo se comporta el plasma en las proximidades de la Tierra. La elección forma parte de su programa científico de largo plazo.\n\nEl plasma es un estado de la materia compuesto por partículas cargadas, presente en numerosos fenómenos del universo. Al estudiar simultáneamente campos eléctricos, magnéticos y partículas en distintos puntos, los investigadores esperan comprender cómo se conectan cambios rápidos y locales con estructuras mayores de la magnetosfera.\n\nLa selección no significa que los satélites ya estén construidos o en órbita. ESA explica que el proyecto deberá avanzar por nuevas fases de estudio, aprobación y fabricación, y que su lanzamiento está previsto provisionalmente para finales de la década de 2030. La noticia representa un paso de planificación científica, no una misión ya ejecutada.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.esa.int/articles/about-us/directorates/science/seven-spacecraft-observatory-to-study-plasma-universe"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:ESA Headquarters in Paris, France.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Sede de la Agencia Espacial Europea en París, 2015. Foto ESA/M. Trovatello, CC BY-SA 3.0 IGO. No muestra naves todavía no construidas.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
+    },
+    {
+      "id": "orbiuno-20261120-1700-4",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 4,
+      "title": "Boca Cali y Quindío jugarán la final del Torneo BetPlay",
+      "category": "Deportes",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "DIMAYOR / WIN SPORTS",
+          "url": "https://dimayor.com.co/2026/11/20/programacion-de-la-final-del-torneo-betplay-dimayor-ll-2026/"
+        }
+      ],
+      "summary": "La Dimayor confirmó la final del Torneo BetPlay II entre Boca Juniors de Cali y Deportes Quindío. La ida se disputará el 23 de noviembre en Cali y la vuelta el 28 en Armenia. La serie aún no se ha jugado.",
+      "executiveSummary": "La Dimayor confirmó la final del Torneo BetPlay II entre Boca Juniors de Cali y Deportes Quindío. La ida se disputará el 23 de noviembre en Cali y la vuelta el 28 en Armenia. La serie aún no se ha jugado.",
+      "reelLine": "La final del Torneo BetPlay será entre Boca Juniors de Cali y Deportes Quindío. Los partidos están programados para el 23 y 28 de noviembre.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "El fútbol colombiano ya tiene finalistas para el Torneo BetPlay Dimayor del segundo semestre de 2026. Boca Juniors de Cali y Deportes Quindío disputarán una serie de ida y vuelta, según la programación oficial publicada este viernes 20 de noviembre. Ambos clubes llegaron a esta instancia después de superar sus grupos de cuadrangulares semifinales.\n\nLa Dimayor programó el primer encuentro para el lunes 23 de noviembre a las 7:30 p. m., en el estadio Pascual Guerrero de Cali. El partido de vuelta será el sábado 28 a las 4:30 p. m., en el estadio Centenario de Armenia. Los resultados anteriores no determinan quién ganará la serie: a la hora de cerrar esta edición, los partidos de la final estaban pendientes.\n\nBoca Juniors de Cali logró su clasificación al vencer a Unión Magdalena, mientras Deportes Quindío consiguió su cupo tras derrotar a Real Cundinamarca. El ganador se quedará con el campeonato del segundo semestre, en una fase decisiva para la disputa del ascenso; el título de esta serie no debe confundirse automáticamente con un ascenso ya obtenido.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://dimayor.com.co/2026/11/20/programacion-de-la-final-del-torneo-betplay-dimayor-ll-2026/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Estadio Olímpico Pascual Guerrero de Cali - 2025 - 1.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Exterior del estadio Pascual Guerrero de Cali, imagen de archivo de junio de 2025, ProtoplasmaKid, CC BY-SA 4.0. Sede de la final programada, no foto de un partido.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
+    },
+    {
+      "id": "orbiuno-20261120-1700-5",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 5,
+      "title": "Juanes regresa esta noche a El Corazón de Bogotá",
+      "category": "Farándula",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "EL CORAZÓN DE BOGOTÁ",
+          "url": "https://elcorazondebogota.com/eventos/juanes-world-tour-2026/"
+        }
+      ],
+      "summary": "Tras presentarse el 19 de noviembre, Juanes tiene programado un segundo concierto hoy viernes 20 en El Corazón de Bogotá. Las puertas abren a las 6:00 p. m. y el concierto está previsto para las 9:30 p. m.",
+      "executiveSummary": "Tras presentarse el 19 de noviembre, Juanes tiene programado un segundo concierto hoy viernes 20 en El Corazón de Bogotá. Las puertas abren a las 6:00 p. m. y el concierto está previsto para las 9:30 p. m.",
+      "reelLine": "Juanes ofrecerá su segundo concierto en Bogotá esta noche. El recinto anuncia apertura de puertas a las seis e inicio a las nueve y media.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Juanes tiene programada para este viernes 20 de noviembre su segunda presentación en El Corazón de Bogotá, dentro de su World Tour 2026. La primera ocurrió el jueves 19 y fue reseñada por Caracol Radio, que destacó la respuesta del público y un repertorio conectado con diferentes etapas de su carrera.\n\nPara esta noche, la agenda del recinto confirma apertura de puertas a las 6:00 p. m. e inicio del concierto a las 9:30 p. m. El espectáculo reúne canciones reconocidas del artista con material de JuanesTeban, su proyecto musical más reciente, en el que combina rock y elementos de raíz latinoamericana.\n\nEsta edición de las 5:00 p. m. se publica antes de la segunda función. Por ello, la información se refiere a una presentación programada y no afirma que el show del viernes ya haya ocurrido. La fuente primaria de horarios es el propio escenario, y la cobertura del primer concierto fue publicada por Caracol Radio la mañana del 20 de noviembre.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://elcorazondebogota.com/eventos/juanes-world-tour-2026/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:JuanesLive01.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Juanes en concierto en Ámsterdam, 2012. Fotografía de archivo de Chris Duque, CC BY-SA 3.0. No es imagen del concierto programado en Bogotá.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
+    },
+    {
+      "id": "orbiuno-20261120-1700-6",
+      "date": "2026-11-20",
+      "editionSlot": "17:00",
+      "priority": 6,
+      "title": "Futa, el panda rojo de 23 años que logró un récord Guinness",
+      "category": "Viral",
+      "level": "Noticia contrastada; medios pendientes de verificación técnica",
+      "sources": [
+        {
+          "name": "GUINNESS WORLD RECORDS",
+          "url": "https://www.guinnessworldrecords.com/news/2026/11/23-year-old-red-panda-in-japan-becomes-the-worlds-oldest"
+        }
+      ],
+      "summary": "Guinness reconoció el 17 de noviembre a Futa, del Zoológico de Chiba, como el panda rojo vivo más longevo en cautiverio. Tenía 23 años y 135 días. El animal ya era famoso en Japón por erguirse sobre sus patas traseras.",
+      "executiveSummary": "Guinness reconoció el 17 de noviembre a Futa, del Zoológico de Chiba, como el panda rojo vivo más longevo en cautiverio. Tenía 23 años y 135 días. El animal ya era famoso en Japón por erguirse sobre sus patas traseras.",
+      "reelLine": "Futa, panda rojo de Japón, obtuvo un récord Guinness por longevidad en cautiverio: 23 años y 135 días. Es famoso por erguirse en dos patas.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "audioIsFullPublisherArticle": false,
+      "originalArticleTextEs": "Una de las historias más curiosas de esta semana tiene como protagonista a Futa, un panda rojo que vive en el Zoológico de Chiba, Japón. Guinness World Records anunció el 17 de noviembre de 2026 que el animal, de 23 años y 135 días, se convirtió en el panda rojo vivo más longevo en cautiverio registrado por la organización.\n\nFuta nació el 5 de julio de 2003 en otro zoológico japonés y se trasladó a Chiba en 2004. Un año después llamó la atención al mantenerse erguido sobre sus patas traseras, un comportamiento que lo convirtió en una figura conocida entre visitantes y medios. Su popularidad perduró durante más de dos décadas.\n\nSegún Guinness, el panda rojo suele tener una esperanza de vida bastante inferior a la edad actual de Futa. El reconocimiento se refiere específicamente a los pandas rojos vivos en cautiverio; no debe generalizarse como récord absoluto de longevidad de todos los ejemplares silvestres. Existe una fotografía identificada de Futa tomada el 4 de octubre de 2026 en Wikimedia Commons, con autor Misei sen y licencia CC BY 4.0; para reutilizarla se deben conservar los créditos y las condiciones de la licencia.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.guinnessworldrecords.com/news/2026/11/23-year-old-red-panda-in-japan-becomes-the-worlds-oldest"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Futa 20261004 3.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Futa en el zoológico de Chiba, fotografiado en octubre de 2026 por Misei sen, CC BY 4.0. Fotografía del animal protagonista.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES",
+      "photoRightsReview": "Commons: https://commons.wikimedia.org/wiki/File:Futa_20261004_3.jpg"
+    }
+  ],
+  "approval": {
+    "editorial": true,
+    "assets": false,
+    "audio": false,
+    "qa": false,
+    "published": false
+  },
+  "photoSelectionAudit": {
+    "commonsPagesReviewed": 6,
+    "filesIncorporated": false,
+    "publicationApproved": false,
+    "remark": "Una foto real contextual de cada noticia, con fecha y autor. Descargar y comprobar con Wikimedia API; no presentar fotografías históricas como si fueran del 20 de noviembre. Mantener imageRightsVerified=false hasta QA.",
+    "source": "Wikimedia Commons 20/11/2026"
+  }
+}

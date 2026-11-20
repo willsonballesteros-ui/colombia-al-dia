@@ -1,0 +1,82 @@
+name: "ORBIUNO | QA de edición 20nov 17:00 sin publicar"
+on:
+  push:
+    branches:
+      - fix/orbiuno-20nov-1700-media
+    paths:
+      - '.github/workflows/qa-orbiuno-20nov-1700-pr.yml'
+      - 'editions/daily/2026-11-20-1700.json'
+      - 'scripts/render_orbiuno_aprobado.py'
+      - 'scripts/orbiuno_qa_aprobado.py'
+  pull_request:
+    paths:
+      - '.github/workflows/qa-orbiuno-20nov-1700-pr.yml'
+      - 'editions/daily/2026-11-20-1700.json'
+      - 'scripts/render_orbiuno_aprobado.py'
+      - 'scripts/orbiuno_qa_aprobado.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-1700-prepublish-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  qa_prepublicacion:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar motor de voz Salomé e instrumentos
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check Pillow edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/codificadores" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -sf "$RUNNER_TEMP/codificadores/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/bin/ffmpeg"
+            ln -sf "$RUNNER_TEMP/codificadores/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/codificadores/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codificadores/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+            export PATH="$RUNNER_TEMP/bin:$PATH"
+          fi
+          encoders="$(ffmpeg -hide_banner -encoders 2>/dev/null)"
+          case "$encoders" in *libx264*) echo 'H264_ENCODER_OK' ;; *) echo 'ERROR: libx264 no disponible' >&2; exit 1 ;; esac
+          case "$encoders" in *" aac "*) echo 'AAC_ENCODER_OK' ;; *) echo 'ERROR: AAC no disponible' >&2; exit 1 ;; esac
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      - name: Verificar manifiesto y pruebas seguras
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m json.tool editions/daily/2026-11-20-1700.json > /dev/null
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_orbiuno_aprobado.py' -v
+          python scripts/orbiuno_import_daily.py --edition editions/daily/2026-11-20-1700.json --news noticias.json
+          python scripts/validate_news.py noticias.json
+      - name: Descargar y comprobar seis fotos libres y seis logos
+        run: |
+          PYTHONPATH=. python scripts/orbiuno_media_assets.py --edition editions/daily/2026-11-20-1700.json --news noticias.json --out media/2026-11-20/1700_assets
+      - name: Generar seis audios completos es-CO-SalomeNeural a 1,25
+        run: |
+          PYTHONPATH=. python scripts/generate_web_voice_colombia.py --day 2026-11-20 --slot 17:00 --news noticias.json
+          python scripts/prepare_site.py
+          python scripts/build_feed.py
+      - name: Renderizar MP4 original con fotos reales y voz completa
+        run: |
+          python scripts/render_orbiuno_aprobado.py --day 2026-11-20 --slot 17:00 --assets media/2026-11-20/1700_assets --out dist/orbiuno-2026-11-20-1700
+      - name: Control estricto de fotos, logos, texto, voz y MP4
+        run: |
+          PYTHONPATH=. python scripts/orbiuno_qa_aprobado.py --manifest dist/orbiuno-2026-11-20-1700/manifest.json --assets media/2026-11-20/1700_assets --news noticias.json --webvoice media/web-voice/manifest.json
+      - name: Guardar MP4, fotos, créditos y QA para inspección, SIN publicar
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-2026-11-20-1700-qa-no-publicar
+          path: |
+            dist/orbiuno-2026-11-20-1700/
+            media/2026-11-20/1700_assets/
+            media/web-voice/manifest.json
+          if-no-files-found: warn
+          retention-days: 14
