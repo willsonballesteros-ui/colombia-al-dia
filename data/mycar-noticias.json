@@ -5,6 +5,66 @@
   "updated_date": "2026-11-20",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-20-AM",
+      "date": "2026-11-20",
+      "slot": "08:00",
+      "title": "Nissan Kicks e-POWER debuta en Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261120-0800/previews/2026-11-20/mycar-0800-5-final/MYCAR_20_NOV_2026_0800_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Nissan Kicks e-POWER debuta en Colombia",
+          "summary": "Nissan presentó en Colombia la nueva Kicks e Pówer, una SUV cuyas ruedas son impulsadas por un motor eléctrico mientras uno a gasolina genera electricidad. Colombia es el primer mercado fuera de Japón elegido para comercializarla. El lanzamiento se realizó en el Salón del Automóvil de Bogotá.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/18/sia-2026-nissan-kicks-e-power-llega-a-colombia-caracteristicas-versiones-y-precios",
+          "image_file_title": "File:Nissan KICKS G 2WD (6AA-P16).jpg",
+          "photo_credit": "Tokumeigakarinoaoshima",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_KICKS_G_2WD_(6AA-P16).jpg"
+        },
+        {
+          "title": "Hyundai revela una nueva generación del Elantra",
+          "summary": "Hyundai reveló en Los Ángeles la octava generación del Elantra. El sedán modelo dos mil veintisiete incorpora un diseño renovado y nuevas funciones de conectividad. La compañía también anunció una versión híbrida dos mil veintiocho, prevista para mercados internacionales.",
+          "source": "HYUNDAI",
+          "source_url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001306?category=product&topic=product-cars",
+          "image_file_title": "File:2027 Hyundai The All New Avante (Elantra) CN8 blue 2.0 Outdoor.jpg",
+          "photo_credit": "Avante2025",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2027_Hyundai_The_All_New_Avante_(Elantra)_CN8_blue_2.0_Outdoor.jpg"
+        },
+        {
+          "title": "Peugeot 3008 Hybrid llega a Colombia",
+          "summary": "El Peugeot tres mil ocho Hybrid llegó al Salón del Automóvil de Bogotá con tecnología híbrida ligera de cuarenta y ocho voltios. Mantiene su carrocería de estilo fastback y suma un sistema eléctrico de apoyo al motor. La marca busca ampliar la oferta de SUV con menores consumos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/peugeot-3008-hybrid-2027-colombia-tecnologia-mild-hybrid-48v/",
+          "image_file_title": "File:Peugeot 3008 Hybrid 136 e-DSC6 Allure (III) – f 09022025.jpg",
+          "photo_credit": "© M 93",
+          "photo_license": "CC BY-SA 3.0 de",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Peugeot_3008_Hybrid_136_e-DSC6_Allure_(III)_–_f_09022025.jpg"
+        },
+        {
+          "title": "Citroën Jumper regresa al mercado colombiano",
+          "summary": "Citroën retomó la comercialización de la furgoneta Jumper en Colombia. El vehículo de trabajo llega con motor diésel, distintas configuraciones de carrocería y una capacidad de carga anunciada de hasta mil trescientos sesenta y seis kilos. La novedad está dirigida al transporte de mercancías.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/citroen-jumper-colombia-versiones-capacidad-motor-diesel-2026/",
+          "image_file_title": "File:Citroën Jumper (2024) IMG 6032.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Citroën_Jumper_(2024)_IMG_6032.jpg"
+        },
+        {
+          "title": "Cupra León VZ se vende con 296 caballos",
+          "summary": "La marca Cupra ya comercializa en Colombia el León VZ, con motor turbo de dos litros, doscientos noventa y seis caballos y caja automática de doble embrague. Su lanzamiento oficial se realizó en Antioquia y amplía la oferta local de deportivos compactos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/cupra-leon-vz-colombia-precio-datos-ficha-tecnica-2027/",
+          "image_file_title": "File:Cupra Leon VZ 2.0 TSI (2025) (54716658451).jpg",
+          "photo_credit": "Charles from Port Chester, New York",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Cupra_Leon_VZ_2.0_TSI_(2025)_(54716658451).jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-19-1700",
       "date": "2026-11-19",
       "slot": "17:00",
