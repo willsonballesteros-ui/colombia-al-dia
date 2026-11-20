@@ -1,0 +1,67 @@
+{
+  "edition": "2026-11-20",
+  "slot": "08:00",
+  "approved_by": "ORBIUNO preview QA with Commons rights",
+  "photos": [
+    {
+      "index": 1,
+      "filename": "photo-01.jpg",
+      "sha256": "53f42b010fc189955392be87f428f7fbde9d183c3d39da7379adbcff54eb695b",
+      "title": "File:San Jose del Guaviare - panoramio.jpg",
+      "author": "CarlosE Duarte",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:San_Jose_del_Guaviare_-_panoramio.jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    },
+    {
+      "index": 2,
+      "filename": "photo-02.jpg",
+      "sha256": "9c8794053deca155abc6645dba48a2de96dd8588f77358695c16390935827988",
+      "title": "File:2019 Bogotá - Edificio Banco de la República.jpg",
+      "author": "Felipe Restrepo Acosta",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:2019_Bogotá_-_Edificio_Banco_de_la_República.jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    },
+    {
+      "index": 3,
+      "filename": "photo-03.jpg",
+      "sha256": "8bce1c68ffb4b1f211c32969580c646500ece4bd736a91bf1d53b6f5fcb89326",
+      "title": "File:Vista de Chapinero, Bogotá.jpg",
+      "author": "Astronatas123",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Chapinero,_Bogotá.jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    },
+    {
+      "index": 4,
+      "filename": "photo-04.jpg",
+      "sha256": "2ff1184309baf11dd2edefc9fbcf436a68d5bc8894e46503575300dca152545f",
+      "title": "File:Fermi in rocket fairing, labelled.jpg",
+      "author": "NASA/Jim Grossmann",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Fermi_in_rocket_fairing,_labelled.jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    },
+    {
+      "index": 5,
+      "filename": "photo-05.jpg",
+      "sha256": "a08e3a7c71d9852f06a1b354f23fd5dd01305147f05148fa58e6d2a33f85fedf",
+      "title": "File:Children-playing.jpg",
+      "author": "Ayimbila90",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Children-playing.jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    },
+    {
+      "index": 6,
+      "filename": "photo-06.jpg",
+      "sha256": "8212545db2e799598203a52d0f3843543e8d887540d2a25d653ccc4f4b3ed101",
+      "title": "File:Several wildfires and smoke plumes in California, USA - September 1st, 2020 (50297745651).jpg",
+      "author": "Pierre Markuse from Hamm, Germany",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Several_wildfires_and_smoke_plumes_in_California,_USA_-_September_1st,_2020_(50297745651).jpg",
+      "provenance": "Wikimedia Commons API extmetadata, verified by GitHub Actions preview 44733147573 and archived credits.json"
+    }
+  ]
+}
