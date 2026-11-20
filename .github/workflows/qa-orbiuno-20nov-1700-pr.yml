@@ -39,8 +39,9 @@ jobs:
             echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
             export PATH="$RUNNER_TEMP/bin:$PATH"
           fi
-          ffmpeg -hide_banner -encoders | grep -q libx264
-          ffmpeg -hide_banner -encoders | grep -Eq '^[[:space:]]*A[[:space:]].*aac'
+          encoders="$(ffmpeg -hide_banner -encoders 2>/dev/null)"
+          case "$encoders" in *libx264*) echo 'H264_ENCODER_OK' ;; *) echo 'ERROR: libx264 no disponible' >&2; exit 1 ;; esac
+          case "$encoders" in *" aac "*) echo 'AAC_ENCODER_OK' ;; *) echo 'ERROR: AAC no disponible' >&2; exit 1 ;; esac
           test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
       - name: Verificar manifiesto y pruebas seguras
         shell: bash
