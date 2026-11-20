@@ -17,7 +17,13 @@ class VisualIntegrityTests(unittest.TestCase):
                       if n["date"] == self.db["editionDate"]
                       and n.get("verification") == "editorial_verified"]
         self.assertGreaterEqual(len(editorials), 1)
-        self.assertLessEqual(len(editorials), 12)
+        # Las ediciones históricas del mismo día se preservan; el límite es
+        # por franja editorial (seis noticias), no un tope fijo de doce al día.
+        by_slot = {}
+        for n in editorials:
+            by_slot.setdefault(n.get("editionSlot"), []).append(n)
+        self.assertTrue(all(1 <= len(notes) <= 6 for notes in by_slot.values()))
+        self.assertEqual(len(editorials), len({n.get("id") for n in editorials}))
         self.assertTrue(all(not n.get("imageUrl") or image_verified(n) for n in editorials))
         page = build(self.db, self.template)
         preloaded = page.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
