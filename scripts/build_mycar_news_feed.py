@@ -70,6 +70,10 @@ def produce():
         row={"edition_id":key,"date":date,"slot":slot,"title":news[0]["title"],
              "video_url":PUBLIC+mp4.relative_to(ROOT).as_posix(),
              "instagram_url":previous.get(key,{}).get("instagram_url"),"items":news}
+        # Keep confirmed publication IDs on rebuild; absent metadata stays absent.
+        for published_field in ("instagram_media_id", "facebook_post_id", "facebook_post_type", "published_status"):
+            if published_field in previous.get(key, {}):
+                row[published_field] = previous[key][published_field]
         if previous.get(key)!=row:
             additions+=1
         previous[key]=row
