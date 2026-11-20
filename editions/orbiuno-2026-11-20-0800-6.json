@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-20",
+  "slot": "08:00",
+  "orbiuno": {
+    "cover": {
+      "title": "Seis noticias de Colombia y el mundo",
+      "news_index": 0
+    },
+    "intro": "Buenos días. Es viernes veinte de noviembre. Estas son seis noticias importantes de Colombia y el mundo.",
+    "outro": "Escucha el desarrollo completo de cada noticia en colombia al día punto pages punto dev.",
+    "news": [
+      {
+        "title": "El DNP abre 33 audiencias para escuchar a las regiones",
+        "source": "DNP",
+        "url": "https://www.dnp.gov.co/Prensa_/Noticias/Paginas/el-dnp-inicia-gira-nacional-de-33-audiencias-publicas-para-construir-con-las-regiones-el-plan-plurianual-de-inversiones.aspx",
+        "say": "El Departamento Nacional de Planeación inició una gira de treinta y tres audiencias públicas para construir el plan de inversiones de dos mil veintisiete a dos mil treinta. Hoy viernes veinte de noviembre la agenda está prevista en San José del Guaviare. Las propuestas regionales serán insumos de planeación; todavía no son proyectos financiados o contratados.",
+        "image_query": "File:Panoramica 1DSC00027.JPG"
+      },
+      {
+        "title": "Estudiantes de seis regiones reciben premio del Banco de la República",
+        "source": "BANREP",
+        "url": "https://banrep.gov.co/es/noticias/banrep-desde-lente-reconocio-talento-estudiantes",
+        "say": "El Banco de la República reconoció a estudiantes de seis regiones colombianas en el concurso BanRep desde el Lente. La ceremonia del dieciocho de noviembre destacó videos creados por jóvenes para explicar temas económicos de la vida diaria. La iniciativa busca fortalecer la educación financiera desde los colegios.",
+        "image_query": "File:2019 Bogotá - Edificio Banco de la República.jpg"
+      },
+      {
+        "title": "Bogotá invita hoy a imaginar su futuro en el CEFE Chapinero",
+        "source": "BOGOTÁ.GOV.CO",
+        "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-gratis-cefe-chapinero-bogota-cierre-bogota-2038-noviembre-20",
+        "say": "Bogotá realiza hoy el cierre de Futuros Compartidos, una propuesta de cultura y participación en el Centro Felicidad de Chapinero. La muestra reúne experiencias audiovisuales, instalaciones y proyectos sobre naturaleza, ciudad y espacios públicos. La programación oficial anuncia actividades para este viernes veinte de noviembre.",
+        "image_query": "File:Chapinero, Bogotá, Bogota, Colombia - panoramio.jpg"
+      },
+      {
+        "title": "NASA descubre un púlsar con un método un millón de veces más rápido",
+        "source": "NASA",
+        "url": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
+        "say": "Con quince años de datos abiertos del telescopio Fermi, investigadores encontraron un púlsar que gira doscientas sesenta y una veces por segundo. La NASA explica que el nuevo método computacional acelera enormemente la búsqueda de estas estrellas de neutrones. Es un avance científico divulgado el diecinueve de noviembre.",
+        "image_query": "File:Fermi in rocket fairing, labelled.jpg"
+      },
+      {
+        "title": "UNICEF pide escuchar a los niños en el Día Mundial de la Infancia",
+        "source": "UNICEF",
+        "url": "https://www.unicef.org/take-action/campaigns/world-childrens-day",
+        "say": "Hoy veinte de noviembre se celebra el Día Mundial de la Infancia. UNICEF invita a escuchar las opiniones de niñas, niños y adolescentes y a actuar en favor de sus derechos. La conmemoración promueve la participación infantil y recuerda que salud, educación, protección y juego son fundamentales para su desarrollo.",
+        "image_query": "File:Children-playing.jpg"
+      },
+      {
+        "title": "La NASA crea mapas tridimensionales para evaluar riesgo de incendios",
+        "source": "NASA",
+        "url": "https://science.nasa.gov/blogs/science-news/2026/11/18/california-wildfire-risk-3d-maps/",
+        "say": "Investigadores vinculados a la NASA desarrollaron mapas tridimensionales de alta resolución para estudiar la vegetación y el riesgo de incendios en California. El proyecto combina datos para apoyar la planificación ambiental, la protección de ecosistemas y la gestión de recursos naturales. Los mapas son una herramienta de prevención, no un anuncio de un incendio actual.",
+        "image_query": "File:Several wildfires and smoke plumes in California, USA - September 1st, 2020 (50297745651).jpg"
+      }
+    ]
+  }
+}
