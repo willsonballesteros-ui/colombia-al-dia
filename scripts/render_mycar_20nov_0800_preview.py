@@ -21,9 +21,9 @@ ALLOW=("CC BY","CC0","PUBLIC DOMAIN","PD-","PUBLIC DOMAIN MARK")
 # Archivo concreto comprobado editorialmente, nunca confiar solo en ranking de búsqueda.
 FIXED={
  ("mycar","photo-00.jpg"):"File:Nissan KICKS G 2WD (6AA-P16).jpg",
- ("mycar","photo-01.jpg"):"File:Hyundai Avante CN8 (7).jpg",
+ ("mycar","photo-01.jpg"):"File:2027 Hyundai The All New Avante (Elantra) CN8 blue 2.0 Outdoor.jpg",
  ("mycar","photo-02.jpg"):"File:Peugeot 3008 Hybrid 136 e-DSC6 Allure (III) – f 09022025.jpg",
- ("mycar","photo-03.jpg"):"File:Citroën Jumper (2024) DSC 8018.jpg",
+ ("mycar","photo-03.jpg"):"File:Citroën Jumper (2024) IMG 6032.jpg",
  ("mycar","photo-04.jpg"):"File:Cupra Leon VZ 2.0 TSI (2025) (54716658451).jpg",
 }
 
@@ -64,6 +64,7 @@ def get_photo(query,folder,filename):
      if im.width<750 or im.height<450: raise ValueError("image too small")
      im.verify()
     author=html.unescape(re.sub("<[^>]*>","",ext.get("Artist",{}).get("value",""))).strip()[:125]
+    if not author: continue
     return {"commons":"https://commons.wikimedia.org/wiki/"+page["title"].replace(" ","_"),
             "image_file":dest.name,"image_title":page["title"],"license":lic,
             "author":author or "Autor identificado en Commons","visual":"Fotografía real de contexto o archivo"}
