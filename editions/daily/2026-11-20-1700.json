@@ -36,10 +36,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": null,
-      "photoMatchReviewed": false,
-      "photoCaption": "Revisar foto real institucional OCDE/Colombia con licencia verificable, relacionada con estudio económico. No suplantar fotografía de rueda de prensa de hoy.",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA"
+      "photoCommonsTitle": "File:Sign in Paris showing the way to the OECD headquarters.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Señal de acceso a la sede de la OCDE en París, fotografía de 2019, Nick-D, CC BY-SA 4.0. No representa la divulgación de hoy.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
     },
     {
       "id": "orbiuno-20261120-1700-2",
@@ -71,10 +71,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": null,
-      "photoMatchReviewed": false,
-      "photoCaption": "Retrato/foto real de Donald Trump y Xi Jinping licenciada, con fecha contextual explícita; NO atribuir fecha del encuentro actual a foto histórica.",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA"
+      "photoCommonsTitle": "File:Donald Trump and Xi Jinping at Zhongnanhai (1)-20260515.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Trump y Xi Jinping reunidos en Pekín en mayo de 2026. Fotografía de archivo, Casa Blanca, dominio público. No corresponde a la declaración de noviembre.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
     },
     {
       "id": "orbiuno-20261120-1700-3",
@@ -106,10 +106,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": null,
-      "photoMatchReviewed": false,
-      "photoCaption": "Foto real de nave o instrumento ESA relacionada con Plasma Observatory; NO sustituir por ilustración generada por IA.",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA"
+      "photoCommonsTitle": "File:ESA Headquarters in Paris, France.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Sede de la Agencia Espacial Europea en París, 2015. Foto ESA/M. Trovatello, CC BY-SA 3.0 IGO. No muestra naves todavía no construidas.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
     },
     {
       "id": "orbiuno-20261120-1700-4",
@@ -141,10 +141,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": null,
-      "photoMatchReviewed": false,
-      "photoCaption": "Fotografía licenciada auténtica de uno de los dos clubes de la final de Torneo BetPlay, sin presentar partidos anteriores como la final de 2026.",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA"
+      "photoCommonsTitle": "File:Estadio Olímpico Pascual Guerrero de Cali - 2025 - 1.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Exterior del estadio Pascual Guerrero de Cali, imagen de archivo de junio de 2025, ProtoplasmaKid, CC BY-SA 4.0. Sede de la final programada, no foto de un partido.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
     },
     {
       "id": "orbiuno-20261120-1700-5",
@@ -176,10 +176,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": null,
-      "photoMatchReviewed": false,
-      "photoCaption": "Fotografía auténtica de Juanes en concierto con permiso/licencia y crédito. Evitar Getty, agencia o redes sin permiso.",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA"
+      "photoCommonsTitle": "File:JuanesLive01.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Juanes en concierto en Ámsterdam, 2012. Fotografía de archivo de Chris Duque, CC BY-SA 3.0. No es imagen del concierto programado en Bogotá.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES"
     },
     {
       "id": "orbiuno-20261120-1700-6",
@@ -211,10 +211,10 @@
       "originalArticleIsPublisherVerbatim": false,
       "imageUrl": null,
       "imageRightsVerified": false,
-      "photoCommonsTitle": "File:Futa_20261004_3.jpg",
+      "photoCommonsTitle": "File:Futa 20261004 3.jpg",
       "photoMatchReviewed": true,
-      "photoCaption": "Futa, panda rojo del Zoológico de Chiba, fotografiado el 4 de octubre de 2026 por Misei sen (CC BY 4.0).",
-      "photoStatus": "PENDIENTE_VERIFICACION_FOTO_DEL_HECHO_Y_LICENCIA",
+      "photoCaption": "Futa en el zoológico de Chiba, fotografiado en octubre de 2026 por Misei sen, CC BY 4.0. Fotografía del animal protagonista.",
+      "photoStatus": "REVISION_DOCUMENTAL_OK_DESCARGA_Y_QA_PENDIENTES",
       "photoRightsReview": "Commons: https://commons.wikimedia.org/wiki/File:Futa_20261004_3.jpg"
     }
   ],
@@ -224,5 +224,12 @@
     "audio": false,
     "qa": false,
     "published": false
+  },
+  "photoSelectionAudit": {
+    "commonsPagesReviewed": 6,
+    "filesIncorporated": false,
+    "publicationApproved": false,
+    "remark": "Una foto real contextual de cada noticia, con fecha y autor. Descargar y comprobar con Wikimedia API; no presentar fotografías históricas como si fueran del 20 de noviembre. Mantener imageRightsVerified=false hasta QA.",
+    "source": "Wikimedia Commons 20/11/2026"
   }
 }
