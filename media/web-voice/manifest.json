@@ -488,6 +488,54 @@
       "voice": "es-CO-SalomeNeural",
       "language": "es-CO",
       "speed": 1.25
+    },
+    "orbiuno-20261120-0800-1": {
+      "url": "./media/web-voice/8a33822bfca557004da22b8f785f.mp3",
+      "text": "El Departamento Nacional de Planeación puso en marcha una gira de treinta y tres audiencias públicas para escuchar propuestas regionales sobre el Plan Plurianual de Inversiones del período 2027 a 2030. Las sesiones comprenden los treinta y dos departamentos y Bogotá. El recorrido comenzó en la Amazonia y para este viernes 20 de noviembre está programada una audiencia en San José del Guaviare a las ocho de la mañana, de acuerdo con el cronograma oficial.\n\nEste plan constituye el componente de programación financiera del Plan Nacional de Desarrollo. En las reuniones se presentan las bases, los presupuestos regionales proyectados y las iniciativas que las comunidades y autoridades consideran prioritarias. Equipos técnicos del DNP participan para acompañar el diálogo y analizar las propuestas con criterios presupuestales y de coordinación territorial.\n\nLa ciudadanía debe distinguir entre intervenir en una audiencia, proponer un proyecto y recibir recursos para ejecutarlo. Estas jornadas son espacios de discusión y priorización, no anuncios de contratos u obras ya financiadas. El DNP prevé concluir el recorrido el 18 de diciembre y utilizar los resultados en la construcción de los documentos que posteriormente se presentarán al Congreso.",
+      "sha256": "47925885c1a6a238658f6e32baa71733e90d8000e4124c68b832a5d785afb01a",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261120-0800-2": {
+      "url": "./media/web-voice/f485a1d4b367dccb07602cb7fba3.mp3",
+      "text": "El Banco de la República entregó reconocimientos a estudiantes de seis regiones del país por su participación en el concurso BanRep desde el Lente 2026. La ceremonia se celebró el miércoles 18 de noviembre en Bogotá y la entidad divulgó el balance el día siguiente. La iniciativa invita a niños y jóvenes de instituciones educativas a explicar ideas económicas mediante videos y situaciones de su vida cotidiana.\n\nLa cuarta edición reunió más de tres mil estudiantes y alrededor de cuatrocientos docentes. Seis equipos llegaron a la final, procedentes de Barranquilla, Santa María, Chiscas, Tauramena, Girardot y San Bernardo del Viento. Los trabajos se organizaron en categorías júnior y sénior y tuvieron como desafío comunicar por qué el Banco de la República puede subir las tasas de interés cuando la inflación es elevada.\n\nDurante el encuentro, los participantes visitaron espacios culturales del Banco y compartieron sus experiencias. El propósito pedagógico de la convocatoria es fomentar desde edades tempranas la comprensión de la inflación, el crédito y las decisiones económicas. Los resultados muestran distintas maneras en que los estudiantes pueden investigar temas complejos y traducirlos a relatos sencillos y cercanos.",
+      "sha256": "4e932b41be18c8545c9c6680d5484de69784637ef2aa4f0f227101947dba244f",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261120-0800-3": {
+      "url": "./media/web-voice/8af0324a62cbf0c3def77c7e6316.mp3",
+      "text": "Bogotá realiza este viernes 20 de noviembre en el Centro Felicidad de Chapinero el cierre de Bogotá 2038: Futuros Compartidos, un proceso cultural que invita a imaginar cómo podría transformarse la ciudad en los próximos años. La actividad es promovida por la Secretaría Distrital de Cultura, Recreación y Deporte junto con entidades distritales y actores académicos y ciudadanos.\n\nDurante tres meses se desarrollaron espacios de experimentación y diálogo sobre asuntos como la naturaleza urbana, el patrimonio, el envejecimiento de la población y la participación de las comunidades. La iniciativa propone que el diseño de la ciudad no dependa únicamente de obras físicas, sino también de relaciones sociales, equipamientos culturales y nuevas formas de colaboración territorial.\n\nEntre los lugares explorados aparecen el humedal La Vaca en Kennedy, el Paseo Entre Humedales en Fontibón y la zona industrial de Puente Aranda. El evento de cierre reúne propuestas y experiencias para que la ciudadanía pueda conocer los resultados. Se trata de un ejercicio de reflexión y planeación participativa, no de la aprobación inmediata de proyectos de construcción.",
+      "sha256": "fdf8ab95029f439bbba5f1b1e216d59a2c261ae94bada61a645428819b674c49",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261120-0800-4": {
+      "url": "./media/web-voice/18e2c444191d17bf09ed5e6bbf48.mp3",
+      "text": "Un equipo internacional de investigadores encontró un púlsar difícil de detectar gracias a un nuevo método de análisis aplicado a información pública del telescopio espacial Fermi de la NASA. La agencia informó el 19 de noviembre que el procedimiento permite localizar señales de estas estrellas de neutrones con una velocidad de cálculo aproximadamente un millón de veces mayor que los métodos anteriores.\n\nLos científicos examinaron quince años de observaciones de rayos gamma y descubrieron el objeto identificado como PSR J1622−7204, que gira unas doscientas sesenta y una veces cada segundo. La nueva búsqueda necesitó el equivalente a diez horas de procesamiento en una computadora estándar. Una estrategia anterior no logró identificar la misma señal pese a emplear recursos de cómputo mucho mayores.\n\nLos púlsares son restos muy densos de estrellas que emiten radiación en pulsos regulares. Detectarlos resulta difícil porque los fotones que llegan a los instrumentos se mezclan con otras fuentes del universo. La investigación muestra cómo los datos científicos abiertos pueden aprovecharse con nuevos algoritmos para encontrar fenómenos que antes pasaban desapercibidos y mejorar el conocimiento del espacio.",
+      "sha256": "a8da8187ff3946e0b7acb534b47d7c60eda77c924938eb653365fa138a8339b9",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261120-0800-5": {
+      "url": "./media/web-voice/071220c6d4ddb6091fa8c8a5e4a7.mp3",
+      "text": "Este viernes 20 de noviembre se conmemora el Día Mundial de la Infancia, una fecha dedicada a los derechos, las oportunidades y las voces de niñas, niños y adolescentes. UNICEF impulsa la jornada como un llamado a que las comunidades, las instituciones y los gobiernos escuchen a los menores y tengan en cuenta sus opiniones al tomar decisiones que afectan su presente y su futuro.\n\nLa conmemoración recuerda dos hitos de Naciones Unidas: la Declaración de los Derechos del Niño de 1959 y la Convención sobre los Derechos del Niño de 1989. En distintos países se organizan actividades escolares, campañas y espacios en los que los menores pueden participar en medios de comunicación, escenarios públicos y conversaciones sobre educación, protección, salud y bienestar.\n\nUNICEF plantea que escuchar a los niños no es un gesto simbólico: requiere crear condiciones reales para que participen y reciban apoyo sin discriminación. El Día Mundial de la Infancia invita a revisar qué pueden hacer las familias, las escuelas y las autoridades para proteger sus derechos y construir entornos seguros en los que puedan crecer, aprender, jugar y expresar sus ideas.",
+      "sha256": "46b97b1e668d2233ad12a1748621d80cb79c18cf8df7ffc904aa357d7b59dbfa",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261120-0800-6": {
+      "url": "./media/web-voice/ded59bbe394038a84e111c388cd0.mp3",
+      "text": "Investigadores de la NASA elaboraron mapas tridimensionales de alta resolución para estudiar el terreno y la vegetación de California y aportar información a la evaluación del riesgo de incendios forestales. La agencia presentó los resultados el 18 de noviembre y explicó que se trata de una cartografía que permite distinguir elementos del paisaje a escala cercana a la de árboles individuales.\n\nEl trabajo utiliza datos obtenidos mediante tecnología lidar, que emplea pulsos láser para medir distancias, y observaciones del programa de elevación tridimensional del Servicio Geológico de Estados Unidos. El conjunto de mapas tiene una resolución de aproximadamente un metro cuadrado por píxel, lo que permite describir detalles que no suelen aparecer en productos espaciales de menor resolución.\n\nEl equipo de la iniciativa Wildfire, Ecosystem Resilience, and Risk Assessment trabaja con organismos de California para que esta información respalde herramientas de planificación ambiental, manejo de recursos y protección de ecosistemas. La publicación no anuncia un incendio actual. Es un avance técnico orientado a comprender mejor dónde existen condiciones que podrían aumentar los riesgos y cómo planificar medidas preventivas.",
+      "sha256": "fdb5ebe7cc7828c392ff8b8912c8194a5e825c5eb49c3ac7bd7876e489a4ec2d",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
     }
   }
 }
