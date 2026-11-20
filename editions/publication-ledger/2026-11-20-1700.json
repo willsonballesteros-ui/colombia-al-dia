@@ -37,7 +37,18 @@
     "site_sync_verified": false,
     "publication_state": "BLOCKED_MISSING_FIVE_EXACT_LICENSED_MODEL_PHOTOS",
     "status": "NOT_PUBLISHED",
-    "source_file": "willsonballesteros-ui/mycar-al-dia:fix/mycar-20nov-1700-salome-five/editions/2026-11-20-pm.json"
+    "source_file": "willsonballesteros-ui/mycar-al-dia:fix/mycar-20nov-1700-salome-five/editions/2026-11-20-pm.json",
+    "voice_qa": {
+      "run_id": 44828909928,
+      "status": "SUCCESS",
+      "engine": "edge-tts",
+      "voice": "es-CO-SalomeNeural",
+      "speed": 1.25,
+      "audio_news_count": 5,
+      "artifact_id": 14675187713,
+      "archive_drive_url": "https://drive.google.com/file/d/14ku0r1VzUevs0gUvQPu5mGEBpd_KJ7mg/view",
+      "approved_for_publishing": false
+    }
   },
   "note": "Distinct from published 08:00 edition. ORBIUNO Meta returned media and video/post IDs; permalink readback had not refreshed; do not fabricate permalinks or republish to retrieve. MyCar remains unpublished until all five exact licensed photos, genuine Salomé audio, MP4 QA and web sync. No paid tools."
 }
