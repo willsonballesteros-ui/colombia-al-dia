@@ -69,7 +69,28 @@ def sync(edition_file: Path, cache: Path, news_file: Path, target: Path):
         filename = f"photo-{i:02d}.jpg"
         dst = target / filename
         if dst.exists() and hashlib.sha256(dst.read_bytes()).digest() != hashlib.sha256(src.read_bytes()).digest():
-            raise ValueError("Hay foto distinta en el destino, no sobrescribir")
+            # An earlier verified photo pack was already committed to the historical
+            # path: preserve it only when its independent license ledger and hash
+            # match this exact news item. Never overwrite it or accept an unknown JPG.
+            ledger_path = target / "preverified_sources.json"
+            if not ledger_path.is_file():
+                raise ValueError("Hay foto distinta sin libro de procedencia, BLOQUEAR")
+            previous = json.loads(ledger_path.read_text(encoding="utf-8"))
+            rows = previous.get("photos", [])
+            if len(rows) != EXPECTED_COUNT:
+                raise ValueError("La procedencia de fotos anteriores está incompleta")
+            old = rows[i - 1]
+            if (old.get("filename"), old.get("title"), old.get("author"),
+                old.get("license"), old.get("page")) != (
+                filename, credit["image_title"], credit["author"],
+                credit["license"], credit["commons"]):
+                raise ValueError("La foto previa no coincide editorialmente: " + str(i))
+            if hashlib.sha256(dst.read_bytes()).hexdigest() != old.get("sha256"):
+                raise ValueError("La fotografía previa no coincide con su hash: " + str(i))
+            with Image.open(dst) as prior_photo:
+                prior_photo.load()
+                if prior_photo.format != "JPEG" or prior_photo.width < 650 or prior_photo.height < 450:
+                    raise ValueError("Foto anterior corrupta o ilegible")
         if not dst.exists():
             shutil.copyfile(src, dst)
         saved = lookup[item["id"]]
