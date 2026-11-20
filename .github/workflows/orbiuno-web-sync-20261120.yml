@@ -132,3 +132,5 @@ jobs:
                   if retry==13:raise RuntimeError('Sin confirmación despliegue web: '+error)
                   time.sleep(12)
           PY
+
+# Reintento 2: conservar fotos en 0800_assets cuando su SHA256 y licencia coincidan con preverified_sources.json.
