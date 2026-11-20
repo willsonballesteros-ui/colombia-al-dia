@@ -14,6 +14,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
+import time
 from zoneinfo import ZoneInfo
 
 from PIL import Image
@@ -41,7 +43,19 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
     if p.hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org", "www.google.com") and p.hostname not in APPROVED_ICON_HOSTS:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
-    with urlopen(request, timeout=38) as response:
+    # Wikimedia may return HTTP 429 during bursts; retry only rate limits.
+    # Fail closed for missing metadata, expired rights, or other HTTP errors.
+    for attempt, pause in enumerate((0, 6, 16, 32)):
+        if pause:
+            time.sleep(pause)
+        try:
+            response = urlopen(request, timeout=38)
+            break
+        except HTTPError as exc:
+            if exc.code != 429 or attempt == 3:
+                raise
+            print("WIKIMEDIA_RATE_LIMIT_RETRY", attempt + 1, flush=True)
+    with response:
         final = urlsplit(response.url)
         commons_hosts = {"commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org"}
         # Solo los favicons de Google pueden redirigir a las CDN oficiales gstatic.
@@ -73,6 +87,8 @@ def commons_info(title: str, getter=fetch, *, logo: bool = False) -> dict:
         raise ValueError("Falta título exacto File:... de Commons")
     query = urlencode({"action": "query", "titles": title, "prop": "imageinfo",
                        "iiprop": "url|size|extmetadata|mime", "iiurlwidth": "1280", "format": "json"})
+    if getter is fetch:
+        time.sleep(1.4)  # slow down metadata requests; retain rights audit
     data = json.loads(getter("https://commons.wikimedia.org/w/api.php?" + query))
     pages = list(data.get("query", {}).get("pages", {}).values())
     if len(pages) != 1 or "missing" in pages[0]:
