@@ -1,0 +1,83 @@
+{
+  "edition": "MYCAR-2026-11-20-NOCHE",
+  "state": "DRAFT_RENDER_ONLY_DO_NOT_PUBLISH",
+  "date": "2026-11-20",
+  "slot": "noche",
+  "timezone": "America/Bogota",
+  "approved_for_publication": false,
+  "brand": "MyCar Noticias",
+  "ig": "@mycar.buscoautos",
+  "web": "https://busco-autos.pages.dev/noticias/",
+  "intro": "MyCar Noticias. Cinco novedades del mundo del automóvil: MG, MINI, Cupra, Lynk and Co, y Tesla.",
+  "outro": "Más noticias y vehículos en Busco Autos. Síguenos en arroba MyCar punto Busco Autos.",
+  "voice": "es-CO-SalomeNeural",
+  "rate": "+25%",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "audio": "AAC 48kHz",
+  "video": "H264",
+  "background_music": false,
+  "photo_use_notice": "Fotografías de referencia del mismo modelo; no representan la presentación colombiana. Incluya licencias, autores y enlace original en el Reel y en los créditos web.",
+  "news": [
+    {
+      "headline": "MG5 Y MG HS HYBRID LLEGAN A COLOMBIA",
+      "voice": "MG presentó en el Salón del Automóvil de Bogotá dos novedades para Colombia: el sedán MG cinco a gasolina y la camioneta MG HS con tecnología híbrida.",
+      "source_name": "Autocosmos Colombia",
+      "published_date": "2026-11-19",
+      "source_url": "https://noticias.autocosmos.com.co/2026/11/19/sia-2026-mg5-y-mg-hs-hybrid-llegan-a-colombia-precios-motores-y-equipamiento",
+      "photo_file": "MG 5 II facelift 006.jpg",
+      "photo_author": "JustAnotherCarDesigner",
+      "photo_license": "CC0 1.0",
+      "photo_model": "MG5 segunda generación facelift, fotografiado en Auto Shanghai 2025",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:MG_5_II_facelift_006.jpg"
+    },
+    {
+      "headline": "MINI PAUL SMITH: EDICIÓN LIMITADA EN COLOMBIA",
+      "voice": "MINI anunció quince unidades del Cooper Paul Smith Edition para Colombia. También presentó la Oxford Edition, con tres unidades que, según la fuente, ya fueron vendidas.",
+      "source_name": "El Carro Colombiano",
+      "published_date": "2026-11-18",
+      "source_url": "https://www.elcarrocolombiano.com/lanzamientos/mini-cooper-paul-smith-oxford-edition-colombia-precio-unidades/",
+      "photo_file": "Mini Hatch (F65) Paul Smith Edition Pro Auto Zuerich 2026 IMG 9161.jpg",
+      "photo_author": "Alexander Migl",
+      "photo_license": "CC BY-SA 4.0",
+      "photo_model": "MINI F65 Paul Smith Edition, Auto Zürich, Suiza, 4 de noviembre de 2026",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Mini_Hatch_(F65)_Paul_Smith_Edition_Pro_Auto_Zuerich_2026_IMG_9161.jpg"
+    },
+    {
+      "headline": "CUPRA TERRAMAR HÍBRIDA ENCHUFABLE EN COLOMBIA",
+      "voice": "La Cupra Terramar híbrida enchufable inició su preventa en Colombia. Ofrece doscientos un caballos de potencia, según la marca, y un precio especial sujeto a financiación.",
+      "source_name": "El Carro Colombiano",
+      "published_date": "2026-11-17",
+      "source_url": "https://www.elcarrocolombiano.com/novedades/cupra-terramar-phev-colombia-precio-preventa-datos/",
+      "photo_file": "Cupra Terramar 1.5 eHybrid (2025) (54719721073).jpg",
+      "photo_author": "Charles / Flickr",
+      "photo_license": "CC0 1.0",
+      "photo_model": "Cupra Terramar eHybrid 2025 fotografiada en Francia, fotografía de referencia del modelo",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Cupra_Terramar_1.5_eHybrid_(2025)_(54719721073).jpg"
+    },
+    {
+      "headline": "LYNK & CO 01 DEBUTA EN COLOMBIA",
+      "voice": "La marca Lynk and Co debutó en Colombia con el SUV híbrido enchufable cero uno, exhibido en el Salón del Automóvil de Bogotá bajo representación de Casa Toro.",
+      "source_name": "El Carro Colombiano",
+      "published_date": "2026-11-18",
+      "source_url": "https://www.elcarrocolombiano.com/lanzamientos/lynk-and-co-01-colombia-lanzamiento-precio-caracteristicas/",
+      "photo_file": "2024 Lynk & Co 01 IAA 2025 DSC 2314.jpg",
+      "photo_author": "Alexander Migl",
+      "photo_license": "CC BY-SA 4.0",
+      "photo_model": "Lynk & Co 01 PHEV, IAA Mobility 2025, fotografía de referencia del modelo",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2024_Lynk_%26_Co_01_IAA_2025_DSC_2314.jpg"
+    },
+    {
+      "headline": "TESLA CYBERTRUCK: SU FUTURO EN DUDA",
+      "voice": "La Tesla Cybertruck podría dejar de producirse en Texas a mediados de dos mil veintisiete para dar más espacio al Cybercab. El futuro definitivo del modelo no está confirmado.",
+      "source_name": "Autocosmos Colombia",
+      "published_date": "2026-11-06",
+      "source_url": "https://noticias.autocosmos.com.co/2026/11/06/tesla-cybertruck-dejaria-de-fabricarse-en-2027-para-dar-paso-al-cybercab",
+      "photo_file": "Tesla Cybertruck - 01.jpg",
+      "photo_author": "Oleg Yunakov",
+      "photo_license": "CC BY-SA 4.0",
+      "photo_model": "Tesla Cybertruck fotografiada en Nueva York, foto de referencia",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_-_01.jpg"
+    }
+  ]
+}
