@@ -1,0 +1,57 @@
+name: "ORBIUNO | Publicar edición 21NOV 08:00 con Meta directo"
+
+on:
+  push:
+    branches: [main]
+    paths: ['editions/publish_requests/2026-11-21-0800.json']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: orbiuno-20261121-0800-meta-once
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 24
+    env:
+      MANIFEST: media/2026-11-21/orbiuno_0800_6_noticias_manifest.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Confirmar día y manifiesto exacto, sin reprocesar medios
+        run: |
+          set -euo pipefail
+          test "$(TZ=America/Bogota date +%F)" = "2026-11-21"
+          test -s "$MANIFEST"
+          python - <<'PY'
+          import json,os
+          d=json.load(open(os.environ["MANIFEST"],encoding="utf-8"))
+          assert d["edition"]=="2026-11-21" and d["slot"]=="08:00"
+          assert d["newsCount"]==6 and len(set(d["newsIds"]))==6
+          assert d["imagesCount"]==6 and d["logosCount"]==6
+          assert d["voice"]=="es-CO-SalomeNeural"
+          print("MANIFEST_QA_ALREADY_GENERATED", d["sha256"])
+          PY
+      - name: Comprobar publicación Cloudflare, seis audios y fotografías
+        run: python scripts/orbiuno_daily_preflight.py --manifest "$MANIFEST" --tries 15 --sleep 20
+      - name: Publicar Reel Instagram con bloqueo anti-duplicados
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: \${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: \${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: python scripts/orbiuno_publish_6.py --manifest "$MANIFEST"
+      - name: Conservar evidencia de Meta, incluso ante error
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-2026-11-21-0800-meta-verified
+          path: media/2026-11-21/publication_report.json
+          if-no-files-found: warn
+          retention-days: 90
