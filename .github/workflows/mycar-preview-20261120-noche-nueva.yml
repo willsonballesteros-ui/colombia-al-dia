@@ -1,0 +1,90 @@
+name: "MYCAR | Reel nuevo 20 nov noche, cinco fotos y Salomé"
+on:
+  push:
+    branches: [preview/mycar-20261120-noche-nueva]
+    paths: [".github/workflows/mycar-preview-20261120-noche-nueva.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-20261120-noche-nueva
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar FFmpeg y motor de voz
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/codec-bin"
+            timeout 240s npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/codecs" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codec-bin/ffmpeg"
+            ln -sf "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe" "$RUNNER_TEMP/codec-bin/ffprobe"
+            chmod +x "$RUNNER_TEMP/codecs/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" "$RUNNER_TEMP/codecs/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            echo "$RUNNER_TEMP/codec-bin" >> "$GITHUB_PATH"
+          fi
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+          python -m pip install --disable-pip-version-check --timeout 20 --retries 1 --prefer-binary Pillow requests edge-tts
+          python -m py_compile scripts/generate_voice.py scripts/render_mycar_20nov_noche_nueva.py
+      - name: Render con cinco fotos reales y voz Salomé
+        run: python scripts/render_mycar_20nov_noche_nueva.py
+      - name: QA autor, licencia, cinco fuentes, voz y MP4
+        run: |
+          python - <<'PY'
+          import json,subprocess,hashlib
+          from pathlib import Path
+          d=Path('build/mycar_20nov_noche_nueva')
+          p=d/'MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4'
+          caption=(d/'MYCAR_caption.txt').read_text(encoding='utf-8')
+          report=json.loads((d/'mycar/audio/audio_report.json').read_text())
+          news=json.loads((d/'mycar/editorial.json').read_text())
+          photos=json.loads((d/'mycar/credits.json').read_text())
+          assert len(news)==len(photos)==5
+          assert len({n['url'] for n in news})==5
+          assert len({f['image_title'] for f in photos})==5
+          assert all(x['license'] and x['author'] and x['commons'].startswith('https://commons.wikimedia.org/wiki/File:') for x in photos)
+          assert all(n['url'] in caption for n in news)
+          assert all(f['commons'] in caption for f in photos)
+          assert len(caption)<=2200
+          assert not any(x in caption.lower() for x in ['voz sintética','motor de voz','1,25×','pipeline','instrucciones internas','kokoro','dora','salome'])
+          assert report['status']=='ok' and report['voice']=='es-CO-SalomeNeural' and report['tempo']==1.25 and len(report['segments'])==7
+          assert len(list((d/'mycar').glob('slide-*.jpg')))==7
+          assert all((d/'mycar'/f'photo-{i:02d}.jpg').stat().st_size>10000 for i in range(5))
+          v=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
+          assert any(s.get('codec_name')=='h264' and s.get('width')==1080 and s.get('height')==1920 for s in v['streams'])
+          assert any(s.get('codec_name')=='aac' for s in v['streams'])
+          assert p.stat().st_size>300000 and 30<float(v['format']['duration'])<180
+          print('MYCAR_FINAL_QA_PASS',hashlib.sha256(p.read_bytes()).hexdigest(),v['format']['duration'])
+          PY
+      - name: Alojamiento MP4 y créditos en rama aislada
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = "preview/mycar-20261120-noche-nueva"
+          dst=previews/2026-11-20/mycar-noche-nueva-5
+          test ! -e "$dst/MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4"
+          mkdir -p "$dst"
+          cp build/mycar_20nov_noche_nueva/MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4 "$dst/"
+          cp build/mycar_20nov_noche_nueva/MYCAR_caption.txt "$dst/"
+          cp build/mycar_20nov_noche_nueva/mycar/editorial.json "$dst/"
+          cp build/mycar_20nov_noche_nueva/mycar/credits.json "$dst/"
+          cp build/mycar_20nov_noche_nueva/mycar/slide-*.jpg "$dst/"
+          cp build/mycar_20nov_noche_nueva/mycar/audio/audio_report.json "$dst/"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$dst"
+          git commit -m "MyCar 20 nov noche: MP4 Salomé cinco fotos QA, aún no publicado"
+          git fetch origin preview/mycar-20261120-noche-nueva
+          git rebase origin/preview/mycar-20261120-noche-nueva
+          git push origin HEAD:preview/mycar-20261120-noche-nueva
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MYCAR-20NOV-NOCHE-NUEVA-5
+          path: build/mycar_20nov_noche_nueva/
+          retention-days: 30
+          if-no-files-found: warn
