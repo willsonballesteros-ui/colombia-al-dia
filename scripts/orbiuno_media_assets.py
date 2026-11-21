@@ -38,31 +38,43 @@ BAD_TAGS = ("artificial intelligence", "ai-generated", "stable diffusion", "midj
 
 def fetch(url: str, limit: int = 12_000_000) -> bytes:
     p = urlsplit(url)
+    commons_hosts = {"commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org"}
     if p.scheme != "https" or p.username or p.password or p.fragment or p.port not in (None, 443):
         raise ValueError("Solo HTTPS sin credenciales ni puertos extraños")
-    if p.hostname not in ("commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org", "www.google.com") and p.hostname not in APPROVED_ICON_HOSTS:
+    if p.hostname not in commons_hosts | {"www.google.com"} | APPROVED_ICON_HOSTS:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
-    # Wikimedia may return HTTP 429 during bursts; retry only rate limits.
-    # Fail closed for missing metadata, expired rights, or other HTTP errors.
-    for attempt, pause in enumerate((0, 6, 16, 32)):
+    response = None
+    used_proxy = False
+    for attempt, pause in enumerate((0, 3, 8)):
         if pause:
             time.sleep(pause)
         try:
             response = urlopen(request, timeout=38)
             break
         except HTTPError as exc:
-            if exc.code != 429 or attempt == 3:
+            if exc.code != 429 or attempt == 2:
+                if exc.code == 429 and p.hostname in ("upload.wikimedia.org", "thumb.wikimedia.org"):
+                    # Rate-limit fallback for already-audited public Wikimedia image only.
+                    # A resizing proxy cannot substitute for Commons license/author metadata.
+                    mirror = "https://wsrv.nl/?" + urlencode({"url": url, "w": 1280, "fit": "inside"})
+                    proxy_request = Request(mirror, headers={"User-Agent": "ORBIUNO-Newsroom/1.0"})
+                    response = urlopen(proxy_request, timeout=30)
+                    used_proxy = True
+                    print("WIKIMEDIA_IMAGE_CDN_MIRROR_USED", flush=True)
+                    break
                 raise
             print("WIKIMEDIA_RATE_LIMIT_RETRY", attempt + 1, flush=True)
+    if response is None:
+        raise RuntimeError("Sin respuesta del servidor autorizado")
     with response:
         final = urlsplit(response.url)
-        commons_hosts = {"commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimedia.org"}
-        # Solo los favicons de Google pueden redirigir a las CDN oficiales gstatic.
         google_favicon_hosts = {"www.google.com", "www.gstatic.com", "t0.gstatic.com", "t1.gstatic.com",
                                 "t2.gstatic.com", "t3.gstatic.com", "encrypted-tbn0.gstatic.com",
                                 "encrypted-tbn1.gstatic.com", "encrypted-tbn2.gstatic.com", "encrypted-tbn3.gstatic.com"}
-        if p.hostname == "www.google.com" and p.path == "/s2/favicons":
+        if used_proxy:
+            destinations = {"wsrv.nl", "images.weserv.nl"}
+        elif p.hostname == "www.google.com" and p.path == "/s2/favicons":
             destinations = google_favicon_hosts
         elif p.hostname in commons_hosts:
             destinations = commons_hosts
