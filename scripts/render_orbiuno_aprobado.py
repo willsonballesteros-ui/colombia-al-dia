@@ -270,7 +270,8 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
          "duration": round(duration, 2), "fps": 30, "sha256": hashlib.sha256(video.read_bytes()).hexdigest(),
          "video": video_name, "visualMode": "verified_real_photos", "imagesCount": 6,
          "logosCount": 6, "photoCredits": [x["credit"] for x in entries],
-         "openingStyle": "saludo_corto_directo_a_noticias", "burnedSubtitles": False,\n         "sourceOnly": False, "publicationAuthorized": False,
+         "openingStyle": "saludo_corto_directo_a_noticias", "burnedSubtitles": False,
+         "sourceOnly": False, "publicationAuthorized": False,
          "news": [{"id": n["id"], "title": n["title"], "sourceUrl": n["sources"][0]["url"]}
                   for n in rows], "published": False, "instagramId": None, "instagramPermalink": None}
     (output / "manifest.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
