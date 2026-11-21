@@ -1,5 +1,5 @@
 {
-  "voice": "es-CO-SalomeNeural",
+  "voice": "ef_dora",
   "language": "es-CO",
   "baseRate": 1.25,
   "items": {
@@ -550,52 +550,34 @@
       "sha256": "97f69bdf5bff461c24279e727fd81422b06db0de5f9cd5280cec0777a40c93a5"
     },
     "orbiuno-20261121-0800-1": {
-      "url": "./media/web-voice/2dea20538c258fabf9faf47eb251.mp3",
+      "url": "./media/web-voice/4669aa40fcca7685b967.mp3",
       "text": "LATAM Airlines conmemora quince años de actividad en Colombia y plantea una etapa de expansión que dependerá tanto de sus decisiones comerciales como de la infraestructura aeroportuaria. Roberto Alvo, presidente del grupo, habló sobre las posibilidades de aumentar la conectividad y sobre los límites operativos del aeropuerto El Dorado de Bogotá, según la entrevista publicada por El Espectador el 20 de noviembre.\n\nEl desarrollo de nuevas rutas y frecuencias exige disponibilidad de infraestructura y franjas horarias, conocidas como slots. El aeropuerto bogotano es el principal nodo del sistema aéreo colombiano y concentra una parte importante del tráfico internacional y doméstico. La compañía presenta sus planes como una aspiración, no como una ampliación de vuelos ya autorizada ni como una obra aprobada.\n\nPara los viajeros, el alcance de estas declaraciones dependerá de decisiones posteriores de la aerolínea y de las autoridades aeroportuarias. La información destacada por el medio es una señal de las presiones de crecimiento de la aviación comercial, sin que pueda anticiparse cuántas rutas se abrirán o cuánto aumentará la capacidad disponible.",
-      "sha256": "4669aa40fcca7685b967d76dfd343b86d518199b3623320b9fd3290ff63eb1aa",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "4669aa40fcca7685b967d76dfd343b86d518199b3623320b9fd3290ff63eb1aa"
     },
     "orbiuno-20261121-0800-2": {
-      "url": "./media/web-voice/46ee9f1215a5b844465e895f3f90.mp3",
+      "url": "./media/web-voice/172ec45815ae02e30294.mp3",
       "text": "Un terremoto de magnitud 6,8 sacudió la zona central de Perú durante la noche del viernes 20 de noviembre, según un reporte recogido por Reuters a partir de información del Centro Alemán de Investigación de Geociencias. El movimiento se percibió en Lima, donde algunas personas abandonaron sus viviendas y buscaron espacios abiertos mientras las autoridades evaluaban la situación.\n\nEn la información inicial no se habían confirmado víctimas ni daños significativos. Ese dato describe el primer balance disponible y no debe tomarse como garantía de que no se registren novedades posteriores. La ubicación y profundidad de un sismo, además del tipo de construcciones y el terreno, influyen en la intensidad con la que lo percibe cada población.\n\nLas autoridades y centros sismológicos mantienen la tarea de consolidar los registros, mientras la ciudadanía recibe recomendaciones sobre preparación y autoprotección. La fotografía escogida por es una vista de archivo de Lima: sirve para ubicar geográficamente la noticia, pero no muestra el movimiento sísmico ni sus consecuencias.",
-      "sha256": "172ec45815ae02e302943db2180477c310febeaf088066417ee6f02ba3071ee9",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "172ec45815ae02e302943db2180477c310febeaf088066417ee6f02ba3071ee9"
     },
     "orbiuno-20261121-0800-3": {
-      "url": "./media/web-voice/ac2ac1a0974e0a601dab6484c123.mp3",
+      "url": "./media/web-voice/554295682a98ce2f7c8d.mp3",
       "text": "Los precios internacionales del petróleo registraron alzas el viernes 20 de noviembre en un contexto de tensiones geopolíticas y preocupación por la continuidad del suministro. Reuters informó que los mercados reaccionaron a incidentes de seguridad en Oriente Medio y a movimientos de operadores antes del período de festivos estadounidenses.\n\nEl comportamiento de la cotización no depende de una sola noticia: además del riesgo geopolítico, influyen las expectativas de demanda, las existencias de petróleo y las decisiones de producción de los países exportadores. Los ministros del grupo OPEP+ tenían previstas reuniones para el 29 de noviembre destinadas a examinar su política de oferta para 2027.\n\nLos cambios en el precio del crudo pueden afectar a productores, consumidores y gobiernos, aunque no se trasladan de forma automática ni inmediata al precio de los combustibles en Colombia. La fotografía de un pozo de extracción usada para ilustrar esta nota es de archivo y no corresponde al lugar de los incidentes citados.",
-      "sha256": "554295682a98ce2f7c8d427e4e9a3c06f05e300eb65656b569612a796613ceea",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "554295682a98ce2f7c8d427e4e9a3c06f05e300eb65656b569612a796613ceea"
     },
     "orbiuno-20261121-0800-4": {
-      "url": "./media/web-voice/f1e421d3fc7c3041a1c4392e4f7c.mp3",
+      "url": "./media/web-voice/5dfb1fd18377484080d1.mp3",
       "text": "Colombia tiene programado para este sábado 21 de noviembre su primer partido del Mundial masculino Sub-17 que se celebra en Catar. El rival de la selección nacional es Japón y el inicio del encuentro estaba previsto para las 7:30 de la mañana, hora de Colombia, según la agenda difundida por El Espectador. Esta edición de las ocho se preparó antes de conocer un resultado definitivo.\n\nEl conjunto colombiano llega al torneo con el antecedente de su título sudamericano en la categoría y comparte grupo con Japón, Honduras y Serbia. Después de su debut, el calendario divulgado contempla un partido frente a Honduras el martes 24 de noviembre y el cierre de la primera ronda ante Serbia el viernes 27.\n\nEste boletín informa el compromiso y los antecedentes, sin declarar marcador, clasificación o resultado que no estuviera confirmado al momento de edición. La imagen utilizada es de un encuentro anterior de la categoría Sub-17 en Cali y se identifica expresamente como archivo, no como fotografía del partido en Catar.",
-      "sha256": "5dfb1fd18377484080d105e25a3b5d25ac9f20766f6f96e37dcaf40a0b468b32",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "5dfb1fd18377484080d105e25a3b5d25ac9f20766f6f96e37dcaf40a0b468b32"
     },
     "orbiuno-20261121-0800-5": {
-      "url": "./media/web-voice/f3c1509671eb1206a855d40dd5ba.mp3",
+      "url": "./media/web-voice/7655c1b24ab2e66e0cb8.mp3",
       "text": "La llegada de Grand Theft Auto VI ha generado una conversación adicional alrededor de su banda sonora: varios artistas colombianos o de raíces colombianas figuran entre las canciones mencionadas en la cobertura del videojuego. El Colombiano reseñó el 19 de noviembre temas de Joe Arroyo, Feid, Karol G y Kali Uchis, que conectan distintas generaciones de la música nacional con un producto de alcance internacional.\n\nEntre los títulos destacados por el medio están Rebelión, de Joe Arroyo, y El Makinón, de Karol G y Mariah Angeliq. El catálogo musical del juego combina emisoras ficticias y propuestas de géneros muy diversos. Es importante distinguir lo que suena dentro de las emisoras, lo que pertenece al álbum musical vinculado y lo que podría provenir de anuncios o listas no confirmadas.\n\nEl hecho pone en circulación global expresiones como la salsa y el reguetón colombiano, pero no permite inferir cifras de reproducciones ni resultados comerciales específicos. La fotografía de Karol G seleccionada para el Reel es de un concierto de 2024; no es una captura del videojuego ni acredita su presencia en los estudios del desarrollador.",
-      "sha256": "7655c1b24ab2e66e0cb85f5842246fce2d3da78c76c4d5f72a56d40770d95e2f",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "7655c1b24ab2e66e0cb85f5842246fce2d3da78c76c4d5f72a56d40770d95e2f"
     },
     "orbiuno-20261121-0800-6": {
-      "url": "./media/web-voice/fd3ad75978212996f44cd3da5357.mp3",
+      "url": "./media/web-voice/1ea7aa294a5b76926213.mp3",
       "text": "El Gobierno colombiano informó el 20 de noviembre sobre compromisos internacionales de financiación por quince millones de dólares para fortalecer proyectos de conservación de la biodiversidad. La comunicación oficial vincula las gestiones con la protección de hábitats naturales, la recuperación de ecosistemas y nuevas alianzas de cooperación científica y ambiental.\n\nEntre las iniciativas anunciadas figura una colaboración con la National Audubon Society para apoyar la conservación de aves, de sus territorios y de oportunidades de turismo de naturaleza. Parques Nacionales señaló que una proporción muy alta de las especies de aves registradas en Colombia tiene presencia en áreas protegidas, por lo que estas zonas son fundamentales para cuidar la riqueza biológica del país.\n\nConviene diferenciar un compromiso anunciado de recursos efectivamente desembolsados y de proyectos ejecutados. Los detalles de asignación, cronograma e impacto deberán verificarse conforme avancen los acuerdos. Esta noticia positiva muestra un paso de financiación y cooperación, no una garantía de resultados ambientales inmediatos.",
-      "sha256": "1ea7aa294a5b76926213fc73e9bdea3091a69a63ec679e84371bcfe173767dbd",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "1ea7aa294a5b76926213fc73e9bdea3091a69a63ec679e84371bcfe173767dbd"
     }
   }
 }
