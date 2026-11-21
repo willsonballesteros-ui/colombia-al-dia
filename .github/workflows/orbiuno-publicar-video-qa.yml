@@ -30,7 +30,7 @@ jobs:
       - name: Comprobar código y pruebas offline
         run: |
           python -m py_compile scripts/publish_orbiuno_video.py
-          PYTHONPATH=. python -m unittest tests.test_publish_orbiuno_video -v
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_publish_orbiuno_video.py' -v
       - name: Bloqueo previo - archivo y coincidencia exacta de edición
         shell: bash
         run: |
