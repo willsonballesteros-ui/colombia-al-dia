@@ -11,7 +11,7 @@
       "title": "GWM Tank 700 híbrida llega a Colombia",
       "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261120-noche-nueva/previews/2026-11-20/mycar-noche-nueva-5/MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4",
       "instagram_url": null,
-      "published_status": "MP4_VALIDADO_PENDIENTE_META",
+      "published_status": "INSTAGRAM_REEL_FB_NATIVE_REEL_ACK_CONFIRMED_PERMALINK_PENDING",
       "items": [
         {
           "title": "GWM Tank 700 híbrida llega a Colombia",
@@ -63,7 +63,10 @@
           "photo_license": "CC BY-SA 4.0",
           "photo_page": "https://commons.wikimedia.org/wiki/File:Agora_and_Corferias_event_and_buissines_district.png"
         }
-      ]
+      ],
+      "instagram_media_id": "17994625170076566",
+      "facebook_post_id": "100141169648736_1156763303979546",
+      "facebook_post_type": "native_reel"
     },
     {
       "edition_id": "MYCAR-2026-11-20-AM",
