@@ -11,7 +11,7 @@
       "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
       "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-21/MYCAR_21NOV2026_0800_V8.mp4",
       "instagram_url": null,
-      "published_status": "MEDIA_QA_VALIDATED_META_PENDING",
+      "published_status": "IG_REEL_FB_NATIVE_VIDEO_ACK_CONFIRMED_PERMALINK_PENDING",
       "items": [
         {
           "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
@@ -63,7 +63,14 @@
           "photo_license": "CC BY-SA 4.0",
           "photo_page": "https://commons.wikimedia.org/wiki/File:Audi_RS5_B10_IMG_7170.jpg"
         }
-      ]
+      ],
+      "instagram_media_id": "18118407608614733",
+      "facebook_video_id": "1008000659025010",
+      "facebook_post_id": "100141169648736_1157287287260481",
+      "facebook_post_type": "native_video_over_90_seconds",
+      "published_at_date": "2026-11-21",
+      "media_qa_sha256": "0c1912a429016841c37af7a3928df55bec7c73cbb5409964de5918f63f19630c",
+      "video_duration_seconds": 128.41
     },
     {
       "edition_id": "MYCAR-2026-11-20-NOCHE-NUEVA",
