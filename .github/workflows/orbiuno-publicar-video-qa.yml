@@ -41,7 +41,10 @@ jobs:
           from scripts.publish_orbiuno_video import load_manifest
           path=pathlib.Path(os.environ['MANIFEST'])
           m, prefix, url=load_manifest(path)
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
           assert m['edition']=='2026-11-21' and m['slot']=='08:00'
+          assert datetime.now(ZoneInfo('America/Bogota')).date().isoformat() == m['edition'], 'No publicar una edición caducada'
           assert m.get('published') is False
           print('CONTENIDO_VALIDADO',prefix,url)
           PY
