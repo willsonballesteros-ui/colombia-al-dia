@@ -5,6 +5,67 @@
   "updated_date": "2026-11-21",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-21-AM",
+      "date": "2026-11-21",
+      "slot": "08:00",
+      "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-21/MYCAR_21NOV2026_0800_V8.mp4",
+      "instagram_url": null,
+      "published_status": "MEDIA_QA_VALIDATED_META_PENDING",
+      "items": [
+        {
+          "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
+          "summary": "Jetour presenta en Colombia la camioneta G setecientos, híbrida enchufable con potencia combinada anunciada de novecientos dos caballos y tracción integral. La marca destaca una autonomía combinada homologada de hasta mil kilómetros. Su precio divulgado para el mercado colombiano es de doscientos noventa y cinco millones novecientos noventa mil pesos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-jetour-g700-llega-a-colombia-caracteristicas-y-precio-de-este-suv-phev",
+          "image_file_title": "File:Jetour Zongheng G700 007.jpg",
+          "photo_credit": "Wikimedia Commons; detalles en créditos del video",
+          "photo_license": "Ver licencia individual del vídeo",
+          "photo_page": "https://commons.wikimedia.org/wiki/File%3AJetour_Zongheng_G700_007.jpg"
+        },
+        {
+          "title": "Denza B5 remolca un Boeing 747 en prueba presentada por BYD",
+          "summary": "La Denza B cinco, camioneta híbrida enchufable de la división prémium de BYD, protagonizó una demostración en Reino Unido al remolcar un Boeing setecientos cuarenta y siete. El Carro Colombiano informó que el modelo también se exhibe en el Salón del Automóvil de Bogotá. La foto es de archivo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/noticias/byd-denza-b5-remolco-boeing-747-dos-llantas-salon-automovil/",
+          "image_file_title": "File:Denza B5 DMO Granite Gray 04.jpg",
+          "photo_credit": "Wikimedia Commons; detalles en créditos del video",
+          "photo_license": "Ver licencia individual del vídeo",
+          "photo_page": "https://commons.wikimedia.org/wiki/File%3ADenza_B5_DMO_Granite_Gray_04.jpg"
+        },
+        {
+          "title": "Citroën presenta en Colombia el C3 Plus con sistema híbrido",
+          "summary": "Citroën presentó para Colombia el C tres Plus, versión con sistema híbrido ligero de cuarenta y ocho voltios, durante el Salón del Automóvil de Bogotá. El modelo busca combinar consumo moderado, comodidad y asistencias electrónicas. La fotografía utilizada es de un C tres europeo de archivo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/citroen-c3-plus-hibrido-colombia-precio-ficha-tecnica/",
+          "image_file_title": "File:Citroën C3 (4th generation) DSC 7103 (retouched).jpg",
+          "photo_credit": "Wikimedia Commons; detalles en créditos del video",
+          "photo_license": "Ver licencia individual del vídeo",
+          "photo_page": "https://commons.wikimedia.org/wiki/File%3ACitro%C3%ABn_C3_(4th_generation)_DSC_7103_(retouched).jpg"
+        },
+        {
+          "title": "Lynk & Co debuta en Colombia con su SUV híbrida enchufable 01",
+          "summary": "La marca Lynk and Co debutó oficialmente en Colombia con la camioneta híbrida enchufable cero uno, representada por Casa Toro. Según El Carro Colombiano, anuncia doscientos setenta y siete caballos y hasta setecientos cincuenta kilómetros de autonomía combinada bajo el ciclo WLTP.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/lynk-and-co-01-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:Lynk & Co 01 PHEV 1X7A5819.jpg",
+          "photo_credit": "Wikimedia Commons; detalles en créditos del video",
+          "photo_license": "Ver licencia individual del vídeo",
+          "photo_page": "https://commons.wikimedia.org/wiki/File%3ALynk_%26_Co_01_PHEV_1X7A5819.jpg"
+        },
+        {
+          "title": "Audi RS 5 PHEV se estrena en Colombia con hasta 630 caballos",
+          "summary": "Audi presentó en Colombia su nuevo RS cinco híbrido enchufable, con potencia combinada de hasta seiscientos treinta caballos. La gama anunciada incluye versiones Sedán y Avant, además de tracción quattro y autonomía eléctrica homologada de hasta ochenta y tres kilómetros.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-audi-rs-5-llega-a-colombia-con-tecnologia-phev-y-630-hp",
+          "image_file_title": "File:Audi RS5 B10 IMG 7170.jpg",
+          "photo_credit": "Wikimedia Commons; detalles en créditos del video",
+          "photo_license": "Ver licencia individual del vídeo",
+          "photo_page": "https://commons.wikimedia.org/wiki/File%3AAudi_RS5_B10_IMG_7170.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-20-NOCHE-NUEVA",
       "date": "2026-11-20",
       "slot": "Noche",
