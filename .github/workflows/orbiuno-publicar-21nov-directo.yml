@@ -5,6 +5,11 @@ on:
     branches: [main]
     paths: ['editions/publish_requests/2026-11-21-0800.json']
   workflow_dispatch:
+    inputs:
+      publicar:
+        description: 'Publicar el Reel después de verificar cuenta y duplicados'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -26,6 +31,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Comprobar credenciales requeridas
+        env:
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: |
+          set -euo pipefail
+          for name in ORBIUNO_IG_ACCESS_TOKEN ORBIUNO_IG_USER_ID; do
+            if [[ -z "${!name}" ]]; then
+              printf '::error::Falta el secreto %s\n' "$name"
+              exit 1
+            fi
+          done
       - name: Confirmar día y manifiesto exacto, sin reprocesar medios
         run: |
           set -euo pipefail
@@ -46,7 +63,14 @@ jobs:
         env:
           ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
           ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
-        run: python scripts/orbiuno_publish_6.py --manifest "$MANIFEST"
+          PUBLICAR: ${{ github.event_name == 'push' || inputs.publicar }}
+        run: |
+          set -euo pipefail
+          args=(--manifest "$MANIFEST")
+          if [[ "$PUBLICAR" != true ]]; then
+            args+=(--dry-only)
+          fi
+          python scripts/orbiuno_publish_6.py "${args[@]}"
       - name: Conservar evidencia de Meta, incluso ante error
         if: always()
         uses: actions/upload-artifact@v4
