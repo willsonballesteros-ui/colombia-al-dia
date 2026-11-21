@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "slot": "08:00",
+  "timezone": "America/Bogota",
+  "edition_key": "2026-11-21-0800",
+  "orbiuno": {
+    "edition_id": "ORBIUNO-2026-11-21-0800",
+    "news_count": 6,
+    "instagram_account": "resumen.noticias",
+    "instagram_account_id": "17841438062554418",
+    "instagram_media_id": "18341473945302326",
+    "instagram_permalink": "https://www.instagram.com/reel/DgA9y11E4Pz/",
+    "instagram_publish_confirmation": "Windsor.ai: Reel publicado y enlace recuperado por ID",
+    "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-21/ORBIUNO_2026-11-21_0800_6_NOTICIAS.mp4",
+    "video_sha256": "68daeeb820566b80a94345ed1ef65e96bbba8b0282add59d03080f45cd0137f4",
+    "source_file": "editions/daily/2026-11-21-0800.json",
+    "site": "https://colombia-al-dia.pages.dev/"
+  }
+}
