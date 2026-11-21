@@ -6,6 +6,120 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-981ca07b788138c7",
+      "date": "2026-11-21",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Minería y uso de IA: la tecnología que transforma operaciones y abre nuevas oportunidades para Chile",
+      "summary": "Titular difundido por laconexion.cl a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "laconexion.cl · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOX24wa2xQb29xSGhoQmpRM1EzR0NReGxucFItcG9aZ09OMnhRT0FqcFpGWFROTWF4RG44ZjRuVDBIUmNyeExpVVlROE1LY0VKM3hCdjZzbTFLUTFiVkstdDRmVFNiaDA0dXoyM3llU2Mtal9GOVN3TVlRMG1IWVNsSHV3RHhILW9LRUZqZEhzQ0xWaFZGMDNHWGhDd29PVTN3VmE2U3R4SEhrdDNTYzlVZmlIZWRxU1pBbkw2QVgwdw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T07:35-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-4faffac6f4ea1a4c",
+      "date": "2026-11-21",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "De la fibra óptica a la inteligencia artificial: Formosa fortalece su infraestructura digital y apuesta a la innovación",
+      "summary": "Titular difundido por El Destape a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Destape · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVER2a1hyM3VYOGpXSjExM1ZYeFFqU2JlNmV6ajJfV05OR1IzbFNWM3dpRE1MaFJUY0wtck1rUUxqeTRzUnhxa3hwTkg1T1JaZGlKLXdoSzQxMDdmajZibEZBMi1VMlNpU1BPZjFvNlo3SmlVX01qVUd0MGxhR3pVUnUtYmVvWVR6SURTWE1hWnhhQ2NkYkIyZEJYdzJiWUtqdzNmS05iN3RuMEU2TGNkWnJzM21CODVTdDY0dTVia3RleVlWRXY4LVF1Wlg1QXFzX2NacHNKN05ydUFjMTlXemlBUm1WMVd1R190SHI4ZkZMQdIBhgJBVV95cUxPcTdnbThlTDNxZXJreEtqRDduTUZHOG1Eek5pQW93amhYeGVpbVo4SVVYNGRJZGluTi1WWXE2a3J4NmlSZkhZX0ptNmdhSmxRZDNXUzVZUlF5NVY4dng3b2xIcTdiN1lTNTFUY0pTUjlhTEFjOWpiN0wyNTgwanBibXM0SjJjLVV5OUYwSHlOcWxBUWRYT0JzQ09KYWcya1plejhfYm1CbkxjaVpfU250V0ZSVy1NVVUtMzBTOEVZb19TTklkM19PVzZZS21jalZIeWk2YUdwdzRSUVlNdU1nVmxYaXgxdHNSVHZ4eER2UnQ5UDY4X2pfcjZaNUZxRjBpd2c0aURn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T07:34-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e6d56faa884d1a07",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "🔴EN VIVO: Japón vs. Colombia - minuto a minuto y goles (Mundial Sub-17)",
+      "summary": "Titular difundido por Win Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Win Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVUlYSWdaVTZPbURzOElPV2xETEdIYlZvcGRWRHp1R3V5NG1vVkVkQ1MzaFNKaVlrZ3ZQMUxiN2ZQTGMxOVhiZ0k5RV9BWEZRU2ZoQl9OMEg4TTB6SGJzOEJFekUyUC1NQldGbHgyaktVVTFjUnNFcXNjSDJJa3pDaEFUUWJncnlZd0Jpd21wMFhVbnFNUVRyVkhVN2NkTHh4eDAzWnV6WmNXNnJlV01qeDVoVE9OSDVJQVFNTm1CYXI1Zw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T06:52-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7a6712d17a848059",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Galeón San José: Sea Search-Armada le reclama a Colombia 21,9 billones de pesos, casi media reforma tributaria",
+      "summary": "Titular difundido por CAMBIO Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "CAMBIO Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPT3FJQTJDUzd4cEFjbXZTSmlfNmltYzJMVVBZeERlS0dyRTIxNWFaLVItT05odXdWODk3ZDFpWlR5QTJudFRFUUoySzZyajFJQ3ZwUWlnYWkyZFlEQVBoZWsyMEpGdlhmRU1veURtbkdYRjRURzZaX2hJRnVEUE94VWFfZU5xbnh1NzFDRkExV3RnOVpjdV9uMUxvSmZpYVZ2RnpyT2RaMFlqX2NuTm1vWDB2RVZ3Mjc1bXo0V1Y3c1o2RTgwQzdSWEdYNXpsbnVEbjBwM1VZWXQxaGVlT0ZBTUs1Y2NOZExzM0E?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T05:00-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6d7976c74baf177f",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La OCDE prevé que el crecimiento de Colombia se frene al 2,1% en 2027 por la inflación y el déficit",
+      "summary": "Titular difundido por América Económica a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "América Económica · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdmQ3Q2J4WGdZcS13WXVDbnp3X1J0ZDlGUTJTR1NQTzBFTklBNFdJMTE0WUMwQ25sRE13R0JSdGJRYjJ4S1NMaTJlMWNiaF9rOTIxQ2NZdk52UktMWkl6N0JLbmpvY043blBvNEVoX2FLcWU0M3FuLUtRdHhZQ1pPTmVQYy1DVkxYRzdrY0tpMXJvSDlJSnBpZk5DNmhCYk84VXZ1UGc2SnR3ZDc4VkNBRFJNYkpiUlJWVm5DeFpVZ0phcG9temlYTUs3OHc2MmRZYlhDdmg4LVc3SE9QRVd2ZtIB5gFBVV95cUxNWVQ0Z05rZnpCTVNKLTYtVzZUNEt6bGZpdjZCSlVjWUx2Y3VuS0Y3WlRsVUhxZmgxbXdoX2QzNVVLRlFYQUI4N1NoN1ZpLWxNbGRudU9HYWNna1RVMW56SjZaZEVVTFR3bXJhenhQbzBZUExrYnhKZFdsMFlXMmxiaEk1T01jV2FIWkVyWmJEaEpURVpLZEM4SnVaenZhT1ZLWEFvSGY3TnVoVTFWNzE2dzFtX2lVcDRnZWQwWUJTS0VkN0FJSGoxbTA0Y2Z1QjBIYUVWUjF3TFlHbzJPQU5GTW8tZ0g2dw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T04:23-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7d0b395c0b1e1901",
+      "date": "2026-11-20",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Alineación posible de Colombia ante Japón en la fase de grupos del Mundial sub17",
+      "summary": "Titular difundido por AS Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "AS Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLW4yVTlLODJaSGtoMUFlXzBiQ09Vb0RDZ2xtZkZmY0lkbVdvUFZQQi15WEtiUmVvMUlycllfd0JEMFpJLVBBS0pPeV9mbnMtbTdKb0Y2amZXLTVKd1JuZU90MDNRaUgtMzFLYXRzV01aNjlleFIwQkhDVkxRUE9PcEhKbTIwZGxvWnRETllqdTJtUnQwaWVBTVl0QUpXWFh0N1h1dWMtd040cU1rQTNnYTNSR0V1Y24yMEtBb0prd0JNQ1R1RWVyM19nczlwWTBBWFlF0gHTAUFVX3lxTE8tbjJVOUs4MlpIa2gxQWVfMGJDT1VvRENnbG1mRmZjSWRtV29QVlBCLXlYS2JSZW8xSXJyWV93QkQwWkktUEFLSk95X2Zucy1tN0pvRjZqZlctNUp3Um5lT3QwM1FpSC0zMUthdHNXTVo2OWV4UjBCSENWTFFQT09wSEptMjBkbG9adEROWWp1Mm1SdDBpZUFNWXRBSldYWHQ3WHV1Yy13TjRxTWtBM2dhM1JHRXVjbjIwS0FvSmt3Qk1DVHVFZXIzX2dzOXBZMEFYWUU?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-20T09:36-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-e167df5db3b99987",
       "date": "2026-11-21",
       "category": "Colombia",
@@ -28772,8 +28886,8 @@
       "imageAlt": "Futa en el zoológico de Chiba, fotografiado en octubre de 2026 por Misei sen, CC BY 4.0. Fotografía del animal protagonista."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-21T09:31-05:00",
-  "lastNewSourceAtBogota": "2026-11-21T09:31-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-21T09:32-05:00",
+  "lastNewSourceAtBogota": "2026-11-21T09:32-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
