@@ -123,9 +123,12 @@ def commons_info(title: str, getter=fetch, *, logo: bool = False) -> dict:
     url = info.get("thumburl") or info.get("url")
     if not url or urlsplit(url).hostname not in ("upload.wikimedia.org", "thumb.wikimedia.org"):
         raise ValueError("Archivo no alojado en Wikimedia")
+    original_url = info.get("url")
+    if original_url and urlsplit(original_url).hostname != "upload.wikimedia.org":
+        raise ValueError("Original no alojado en Wikimedia")
     return {"title": page["title"], "license": lic, "author": artist[:180],
             "page": "https://commons.wikimedia.org/wiki/" + quote(page["title"].replace(" ", "_"), safe="/:()'- ,".replace(" ","")),
-            "url": url, "description": m("ImageDescription")[:260]}
+            "url": url, "original_url": original_url, "description": m("ImageDescription")[:260]}
 
 
 def decode_image(raw: bytes, *, min_size=(650, 450)) -> Image.Image:
@@ -175,7 +178,15 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
     output.mkdir(parents=True, exist_ok=True)
     entries = []
     for i, (n, credit, host, logo_credit) in enumerate(plans, 1):
-        photo = decode_image(getter(credit["url"]))
+        # Preferir el original oficial alojado en upload.wikimedia.org.
+        # Si supera 12 MB o falla, usar la miniatura verificada con su misma licencia.
+        original = credit.get("original_url") or credit["url"]
+        try:
+            photo = decode_image(getter(original))
+        except (HTTPError, ValueError, OSError):
+            if original == credit["url"]:
+                raise
+            photo = decode_image(getter(credit["url"]))
         filename = f"photo-{i:02d}.jpg"
         photo.save(output / filename, quality=88, optimize=True)
         icon_candidates = ([logo_credit["url"]] if logo_credit else [
