@@ -218,7 +218,11 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     for i, (n, ent) in enumerate(zip(rows, entries), 1):
         draw_story(n, ent, assets, day, slot, i, frames / f"noticia-{i:02d}.jpg")
     draw_outro(day, slot, frames / "cierre.jpg")
-    inputs = {"segments": [{"id": f"n{i:02}", "text": n["reelLine"]}
+    # Apertura directa: un saludo muy breve en la primera noticia, sin resumen de titulares.
+    # No se crean subtítulos de locución ni se añaden textos ajenos a la noticia.
+    inputs = {"segments": [{"id": f"n{i:02}",
+                             "text": ("Buenos días, bienvenidos a ORBIUNO Noticias. " if i == 1 and slot == "08:00"
+                                      else "Bienvenidos a ORBIUNO Noticias. " if i == 1 else "") + n["reelLine"]}
                             for i, n in enumerate(rows, 1)]}
     (output / "voice_input.json").write_text(json.dumps(inputs, ensure_ascii=False), encoding="utf-8")
     cmd(sys.executable, str(ROOT / "scripts/generate_voice.py"), "--input",
@@ -230,7 +234,7 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
         raise RuntimeError("Voz colombiana aprobada ausente o incompleta")
     parts = []
     first = output / "part-00.mp4"
-    encode(frames / "portada.jpg", None, first, silent_duration=2.8)
+    encode(frames / "portada.jpg", None, first, silent_duration=1.4)
     parts.append(first)
     for i, seg in enumerate(audio_report["segments"], 1):
         part = output / f"part-{i:02d}.mp4"
@@ -266,7 +270,7 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
          "duration": round(duration, 2), "fps": 30, "sha256": hashlib.sha256(video.read_bytes()).hexdigest(),
          "video": video_name, "visualMode": "verified_real_photos", "imagesCount": 6,
          "logosCount": 6, "photoCredits": [x["credit"] for x in entries],
-         "sourceOnly": False, "publicationAuthorized": False,
+         "openingStyle": "saludo_corto_directo_a_noticias", "burnedSubtitles": False,\n         "sourceOnly": False, "publicationAuthorized": False,
          "news": [{"id": n["id"], "title": n["title"], "sourceUrl": n["sources"][0]["url"]}
                   for n in rows], "published": False, "instagramId": None, "instagramPermalink": None}
     (output / "manifest.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
