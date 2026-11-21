@@ -183,8 +183,13 @@ def publish_facebook(token: str, page_id: str, prefix: str, video: str, caption:
     media_id = str(result.get("id", ""))
     if not media_id.isdigit():
         raise PublishError("Facebook no devolvió ID; publicación incierta")
-    return {"duplicate": False, "id": media_id,
-            "permalink": f"https://www.facebook.com/{page_id}/videos/{media_id}/"}
+    published = graph(token, media_id, fields={"fields": "id,permalink_url"})
+    permalink = str(published.get("permalink_url") or "")
+    parsed = urlsplit(permalink)
+    if (str(published.get("id")) != media_id or parsed.scheme != "https" or
+            parsed.hostname not in ("www.facebook.com", "facebook.com")):
+        raise PublishError(f"Facebook devolvió ID {media_id}, sin enlace público verificable")
+    return {"duplicate": False, "id": media_id, "permalink": permalink}
 
 
 def main() -> int:
