@@ -231,5 +231,5 @@
     "remark": "Una foto real contextual de cada noticia, con fecha y autor. Descargar y comprobar con Wikimedia API; no presentar fotografías históricas como si fueran del 20 de noviembre. Mantener imageRightsVerified=false hasta QA.",
     "source": "Wikimedia Commons 20/11/2026"
   },
-  "assetRetry": "Respetar HTTP 429 Wikimedia; backoff 12s/35s/70s y logo verdadero, sin proxies ni fotos inventadas"
+  "assetRetry": "Priorizar fotos originales oficiales upload.wikimedia.org, miniaturas como respaldo, respetar HTTP 429 y auditar licencia y logo"
 }
