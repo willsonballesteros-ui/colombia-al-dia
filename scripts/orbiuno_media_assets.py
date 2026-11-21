@@ -45,26 +45,22 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
     response = None
-    used_proxy = False
-    for attempt, pause in enumerate((0, 3, 8)):
-        if pause:
-            time.sleep(pause)
+    # Respetar los límites de Wikimedia: backoff progresivo sin evadir el 429.
+    for attempt in range(4):
         try:
             response = urlopen(request, timeout=38)
             break
         except HTTPError as exc:
-            if exc.code != 429 or attempt == 2:
-                if exc.code == 429 and p.hostname in ("upload.wikimedia.org", "thumb.wikimedia.org"):
-                    # Rate-limit fallback for already-audited public Wikimedia image only.
-                    # A resizing proxy cannot substitute for Commons license/author metadata.
-                    mirror = "https://wsrv.nl/?" + urlencode({"url": url, "w": 1280, "fit": "inside"})
-                    proxy_request = Request(mirror, headers={"User-Agent": "ORBIUNO-Newsroom/1.0"})
-                    response = urlopen(proxy_request, timeout=30)
-                    used_proxy = True
-                    print("WIKIMEDIA_IMAGE_CDN_MIRROR_USED", flush=True)
-                    break
+            if exc.code != 429 or attempt == 3:
                 raise
-            print("WIKIMEDIA_RATE_LIMIT_RETRY", attempt + 1, flush=True)
+            retry_after = (exc.headers.get("Retry-After") or "").strip()
+            try:
+                server_delay = int(retry_after)
+            except ValueError:
+                server_delay = 0
+            pause = max((12, 35, 70)[attempt], min(server_delay, 120))
+            print("WIKIMEDIA_RATE_LIMIT_BACKOFF", attempt + 1, pause, flush=True)
+            time.sleep(pause)
     if response is None:
         raise RuntimeError("Sin respuesta del servidor autorizado")
     with response:
@@ -72,9 +68,7 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
         google_favicon_hosts = {"www.google.com", "www.gstatic.com", "t0.gstatic.com", "t1.gstatic.com",
                                 "t2.gstatic.com", "t3.gstatic.com", "encrypted-tbn0.gstatic.com",
                                 "encrypted-tbn1.gstatic.com", "encrypted-tbn2.gstatic.com", "encrypted-tbn3.gstatic.com"}
-        if used_proxy:
-            destinations = {"wsrv.nl", "images.weserv.nl"}
-        elif p.hostname == "www.google.com" and p.path == "/s2/favicons":
+        if p.hostname == "www.google.com" and p.path == "/s2/favicons":
             destinations = google_favicon_hosts
         elif p.hostname in commons_hosts:
             destinations = commons_hosts
