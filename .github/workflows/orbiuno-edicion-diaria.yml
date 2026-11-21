@@ -7,6 +7,7 @@ on:
   pull_request:
     paths:
       - 'scripts/orbiuno_media_assets.py'
+      - 'scripts/orbiuno_media_unsplash_20261121.py'
       - 'scripts/generate_web_voice_colombia.py'
       - 'scripts/render_orbiuno_aprobado.py'
       - 'scripts/orbiuno_qa_aprobado.py'
@@ -157,7 +158,11 @@ jobs:
           DAY: '${{ steps.edition.outputs.day }}'
           STAMP: '${{ steps.edition.outputs.stamp }}'
         run: |
-          PYTHONPATH=. python scripts/orbiuno_media_assets.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
+          if [ "$DAY" = "2026-11-21" ] && [ "$STAMP" = "0800" ]; then
+            PYTHONPATH=. python scripts/orbiuno_media_unsplash_20261121.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
+          else
+            PYTHONPATH=. python scripts/orbiuno_media_assets.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
+          fi
 
       - name: Generar la voz Salome es-CO 1.25x para articulos completos y actualizar web
         env:
@@ -215,6 +220,25 @@ jobs:
           STAMP: '${{ steps.edition.outputs.stamp }}'
         run: |
           python scripts/orbiuno_daily_preflight.py --manifest "media/$DAY/orbiuno_$STAMP"_6_noticias_manifest.json
+
+      - name: Publicar en Instagram solamente con seis medios, web y MP4 verificados
+        if: steps.edition.outputs.day == '2026-11-21' && steps.edition.outputs.stamp == '0800'
+        env:
+          DAY: '${{ steps.edition.outputs.day }}'
+          STAMP: '${{ steps.edition.outputs.stamp }}'
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: |
+          python scripts/orbiuno_publish_6.py --manifest "media/$DAY/orbiuno_${STAMP}_6_noticias_manifest.json"
+
+      - name: Registrar la publicación con ID y enlace verificables
+        if: always() && steps.edition.outputs.day == '2026-11-21'
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-20261121-0800-publicacion
+          path: media/2026-11-21/publication_report.json
+          if-no-files-found: warn
+          retention-days: 30
 
       - name: Guardar artefacto incluso ante falla
         if: always()

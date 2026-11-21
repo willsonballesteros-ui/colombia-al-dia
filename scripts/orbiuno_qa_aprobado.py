@@ -54,7 +54,12 @@ def validate(manifest: dict, *, folder: Path, assets: Path, news: dict, webvoice
         if i <= len(credits) and (credits[i-1].get("author") != n.get("imageCredit") or
                                   credits[i-1].get("license") != n.get("imageLicense")):
             errors.append("image_credit_mismatch_" + str(i))
-        if not str(n.get("imageUrl", "")).startswith("./media/") or not str(n.get("imageSourceUrl", "")).startswith("https://commons.wikimedia.org/wiki/File:"):
+        origin = str(n.get("imageSourceUrl", ""))
+        commons_ok = origin.startswith("https://commons.wikimedia.org/wiki/File:")
+        unsplash_ok = (origin.startswith("https://unsplash.com/photos/")
+                       and n.get("imageLicense") == "Unsplash License"
+                       and n.get("imageCaption", "").lower().find("archivo") >= 0)
+        if not str(n.get("imageUrl", "")).startswith("./media/") or not (commons_ok or unsplash_ok):
             errors.append("image_origin_unverified_" + str(i))
         v = webvoice.get("items", {}).get(n["id"], {})
         if v.get("voice") != VOICE or v.get("speed") != 1.25 or v.get("text") != story_body(n.get("originalArticleTextEs")):

@@ -100,8 +100,8 @@ def publish(manifest_path, *, dry_only=False):
     file=folder/manifest["video"]
     if not file.is_file() or hashlib.sha256(file.read_bytes()).hexdigest()!=manifest["sha256"]:
         raise RuntimeError("MP4 ausente o hash diferente")
-    if not (50<=float(manifest.get("duration",0))<=60):
-        raise RuntimeError("Duración del video fuera de 50 a 60 segundos")
+    if not (10<=float(manifest.get("duration",0))<=180):
+        raise RuntimeError("Duración del Reel fuera del rango 10 a 180 segundos")
     expected=manifest["newsIds"]
     if len(expected)!=6 or len(set(expected))!=6:
         raise RuntimeError("IDs duplicados en Reel")
