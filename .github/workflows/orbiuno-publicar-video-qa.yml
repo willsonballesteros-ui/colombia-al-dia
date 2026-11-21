@@ -1,0 +1,59 @@
+name: ORBIUNO | Publicar video final Meta con anti-duplicados
+on:
+  workflow_run:
+    workflows:
+      - 'ORBIUNO | Producción diaria de seis noticias'
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-reel-20261121-0800
+  cancel-in-progress: false
+jobs:
+  publicar:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    env:
+      ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+      ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      ORBIUNO_FB_PAGE_ID: ${{ secrets.ORBIUNO_FB_PAGE_ID }}
+      ORBIUNO_FB_PAGE_ACCESS_TOKEN: ${{ secrets.ORBIUNO_FB_PAGE_ACCESS_TOKEN }}
+      MANIFEST: media/2026-11-21/orbiuno_0800_6_noticias_manifest.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Comprobar código y pruebas offline
+        run: |
+          python -m py_compile scripts/publish_orbiuno_video.py
+          PYTHONPATH=. python -m unittest tests.test_publish_orbiuno_video -v
+      - name: Bloqueo previo - archivo y coincidencia exacta de edición
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s "$MANIFEST"
+          python - <<'PY'
+          import json, os, pathlib
+          from scripts.publish_orbiuno_video import load_manifest
+          path=pathlib.Path(os.environ['MANIFEST'])
+          m, prefix, url=load_manifest(path)
+          assert m['edition']=='2026-11-21' and m['slot']=='08:00'
+          assert m.get('published') is False
+          print('CONTENIDO_VALIDADO',prefix,url)
+          PY
+      - name: Confirmar web pública, audio, seis fotos, seis logos, SHA y MP4
+        run: python scripts/orbiuno_daily_preflight.py --manifest "$MANIFEST" --tries 8 --sleep 15
+      - name: Publicar solamente por cuentas Meta oficiales, sin duplicados
+        run: python scripts/publish_orbiuno_video.py --manifest "$MANIFEST" --publish --output /tmp/orbiuno_meta_result.json
+      - name: Evidencia reproducible de publicación
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-2026-11-21-0800-meta-result
+          path: /tmp/orbiuno_meta_result.json
+          if-no-files-found: ignore
+          retention-days: 30
