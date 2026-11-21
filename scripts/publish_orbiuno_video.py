@@ -129,9 +129,15 @@ def check_identity(token: str, ig_id: str) -> None:
 def find_duplicate(token: str, endpoint: str, prefix: str, text_field: str) -> dict | None:
     fields = "id,permalink,caption,media_product_type" if text_field == "caption" else "id,description,permalink_url"
     data = graph(token, endpoint, fields={"fields": fields, "limit": 50})
+    # El publicador diario inserta una marca inequívoca al final del caption.
+    # Aceptar AMBOS formatos evita duplicar un Reel al encadenar workflows.
+    match = re.fullmatch(r"ORBIUNO \| (20\d{2}-\\d{2}-\\d{2}) \| (\d{2}:\\d{2}) CO", prefix)
+    edition_marker = ("[ORBIUNO-" + match.group(1) + "-" +
+                      match.group(2).replace(":", "") + "]") if match else ""
     for item in data.get("data", []):
-        first_line = str(item.get(text_field) or "").split("\n", 1)[0].strip()
-        if first_line == prefix:
+        body = str(item.get(text_field) or "")
+        first_line = body.split("\n", 1)[0].strip()
+        if first_line == prefix or (text_field == "caption" and edition_marker and edition_marker in body):
             return item
     return None
 
