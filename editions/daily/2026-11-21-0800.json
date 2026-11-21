@@ -257,5 +257,5 @@
     "publicationApproved": false,
     "remark": "Seis fotos de archivo contextuales, con autores identificados y vínculo exacto al original; no se presentan como capturas del acontecimiento."
   },
-  "assetRetry": "21/11: imágenes reales con Unsplash License revisada; no usar Wikimedia mientras responda 429. Control de autor, créditos y foto de archivo obligatorio."
+  "assetRetry": "21/11 10:20 COT: Reintento tras QA visual y audio 100% correcto; reconciliar commit concurrente en index.html mediante rebase -X theirs y reconstruir portada; prohibido publicar IG antes de comprobación Cloudflare."
 }

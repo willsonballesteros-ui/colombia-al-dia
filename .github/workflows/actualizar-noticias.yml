@@ -22,7 +22,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: noticias-auto
+  group: orbiuno-six-daily-serial
   cancel-in-progress: false
 
 jobs:
