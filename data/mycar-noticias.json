@@ -5,6 +5,67 @@
   "updated_date": "2026-11-21",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-20-NOCHE-NUEVA",
+      "date": "2026-11-20",
+      "slot": "Noche",
+      "title": "GWM Tank 700 híbrida llega a Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261120-noche-nueva/previews/2026-11-20/mycar-noche-nueva-5/MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "published_status": "MP4_VALIDADO_PENDIENTE_META",
+      "items": [
+        {
+          "title": "GWM Tank 700 híbrida llega a Colombia",
+          "summary": "La Tank setecientos híbrida enchufable llegó al mercado colombiano. GWM anuncia quinientos veintinueve caballos combinados, tracción cuatro por cuatro y precio inicial de trescientos noventa y nueve millones novecientos mil pesos.",
+          "source": "GWM COLOMBIA",
+          "source_url": "https://pdn.gwm.com.co/blog/gwm-tank-700-suv-hibrida-lujo-potencia/",
+          "image_file_title": "File:2024 Tank 700 Hi4-T front view.png",
+          "photo_credit": "iMoD Official",
+          "photo_license": "CC BY 3.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Tank_700_Hi4-T_front_view.png"
+        },
+        {
+          "title": "Ventas de carros en Colombia crecen casi 40 %",
+          "summary": "Las matrículas de vehículos nuevos en Colombia aumentaron treinta y nueve coma cinco por ciento entre enero y octubre, según el balance publicado por La República. La llegada de marcas y la electrificación impulsan el mercado.",
+          "source": "LA REPÚBLICA",
+          "source_url": "https://www.larepublica.co/especiales/automotores/la-venta-de-vehiculos-sigue-acelerando-a-buen-ritmo-4529062",
+          "image_file_title": "File:Tesla Model Y (2025) autoMOBIL Tübingen 2025 DSC 2802.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_(2025)_autoMOBIL_Tübingen_2025_DSC_2802.jpg"
+        },
+        {
+          "title": "Xiaomi inicia venta de carros fuera de China",
+          "summary": "Xiaomi inició la comercialización de sus vehículos en Emiratos Árabes Unidos, con el sedán SU siete y otras dos familias electrificadas. La marca prepara una expansión internacional más amplia en dos mil veintisiete.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/industria/xiaomi-vende-carros-fuera-china-hasta-81-mas-caros/",
+          "image_file_title": "File:Xiaomi SU7 with Tianjin plates.jpg",
+          "photo_credit": "Benlisquare",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Xiaomi_SU7_with_Tianjin_plates.jpg"
+        },
+        {
+          "title": "Volvo XC40 híbrida regresa a Colombia",
+          "summary": "Volvo anunció en el Salón del Automóvil de Bogotá el regreso de su XC cuarenta B cuatro con tecnología híbrida ligera. La marca también presentó una campaña centrada en la seguridad vial.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/15/sia-2026-volvo-presenta-su-campana-de-seguridad-y-anuncia-el-regreso-a-colombia-del-xc40-b4-mhev",
+          "image_file_title": "File:2024 Volvo XC40 B4 facelift front.jpg",
+          "photo_credit": "LuvsMG481",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Volvo_XC40_B4_facelift_front.jpg"
+        },
+        {
+          "title": "Salón del Automóvil reúne 83 marcas en Bogotá",
+          "summary": "El Salón Internacional del Automóvil de Bogotá reúne más de ochenta marcas en Corferias, con propuestas eléctricas, híbridas, familiares y todoterreno. La exhibición estará abierta hasta el veintidós de noviembre.",
+          "source": "CARACOL RADIO",
+          "source_url": "https://caracol.com.co/2026/11/20/salon-del-automovil-2026-83-marcas-llegaran-a-corferias-con-vehiculos-electricos-y-de-lujo/",
+          "image_file_title": "File:Agora and Corferias event and buissines district.png",
+          "photo_credit": "Mriobomorales",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Agora_and_Corferias_event_and_buissines_district.png"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-20-AM",
       "date": "2026-11-20",
       "slot": "08:00",
