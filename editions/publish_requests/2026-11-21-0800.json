@@ -6,6 +6,6 @@
   "publicationAttempted": false,
   "published": false,
   "antiDuplicate": "[ORBIUNO-2026-11-21-0800]",
-  "retryReason": "Corregidas expresiones GitHub Actions Secrets; no hubo publicación previa confirmada por Meta",
-  "retryCode": "20261121-secret-expression-validated"
+  "retryReason": "Solicitud del titular de publicar; verificar cuenta y duplicados en Meta antes del envío",
+  "retryCode": "20261121-owner-publication-retry"
 }
