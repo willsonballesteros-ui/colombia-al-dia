@@ -131,7 +131,7 @@ def find_duplicate(token: str, endpoint: str, prefix: str, text_field: str) -> d
     data = graph(token, endpoint, fields={"fields": fields, "limit": 50})
     # El publicador diario inserta una marca inequívoca al final del caption.
     # Aceptar AMBOS formatos evita duplicar un Reel al encadenar workflows.
-    match = re.fullmatch(r"ORBIUNO \| (20\d{2}-\\d{2}-\\d{2}) \| (\d{2}:\\d{2}) CO", prefix)
+    match = re.fullmatch(r"ORBIUNO \| (20\d{2}-\d{2}-\d{2}) \| (\d{2}:\d{2}) CO", prefix)
     edition_marker = ("[ORBIUNO-" + match.group(1) + "-" +
                       match.group(2).replace(":", "") + "]") if match else ""
     for item in data.get("data", []):
