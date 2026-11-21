@@ -127,7 +127,8 @@ jobs:
             if [ ! -f /tmp/orbiuno_skip_carousel ]; then
               python scripts/build_carousel.py
             fi
-            git add noticias.json index.html feed.xml media/web-voice
+            python scripts/stage_cloudflare_site.py --out site
+            git add noticias.json index.html feed.xml media/web-voice site
             if [ -d "media/$(TZ=America/Bogota date +%F)" ]; then
               git add "media/$(TZ=America/Bogota date +%F)"
             fi

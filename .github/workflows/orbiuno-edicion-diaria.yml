@@ -224,7 +224,8 @@ jobs:
             python scripts/validate_news.py noticias.json
             python scripts/prepare_site.py
             python scripts/build_feed.py
-            git add noticias.json index.html feed.xml media/web-voice "media/$DAY"
+            python scripts/stage_cloudflare_site.py --out site
+            git add noticias.json index.html feed.xml media/web-voice "media/$DAY" site
             if ! git diff --cached --quiet; then
               git commit -m "ORBIUNO: reconciliar web y medios $DAY $STAMP"
             fi
