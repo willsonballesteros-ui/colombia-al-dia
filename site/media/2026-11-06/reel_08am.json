@@ -1,0 +1,32 @@
+{
+  "editionDate": "2026-11-06",
+  "slot": "08:00 America/Bogota",
+  "format": "9:16",
+  "resolution": [
+    1080,
+    1920
+  ],
+  "display": "2 grupos de cinco; realce en funcion del audio",
+  "newsCount": 10,
+  "sourceNames": [
+    "Reuters",
+    "Caracol Radio",
+    "La República",
+    "Caracol Radio",
+    "Reuters",
+    "Reuters",
+    "Reuters",
+    "Reuters",
+    "Caracol Radio",
+    "Caracol Radio"
+  ],
+  "voice": "kokoro-onnx/ef_dora",
+  "nativeSpeed": 1.25,
+  "postTimeStretch": false,
+  "subtitles": "reel_08am.srt",
+  "durationSeconds": 91.06,
+  "output": "reel_08am.mp4",
+  "audioStreamVerified": true,
+  "publicationVerified": false,
+  "photoRightsMode": "solo fondos tipograficos; favicon real de fuente si disponible"
+}

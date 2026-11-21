@@ -1,0 +1,130 @@
+{
+  "edition": "2026-11-19",
+  "slot": "17:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261119-1700-1",
+    "orbiuno-20261119-1700-2",
+    "orbiuno-20261119-1700-3",
+    "orbiuno-20261119-1700-4",
+    "orbiuno-20261119-1700-5",
+    "orbiuno-20261119-1700-6"
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "voiceEngines": [
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts"
+  ],
+  "language": "es-CO",
+  "voiceAccentAudited": false,
+  "width": 1080,
+  "height": 1920,
+  "duration": 59.56,
+  "sha256": "a4907c6e476cdf0c4168339a58aea0f267caa9ddfb8d6f92ee904c2f66391a5f",
+  "video": "ORBIUNO_2026-11-19_1700_6_NOTICIAS.mp4",
+  "visualMode": "verified_real_photos",
+  "imagesCount": 6,
+  "logosCount": 6,
+  "photoCredits": [
+    {
+      "title": "File:Ciclorruta Bogotá kr 12 con cl 25.JPG",
+      "license": "CC BY-SA 3.0",
+      "author": "Felipe Restrepo Acosta",
+      "page": "https://commons.wikimedia.org/wiki/File:Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG/1280px-Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "Cicloruta en el barrio La Alameda, carrera 12 con calle 25, localidad de Santa Fe en Bogotá."
+    },
+    {
+      "title": "File:Colombian Flag.jpg",
+      "license": "CC BY 2.0",
+      "author": "Mark Koester",
+      "page": "https://commons.wikimedia.org/wiki/File:Colombian_Flag.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Colombian_Flag.jpg/1280px-Colombian_Flag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "Bandera nacional de Colombia ondeando con el viento"
+    },
+    {
+      "title": "File:UN headquarters from LIC, May 2026.jpeg",
+      "license": "CC BY-SA 4.0",
+      "author": "Mr.choppers",
+      "page": "https://commons.wikimedia.org/wiki/File:UN_headquarters_from_LIC,_May_2026.jpeg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/UN_headquarters_from_LIC%2C_May_2026.jpeg/1280px-UN_headquarters_from_LIC%2C_May_2026.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "The United Nations Headquarters, seen from Long Island City."
+    },
+    {
+      "title": "File:The Andromeda Galaxy.jpg",
+      "license": "CC BY 4.0",
+      "author": "Ivan Bok",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Andromeda_Galaxy.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Andromeda_Galaxy.jpg/1280px-The_Andromeda_Galaxy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "Light of a trillion suns: The Andromeda Galaxy is the nearest large spiral galaxy from the Earth, and contains within itself over a trillion stars. The light recorded in this image ended a journey after 2.5 million years traversing across the void of intergala"
+    },
+    {
+      "title": "File:Hera HyperScout H image of Didymos asteroid.jpg",
+      "license": "CC BY-SA 3.0 igo",
+      "author": "ESA",
+      "page": "https://commons.wikimedia.org/wiki/File:Hera_HyperScout_H_image_of_Didymos_asteroid.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Hera_HyperScout_H_image_of_Didymos_asteroid.jpg/1280px-Hera_HyperScout_H_image_of_Didymos_asteroid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "Hera HyperScout H multispectral image of Didymos asteroid, looking at the asteroid surface in a combination of 25 colours at once to prospect surface materials. This image was acquired on 6 November 2026 from 28.5 km away."
+    },
+    {
+      "title": "File:UNESCO Paris.JPG",
+      "license": "CC0",
+      "author": "Alf van Beem",
+      "page": "https://commons.wikimedia.org/wiki/File:UNESCO_Paris.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/UNESCO_Paris.JPG/1280px-UNESCO_Paris.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "description": "UNESCO Paris from the Tour Montparnasse."
+    }
+  ],
+  "sourceOnly": false,
+  "publicationAuthorized": false,
+  "news": [
+    {
+      "id": "orbiuno-20261119-1700-1",
+      "title": "Bogotá fortalece la movilidad escolar de más de 114.000 estudiantes",
+      "sourceUrl": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/estudiantes-beneficiados-con-estrategias-de-movilidad-en-bogota-2026"
+    },
+    {
+      "id": "orbiuno-20261119-1700-2",
+      "title": "Colombia presenta compromisos de financiación e inversión",
+      "sourceUrl": "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-cierra-la-Milagro-Week-de-Nueva-York-con-US-261118.aspx"
+    },
+    {
+      "id": "orbiuno-20261119-1700-3",
+      "title": "La ONU destaca avances globales en gobierno digital",
+      "sourceUrl": "https://www.un.org/sustainabledevelopment/blog/2026/11/media-advisory-launch-of-e-government-survey-2026-19-november-1230-pm-et/"
+    },
+    {
+      "id": "orbiuno-20261119-1700-4",
+      "title": "El James Webb aporta claves sobre una fusión estelar",
+      "sourceUrl": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+    },
+    {
+      "id": "orbiuno-20261119-1700-5",
+      "title": "La misión Hera obtiene nuevas vistas tridimensionales de asteroides",
+      "sourceUrl": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid"
+    },
+    {
+      "id": "orbiuno-20261119-1700-6",
+      "title": "UNESCO abre debate sobre cómo financiar la primera infancia",
+      "sourceUrl": "https://indico.un.org/event/1022817/"
+    }
+  ],
+  "published": true,
+  "instagramId": "17916123051553968",
+  "instagramPermalink": null,
+  "facebookPostId": "1516359454884058_122112235551535309",
+  "facebookPostType": "link_post_not_native_reel",
+  "status": "META_ACK_CONFIRMED_WEB_PREFLIGHT_PASS",
+  "publicationEvidence": {
+    "instagram": "Windsor.ai create_video_post response Published video post Reel media id 17916123051553968",
+    "facebook": "Windsor.ai create_post response Published post id 1516359454884058_122112235551535309",
+    "githubRun": 44626618387,
+    "webPreflight": "PREFLIGHT_PASS",
+    "permalinksPendingIndependentReadback": true
+  }
+}

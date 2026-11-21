@@ -1,0 +1,61 @@
+{
+  "edition": "2026-11-16",
+  "slot": "19:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261116-19h-1",
+    "orbiuno-20261116-19h-2",
+    "orbiuno-20261116-19h-3",
+    "orbiuno-20261116-19h-4",
+    "orbiuno-20261116-19h-5",
+    "orbiuno-20261116-19h-6"
+  ],
+  "voice": "ef_dora",
+  "voiceSpeed": 1.25,
+  "width": 1080,
+  "height": 1920,
+  "duration": 55.691,
+  "sha256": "f385cfab881b81e0ae713bc053371b476e1d6e107a94b22b5b1fa46eb0f8cbef",
+  "video": "ORBIUNO_2026-11-16_1900_6_NOTICIAS.mp4",
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261116-19h-1",
+      "title": "AgroPulso llevará innovación a 1.370 productores de Cundinamarca",
+      "sourceUrl": "https://www.radionacional.co/actualidad/agropulso-productores-agropecuarios-cundinamarca"
+    },
+    {
+      "id": "orbiuno-20261116-19h-2",
+      "title": "Bogotá convoca jornadas para adoptar 45 perros y gatos rescatados",
+      "sourceUrl": "https://bogota.gov.co/mi-ciudad/ambiente/2026-11/idpyba-celebra-10-anos-buscando-hogar-45-animales-de-compania-bogota"
+    },
+    {
+      "id": "orbiuno-20261116-19h-3",
+      "title": "La COP31 impulsa una promesa voluntaria de energía limpia para la inteligencia artificial",
+      "sourceUrl": "https://apnews.com/article/cop31-climate-data-centers-ai-pollution-a1b338e7f781976f89260d172a7c65e2"
+    },
+    {
+      "id": "orbiuno-20261116-19h-4",
+      "title": "Bombas de calor podrían reducir un cuarto de las emisiones energéticas de la Unión Europea",
+      "sourceUrl": "https://es.euronews.com/2026/11/16/las-bombas-de-calor-podrian-recortar-un-cuarto-de-las-emisiones-energeticas-de-la-ue"
+    },
+    {
+      "id": "orbiuno-20261116-19h-5",
+      "title": "India anuncia formularios de visa electrónica mucho más cortos",
+      "sourceUrl": "https://es.euronews.com/2026/11/16/india-simplifica-los-visados-de-entrada-menos-requisitos-y-categorias"
+    },
+    {
+      "id": "orbiuno-20261116-19h-6",
+      "title": "Un rebaño de 600 ovejas sorprende al cruzar el centro de Núremberg",
+      "sourceUrl": "https://es.euronews.com/video/2026/11/16/600-ovejas-recorren-el-centro-de-nuremberg-hacia-sus-cuarteles-de-invierno"
+    }
+  ],
+  "published": true,
+  "instagramId": "17901197808394267",
+  "instagramPermalink": "https://www.instagram.com/reel/Df1BQaBk0Bc/",
+  "publishedAtUtc": "2026-11-17T03:59:27Z",
+  "instagramStoryId": "18659166343029231",
+  "facebookPageId": "1516359454884058",
+  "facebookPostId": "1516359454884058_122111167299535309",
+  "publicationVerifiedVia": "Windsor.ai Instagram and Facebook organic connector, Instagram media readback"
+}

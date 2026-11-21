@@ -1,0 +1,1034 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.62,
+    "text": " Vamos con las 10 noticias de este 5 de noviembre. La República nos cuenta que Nutresa se",
+    "words": [
+      {
+        "start": 0.0,
+        "end": 0.18,
+        "word": " Vamos",
+        "probability": 0.4037218391895294
+      },
+      {
+        "start": 0.18,
+        "end": 0.4,
+        "word": " con",
+        "probability": 0.9776332974433899
+      },
+      {
+        "start": 0.4,
+        "end": 0.58,
+        "word": " las",
+        "probability": 0.9874359369277954
+      },
+      {
+        "start": 0.58,
+        "end": 0.8,
+        "word": " 10",
+        "probability": 0.7999588251113892
+      },
+      {
+        "start": 0.8,
+        "end": 1.34,
+        "word": " noticias",
+        "probability": 0.9733889698982239
+      },
+      {
+        "start": 1.34,
+        "end": 1.52,
+        "word": " de",
+        "probability": 0.9816514253616333
+      },
+      {
+        "start": 1.52,
+        "end": 1.68,
+        "word": " este",
+        "probability": 0.7943405508995056
+      },
+      {
+        "start": 1.68,
+        "end": 2.0,
+        "word": " 5",
+        "probability": 0.9330623149871826
+      },
+      {
+        "start": 2.0,
+        "end": 2.16,
+        "word": " de",
+        "probability": 0.9865929484367371
+      },
+      {
+        "start": 2.16,
+        "end": 2.6,
+        "word": " noviembre.",
+        "probability": 0.9389749964078268
+      },
+      {
+        "start": 2.94,
+        "end": 3.02,
+        "word": " La",
+        "probability": 0.37944674491882324
+      },
+      {
+        "start": 3.02,
+        "end": 3.36,
+        "word": " República",
+        "probability": 0.6773161292076111
+      },
+      {
+        "start": 3.36,
+        "end": 3.62,
+        "word": " nos",
+        "probability": 0.9942704439163208
+      },
+      {
+        "start": 3.62,
+        "end": 3.86,
+        "word": " cuenta",
+        "probability": 0.9959579110145569
+      },
+      {
+        "start": 3.86,
+        "end": 4.06,
+        "word": " que",
+        "probability": 0.9715093374252319
+      },
+      {
+        "start": 4.06,
+        "end": 4.48,
+        "word": " Nutresa",
+        "probability": 0.7549261252085367
+      },
+      {
+        "start": 4.48,
+        "end": 4.62,
+        "word": " cerró",
+        "probability": 0.7082277536392212
+      }
+    ]
+  },
+  {
+    "start": 4.62,
+    "end": 9.24,
+    "text": " rola compra de presto. También informa sobre la llegada de clientes de Davibank a Davivienda",
+    "words": [
+      {
+        "start": 4.62,
+        "end": 4.86,
+        "word": " la",
+        "probability": 0.7694877088069916
+      },
+      {
+        "start": 4.86,
+        "end": 5.2,
+        "word": " compra",
+        "probability": 0.8347848057746887
+      },
+      {
+        "start": 5.2,
+        "end": 5.36,
+        "word": " de",
+        "probability": 0.967323362827301
+      },
+      {
+        "start": 5.36,
+        "end": 5.82,
+        "word": " Presto.",
+        "probability": 0.853489100933075
+      },
+      {
+        "start": 6.18,
+        "end": 6.44,
+        "word": " También",
+        "probability": 0.978097677230835
+      },
+      {
+        "start": 6.44,
+        "end": 6.94,
+        "word": " informa",
+        "probability": 0.9531619846820831
+      },
+      {
+        "start": 6.94,
+        "end": 7.16,
+        "word": " sobre",
+        "probability": 0.9964662790298462
+      },
+      {
+        "start": 7.16,
+        "end": 7.28,
+        "word": " la",
+        "probability": 0.9915545582771301
+      },
+      {
+        "start": 7.28,
+        "end": 7.58,
+        "word": " llegada",
+        "probability": 0.9978788793087006
+      },
+      {
+        "start": 7.58,
+        "end": 7.74,
+        "word": " de",
+        "probability": 0.9831044673919678
+      },
+      {
+        "start": 7.74,
+        "end": 8.14,
+        "word": " clientes",
+        "probability": 0.9881487786769867
+      },
+      {
+        "start": 8.14,
+        "end": 8.24,
+        "word": " de",
+        "probability": 0.9942227005958557
+      },
+      {
+        "start": 8.24,
+        "end": 8.62,
+        "word": " Davibank",
+        "probability": 0.21107438082496324
+      },
+      {
+        "start": 8.62,
+        "end": 8.78,
+        "word": " a",
+        "probability": 0.18688666820526123
+      },
+      {
+        "start": 8.78,
+        "end": 9.24,
+        "word": " Davivienda",
+        "probability": 0.6773008306821188
+      }
+    ]
+  },
+  {
+    "start": 9.24,
+    "end": 11.64,
+    "text": " y una garantía para financiar el Metro de Bogotá.",
+    "words": [
+      {
+        "start": 9.24,
+        "end": 9.62,
+        "word": " y",
+        "probability": 0.9079797863960266
+      },
+      {
+        "start": 9.62,
+        "end": 9.74,
+        "word": " una",
+        "probability": 0.9846195578575134
+      },
+      {
+        "start": 9.74,
+        "end": 10.18,
+        "word": " garantía",
+        "probability": 0.98834627866745
+      },
+      {
+        "start": 10.18,
+        "end": 10.38,
+        "word": " para",
+        "probability": 0.9967629909515381
+      },
+      {
+        "start": 10.38,
+        "end": 10.86,
+        "word": " financiar",
+        "probability": 0.9951376020908356
+      },
+      {
+        "start": 10.86,
+        "end": 10.98,
+        "word": " el",
+        "probability": 0.9946645498275757
+      },
+      {
+        "start": 10.98,
+        "end": 11.18,
+        "word": " Metro",
+        "probability": 0.3422059714794159
+      },
+      {
+        "start": 11.18,
+        "end": 11.32,
+        "word": " de",
+        "probability": 0.9924501180648804
+      },
+      {
+        "start": 11.32,
+        "end": 11.64,
+        "word": " Bogotá.",
+        "probability": 0.9833877881368002
+      }
+    ]
+  },
+  {
+    "start": 11.94,
+    "end": 17.5,
+    "text": " Economía. Noticias RCN reporta un dólar promedio de 3.228 pesos con 19.",
+    "words": [
+      {
+        "start": 11.94,
+        "end": 12.44,
+        "word": " En economía,",
+        "probability": 0.5399358347058296
+      },
+      {
+        "start": 12.68,
+        "end": 13.02,
+        "word": " Noticias",
+        "probability": 0.8729792237281799
+      },
+      {
+        "start": 13.02,
+        "end": 13.6,
+        "word": " RCN",
+        "probability": 0.48593080788850784
+      },
+      {
+        "start": 13.6,
+        "end": 14.16,
+        "word": " reporta",
+        "probability": 0.964104026556015
+      },
+      {
+        "start": 14.16,
+        "end": 14.28,
+        "word": " un",
+        "probability": 0.9654834866523743
+      },
+      {
+        "start": 14.28,
+        "end": 14.5,
+        "word": " dólar",
+        "probability": 0.9932485222816467
+      },
+      {
+        "start": 14.5,
+        "end": 14.96,
+        "word": " promedio",
+        "probability": 0.9785417914390564
+      },
+      {
+        "start": 14.96,
+        "end": 15.08,
+        "word": " de",
+        "probability": 0.995669960975647
+      },
+      {
+        "start": 15.08,
+        "end": 15.4,
+        "word": " 3",
+        "probability": 0.8592588901519775
+      },
+      {
+        "start": 15.4,
+        "end": 16.64,
+        "word": ".228",
+        "probability": 0.8230379025141398
+      },
+      {
+        "start": 16.64,
+        "end": 16.96,
+        "word": " pesos",
+        "probability": 0.9866412281990051
+      },
+      {
+        "start": 16.96,
+        "end": 17.24,
+        "word": " con",
+        "probability": 0.9772177338600159
+      },
+      {
+        "start": 17.24,
+        "end": 17.5,
+        "word": " 19.",
+        "probability": 0.9734368920326233
+      }
+    ]
+  },
+  {
+    "start": 18.08,
+    "end": 23.34,
+    "text": " Inciencias propone trabajar con Corea en inteligencia artificial. En el mundo, según EFE, Santiago",
+    "words": [
+      {
+        "start": 18.08,
+        "end": 18.48,
+        "word": " Minciencias",
+        "probability": 0.6959808270136515
+      },
+      {
+        "start": 18.48,
+        "end": 18.98,
+        "word": " propone",
+        "probability": 0.9584237635135651
+      },
+      {
+        "start": 18.98,
+        "end": 19.44,
+        "word": " trabajar",
+        "probability": 0.9913636445999146
+      },
+      {
+        "start": 19.44,
+        "end": 19.76,
+        "word": " con",
+        "probability": 0.9865597486495972
+      },
+      {
+        "start": 19.76,
+        "end": 20.14,
+        "word": " Corea",
+        "probability": 0.8911184668540955
+      },
+      {
+        "start": 20.14,
+        "end": 20.26,
+        "word": " en",
+        "probability": 0.9547105431556702
+      },
+      {
+        "start": 20.26,
+        "end": 20.8,
+        "word": " inteligencia",
+        "probability": 0.8162978490193685
+      },
+      {
+        "start": 20.8,
+        "end": 21.32,
+        "word": " artificial.",
+        "probability": 0.975173830986023
+      },
+      {
+        "start": 21.62,
+        "end": 21.74,
+        "word": " En",
+        "probability": 0.9849607348442078
+      },
+      {
+        "start": 21.74,
+        "end": 21.84,
+        "word": " el",
+        "probability": 0.998601496219635
+      },
+      {
+        "start": 21.84,
+        "end": 22.1,
+        "word": " mundo,",
+        "probability": 0.9775186777114868
+      },
+      {
+        "start": 22.26,
+        "end": 22.46,
+        "word": " según",
+        "probability": 0.9921932816505432
+      },
+      {
+        "start": 22.46,
+        "end": 22.8,
+        "word": " EFE,",
+        "probability": 0.10883061960339546
+      },
+      {
+        "start": 23.34,
+        "end": 23.34,
+        "word": " Santiago",
+        "probability": 0.9876666069030762
+      }
+    ]
+  },
+  {
+    "start": 23.34,
+    "end": 27.74,
+    "text": " Peña presentó su renuncia en Paraguay. En Israel, Herzog anunciará el domingo el encargo",
+    "words": [
+      {
+        "start": 23.34,
+        "end": 23.62,
+        "word": " Peña",
+        "probability": 0.9798023998737335
+      },
+      {
+        "start": 23.62,
+        "end": 24.06,
+        "word": " presentó",
+        "probability": 0.989438384771347
+      },
+      {
+        "start": 24.06,
+        "end": 24.22,
+        "word": " su",
+        "probability": 0.9945996999740601
+      },
+      {
+        "start": 24.22,
+        "end": 24.58,
+        "word": " renuncia",
+        "probability": 0.9025060335795084
+      },
+      {
+        "start": 24.58,
+        "end": 24.74,
+        "word": " en",
+        "probability": 0.9794537425041199
+      },
+      {
+        "start": 24.74,
+        "end": 25.16,
+        "word": " Paraguay.",
+        "probability": 0.9766247073809305
+      },
+      {
+        "start": 25.5,
+        "end": 25.6,
+        "word": " En",
+        "probability": 0.9902108907699585
+      },
+      {
+        "start": 25.6,
+        "end": 25.84,
+        "word": " Israel,",
+        "probability": 0.9787944555282593
+      },
+      {
+        "start": 26.04,
+        "end": 26.32,
+        "word": " Herzog",
+        "probability": 0.3831709446385503
+      },
+      {
+        "start": 26.32,
+        "end": 26.76,
+        "word": " anunciará",
+        "probability": 0.9714923799037933
+      },
+      {
+        "start": 26.76,
+        "end": 26.92,
+        "word": " el",
+        "probability": 0.9911506175994873
+      },
+      {
+        "start": 26.92,
+        "end": 27.24,
+        "word": " domingo",
+        "probability": 0.9836677312850952
+      },
+      {
+        "start": 27.24,
+        "end": 27.34,
+        "word": " el",
+        "probability": 0.8343605995178223
+      },
+      {
+        "start": 27.34,
+        "end": 27.74,
+        "word": " encargo",
+        "probability": 0.9706164598464966
+      }
+    ]
+  },
+  {
+    "start": 27.74,
+    "end": 32.1,
+    "text": " para formar gobierno. Ecuador, José Serrano fue llamado a juicio por el caso Villavicencio.",
+    "words": [
+      {
+        "start": 27.74,
+        "end": 27.94,
+        "word": " para",
+        "probability": 0.9042747616767883
+      },
+      {
+        "start": 27.94,
+        "end": 28.22,
+        "word": " formar",
+        "probability": 0.9918367266654968
+      },
+      {
+        "start": 28.22,
+        "end": 28.64,
+        "word": " gobierno.",
+        "probability": 0.8733676671981812
+      },
+      {
+        "start": 29.3,
+        "end": 29.3,
+        "word": " Ecuador,",
+        "probability": 0.5170412659645081
+      },
+      {
+        "start": 29.54,
+        "end": 29.72,
+        "word": " José",
+        "probability": 0.9532362818717957
+      },
+      {
+        "start": 29.72,
+        "end": 30.02,
+        "word": " Serrano",
+        "probability": 0.8929183880488077
+      },
+      {
+        "start": 30.02,
+        "end": 30.24,
+        "word": " fue",
+        "probability": 0.3295362889766693
+      },
+      {
+        "start": 30.24,
+        "end": 30.52,
+        "word": " llamado",
+        "probability": 0.8769564628601074
+      },
+      {
+        "start": 30.52,
+        "end": 30.7,
+        "word": " a",
+        "probability": 0.9648413062095642
+      },
+      {
+        "start": 30.7,
+        "end": 30.98,
+        "word": " juicio",
+        "probability": 0.8152012825012207
+      },
+      {
+        "start": 30.98,
+        "end": 31.16,
+        "word": " por",
+        "probability": 0.9643594622612
+      },
+      {
+        "start": 31.16,
+        "end": 31.24,
+        "word": " el",
+        "probability": 0.9908139109611511
+      },
+      {
+        "start": 31.24,
+        "end": 31.42,
+        "word": " caso",
+        "probability": 0.8827649354934692
+      },
+      {
+        "start": 31.42,
+        "end": 32.1,
+        "word": " Villavicencio.",
+        "probability": 0.7254958972334862
+      }
+    ]
+  },
+  {
+    "start": 32.48,
+    "end": 36.82,
+    "text": " Esto no es una condena. También según EFE, Zelenski pidió equipos para reparar la",
+    "words": [
+      {
+        "start": 32.48,
+        "end": 32.68,
+        "word": " Esto",
+        "probability": 0.9499953389167786
+      },
+      {
+        "start": 32.68,
+        "end": 32.8,
+        "word": " no",
+        "probability": 0.9888107776641846
+      },
+      {
+        "start": 32.8,
+        "end": 32.94,
+        "word": " es",
+        "probability": 0.9967029690742493
+      },
+      {
+        "start": 32.94,
+        "end": 33.06,
+        "word": " una",
+        "probability": 0.990461528301239
+      },
+      {
+        "start": 33.06,
+        "end": 33.46,
+        "word": " condena.",
+        "probability": 0.94333416223526
+      },
+      {
+        "start": 33.76,
+        "end": 33.96,
+        "word": " También",
+        "probability": 0.9514867663383484
+      },
+      {
+        "start": 33.96,
+        "end": 34.26,
+        "word": " según",
+        "probability": 0.9267823100090027
+      },
+      {
+        "start": 34.26,
+        "end": 34.74,
+        "word": " EFE,",
+        "probability": 0.2959403693675995
+      },
+      {
+        "start": 35.2,
+        "end": 35.52,
+        "word": " Zelenski",
+        "probability": 0.4588679273923238
+      },
+      {
+        "start": 35.52,
+        "end": 35.8,
+        "word": " pidió",
+        "probability": 0.9848903119564056
+      },
+      {
+        "start": 35.8,
+        "end": 36.18,
+        "word": " equipos",
+        "probability": 0.9930810332298279
+      },
+      {
+        "start": 36.18,
+        "end": 36.34,
+        "word": " para",
+        "probability": 0.989822506904602
+      },
+      {
+        "start": 36.34,
+        "end": 36.68,
+        "word": " reparar",
+        "probability": 0.9855503141880035
+      },
+      {
+        "start": 36.68,
+        "end": 36.82,
+        "word": " la",
+        "probability": 0.9878455996513367
+      }
+    ]
+  },
+  {
+    "start": 36.82,
+    "end": 42.06,
+    "text": " red eléctrica de Ucrania. Por su parte, EuroEFE recoge el llamado de António Costa a reforzar",
+    "words": [
+      {
+        "start": 36.82,
+        "end": 36.98,
+        "word": " red",
+        "probability": 0.6547775864601135
+      },
+      {
+        "start": 36.98,
+        "end": 37.38,
+        "word": " eléctrica",
+        "probability": 0.890317365527153
+      },
+      {
+        "start": 37.38,
+        "end": 37.56,
+        "word": " de",
+        "probability": 0.9902446269989014
+      },
+      {
+        "start": 37.56,
+        "end": 37.98,
+        "word": " Ucrania.",
+        "probability": 0.9138342589139938
+      },
+      {
+        "start": 38.22,
+        "end": 38.32,
+        "word": " Por",
+        "probability": 0.9894828200340271
+      },
+      {
+        "start": 38.32,
+        "end": 38.44,
+        "word": " su",
+        "probability": 0.9984366297721863
+      },
+      {
+        "start": 38.44,
+        "end": 38.76,
+        "word": " parte,",
+        "probability": 0.9960930943489075
+      },
+      {
+        "start": 38.98,
+        "end": 39.6,
+        "word": " EuroEFE",
+        "probability": 0.400714839498202
+      },
+      {
+        "start": 39.6,
+        "end": 40.06,
+        "word": " recoge",
+        "probability": 0.7035972774028778
+      },
+      {
+        "start": 40.06,
+        "end": 40.16,
+        "word": " el",
+        "probability": 0.9945530891418457
+      },
+      {
+        "start": 40.16,
+        "end": 40.4,
+        "word": " llamado",
+        "probability": 0.9928109049797058
+      },
+      {
+        "start": 40.4,
+        "end": 40.6,
+        "word": " de",
+        "probability": 0.9435008764266968
+      },
+      {
+        "start": 40.6,
+        "end": 40.9,
+        "word": " António",
+        "probability": 0.6562516080836455
+      },
+      {
+        "start": 40.9,
+        "end": 41.22,
+        "word": " Costa",
+        "probability": 0.9313428401947021
+      },
+      {
+        "start": 41.22,
+        "end": 41.68,
+        "word": " a",
+        "probability": 0.9621779322624207
+      },
+      {
+        "start": 41.68,
+        "end": 42.06,
+        "word": " reforzar",
+        "probability": 0.9807342886924744
+      }
+    ]
+  },
+  {
+    "start": 42.06,
+    "end": 46.86,
+    "text": " la cooperación con Latinoamérica. Noticias no termina aquí. Escucha cada noticia completa,",
+    "words": [
+      {
+        "start": 42.06,
+        "end": 42.2,
+        "word": " la",
+        "probability": 0.997376561164856
+      },
+      {
+        "start": 42.2,
+        "end": 42.68,
+        "word": " cooperación",
+        "probability": 0.984019011259079
+      },
+      {
+        "start": 42.68,
+        "end": 42.9,
+        "word": " con",
+        "probability": 0.9973291158676147
+      },
+      {
+        "start": 42.9,
+        "end": 43.6,
+        "word": " Latinoamérica.",
+        "probability": 0.9317717750867208
+      },
+      {
+        "start": 43.92,
+        "end": 44.26,
+        "word": " ¡La noticia",
+        "probability": 0.3843198213726282
+      },
+      {
+        "start": 44.26,
+        "end": 44.44,
+        "word": " no",
+        "probability": 0.8575905561447144
+      },
+      {
+        "start": 44.44,
+        "end": 44.84,
+        "word": " termina",
+        "probability": 0.9335800111293793
+      },
+      {
+        "start": 44.84,
+        "end": 45.06,
+        "word": " aquí.",
+        "probability": 0.9471107125282288
+      },
+      {
+        "start": 45.44,
+        "end": 45.76,
+        "word": " Escucha",
+        "probability": 0.9799765646457672
+      },
+      {
+        "start": 45.76,
+        "end": 46.02,
+        "word": " cada",
+        "probability": 0.9812659621238708
+      },
+      {
+        "start": 46.02,
+        "end": 46.38,
+        "word": " noticia",
+        "probability": 0.969510942697525
+      },
+      {
+        "start": 46.38,
+        "end": 46.86,
+        "word": " completa,",
+        "probability": 0.9840817451477051
+      }
+    ]
+  },
+  {
+    "start": 47.08,
+    "end": 51.54,
+    "text": " una por una en voz alta en nuestra web. Tocar roba resumen punto noticias y abre el enlace",
+    "words": [
+      {
+        "start": 47.08,
+        "end": 47.22,
+        "word": " una",
+        "probability": 0.9884019494056702
+      },
+      {
+        "start": 47.22,
+        "end": 47.38,
+        "word": " por",
+        "probability": 0.9936593174934387
+      },
+      {
+        "start": 47.38,
+        "end": 47.62,
+        "word": " una",
+        "probability": 0.8970189094543457
+      },
+      {
+        "start": 47.62,
+        "end": 47.8,
+        "word": " en",
+        "probability": 0.7006468772888184
+      },
+      {
+        "start": 47.8,
+        "end": 47.92,
+        "word": " voz",
+        "probability": 0.8981409668922424
+      },
+      {
+        "start": 47.92,
+        "end": 48.24,
+        "word": " alta",
+        "probability": 0.9922441840171814
+      },
+      {
+        "start": 48.24,
+        "end": 48.34,
+        "word": " en",
+        "probability": 0.9420190453529358
+      },
+      {
+        "start": 48.34,
+        "end": 48.6,
+        "word": " nuestra",
+        "probability": 0.980556845664978
+      },
+      {
+        "start": 48.6,
+        "end": 48.84,
+        "word": " web.",
+        "probability": 0.9808869361877441
+      },
+      {
+        "start": 49.24,
+        "end": 49.46,
+        "word": " Toca",
+        "probability": 0.5117376446723938
+      },
+      {
+        "start": 49.46,
+        "end": 49.68,
+        "word": " arroba",
+        "probability": 0.5996783822774887
+      },
+      {
+        "start": 49.68,
+        "end": 50.02,
+        "word": " resumen",
+        "probability": 0.8114600777626038
+      },
+      {
+        "start": 50.02,
+        "end": 50.24,
+        "word": " punto",
+        "probability": 0.9442702531814575
+      },
+      {
+        "start": 50.24,
+        "end": 50.78,
+        "word": " noticias",
+        "probability": 0.9757052958011627
+      },
+      {
+        "start": 50.78,
+        "end": 50.98,
+        "word": " y",
+        "probability": 0.9834746718406677
+      },
+      {
+        "start": 50.98,
+        "end": 51.18,
+        "word": " abre",
+        "probability": 0.9693968892097473
+      },
+      {
+        "start": 51.18,
+        "end": 51.32,
+        "word": " el",
+        "probability": 0.9855700135231018
+      },
+      {
+        "start": 51.32,
+        "end": 51.54,
+        "word": " enlace",
+        "probability": 0.977817177772522
+      }
+    ]
+  },
+  {
+    "start": 51.54,
+    "end": 52.08,
+    "text": " del perfil.",
+    "words": [
+      {
+        "start": 51.54,
+        "end": 51.74,
+        "word": " del",
+        "probability": 0.9820626378059387
+      },
+      {
+        "start": 51.74,
+        "end": 52.08,
+        "word": " perfil.",
+        "probability": 0.9845242500305176
+      }
+    ]
+  }
+]

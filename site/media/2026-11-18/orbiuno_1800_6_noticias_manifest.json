@@ -1,0 +1,86 @@
+{
+  "edition": "2026-11-18",
+  "slot": "18:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261118-1800-1",
+    "orbiuno-20261118-1800-2",
+    "orbiuno-20261118-1800-3",
+    "orbiuno-20261118-1800-4",
+    "orbiuno-20261118-1800-5",
+    "orbiuno-20261118-1800-6"
+  ],
+  "voice": "ef_dora",
+  "voiceSpeed": 1.25,
+  "width": 1080,
+  "height": 1920,
+  "duration": 51,
+  "sha256": "d411ab5f57d0f1b403ee36fef55941428f9975bc8f6a559c296f074538ac4863",
+  "video": "ORBIUNO_2026-11-18_1800_6_NOTICIAS.mp4",
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261118-1800-1",
+      "title": "Rainforest Trust anuncia US$15 millones para Colombia",
+      "sourceUrl": "https://www.rainforesttrust.org/our-impact/rainforest-news/rainforest-trust-announces-15-million-commitment-to-advance-conservation-in-colombia/"
+    },
+    {
+      "id": "orbiuno-20261118-1800-2",
+      "title": "Icetex inicia campaña de acuerdos de pago",
+      "sourceUrl": "https://www.radionacional.co/actualidad/educacion/icetex-deuda"
+    },
+    {
+      "id": "orbiuno-20261118-1800-3",
+      "title": "México y Estados Unidos avanzan en diálogo comercial",
+      "sourceUrl": "https://efe.com/mundo/2026-11-18/reunion-trump-sheinbaum-carney/"
+    },
+    {
+      "id": "orbiuno-20261118-1800-4",
+      "title": "India mejora su perspectiva de crecimiento",
+      "sourceUrl": "https://www.reuters.com/world/india/india-sees-better-growth-prospects-compared-start-year-chief-economic-adviser-2026-11-18/"
+    },
+    {
+      "id": "orbiuno-20261118-1800-5",
+      "title": "Hera prepara nuevas imágenes de Dimorphos",
+      "sourceUrl": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/watch-live-hera-s-first-images-of-post-impact-asteroid-dimorphos"
+    },
+    {
+      "id": "orbiuno-20261118-1800-6",
+      "title": "Reconstruyen una fusión de estrellas en Andrómeda",
+      "sourceUrl": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/"
+    }
+  ],
+  "published": true,
+  "instagramId": "18114915620159596",
+  "instagramPermalink": "https://www.instagram.com/reel/Df5q4ncFO9F/",
+  "qa": {
+    "state": "PREFLIGHT_PASS",
+    "workflowRunId": 44417835619,
+    "fullMp3Decode": true,
+    "fullTextMatches": true,
+    "browserSixArticles": true,
+    "browserSixAudioStarts": true,
+    "frontendFixCommit": "bf7f666cb3c8bc723527b06aa6c16f03651e80ce",
+    "checkedAt": "2026-11-18T23:18:53Z",
+    "voiceAccentAudited": false,
+    "visualMode": "source_cards"
+  },
+  "publicationStatus": "PUBLISHED_CONFIRMED",
+  "editionKey": "ORBIUNO-2026-11-18-1800",
+  "instagramStoryId": "18128066825293526",
+  "instagramStoryPermalink": "https://www.instagram.com/stories/resumen.noticias/4033444438105986908",
+  "facebookPageId": "1516359454884058",
+  "facebookPostId": "1516359454884058_122111875449535309",
+  "facebookPermalink": "https://www.facebook.com/122110008351535309/posts/122111875449535309",
+  "facebookFormat": "link_post_to_instagram_reel",
+  "facebookPublishedAt": "2026-11-18T23:22:11Z",
+  "confirmedAt": "2026-11-18T23:23:40Z",
+  "publicationProvider": "Windsor.ai",
+  "publicationReadbackVerified": {
+    "instagram": true,
+    "instagramStory": true,
+    "facebook": true
+  },
+  "instagramPublishedAt": "2026-11-18T23:19:52Z",
+  "instagramStoryPublishedAt": "2026-11-18T23:21:38Z"
+}

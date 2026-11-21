@@ -1,0 +1,67 @@
+{
+  "voice": "es-CO-SalomeNeural",
+  "tempo": 1.25,
+  "total_seconds": 75.3,
+  "duration_in_target": false,
+  "full_audio": "full.mp3",
+  "segments": [
+    {
+      "id": "saludo",
+      "file": "saludo.mp3",
+      "engine": "edge-tts",
+      "seconds": 5.84,
+      "chars": 92
+    },
+    {
+      "id": "n01",
+      "file": "n01.mp3",
+      "engine": "edge-tts",
+      "seconds": 11.16,
+      "chars": 209
+    },
+    {
+      "id": "n02",
+      "file": "n02.mp3",
+      "engine": "edge-tts",
+      "seconds": 11.27,
+      "chars": 215
+    },
+    {
+      "id": "n03",
+      "file": "n03.mp3",
+      "engine": "edge-tts",
+      "seconds": 10.83,
+      "chars": 200
+    },
+    {
+      "id": "n04",
+      "file": "n04.mp3",
+      "engine": "edge-tts",
+      "seconds": 9.89,
+      "chars": 199
+    },
+    {
+      "id": "n05",
+      "file": "n05.mp3",
+      "engine": "edge-tts",
+      "seconds": 10.43,
+      "chars": 204
+    },
+    {
+      "id": "n06",
+      "file": "n06.mp3",
+      "engine": "edge-tts",
+      "seconds": 10.54,
+      "chars": 199
+    },
+    {
+      "id": "despedida",
+      "file": "despedida.mp3",
+      "engine": "edge-tts",
+      "seconds": 5.34,
+      "chars": 106
+    }
+  ],
+  "errors": [],
+  "status": "ok"
+}

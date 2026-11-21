@@ -1,0 +1,79 @@
+{
+  "brand": "MYCAR",
+  "date": "2026-11-12",
+  "duration": 35.433667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Salón del Automóvil de Bogotá exhibe más de 800 vehículos",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/",
+      "photo": {
+        "file": "File:Entry to corferias bogota colombia.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Entry_to_corferias_bogota_colombia.jpg",
+        "artist": "Rainercol",
+        "license": "CC BY-SA 3.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Entry_to_corferias_bogota_colombia.jpg/960px-Entry_to_corferias_bogota_colombia.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "FAWCAR Xiaoma 2.0 se anuncia en feria desde 43 millones",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/",
+      "photo": {
+        "file": "File:2023 FAW Bestune Pony (front).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:2023_FAW_Bestune_Pony_(front).jpg",
+        "artist": "User3204",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/2023_FAW_Bestune_Pony_(front).jpg/960px-2023_FAW_Bestune_Pony_(front).jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "El Xpeng X2 muestra el futuro del transporte aéreo",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/",
+      "photo": {
+        "file": "File:XPeng X2 at Auto Guangzhou 2023 20231126-A.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg",
+        "artist": "Tim Wu",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg/960px-XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Renault 4 E-Tech llega como exhibición eléctrica",
+      "source": "https://prensa.renault.com.co/prensa/renault-llega-a-la-edicion-20-del-salon-del-automovil-de-bogota-con-su-portafolio-100-renovado-y-se-extiende-a-sus-111-salas-a-nivel-nacional/",
+      "photo": {
+        "file": "File:Renault 4 E-Tech (54911777481).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_(54911777481).jpg",
+        "artist": "Alexandre Prevot",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Renault_4_E-Tech_(54911777481).jpg/960px-Renault_4_E-Tech_(54911777481).jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-13-1900/mycar-2026-11-12-noche.mp4",
+  "sha256": "8772ed206a67c1cc3abde09737cb4858792f74dc2a779e5d4e11d4bcec677219",
+  "status": "RENDERED_NOT_PUBLISHED",
+  "edition": "2026-11-13-1900",
+  "stories": [
+    {
+      "title": "Salón del Automóvil de Bogotá exhibe más de 800 vehículos",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+    },
+    {
+      "title": "FAWCAR Xiaoma 2.0 se anuncia en feria desde 43 millones",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+    },
+    {
+      "title": "El Xpeng X2 muestra el futuro del transporte aéreo",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+    },
+    {
+      "title": "Renault 4 E-Tech llega como exhibición eléctrica",
+      "source": "https://prensa.renault.com.co/prensa/renault-llega-a-la-edicion-20-del-salon-del-automovil-de-bogota-con-su-portafolio-100-renovado-y-se-extiende-a-sus-111-salas-a-nivel-nacional/"
+    }
+  ],
+  "video": "MYCAR-2026-11-13_19H_4_NOTICIAS.mp4"
+}

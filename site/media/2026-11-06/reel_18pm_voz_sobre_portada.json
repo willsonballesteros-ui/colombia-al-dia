@@ -1,0 +1,11 @@
+{
+  "editionDate": "2026-11-06",
+  "slot": "18:00",
+  "voice": "ef_dora",
+  "nativeSpeed": 1.25,
+  "newsCount": 10,
+  "introduction": "Son las seis de la tarde, hora de Colombia. Bienvenidos a ORBIUNO, Colombia al Día.",
+  "extraIntroSlide": false,
+  "introOnExistingCover": true,
+  "publicationVerified": false
+}

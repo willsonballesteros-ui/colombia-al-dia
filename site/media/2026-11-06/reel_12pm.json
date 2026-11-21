@@ -1,0 +1,23 @@
+{
+  "editionDate": "2026-11-06",
+  "slot": "12:00 America/Bogota",
+  "format": "compacto: portada + grupos de máximo 5 noticias + cierre",
+  "newsCount": 2,
+  "newsIds": [
+    "orbiuno-20261106-12m-maluma",
+    "orbiuno-20261106-12m-bella-bonita"
+  ],
+  "repeatedMorningNews": 0,
+  "slidesOfNews": 1,
+  "voice": "ef_dora",
+  "voiceEngine": "kokoro-onnx",
+  "voiceRate": 1.25,
+  "durationSeconds": 30.6,
+  "publicationVerified": false,
+  "sourceLinks": [
+    "https://caracol.com.co/2026/11/06/maluma-anuncio-su-nueva-gira-loco-x-volver-world-tour-2027-en-que-ciudades-se-presentara/",
+    "https://caracol.com.co/2026/11/03/luis-alfonso-y-los-dotores-de-la-carranga-anuncian-su-colaboracion-musical-bella-y-bonita/"
+  ],
+  "audioStreamVerified": true,
+  "filename": "reel_12pm.mp4"
+}

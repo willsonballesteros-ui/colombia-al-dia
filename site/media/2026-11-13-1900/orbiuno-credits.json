@@ -1,0 +1,111 @@
+{
+  "brand": "ORBIUNO",
+  "date": "2026-11-12",
+  "duration": 51.903667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Explosión cerca de la Escuela de Carabineros en Cali",
+      "source": "https://efe.com/mundo/2026-11-13/cali-colombia-explosion-escuela-carabineros-bomba/",
+      "photo": {
+        "file": "File:Panorámica Cali desde Valle del Lili.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_Cali_desde_Valle_del_Lili.jpg",
+        "artist": "Dh",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Panor%C3%A1mica_Cali_desde_Valle_del_Lili.jpg/960px-Panor%C3%A1mica_Cali_desde_Valle_del_Lili.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Microsoft reporta recuperación generalizada de sus servicios",
+      "source": "https://efe.com/ciencia-y-tecnologia/2026-11-13/microsoft-recuperacion-servicios-outlook-teams-copilot-fallo-tecnico/",
+      "photo": {
+        "file": "File:Building92microsoft.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Building92microsoft.jpg",
+        "artist": "Coolcaesar",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Building92microsoft.jpg/960px-Building92microsoft.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Colombia y Chile se enfrentan esta noche en Cali",
+      "source": "https://www.fcf.com.co/2026/11/06/convocatoria-de-la-seleccion-colombia-de-mayores-amistosos-internacionales-de-noviembre-2026/",
+      "photo": {
+        "file": "File:Pascual Guerrero Stadium.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Pascual_Guerrero_Stadium.jpg",
+        "artist": "Johannes Bud",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pascual_Guerrero_Stadium.jpg/960px-Pascual_Guerrero_Stadium.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Estados Unidos detuvo despegues por problemas de comunicaciones",
+      "source": "https://www.ecuavisa.com/mundo/eeuu-ordena-suspender-vuelo-todo-el-pais-20261113-0060.html",
+      "photo": {
+        "file": "File:LaGuardia.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:LaGuardia.jpg",
+        "artist": "Jeremy Goldstein",
+        "license": "CC BY 2.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/LaGuardia.jpg/960px-LaGuardia.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Un vehículo volador Xpeng X2 sorprende en el Salón del Automóvil",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/",
+      "photo": {
+        "file": "File:XPeng X2 at Auto Guangzhou 2023 20231126-A.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg",
+        "artist": "Tim Wu",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg/960px-XPeng_X2_at_Auto_Guangzhou_2023_20231126-A.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Rosalía se lleva seis premios en los Latin Grammy 2026",
+      "source": "https://www.teleantioquia.co/entretenimiento/en-video-rosalia-lloro-al-recibir-un-latin-grammy-de-juanes-conozca-los-antioquenos-y-colombianos-que-tambien-ganaron-626037",
+      "photo": {
+        "file": "File:Rosalia 2019-portrait.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Rosalia_2019-portrait.jpg",
+        "artist": "Pedro J Pacheco",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rosalia_2019-portrait.jpg/960px-Rosalia_2019-portrait.jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-13-1900/orbiuno-2026-11-12-noche.mp4",
+  "sha256": "670793bd739d47f8c119d5f412cbcb16cf2df6b6389cb169eb5d0f2fcdc804b3",
+  "status": "RENDERED_NOT_PUBLISHED",
+  "edition": "2026-11-13-1900",
+  "stories": [
+    {
+      "title": "Explosión cerca de la Escuela de Carabineros en Cali",
+      "source": "https://efe.com/mundo/2026-11-13/cali-colombia-explosion-escuela-carabineros-bomba/"
+    },
+    {
+      "title": "Microsoft reporta recuperación generalizada de sus servicios",
+      "source": "https://efe.com/ciencia-y-tecnologia/2026-11-13/microsoft-recuperacion-servicios-outlook-teams-copilot-fallo-tecnico/"
+    },
+    {
+      "title": "Colombia y Chile se enfrentan esta noche en Cali",
+      "source": "https://www.fcf.com.co/2026/11/06/convocatoria-de-la-seleccion-colombia-de-mayores-amistosos-internacionales-de-noviembre-2026/"
+    },
+    {
+      "title": "Estados Unidos detuvo despegues por problemas de comunicaciones",
+      "source": "https://www.ecuavisa.com/mundo/eeuu-ordena-suspender-vuelo-todo-el-pais-20261113-0060.html"
+    },
+    {
+      "title": "Un vehículo volador Xpeng X2 sorprende en el Salón del Automóvil",
+      "source": "https://www.elcarrocolombiano.com/salon-del-automovil-de-bogota-2026/salon-del-automovil-de-bogota-2026-boletas-horarios-precios/"
+    },
+    {
+      "title": "Rosalía se lleva seis premios en los Latin Grammy 2026",
+      "source": "https://www.teleantioquia.co/entretenimiento/en-video-rosalia-lloro-al-recibir-un-latin-grammy-de-juanes-conozca-los-antioquenos-y-colombianos-que-tambien-ganaron-626037"
+    }
+  ],
+  "video": "ORBIUNO-2026-11-13_19H_6_NOTICIAS.mp4"
+}

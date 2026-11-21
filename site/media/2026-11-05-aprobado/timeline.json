@@ -1,0 +1,160 @@
+{
+  "duration": 52.368,
+  "story_starts": [
+    2.94,
+    6.18,
+    9.24,
+    11.94,
+    18.08,
+    21.62,
+    25.5,
+    29.1,
+    33.76,
+    38.22
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.52,
+      "text": "Vamos con las 10 noticias de"
+    },
+    {
+      "start": 1.52,
+      "end": 3.36,
+      "text": "este 5 de noviembre. La República"
+    },
+    {
+      "start": 3.36,
+      "end": 4.86,
+      "text": "nos cuenta que Nutresa cerró la"
+    },
+    {
+      "start": 4.86,
+      "end": 6.94,
+      "text": "compra de Presto. También informa"
+    },
+    {
+      "start": 6.94,
+      "end": 8.24,
+      "text": "sobre la llegada de clientes de"
+    },
+    {
+      "start": 8.24,
+      "end": 10.18,
+      "text": "Davibank a Davivienda y una garantía"
+    },
+    {
+      "start": 10.18,
+      "end": 11.64,
+      "text": "para financiar el Metro de Bogotá."
+    },
+    {
+      "start": 11.94,
+      "end": 14.28,
+      "text": "En economía, Noticias RCN reporta un"
+    },
+    {
+      "start": 14.28,
+      "end": 16.96,
+      "text": "dólar promedio de 3 .228 pesos"
+    },
+    {
+      "start": 16.96,
+      "end": 19.44,
+      "text": "con 19. Minciencias propone trabajar"
+    },
+    {
+      "start": 19.44,
+      "end": 21.32,
+      "text": "con Corea en inteligencia artificial."
+    },
+    {
+      "start": 21.62,
+      "end": 23.34,
+      "text": "En el mundo, según EFE, Santiago"
+    },
+    {
+      "start": 23.34,
+      "end": 25.16,
+      "text": "Peña presentó su renuncia en Paraguay."
+    },
+    {
+      "start": 25.5,
+      "end": 27.24,
+      "text": "En Israel, Herzog anunciará el domingo"
+    },
+    {
+      "start": 27.24,
+      "end": 28.64,
+      "text": "el encargo para formar gobierno."
+    },
+    {
+      "start": 29.3,
+      "end": 30.7,
+      "text": "Ecuador, José Serrano fue llamado a"
+    },
+    {
+      "start": 30.7,
+      "end": 32.68,
+      "text": "juicio por el caso Villavicencio. Esto"
+    },
+    {
+      "start": 32.68,
+      "end": 34.26,
+      "text": "no es una condena. También según"
+    },
+    {
+      "start": 34.26,
+      "end": 36.34,
+      "text": "EFE, Zelenski pidió equipos para"
+    },
+    {
+      "start": 36.34,
+      "end": 37.98,
+      "text": "reparar la red eléctrica de Ucrania."
+    },
+    {
+      "start": 38.22,
+      "end": 40.16,
+      "text": "Por su parte, EuroEFE recoge el"
+    },
+    {
+      "start": 40.16,
+      "end": 42.06,
+      "text": "llamado de António Costa a reforzar"
+    },
+    {
+      "start": 42.06,
+      "end": 43.6,
+      "text": "la cooperación con Latinoamérica."
+    },
+    {
+      "start": 43.92,
+      "end": 45.76,
+      "text": "¡La noticia no termina aquí. Escucha"
+    },
+    {
+      "start": 45.76,
+      "end": 47.62,
+      "text": "cada noticia completa, una por una"
+    },
+    {
+      "start": 47.62,
+      "end": 48.84,
+      "text": "en voz alta en nuestra web."
+    },
+    {
+      "start": 49.24,
+      "end": 50.98,
+      "text": "Toca arroba resumen punto noticias y"
+    },
+    {
+      "start": 50.98,
+      "end": 52.08,
+      "text": "abre el enlace del perfil."
+    }
+  ],
+  "voice": "ef_dora",
+  "native_speed": 1.25,
+  "audio": "ORBIUNO_Voz_Natural_1_25x.mp3"
+}

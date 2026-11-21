@@ -1,0 +1,73 @@
+{
+  "editionDate": "2026-11-06",
+  "brand": "ORBIUNO",
+  "editionSlot": "12m",
+  "verifiedSports": 1,
+  "publicationReady": false,
+  "blockers": [
+    "contiene_8_noticias_ya_presentadas_en_la_manana"
+  ],
+  "utmCampaign": "edicion_20261106_12m",
+  "links": {
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261106_12m",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261106_12m",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261106_12m",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261106_12m"
+  },
+  "caption": "ORBIUNO | 06/11/2026\n\nEdición del mediodía · 10 noticias verificadas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nEscucha nuestra voz en español y ajusta la velocidad.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261106_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscucha las noticias completas y ajusta la velocidad en nuestra web.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261106_12m",
+  "publicationVerified": false,
+  "repeatedMorningNews": 8,
+  "newsPerSlide": [
+    5,
+    5
+  ],
+  "media": [
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/portada.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-01.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-06/grupo-02.png"
+  ],
+  "sourceLinks": [
+    {
+      "title": "Reuters revela cómo opera la red norcoreana vinculada al ataque a Binance",
+      "url": "https://www.reuters.com/world/asia-pacific/north-koreas-army-world-class-hackers-is-secret-weapon-that-took-down-binance-2026-11-06/"
+    },
+    {
+      "title": "Armada incauta 104 armas en el Caribe y captura a cinco personas",
+      "url": "https://caracol.com.co/2026/11/05/armada-incauto-104-armas-de-guerra-en-el-caribe-colombiano-hay-cinco-capturados/"
+    },
+    {
+      "title": "Banco de la República sube al 7,1 % su previsión de inflación para 2026",
+      "url": "https://www.larepublica.co/economia/emisor-actualizo-al-alza-su-proyeccion-de-inflacion-y-preve-que-cerrara-el-ano-en-7-1-4518800"
+    },
+    {
+      "title": "Jhon Arias marca dos goles en el 6-1 de Palmeiras contra Remo",
+      "url": "https://caracol.com.co/2026/11/06/jhon-arias-se-reporto-con-doblete-en-la-goleada-de-palmeiras-6-1-sobre-remo/"
+    },
+    {
+      "title": "León XIV inicia una gira por Uruguay, Argentina y Perú",
+      "url": "https://www.reuters.com/world/americas/pope-leo-starts-south-america-homecoming-tour-month-after-lung-surgery-2026-11-06/"
+    },
+    {
+      "title": "Nuevos incidentes con buques elevan la tensión en el estrecho de Ormuz",
+      "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/"
+    },
+    {
+      "title": "Anthropic enfrenta dudas de inversionistas antes de una posible salida a bolsa",
+      "url": "https://www.reuters.com/world/ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say-2026-11-05/"
+    },
+    {
+      "title": "Maluma anuncia gira mundial 2027 con inicio en Bogotá",
+      "url": "https://caracol.com.co/2026/11/06/maluma-anuncio-su-nueva-gira-loco-x-volver-world-tour-2027-en-que-ciudades-se-presentara/"
+    },
+    {
+      "title": "Luis Alfonso y Los Dotores de la Carranga presentan Bella y Bonita",
+      "url": "https://caracol.com.co/2026/11/03/luis-alfonso-y-los-dotores-de-la-carranga-anuncian-su-colaboracion-musical-bella-y-bonita/"
+    },
+    {
+      "title": "MinEnergía pide ahorrar electricidad y elevar las reservas de embalses",
+      "url": "https://caracol.com.co/2026/11/06/minenergia-pide-ahorrar-energia-para-subir-el-nivel-de-los-embalses-al-80-antes-del-verano/"
+    }
+  ],
+  "note": "La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo."
+}

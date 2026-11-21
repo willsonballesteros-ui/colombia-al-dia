@@ -1,0 +1,123 @@
+{
+  "edition": "2026-11-21",
+  "slot": "08:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261121-0800-1",
+    "orbiuno-20261121-0800-2",
+    "orbiuno-20261121-0800-3",
+    "orbiuno-20261121-0800-4",
+    "orbiuno-20261121-0800-5",
+    "orbiuno-20261121-0800-6"
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "voiceEngines": [
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts"
+  ],
+  "language": "es-CO",
+  "voiceAccentAudited": false,
+  "width": 1080,
+  "height": 1920,
+  "duration": 57.27,
+  "fps": 30,
+  "sha256": "68daeeb820566b80a94345ed1ef65e96bbba8b0282add59d03080f45cd0137f4",
+  "video": "ORBIUNO_2026-11-21_0800_6_NOTICIAS.mp4",
+  "visualMode": "verified_real_photos",
+  "imagesCount": 6,
+  "logosCount": 6,
+  "photoCredits": [
+    {
+      "title": "photo-1647967447949-1f2cd1170dfa",
+      "author": "Fabio Augusto Valencia",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/two-airplanes-on-a-runway-with-a-cloudy-sky-i4cfTmz6jr8",
+      "url": "https://images.unsplash.com/photo-1647967447949-1f2cd1170dfa?auto=format&fit=crop&w=1600&q=80",
+      "description": "Aviones comerciales en el aeropuerto de Pereira, Colombia. Fotografía de archivo; no muestra El Dorado ni aviones de LATAM."
+    },
+    {
+      "title": "photo-1730063527047-7df3b7a30d73",
+      "author": "Kieran Proctor",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/an-aerial-view-of-a-city-with-tall-buildings-rQT0D4nwcqM",
+      "url": "https://images.unsplash.com/photo-1730063527047-7df3b7a30d73?auto=format&fit=crop&w=1600&q=80",
+      "description": "Vista aérea de Lima, Perú, fotografía de archivo de 2024. No muestra el sismo ni sus consecuencias."
+    },
+    {
+      "title": "photo-1701287001441-8e27651dbc54",
+      "author": "Mohamed Fsili",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/an-oil-pump-sitting-in-the-middle-of-a-field-YUYpa-w5YFE",
+      "url": "https://images.unsplash.com/photo-1701287001441-8e27651dbc54?auto=format&fit=crop&w=1600&q=80",
+      "description": "Bomba de extracción petrolera en Túnez, fotografía de archivo. No corresponde a los incidentes en Oriente Medio."
+    },
+    {
+      "title": "photo-1721257001239-60fe6a768dbb",
+      "author": "Max Titov",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-close-up-of-a-soccer-ball-on-a-field-gYFOFUnSBF0",
+      "url": "https://images.unsplash.com/photo-1721257001239-60fe6a768dbb?auto=format&fit=crop&w=1600&q=80",
+      "description": "Balón de fútbol sobre césped, fotografía de archivo ilustrativa. No muestra a Colombia Sub-17 ni su partido con Japón."
+    },
+    {
+      "title": "photo-1760092189903-dce3e898dacf",
+      "author": "Vitalii Onyshchuk",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/concert-crowd-with-stage-lights-and-instruments-nPnjWo7HMNw",
+      "url": "https://images.unsplash.com/photo-1760092189903-dce3e898dacf?auto=format&fit=crop&w=1600&q=80",
+      "description": "Escenario de música en vivo, fotografía de archivo. No muestra a los artistas citados ni una imagen del videojuego."
+    },
+    {
+      "title": "photo-1708716174536-0d0e42859583",
+      "author": "Chema Photo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-beach-from-a-cliff-7QotHoE_fqU",
+      "url": "https://images.unsplash.com/photo-1708716174536-0d0e42859583?auto=format&fit=crop&w=1600&q=80",
+      "description": "Paisaje natural del Parque Tayrona, Colombia, fotografía de archivo. No implica que los recursos anunciados se destinen específicamente al parque."
+    }
+  ],
+  "openingStyle": "saludo_corto_directo_a_noticias",
+  "burnedSubtitles": false,
+  "sourceOnly": false,
+  "publicationAuthorized": false,
+  "news": [
+    {
+      "id": "orbiuno-20261121-0800-1",
+      "title": "LATAM busca crecer en Colombia, pero El Dorado limita su expansión",
+      "sourceUrl": "https://www.elespectador.com/economia/empresas/roberto-alvo-quiere-hacer-crecer-a-latam-en-colombia-pero-el-dorado-tiene-la-ultima-palabra/"
+    },
+    {
+      "id": "orbiuno-20261121-0800-2",
+      "title": "Sismo de magnitud 6,8 sacude Perú y provoca evacuaciones en Lima",
+      "sourceUrl": "https://www.reuters.com/business/environment/magnitude-68-quake-strikes-peru-sending-lima-residents-homes-2026-11-21/"
+    },
+    {
+      "id": "orbiuno-20261121-0800-3",
+      "title": "El petróleo repunta ante nuevas preocupaciones por Oriente Medio",
+      "sourceUrl": "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/"
+    },
+    {
+      "id": "orbiuno-20261121-0800-4",
+      "title": "Colombia debuta ante Japón en el Mundial masculino Sub-17 de Catar",
+      "sourceUrl": "https://www.elespectador.com/deportes/seleccion-colombia/colombia-vs-japon-en-el-mundial-sub-17/"
+    },
+    {
+      "id": "orbiuno-20261121-0800-5",
+      "title": "Joe Arroyo, Karol G y Feid ponen música colombiana en GTA VI",
+      "sourceUrl": "https://www.elcolombiano.com/cultura/musica/joe-arroyo-feid-karol-g-kali-uchis-musica-gta-6-FO43812546"
+    },
+    {
+      "id": "orbiuno-20261121-0800-6",
+      "title": "Colombia anuncia compromiso de 15 millones de dólares para biodiversidad",
+      "sourceUrl": "https://www.presidencia.gov.co/prensa/Paginas/Comunicado-Gobierno-Nacional-consolida-compromiso-de-US-15-millones-para-fortalecer-la-proteccion-20261120.aspx"
+    }
+  ],
+  "published": false,
+  "instagramId": null,
+  "instagramPermalink": null
+}

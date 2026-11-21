@@ -1,0 +1,27 @@
+{
+  "edition_id": "MYCAR-2026-11-18-PM-5",
+  "date": "2026-11-18",
+  "news_count": 5,
+  "status": "PUBLISHED_INSTAGRAM_REEL_AND_FACEBOOK_LINK_POST",
+  "video_file": "MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+  "sha256": "9104d886cfc367c53d751bde64f573decb7a9fd4b017c82a563d5f81ce89c3f3",
+  "voice": "es-CO-SalomeNeural",
+  "speed": 1.25,
+  "instagram": {
+    "account": "mycar.buscoautos",
+    "media_id": "17990651886109530",
+    "published_by": "Windsor.ai create_video_post",
+    "publish_action_result": "Published video post (Reel)",
+    "permalink": null,
+    "readback_verified": false
+  },
+  "facebook": {
+    "page": "MyCar",
+    "post_id": "100141169648736_1154607780861765",
+    "post_type": "link_post",
+    "permalink": "https://www.facebook.com/1152719454383931/posts/1154607780861765",
+    "readback_verified": true
+  },
+  "video_public_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-18/mycar-pm-5/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+  "production_workflow_run": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/44432930694"
+}

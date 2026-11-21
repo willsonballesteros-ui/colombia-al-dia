@@ -1,0 +1,86 @@
+{
+  "edition": "2026-11-19",
+  "slot": "08:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261119-0800-1",
+    "orbiuno-20261119-0800-2",
+    "orbiuno-20261119-0800-3",
+    "orbiuno-20261119-0800-4",
+    "orbiuno-20261119-0800-5",
+    "orbiuno-20261119-0800-6"
+  ],
+  "voice": "ef_dora",
+  "voiceSpeed": 1.25,
+  "width": 1080,
+  "height": 1920,
+  "duration": 51,
+  "sha256": "689320f2f34b05899a3e12fa0ece9d2b5d2154e8381f23b7472e0690ae87e56c",
+  "video": "ORBIUNO_2026-11-19_0800_6_NOTICIAS.mp4",
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261119-0800-1",
+      "title": "Bogotá abre una feria con 800 vacantes tecnológicas",
+      "sourceUrl": "https://bogota.gov.co/mi-ciudad/desarrollo-economico/2026-11/trabajo-si-hay-en-bogota-870-vacantes-disponibles-18-y-19-noviembre"
+    },
+    {
+      "id": "orbiuno-20261119-0800-2",
+      "title": "Educación prioriza 20 proyectos de recuperación",
+      "sourceUrl": "https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/431943:Gobierno-nacional-avanza-en-la-recuperacion-educativa-tras-el-terremoto-20-proyectos-priorizados-y-mobiliario-para-mas-de-113-000-estudiantes"
+    },
+    {
+      "id": "orbiuno-20261119-0800-3",
+      "title": "Shenzhen abre diálogo sobre riesgos nucleares",
+      "sourceUrl": "https://www.europapress.es/internacional/noticia-xi-trump-putin-acuerdan-entablar-dialogo-prevenir-proliferacion-armas-nucleares-20261119123527.html"
+    },
+    {
+      "id": "orbiuno-20261119-0800-4",
+      "title": "Orlen y Carlyle estudian inversiones energéticas",
+      "sourceUrl": "https://www.orlen.pl/pl/o-firmie/media/komunikaty-prasowe/biezace/2026/listopad-2026/ORLEN-i-Carlyle-podpisaly-porozumienie-o-poszukiwaniu-mozliwosci-inwestycyjnych-w-sektorze-energetycznym"
+    },
+    {
+      "id": "orbiuno-20261119-0800-5",
+      "title": "NLC India Renewables presenta su proyecto de salida a bolsa",
+      "sourceUrl": "https://www.moneycontrol.com/news/business/markets/nlc-india-shares-rise-2-as-renewables-unit-files-for-ipo-14084455.html"
+    },
+    {
+      "id": "orbiuno-20261119-0800-6",
+      "title": "La ONU pide saneamiento seguro con igualdad",
+      "sourceUrl": "https://yemen.un.org/en/326250-secretary-general-message-world-toilet-day-2026"
+    }
+  ],
+  "published": true,
+  "instagramId": "18242552854316472",
+  "instagramPermalink": "https://www.instagram.com/reel/Df7KROnlW8X/",
+  "editionKey": "ORBIUNO-2026-11-19-0800",
+  "publicationStatus": "PUBLISHED_CONFIRMED",
+  "qa": {
+    "state": "PREFLIGHT_PASS",
+    "workflowRunId": 44529907739,
+    "fullMp3Decode": true,
+    "fullVideoDecode": true,
+    "fullArticleTextsMatch": true,
+    "browserSixArticles": true,
+    "browserSixAudioStarts": true,
+    "checkedAt": "2026-11-19T13:11:22Z",
+    "voiceAccentAudited": false,
+    "visualMode": "source_cards"
+  },
+  "instagramPublishedAt": "2026-11-19T13:13:16Z",
+  "instagramStoryId": "18160908118569306",
+  "instagramStoryPermalink": "https://www.instagram.com/stories/resumen.noticias/4033863522400440872",
+  "instagramStoryPublishedAt": "2026-11-19T13:14:11Z",
+  "facebookPageId": "1516359454884058",
+  "facebookPostId": "1516359454884058_122112080433535309",
+  "facebookPermalink": "https://www.facebook.com/122110008351535309/posts/122112080433535309",
+  "facebookPublishedAt": "2026-11-19T13:14:41Z",
+  "facebookFormat": "link_post_to_instagram_reel",
+  "publicationProvider": "Windsor.ai",
+  "confirmedAt": "2026-11-19T13:16:40Z",
+  "publicationReadbackVerified": {
+    "instagram": true,
+    "instagramStory": true,
+    "facebook": true
+  }
+}

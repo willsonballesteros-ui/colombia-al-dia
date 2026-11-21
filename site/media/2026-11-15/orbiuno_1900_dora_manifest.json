@@ -1,0 +1,56 @@
+{
+  "edition": "2026-11-15",
+  "slot": "19:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261115-19h-1",
+    "orbiuno-20261115-19h-2",
+    "orbiuno-20261115-19h-3",
+    "orbiuno-20261115-19h-4",
+    "orbiuno-20261115-19h-5",
+    "orbiuno-20261115-19h-6"
+  ],
+  "voice": "ef_dora",
+  "voiceSpeed": 1.25,
+  "width": 1080,
+  "height": 1920,
+  "duration": 51.0,
+  "sha256": "a40a8dbd0174199b3401b8ae0fd756a4a05ad458ff24f5da7f8e2aa21d5a07df",
+  "video": "ORBIUNO_2026-11-15_1900_6_NOTICIAS.mp4",
+  "sourceOnly": true,
+  "news": [
+    {
+      "id": "orbiuno-20261115-19h-1",
+      "title": "Bogotá habilitó el tercer ramal del puente de Venecia",
+      "sourceUrl": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/habilitado-tercer-ramal-puente-venecia-carrera-68-con-autopista-sur"
+    },
+    {
+      "id": "orbiuno-20261115-19h-2",
+      "title": "Bogotá aplica reversible por la carrera Séptima durante el retorno festivo",
+      "sourceUrl": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/reversible-en-la-carrera-septima-en-bogota-15-y-16-de-noviembre-2026"
+    },
+    {
+      "id": "orbiuno-20261115-19h-3",
+      "title": "Una cantante filipina gana la primera edición de Eurovisión Asia",
+      "sourceUrl": "https://apnews.com/article/099ca558c4638949e637d3a8f8061d6d"
+    },
+    {
+      "id": "orbiuno-20261115-19h-4",
+      "title": "Fotografías premiadas muestran cómo la naturaleza resiste y se recupera",
+      "sourceUrl": "https://es.euronews.com/2026/11/15/fotos-premiadas-muestran-la-resiliencia-de-la-naturaleza-en-europa"
+    },
+    {
+      "id": "orbiuno-20261115-19h-5",
+      "title": "El papa León XIV pide proteger a las comunidades de la Amazonía peruana",
+      "sourceUrl": "https://apnews.com/article/8a15143716d2d78a691f2eb995f1bda0"
+    },
+    {
+      "id": "orbiuno-20261115-19h-6",
+      "title": "Estados Unidos trabaja para normalizar vuelos tras suspensión nacional",
+      "sourceUrl": "https://apnews.com/article/8a7ea4fe27804b52bf79eaaec1308180"
+    }
+  ],
+  "published": false,
+  "instagramId": null,
+  "instagramPermalink": null
+}

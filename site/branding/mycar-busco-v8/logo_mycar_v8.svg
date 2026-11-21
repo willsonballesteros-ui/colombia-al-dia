@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080"><rect width="1080" height="1080" rx="0" fill="#071A34"/><path d="M 82,135 H 196" stroke="#F12B43" stroke-width="14" stroke-linecap="round"/><path d="M 884,945 H 998" stroke="#F12B43" stroke-width="14" stroke-linecap="round"/><g fill="none" stroke-linejoin="round" stroke-linecap="round">
+<path d="M 295 450 L 330 245 L 491 414 L 656 245 L 690 450" stroke="#F8FAFC" stroke-width="67"/>
+<path d="M 491 413 L 656 246" stroke="#F12B43" stroke-width="29"/>
+<path d="M 360 485 H 656" stroke="#F12B43" stroke-width="16"/>
+<path d="M 415 521 H 596" stroke="#F8FAFC" stroke-width="12"/>
+</g><g font-family="Inter,DejaVu Sans,sans-serif" font-weight="850" text-anchor="middle">
+<text x="540" y="722" font-size="160" letter-spacing="-6"><tspan fill="#F8FAFC">MY</tspan><tspan fill="#F12B43">CAR</tspan></text>
+<text x="540" y="817" font-size="65" letter-spacing="16" fill="#F8FAFC" font-weight="700">NOTICIAS</text></g></svg>

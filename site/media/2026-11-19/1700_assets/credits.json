@@ -1,0 +1,111 @@
+{
+  "edition": "2026-11-19",
+  "slot": "17:00",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261119-1700-1",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "bogota.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://bogota.gov.co/themes/custom/bogotema/favicon.ico",
+      "caption": "Ciclorruta urbana en Bogotá que ilustra infraestructura para desplazamientos sostenibles; no corresponde necesariamente a la actividad escolar informada.",
+      "credit": {
+        "title": "File:Ciclorruta Bogotá kr 12 con cl 25.JPG",
+        "license": "CC BY-SA 3.0",
+        "author": "Felipe Restrepo Acosta",
+        "page": "https://commons.wikimedia.org/wiki/File:Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG/1280px-Ciclorruta_Bogot%C3%A1_kr_12_con_cl_25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Cicloruta en el barrio La Alameda, carrera 12 con calle 25, localidad de Santa Fe en Bogotá."
+      }
+    },
+    {
+      "id": "orbiuno-20261119-1700-2",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "www.presidencia.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.presidencia.gov.co&sz=64",
+      "caption": "Bandera de Colombia utilizada para ilustrar el anuncio gubernamental de compromisos de inversión.",
+      "credit": {
+        "title": "File:Colombian Flag.jpg",
+        "license": "CC BY 2.0",
+        "author": "Mark Koester",
+        "page": "https://commons.wikimedia.org/wiki/File:Colombian_Flag.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Colombian_Flag.jpg/1280px-Colombian_Flag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Bandera nacional de Colombia ondeando con el viento"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-1700-3",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "www.un.org",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.un.org&sz=128",
+      "caption": "Sede de Naciones Unidas en Nueva York; imagen institucional del organismo que presenta el estudio de gobierno electrónico.",
+      "credit": {
+        "title": "File:UN headquarters from LIC, May 2026.jpeg",
+        "license": "CC BY-SA 4.0",
+        "author": "Mr.choppers",
+        "page": "https://commons.wikimedia.org/wiki/File:UN_headquarters_from_LIC,_May_2026.jpeg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/UN_headquarters_from_LIC%2C_May_2026.jpeg/1280px-UN_headquarters_from_LIC%2C_May_2026.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "The United Nations Headquarters, seen from Long Island City."
+      }
+    },
+    {
+      "id": "orbiuno-20261119-1700-4",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "science.nasa.gov",
+      "logoCredit": null,
+      "logoSource": "https://science.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png",
+      "caption": "Galaxia de Andrómeda, donde fue investigada la fusión de estrellas; fotografía de contexto astronómico.",
+      "credit": {
+        "title": "File:The Andromeda Galaxy.jpg",
+        "license": "CC BY 4.0",
+        "author": "Ivan Bok",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Andromeda_Galaxy.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Andromeda_Galaxy.jpg/1280px-The_Andromeda_Galaxy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Light of a trillion suns: The Andromeda Galaxy is the nearest large spiral galaxy from the Earth, and contains within itself over a trillion stars. The light recorded in this image ended a journey after 2.5 million years traversing across the void of intergala"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-1700-5",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "www.esa.int",
+      "logoCredit": null,
+      "logoSource": "https://www.esa.int/assets/images/favicon.ico",
+      "caption": "Asteroide Didymos observado por la misión Hera; imagen real de la misión espacial.",
+      "credit": {
+        "title": "File:Hera HyperScout H image of Didymos asteroid.jpg",
+        "license": "CC BY-SA 3.0 igo",
+        "author": "ESA",
+        "page": "https://commons.wikimedia.org/wiki/File:Hera_HyperScout_H_image_of_Didymos_asteroid.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Hera_HyperScout_H_image_of_Didymos_asteroid.jpg/1280px-Hera_HyperScout_H_image_of_Didymos_asteroid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Hera HyperScout H multispectral image of Didymos asteroid, looking at the asteroid surface in a combination of 25 colours at once to prospect surface materials. This image was acquired on 6 November 2026 from 28.5 km away."
+      }
+    },
+    {
+      "id": "orbiuno-20261119-1700-6",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "indico.un.org",
+      "logoCredit": null,
+      "logoSource": "https://indico.un.org/static/plugins/un/images/indico.ico",
+      "caption": "Sede de la UNESCO en París, lugar del encuentro internacional sobre primera infancia.",
+      "credit": {
+        "title": "File:UNESCO Paris.JPG",
+        "license": "CC0",
+        "author": "Alf van Beem",
+        "page": "https://commons.wikimedia.org/wiki/File:UNESCO_Paris.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/UNESCO_Paris.JPG/1280px-UNESCO_Paris.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "UNESCO Paris from the Tour Montparnasse."
+      }
+    }
+  ]
+}

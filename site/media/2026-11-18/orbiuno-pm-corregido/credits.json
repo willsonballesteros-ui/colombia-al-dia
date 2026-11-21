@@ -1,0 +1,68 @@
+[
+  {
+    "headline": "Rainforest Trust anuncia US$15 millones para Colombia",
+    "source": "https://www.rainforesttrust.org/our-impact/rainforest-news/rainforest-trust-announces-15-million-commitment-to-advance-conservation-in-colombia/",
+    "source_icon": "sourceicon-00.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:Selva_húmeda_tropical_de_Guapi.jpg",
+    "image_file": "photo-00.jpg",
+    "image_title": "File:Selva húmeda tropical de Guapi.jpg",
+    "license": "CC BY 4.0",
+    "author": "Juandareina",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "Icetex inicia campaña de acuerdos de pago",
+    "source": "https://www.radionacional.co/actualidad/educacion/icetex-deuda",
+    "source_icon": "sourceicon-01.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:Icetex.jpg",
+    "image_file": "photo-01.jpg",
+    "image_title": "File:Icetex.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Rojasyesid",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "México y Estados Unidos avanzan en diálogo comercial",
+    "source": "https://efe.com/mundo/2026-11-18/reunion-trump-sheinbaum-carney/",
+    "source_icon": "sourceicon-02.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:FIFA_World_Cup_2026_Official_Draw_(54966258098).jpg",
+    "image_file": "photo-02.jpg",
+    "image_title": "File:FIFA World Cup 2026 Official Draw (54966258098).jpg",
+    "license": "Public domain",
+    "author": "U.S. Department of State",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "India mejora su perspectiva de crecimiento",
+    "source": "https://www.reuters.com/world/india/india-sees-better-growth-prospects-compared-start-year-chief-economic-adviser-2026-11-18/",
+    "source_icon": "sourceicon-03.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:BSE_-_Bombay_Stock_Exchange_Building.jpg",
+    "image_file": "photo-03.jpg",
+    "image_title": "File:BSE - Bombay Stock Exchange Building.jpg",
+    "license": "CC BY 2.0",
+    "author": "Niyantha Shekhar",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "Hera prepara nuevas imágenes de Dimorphos",
+    "source": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/watch-live-hera-s-first-images-of-post-impact-asteroid-dimorphos",
+    "source_icon": null,
+    "commons": "https://commons.wikimedia.org/wiki/File:Dimorphos_high_res_image.jpg",
+    "image_file": "photo-04.jpg",
+    "image_title": "File:Dimorphos high res image.jpg",
+    "license": "Public domain",
+    "author": "National Aeronautics and Space Administration",
+    "visual": "Fotografía real de contexto o archivo"
+  },
+  {
+    "headline": "Reconstruyen una fusión de estrellas en Andrómeda",
+    "source": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/",
+    "source_icon": "sourceicon-05.png",
+    "commons": "https://commons.wikimedia.org/wiki/File:Andromeda_galaxy.jpg",
+    "image_file": "photo-05.jpg",
+    "image_title": "File:Andromeda galaxy.jpg",
+    "license": "Public domain",
+    "author": "NASA/JPL/California Institute of Technology",
+    "visual": "Fotografía real de contexto o archivo"
+  }
+]

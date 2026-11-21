@@ -1,0 +1,139 @@
+{
+  "edition": "2026-11-19",
+  "slot": "09:30",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261119-0930-1",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "bogota.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=bogota.gov.co&sz=256",
+      "caption": "Edificio del barrio Lago Gaitán, en Bogotá, zona donde se realiza la feria de empleo tecnológico.",
+      "credit": {
+        "title": "File:Bogotá - edificio en el barrio Lago Gaitán.JPG",
+        "license": "CC BY-SA 3.0",
+        "author": "Felipe Restrepo Acosta",
+        "page": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_-_edificio_en_el_barrio_Lago_Gait%C3%A1n.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Bogot%C3%A1_-_edificio_en_el_barrio_Lago_Gait%C3%A1n.JPG/1280px-Bogot%C3%A1_-_edificio_en_el_barrio_Lago_Gait%C3%A1n.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Bogotá - edificio Carrera 18 A con Calle 82 barrio Lago Gaitán, localidad de Chapinero."
+      }
+    },
+    {
+      "id": "orbiuno-20261119-0930-2",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "www.mineducacion.gov.co",
+      "logoCredit": {
+        "title": "File:Logo Ministerio de Educación Nacional Colombia.svg",
+        "license": "CC BY 4.0",
+        "author": "Gobierno de Colombia",
+        "page": "https://commons.wikimedia.org/wiki/File:Logo_Ministerio_de_Educaci%C3%B3n_Nacional_Colombia.svg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Logo_Ministerio_de_Educaci%C3%B3n_Nacional_Colombia.svg/1280px-Logo_Ministerio_de_Educaci%C3%B3n_Nacional_Colombia.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Logo of the Colombian Ministry of National Education"
+      },
+      "logoSource": "https://commons.wikimedia.org/wiki/File:Logo_Ministerio_de_Educaci%C3%B3n_Nacional_Colombia.svg",
+      "caption": "Estudiantes de Colombia durante una clase, en el contexto del sistema educativo nacional.",
+      "credit": {
+        "title": "File:Salonconestudiantes.jpg",
+        "license": "CC BY-SA 3.0",
+        "author": "Rodianchevere",
+        "page": "https://commons.wikimedia.org/wiki/File:Salonconestudiantes.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Salonconestudiantes.jpg/1280px-Salonconestudiantes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "un salón de clase en Colombia con los estudiantes y sus respectivos uniformes atendiendo la clase"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-0930-3",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "www.europapress.es",
+      "logoCredit": {
+        "title": "File:Europa press logo.svg",
+        "license": "Public domain",
+        "author": "Europa Press",
+        "page": "https://commons.wikimedia.org/wiki/File:Europa_press_logo.svg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Europa_press_logo.svg/1280px-Europa_press_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Logo of Spanish press agency, Europa Press"
+      },
+      "logoSource": "https://commons.wikimedia.org/wiki/File:Europa_press_logo.svg",
+      "caption": "Vista panorámica de Shenzhen, ciudad china anfitriona del encuentro diplomático.",
+      "credit": {
+        "title": "File:Shenzhen Skyline from Nanshan.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Simbaxu",
+        "page": "https://commons.wikimedia.org/wiki/File:Shenzhen_Skyline_from_Nanshan.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Shenzhen_Skyline_from_Nanshan.jpg/1280px-Shenzhen_Skyline_from_Nanshan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Shenzhen Skyline from Nanshan 2016"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-0930-4",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "www.orlen.pl",
+      "logoCredit": {
+        "title": "File:Orlen wordmark logo.svg",
+        "license": "Public domain",
+        "author": "ORLEN SA",
+        "page": "https://commons.wikimedia.org/wiki/File:Orlen_wordmark_logo.svg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Orlen_wordmark_logo.svg/1280px-Orlen_wordmark_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Wordmark logo of Orlen"
+      },
+      "logoSource": "https://commons.wikimedia.org/wiki/File:Orlen_wordmark_logo.svg",
+      "caption": "Estación de servicio de ORLEN en Breslavia, Polonia, fotografiada en enero de 2026.",
+      "credit": {
+        "title": "File:Stacja paliw Orlen Wrocław (2026-01-18).jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Olgierd Rudak",
+        "page": "https://commons.wikimedia.org/wiki/File:Stacja_paliw_Orlen_Wroc%C5%82aw_(2026-01-18).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Stacja_paliw_Orlen_Wroc%C5%82aw_%282026-01-18%29.jpg/1280px-Stacja_paliw_Orlen_Wroc%C5%82aw_%282026-01-18%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Stacja paliw Orlen przy ulicy Marii Curie-Skłodowskiej, Wrocław"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-0930-5",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "www.moneycontrol.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.moneycontrol.com&sz=256",
+      "caption": "Oficina corporativa de NLC India Limited en Neyveli, India, grupo de la filial de energías renovables.",
+      "credit": {
+        "title": "File:NLCIL Corp Office.jpg",
+        "license": "CC BY-SA 3.0",
+        "author": "Subramoniam92",
+        "page": "https://commons.wikimedia.org/wiki/File:NLCIL_Corp_Office.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/NLCIL_Corp_Office.jpg/1280px-NLCIL_Corp_Office.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "NLCIL Corporate Office, Neyveli, Tamil Nadu"
+      }
+    },
+    {
+      "id": "orbiuno-20261119-0930-6",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "yemen.un.org",
+      "logoCredit": {
+        "title": "File:Logo of the United Nations.svg",
+        "license": "Public domain",
+        "author": "FDRMRZUSA",
+        "page": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Nations.svg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_United_Nations.svg/1280px-Logo_of_the_United_Nations.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "Logo of the United Nations."
+      },
+      "logoSource": "https://commons.wikimedia.org/wiki/File:Logo_of_the_United_Nations.svg",
+      "caption": "Estudiantes se lavan las manos después de usar los servicios sanitarios, en Zimbabue.",
+      "credit": {
+        "title": "File:School girls washing hands.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Cecil Dzwowa",
+        "page": "https://commons.wikimedia.org/wiki/File:School_girls_washing_hands.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/School_girls_washing_hands.jpg/1280px-School_girls_washing_hands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "description": "This is an image with the theme \" Health and Wellness in Africa \" from:"
+      }
+    }
+  ]
+}

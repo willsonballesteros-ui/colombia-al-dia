@@ -1,0 +1,69 @@
+{
+  "editionDate": "2026-11-04",
+  "brand": "ORBIUNO",
+  "editionSlot": "12m",
+  "verifiedSports": 2,
+  "publicationReady": true,
+  "blockers": [],
+  "utmCampaign": "edicion_20261104_12m",
+  "links": {
+    "bio": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=bio&utm_campaign=edicion_20261104_12m",
+    "story": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=story&utm_campaign=edicion_20261104_12m",
+    "caption": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m",
+    "firstComment": "https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m"
+  },
+  "caption": "ORBIUNO | 04/11/2026\n\nEdición del mediodía · diez noticias en seis láminas.\n\n🎧 Las noticias también se escuchan en nuestra web.\nElige voz en español, tono y velocidad a tu gusto.\n\n👇 Escucha el audio y consulta las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=caption&utm_campaign=edicion_20261104_12m\n\n¿Qué noticia te impactó más? Comenta su número.\n\n@resumen.noticias  #ORBIUNO #NoticiasColombia #ResumenDelDia",
+  "firstComment": "🎧 Las noticias también se escuchan en ORBIUNO.\nEscoge la voz y la velocidad desde nuestra página.\n👇 Escucha y verifica las fuentes originales:\n🌐 https://colombia-al-dia.pages.dev/?utm_source=instagram&utm_medium=comment&utm_campaign=edicion_20261104_12m",
+  "publicationVerified": false,
+  "media": [
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/portada.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/grupo-01.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/grupo-02.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/grupo-03.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/grupo-04.png",
+    "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-04/grupo-05.png"
+  ],
+  "sourceLinks": [
+    {
+      "title": "Carro bomba en Patía, Cauca: emergencia en la vía Panamericana",
+      "url": "https://caracol.com.co/2026/11/04/atentado-con-carro-bomba-causa-cierre-de-la-via-panamericana-en-patia-sur-del-cauca/"
+    },
+    {
+      "title": "Accidente de bus en Rosas, Cauca, deja dos muertos y diez heridos",
+      "url": "https://caracol.com.co/2026/11/04/accidente-de-bus-en-la-via-panamericana-deja-dos-muertos-y-diez-heridos-en-cauca/"
+    },
+    {
+      "title": "Alejandro Ordóñez asume el Ministerio del Interior",
+      "url": "https://www.noticiascaracol.com/politica/alejandro-ordonez-se-posesiona-como-ministro-del-interior-y-viviane-morales-como-comisionada-de-paz-rg10"
+    },
+    {
+      "title": "Operativo de seguridad en Cúcuta: más de cien capturas",
+      "url": "https://www.elespectador.com/judicial/operativo-en-cucuta-deja-109-capturados-de-la-espriella-anuncia-nueva-estrategia-militar/"
+    },
+    {
+      "title": "Corea del Norte realiza nuevos ensayos de misiles",
+      "url": "https://www.reuters.com/world/asia-pacific/north-korea-test-fires-new-air-defence-missile-system-kcna-reports-2026-11-04/"
+    },
+    {
+      "title": "Ucrania informa 40 muertos tras ataque ruso a centro de ayuda",
+      "url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/"
+    },
+    {
+      "title": "Japón estudia exigir alertas anticipadas sobre vulnerabilidades",
+      "url": "https://www.reuters.com/legal/litigation/japan-seek-software-vulnerability-data-us-ai-firms-amid-cyberattack-surge-nikkei-2026-11-04/"
+    },
+    {
+      "title": "Wall Street sube con fuerza y cae el petróleo tras las elecciones",
+      "url": "https://apnews.com/article/c0be7ca45b5875abe758e0570cb9a265"
+    },
+    {
+      "title": "Real Madrid gana 3-2 en Atenas por la Champions",
+      "url": "https://es.uefa.com/uefachampionsleague/news/02ab-21fe48f0b7da-351f3a5a0318-1000--resumen-del-miercoles-de-la-jornada-4-de-la-champions-leag/"
+    },
+    {
+      "title": "Fenerbahçe sorprende al Liverpool: victoria 3-2",
+      "url": "https://es.uefa.com/uefachampionsleague/news/02ab-21fe48f0b7da-351f3a5a0318-1000--resumen-del-miercoles-de-la-jornada-4-de-la-champions-leag/"
+    }
+  ],
+  "note": "La URL del caption en Instagram es texto, no enlace tocable: el enlace de la biografía o un sticker nativo sí puede serlo."
+}

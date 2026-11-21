@@ -1,0 +1,79 @@
+{
+  "brand": "MYCAR",
+  "date": "2026-11-14",
+  "duration": 47.849667,
+  "voice": "Kokoro ef_dora 1.25x",
+  "license_photos": [
+    {
+      "headline": "Renault 4 eléctrico abre preventa por 99,99 millones",
+      "source": "https://prensa.renault.com.co/prensa/el-regreso-de-un-icono-renault-4-llega-a-colombia-en-version-100-electrica/",
+      "photo": {
+        "file": "File:Renault 4 E-Tech (54911777481).jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_(54911777481).jpg",
+        "artist": "Alexandre Prevot",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Renault_4_E-Tech_(54911777481).jpg/960px-Renault_4_E-Tech_(54911777481).jpg"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Nueva Nissan Kicks e-Power debuta en Colombia",
+      "source": "https://www.elcarrocolombiano.com/novedades/nissan-kicks-e-power-colombia-precios-ficha-tecnica-hibrida/",
+      "photo": {
+        "file": "File:2026 Nissan Kicks - 01.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3A2026_Nissan_Kicks_-_01.jpg",
+        "artist": "This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can be used in accordance with the terms of the СС-BY-SA license. Other pho",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/2026_Nissan_Kicks_-_01.jpg/1280px-2026_Nissan_Kicks_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "Zeekr muestra 9X, 7GT y 001 FR Edition",
+      "source": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/12/sia-2026-zeekr-presenta-en-colombia-los-nuevos-9x-7gt-y-001-fr-edition-awd",
+      "photo": {
+        "file": "File:Алматы, Zeekr 007 на Макатаева.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3A%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%2C_Zeekr_007_%D0%BD%D0%B0_%D0%9C%D0%B0%D0%BA%D0%B0%D1%82%D0%B0%D0%B5%D0%B2%D0%B0.jpg",
+        "artist": "Nikolai Bulykin",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%2C_Zeekr_007_%D0%BD%D0%B0_%D0%9C%D0%B0%D0%BA%D0%B0%D1%82%D0%B0%D0%B5%D0%B2%D0%B0.jpg/1280px-%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B%2C_Zeekr_007_%D0%BD%D0%B0_%D0%9C%D0%B0%D0%BA%D0%B0%D1%82%D0%B0%D0%B5%D0%B2%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    },
+    {
+      "headline": "386 mil licencias vencerían antes de fin de año",
+      "source": "https://noticias.autocosmos.com.co/2026/11/13/mas-de-386000-licencias-de-conduccion-venceran-en-colombia-este-fin-de-ano-como-renovarlas",
+      "photo": {
+        "file": "File:Educación vial.jpg",
+        "commons": "https://commons.wikimedia.org/wiki/File%3AEducaci%C3%B3n_vial.jpg",
+        "artist": "Arandu Y.M.",
+        "license": "CC BY-SA 4.0",
+        "photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Educaci%C3%B3n_vial.jpg/1280px-Educaci%C3%B3n_vial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "note": "Fotografía real de archivo; no se presenta como una imagen del acontecimiento"
+    }
+  ],
+  "output": "/home/runner/work/colombia-al-dia/colombia-al-dia/media/2026-11-14-mycar-tarde/mycar-2026-11-12-noche.mp4",
+  "sha256": "24d8a361b3441deb9f36991580f97450cf8b03015e41d4bc057b54f747afe3e2",
+  "status": "RENDERED_NOT_PUBLISHED",
+  "edition": "16:00",
+  "video": "MYCAR-2026-11-14_TARDE_4_NOTICIAS.mp4",
+  "stories": [
+    {
+      "title": "Renault 4 eléctrico abre preventa por 99,99 millones",
+      "source": "https://prensa.renault.com.co/prensa/el-regreso-de-un-icono-renault-4-llega-a-colombia-en-version-100-electrica/"
+    },
+    {
+      "title": "Nueva Nissan Kicks e-Power debuta en Colombia",
+      "source": "https://www.elcarrocolombiano.com/novedades/nissan-kicks-e-power-colombia-precios-ficha-tecnica-hibrida/"
+    },
+    {
+      "title": "Zeekr muestra 9X, 7GT y 001 FR Edition",
+      "source": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/12/sia-2026-zeekr-presenta-en-colombia-los-nuevos-9x-7gt-y-001-fr-edition-awd"
+    },
+    {
+      "title": "386 mil licencias vencerían antes de fin de año",
+      "source": "https://noticias.autocosmos.com.co/2026/11/13/mas-de-386000-licencias-de-conduccion-venceran-en-colombia-este-fin-de-ano-como-renovarlas"
+    }
+  ]
+}
