@@ -5,5 +5,7 @@
   "manifest": "media/2026-11-21/orbiuno_0800_6_noticias_manifest.json",
   "publicationAttempted": false,
   "published": false,
-  "antiDuplicate": "[ORBIUNO-2026-11-21-0800]"
+  "antiDuplicate": "[ORBIUNO-2026-11-21-0800]",
+  "retryReason": "Corregidas expresiones GitHub Actions Secrets; no hubo publicación previa confirmada por Meta",
+  "retryCode": "20261121-secret-expression-validated"
 }
