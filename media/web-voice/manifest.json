@@ -1,5 +1,5 @@
 {
-  "voice": "es-CO-SalomeNeural",
+  "voice": "ef_dora",
   "language": "es-CO",
   "baseRate": 1.25,
   "items": {
@@ -490,100 +490,64 @@
       "speed": 1.25
     },
     "orbiuno-20261120-0800-1": {
-      "url": "./media/web-voice/8a33822bfca557004da22b8f785f.mp3",
+      "url": "./media/web-voice/47925885c1a6a238658f.mp3",
       "text": "El Departamento Nacional de Planeación puso en marcha una gira de treinta y tres audiencias públicas para escuchar propuestas regionales sobre el Plan Plurianual de Inversiones del período 2027 a 2030. Las sesiones comprenden los treinta y dos departamentos y Bogotá. El recorrido comenzó en la Amazonia y para este viernes 20 de noviembre está programada una audiencia en San José del Guaviare a las ocho de la mañana, de acuerdo con el cronograma oficial.\n\nEste plan constituye el componente de programación financiera del Plan Nacional de Desarrollo. En las reuniones se presentan las bases, los presupuestos regionales proyectados y las iniciativas que las comunidades y autoridades consideran prioritarias. Equipos técnicos del DNP participan para acompañar el diálogo y analizar las propuestas con criterios presupuestales y de coordinación territorial.\n\nLa ciudadanía debe distinguir entre intervenir en una audiencia, proponer un proyecto y recibir recursos para ejecutarlo. Estas jornadas son espacios de discusión y priorización, no anuncios de contratos u obras ya financiadas. El DNP prevé concluir el recorrido el 18 de diciembre y utilizar los resultados en la construcción de los documentos que posteriormente se presentarán al Congreso.",
-      "sha256": "47925885c1a6a238658f6e32baa71733e90d8000e4124c68b832a5d785afb01a",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "47925885c1a6a238658f6e32baa71733e90d8000e4124c68b832a5d785afb01a"
     },
     "orbiuno-20261120-0800-2": {
-      "url": "./media/web-voice/f485a1d4b367dccb07602cb7fba3.mp3",
+      "url": "./media/web-voice/4e932b41be18c8545c9c.mp3",
       "text": "El Banco de la República entregó reconocimientos a estudiantes de seis regiones del país por su participación en el concurso BanRep desde el Lente 2026. La ceremonia se celebró el miércoles 18 de noviembre en Bogotá y la entidad divulgó el balance el día siguiente. La iniciativa invita a niños y jóvenes de instituciones educativas a explicar ideas económicas mediante videos y situaciones de su vida cotidiana.\n\nLa cuarta edición reunió más de tres mil estudiantes y alrededor de cuatrocientos docentes. Seis equipos llegaron a la final, procedentes de Barranquilla, Santa María, Chiscas, Tauramena, Girardot y San Bernardo del Viento. Los trabajos se organizaron en categorías júnior y sénior y tuvieron como desafío comunicar por qué el Banco de la República puede subir las tasas de interés cuando la inflación es elevada.\n\nDurante el encuentro, los participantes visitaron espacios culturales del Banco y compartieron sus experiencias. El propósito pedagógico de la convocatoria es fomentar desde edades tempranas la comprensión de la inflación, el crédito y las decisiones económicas. Los resultados muestran distintas maneras en que los estudiantes pueden investigar temas complejos y traducirlos a relatos sencillos y cercanos.",
-      "sha256": "4e932b41be18c8545c9c6680d5484de69784637ef2aa4f0f227101947dba244f",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "4e932b41be18c8545c9c6680d5484de69784637ef2aa4f0f227101947dba244f"
     },
     "orbiuno-20261120-0800-3": {
-      "url": "./media/web-voice/8af0324a62cbf0c3def77c7e6316.mp3",
+      "url": "./media/web-voice/fdf8ab95029f439bbba5.mp3",
       "text": "Bogotá realiza este viernes 20 de noviembre en el Centro Felicidad de Chapinero el cierre de Bogotá 2038: Futuros Compartidos, un proceso cultural que invita a imaginar cómo podría transformarse la ciudad en los próximos años. La actividad es promovida por la Secretaría Distrital de Cultura, Recreación y Deporte junto con entidades distritales y actores académicos y ciudadanos.\n\nDurante tres meses se desarrollaron espacios de experimentación y diálogo sobre asuntos como la naturaleza urbana, el patrimonio, el envejecimiento de la población y la participación de las comunidades. La iniciativa propone que el diseño de la ciudad no dependa únicamente de obras físicas, sino también de relaciones sociales, equipamientos culturales y nuevas formas de colaboración territorial.\n\nEntre los lugares explorados aparecen el humedal La Vaca en Kennedy, el Paseo Entre Humedales en Fontibón y la zona industrial de Puente Aranda. El evento de cierre reúne propuestas y experiencias para que la ciudadanía pueda conocer los resultados. Se trata de un ejercicio de reflexión y planeación participativa, no de la aprobación inmediata de proyectos de construcción.",
-      "sha256": "fdf8ab95029f439bbba5f1b1e216d59a2c261ae94bada61a645428819b674c49",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "fdf8ab95029f439bbba5f1b1e216d59a2c261ae94bada61a645428819b674c49"
     },
     "orbiuno-20261120-0800-4": {
-      "url": "./media/web-voice/18e2c444191d17bf09ed5e6bbf48.mp3",
+      "url": "./media/web-voice/a8da8187ff3946e0b7ac.mp3",
       "text": "Un equipo internacional de investigadores encontró un púlsar difícil de detectar gracias a un nuevo método de análisis aplicado a información pública del telescopio espacial Fermi de la NASA. La agencia informó el 19 de noviembre que el procedimiento permite localizar señales de estas estrellas de neutrones con una velocidad de cálculo aproximadamente un millón de veces mayor que los métodos anteriores.\n\nLos científicos examinaron quince años de observaciones de rayos gamma y descubrieron el objeto identificado como PSR J1622−7204, que gira unas doscientas sesenta y una veces cada segundo. La nueva búsqueda necesitó el equivalente a diez horas de procesamiento en una computadora estándar. Una estrategia anterior no logró identificar la misma señal pese a emplear recursos de cómputo mucho mayores.\n\nLos púlsares son restos muy densos de estrellas que emiten radiación en pulsos regulares. Detectarlos resulta difícil porque los fotones que llegan a los instrumentos se mezclan con otras fuentes del universo. La investigación muestra cómo los datos científicos abiertos pueden aprovecharse con nuevos algoritmos para encontrar fenómenos que antes pasaban desapercibidos y mejorar el conocimiento del espacio.",
-      "sha256": "a8da8187ff3946e0b7acb534b47d7c60eda77c924938eb653365fa138a8339b9",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "a8da8187ff3946e0b7acb534b47d7c60eda77c924938eb653365fa138a8339b9"
     },
     "orbiuno-20261120-0800-5": {
-      "url": "./media/web-voice/071220c6d4ddb6091fa8c8a5e4a7.mp3",
+      "url": "./media/web-voice/46b97b1e668d2233ad12.mp3",
       "text": "Este viernes 20 de noviembre se conmemora el Día Mundial de la Infancia, una fecha dedicada a los derechos, las oportunidades y las voces de niñas, niños y adolescentes. UNICEF impulsa la jornada como un llamado a que las comunidades, las instituciones y los gobiernos escuchen a los menores y tengan en cuenta sus opiniones al tomar decisiones que afectan su presente y su futuro.\n\nLa conmemoración recuerda dos hitos de Naciones Unidas: la Declaración de los Derechos del Niño de 1959 y la Convención sobre los Derechos del Niño de 1989. En distintos países se organizan actividades escolares, campañas y espacios en los que los menores pueden participar en medios de comunicación, escenarios públicos y conversaciones sobre educación, protección, salud y bienestar.\n\nUNICEF plantea que escuchar a los niños no es un gesto simbólico: requiere crear condiciones reales para que participen y reciban apoyo sin discriminación. El Día Mundial de la Infancia invita a revisar qué pueden hacer las familias, las escuelas y las autoridades para proteger sus derechos y construir entornos seguros en los que puedan crecer, aprender, jugar y expresar sus ideas.",
-      "sha256": "46b97b1e668d2233ad12a1748621d80cb79c18cf8df7ffc904aa357d7b59dbfa",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "46b97b1e668d2233ad12a1748621d80cb79c18cf8df7ffc904aa357d7b59dbfa"
     },
     "orbiuno-20261120-0800-6": {
-      "url": "./media/web-voice/ded59bbe394038a84e111c388cd0.mp3",
+      "url": "./media/web-voice/fdb5ebe7cc7828c392ff.mp3",
       "text": "Investigadores de la NASA elaboraron mapas tridimensionales de alta resolución para estudiar el terreno y la vegetación de California y aportar información a la evaluación del riesgo de incendios forestales. La agencia presentó los resultados el 18 de noviembre y explicó que se trata de una cartografía que permite distinguir elementos del paisaje a escala cercana a la de árboles individuales.\n\nEl trabajo utiliza datos obtenidos mediante tecnología lidar, que emplea pulsos láser para medir distancias, y observaciones del programa de elevación tridimensional del Servicio Geológico de Estados Unidos. El conjunto de mapas tiene una resolución de aproximadamente un metro cuadrado por píxel, lo que permite describir detalles que no suelen aparecer en productos espaciales de menor resolución.\n\nEl equipo de la iniciativa Wildfire, Ecosystem Resilience, and Risk Assessment trabaja con organismos de California para que esta información respalde herramientas de planificación ambiental, manejo de recursos y protección de ecosistemas. La publicación no anuncia un incendio actual. Es un avance técnico orientado a comprender mejor dónde existen condiciones que podrían aumentar los riesgos y cómo planificar medidas preventivas.",
-      "sha256": "fdb5ebe7cc7828c392ff8b8912c8194a5e825c5eb49c3ac7bd7876e489a4ec2d",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "fdb5ebe7cc7828c392ff8b8912c8194a5e825c5eb49c3ac7bd7876e489a4ec2d"
     },
     "orbiuno-20261120-1700-1": {
-      "url": "./media/web-voice/91d1bd1f4b282dd8e6bc371cbb7b.mp3",
+      "url": "./media/web-voice/2b115f4ce23e3df5535d.mp3",
       "text": "La Organización para la Cooperación y el Desarrollo Económicos, OCDE, divulgó este viernes 20 de noviembre su nuevo estudio económico sobre Colombia. El organismo estima que el producto interno bruto crecerá un 2,6 % en 2026 y un 2,1 % en 2027. Estas cifras son previsiones, no resultados definitivos.\n\nLa OCDE reconoce la capacidad de recuperación de la economía, pero considera que la baja inversión y el lento avance de la productividad limitan las posibilidades de crecimiento a largo plazo. También señala presiones de inflación: calcula una variación del 6,0 % para 2026 y del 5,9 % para 2027, por encima del objetivo del Banco de la República.\n\nEntre las prioridades mencionadas están la sostenibilidad fiscal, el impulso a la formalización laboral y el aprovechamiento de la digitalización. El documento servirá como una referencia externa para debatir decisiones económicas y reformas en Colombia.",
-      "sha256": "2b115f4ce23e3df5535dfaea608c7532edb7f0c5f1ce1b35b3298652b8f6146d",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "2b115f4ce23e3df5535dfaea608c7532edb7f0c5f1ce1b35b3298652b8f6146d"
     },
     "orbiuno-20261120-1700-2": {
-      "url": "./media/web-voice/b1a30e579e4ed684893c54769c38.mp3",
+      "url": "./media/web-voice/c79a3b5a31dfe6e2f39b.mp3",
       "text": "El secretario del Tesoro de Estados Unidos, Scott Bessent, dijo este viernes 20 de noviembre que los presidentes Donald Trump y Xi Jinping coincidieron en que las decisiones militares apoyadas por inteligencia artificial deben conservar supervisión humana. La declaración fue recogida por Reuters después de la visita del mandatario estadounidense a China.\n\nSegún Bessent, el objetivo expresado durante la reunión fue evitar que sistemas de inteligencia artificial actúen de manera autónoma en grandes operaciones militares. El funcionario sostuvo que este entendimiento no elimina la competencia que mantienen ambos países por el liderazgo tecnológico.\n\nLa información debe leerse con una precisión importante: la fuente reporta la versión del funcionario sobre las conversaciones. No equivale por sí sola a la publicación de un tratado formal ni a una verificación independiente de los mecanismos que se pondrán en práctica. La discusión se da en medio del creciente uso de IA en ámbitos estratégicos.",
-      "sha256": "c79a3b5a31dfe6e2f39b2fe6172d7abbec1e1c97cf0861abdb32362e294dd025",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "c79a3b5a31dfe6e2f39b2fe6172d7abbec1e1c97cf0861abdb32362e294dd025"
     },
     "orbiuno-20261120-1700-3": {
-      "url": "./media/web-voice/f25588c29eff1d6f7db796bb098a.mp3",
+      "url": "./media/web-voice/81dce034ecd3bde37eac.mp3",
       "text": "La Agencia Espacial Europea, ESA, anunció la selección de Plasma Observatory como su próxima misión científica de clase media. El proyecto contempla utilizar siete naves espaciales con mediciones simultáneas para comprender cómo se comporta el plasma en las proximidades de la Tierra. La elección forma parte de su programa científico de largo plazo.\n\nEl plasma es un estado de la materia compuesto por partículas cargadas, presente en numerosos fenómenos del universo. Al estudiar simultáneamente campos eléctricos, magnéticos y partículas en distintos puntos, los investigadores esperan comprender cómo se conectan cambios rápidos y locales con estructuras mayores de la magnetosfera.\n\nLa selección no significa que los satélites ya estén construidos o en órbita. ESA explica que el proyecto deberá avanzar por nuevas fases de estudio, aprobación y fabricación, y que su lanzamiento está previsto provisionalmente para finales de la década de 2030. La noticia representa un paso de planificación científica, no una misión ya ejecutada.",
-      "sha256": "81dce034ecd3bde37eac8d4680589541ebe662553d885ff7655e341a36ca6009",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "81dce034ecd3bde37eac8d4680589541ebe662553d885ff7655e341a36ca6009"
     },
     "orbiuno-20261120-1700-4": {
-      "url": "./media/web-voice/c9cf2b1e168d31749caef1635e4e.mp3",
+      "url": "./media/web-voice/0b718aefa23f9ed0ad8a.mp3",
       "text": "El fútbol colombiano ya tiene finalistas para el Torneo BetPlay Dimayor del segundo semestre de 2026. Boca Juniors de Cali y Deportes Quindío disputarán una serie de ida y vuelta, según la programación oficial publicada este viernes 20 de noviembre. Ambos clubes llegaron a esta instancia después de superar sus grupos de cuadrangulares semifinales.\n\nLa Dimayor programó el primer encuentro para el lunes 23 de noviembre a las 7:30 p. m., en el estadio Pascual Guerrero de Cali. El partido de vuelta será el sábado 28 a las 4:30 p. m., en el estadio Centenario de Armenia. Los resultados anteriores no determinan quién ganará la serie: a la hora de cerrar esta edición, los partidos de la final estaban pendientes.\n\nBoca Juniors de Cali logró su clasificación al vencer a Unión Magdalena, mientras Deportes Quindío consiguió su cupo tras derrotar a Real Cundinamarca. El ganador se quedará con el campeonato del segundo semestre, en una fase decisiva para la disputa del ascenso; el título de esta serie no debe confundirse automáticamente con un ascenso ya obtenido.",
-      "sha256": "0b718aefa23f9ed0ad8a5dd06da47e40194c4f1e0b54c7ee5cb54f3aa44f0e93",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "0b718aefa23f9ed0ad8a5dd06da47e40194c4f1e0b54c7ee5cb54f3aa44f0e93"
     },
     "orbiuno-20261120-1700-5": {
-      "url": "./media/web-voice/01436120a4ab5061d3622b201df8.mp3",
+      "url": "./media/web-voice/ff78a33aaf11ca6ff136.mp3",
       "text": "Juanes tiene programada para este viernes 20 de noviembre su segunda presentación en El Corazón de Bogotá, dentro de su World Tour 2026. La primera ocurrió el jueves 19 y fue reseñada por Caracol Radio, que destacó la respuesta del público y un repertorio conectado con diferentes etapas de su carrera.\n\nPara esta noche, la agenda del recinto confirma apertura de puertas a las 6:00 p. m. e inicio del concierto a las 9:30 p. m. El espectáculo reúne canciones reconocidas del artista con material de JuanesTeban, su proyecto musical más reciente, en el que combina rock y elementos de raíz latinoamericana.\n\nEsta edición de las 5:00 p. m. se publica antes de la segunda función. Por ello, la información se refiere a una presentación programada y no afirma que el show del viernes ya haya ocurrido. La fuente primaria de horarios es el propio escenario, y la cobertura del primer concierto fue publicada por Caracol Radio la mañana del 20 de noviembre.",
-      "sha256": "ff78a33aaf11ca6ff136201923428f485206296a7d092bd5f27718dd228cdb9b",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "ff78a33aaf11ca6ff136201923428f485206296a7d092bd5f27718dd228cdb9b"
     },
     "orbiuno-20261120-1700-6": {
-      "url": "./media/web-voice/34df00a3069182d63d6ca1d36f19.mp3",
+      "url": "./media/web-voice/97f69bdf5bff461c2427.mp3",
       "text": "Una de las historias más curiosas de esta semana tiene como protagonista a Futa, un panda rojo que vive en el Zoológico de Chiba, Japón. Guinness World Records anunció el 17 de noviembre de 2026 que el animal, de 23 años y 135 días, se convirtió en el panda rojo vivo más longevo en cautiverio registrado por la organización.\n\nFuta nació el 5 de julio de 2003 en otro zoológico japonés y se trasladó a Chiba en 2004. Un año después llamó la atención al mantenerse erguido sobre sus patas traseras, un comportamiento que lo convirtió en una figura conocida entre visitantes y medios. Su popularidad perduró durante más de dos décadas.\n\nSegún Guinness, el panda rojo suele tener una esperanza de vida bastante inferior a la edad actual de Futa. El reconocimiento se refiere específicamente a los pandas rojos vivos en cautiverio; no debe generalizarse como récord absoluto de longevidad de todos los ejemplares silvestres. Existe una fotografía identificada de Futa tomada el 4 de octubre de 2026 en Wikimedia Commons, con autor Misei sen y licencia CC BY 4.0; para reutilizarla se deben conservar los créditos y las condiciones de la licencia.",
-      "sha256": "97f69bdf5bff461c24279e727fd81422b06db0de5f9cd5280cec0777a40c93a5",
-      "voice": "es-CO-SalomeNeural",
-      "language": "es-CO",
-      "speed": 1.25
+      "sha256": "97f69bdf5bff461c24279e727fd81422b06db0de5f9cd5280cec0777a40c93a5"
     }
   }
 }
