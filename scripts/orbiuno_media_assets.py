@@ -45,24 +45,16 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
     response = None
-    # Respetar los límites de Wikimedia: backoff progresivo sin evadir el 429.
-    for attempt in range(4):
-        try:
-            response = urlopen(request, timeout=38)
-            break
-        except HTTPError as exc:
-            if exc.code != 429 or attempt == 3:
-                raise
+    # Un 429 indica un límite explícito: no cambiar de host, proxy ni IP.
+    # Detener inmediatamente evita multiplicar solicitudes y protege al proveedor.
+    try:
+        response = urlopen(request, timeout=38)
+    except HTTPError as exc:
+        if exc.code == 429:
             retry_after = (exc.headers.get("Retry-After") or "").strip()
-            try:
-                server_delay = int(retry_after)
-            except ValueError:
-                server_delay = 0
-            pause = max((12, 35, 70)[attempt], min(server_delay, 120))
-            print("WIKIMEDIA_RATE_LIMIT_BACKOFF", attempt + 1, pause, flush=True)
-            time.sleep(pause)
-    if response is None:
-        raise RuntimeError("Sin respuesta del servidor autorizado")
+            print("MEDIA_RATE_LIMIT_429", p.hostname, "retry_after=" + retry_after[:32], flush=True)
+            raise RuntimeError("Proveedor limita solicitudes (HTTP 429). Suspender esta edición; reintentar en la siguiente ventana autorizada.") from exc
+        raise
     with response:
         final = urlsplit(response.url)
         google_favicon_hosts = {"www.google.com", "www.gstatic.com", "t0.gstatic.com", "t1.gstatic.com",
