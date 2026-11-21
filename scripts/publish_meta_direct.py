@@ -17,7 +17,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-HOST = "https://graph.instagram.com/v26.0"
+HOST = "https://graph.facebook.com/v27.0"
+EXPECTED_IG_ID = "17841438062554418"
 
 def api(method, path, token, values=None):
     url = HOST + path
@@ -70,7 +71,7 @@ def existing_media(user_id, token, marker):
             break
         # Follow paging cursor only through the authorized Instagram host.
         parsed = urllib.parse.urlparse(nxt)
-        if parsed.hostname != "graph.instagram.com":
+        if parsed.hostname != "graph.facebook.com":
             raise RuntimeError("Host de paginacion no permitido")
         url, query = parsed.path.replace("/v26.0", "", 1), dict(urllib.parse.parse_qsl(parsed.query))
         query.pop("access_token", None)
@@ -115,10 +116,12 @@ def main():
     user_id = os.getenv("ORBIUNO_IG_USER_ID")
     if not token or not user_id:
         sys.exit("Faltan GitHub Secrets ORBIUNO_IG_ACCESS_TOKEN / ORBIUNO_IG_USER_ID")
-    profile = api("GET", "/me", token, {"fields": "id,user_id,username"})
+    if user_id != EXPECTED_IG_ID:
+        sys.exit("La cuenta no coincide con ORBIUNO, se bloquea")
+    profile = api("GET", "/" + user_id, token, {"fields": "id,username"})
     if profile.get("username", "").lower().lstrip("@") != "resumen.noticias":
         sys.exit("Cuenta equivocada: se detiene antes de publicar")
-    if str(profile.get("user_id") or profile.get("id")) != user_id:
+    if str(profile.get("id")) != user_id:
         sys.exit("ID de cuenta no coincide con el secret: se detiene")
     marker = "[" + args.edition_key + "]"
     caption = args.caption.rstrip() + "\n\n" + marker
