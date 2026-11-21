@@ -6,6 +6,101 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-7529c4be3fe7e7a8",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La Selección Colombia Sub-17 derrotó a Japón y comenzó bien el Mundial de Catar: ¿cuál fue el marcador?",
+      "summary": "Titular difundido por La Patria a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Patria · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObmZvZjJjZzEyWlN5eDRWa19CRF84QXA5X0xnd1dYWEhaekJsSG5uUWhwc2FIRnhEM01lN0Q3dWJya2xhbGNhTHdVdzlUeE5UbF9lNFN5aVpjMWpMcFh0UTdTZzhoU0UxclNXTG5RLXRPbURiend3QmliRVJFaWhCdlFETUp5LXpUUXlVTFNhNjdLNUNEdHhKN2ktVFJ6RlRhTGVPWG82YVBJSFVUeTYyWHU2MDZNMXJBblB5d0FaYnI?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T09:59-05:00",
+      "relevanceScore": 7
+    },
+    {
+      "id": "rss-f60fd6ae634a6dfe",
+      "date": "2026-11-21",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Apple desarrolla su propio agente de IA para competir con OpenAI y Anthropic",
+      "summary": "Titular difundido por Bitfinanzas a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Bitfinanzas · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeUFpc3U1NERCOHlnRmo0WDRUMDAxRUg2MFZvU1dWdEVZdGgzVHVXYXpzaU1wWENCNTgxaXFnTG9uTGluQjFiQTc2QmxfVVRxNC1RcVlSQ0thaVVBLUNjZkdxVTBIQ3IxV3E2RXM1bTg2U3h0M0xZc2VXbmJMTGtDT2xpOA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T10:29-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-8dd26378d82adb96",
+      "date": "2026-11-21",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Foro ADIE 2026 plantea preparar el sistema eléctrico dominicano para los desafíos de la inteligencia artificial",
+      "summary": "Titular difundido por primicias.net a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "primicias.net · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVEN1QmhVVVQ3cmU0UWUzRHVsWWJ3OUtjRmxnanM5aTJMUGpsZ1VXQW5IbFl3cVlhdk4yZ0tRWmdvNU5Vc1VrUUV4VUNxWU5YWWlpVTlXSzZfQ2J4RXFDNnYyNmFuNk9nTm1QY3ZvSVZBcUZ6VTk4QTR5WG9xWnBmalc1cDFwWkNqeG1jWDFQd3R5TFZvRkJLNXFlRFV0ejJLTHU3VmxvajN0Z05aeVhYcFlUNDhKT2c5VXBSTUhzZElUbzVLS1dJQVNlZU1ZMjRkZjJyaQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T10:27-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-7abb710d6ebe7d9d",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia empezó con pie derecho el Mundial Sub-17: le ganó a Japón y así quedó en el grupo",
+      "summary": "Titular difundido por Revista Semana a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Revista Semana · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPelJEemFaNGhOemcwTUQyZm1sTGVDbDBickFya0tXV1M1RUYtVThaeHdsaEZlNDVlLVlPVXNuQ2dXNkdWc2JIWTAtSHhQejFNbnNYSDdnZGliVERHLU1xZWF1bUR2OGdycDktdUlGejBfQ3JoZTZra2tiVlpqWWpyRC1DZFVpRDhrcUlDRXU2LUtKNlVRRnh3RWFNSjM2YXhGaUpEMEFBcXlVWGU2WU93cG94TnhjRDZ2RmJDSXRrbVgyUVVwTU1Nbm5ZbWNFNjhVWHp1MtIB2gFBVV95cUxQYUczV2RpVmsxazJFamdkLU1yY1NiNy00dnNCZjBPRU1EbFBWM2RfZDVRYzA4eDFUTVBZbmVHbWpTNnlNZGFlN1dvM1B2UDFia2hGb0pIZ2V3c2V6enVnaVg1eTlxUnZGeExnLVFYTGVaOUN2ZGRabEoteUZ6V08xTGliRVcwc2FUQnBKVWlORTdUeEp3LS01SjVVbEJPZHFTdE9Udl9lUFlDZmI0Q05UeGVzOW9SUm1zV3JranNMX0gzSldlT2VJa0dpSmItWVhacHVIdFBCdDhiQQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T10:22-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-6481f94273063a21",
+      "date": "2026-11-21",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Triunfo sobre la hora en el debut: Colombia venció a Japón en el Mundial Sub-17",
+      "summary": "Titular difundido por La FM a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La FM · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdUdXV25EZUIwVHJQTkRkMFMzYzd2aGdEQXhSTWZUeWJvYnMxR08xQnh4eVY1T1h1SElWNllYbTdLYlR5dDZMQzIxRFhIM3RSSkRGRzBYdllSZTVhQ0RDUkhmcmRPbER2cTNVUElEamRUZTc4REJsRDVyVkl5eUlZc3R0XzZkUEVwYm45VDJ5VHZSTGJ0WHNjbmhQeGNoREEtQ25kcmdweTQ4enFBM2FLQTA5a1NvOU5ydFHSAboBQVVfeXFMT2dMd0NXNEQ0bUhUaTVxYUQzOGF1eFFUUGtHU0t4VzFXZmtlRi1WdHJ2bEoyOHNvdXRFT1BFc21vMzNZWU1fN2RlY0NkM3pkZE5xci12V2FFYXhqSUMwRlBPM2hrVkhUWVZrOUcwSU5Razl3aVNaSV9GY3ppLWlhWTJYdFE2SVc5MHplZHdKNHBBd0dqNlhLWXRhMVRFN25mV3NHT294ZDNfUld0aUFIMklkdFNYLTNkN3Zn?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T10:17-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-15b2b2e65e98f6af",
       "date": "2026-11-21",
       "category": "Colombia",
@@ -29441,8 +29536,8 @@
       "imageAlt": "Paisaje natural del Parque Tayrona, Colombia, fotografía de archivo. No implica que los recursos anunciados se destinen específicamente al parque."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-21T10:22-05:00",
-  "lastNewSourceAtBogota": "2026-11-21T10:22-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-21T10:33-05:00",
+  "lastNewSourceAtBogota": "2026-11-21T10:33-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
