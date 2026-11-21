@@ -44,8 +44,8 @@ jobs:
         run: python scripts/orbiuno_daily_preflight.py --manifest "$MANIFEST" --tries 15 --sleep 20
       - name: Publicar Reel Instagram con bloqueo anti-duplicados
         env:
-          ORBIUNO_IG_ACCESS_TOKEN: \${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
-          ORBIUNO_IG_USER_ID: \${{ secrets.ORBIUNO_IG_USER_ID }}
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
         run: python scripts/orbiuno_publish_6.py --manifest "$MANIFEST"
       - name: Conservar evidencia de Meta, incluso ante error
         if: always()
