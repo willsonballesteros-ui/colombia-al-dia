@@ -230,5 +230,6 @@
     "publicationApproved": false,
     "remark": "Una foto real contextual de cada noticia, con fecha y autor. Descargar y comprobar con Wikimedia API; no presentar fotografías históricas como si fueran del 20 de noviembre. Mantener imageRightsVerified=false hasta QA.",
     "source": "Wikimedia Commons 20/11/2026"
-  }
+  },
+  "assetRetry": "Wikimedia 429: allow audited public image CDN mirror; same six headlines, photos and licenses"
 }
