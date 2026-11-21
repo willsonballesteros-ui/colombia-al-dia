@@ -56,20 +56,58 @@ def header(d, day, slot):
            font=font(34), fill=GOLD)
 
 
-def draw_cover(news, day, slot, path):
+def draw_cover(news, day, slot, path, principal_photo):
+    """Photo-first safe-area cover: visible date/time and a single dominant headline."""
+    with Image.open(principal_photo) as original:
+        actual = original.convert("RGB")
+        if actual.width < 650 or actual.height < 450:
+            raise RuntimeError("Portada sin foto real de resolución suficiente")
+        photo = ImageOps.fit(actual, (W, 1000), method=Image.Resampling.LANCZOS)
     img = Image.new("RGB", (W, H), INK)
+    img.paste(photo, (0, 350))
     d = ImageDraw.Draw(img)
-    header(d, day, slot)
-    d.text((58, 267), "LAS SEIS NOTICIAS DE HOY", font=font(48), fill=GOLD)
-    for i, n in enumerate(news):
-        y = 385 + i * 205
-        d.rounded_rectangle((55, y, 1025, y + 186), radius=22, fill="#163753")
-        d.text((80, y + 32), f"{i+1:02}", font=font(56), fill=GOLD)
-        for j, line in enumerate(wrapped(d, n["title"], width=815, size=38, max_lines=3)):
-            d.text((182, y + 25 + j * 49), line, font=font(38), fill=WHITE)
-    d.text((62, 1764), "ESCUCHA LAS NOTICIAS COMPLETAS", font=font(30), fill=GOLD)
-    d.text((62, 1813), "colombia-al-dia.pages.dev", font=font(39), fill=WHITE)
-    img.save(path, quality=90)
+    d.rectangle((0, 0, W, 352), fill=INK)
+    d.rectangle((0, 0, W, 17), fill=TEAL)
+    d.text((64, 95), "ORBIUNO", font=font(83), fill=WHITE)
+    d.text((65, 220), "EDICIÓN DE LA MAÑANA" if slot == "08:00" else "EDICIÓN INFORMATIVA",
+           font=font(40), fill=GOLD)
+    # The date/time block is within the Instagram grid crop's central 4:5 safe area.
+    d.rounded_rectangle((52, 400, 1026, 553), radius=25, fill="#071C31")
+    date_label = datetime.fromisoformat(day).strftime("%d / %m / %Y")
+    d.text((77, 424), date_label, font=font(64), fill=WHITE)
+    d.text((76, 498), f"{slot}  HORA COLOMBIA", font=font(37), fill=GOLD)
+    d.rectangle((0, 1080, W, H), fill=INK)
+    d.rectangle((51, 1115, 67, 1375), fill=TEAL)
+    size = 61
+    while size >= 40:
+        try:
+            principal_lines = wrapped(d, news[0]["title"], width=920, size=size, max_lines=3)
+            break
+        except ValueError:
+            size -= 3
+    else:
+        raise RuntimeError("Titular de portada demasiado largo")
+    for k, line in enumerate(principal_lines):
+        d.text((95, 1133 + k * (size + 13)), line, font=font(size), fill=WHITE)
+    d.text((64, 1405), "Y OTRAS 5 NOTICIAS", font=font(37), fill=GOLD)
+    for k, n in enumerate(news[1:], 2):
+        line = str(n["title"])
+        small = 26
+        while small >= 20:
+            try:
+                pieces = wrapped(d, line, width=865, size=small, max_lines=1)
+                break
+            except ValueError:
+                small -= 1
+        if small < 20:
+            # Names remain complete in the individual story slides; no cropping here.
+            pieces = wrapped(d, line, width=865, size=26, max_lines=2)
+        y = 1473 + (k - 2) * 81
+        d.text((64, y), f"{k:02}", font=font(28), fill=TEAL)
+        for z, part in enumerate(pieces):
+            d.text((135, y + z * 30), part, font=font(small), fill=WHITE)
+    d.text((64, 1860), "colombia-al-dia.pages.dev", font=font(28), fill="#B9D2E4")
+    img.save(path, quality=91)
 
 
 def draw_story(news, ent, assets, day, slot, pos, path):
@@ -176,7 +214,7 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     audio_folder = output / "reel_audio"
     frames.mkdir(exist_ok=True)
     audio_folder.mkdir(exist_ok=True)
-    draw_cover(rows, day, slot, frames / "portada.jpg")
+    draw_cover(rows, day, slot, frames / "portada.jpg", assets / entries[0]["photoFile"])
     for i, (n, ent) in enumerate(zip(rows, entries), 1):
         draw_story(n, ent, assets, day, slot, i, frames / f"noticia-{i:02d}.jpg")
     draw_outro(day, slot, frames / "cierre.jpg")
