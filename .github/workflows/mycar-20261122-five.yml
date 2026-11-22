@@ -32,7 +32,16 @@ jobs:
         run: |
           set -euo pipefail
           python -m pip install --disable-pip-version-check Pillow requests edge-tts
-          test -x /usr/bin/ffmpeg || command -v ffmpeg
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/mycar-bin"
+            npm install --ignore-scripts --no-audit --no-fund --no-save --prefix "$RUNNER_TEMP/mycar-npm" @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            f="$RUNNER_TEMP/mycar-npm/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            p="$RUNNER_TEMP/mycar-npm/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            chmod +x "$f" "$p"
+            ln -sf "$f" "$RUNNER_TEMP/mycar-bin/ffmpeg"
+            ln -sf "$p" "$RUNNER_TEMP/mycar-bin/ffprobe"
+            echo "$RUNNER_TEMP/mycar-bin" >> "$GITHUB_PATH"
+          fi
           python -m py_compile scripts/render_mycar_22nov_5.py scripts/generate_voice.py
       - name: Generar cinco fotos con licencia, siete audios, siete láminas y MP4
         run: python scripts/render_mycar_22nov_5.py
