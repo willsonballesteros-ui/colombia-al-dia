@@ -26,6 +26,10 @@ def included_files(root: Path):
             child.name in PUBLIC_ROOT or child.suffix == ".html"
         ):
             yield child
+    # MyCar Noticias: feed público validado. Nunca exponer publishing_queue.json
+    feed = root / "data" / "mycar-noticias.json"
+    if feed.is_file() and not feed.is_symlink():
+        yield feed
     for folder_name in PUBLIC_DIRS:
         folder = root / folder_name
         if folder.is_dir():
