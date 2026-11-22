@@ -45,7 +45,7 @@ class PhotoFirstRenderTests(unittest.TestCase):
             bottom = image.getpixel((1000, 1900))
             self.assertTrue(all(abs(a - b) < 12 for a, b in zip(bottom, self.color)))
             # Fecha fuera de la barra superior tapada por Reels.
-            date_bg = image.getpixel((700, 285))
+            date_bg = image.getpixel((700, 320))
             self.assertLess(sum(date_bg), 260)
 
     def test_cover_shows_real_photo_through_center(self):
