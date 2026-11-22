@@ -241,5 +241,7 @@
     "audio": false,
     "qa": false,
     "published": false
-  }
+  },
+  "mediaPipeline": "scripts/orbiuno_media_unsplash_20261122_1800.py",
+  "qualityGate": "Fotografías de archivo con derechos y metadatos, voz Salomé 1.25, seis noticias; publicación Meta independiente"
 }
