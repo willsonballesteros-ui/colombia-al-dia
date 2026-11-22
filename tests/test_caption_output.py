@@ -9,9 +9,27 @@ class CaptionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.db=json.loads((ROOT/"noticias.json").read_text(encoding="utf-8"))
+        supported=(("9pm","21:00"),("7pm","19:00"),("8am","08:00"),("12m","12:00"),("6pm","18:00"))
         slots={n.get("editionSlot") for n in cls.db["news"] if n.get("date")==cls.db["editionDate"] and n.get("verification")=="editorial_verified"}
-        candidate=next((k for k,v in (("9pm","21:00"),("7pm","19:00"),("8am","08:00"),("12m","12:00"),("6pm","18:00")) if v in slots),None)
-        assert candidate, "No hay noticias verificadas para probar"
+        candidate=next((k for k,v in supported if v in slots),None)
+        if candidate is None:
+            # La última edición puede ser 09:30 u otra franja distinta del
+            # generador legado: usar la edición histórica más reciente con
+            # seis noticias verificadas, exclusivamente en esta prueba.
+            import collections
+            by_day_slot=collections.Counter(
+                (n.get("date"),n.get("editionSlot")) for n in cls.db["news"]
+                if n.get("verification")=="editorial_verified"
+            )
+            eligible=sorted(
+                ((day,key) for (day,slot),count in by_day_slot.items()
+                 for key,known_slot in supported
+                 if slot==known_slot and count==6 and isinstance(day,str)),
+                reverse=True,
+            )
+            assert eligible, "No hay ninguna edición histórica con seis noticias verificadas para probar captions"
+            cls.db=dict(cls.db,editionDate=eligible[0][0])
+            candidate=eligible[0][1]
         original=os.environ.get("ORBIUNO_EDITION_SLOT")
         os.environ["ORBIUNO_EDITION_SLOT"]=candidate
         try:
