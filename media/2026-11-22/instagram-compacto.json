@@ -1,0 +1,27 @@
+{
+  "editionDate": "2026-11-22",
+  "format": "compact_carousel_2_per_slide",
+  "slides": [
+    "portada.png",
+    "grupo-01.png",
+    "grupo-02.png",
+    "grupo-03.png"
+  ],
+  "newsCounts": [
+    2,
+    2,
+    2
+  ],
+  "maxNewsPerSlide": 2,
+  "sourceNewsIds": [
+    "orbiuno-20261122-1800-1",
+    "orbiuno-20261122-1800-2",
+    "orbiuno-20261122-1800-3",
+    "orbiuno-20261122-1800-4",
+    "orbiuno-20261122-1800-5",
+    "orbiuno-20261122-1800-6"
+  ],
+  "fullAudioInImages": false,
+  "noRepublishWithoutSubstantiveUpdates": true,
+  "note": "Portada y hasta tres láminas de dos noticias. No reutilizar en boletines de seguimiento sin novedades acreditadas."
+}

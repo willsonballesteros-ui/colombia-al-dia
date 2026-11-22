@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "brand": "MYCAR AL DÍA",
+  "website": "https://busco-autos.pages.dev/",
+  "updated_date": "2026-11-22",
+  "editions": [
+    {
+      "edition_id": "MYCAR-2026-11-22-PM-5",
+      "date": "2026-11-22",
+      "slot": "Noche",
+      "title": "Dongfeng 007 llega a Colombia con autonomía anunciada de 1.200 kilómetros",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-22/mycar-pm-5/MYCAR_22_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Dongfeng 007 llega a Colombia con autonomía anunciada de 1.200 kilómetros",
+          "summary": "El nuevo Dongfeng cero cero siete llega a Colombia como sedán electrificado con autonomía combinada anunciada de hasta mil doscientos kilómetros en su versión de rango extendido. El precio promocional publicado parte de menos de cien millones de pesos y depende de las condiciones comerciales.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/dongfeng-007-colombia-precio-autonomia-salon-automovil-bogota-2026/",
+          "image_file_title": "photo-1790137751714-476f99f978bf",
+          "photo_credit": "Emmanuel Munoz",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/white-sedan-on-tree-lined-road-4fDKrHjYgfk"
+        },
+        {
+          "title": "IM Motors debuta en Colombia con la SUV eléctrica IM6",
+          "summary": "IM Motors presenta en Colombia la camioneta eléctrica I M seis, con potencia anunciada de hasta cuatrocientos ocho caballos. El lanzamiento reportado por Autocosmos incluye precios desde ciento cincuenta y nueve millones novecientos noventa mil pesos, según la versión.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/21/sia-2026-im-motors-presenta-en-colombia-el-im6-un-suv-electrico-premium-de-hasta-408-hp",
+          "image_file_title": "photo-1785188672333-32c669e6dd92",
+          "photo_credit": "Patrick Nguyen",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/front-view-of-a-modern-electric-suv-parked-indoors-dLiAnuEU3o4"
+        },
+        {
+          "title": "AKT actualiza la Special X 110 con luces LED",
+          "summary": "La marca colombiana A K T renovó su moto Special X ciento diez. Incorpora iluminación LED, tablero digital y cambios estéticos sin novedades mecánicas anunciadas. Su precio publicado es de cinco millones seiscientos noventa mil pesos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/dos-ruedas/akt-renovo-special-x-110-colombia-luces-led-tablero-digital/",
+          "image_file_title": "photo-1712912854219-5279e0274fdd",
+          "photo_credit": "Shawn Powar",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-close-up-of-a-motorcycle-parked-on-the-street-0pY6dSciGGQ"
+        },
+        {
+          "title": "Lynk & Co 07 GT protagoniza una prueba de seguridad extrema",
+          "summary": "Una demostración de seguridad de la marca Lynk y Co en China sometió al modelo cero siete G T a una caída por un barranco y varias vueltas. Es una prueba controlada descrita por El Carro Colombiano, no una invitación a repetir maniobras peligrosas.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/noticias/lynk-co-07-gt-lanzo-barranco-demostrar-nivel-seguridad-asi-le-fue/",
+          "image_file_title": "photo-1646728502468-06d9c7b3c2c2",
+          "photo_credit": "Hyundai Motor Group",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-white-suv-driving-down-a-dirt-road-w9U6U3zN0PA"
+        },
+        {
+          "title": "MHero presenta una SUV todoterreno híbrida de 677 caballos",
+          "summary": "La MHero E cero Special Edition amplía el portafolio todoterreno de Gezpomotor en Colombia. La camioneta híbrida enchufable anuncia seiscientos setenta y siete caballos. El lanzamiento se conoció el once de noviembre y se incluye como novedad reciente, no como anuncio de hoy.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/11/mhero-e0-special-edition-el-suv-hibrido-de-677-hp-y-espiritu-aventurero-llega-a-colombia",
+          "image_file_title": "photo-1745193592657-05dc10ce804f",
+          "photo_credit": "Lens Head Media",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/an-suv-is-off-roading-on-a-rugged-landscape-8xFEH8jbBds"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-22-AM",
+      "date": "2026-11-22",
+      "slot": "08:00",
+      "title": "Geely Monjaro EM-i agota sus primeras 40 unidades",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-22/mycar-am-5/MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Geely Monjaro EM-i agota sus primeras 40 unidades",
+          "summary": "Geely agotó las primeras cuarenta unidades del Monjaro EM i en preventa durante el Salón del Automóvil. El vehículo híbrido enchufable anuncia trescientos treinta y cinco caballos. Su precio especial de lanzamiento ya no aplica a esas primeras unidades; las próximas entregas dependerán de la disponibilidad de la marca.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/geely-monjaro-em-i-colombia-precio-ficha-tecnica/",
+          "image_file_title": "photo-1757922589579-e1adec93a5ff",
+          "photo_credit": "Michail Dementiev",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-dark-blue-suv-parked-on-a-forest-road-sREh9Nsw70o"
+        },
+        {
+          "title": "BYD Atto 8 debuta como SUV familiar de siete plazas",
+          "summary": "BYD exhibe en Colombia la Atto ocho, una camioneta familiar de siete puestos. Durante el Salón del Automóvil también presenta el todoterreno Ti siete y una muestra simultánea de sus modelos eléctricos e híbridos en distintas ciudades del país.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/recomendados/byd-atto-8-colombia-debut-7-puestos-salon-byd-2026/",
+          "image_file_title": "photo-1793002814597-32fed695f754",
+          "photo_credit": "Dragon White Munthe",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/blue-byd-electric-suv-on-shore-cXE1omey8F8"
+        },
+        {
+          "title": "Tesla Cybercab se exhibe en el Salón de Bogotá",
+          "summary": "El prototipo Tesla Cybercab puede verse en el cierre del Salón del Automóvil de Bogotá. Su propuesta de movilidad autónoma no significa que ya esté disponible para comprar ni que tenga permiso para circular sin conductor en Colombia.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/resenas/tesla-cybercab-colombia-salon-automovil-bogota-datos/",
+          "image_file_title": "photo-1772171386187-bc14e6cd7804",
+          "photo_credit": "Josh Sorenson",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/car-dashboard-displaying-autonomous-driving-interface-dkEShdYwnZ0"
+        },
+        {
+          "title": "Leapmotor B10 y C10 tienen descuentos hasta hoy",
+          "summary": "Leapmotor anuncia precios especiales para sus camionetas de rango extendido B diez y C diez durante el Salón del Automóvil. Los valores promocionales anunciados son para el evento que termina hoy domingo veintidós de noviembre y deben confirmarse con la marca.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/recomendados/leapmotor-b10-c10-precios-salon-automovil-bogota-2026/",
+          "image_file_title": "photo-1703860271535-27d4543db10a",
+          "photo_credit": "Stephan Schwebe",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-woman-is-charging-a-car-in-a-parking-lot-beZxk_OHN7s"
+        },
+        {
+          "title": "Hoy cierra el Salón del Automóvil de Bogotá",
+          "summary": "Este domingo veintidós de noviembre es el último día del Salón Internacional del Automóvil de Bogotá. La exhibición en Corferias reúne marcas, modelos eléctricos e híbridos y novedades para las familias colombianas. Consulta horarios y entradas con la organización.",
+          "source": "CORFERIAS",
+          "source_url": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+          "image_file_title": "photo-1757852664672-b947b893136c",
+          "photo_credit": "Ryo Harianto",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/cars-displayed-at-an-indoor-exhibition-hall-with-visitors-MzaAOnOVs0I"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-21-AM",
+      "date": "2026-11-21",
+      "slot": "08:00",
+      "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-21/MYCAR_21NOV2026_0800_V8.mp4",
+      "instagram_url": null,
+      "published_status": "IG_REEL_FB_NATIVE_VIDEO_ACK_CONFIRMED_PERMALINK_PENDING",
+      "items": [
+        {
+          "title": "Jetour G700 llega a Colombia con tecnología PHEV y 902 caballos",
+          "summary": "Jetour presenta en Colombia la camioneta G setecientos, híbrida enchufable con potencia combinada anunciada de novecientos dos caballos y tracción integral. La marca destaca una autonomía combinada homologada de hasta mil kilómetros. Su precio divulgado para el mercado colombiano es de doscientos noventa y cinco millones novecientos noventa mil pesos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-jetour-g700-llega-a-colombia-caracteristicas-y-precio-de-este-suv-phev",
+          "image_file_title": "File:Jetour Zongheng G700 007.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Jetour_Zongheng_G700_007.jpg"
+        },
+        {
+          "title": "Denza B5 remolca un Boeing 747 en prueba presentada por BYD",
+          "summary": "La Denza B cinco, camioneta híbrida enchufable de la división prémium de BYD, protagonizó una demostración en Reino Unido al remolcar un Boeing setecientos cuarenta y siete. El Carro Colombiano informó que el modelo también se exhibe en el Salón del Automóvil de Bogotá. La foto es de archivo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/noticias/byd-denza-b5-remolco-boeing-747-dos-llantas-salon-automovil/",
+          "image_file_title": "File:Denza B5 DMO Granite Gray 04.jpg",
+          "photo_credit": "Ethan Llamas",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Denza_B5_DMO_Granite_Gray_04.jpg"
+        },
+        {
+          "title": "Citroën presenta en Colombia el C3 Plus con sistema híbrido",
+          "summary": "Citroën presentó para Colombia el C tres Plus, versión con sistema híbrido ligero de cuarenta y ocho voltios, durante el Salón del Automóvil de Bogotá. El modelo busca combinar consumo moderado, comodidad y asistencias electrónicas. La fotografía utilizada es de un C tres europeo de archivo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/citroen-c3-plus-hibrido-colombia-precio-ficha-tecnica/",
+          "image_file_title": "File:Citroën C3 (4th generation) DSC 7103 (retouched).jpg",
+          "photo_credit": "Original photo by Alexander Migl, retouched by NearEMPTiness",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_(4th_generation)_DSC_7103_(retouched).jpg"
+        },
+        {
+          "title": "Lynk & Co debuta en Colombia con su SUV híbrida enchufable 01",
+          "summary": "La marca Lynk and Co debutó oficialmente en Colombia con la camioneta híbrida enchufable cero uno, representada por Casa Toro. Según El Carro Colombiano, anuncia doscientos setenta y siete caballos y hasta setecientos cincuenta kilómetros de autonomía combinada bajo el ciclo WLTP.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/lynk-and-co-01-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:Lynk & Co 01 PHEV 1X7A5819.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_01_PHEV_1X7A5819.jpg"
+        },
+        {
+          "title": "Audi RS 5 PHEV se estrena en Colombia con hasta 630 caballos",
+          "summary": "Audi presentó en Colombia su nuevo RS cinco híbrido enchufable, con potencia combinada de hasta seiscientos treinta caballos. La gama anunciada incluye versiones Sedán y Avant, además de tracción quattro y autonomía eléctrica homologada de hasta ochenta y tres kilómetros.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-audi-rs-5-llega-a-colombia-con-tecnologia-phev-y-630-hp",
+          "image_file_title": "File:Audi RS5 B10 IMG 7170.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Audi_RS5_B10_IMG_7170.jpg"
+        }
+      ],
+      "instagram_media_id": "18118407608614733",
+      "facebook_video_id": "1008000659025010",
+      "facebook_post_id": "100141169648736_1157287287260481",
+      "facebook_post_type": "native_video_over_90_seconds",
+      "published_at_date": "2026-11-21",
+      "media_qa_sha256": "0c1912a429016841c37af7a3928df55bec7c73cbb5409964de5918f63f19630c",
+      "video_duration_seconds": 128.41
+    },
+    {
+      "edition_id": "MYCAR-2026-11-20-NOCHE-NUEVA",
+      "date": "2026-11-20",
+      "slot": "Noche",
+      "title": "GWM Tank 700 híbrida llega a Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261120-noche-nueva/previews/2026-11-20/mycar-noche-nueva-5/MYCAR_20_NOV_2026_NOCHE_NUEVA_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "published_status": "INSTAGRAM_REEL_FB_NATIVE_REEL_ACK_CONFIRMED_PERMALINK_PENDING",
+      "items": [
+        {
+          "title": "GWM Tank 700 híbrida llega a Colombia",
+          "summary": "La Tank setecientos híbrida enchufable llegó al mercado colombiano. GWM anuncia quinientos veintinueve caballos combinados, tracción cuatro por cuatro y precio inicial de trescientos noventa y nueve millones novecientos mil pesos.",
+          "source": "GWM COLOMBIA",
+          "source_url": "https://pdn.gwm.com.co/blog/gwm-tank-700-suv-hibrida-lujo-potencia/",
+          "image_file_title": "File:2024 Tank 700 Hi4-T front view.png",
+          "photo_credit": "iMoD Official",
+          "photo_license": "CC BY 3.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Tank_700_Hi4-T_front_view.png"
+        },
+        {
+          "title": "Ventas de carros en Colombia crecen casi 40 %",
+          "summary": "Las matrículas de vehículos nuevos en Colombia aumentaron treinta y nueve coma cinco por ciento entre enero y octubre, según el balance publicado por La República. La llegada de marcas y la electrificación impulsan el mercado.",
+          "source": "LA REPÚBLICA",
+          "source_url": "https://www.larepublica.co/especiales/automotores/la-venta-de-vehiculos-sigue-acelerando-a-buen-ritmo-4529062",
+          "image_file_title": "File:Tesla Model Y (2025) autoMOBIL Tübingen 2025 DSC 2802.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_(2025)_autoMOBIL_Tübingen_2025_DSC_2802.jpg"
+        },
+        {
+          "title": "Xiaomi inicia venta de carros fuera de China",
+          "summary": "Xiaomi inició la comercialización de sus vehículos en Emiratos Árabes Unidos, con el sedán SU siete y otras dos familias electrificadas. La marca prepara una expansión internacional más amplia en dos mil veintisiete.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/industria/xiaomi-vende-carros-fuera-china-hasta-81-mas-caros/",
+          "image_file_title": "File:Xiaomi SU7 with Tianjin plates.jpg",
+          "photo_credit": "Benlisquare",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Xiaomi_SU7_with_Tianjin_plates.jpg"
+        },
+        {
+          "title": "Volvo XC40 híbrida regresa a Colombia",
+          "summary": "Volvo anunció en el Salón del Automóvil de Bogotá el regreso de su XC cuarenta B cuatro con tecnología híbrida ligera. La marca también presentó una campaña centrada en la seguridad vial.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/15/sia-2026-volvo-presenta-su-campana-de-seguridad-y-anuncia-el-regreso-a-colombia-del-xc40-b4-mhev",
+          "image_file_title": "File:2024 Volvo XC40 B4 facelift front.jpg",
+          "photo_credit": "LuvsMG481",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Volvo_XC40_B4_facelift_front.jpg"
+        },
+        {
+          "title": "Salón del Automóvil reúne 83 marcas en Bogotá",
+          "summary": "El Salón Internacional del Automóvil de Bogotá reúne más de ochenta marcas en Corferias, con propuestas eléctricas, híbridas, familiares y todoterreno. La exhibición estará abierta hasta el veintidós de noviembre.",
+          "source": "CARACOL RADIO",
+          "source_url": "https://caracol.com.co/2026/11/20/salon-del-automovil-2026-83-marcas-llegaran-a-corferias-con-vehiculos-electricos-y-de-lujo/",
+          "image_file_title": "File:Agora and Corferias event and buissines district.png",
+          "photo_credit": "Mriobomorales",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Agora_and_Corferias_event_and_buissines_district.png"
+        }
+      ],
+      "instagram_media_id": "17994625170076566",
+      "facebook_post_id": "100141169648736_1156763303979546",
+      "facebook_post_type": "native_reel"
+    },
+    {
+      "edition_id": "MYCAR-2026-11-20-AM",
+      "date": "2026-11-20",
+      "slot": "08:00",
+      "title": "Nissan Kicks e-POWER debuta en Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261120-0800/previews/2026-11-20/mycar-0800-5-final/MYCAR_20_NOV_2026_0800_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Nissan Kicks e-POWER debuta en Colombia",
+          "summary": "Nissan presentó en Colombia la nueva Kicks e Pówer, una SUV cuyas ruedas son impulsadas por un motor eléctrico mientras uno a gasolina genera electricidad. Colombia es el primer mercado fuera de Japón elegido para comercializarla. El lanzamiento se realizó en el Salón del Automóvil de Bogotá.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/18/sia-2026-nissan-kicks-e-power-llega-a-colombia-caracteristicas-versiones-y-precios",
+          "image_file_title": "File:Nissan KICKS G 2WD (6AA-P16).jpg",
+          "photo_credit": "Tokumeigakarinoaoshima",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_KICKS_G_2WD_(6AA-P16).jpg"
+        },
+        {
+          "title": "Hyundai revela una nueva generación del Elantra",
+          "summary": "Hyundai reveló en Los Ángeles la octava generación del Elantra. El sedán modelo dos mil veintisiete incorpora un diseño renovado y nuevas funciones de conectividad. La compañía también anunció una versión híbrida dos mil veintiocho, prevista para mercados internacionales.",
+          "source": "HYUNDAI",
+          "source_url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001306?category=product&topic=product-cars",
+          "image_file_title": "File:2027 Hyundai The All New Avante (Elantra) CN8 blue 2.0 Outdoor.jpg",
+          "photo_credit": "Avante2025",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2027_Hyundai_The_All_New_Avante_(Elantra)_CN8_blue_2.0_Outdoor.jpg"
+        },
+        {
+          "title": "Peugeot 3008 Hybrid llega a Colombia",
+          "summary": "El Peugeot tres mil ocho Hybrid llegó al Salón del Automóvil de Bogotá con tecnología híbrida ligera de cuarenta y ocho voltios. Mantiene su carrocería de estilo fastback y suma un sistema eléctrico de apoyo al motor. La marca busca ampliar la oferta de SUV con menores consumos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/peugeot-3008-hybrid-2027-colombia-tecnologia-mild-hybrid-48v/",
+          "image_file_title": "File:Peugeot 3008 Hybrid 136 e-DSC6 Allure (III) – f 09022025.jpg",
+          "photo_credit": "© M 93",
+          "photo_license": "CC BY-SA 3.0 de",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Peugeot_3008_Hybrid_136_e-DSC6_Allure_(III)_–_f_09022025.jpg"
+        },
+        {
+          "title": "Citroën Jumper regresa al mercado colombiano",
+          "summary": "Citroën retomó la comercialización de la furgoneta Jumper en Colombia. El vehículo de trabajo llega con motor diésel, distintas configuraciones de carrocería y una capacidad de carga anunciada de hasta mil trescientos sesenta y seis kilos. La novedad está dirigida al transporte de mercancías.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/citroen-jumper-colombia-versiones-capacidad-motor-diesel-2026/",
+          "image_file_title": "File:Citroën Jumper (2024) IMG 6032.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Citroën_Jumper_(2024)_IMG_6032.jpg"
+        },
+        {
+          "title": "Cupra León VZ se vende con 296 caballos",
+          "summary": "La marca Cupra ya comercializa en Colombia el León VZ, con motor turbo de dos litros, doscientos noventa y seis caballos y caja automática de doble embrague. Su lanzamiento oficial se realizó en Antioquia y amplía la oferta local de deportivos compactos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/cupra-leon-vz-colombia-precio-datos-ficha-tecnica-2027/",
+          "image_file_title": "File:Cupra Leon VZ 2.0 TSI (2025) (54716658451).jpg",
+          "photo_credit": "Charles from Port Chester, New York",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Cupra_Leon_VZ_2.0_TSI_(2025)_(54716658451).jpg"
+        }
+      ],
+      "instagram_media_id": "17934194295164272",
+      "facebook_post_id": "100141169648736_1156274277361782",
+      "facebook_post_type": "linked_video_post",
+      "published_status": "meta_ack_confirmed_permalink_pending"
+    },
+    {
+      "edition_id": "MYCAR-2026-11-19-1700",
+      "date": "2026-11-19",
+      "slot": "17:00",
+      "title": "Volkswagen Golf GTI regresa a Colombia con 261 caballos",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/mycar-20261119-1700/previews/2026-11-19/mycar-1700-5-codec-v4/MYCAR_19_NOV_2026_1700_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Volkswagen Golf GTI regresa a Colombia con 261 caballos",
+          "summary": "Después de seis años fuera del mercado colombiano, el Volkswagen Golf GTI regresó al Salón del Automóvil de Bogotá. La nueva versión llega con doscientos sesenta y un caballos y mantiene la tradición del deportivo compacto alemán.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/volkswagen-golf-gti-colombia-lanzamiento-precio/",
+          "image_file_title": "File:Volkswagen Golf VIII GTI Facelift DSC 7803.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_GTI_Facelift_DSC_7803.jpg"
+        },
+        {
+          "title": "BMW M350 y X5 amplían la oferta premium en Colombia",
+          "summary": "BMW aprovecha el Salón del Automóvil de Bogotá para mostrar el M trescientos cincuenta y la actualización del X cinco. La marca apuesta por tecnología y equipamiento para los compradores de vehículos premium en Colombia.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/16/sia-2026-los-nuevos-bmw-m350-y-bmw-x5-llegan-a-colombia",
+          "image_file_title": "File:BMW M350 xDrive Limousine in der BMW Welt Bild 1 2026-10-18.jpg",
+          "photo_credit": "Strubbl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BMW_M350_xDrive_Limousine_in_der_BMW_Welt_Bild_1_2026-10-18.jpg"
+        },
+        {
+          "title": "Nissan Frontier Pro híbrida enchufable llega a la exhibición",
+          "summary": "Nissan exhibe en Colombia la Frontier Pro híbrida enchufable. La camioneta combina motores de combustión y eléctrico y anuncia hasta trescientos cincuenta caballos de potencia. Es uno de los movimientos hacia una oferta de pickups electrificadas.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/13/sia-2026-nissan-frontier-pro-phev-llega-a-colombia-precio-y-caracteristicas",
+          "image_file_title": "File:Nissan Frontier Pro PHEV 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_Frontier_Pro_PHEV_001.jpg"
+        },
+        {
+          "title": "Ram Dakota presenta su nueva generación en Colombia",
+          "summary": "La nueva Ram Dakota amplía la oferta de camionetas de trabajo en Colombia. La marca anunció motor turbodiésel y una capacidad de carga cercana a una tonelada, con precios de referencia a partir de ciento noventa millones de pesos.",
+          "source": "AUTOCOSMOS",
+          "source_url": "https://noticias.autocosmos.com.co/2026/10/08/nueva-ram-dakota-en-colombia-precio-desde-190-millones-y-motor-turbodiesel",
+          "image_file_title": "File:Ram Dakota South America front right - Autosdeprimera (cropped-1).jpg",
+          "photo_credit": "https://www.youtube.com/@AutosdeprimeraYT",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Ram_Dakota_South_America_front_right_-_Autosdeprimera_(cropped-1).jpg"
+        },
+        {
+          "title": "Porsche 911 GT3 Touring aterriza en el mercado colombiano",
+          "summary": "Porsche anunció en Colombia el 911 GT tres Touring, un deportivo atmosférico de quinientos diez caballos. Mantiene una apariencia más discreta que la versión con gran alerón, pero conserva una orientación de altas prestaciones.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/porsche-911-gt3-touring-colombia-precio-caracteristicas/",
+          "image_file_title": "File:Porsche 911 GT3 Touring (992.2) 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_Touring_(992.2)_001.jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-19-AM",
+      "date": "2026-11-19",
+      "slot": "10:00",
+      "title": "Renault Kwid 2027: seis airbags desde $49,99 millones",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/preview/approved-v2-20261119-1000/previews/2026-11-19/mycar-1000-5-v2/MYCAR_19_NOV_2026_1000_5_NOTICIAS_REVISION_V2.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df7t6U_lEgx/",
+      "items": [
+        {
+          "title": "Renault Kwid 2027: seis airbags desde $49,99 millones",
+          "summary": "Renault presentó en Colombia la evolución del Kwid con seis airbags, diseño renovado y nuevas tecnologías. El precio anunciado arranca en $49,99 millones.",
+          "source": "RENAULT SOFASA",
+          "source_url": "https://prensa.renault.com.co/prensa/el-renault-kwid-evoluciona-con-mas-tecnologia-diseno-renovado-y-seis-airbags/",
+          "image_file_title": "File:Renault Kwid - Facelift (2026).png",
+          "photo_credit": "(G)jabz",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_Kwid_-_Facelift_(2026).png"
+        },
+        {
+          "title": "BYD Sealion 7 eléctrica llega por $116,99 millones",
+          "summary": "La BYD Sealion 7 con tracción trasera fue presentada para Colombia con autonomía anunciada de hasta 440 km en ciclo WLTC y un precio inicial de $116,99 millones.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+          "image_file_title": "File:BYD Sealion 7, RWD, Japan, 2025, front.jpg",
+          "photo_credit": "Kazyakuruma",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BYD_Sealion_7,_RWD,_Japan,_2025,_front.jpg"
+        },
+        {
+          "title": "Audi RS 5 híbrido enchufable llega con 630 caballos",
+          "summary": "Audi anunció para Colombia el RS 5 con sistema híbrido enchufable y potencia conjunta informada de 630 caballos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/17/sia-2026-audi-rs-5-llega-a-colombia-con-tecnologia-phev-y-630-hp",
+          "image_file_title": "File:Audi RS 5 Avant (B10) – f 21082026.jpg",
+          "photo_credit": "© M 93",
+          "photo_license": "CC BY-SA 3.0 de",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Audi_RS_5_Avant_(B10)_–_f_21082026.jpg"
+        },
+        {
+          "title": "Chevrolet incorporará Gemini en seis modelos de Colombia",
+          "summary": "Chevrolet anunció la incorporación de Google Gemini en seis modelos comercializados en Colombia, con nuevas funciones de asistencia y conectividad.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/chevrolet-incorpora-google-gemini-en-colombia-modelos-compatibles-y-funciones",
+          "photo_credit": "BuickCentury04",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2026_Chevrolet_Equinox_EV.jpg"
+        },
+        {
+          "title": "Toyota y Pony.ai ponen a operar robotaxis sin conductor",
+          "summary": "Pony.ai y Toyota anunciaron el inicio de operaciones comerciales de vehículos robotaxi totalmente autónomos.",
+          "source": "PONY.AI",
+          "source_url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+          "photo_credit": "Oq10pass",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Toyota_bZ4X_Z_(FWD)_'26_(1).jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-18-PM-5",
+      "date": "2026-11-18",
+      "slot": "Noche",
+      "title": "MINI lanza Cooper Paul Smith y Oxford en Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-18/mycar-pm-5/MYCAR_18_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "MINI lanza Cooper Paul Smith y Oxford en Colombia",
+          "summary": "MINI presentó en Bogotá dos ediciones especiales del Cooper. La versión Paul Smith tendrá quince unidades para Colombia, mientras que las tres unidades Oxford ya encontraron comprador.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/mini-cooper-paul-smith-oxford-edition-colombia-precio-unidades/",
+          "image_file_title": "File:Mini Hatch (F65) Paul Smith Edition Pro Auto Zuerich 2026 IMG 9161.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Mini_Hatch_(F65)_Paul_Smith_Edition_Pro_Auto_Zuerich_2026_IMG_9161.jpg"
+        },
+        {
+          "title": "Deepal S09 inicia preventa en Colombia",
+          "summary": "Deepal exhibe en Bogotá la S cero nueve, una camioneta con seis puestos, sistema de rango extendido, tracción integral y casi quinientos caballos de potencia.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/deepal-s09-colombia-precio-preventa-ficha-tecnica-suv/",
+          "image_file_title": "File:Deepal S09 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Deepal_S09_001.jpg"
+        },
+        {
+          "title": "Lynk & Co 01 debuta como híbrido enchufable",
+          "summary": "Lynk y Co debutó en Colombia con la SUV cero uno. Ofrece un sistema híbrido enchufable y una potencia combinada de doscientos setenta y siete caballos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/lynk-and-co-01-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:Lynk & Co 01 154924.jpg",
+          "photo_credit": "Trop86",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Lynk_&_Co_01_154924.jpg"
+        },
+        {
+          "title": "Jetour T2 híbrido 4x4 llega a Colombia",
+          "summary": "Jetour presentó la T dos híbrida con tracción cuatro por cuatro. Su ficha técnica anuncia seiscientos caballos de potencia conjunta y nuevos recursos para conducir fuera del asfalto.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/jetour-t2-4x4-colombia-precio-caracteristicas/",
+          "image_file_title": "File:Front view of Jetour T2 i-DM during GIIAS 2026 in Bandung 20260911 195917.jpg",
+          "photo_credit": "M Raisfath",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Front_view_of_Jetour_T2_i-DM_during_GIIAS_2026_in_Bandung_20260911_195917.jpg"
+        },
+        {
+          "title": "Carros eléctricos crecen más del 60 % en Europa",
+          "summary": "Las matriculaciones de carros totalmente eléctricos en dieciocho mercados europeos aumentaron más del sesenta por ciento en octubre frente al año anterior, informó Reuters.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/markets/europe/europe-ev-sales-jump-october-high-oil-prices-subsidies-fuel-demand-2026-11-18/",
+          "image_file_title": "File:Elektroauto beim Laden.jpg",
+          "photo_credit": "Wega14",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Elektroauto_beim_Laden.jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-18-AM",
+      "date": "2026-11-18",
+      "slot": "08:00",
+      "title": "Denza se prepara para llegar a Colombia en 2027",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-18/mycar-am/MYCAR_18_NOV_2026_0800_REEL_PUBLICAR.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df4hQq1Dw4s/",
+      "items": [
+        {
+          "title": "Denza se prepara para llegar a Colombia en 2027",
+          "summary": "Denza, la marca de lujo del grupo BYD, confirmó su llegada a Colombia para febrero de dos mil veintisiete. Presentó los modelos B cinco, una camioneta híbrida enchufable, y Z nueve ge te, un deportivo eléctrico de lujo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/denza-colombia-modelos-precios-b5-z9gt-marca-lujo-byd/",
+          "image_file_title": "File:Denza Z9 GT IAA 2025 DSC 2253.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Denza_Z9_GT_IAA_2025_DSC_2253.jpg"
+        },
+        {
+          "title": "BYD Sealion 7 anuncia 440 kilómetros de autonomía",
+          "summary": "La nueva BYD Sealion siete, de tracción trasera, llega al mercado colombiano con doscientos veintiocho caballos, batería Blade y hasta cuatrocientos cuarenta kilómetros bajo ciclo W L T C. Su precio inicial anunciado es de ciento dieciséis millones novecientos noventa mil pesos.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/17/sia-2026-byd-sealion-7-rwd-llega-a-colombia-precio-y-autonomia-de-440-km",
+          "image_file_title": "File:BYD SEALION 7 on display in front of JR Gate Tower - 2.jpg",
+          "photo_credit": "Kyu3a",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BYD_SEALION_7_on_display_in_front_of_JR_Gate_Tower_-_2.jpg"
+        },
+        {
+          "title": "Nueve de cada diez Renault Kwid colombianos se exportan",
+          "summary": "La planta Renault Sofasa de Envigado exporta cerca del noventa por ciento de los Kwid que fabrica hacia otros países latinoamericanos, según la compañía. El modelo dos mil veintisiete incorpora mejoras y continúa mostrando el talento industrial colombiano.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/industria/renault-kwid-2027-hecho-en-colombia-envigado-exportacion/",
+          "image_file_title": "File:Renault Kwid.jpg",
+          "photo_credit": "Jason Lawrence",
+          "photo_license": "CC BY 2.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_Kwid.jpg"
+        },
+        {
+          "title": "El nuevo BMW X5 se presenta en Colombia con 400 caballos",
+          "summary": "BMW presentó la nueva generación de su equis cinco para Colombia. Inicialmente llega con motor de seis cilindros, tecnología microhíbrida de cuarenta y ocho voltios y cuatrocientos caballos de potencia. La imagen de archivo muestra la generación anterior del modelo.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/bmw-x5-2027-colombia-lanzamiento-precio-caracteristicas/",
+          "image_file_title": "File:BMW X5 xDrive50e M Sport Plug Hybrid Electric Vehicle PHEV AWD 2025 (23).jpg",
+          "photo_credit": "Captainmorlypogi1959",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BMW_X5_xDrive50e_M_Sport_Plug_Hybrid_Electric_Vehicle_PHEV_AWD_2025_(23).jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-17-PM",
+      "date": "2026-11-17",
+      "slot": "18:00",
+      "title": "Zeekr trae tres novedades de lujo a Bogotá",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-17/mycar-pm/MYCAR_17_NOV_2026_1800_REEL_PUBLICAR.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df3HTN2HEMC/",
+      "items": [
+        {
+          "title": "Zeekr trae tres novedades de lujo a Bogotá",
+          "summary": "Zeekr presenta en el Salón del Automóvil de Bogotá tres modelos de lujo: nueve equis, siete ge te y cero cero uno efe erre. La marca amplía así su oferta de vehículos premium para Colombia.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/12/sia-2026-zeekr-presenta-en-colombia-los-nuevos-9x-7gt-y-001-fr-edition-awd",
+          "image_file_title": "File:Zeekr 9X 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Zeekr_9X_001.jpg"
+        },
+        {
+          "title": "JMEV GSX promete hasta 610 kilómetros",
+          "summary": "JMEV ofrece en Colombia su camioneta eléctrica ge ese equis con hasta seiscientos diez kilómetros anunciados de autonomía en el ciclo de pruebas CLTC. La autonomía real puede ser diferente según la conducción.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/09/22/jmev-gsx-el-nuevo-suv-electrico-que-llega-a-colombia-con-610-km-de-autonomia",
+          "image_file_title": "File:JMEV 01 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:JMEV_01_001.jpg"
+        },
+        {
+          "title": "General Motors quiere más robots en fábricas",
+          "summary": "General Motors planea aumentar cerca de veinte por ciento la utilización de robótica en sus plantas de producción. El objetivo es mejorar la eficiencia ante el aumento de los costos de fabricación.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/business/autos-transportation/gm-plans-20-boost-robotics-factory-costs-rise-2026-11-17/",
+          "image_file_title": "File:Working on Robonaut 2.jpg",
+          "photo_credit": "NASA",
+          "photo_license": "Public domain",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Working_on_Robonaut_2.jpg"
+        },
+        {
+          "title": "Jetour acuerda producir vehículos en Brasil",
+          "summary": "La marca china Jetour llegó a un acuerdo con autoridades de Río de Janeiro para producir vehículos en Brasil, según fuentes citadas por Reuters. Es una nueva apuesta de la industria automotriz asiática en Latinoamérica.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/world/china/chinas-jetour-reaches-deal-produce-vehicles-brazil-sources-say-2026-11-17/",
+          "image_file_title": "File:Jetour X70 Plus 2026 facelift 002.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Jetour_X70_Plus_2026_facelift_002.jpg"
+        }
+      ]
+    },
+    {
+      "edition_id": "MYCAR-2026-11-17-AM",
+      "date": "2026-11-17",
+      "slot": "08:00",
+      "title": "Renault 4 eléctrico regresa a Colombia",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-17/mycar/MYCAR_17_NOV_2026_REEL_PUBLICAR.mp4",
+      "instagram_url": "https://www.instagram.com/reel/Df2CGlsj_Bz/",
+      "items": [
+        {
+          "title": "Renault 4 eléctrico regresa a Colombia",
+          "summary": "El histórico Renault cuatro regresa a Colombia en versión totalmente eléctrica. La marca presentó el modelo durante el Salón del Automóvil de Bogotá, combinando su diseño clásico con nuevas tecnologías.",
+          "source": "EL ESPECTADOR",
+          "source_url": "https://www.elespectador.com/autos/el-iconico-renault-4-regreso-a-colombia-ahora-100-electrico/",
+          "image_file_title": "File:Renault 4 E-Tech Electric - 04.jpg",
+          "photo_credit": "Y.Leclercq",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_Electric_-_04.jpg"
+        },
+        {
+          "title": "Nissan presenta Frontier Pro híbrida enchufable",
+          "summary": "Nissan presenta en Colombia la Frontier Pro híbrida enchufable. La camioneta combina motor eléctrico y combustión, con tracción para quienes buscan una pick up de trabajo y aventura.",
+          "source": "AUTOS DE PRIMERA",
+          "source_url": "https://autosdeprimera.com/autos-de-primera/lanzamientos/nueva-nissan-frontier-pro-colombia-2026/",
+          "image_file_title": "File:Nissan Frontier Pro PHEV 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_Frontier_Pro_PHEV_001.jpg"
+        },
+        {
+          "title": "Tesla anuncia inversión de 3.000 millones de euros",
+          "summary": "Tesla anunció una inversión cercana a tres mil millones de euros para ampliar su fábrica en Alemania. El plan busca aumentar la capacidad de producción y apoyar sus próximos vehículos autónomos.",
+          "source": "REUTERS",
+          "source_url": "https://www.reuters.com/business/tesla-announces-33-billion-expansion-germany-plant-2026-11-16/",
+          "image_file_title": "File:Gigafactory 4, Apr 20, Grunheide.jpg",
+          "photo_credit": "Silas Heineken",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Gigafactory_4,_Apr_20,_Grunheide.jpg"
+        },
+        {
+          "title": "Salón del Automóvil exhibe cientos de modelos",
+          "summary": "En Bogotá, el Salón del Automóvil reúne más de ochenta marcas y cientos de vehículos hasta el veintidós de noviembre. Los visitantes pueden comparar modelos eléctricos, híbridos y de combustión en Corferias.",
+          "source": "CORFERIAS",
+          "source_url": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+          "image_file_title": "File:Agora and Corferias event and buissines district.png",
+          "photo_credit": "Mriobomorales",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Agora_and_Corferias_event_and_buissines_district.png"
+        }
+      ]
+    }
+  ]
+}
