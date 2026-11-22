@@ -1,0 +1,89 @@
+{
+  "video": "ORBIUNO_2026-11-21_1700.mp4",
+  "sha256": "0d18ad31b41c2de14e54b48549f95d8428109bc9d5bee52b68d92ea68c79abdf",
+  "news": [
+    {
+      "title": "Barranquilla acoge la final de la Sudamericana",
+      "source": "Alcaldía de Barranquilla",
+      "sourceUrl": "https://barranquilla.gov.co/mi-barranquilla/barranquilla-implementara-medidas-especiales-de-movilidad-y-seguridad-por-la-final-de-la-copa-sudamericana-2026",
+      "narration": "Boca Juniors y Atlético Mineiro se enfrentan en el Metropolitano. El Distrito anunció medidas especiales de movilidad y seguridad para la jornada."
+    },
+    {
+      "title": "La COP31 entra en tiempo extra",
+      "source": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/b54eebcade92e5ee4c513b9a5b2192a7",
+      "narration": "Las conversaciones en Antalya se prolongaron más allá del cierre previsto. Associated Press informó que los negociadores seguían buscando un acuerdo."
+    },
+    {
+      "title": "La OMM explica por qué se vigila El Niño",
+      "source": "CMNUCC",
+      "sourceUrl": "https://unfccc.int/es/cop31",
+      "narration": "Desde la COP31, su secretaria general, Celeste Saulo, explicó cómo este fenómeno puede alterar la temperatura y la lluvia en distintas regiones."
+    },
+    {
+      "title": "Vivienda y elecciones en España",
+      "source": "Reuters, vía Devdiscourse",
+      "sourceUrl": "https://www.devdiscourse.com/article/international/4010346-reuters-world-news-summary",
+      "narration": "Reuters reportó que el presidente del Gobierno, Pedro Sánchez, convocó elecciones anticipadas para el 29 de noviembre, tras protestas por la vivienda."
+    },
+    {
+      "title": "España figura entre los principales inversionistas en Colombia",
+      "source": "Revista Corrientes",
+      "sourceUrl": "https://revistacorrientes.com/noticias-del-21-de-noviembre/",
+      "narration": "Una recopilación de prensa, citando a la CEOE, sitúa a España como segundo mayor inversionista en Colombia entre 2021 y 2025."
+    },
+    {
+      "title": "Último fin de semana del Salón del Automóvil",
+      "source": "Corferias",
+      "sourceUrl": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+      "narration": "La muestra de Corferias cierra el domingo 22 de noviembre. El organizador anunció más de 80 marcas y más de 600 vehículos en exhibición."
+    }
+  ],
+  "photoCredits": [
+    {
+      "author": "Alfonso jose parejo muñoz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Estadio_Metropolitano_de_Barranquilla_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Estadio_Metropolitano_de_Barranquilla_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "author": "zolakoma",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Antalya_Harbour.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Antalya_Harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "author": "NOAA image",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "page": "https://commons.wikimedia.org/wiki/File:El_Ni%C3%B1o_in_2016.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/El_Ni%C3%B1o_in_2016.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(25759582642).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Congreso_de_los_Diputados_%2825759582642%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "author": "Pool Moncloa/Borja Puig de la Bellacasa",
+      "license": "Attribution",
+      "licenseUrl": "",
+      "page": "https://commons.wikimedia.org/wiki/File:Pedro_S%C3%A1nchez_visita_Colombia_2022.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Pedro_S%C3%A1nchez_visita_Colombia_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "author": "Felipe Restrepo Acosta",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Fuente_y_banderas_en_Corferias.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Fuente_y_banderas_en_Corferias.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "edition": "2026-11-21",
+  "slot": "17:00"
+}
