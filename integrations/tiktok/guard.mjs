@@ -1,35 +1,90 @@
-import {createHash} from 'node:crypto';
-import {readFile,writeFile,rename,open,unlink} from 'node:fs/promises';
-import {resolve} from 'node:path';
-export function validateEdition(e,now=new Date()){
- if(!e||!['ORBIUNO','MYCAR'].includes(e.brand))throw Error('Marca inválida');
- if(!/^[\w-]{8,100}$/.test(e.editionId||''))throw Error('Edición inválida');
- if(e.approved!==true||e.rightsConfirmed!==true)throw Error('Faltan aprobaciones');
- if(!/^[a-f0-9]{64}$/.test(e.mediaSha256||'')||!e.accountId)throw Error('Medio o cuenta no verificados');
- const age=now.getTime()-Date.parse(e.approvedAt);
- if(!Number.isFinite(age)||age<0||age>36*3600000)throw Error('Edición no vigente');
- return e;
+import { createHash } from 'node:crypto';
+import { createReadStream } from 'node:fs';
+import { open, readFile, rename, unlink, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+
+const BRANDS = new Set(['ORBIUNO', 'MYCAR']);
+const MAX_AGE_MS = 36 * 60 * 60 * 1000;
+const SHA256 = /^[a-f0-9]{64}$/;
+const VIDEO_URL = /^https:\/\/www\.tiktok\.com\/@[A-Za-z0-9._]+\/video\/\d+$/;
+
+export function validateEdition(edition, now = new Date()) {
+  if (!edition || typeof edition !== 'object' || !BRANDS.has(edition.brand)) throw new Error('Marca inválida');
+  if (!/^[A-Za-z0-9_-]{8,100}$/.test(edition.editionId || '')) throw new Error('ID de edición inválido');
+  if (edition.approved !== true || edition.rightsConfirmed !== true) throw new Error('Falta aprobación o derechos');
+  if (!SHA256.test(edition.mediaSha256 || '')) throw new Error('SHA256 inválido');
+  if (typeof edition.accountId !== 'string' || !edition.accountId.trim()) throw new Error('Cuenta sin verificar');
+  const age = now.getTime() - Date.parse(edition.approvedAt);
+  if (!Number.isFinite(age) || age < 0 || age > MAX_AGE_MS) throw new Error('Edición no vigente');
+  return edition;
 }
-export function ensureUnique(e,ledger){
- if(!Array.isArray(ledger))throw Error('Bitácora inválida');
- if(ledger.some(x=>x.brand===e.brand&&(x.editionId===e.editionId||x.mediaSha256===e.mediaSha256)))throw Error('Duplicado');
+
+export function ensureUnique(edition, ledger) {
+  if (!Array.isArray(ledger)) throw new Error('Bitácora inválida');
+  // O(n) sobre entradas históricas; incluye registros pendientes para evitar reenvíos.
+  if (ledger.some(row => row.brand === edition.brand &&
+      (row.editionId === edition.editionId || row.mediaSha256 === edition.mediaSha256))) {
+    throw new Error('Edición o MP4 ya registrado');
+  }
 }
-export async function sha256Mp4(path){
- const bytes=await readFile(resolve(path));
- if(bytes.length<1024||bytes.toString('ascii',4,8)!=='ftyp')throw Error('MP4 inválido');
- return createHash('sha256').update(bytes).digest('hex');
+
+export async function sha256Mp4(path) {
+  const file = await open(resolve(path), 'r');
+  try {
+    const stat = await file.stat();
+    if (!stat.isFile() || stat.size < 1024) throw new Error('MP4 demasiado pequeño');
+    const header = Buffer.alloc(8);
+    if ((await file.read(header, 0, 8, 0)).bytesRead !== 8 ||
+        header.toString('ascii', 4, 8) !== 'ftyp') throw new Error('Cabecera MP4 inválida');
+  } finally {
+    await file.close();
+  }
+  const digest = createHash('sha256');
+  for await (const chunk of createReadStream(resolve(path))) digest.update(chunk);
+  return digest.digest('hex');
 }
-export async function readLedger(path){
- try{const data=JSON.parse(await readFile(resolve(path),'utf8'));if(!Array.isArray(data))throw Error('Bitácora inválida');return data;}
- catch(err){if(err.code==='ENOENT')return [];throw err;}
+
+export async function readLedger(path) {
+  try {
+    const ledger = JSON.parse(await readFile(resolve(path), 'utf8'));
+    if (!Array.isArray(ledger)) throw new Error('Bitácora corrupta');
+    return ledger;
+  } catch (error) {
+    if (error.code === 'ENOENT') return [];
+    throw error;
+  }
 }
-export async function recordCompleted(path,e,proof){
- validateEdition(e);
- if(!proof||proof.status!=='completed'||!proof.publicationId||
- !/^https:\/\/www\.tiktok\.com\/@[^/]+\/video\/\d+$/.test(proof.url||''))throw Error('Sin prueba TikTok');
- const target=resolve(path), lock=target+'.lock',handle=await open(lock,'wx');
- try{const rows=await readLedger(target);ensureUnique(e,rows);
- rows.push({...e,publicationId:proof.publicationId,url:proof.url,verifiedAt:new Date().toISOString()});
- const tmp=target+'.'+process.pid+'.tmp';await writeFile(tmp,JSON.stringify(rows,null,2)+'\n',{flag:'wx'});await rename(tmp,target);
- }finally{await handle.close();await unlink(lock);}
+
+export async function recordCompleted(path, edition, proof, options = {}) {
+  if (!proof || proof.status !== 'completed' ||
+      typeof proof.publicationId !== 'string' || !proof.publicationId.trim() ||
+      !VIDEO_URL.test(proof.url || '')) throw new Error('Falta prueba oficial completada');
+  if (!edition || !BRANDS.has(edition.brand) || !edition.editionId ||
+      !SHA256.test(edition.mediaSha256 || '') || !edition.accountId) throw new Error('Edición inválida');
+  const target = resolve(path);
+  const lockPath = target + '.lock';
+  let lock;
+  try {
+    lock = await open(lockPath, 'wx');
+  } catch (error) {
+    if (error.code === 'EEXIST') throw new Error('Registro ocupado: no repetir publicación');
+    throw error;
+  }
+  let temporary;
+  try {
+    const ledger = await readLedger(target);
+    ensureUnique(edition, ledger);
+    const row = { brand: edition.brand, editionId: edition.editionId,
+      mediaSha256: edition.mediaSha256, accountId: edition.accountId,
+      publicationId: proof.publicationId, url: proof.url,
+      verifiedAt: (options.now || new Date()).toISOString() };
+    temporary = target + '.' + process.pid + '.' + Date.now() + '.tmp';
+    await writeFile(temporary, JSON.stringify([...ledger, row], null, 2) + '\n', { flag: 'wx' });
+    await rename(temporary, target);
+    return row;
+  } finally {
+    if (temporary) await unlink(temporary).catch(error => { if (error.code !== 'ENOENT') throw error; });
+    await lock.close();
+    await unlink(lockPath);
+  }
 }
