@@ -1,0 +1,126 @@
+name: "MyCar | 22NOV mañana cinco noticias Salomé"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/mycar-20261122-five.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-22nov-0930-five-once
+  cancel-in-progress: false
+jobs:
+  producir:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Bloquear edición caducada o repetida
+        run: |
+          set -euo pipefail
+          test "$(TZ=America/Bogota date +%F)" = "2026-11-22"
+          test ! -e media/2026-11-22/mycar-am-5/MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4
+          python -m json.tool editions/mycar-2026-11-22-am-5.json >/dev/null
+      - name: Preparar render y voz femenina Salomé 1.25x
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check Pillow requests edge-tts
+          test -x /usr/bin/ffmpeg || command -v ffmpeg
+          python -m py_compile scripts/render_mycar_22nov_5.py scripts/generate_voice.py
+      - name: Generar cinco fotos con licencia, siete audios, siete láminas y MP4
+        run: python scripts/render_mycar_22nov_5.py
+      - name: Auditoría estricta de contenido
+        run: |
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          b=Path("build/mycar_22nov5")
+          video=b/"MYCAR_22_NOV_2026_0930_5_NOTICIAS.mp4"
+          items=json.loads((b/"mycar/editorial.json").read_text(encoding="utf-8"))
+          pics=json.loads((b/"mycar/credits.json").read_text(encoding="utf-8"))
+          audio=json.loads((b/"mycar/audio/audio_report.json").read_text(encoding="utf-8"))
+          caption=(b/"MYCAR_caption.txt").read_text(encoding="utf-8")
+          assert len(items)==len(pics)==5
+          assert len(set(x["url"] for x in items))==5
+          assert all(x.get("license")=="Unsplash License" and x.get("author") and x.get("commons") for x in pics)
+          assert len(list((b/"mycar").glob("photo-*.jpg")))==5
+          assert len(list((b/"mycar").glob("slide-*.jpg")))==7
+          assert len(caption)<=2200
+          assert all(x["url"] in caption for x in items)
+          assert audio["status"]=="ok" and audio["voice"]=="es-CO-SalomeNeural" and audio["tempo"]==1.25 and len(audio["segments"])==7
+          assert "22 NOV 2026" in (b/"mycar/slides.txt").read_text() or "22 de noviembre de 2026" in caption
+          probe=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_streams","-show_format","-of","json",str(video)]))
+          assert 20<float(probe["format"]["duration"])<180
+          assert any(s.get("codec_name")=="h264" and s.get("width")==1080 and s.get("height")==1920 for s in probe["streams"])
+          assert any(s.get("codec_name")=="aac" for s in probe["streams"])
+          assert video.stat().st_size>250000
+          print("MYCAR_FIVE_NEWS_QA_OK",hashlib.sha256(video.read_bytes()).hexdigest(),probe["format"]["duration"])
+          PY
+      - name: Guardar video, voz, fuentes, créditos y página con la edición exacta
+        run: |
+          set -euo pipefail
+          folder="media/2026-11-22/mycar-am-5"
+          mkdir -p "$folder"
+          cp build/mycar_22nov5/MYCAR_22_NOV_2026_0930_5_NOTICIAS.mp4 "$folder/MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4"
+          cp build/mycar_22nov5/MYCAR_caption.txt "$folder/caption.txt"
+          cp build/mycar_22nov5/mycar/editorial.json "$folder/editorial.json"
+          cp build/mycar_22nov5/mycar/credits.json "$folder/credits.json"
+          cp build/mycar_22nov5/mycar/photo-*.jpg "$folder/"
+          cp build/mycar_22nov5/mycar/slide-*.jpg "$folder/"
+          cp build/mycar_22nov5/mycar/audio/*.mp3 "$folder/"
+          python - <<'PY'
+          import json,hashlib,html,subprocess
+          from pathlib import Path
+          day="2026-11-22"; b=Path("media/2026-11-22/mycar-am-5")
+          mp4=b/"MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4"
+          news=json.loads((b/"editorial.json").read_text(encoding="utf-8"))
+          pics=json.loads((b/"credits.json").read_text(encoding="utf-8"))
+          m={"edition":"2026-11-22","slot":"09:30","editionKey":"MYCAR-2026-11-22-0930","newsCount":5,
+             "video":mp4.name,"sha256":hashlib.sha256(mp4.read_bytes()).hexdigest(),
+             "voice":"es-CO-SalomeNeural","speed":1.25,"published":False}
+          (b/"manifest.json").write_text(json.dumps(m,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          esc=html.escape
+          base="/media/2026-11-22/mycar-am-5/"
+          rows=[]
+          for i,(n,p) in enumerate(zip(news,pics),1):
+            rows.append(f'<article><img src="{base}photo-{i-1:02d}.jpg" alt="{esc(p["visual"])}"><h2>{i}. {esc(n["title"])}</h2><p>{esc(n["say"])}</p><p><a href="{esc(n["url"])}">Fuente original: {esc(n["source"])}</a></p><p>Foto de archivo: {esc(p["author"])} · {esc(p["license"])} · <a href="{esc(p["commons"])}">Ficha original</a>. {esc(p["visual"])}</p><audio controls src="{base}n{i:02d}.mp3"></audio></article>')
+          page='<html lang="es-CO"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MYCAR Noticias 22 noviembre 2026 09:30</title><style>body{background:#071a26;color:white;font:17px/1.6 system-ui;max-width:900px;margin:0 auto;padding:20px}a{color:#7ee7ff}article{background:#133146;padding:20px;border-radius:12px;margin:22px 0}img{max-width:100%;height:320px;object-fit:cover}video{max-width:350px;width:100%}</style></head><body><header><h1>MYCAR Noticias · domingo 22 de noviembre de 2026 · 9:30 a. m. Colombia</h1><p>Cinco noticias automotor verificadas, fotos de archivo y voz femenina colombiana.</p></header><video controls playsinline src="'+base+mp4.name+'"></video>'+''.join(rows)+'<footer><a href="https://busco-autos.pages.dev/">Busco Autos</a></footer></body></html>'
+          Path("mycar-2026-11-22-0930.html").write_text(page,encoding="utf-8")
+          PY
+          python scripts/build_mycar_news_feed.py
+          python scripts/stage_cloudflare_site.py --out site
+          mkdir -p site/data
+          cp data/mycar-noticias.json site/data/mycar-noticias.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$folder" mycar-2026-11-22-0930.html site data/mycar-noticias.json
+          git commit -m "MYCAR 22NOV cinco noticias Salomé video web con fuentes"
+          for i in 1 2 3 4; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort || true; exit 1; }
+            python scripts/stage_cloudflare_site.py --out site
+            mkdir -p site/data
+            cp data/mycar-noticias.json site/data/mycar-noticias.json
+            git add site
+            if ! git diff --cached --quiet; then git commit -m "MYCAR: reconciliar Cloudflare"; fi
+            if git push origin HEAD:main; then echo MYCAR_VIDEO_PUSH_CONFIRMED; exit 0; fi
+            sleep $((i*2))
+          done
+          exit 1
+      - name: Verificar en GitHub que se generó el MP4 aprobado
+        run: test -s media/2026-11-22/mycar-am-5/MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4
+      - name: Guardar evidencia de producción
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mycar-22nov-0930-five-Salome
+          path: build/mycar_22nov5/
+          if-no-files-found: warn
+          retention-days: 45
