@@ -11,7 +11,7 @@ class NewsAudioUITests(unittest.TestCase):
     def setUpClass(cls):
         cls.data = json.loads((ROOT / "noticias.json").read_text(encoding="utf-8"))
         cls.page = (ROOT / "index.html").read_text(encoding="utf-8")
-        cls.out = build(cls.data, cls.page)
+        cls.out = build(cls.data, cls.page, as_of=cls.data['editionDate'])
 
     def test_ten_editorial_cards_have_audio_controls(self):
         expected = [
@@ -36,7 +36,7 @@ class NewsAudioUITests(unittest.TestCase):
 
     def test_homepage_defaults_to_ten_verified_stories(self):
         self.assertIn("selectedDate='today'", self.page)
-        self.assertIn("selectedDate==='today'?x.date===db.editionDate&&x.verification==='editorial_verified'",self.page)
+        self.assertIn("selectedDate==='today'?x.date===today()&&x.verification==='editorial_verified'",self.page)
         self.assertIn("Historial completo",self.page)
 
     def test_mobile_cards_are_horizontal_and_dense(self):
