@@ -115,47 +115,76 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None
  W,H=1080,1920
  with Image.open(photo) as original:
   raw=ImageOps.exif_transpose(original).convert("RGB")
-  # Fotografía real de borde a borde: reemplaza el gran recuadro superpuesto.
   base=ImageOps.fit(raw,(W,H),method=Image.Resampling.LANCZOS)
  draw=ImageDraw.Draw(base,"RGBA")
  accent=(239,196,53,255) if brand=="MYCAR" else (58,227,216,255)
- # Cabecera compacta con marca y fecha/hora, fuera del área central de la foto.
- rect(draw,(0,0,W,148),0,(5,18,34,252))
+ # Fecha dentro del video, debajo del encabezado y fuera de los controles superiores.
+ rect(draw,(0,0,W,145),0,(5,18,34,248))
  draw.rectangle((0,0,W,11),fill=accent)
- draw.text((52,32),brand,font=font(54),fill=(255,255,255,255))
- draw.text((548,52),day,font=font(28),fill=(245,230,176,255))
- # Panel inferior compacto, máximo 490 de 1920 pixeles.
- rect(draw,(0,1430,W,H),0,(5,18,34,250))
- draw.rectangle((0,1430,W,1442),fill=accent)
- kicker="NOTICIA DESTACADA" if cover else f"NOTICIA {index:02d} DE {total:02d}"
- draw.text((60,1460),kicker,font=font(29),fill=accent)
- title=item["title"]
- for sz in (58,54,50,46,42,38):
+ draw.text((54,40),brand,font=font(57),fill=(255,255,255,255))
+ rect(draw,(55,245,890,338),19,(5,18,34,238))
+ draw.text((77,265),day,font=font(37),fill=(255,230,165,255))
+
+ if index>total:
+  # Cierre explícito en vez del erróneo "NOTICIA 06 DE 05".
+  rect(draw,(55,570,1020,1335),25,(5,18,34,234))
+  for line,y,sz,color in (
+   ("ESCUCHA LA LECTURA",675,49,accent),
+   ("COMPLETA DE CADA",760,48,(255,255,255,255)),
+   ("NOTICIA",847,60,(255,255,255,255)),
+   ("EN EL ENLACE",982,52,accent),
+   ("DE NUESTRO PERFIL",1059,49,accent),
+   ("@mycar.buscoautos",1192,43,(255,255,255,255)),
+   ("busco-autos.pages.dev",1255,34,(255,230,165,255)),
+  ):
+   draw.text((78,y),line,font=font(sz),fill=color)
+  base.save(out,quality=91)
+  return
+
+ # Logo auténtico y nombre de fuente antes del titular: zona a salvo del pie de IG.
+ rect(draw,(54,1300,925,1438),21,(5,18,34,236))
+ source_x=78
+ if source_icon and Path(source_icon).is_file():
   try:
-   lines,f=wrap(draw,title,sz,965,3)
+   with Image.open(source_icon) as original_icon:
+    logo=ImageOps.contain(original_icon.convert("RGBA"),(116,116),method=Image.Resampling.LANCZOS)
+    tile=Image.new("RGBA",(128,128),(255,255,255,255))
+    tile.alpha_composite(logo,((128-logo.width)//2,(128-logo.height)//2))
+    base.paste(tile.convert("RGB"),(63,1305))
+    source_x=211
+  except Exception:
+   pass
+ draw=ImageDraw.Draw(base,"RGBA")
+ src=item["source"].upper()
+ for fsize in (43,39,35,31):
+  try:
+   src_lines,_=wrap(draw,src,fsize,700 if source_x==211 else 830,2)
    break
   except RuntimeError:
    continue
- else: raise RuntimeError("Titular fuera de panel compacto: "+title)
- for j,line in enumerate(lines):
-  draw.text((60,1514+j*(sz+12)),line,font=f,fill=(255,255,255,255))
- # Fuente en una línea o dos con logo discreto.
- rect(draw,(60,1740,1020,1829),15,accent)
- icon_x=77
- if source_icon and Path(source_icon).is_file():
+ else: raise RuntimeError("Nombre de fuente demasiado largo")
+ for j,line in enumerate(src_lines):
+  draw.text((source_x,1322+j*(fsize+5)),line,font=font(fsize),fill=accent)
+
+ # Panel breve y con texto dentro del rectángulo seguro de Instagram.
+ rect(draw,(0,1450,W,1780),0,(5,18,34,248))
+ draw.rectangle((0,1450,W,1462),fill=accent)
+ kicker="NOTICIA DESTACADA" if cover else f"NOTICIA {index:02d} DE {total:02d}"
+ draw.text((60,1468),kicker,font=font(30),fill=accent)
+ title=item["title"]
+ for sz in (56,52,48,44,40,36,32):
   try:
-   with Image.open(source_icon) as im:
-    icon=ImageOps.contain(im.convert("RGBA"),(70,70))
-    base.paste(icon,(76,1749),icon)
-    icon_x=165
-  except Exception:pass
- draw=ImageDraw.Draw(base,"RGBA")
- src=item["source"].upper()
- fsize=35 if len(src)<26 else 28
- for j,line in enumerate(wrap(draw,src,fsize,825 if icon_x==165 else 900,2)[0]):
-  draw.text((icon_x,1754+j*32),line,font=font(fsize),fill=(6,20,35,255))
- draw.text((60,1851),"BUSCO-AUTOS.PAGES.DEV · MYCAR",font=font(23),fill=(255,255,255,255))
- draw.text((60,1890),"FOTO: "+str(item.get("photo_credit","WIKIMEDIA COMMONS"))[:58],font=font(19),fill=(218,225,233,255))
+   lines,f=wrap(draw,title,sz,925,3)
+   break
+  except RuntimeError:
+   continue
+ else: raise RuntimeError("Titular fuera de zona segura: "+title)
+ for j,line in enumerate(lines):
+  draw.text((60,1520+j*(sz+13)),line,font=f,fill=(255,255,255,255))
+ # Crédito discreto; información completa en caption y web.
+ rect(draw,(54,1820,935,1868),10,(5,18,34,198))
+ draw.text((68,1832),"FOTO DE ARCHIVO: "+str(item.get("photo_credit","UNSPLASH"))[:43],
+           font=font(18),fill=(255,255,255,255))
  base.save(out,quality=91)
 def render(brand,config):
  folder=OUT/brand.lower();folder.mkdir(exist_ok=True)
@@ -169,7 +198,10 @@ def render(brand,config):
   ledger.append({"headline":n["title"],"source":n["url"],"source_icon":icon.name if icon else None,**info})
  # Build audio script matching all displayed headlines, NOT the old sample.
  input_file=folder/"audio_input.json"
- parts=[config["intro"]]+[n["say"] for n in news]+[config["outro"]]
+ outro=(config["outro"].rstrip(". ") +
+         ". Para escuchar la lectura completa de cada noticia, entra al enlace de "
+         "nuestro perfil, en busco autos punto pages punto dev.")
+ parts=[config["intro"]]+[n["say"] for n in news]+[outro]
  input_file.write_text(json.dumps({"segments":[{"id":sid,"text":s} for sid,s in zip(ids,parts)]},ensure_ascii=False,indent=2))
  audio=folder/"audio";audio.mkdir(exist_ok=True)
  cmd=[sys.executable,str(ROOT/"scripts"/"generate_voice.py"),"--input",str(input_file),"--out",str(audio)]
