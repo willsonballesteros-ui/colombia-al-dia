@@ -6,6 +6,120 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-2ac9bdb49622b045",
+      "date": "2026-11-22",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 3,7 en Chocó en la tarde de este domingo 22 de noviembre: se sintió en Cali y Pereira",
+      "summary": "Titular difundido por El Tiempo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Tiempo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPdE8zeTd3dkN4a3JUZkZQeElFRlpoVWZ5NkphRG9kVEN3OUEyNWZSUGtLYy1ySzVLTW5zb3BlLW10dmxUeGZSY2pWVEdiZm5fajNidDROa1J0SUlpM2tIbUgxZVlnZm00SjZFWlk3UlQ1YW9jdXF4THNTMFc3OGNLRUE1SGZFcG4wcHprVng3T3VVYkliRnBfcVN1b0pvY2NyTFAtSUVLYl9NMVNpbzgxOTg1MnRxeEFZV0trNXBoSjI0RmZtdlJVNVFTMG5KOGIwU0NCQ2g3MG9NckZIanUyM0tTUFpmMU54M2ItU3lZQVFfSnpUamVpZEJhWHh5YXZRUWNkRHVhbUlPUjNHUXVwUXkyclR0NTNlM01vbdIBogJBVV95cUxPRmNLOEpHODlxNldmd1pjbmtFV3hvMlRxQ0wxMEJVZU90VUhDdzdfTV9CV1ZEd3FESGxSd1REQ1pHY1RaMENZTHJzSk5NSDd6VVRvSWo2NUV5VG9lcWxyMC1mUUFSbFZMNTZwOHVBdnZJT2RQbnJxZFhoVGFtdnZIbk1XRWxFSWVjM1k5bVFTcl9OMjRXWVpfVFJRNVFvZ3BuYnJLeTJsRHVzMXNaTnZ4RVY0NFhyc3VaNEp4M2ZuSTB6T2ZLaW92c2FnbU9Dd2dRWnVpVzF0VXhleUFsT0dLdERDalloWFNSUkxjc001WXdiOUN4SW5DMWFvNE1pUms2MjdYelN6dDB5cmFkMjNGWVNDTjhVWGkzN2EwMUVqSEN2dw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T18:42-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5ca66a0d0679d9c9",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "OpenAI en el Estado: experto identifica los servicios públicos que podrían simplificar sus trámites con inteligencia artificial",
+      "summary": "Titular difundido por G5noticias a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "G5noticias · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdy0yWVUxY2dGbnJoREVpWkhDOEtVNUdxWHptNFZsR2JBU0ZmWGYySnprd2cyMFZuUzRHdlN2V2o5b3VKRFo5ZnJ1UHdtbnFud0QxZmt3TWlpNXdfUC04SnBTSy1Qc0lDZ2VpRmhYYkw3a3B4LVRBaXNJWWp0Q3phRG5LaktEdVVKaDdOd2ZvMktrd3BCSTNYUVVJM3NkZW9MMzc3OEhVb01kYm9pcnZZLURFRl9CdFBnTVlJT1VtOGh6NTNEM1ZEMll0Vl9oaVBucndfLWxlRmRJTVVsSWh5UldVMjlmUHFSb1Z6QmlEQUNQUQ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T16:45-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-5892fcb012058bb6",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Matemático de Anthropic afirma haber demostrado la hipótesis de Riemann con ayuda de inteligencia artificial",
+      "summary": "Titular difundido por Pulzo a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Pulzo · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdTN4NXhkdXFDUzB3bHBvaE5zVXJHQTZNN2ZCeGJXRVBEX0NBNXdNc1EwUDc4bHgtMjVTNU9EX2lNemZkbU1Ld1BMbTVkVEtFVk84NURqTklOOF9HUkgtT3RFdTl3N3ZZcWl6X3RacUFvUXdxWThfcHI2bU83UlBOOTJHYWMwMDRZQjBRUzg0ZFpBb21vc004THctNUk1VWNXd3BleTg2OXFxWTRIQ3NaRndOSFVVdmJ0M0FFVWZ30gHDAUFVX3lxTFBXRElyUzlaVjFxMlhXbUoxQWhtaFM2aEE5ZlN2MFB4WnF6TmtuNTZsaWxkNlU5Qnpzaks5aVllWllQV3E4TUJKR3NzZlBibkNnX1FHZUxQY1Y0eTB1NDRXT1daQUhXVTlHbkw3VEFNbzZ5cnVSTUs5NmdLaUQxanhJLUpEQWQzcmp0UDVOekJ1Y3FOMEF0UjlTTHU0d0FzYm92ZVQ4alFDcy1jRVBsUFk0SHFCQ0NrSFBYeWpIbmQwMk55Yw?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T16:20-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-b9c5ca42b7c57849",
+      "date": "2026-11-22",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia Femenina destapa sus cartas para enfrentar a Australia: las 23 convocadas por Angelo Marsiglia",
+      "summary": "Titular difundido por Claro Sports a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Claro Sports · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUmZzNWwyUFh1bXlNa1A5bXRkbjBZNHlKNW9BRE9qS0lpc29hRWtlVG5BTW1IaW8wU1dqV1NVY29RY2FndFFpeGtPUVFOMUduM1p0bXl6N0VjVHZweHF2cEdZY0xabDVianBmVXdobW1QRFlJMEdGOGxTMl96Q2xwUURRWDJvMmxOZExhb1FXOVEtS2VJNVpVSnE3bHVYdUJoVl9nclB5R0hURXVET24zNHVzYWhpcEFZYWhrLTg2ZEpCR2VvQjN5Yzk4eURVUUI3Vjc3ZE11LWZ1V2JHMFc5NXB6T01VWlR6?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T15:45-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-841502ad210afdc0",
+      "date": "2026-11-22",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Colombia Sub 17 debutó con victoria ante Japón en el Mundial de Qatar 2026",
+      "summary": "Titular difundido por Radio Nacional de Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Radio Nacional de Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUkZnNWJuQllod2lqTDBlRjczQnFqVjRfeGFUejZKMWc5c2pxSDJvb2JxZGFudV85ZGVWRjFXSUVMNVhteUVjN3FHdTJHT28zRUV0TjlXMkNWNmFmRGh6UUZLZGpkVndKOUlrOW5sOTlvX0g5U085Y09Ya3l4SHIwSA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T15:43-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-bd039c56220b24c7",
+      "date": "2026-11-21",
+      "category": "Deportes",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Este domingo se corre el Gran Premio de Portugal de MotoGP",
+      "summary": "Titular difundido por Diario Deportes a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Diario Deportes · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYVV4QVZUNjBhM3RzZVc1NTg5SmRHSVNmM3NJX29ORGRES2JuQ1ExTGZ2MjNWRXRVOFA3U2JKWEVWSEZPeGhRekdlWDQwOVJPc1lRR3pqQ2M0bmFnQkcxcWtkT05IcDk1Ym9qSTJ0X2V2V1kxbWx3c1JxYTYzVGxFNndMMWw3eHNHZHJ4UDNmblNyNGpFdmtVeEdKQV9ZUUZCek52ZFFWcTMxRDVab3c?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-21T19:29-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-7f2a63b1e4cc59ce",
       "date": "2026-11-22",
       "category": "Colombia",
@@ -31115,8 +31229,8 @@
       "imageAlt": "Desfile de moda realizado en Mozambique en 2025, fotografía de archivo. No corresponde a Bogotá Fashion Weekend."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-22T18:39-05:00",
-  "lastNewSourceAtBogota": "2026-11-22T18:39-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-22T18:58-05:00",
+  "lastNewSourceAtBogota": "2026-11-22T18:58-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
