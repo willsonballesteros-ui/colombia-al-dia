@@ -1,0 +1,111 @@
+{
+  "edition": "2026-11-22",
+  "slot": "18:00",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261122-1800-1",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "www.elespectador.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elespectador.com&sz=128",
+      "caption": "Soldados en uniforme en fotografía de archivo tomada fuera de Colombia. No muestra el ataque al batallón en Cesar.",
+      "credit": {
+        "title": "photo-1668724982255-1a3e0c72b814",
+        "author": "Oleg Ivanov",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-group-of-soldiers-in-uniform-h0jS5DeSmfo",
+        "url": "https://images.unsplash.com/photo-1668724982255-1a3e0c72b814?auto=format&fit=crop&w=1600&q=80",
+        "description": "Soldados en uniforme en fotografía de archivo tomada fuera de Colombia. No muestra el ataque al batallón en Cesar."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-1800-2",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "efe.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=efe.com&sz=128",
+      "caption": "Aficionados de fútbol en un estadio de Mallorca, España, fotografía de archivo. No muestra la final de Barranquilla.",
+      "credit": {
+        "title": "photo-1769859177914-f66488d71193",
+        "author": "David Vives",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/crowded-soccer-stadium-with-fans-watching-a-game-hphwHci8kMI",
+        "url": "https://images.unsplash.com/photo-1769859177914-f66488d71193?auto=format&fit=crop&w=1600&q=80",
+        "description": "Aficionados de fútbol en un estadio de Mallorca, España, fotografía de archivo. No muestra la final de Barranquilla."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-1800-3",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "bogota.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=bogota.gov.co&sz=128",
+      "caption": "Canastos tejidos y objetos de artesanía en fotografía de archivo. No muestra los expositores del Parque de la 93.",
+      "credit": {
+        "title": "photo-1655149588581-49191c89e470",
+        "author": "Rosemary Media",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-group-of-woven-baskets-byqk70WJWrY",
+        "url": "https://images.unsplash.com/photo-1655149588581-49191c89e470?auto=format&fit=crop&w=1600&q=80",
+        "description": "Canastos tejidos y objetos de artesanía en fotografía de archivo. No muestra los expositores del Parque de la 93."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-1800-4",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "www.reuters.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.reuters.com&sz=128",
+      "caption": "Atención hospitalaria en fotografía de archivo del National Cancer Institute. No corresponde al ébola ni a los combates en Congo.",
+      "credit": {
+        "title": "photo-1576671081741-c538eafccfff",
+        "author": "National Cancer Institute",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/doctor-administers-injection-to-patient-in-hospital-room-bM4MXYPY61U",
+        "url": "https://images.unsplash.com/photo-1576671081741-c538eafccfff?auto=format&fit=crop&w=1600&q=80",
+        "description": "Atención hospitalaria en fotografía de archivo del National Cancer Institute. No corresponde al ébola ni a los combates en Congo."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-1800-5",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "bogota.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=bogota.gov.co&sz=128",
+      "caption": "Preparación de comida callejera en Asia, fotografía de archivo ilustrativa. No muestra Gastrolab en Bogotá.",
+      "credit": {
+        "title": "photo-1769432774099-fe28f56f95fc",
+        "author": "YiChuan Li",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-person-preparing-food-at-a-street-stall-6NZRC4mS6n8",
+        "url": "https://images.unsplash.com/photo-1769432774099-fe28f56f95fc?auto=format&fit=crop&w=1600&q=80",
+        "description": "Preparación de comida callejera en Asia, fotografía de archivo ilustrativa. No muestra Gastrolab en Bogotá."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-1800-6",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "www.elespectador.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elespectador.com&sz=128",
+      "caption": "Desfile de moda realizado en Mozambique en 2025, fotografía de archivo. No corresponde a Bogotá Fashion Weekend.",
+      "credit": {
+        "title": "photo-1747171053296-84c4e8015b24",
+        "author": "Sergio Martins",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/fashion-model-walks-a-runway-during-a-show-Bkaaf9AqNvg",
+        "url": "https://images.unsplash.com/photo-1747171053296-84c4e8015b24?auto=format&fit=crop&w=1600&q=80",
+        "description": "Desfile de moda realizado en Mozambique en 2025, fotografía de archivo. No corresponde a Bogotá Fashion Weekend."
+      }
+    }
+  ]
+}
