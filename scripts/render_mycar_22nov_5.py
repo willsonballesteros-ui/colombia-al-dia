@@ -204,7 +204,7 @@ def render(brand,config):
  captions.extend("• "+n["title"] for n in news)
  captions.extend(["","Más del sector automotor: https://busco-autos.pages.dev/","", "Fuentes originales:"])
  captions.extend(n["source"]+": "+n["url"] for n in news)
- captions.extend(["","Créditos de fotografía (Wikimedia Commons):"])
+ captions.extend(["","Créditos de fotografía (Unsplash; archivo ilustrativo):"])
  captions.extend(x["author"]+" · "+x["license"]+" · "+x["commons"] for x in ledger)
  captions.extend(["","#MyCar #BuscoAutos #AutosColombia #NoticiasMotor"])
 
