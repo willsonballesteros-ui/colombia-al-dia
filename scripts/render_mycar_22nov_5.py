@@ -57,7 +57,7 @@ def probe(file):
  r=subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","default=nw=1:nk=1",str(file)],capture_output=True,text=True,check=True)
  return float(r.stdout.strip())
 def get_photo(query, folder, filename):
-    index = int(re.search(r"(\\d+)", filename).group(1))
+    index = int(re.search(r"(\d+)", filename).group(1))
     meta = PHOTOS[index]
     image_url = "https://images.unsplash.com/" + meta["id"] + "?auto=format&fit=crop&w=1600&q=80"
     response = SESSION.get(image_url, timeout=45)
