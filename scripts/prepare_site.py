@@ -286,6 +286,31 @@ def fix_today_frontend(page):
         "setInterval(loadFeed,300000);",
         "setInterval(()=>{loadFeed();if(selectedDate==='today')render();},300000);",
     )
+    # Si la pestaña permanece abierta durante la medianoche, renovar también
+    # los enlaces de edición del encabezado sin mostrar enlaces de ayer.
+    if "const refreshEditionNav=()=>{" not in page and "const render=()=>{" in page:
+        dynamic_nav = (
+            "const refreshEditionNav=()=>{"
+            "const nav=el('orbiuno-current-editions');if(!nav)return;"
+            "const day=today();"
+            "const times=[['21:00','9:00 p. m.'],['20:00','8:00 p. m.'],"
+            "['19:00','7:00 p. m.'],['18:00','6:00 p. m.'],"
+            "['17:00','5:00 p. m.'],['12:00','12:00 m.'],"
+            "['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
+            "const verified=db.news.filter(x=>x.date===day&&x.verification==='editorial_verified');"
+            "const links=times.map(([slot,label])=>{const count=verified.filter(x=>x.editionSlot===slot).length;"
+            "return count?'<a href=\"\\u0023edicion-'+slot.replace(':','')+'\" "
+            "style=\"display:inline-block;margin:5px;padding:10px 14px;background:#1b5675;"
+            "color:#fff;border-radius:8px;text-decoration:none;font-size:16px;font-weight:700\">'"
+            "+label+' · '+count+' noticias</a>':'';}).filter(Boolean).join('');"
+            "nav.dataset.day=day;"
+            "nav.innerHTML='<strong style=\"display:block;font-size:19px;margin-bottom:5px\">'"
+            "+'Noticias de hoy · '+fmt(day)+' · Colombia</strong>'+"
+            "(links||'<span>Hoy todavía no hay ediciones verificadas.</span>');"
+            "};\n"
+        )
+        page = page.replace("const render=()=>{",
+                            dynamic_nav + "const render=()=>{refreshEditionNav();", 1)
     # Texto honesto cuando la nueva edición aún no ha sido importada.
     page = page.replace(
         '<option value="today">Últimas noticias publicadas</option>',
