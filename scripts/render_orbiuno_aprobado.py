@@ -57,56 +57,39 @@ def header(d, day, slot):
 
 
 def draw_cover(news, day, slot, path, principal_photo):
-    """Photo-first safe-area cover: visible date/time and a single dominant headline."""
+    """Foto protagonista: la portada conserva >65 % de altura fotográfica."""
     with Image.open(principal_photo) as original:
         actual = original.convert("RGB")
         if actual.width < 650 or actual.height < 450:
             raise RuntimeError("Portada sin foto real de resolución suficiente")
-        photo = ImageOps.fit(actual, (W, 1000), method=Image.Resampling.LANCZOS)
-    img = Image.new("RGB", (W, H), INK)
-    img.paste(photo, (0, 350))
+        # Imagen de fondo a pantalla completa para evitar bandas gigantes.
+        photo = ImageOps.fit(actual, (W, H), method=Image.Resampling.LANCZOS)
+    img = photo.copy()
     d = ImageDraw.Draw(img)
-    d.rectangle((0, 0, W, 352), fill=INK)
-    d.rectangle((0, 0, W, 17), fill=TEAL)
-    d.text((64, 95), "ORBIUNO", font=font(83), fill=WHITE)
-    d.text((65, 220), "EDICIÓN DE LA MAÑANA" if slot == "08:00" else "EDICIÓN INFORMATIVA",
-           font=font(40), fill=GOLD)
-    # The date/time block is within the Instagram grid crop's central 4:5 safe area.
-    d.rounded_rectangle((52, 400, 1026, 553), radius=25, fill="#071C31")
-    date_label = datetime.fromisoformat(day).strftime("%d / %m / %Y")
-    d.text((77, 424), date_label, font=font(64), fill=WHITE)
-    d.text((76, 498), f"{slot}  HORA COLOMBIA", font=font(37), fill=GOLD)
-    d.rectangle((0, 1080, W, H), fill=INK)
-    d.rectangle((51, 1115, 67, 1375), fill=TEAL)
-    size = 61
-    while size >= 40:
+    # Marca estrecha y fecha legible sin tapar el motivo fotográfico.
+    d.rectangle((0, 0, W, 148), fill=INK)
+    d.rectangle((0, 0, W, 11), fill=TEAL)
+    d.text((50, 35), "ORBIUNO", font=font(59), fill=WHITE)
+    date_label = datetime.fromisoformat(day).strftime("%d/%m/%Y")
+    d.rounded_rectangle((54, 187, 715, 296), radius=17, fill=INK)
+    d.text((75, 204), f"{date_label} · {slot} CO", font=font(42), fill=GOLD)
+    # Solo un titular principal: los otros cinco se presentan en sus láminas.
+    # Panel de 400 px frente a los 840 px del diseño anterior.
+    d.rectangle((0, 1470, W, H), fill=INK)
+    d.rectangle((0, 1470, W, 1483), fill=TEAL)
+    d.text((58, 1505), "EDICIÓN INFORMATIVA · 6 NOTICIAS", font=font(30), fill=GOLD)
+    for size in (58, 54, 50, 46, 42, 38):
         try:
-            principal_lines = wrapped(d, news[0]["title"], width=920, size=size, max_lines=3)
+            lines = wrapped(d, news[0]["title"], width=965, size=size, max_lines=3)
             break
         except ValueError:
-            size -= 3
+            continue
     else:
         raise RuntimeError("Titular de portada demasiado largo")
-    for k, line in enumerate(principal_lines):
-        d.text((95, 1133 + k * (size + 13)), line, font=font(size), fill=WHITE)
-    d.text((64, 1405), "Y OTRAS 5 NOTICIAS", font=font(37), fill=GOLD)
-    for k, n in enumerate(news[1:], 2):
-        line = str(n["title"])
-        small = 26
-        while small >= 20:
-            try:
-                pieces = wrapped(d, line, width=865, size=small, max_lines=1)
-                break
-            except ValueError:
-                small -= 1
-        if small < 20:
-            # Names remain complete in the individual story slides; no cropping here.
-            pieces = wrapped(d, line, width=865, size=26, max_lines=2)
-        y = 1473 + (k - 2) * 81
-        d.text((64, y), f"{k:02}", font=font(28), fill=TEAL)
-        for z, part in enumerate(pieces):
-            d.text((135, y + z * 30), part, font=font(small), fill=WHITE)
-    d.text((64, 1860), "colombia-al-dia.pages.dev", font=font(28), fill="#B9D2E4")
+    for k, line in enumerate(lines):
+        d.text((58, 1570 + k * (size + 11)), line, font=font(size), fill=WHITE)
+    d.text((58, 1820), "Y OTRAS CINCO NOTICIAS", font=font(29), fill=GOLD)
+    d.text((58, 1870), "colombia-al-dia.pages.dev", font=font(24), fill="#B9D2E4")
     img.save(path, quality=91)
 
 
@@ -115,46 +98,52 @@ def draw_story(news, ent, assets, day, slot, pos, path):
     logo_path = assets / ent["logoFile"]
     if not photo_path.is_file() or not logo_path.is_file():
         raise RuntimeError("Falta fotografía o logo de una noticia")
-    photo = Image.open(photo_path)
-    photo.load()
-    logo = Image.open(logo_path)
-    logo.load()
-    if photo.width < 650 or photo.height < 450 or logo.width < 32:
-        raise RuntimeError("Imagen o logo ilegible")
-    img = Image.new("RGB", (W, H), INK)
-    cropped = ImageOps.fit(photo.convert("RGB"), (W, 985), method=Image.Resampling.LANCZOS)
-    img.paste(cropped, (0, 208))
+    with Image.open(photo_path) as original:
+        original.load()
+        if original.width < 650 or original.height < 450:
+            raise RuntimeError("Foto de noticia de resolución insuficiente")
+        img = ImageOps.fit(original.convert("RGB"), (W, H), method=Image.Resampling.LANCZOS)
+    with Image.open(logo_path) as original_logo:
+        original_logo.load()
+        if original_logo.width < 32:
+            raise RuntimeError("Logo ilegible")
+        logo = original_logo.convert("RGBA")
     d = ImageDraw.Draw(img)
-    header(d, day, slot)
-    d.rectangle((0, 1193, W, H), fill=INK)
-    d.rounded_rectangle((55, 1232, 245, 1300), radius=13, fill=GOLD)
-    d.text((78, 1244), f"{pos:02} / 06", font=font(32), fill=INK)
-    title_size = 58
-    while title_size >= 41:
+    # La imagen permanece visible desde 145 hasta 1430 (>66 % de la altura).
+    d.rectangle((0, 0, W, 145), fill=INK)
+    d.rectangle((0, 0, W, 10), fill=TEAL)
+    d.text((45, 33), "ORBIUNO", font=font(54), fill=WHITE)
+    date_label = datetime.fromisoformat(day).strftime("%d/%m/%Y")
+    d.text((550, 48), f"{date_label}  {slot} CO", font=font(28), fill=GOLD)
+    # Se reserva exclusivamente el último cuarto para el texto.
+    d.rectangle((0, 1430, W, H), fill=INK)
+    d.rectangle((0, 1430, W, 1442), fill=TEAL)
+    d.text((58, 1457), f"NOTICIA {pos:02} DE 06", font=font(30), fill=GOLD)
+    for title_size in (57, 53, 49, 45, 41, 37):
         try:
-            title_lines = wrapped(d, news["title"], width=950, size=title_size, max_lines=4)
+            title_lines = wrapped(d, news["title"], width=960, size=title_size, max_lines=3)
             break
         except ValueError:
-            title_size -= 3
+            continue
     else:
-        raise RuntimeError("Titular desborda incluso con fuente mínima")
+        raise RuntimeError("Titular demasiado largo para el panel compacto")
     for j, line in enumerate(title_lines):
-        d.text((62, 1330 + j * (title_size + 14)), line, font=font(title_size), fill=WHITE)
-    # Actual favicon del dominio de la fuente, junto al nombre completo legible.
-    small = ImageOps.contain(logo.convert("RGBA"), (136, 136))
-    tile = Image.new("RGBA", (150, 150), "#FFFFFF")
-    tile.alpha_composite(small, ((150-small.width)//2, (150-small.height)//2))
-    img.paste(tile.convert("RGB"), (62, 1645))
+        d.text((60, 1512 + j * (title_size + 10)), line, font=font(title_size), fill=WHITE)
+    # Identidad de la fuente sin cubrir fotografía ni titulares.
+    small = ImageOps.contain(logo, (80, 80))
+    tile = Image.new("RGBA", (88, 88), "#FFFFFF")
+    tile.alpha_composite(small, ((88-small.width)//2, (88-small.height)//2))
+    img.paste(tile.convert("RGB"), (60, 1738))
     source = news["sources"][0]["name"].upper()
-    fsize = 44 if len(source) <= 23 else 34
-    for j, line in enumerate(wrapped(d, source, width=750, size=fsize, max_lines=2)):
-        d.text((240, 1665 + j * 53), line, font=font(fsize), fill=GOLD)
-    d.text((62, 1823), "colombia-al-dia.pages.dev", font=font(31), fill=WHITE)
+    fsize = 34 if len(source) <= 23 else 28
+    for j, line in enumerate(wrapped(d, source, width=840, size=fsize, max_lines=2)):
+        d.text((169, 1750 + j * 37), line, font=font(fsize), fill=GOLD)
+    d.text((60, 1851), "colombia-al-dia.pages.dev", font=font(24), fill=WHITE)
     credit = ent["credit"]
     tail = "Foto: " + credit["author"] + " · " + credit["license"]
     if len(tail) > 85:
         tail = tail[:82] + "…"
-    d.text((62, 1874), tail, font=font(20, bold=False), fill="#D5E2E7")
+    d.text((60, 1891), tail, font=font(18, bold=False), fill="#D5E2E7")
     img.save(path, quality=90)
 
 
