@@ -59,8 +59,8 @@ def header(d, day, slot):
 def date_chip(d, day, slot):
     """Fecha legible bajo la interfaz superior de Instagram, no en la barra del teléfono."""
     date_label = datetime.fromisoformat(day).strftime("%d/%m/%Y")
-    d.rounded_rectangle((54, 245, 755, 332), radius=20, fill=(9, 29, 54, 236))
-    d.text((76, 264), f"{date_label}  ·  {slot} COLOMBIA",
+    d.rounded_rectangle((54, 380, 755, 472), radius=20, fill=(9, 29, 54, 236))
+    d.text((76, 400), f"{date_label}  ·  {slot} COLOMBIA",
            font=font(36), fill=GOLD)
 
 
