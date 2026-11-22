@@ -1,0 +1,11 @@
+{
+  "edition": "2026-11-22",
+  "slot": "18:00",
+  "editionKey": "MYCAR-2026-11-22-1800",
+  "newsCount": 5,
+  "video": "MYCAR_22_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+  "sha256": "a2cfe1c9f9c80edf321f634a6f231b6a2127e41d3ac06192b7294bda97af708e",
+  "voice": "es-CO-SalomeNeural",
+  "speed": 1.25,
+  "published": false
+}

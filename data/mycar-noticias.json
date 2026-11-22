@@ -5,6 +5,66 @@
   "updated_date": "2026-11-22",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-22-PM-5",
+      "date": "2026-11-22",
+      "slot": "Noche",
+      "title": "Dongfeng 007 llega a Colombia con autonomía anunciada de 1.200 kilómetros",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-22/mycar-pm-5/MYCAR_22_NOV_2026_NOCHE_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Dongfeng 007 llega a Colombia con autonomía anunciada de 1.200 kilómetros",
+          "summary": "El nuevo Dongfeng cero cero siete llega a Colombia como sedán electrificado con autonomía combinada anunciada de hasta mil doscientos kilómetros en su versión de rango extendido. El precio promocional publicado parte de menos de cien millones de pesos y depende de las condiciones comerciales.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/dongfeng-007-colombia-precio-autonomia-salon-automovil-bogota-2026/",
+          "image_file_title": "photo-1790137751714-476f99f978bf",
+          "photo_credit": "Emmanuel Munoz",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/white-sedan-on-tree-lined-road-4fDKrHjYgfk"
+        },
+        {
+          "title": "IM Motors debuta en Colombia con la SUV eléctrica IM6",
+          "summary": "IM Motors presenta en Colombia la camioneta eléctrica I M seis, con potencia anunciada de hasta cuatrocientos ocho caballos. El lanzamiento reportado por Autocosmos incluye precios desde ciento cincuenta y nueve millones novecientos noventa mil pesos, según la versión.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/21/sia-2026-im-motors-presenta-en-colombia-el-im6-un-suv-electrico-premium-de-hasta-408-hp",
+          "image_file_title": "photo-1785188672333-32c669e6dd92",
+          "photo_credit": "Patrick Nguyen",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/front-view-of-a-modern-electric-suv-parked-indoors-dLiAnuEU3o4"
+        },
+        {
+          "title": "AKT actualiza la Special X 110 con luces LED",
+          "summary": "La marca colombiana A K T renovó su moto Special X ciento diez. Incorpora iluminación LED, tablero digital y cambios estéticos sin novedades mecánicas anunciadas. Su precio publicado es de cinco millones seiscientos noventa mil pesos.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/dos-ruedas/akt-renovo-special-x-110-colombia-luces-led-tablero-digital/",
+          "image_file_title": "photo-1712912854219-5279e0274fdd",
+          "photo_credit": "Shawn Powar",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-close-up-of-a-motorcycle-parked-on-the-street-0pY6dSciGGQ"
+        },
+        {
+          "title": "Lynk & Co 07 GT protagoniza una prueba de seguridad extrema",
+          "summary": "Una demostración de seguridad de la marca Lynk y Co en China sometió al modelo cero siete G T a una caída por un barranco y varias vueltas. Es una prueba controlada descrita por El Carro Colombiano, no una invitación a repetir maniobras peligrosas.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/noticias/lynk-co-07-gt-lanzo-barranco-demostrar-nivel-seguridad-asi-le-fue/",
+          "image_file_title": "photo-1646728502468-06d9c7b3c2c2",
+          "photo_credit": "Hyundai Motor Group",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-white-suv-driving-down-a-dirt-road-w9U6U3zN0PA"
+        },
+        {
+          "title": "MHero presenta una SUV todoterreno híbrida de 677 caballos",
+          "summary": "La MHero E cero Special Edition amplía el portafolio todoterreno de Gezpomotor en Colombia. La camioneta híbrida enchufable anuncia seiscientos setenta y siete caballos. El lanzamiento se conoció el once de noviembre y se incluye como novedad reciente, no como anuncio de hoy.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/11/mhero-e0-special-edition-el-suv-hibrido-de-677-hp-y-espiritu-aventurero-llega-a-colombia",
+          "image_file_title": "photo-1745193592657-05dc10ce804f",
+          "photo_credit": "Lens Head Media",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/an-suv-is-off-roading-on-a-rugged-landscape-8xFEH8jbBds"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-22-AM",
       "date": "2026-11-22",
       "slot": "08:00",
