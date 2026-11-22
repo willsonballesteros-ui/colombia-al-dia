@@ -1,0 +1,123 @@
+{
+  "edition": "2026-11-22",
+  "slot": "09:30",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261122-0930-1",
+    "orbiuno-20261122-0930-2",
+    "orbiuno-20261122-0930-3",
+    "orbiuno-20261122-0930-4",
+    "orbiuno-20261122-0930-5",
+    "orbiuno-20261122-0930-6"
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "voiceEngines": [
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts"
+  ],
+  "language": "es-CO",
+  "voiceAccentAudited": false,
+  "width": 1080,
+  "height": 1920,
+  "duration": 44.63,
+  "fps": 30,
+  "sha256": "4f5e2b2c28e9347e8c9c91bd0094feb1645db2afce16c43cd92dfc06fb5b774a",
+  "video": "ORBIUNO_2026-11-22_0930_6_NOTICIAS.mp4",
+  "visualMode": "verified_real_photos",
+  "imagesCount": 6,
+  "logosCount": 6,
+  "photoCredits": [
+    {
+      "title": "photo-1636377688406-e0d0108eb882",
+      "author": "Marina T",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-harbor-filled-with-lots-of-boats-on-top-of-a-body-of-water-QmE1Qvj0E7w",
+      "url": "https://images.unsplash.com/photo-1636377688406-e0d0108eb882?auto=format&fit=crop&w=1600&q=80",
+      "description": "Puerto de Antalya, Turquía, en fotografía de archivo de 2021. No muestra las negociaciones de la COP31."
+    },
+    {
+      "title": "photo-1673199981530-df45b3289d0d",
+      "author": "Collab Media",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-large-dam-with-water-coming-out-of-it-kGocua2hRfQ",
+      "url": "https://images.unsplash.com/photo-1673199981530-df45b3289d0d?auto=format&fit=crop&w=1600&q=80",
+      "description": "Represa hidroeléctrica en fotografía de archivo ilustrativa. No corresponde a embalses de Colombia ni documenta sus niveles actuales."
+    },
+    {
+      "title": "photo-1772171386187-bc14e6cd7804",
+      "author": "Josh Sorenson",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/car-dashboard-displaying-autonomous-driving-interface-dkEShdYwnZ0",
+      "url": "https://images.unsplash.com/photo-1772171386187-bc14e6cd7804?auto=format&fit=crop&w=1600&q=80",
+      "description": "Interior de un Tesla Model Y con pantalla de conducción asistida, fotografía de archivo. No es el prototipo Cybercab ni muestra Corferias."
+    },
+    {
+      "title": "photo-1771166446975-2e9e9a9cd3d0",
+      "author": "Miguel Alcântara",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/runners-in-a-marathon-race-on-a-city-street-nFz4XuVpPD8",
+      "url": "https://images.unsplash.com/photo-1771166446975-2e9e9a9cd3d0?auto=format&fit=crop&w=1600&q=80",
+      "description": "Atletas en una carrera urbana, fotografía de archivo de 2026. No corresponde a CORREMITIERRA en Bogotá."
+    },
+    {
+      "title": "photo-1454942901704-3c44c11b2ad1",
+      "author": "Joshua Earle",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/man-standing-on-top-of-rock-mountain-during-golden-hour-9idqIGrLuTE",
+      "url": "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?auto=format&fit=crop&w=1600&q=80",
+      "description": "Paisaje natural de Villa de Leyva, Boyacá, fotografía de archivo de 2016. No muestra el Festival Mágico."
+    },
+    {
+      "title": "photo-1757852664672-b947b893136c",
+      "author": "Ryo Harianto",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/cars-displayed-at-an-indoor-exhibition-hall-with-visitors-MzaAOnOVs0I",
+      "url": "https://images.unsplash.com/photo-1757852664672-b947b893136c?auto=format&fit=crop&w=1600&q=80",
+      "description": "Vehículos en un museo automotor de Japón, fotografía de archivo. No corresponde al Salón del Automóvil de Bogotá 2026."
+    }
+  ],
+  "openingStyle": "saludo_corto_directo_a_noticias",
+  "burnedSubtitles": false,
+  "sourceOnly": false,
+  "publicationAuthorized": false,
+  "news": [
+    {
+      "id": "orbiuno-20261122-0930-1",
+      "title": "COP31 termina sin un acuerdo climático general",
+      "sourceUrl": "https://apnews.com/article/f6e36c4caf13ec6fed57c9f077cbd067"
+    },
+    {
+      "id": "orbiuno-20261122-0930-2",
+      "title": "Colombia vigila la caída del nivel de sus embalses",
+      "sourceUrl": "https://www.elespectador.com/economia/colombia-se-aleja-del-80-en-sus-embalses-y-aumenta-la-preocupacion-por-el-nino/"
+    },
+    {
+      "id": "orbiuno-20261122-0930-3",
+      "title": "Tesla Cybercab se exhibe en el Salón del Automóvil de Bogotá",
+      "sourceUrl": "https://www.elcarrocolombiano.com/resenas/tesla-cybercab-colombia-salon-automovil-bogota-datos/"
+    },
+    {
+      "id": "orbiuno-20261122-0930-4",
+      "title": "CORREMITIERRA reúne este domingo a corredores en Bogotá",
+      "sourceUrl": "https://www.elespectador.com/deportes/mas-deportes/de-correr-a-construir-comunidad-la-propuesta-de-corremitierra-para-el-running-colombiano/"
+    },
+    {
+      "id": "orbiuno-20261122-0930-5",
+      "title": "Villa de Leyva celebra su Festival Mágico este domingo",
+      "sourceUrl": "https://www.elespectador.com/turismo/festival-magico-de-villa-de-leyva-programacion-invitados-y-que-podra-hacer/"
+    },
+    {
+      "id": "orbiuno-20261122-0930-6",
+      "title": "Hoy termina el Salón del Automóvil de Bogotá 2026",
+      "sourceUrl": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias"
+    }
+  ],
+  "published": false,
+  "instagramId": null,
+  "instagramPermalink": null
+}

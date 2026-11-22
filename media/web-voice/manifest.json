@@ -1,5 +1,5 @@
 {
-  "voice": "ef_dora",
+  "voice": "es-CO-SalomeNeural",
   "language": "es-CO",
   "baseRate": 1.25,
   "items": {
@@ -578,6 +578,54 @@
       "url": "./media/web-voice/1ea7aa294a5b76926213.mp3",
       "text": "El Gobierno colombiano informó el 20 de noviembre sobre compromisos internacionales de financiación por quince millones de dólares para fortalecer proyectos de conservación de la biodiversidad. La comunicación oficial vincula las gestiones con la protección de hábitats naturales, la recuperación de ecosistemas y nuevas alianzas de cooperación científica y ambiental.\n\nEntre las iniciativas anunciadas figura una colaboración con la National Audubon Society para apoyar la conservación de aves, de sus territorios y de oportunidades de turismo de naturaleza. Parques Nacionales señaló que una proporción muy alta de las especies de aves registradas en Colombia tiene presencia en áreas protegidas, por lo que estas zonas son fundamentales para cuidar la riqueza biológica del país.\n\nConviene diferenciar un compromiso anunciado de recursos efectivamente desembolsados y de proyectos ejecutados. Los detalles de asignación, cronograma e impacto deberán verificarse conforme avancen los acuerdos. Esta noticia positiva muestra un paso de financiación y cooperación, no una garantía de resultados ambientales inmediatos.",
       "sha256": "1ea7aa294a5b76926213fc73e9bdea3091a69a63ec679e84371bcfe173767dbd"
+    },
+    "orbiuno-20261122-0930-1": {
+      "url": "./media/web-voice/e0dc6b83bd3b875c41550ec1e2f5.mp3",
+      "text": "Las conversaciones internacionales de la COP31 en Antalya, Turquía, llegaron este domingo a su fase final sin lograr un acuerdo climático general, de acuerdo con la actualización publicada por Associated Press. El encuentro enfrentó diferencias sobre la transición energética, los combustibles fósiles y la financiación para los países más vulnerables. La falta de consenso es un resultado de las negociaciones, no una cancelación de los compromisos climáticos adoptados con anterioridad.\n\nUna de las discusiones principales se centró en el apoyo financiero para comunidades expuestas a olas de calor, inundaciones y otros efectos del cambio climático. Las delegaciones también debatieron cómo traducir compromisos anteriores en medidas concretas y medibles. Los desacuerdos reflejan la dificultad de conciliar prioridades económicas y ambientales entre países con capacidades muy diferentes.\n\nEn los próximos meses, gobiernos y organismos internacionales deberán evaluar qué compromisos pueden continuar mediante acuerdos parciales y qué temas quedan pendientes para la siguiente conferencia. presenta una imagen de archivo de Antalya para identificar el lugar de las reuniones; no es una fotografía de la plenaria ni prueba visual de sus conclusiones.",
+      "sha256": "aa02fb054f06e577bdeb5d481d158e95235c04c226f43fd455e2acd22938a76b",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261122-0930-2": {
+      "url": "./media/web-voice/a0209cd2ebeca5b300a58cf57644.mp3",
+      "text": "Los niveles de almacenamiento de agua vinculados al sistema eléctrico colombiano vuelven a generar atención pública, según un análisis de El Espectador publicado el 21 de noviembre. El medio señala una caída de los aportes hídricos respecto de periodos anteriores, en un momento en que el posible desarrollo del fenómeno de El Niño mantiene en alerta a las autoridades y empresas energéticas.\n\nLos embalses cumplen una función clave en la generación hidroeléctrica del país. Sin embargo, sus porcentajes cambian diariamente y no todos los indicadores se refieren al mismo conjunto de instalaciones. Una disminución en los aportes de agua no permite concluir por sí sola que habrá racionamientos ni apagones: las decisiones dependen del almacenamiento, la demanda, otras fuentes de generación y los pronósticos oficiales.\n\nPara los hogares resulta relevante seguir las comunicaciones de entidades energéticas y meteorológicas y mantener prácticas de uso responsable del agua y la energía. La fotografía de Tominé utilizada por es ilustrativa y no debe interpretarse como una lectura visual del estado actual de los embalses nacionales.",
+      "sha256": "13f3808c02937e3fe5a1aad71dd6b9297384810cb6e3f2c6214623dd131e17d7",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261122-0930-3": {
+      "url": "./media/web-voice/6847cf2b3a4c28e259ce9ef92a82.mp3",
+      "text": "El prototipo Tesla Cybercab se convirtió en una de las novedades del tramo final del Salón del Automóvil de Bogotá 2026. El Carro Colombiano informó que el vehículo llegó a exhibirse el sábado 21 de noviembre en el espacio de la marca, de modo que el público todavía puede conocerlo durante el cierre de la feria previsto para este domingo.\n\nCybercab es un concepto de movilidad autónoma concebido sin los mandos convencionales de conducción. Su exhibición permite acercarse a una propuesta tecnológica, pero no equivale a anunciar su comercialización inmediata en Colombia ni a confirmar autorización para circular sin conductor por las calles nacionales. Cualquier lanzamiento comercial futuro dependerá de decisiones técnicas, de fabricación y regulatorias.\n\nEl Salón es una oportunidad para comparar novedades de movilidad y distinguir entre prototipos, exhibiciones y modelos realmente disponibles para compra. La fotografía seleccionada muestra un Tesla Cybercab real en otra exhibición anterior y está marcada como archivo: no se hace pasar por una imagen tomada en Corferias.",
+      "sha256": "bca78467e5227c6199b3ea06ace38fe756866b04f9fff3699a630291b133c1d9",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261122-0930-4": {
+      "url": "./media/web-voice/65e622e117db32172aa9824c82c2.mp3",
+      "text": "Bogotá recibe este domingo 22 de noviembre una nueva edición de CORREMITIERRA, evento que combina actividad física, participación ciudadana y encuentro entre corredores. El Espectador informó que la jornada forma parte del recorrido nacional de esta organización deportiva y que busca consolidar una comunidad alrededor del running, más allá de la competencia por tiempos y marcas.\n\nEste tipo de encuentros puede convocar personas con distintos niveles de preparación, por lo que son relevantes las indicaciones de los organizadores sobre rutas, horarios, hidratación y medidas de seguridad. Las actividades deportivas en calles urbanas también pueden tener efectos temporales sobre la movilidad; para conocer cierres concretos corresponde acudir a las autoridades de tránsito y a los canales del evento.\n\nLa edición forma parte de la agenda cultural y deportiva del fin de semana en la capital. acompaña la noticia con una fotografía histórica de una media maratón de Bogotá, identificada de forma expresa como imagen de archivo y no como registro de la carrera que se realiza hoy.",
+      "sha256": "8ba2a4f39310167969e34d765392f396d06ba6c49622fc35cc4d9be00a6591cc",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261122-0930-5": {
+      "url": "./media/web-voice/6c4a19e3d4fd36e14aaafbd68e87.mp3",
+      "text": "Villa de Leyva, en Boyacá, desarrolla durante este fin de semana una programación dedicada a la magia, el ilusionismo y las artes escénicas. El Espectador presentó las actividades previstas para el 21 y el 22 de noviembre, en una agenda que combina el atractivo turístico de la localidad con actuaciones dirigidas a visitantes de distintas edades.\n\nLa realización de encuentros culturales en municipios patrimoniales favorece la circulación de artistas y la visita de públicos que buscan experiencias distintas al turismo convencional. Algunas presentaciones pueden exigir inscripción, reclamar entradas o atender restricciones de aforo; por ello es importante consultar a los organizadores antes de viajar o desplazarse hacia un espectáculo específico.\n\nEl festival representa una alternativa cultural positiva para cerrar el fin de semana en Boyacá. La fotografía usada por es una vista de archivo de la Plaza Mayor de Villa de Leyva, empleada para identificar el destino y no como una imagen de las funciones celebradas en esta edición.",
+      "sha256": "6a511cdd5cb5e5867810579c492faf6ed0cc039379baf6ff70fc22070657bf37",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261122-0930-6": {
+      "url": "./media/web-voice/1f66c8659e7849c29f5145a425f6.mp3",
+      "text": "El Salón Internacional del Automóvil de Bogotá 2026 llega este domingo 22 de noviembre a su último día de actividades en Corferias. La organización anunció desde su apertura una exposición con más de ochenta marcas y cientos de vehículos, incluidos modelos eléctricos, híbridos, familiares y comerciales, además de lanzamientos y exhibiciones tecnológicas.\n\nLa feria ofrece a los asistentes la posibilidad de comparar propuestas de fabricantes y concesionarios en un mismo recinto. La exhibición de un vehículo no significa que todas sus versiones estén disponibles para entrega inmediata ni que sus precios o promociones sean idénticos fuera del evento. Las condiciones comerciales deben confirmarse en cada marca.\n\nQuienes planeen asistir en la jornada de cierre deben revisar los horarios y canales oficiales antes de desplazarse. presenta esta noticia como recordatorio de la fecha de finalización anunciada por Corferias. La imagen de las instalaciones es de archivo y no pretende mostrar un pabellón o lanzamiento determinado.",
+      "sha256": "82ecd89eceb5a56c0b03042a999ff206e8389823c285271e51fa05e63dc65ada",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
     }
   }
 }

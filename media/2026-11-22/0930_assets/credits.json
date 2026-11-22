@@ -1,0 +1,111 @@
+{
+  "edition": "2026-11-22",
+  "slot": "09:30",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261122-0930-1",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "apnews.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=apnews.com&sz=128",
+      "caption": "Puerto de Antalya, Turquía, en fotografía de archivo de 2021. No muestra las negociaciones de la COP31.",
+      "credit": {
+        "title": "photo-1636377688406-e0d0108eb882",
+        "author": "Marina T",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-harbor-filled-with-lots-of-boats-on-top-of-a-body-of-water-QmE1Qvj0E7w",
+        "url": "https://images.unsplash.com/photo-1636377688406-e0d0108eb882?auto=format&fit=crop&w=1600&q=80",
+        "description": "Puerto de Antalya, Turquía, en fotografía de archivo de 2021. No muestra las negociaciones de la COP31."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-0930-2",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "www.elespectador.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elespectador.com&sz=128",
+      "caption": "Represa hidroeléctrica en fotografía de archivo ilustrativa. No corresponde a embalses de Colombia ni documenta sus niveles actuales.",
+      "credit": {
+        "title": "photo-1673199981530-df45b3289d0d",
+        "author": "Collab Media",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-large-dam-with-water-coming-out-of-it-kGocua2hRfQ",
+        "url": "https://images.unsplash.com/photo-1673199981530-df45b3289d0d?auto=format&fit=crop&w=1600&q=80",
+        "description": "Represa hidroeléctrica en fotografía de archivo ilustrativa. No corresponde a embalses de Colombia ni documenta sus niveles actuales."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-0930-3",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "www.elcarrocolombiano.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elcarrocolombiano.com&sz=128",
+      "caption": "Interior de un Tesla Model Y con pantalla de conducción asistida, fotografía de archivo. No es el prototipo Cybercab ni muestra Corferias.",
+      "credit": {
+        "title": "photo-1772171386187-bc14e6cd7804",
+        "author": "Josh Sorenson",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/car-dashboard-displaying-autonomous-driving-interface-dkEShdYwnZ0",
+        "url": "https://images.unsplash.com/photo-1772171386187-bc14e6cd7804?auto=format&fit=crop&w=1600&q=80",
+        "description": "Interior de un Tesla Model Y con pantalla de conducción asistida, fotografía de archivo. No es el prototipo Cybercab ni muestra Corferias."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-0930-4",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "www.elespectador.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elespectador.com&sz=128",
+      "caption": "Atletas en una carrera urbana, fotografía de archivo de 2026. No corresponde a CORREMITIERRA en Bogotá.",
+      "credit": {
+        "title": "photo-1771166446975-2e9e9a9cd3d0",
+        "author": "Miguel Alcântara",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/runners-in-a-marathon-race-on-a-city-street-nFz4XuVpPD8",
+        "url": "https://images.unsplash.com/photo-1771166446975-2e9e9a9cd3d0?auto=format&fit=crop&w=1600&q=80",
+        "description": "Atletas en una carrera urbana, fotografía de archivo de 2026. No corresponde a CORREMITIERRA en Bogotá."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-0930-5",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "www.elespectador.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.elespectador.com&sz=128",
+      "caption": "Paisaje natural de Villa de Leyva, Boyacá, fotografía de archivo de 2016. No muestra el Festival Mágico.",
+      "credit": {
+        "title": "photo-1454942901704-3c44c11b2ad1",
+        "author": "Joshua Earle",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/man-standing-on-top-of-rock-mountain-during-golden-hour-9idqIGrLuTE",
+        "url": "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?auto=format&fit=crop&w=1600&q=80",
+        "description": "Paisaje natural de Villa de Leyva, Boyacá, fotografía de archivo de 2016. No muestra el Festival Mágico."
+      }
+    },
+    {
+      "id": "orbiuno-20261122-0930-6",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "www.corferias.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.corferias.com&sz=128",
+      "caption": "Vehículos en un museo automotor de Japón, fotografía de archivo. No corresponde al Salón del Automóvil de Bogotá 2026.",
+      "credit": {
+        "title": "photo-1757852664672-b947b893136c",
+        "author": "Ryo Harianto",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/cars-displayed-at-an-indoor-exhibition-hall-with-visitors-MzaAOnOVs0I",
+        "url": "https://images.unsplash.com/photo-1757852664672-b947b893136c?auto=format&fit=crop&w=1600&q=80",
+        "description": "Vehículos en un museo automotor de Japón, fotografía de archivo. No corresponde al Salón del Automóvil de Bogotá 2026."
+      }
+    }
+  ]
+}
