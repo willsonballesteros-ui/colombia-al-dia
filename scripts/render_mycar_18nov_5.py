@@ -106,46 +106,49 @@ def wrap(draw,text,size,maxw,maxlines=4):
 def rect(draw,xy,r,fill):draw.rounded_rectangle(xy,radius=r,fill=fill)
 def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None):
  W,H=1080,1920
- base=Image.new("RGB",(W,H),(5,18,34));draw=ImageDraw.Draw(base)
- with Image.open(photo) as f:
-  raw=ImageOps.exif_transpose(f).convert("RGB")
-  bg=ImageOps.fit(raw,(W,H),method=Image.Resampling.LANCZOS)
-  bg=bg.filter(ImageFilter.GaussianBlur(13))
-  bg=Image.blend(bg,Image.new("RGB",(W,H),(5,18,34)),0.53)
-  base.paste(bg)
-  big=ImageOps.contain(raw,(1080,1190))
-  base.paste(big,((W-big.width)//2,180+(1180-big.height)//2))
+ with Image.open(photo) as original:
+  raw=ImageOps.exif_transpose(original).convert("RGB")
+  # Fotografía real de borde a borde: reemplaza el gran recuadro superpuesto.
+  base=ImageOps.fit(raw,(W,H),method=Image.Resampling.LANCZOS)
  draw=ImageDraw.Draw(base,"RGBA")
- # Safe-area dark-glass text panel below image, enormous headline.
- rect(draw,(42,1050,1038,1780),42,(6,20,35,240))
- draw.rectangle((42,1050,1038,1063),fill=(239,196,53,255) if brand=="MYCAR" else (58,227,216,255))
- title=item["title"];fs=72 if not cover else 88
- for sz in range(fs,48,-4):
-  try:lines,f=wrap(draw,title,sz,890,4);break
-  except RuntimeError:continue
+ accent=(239,196,53,255) if brand=="MYCAR" else (58,227,216,255)
+ # Cabecera compacta con marca y fecha/hora, fuera del área central de la foto.
+ rect(draw,(0,0,W,148),0,(5,18,34,252))
+ draw.rectangle((0,0,W,11),fill=accent)
+ draw.text((52,32),brand,font=font(54),fill=(255,255,255,255))
+ draw.text((548,52),day,font=font(28),fill=(245,230,176,255))
+ # Panel inferior compacto, máximo 490 de 1920 pixeles.
+ rect(draw,(0,1430,W,H),0,(5,18,34,250))
+ draw.rectangle((0,1430,W,1442),fill=accent)
+ kicker="NOTICIA DESTACADA" if cover else f"NOTICIA {index:02d} DE {total:02d}"
+ draw.text((60,1460),kicker,font=font(29),fill=accent)
+ title=item["title"]
+ for sz in (58,54,50,46,42,38):
+  try:
+   lines,f=wrap(draw,title,sz,965,3)
+   break
+  except RuntimeError:
+   continue
+ else: raise RuntimeError("Titular fuera de panel compacto: "+title)
  for j,line in enumerate(lines):
-  draw.text((96,1150+j*(sz+22)),line,font=f,fill=(255,255,255,255))
- draw.text((96,1100),("NOTICIA DESTACADA · " if cover else f"{index:02d} / {total:02d} · ")+brand,
-           font=font(34),fill=(96,239,222,255) if brand=="ORBIUNO" else (239,196,53,255))
- rect(draw,(76,1600,1004,1725),22,(240,197,57,252) if brand=="MYCAR" else (82,233,224,244))
- sfsize=min(54,max(34,760//max(1,len(item["source"]))*19))
- icon_x=105
+  draw.text((60,1514+j*(sz+12)),line,font=f,fill=(255,255,255,255))
+ # Fuente en una línea o dos con logo discreto.
+ rect(draw,(60,1740,1020,1829),15,accent)
+ icon_x=77
  if source_icon and Path(source_icon).is_file():
   try:
    with Image.open(source_icon) as im:
-    icon=ImageOps.contain(im.convert("RGBA"),(92,92))
-    base.paste(icon,(106,1616),icon)
-    icon_x=225
+    icon=ImageOps.contain(im.convert("RGBA"),(70,70))
+    base.paste(icon,(76,1749),icon)
+    icon_x=165
   except Exception:pass
- # No pretender que un favicon sea el logotipo oficial completo.
  draw=ImageDraw.Draw(base,"RGBA")
- draw.text((icon_x,1627),item["source"].upper(),font=font(sfsize),fill=(6,20,35,255))
- # Brand, date and no fake original logos.
- rect(draw,(52,60,1028,152),24,(5,18,34,230))
- draw.text((83,80),brand,font=font(52),fill=(255,255,255,255))
- draw.text((658,88),day,font=font(28),fill=(245,230,176,255))
- draw.text((84,1735),"FOTO: "+str(item.get("photo_credit","WIKIMEDIA COMMONS"))[:48],font=font(23),fill=(218,225,233,255))
- draw.text((83,1800),"BUSCO-AUTOS.PAGES.DEV · NOTICIAS DE CARROS",font=font(23),fill=(255,255,255,255))
+ src=item["source"].upper()
+ fsize=35 if len(src)<26 else 28
+ for j,line in enumerate(wrap(draw,src,fsize,825 if icon_x==165 else 900,2)[0]):
+  draw.text((icon_x,1754+j*32),line,font=font(fsize),fill=(6,20,35,255))
+ draw.text((60,1851),"BUSCO-AUTOS.PAGES.DEV · MYCAR",font=font(23),fill=(255,255,255,255))
+ draw.text((60,1890),"FOTO: "+str(item.get("photo_credit","WIKIMEDIA COMMONS"))[:58],font=font(19),fill=(218,225,233,255))
  base.save(out,quality=91)
 def render(brand,config):
  folder=OUT/brand.lower();folder.mkdir(exist_ok=True)
