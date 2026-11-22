@@ -122,8 +122,8 @@ def slide(brand,item,photo,day,part,index,total,out,cover=False,source_icon=None
  rect(draw,(0,0,W,145),0,(5,18,34,248))
  draw.rectangle((0,0,W,11),fill=accent)
  draw.text((54,40),brand,font=font(57),fill=(255,255,255,255))
- rect(draw,(55,245,890,338),19,(5,18,34,238))
- draw.text((77,265),day,font=font(37),fill=(255,230,165,255))
+ rect(draw,(55,380,890,473),19,(5,18,34,238))
+ draw.text((77,402),day,font=font(37),fill=(255,230,165,255))
 
  if index>total:
   # Cierre explícito en vez del erróneo "NOTICIA 06 DE 05".
