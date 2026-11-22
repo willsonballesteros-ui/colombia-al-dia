@@ -160,7 +160,141 @@ def article_html(n):
     )
 
 
-def build(data, page):
+
+# Las páginas históricas permanecen accesibles por sus URL originales,
+# pero la portada nunca debe anunciar como "de hoy" una edición anterior.
+EDITION_TIMES = (
+    ("21:00", "9:00 p. m."), ("20:00", "8:00 p. m."),
+    ("19:00", "7:00 p. m."), ("18:00", "6:00 p. m."),
+    ("17:00", "5:00 p. m."), ("12:00", "12:00 m."),
+    ("09:30", "9:30 a. m."), ("08:00", "8:00 a. m."),
+)
+
+
+def bogota_today():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    return datetime.now(ZoneInfo("America/Bogota")).date().isoformat()
+
+
+def replace_old_home_banners(page, data, day):
+    """Reemplazar promociones estáticas y caducadas sin borrar el archivo."""
+    # Estas tres bandas fueron codificadas a mano (17 y 18 de noviembre).
+    page = re.sub(
+        r'<div\s+role="region"\s+aria-label="Edición de hoy"[^>]*>.*?</div>',
+        "", page, flags=re.S | re.I,
+    )
+    page = re.sub(
+        r'<div\s+role="navigation"\s+aria-label="Ediciones de hoy"[^>]*>.*?</div>',
+        "", page, flags=re.S | re.I,
+    )
+    # La siguiente ejecución es idempotente, no crea dos menús nuevos.
+    page = re.sub(
+        r'<section\s+id="orbiuno-current-editions"[^>]*>.*?</section>',
+        "", page, flags=re.S | re.I,
+    )
+    rows = [
+        n for n in data.get("news", [])
+        if n.get("date") == day
+        and n.get("verification") == "editorial_verified"
+        and n.get("editionSlot") in dict(EDITION_TIMES)
+    ]
+    slots = [
+        (slot, label, sum(n["editionSlot"] == slot for n in rows))
+        for slot, label in EDITION_TIMES
+        if any(n["editionSlot"] == slot for n in rows)
+    ]
+    badges = "".join(
+        '<a href="#edicion-{slot}" style="display:inline-block;margin:5px;'
+        'padding:10px 14px;background:#1b5675;color:#fff;border-radius:8px;'
+        'text-decoration:none;font-size:16px;font-weight:700">'
+        '{label} · {count} noticias</a>'.format(
+            slot=esc(slot.replace(":", "")), label=esc(label), count=count)
+        for slot, label, count in slots
+    )
+    if not badges:
+        badges = ('<span style="display:block;margin:8px 0;color:#e8f5fa">'
+                  'Todavía no hay ediciones verificadas para hoy.</span>')
+    new = (
+        '<section id="orbiuno-current-editions" aria-label="Ediciones verificadas de hoy" '
+        'data-day="{day}" style="background:#103449;color:#fff;text-align:center;'
+        'padding:14px 12px 16px;border-bottom:3px solid #55e3cf;'
+        'font:16px/1.5 system-ui,sans-serif">'
+        '<strong style="display:block;font-size:19px;margin-bottom:5px">'
+        'Noticias de hoy · {day_label} · Colombia</strong>{badges}'
+        '</section>'
+    ).format(
+        day=esc(day),
+        day_label=esc(__import__("datetime").date.fromisoformat(day).strftime("%d/%m/%Y")),
+        badges=badges,
+    )
+    if "<body>" not in page:
+        raise ValueError("La portada no contiene la etiqueta <body>")
+    return page.replace("<body>", "<body>" + new, 1)
+
+
+def fix_today_frontend(page):
+    """La vista en el navegador también debe calcular HOY, no la última fecha del JSON."""
+    # Las noticias se mantienen en el JSON para auditoría/historial, nunca
+    # como si fueran publicadas hoy al cambiar de día en Bogotá.
+    page = page.replace(
+        "selectedDate==='today'?x.date===db.editionDate&&x.verification==='editorial_verified'",
+        "selectedDate==='today'?x.date===today()&&x.verification==='editorial_verified'",
+    )
+    page = page.replace(
+        "el('foot-date').textContent='Fuentes y edición: '+fmt(db.editionDate)+'.';",
+        "el('foot-date').textContent='Fuentes y fecha: '+fmt(today())+'.';",
+    )
+    old_slots = (
+        "const slots=[['08:00','8:00 a. m.'],['12:00','12:00 m.'],"
+        "['18:00','6:00 p. m.']];\n"
+        "  if(matching.some(x=>x.editionSlot==='20:00')) slots.unshift(['20:00','8:00 p. m.']);\n"
+        "  if(matching.some(x=>x.editionSlot==='21:00')) slots.unshift(['21:00','9:00 p. m.']);"
+    )
+    all_slots = (
+        "const slots=[['21:00','9:00 p. m.'],['20:00','8:00 p. m.'],"
+        "['19:00','7:00 p. m.'],['18:00','6:00 p. m.'],"
+        "['17:00','5:00 p. m.'],['12:00','12:00 m.'],"
+        "['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
+    )
+    page = page.replace(old_slots, all_slots)
+    page = page.replace(
+        "(visible.length?visible:slots.slice(0,1))",
+        "visible",  # No inventar una franja 8:00 si hoy todavía no hay noticias.
+    )
+    page = page.replace("const maxReel=4;", "const maxReel=6;")
+    page = page.replace(
+        "esc(fmt(db.editionDate))+'</small>",
+        "esc(fmt(today()))+'</small>",
+    )
+    old_edition_items = (
+        "n.date===db.editionDate&&n.verification==='editorial_verified'&&"
+        "['21:00','20:00','08:00','12:00','18:00'].includes(n.editionSlot)"
+    )
+    page = page.replace(
+        old_edition_items,
+        "n.date===today()&&n.verification==='editorial_verified'&&"
+        "['21:00','20:00','19:00','18:00','17:00','12:00','09:30','08:00'].includes(n.editionSlot)",
+    )
+    page = page.replace(
+        "['21:00','20:00','08:00','12:00','18:00'].indexOf(a.editionSlot)-"
+        "['21:00','20:00','08:00','12:00','18:00'].indexOf(b.editionSlot)",
+        "['21:00','20:00','19:00','18:00','17:00','12:00','09:30','08:00'].indexOf(a.editionSlot)-"
+        "['21:00','20:00','19:00','18:00','17:00','12:00','09:30','08:00'].indexOf(b.editionSlot)",
+    )
+    page = page.replace(
+        "setInterval(loadFeed,300000);",
+        "setInterval(()=>{loadFeed();if(selectedDate==='today')render();},300000);",
+    )
+    # Texto honesto cuando la nueva edición aún no ha sido importada.
+    page = page.replace(
+        '<option value="today">Últimas noticias publicadas</option>',
+        '<option value="today">Noticias de hoy</option>',
+    )
+    return page
+
+
+def build(data, page, *, as_of=None):
     """Mantener las tres franjas verificadas, con fotos y lectura, en UNA portada."""
     # Evitar que el botón lea una sinopsis cuando existe la redacción integral
     # propia, revisada y autorizada de ORBIUNO. Compartir el MISMO texto entre
@@ -178,7 +312,7 @@ def build(data, page):
                 news["audioFullTextEs"] = body
                 if original_article_ready(news):
                     news["originalArticleTextEs"] = body
-    today=data.get("editionDate")
+    today = as_of or bogota_today()
     published=[
         n for n in data["news"]
         if n.get("date")==today
@@ -199,7 +333,7 @@ def build(data, page):
     # Ocultar franjas vacías cuando existe una edición extraordinaria verificable.
     # Si no hay ninguna, conservar un único aviso honesto y no tres franjas antiguas.
     active_slots=[pair for pair in slots if any(n.get("editionSlot")==pair[0] for n in published)]
-    slots=tuple(active_slots) if active_slots else slots[:1]
+    slots=tuple(active_slots)
     sections=[]
     reel_limits={"08:00":6,"09:30":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
     for slot,label in slots:
@@ -250,6 +384,9 @@ def build(data, page):
     page,count=re.subn(marker,lambda m:m.group(1)+encoded+m.group(2),page,count=1,flags=re.S)
     if count!=1:
         raise ValueError("No se localizó #initial-news")
+    # Quitar los enlaces históricos que aparecían arriba de la portada.
+    page = replace_old_home_banners(page, data, today)
+    page = fix_today_frontend(page)
     # El SEO debe describir seis noticias por edición, no el formato anterior.
     page=page.replace("Diez noticias verificadas con fuentes originales.",
                       "Seis noticias por edición, con fuentes originales.")
