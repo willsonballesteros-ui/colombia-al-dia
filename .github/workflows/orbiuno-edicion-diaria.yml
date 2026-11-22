@@ -162,6 +162,8 @@ jobs:
             PYTHONPATH=. python scripts/orbiuno_media_unsplash_20261121.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
           elif [ "$DAY" = "2026-11-22" ] && [ "$STAMP" = "0930" ]; then
             PYTHONPATH=. python scripts/orbiuno_media_unsplash_20261122.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
+          elif [ "$DAY" = "2026-11-22" ] && [ "$STAMP" = "1800" ]; then
+            PYTHONPATH=. python scripts/orbiuno_media_unsplash_20261122_1800.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
           else
             PYTHONPATH=. python scripts/orbiuno_media_assets.py --edition "$FILE" --news noticias.json --out "media/$DAY/${STAMP}_assets"
           fi
