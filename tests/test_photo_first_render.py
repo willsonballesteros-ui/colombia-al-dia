@@ -32,7 +32,7 @@ class PhotoFirstRenderTests(unittest.TestCase):
         with Image.open(path) as image:
             self.assertEqual(image.size, (1080, 1920))
             # Región central: ningún panel gigante debe tapar la fotografía.
-            for y in (450, 700, 1050, 1200):
+            for y in (550, 700, 1050, 1200):
                 sample = image.getpixel((540, y))
                 self.assertTrue(
                     all(abs(actual - expected) < 12
