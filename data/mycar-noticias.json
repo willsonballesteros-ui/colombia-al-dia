@@ -5,6 +5,66 @@
   "updated_date": "2026-11-22",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-22-AM",
+      "date": "2026-11-22",
+      "slot": "08:00",
+      "title": "Geely Monjaro EM-i agota sus primeras 40 unidades",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-22/mycar-am-5/MYCAR_22_NOV_2026_REEL_PUBLICAR.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Geely Monjaro EM-i agota sus primeras 40 unidades",
+          "summary": "Geely agotó las primeras cuarenta unidades del Monjaro EM i en preventa durante el Salón del Automóvil. El vehículo híbrido enchufable anuncia trescientos treinta y cinco caballos. Su precio especial de lanzamiento ya no aplica a esas primeras unidades; las próximas entregas dependerán de la disponibilidad de la marca.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/lanzamientos/geely-monjaro-em-i-colombia-precio-ficha-tecnica/",
+          "image_file_title": "photo-1757922589579-e1adec93a5ff",
+          "photo_credit": "Michail Dementiev",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-dark-blue-suv-parked-on-a-forest-road-sREh9Nsw70o"
+        },
+        {
+          "title": "BYD Atto 8 debuta como SUV familiar de siete plazas",
+          "summary": "BYD exhibe en Colombia la Atto ocho, una camioneta familiar de siete puestos. Durante el Salón del Automóvil también presenta el todoterreno Ti siete y una muestra simultánea de sus modelos eléctricos e híbridos en distintas ciudades del país.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/recomendados/byd-atto-8-colombia-debut-7-puestos-salon-byd-2026/",
+          "image_file_title": "photo-1793002814597-32fed695f754",
+          "photo_credit": "Dragon White Munthe",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/blue-byd-electric-suv-on-shore-cXE1omey8F8"
+        },
+        {
+          "title": "Tesla Cybercab se exhibe en el Salón de Bogotá",
+          "summary": "El prototipo Tesla Cybercab puede verse en el cierre del Salón del Automóvil de Bogotá. Su propuesta de movilidad autónoma no significa que ya esté disponible para comprar ni que tenga permiso para circular sin conductor en Colombia.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/resenas/tesla-cybercab-colombia-salon-automovil-bogota-datos/",
+          "image_file_title": "photo-1772171386187-bc14e6cd7804",
+          "photo_credit": "Josh Sorenson",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/car-dashboard-displaying-autonomous-driving-interface-dkEShdYwnZ0"
+        },
+        {
+          "title": "Leapmotor B10 y C10 tienen descuentos hasta hoy",
+          "summary": "Leapmotor anuncia precios especiales para sus camionetas de rango extendido B diez y C diez durante el Salón del Automóvil. Los valores promocionales anunciados son para el evento que termina hoy domingo veintidós de noviembre y deben confirmarse con la marca.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/recomendados/leapmotor-b10-c10-precios-salon-automovil-bogota-2026/",
+          "image_file_title": "photo-1703860271535-27d4543db10a",
+          "photo_credit": "Stephan Schwebe",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/a-woman-is-charging-a-car-in-a-parking-lot-beZxk_OHN7s"
+        },
+        {
+          "title": "Hoy cierra el Salón del Automóvil de Bogotá",
+          "summary": "Este domingo veintidós de noviembre es el último día del Salón Internacional del Automóvil de Bogotá. La exhibición en Corferias reúne marcas, modelos eléctricos e híbridos y novedades para las familias colombianas. Consulta horarios y entradas con la organización.",
+          "source": "CORFERIAS",
+          "source_url": "https://www.corferias.com/es/noticia/7835/llega_a_bogota_el_salon_internacional_del_automovil_2026_en_corferias",
+          "image_file_title": "photo-1757852664672-b947b893136c",
+          "photo_credit": "Ryo Harianto",
+          "photo_license": "Unsplash License",
+          "photo_page": "https://unsplash.com/photos/cars-displayed-at-an-indoor-exhibition-hall-with-visitors-MzaAOnOVs0I"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-21-AM",
       "date": "2026-11-21",
       "slot": "08:00",
