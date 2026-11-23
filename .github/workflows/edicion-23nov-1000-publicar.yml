@@ -1,5 +1,5 @@
 name: "ORBIUNO y MyCar | Edición real del 23NOV 10:00"
-# Reintento único tras ventana Retry-After=120 de Wikimedia, sin cambiar IP ni host.
+# QA corrección visual: iconos originales 16px ampliados con vecino más cercano, sin logotipos sintéticos.
 on:
   push:
     branches: [main]
