@@ -1,0 +1,77 @@
+name: "MyCar | 23NOV 18h cinco noticias, video y web"
+on:
+  push:
+    branches: [main]
+    paths: ['editions/research/mycar-2026-11-23-1800-ready.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-23nov-1800-single-run
+  cancel-in-progress: false
+jobs:
+  producir_y_web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preparar voz Salomé y video
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install -q Pillow requests edge-tts
+          python -m py_compile scripts/producir_mycar_20261123_1800.py
+      - name: Producir cinco historias verificadas con fotos reales
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/producir_mycar_20261123_1800.py
+      - name: QA de video, audio y licencias; bloquear fallos
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          p=Path('media/2026-11-23/edicion-1800-mycar')
+          m=json.loads((p/'mycar_manifest.json').read_text())
+          assert m['newsCount']==5 and m['imagesCount']==5 and m['voice']=='es-CO-SalomeNeural'
+          assert m['fullNewsAudioFiles']==5 and all(c['rightsVerified'] for c in m['photoCredits'])
+          v=p/m['video']
+          assert v.is_file() and v.stat().st_size>200_000
+          assert hashlib.sha256(v.read_bytes()).hexdigest()==m['sha256']
+          assert all((p/f'mycar-noticia-{i:02d}.mp3').is_file() for i in range(1,6))
+          assert all((p/f'foto-mycar-{i:02d}.jpg').is_file() for i in range(1,6))
+          print('MYCAR_1800_VIDEO_AUDIO_RIGHTS_QA_PASS')
+          PY
+      - name: Guardar web con cinco audios, fotos y fuente original
+        run: |
+          set -euo pipefail
+          src=media/2026-11-23/edicion-1800-mycar
+          mkdir -p site/media/2026-11-23/edicion-1800-mycar
+          cp -a "$src/." site/media/2026-11-23/edicion-1800-mycar/
+          cp "$src/mycar_edition.html" mycar-2026-11-23-1800.html
+          cp "$src/mycar_edition.html" site/mycar-2026-11-23-1800.html
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$src" site/media/2026-11-23/edicion-1800-mycar mycar-2026-11-23-1800.html site/mycar-2026-11-23-1800.html
+          git commit -m "MyCar: cinco noticias 23NOV 18h con Salomé, fotos y audio web"
+          for i in 1 2 3 4; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'MYCAR_1800_WEB_VIDEO_PUSH_CONFIRMED'
+              break
+            fi
+            if [ "$i" = 4 ]; then exit 1; fi
+            sleep 3
+          done
+      - name: Evidencias MP4 y manifiesto aun con error
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mycar-20261123-1800
+          path: media/2026-11-23/edicion-1800-mycar/
+          retention-days: 30
+          if-no-files-found: warn
