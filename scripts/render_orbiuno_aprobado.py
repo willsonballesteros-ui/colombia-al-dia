@@ -257,7 +257,7 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     first = output / "part-00.mp4"
     encode(frames / "portada.jpg", None, first, silent_duration=1.4)
     parts.append(first)
-    for i, seg in enumerate(audio_report["segments"], 1):
+    for i, seg in enumerate(audio_report["segments"][:6], 1):
         part = output / f"part-{i:02d}.mp4"
         encode(frames / f"noticia-{i:02d}.jpg", audio_folder / seg["file"], part)
         parts.append(part)
