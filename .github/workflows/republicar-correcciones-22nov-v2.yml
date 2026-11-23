@@ -47,7 +47,7 @@ jobs:
             ln -sf "$ffprobe_bin" "$RUNNER_TEMP/ffmpeg-bin/ffprobe"
             echo "$RUNNER_TEMP/ffmpeg-bin" >> "$GITHUB_PATH"
           fi
-      - name: Renderizar ORBIUNO y MyCar, fotos originales, voz con cierre
+      - name: Renderizar seis noticias ORBIUNO y cinco MyCar, más despedidas habladas
         run: PYTHONPATH=. python scripts/republicar_correcciones_20261122.py
       - name: QA de dos MP4 y evidencias originales
         run: |
