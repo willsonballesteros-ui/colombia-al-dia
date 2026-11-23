@@ -35,7 +35,18 @@ jobs:
           set -euo pipefail
           python -m pip install --disable-pip-version-check Pillow requests edge-tts
           python -m py_compile scripts/republicar_correcciones_20261122.py scripts/render_orbiuno_aprobado.py scripts/render_mycar_22nov_1800.py scripts/generate_voice.py
-          command -v ffmpeg && command -v ffprobe
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/ffmpeg-bin"
+            npm install --ignore-scripts --no-audit --no-fund --no-save \
+              --prefix "$RUNNER_TEMP/video-tools" \
+              @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            ffmpeg_bin="$RUNNER_TEMP/video-tools/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            ffprobe_bin="$RUNNER_TEMP/video-tools/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            chmod +x "$ffmpeg_bin" "$ffprobe_bin"
+            ln -sf "$ffmpeg_bin" "$RUNNER_TEMP/ffmpeg-bin/ffmpeg"
+            ln -sf "$ffprobe_bin" "$RUNNER_TEMP/ffmpeg-bin/ffprobe"
+            echo "$RUNNER_TEMP/ffmpeg-bin" >> "$GITHUB_PATH"
+          fi
       - name: Renderizar ORBIUNO y MyCar, fotos originales, voz con cierre
         run: PYTHONPATH=. python scripts/republicar_correcciones_20261122.py
       - name: QA de dos MP4 y evidencias originales
