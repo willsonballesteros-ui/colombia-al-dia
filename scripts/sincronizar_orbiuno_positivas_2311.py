@@ -22,7 +22,7 @@ def main():
     assert len(src["news"])==6 and manifest["newsCount"]==6
     assert manifest["audioSegments"]==7 and manifest["fullNewsAudioFiles"]==6
     assert manifest["openingSpeech"] is False and manifest["openingCover"] is False
-    assert manifest["slot"]==SLOT and manifest["imagesCount"]==6 and manifest["logosCount"]==6
+    assert manifest["slot"]==SLOT and manifest["imagesCount"]==6 and manifest["sourceLabelsCount"]==6
     shutil.copyfile(MEDIA/"orbiuno_edition.html",ROOT/PAGE)
 
     dbpath=ROOT/"noticias.json"
