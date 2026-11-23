@@ -72,5 +72,16 @@ def check(data):
 
 if __name__ == '__main__':
     f = sys.argv[1] if len(sys.argv) > 1 else 'noticias.json'
-    check(json.load(open(f, encoding='utf-8')))
-    print('JSON válido, %s entradas' % len(json.load(open(f, encoding='utf-8'))['news']))
+    with open(f, encoding='utf-8') as handle:
+        data = json.load(handle)
+    if '--day' in sys.argv and '--slot' in sys.argv:
+        day = sys.argv[sys.argv.index('--day') + 1]
+        slot = sys.argv[sys.argv.index('--slot') + 1]
+        current = [n for n in data['news'] if n.get('date') == day and
+                   n.get('editionSlot') == slot and n.get('verification') == 'editorial_verified']
+        assert len(current) == 6, 'Seis noticias de la edición actual obligatorias'
+        check({'editionDate': day, 'news': current})
+        print('EDICION_VERIFICADA', day, slot, len(current))
+    else:
+        check(data)
+        print('JSON válido, %s entradas' % len(data['news']))
