@@ -1,0 +1,59 @@
+name: "ORBIUNO + MyCar | Sincronizar web con Reels corregidos"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-web-correcciones-22nov.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: correction-web-sync-22nov
+  cancel-in-progress: false
+jobs:
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Sincronizar enlaces sin borrar noticias ni versiones previas
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/sync_corrected_web_22nov.py
+          python scripts/stage_cloudflare_site.py --out site
+          test -s site/media/2026-11-22/correcciones-v2/ORBIUNO_2026-11-22_1800_6_NOTICIAS_CORREGIDA_V2.mp4
+          test -s site/media/2026-11-22/correcciones-v2/MYCAR_2026-11-22_1800_5_NOTICIAS_CORREGIDA_V2.mp4
+          python - <<'PY'
+          from pathlib import Path
+          a=Path("site/index.html").read_text()
+          b=Path("site/mycar-2026-11-22-1800.html").read_text()
+          assert "CORREGIDA_V2.mp4" in a and "CORREGIDA_V2.mp4" in b
+          assert "EDICIÓN DEL 17 NOV" not in a
+          assert "EDICIÓN DEL 18 NOV" not in a
+          print("WEB_CORRECTIONS_QA_PASS")
+          PY
+      - name: Actualizar rama principal y Pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html scripts/prepare_site.py mycar-2026-11-22-1800.html site
+          git diff --cached --quiet || git commit -m "web: mostrar reels V2 y conservar audios e historico"
+          for i in 1 2 3 4; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort || true; exit 1; }
+            PYTHONPATH=. python scripts/sync_corrected_web_22nov.py
+            python scripts/stage_cloudflare_site.py --out site
+            git add index.html scripts/prepare_site.py mycar-2026-11-22-1800.html site
+            if ! git diff --cached --quiet; then git commit -m "web: reconciliar reels corregidos y sitio"; fi
+            if git push origin HEAD:main; then echo WEB_CORRECTIONS_PUBLISHED; exit 0; fi
+            sleep "$((i*2))"
+          done
+          exit 1
