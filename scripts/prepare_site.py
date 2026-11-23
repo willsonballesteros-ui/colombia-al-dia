@@ -12,7 +12,7 @@ from urllib.parse import urlparse, quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VALID_IMAGE_TYPES = {"official_photo", "licensed_press_photo", "official_document"}
+VALID_IMAGE_TYPES = {"official_photo", "licensed_press_photo", "official_document", "commons_licensed_photo"}
 
 
 def image_verified(news):
@@ -167,7 +167,7 @@ EDITION_TIMES = (
     ("21:00", "9:00 p. m."), ("20:00", "8:00 p. m."),
     ("19:00", "7:00 p. m."), ("18:00", "6:00 p. m."),
     ("17:00", "5:00 p. m."), ("12:00", "12:00 m."),
-    ("09:30", "9:30 a. m."), ("08:00", "8:00 a. m."),
+    ("10:00", "10:00 a. m."), ("09:30", "9:30 a. m."), ("08:00", "8:00 a. m."),
 )
 
 
@@ -259,7 +259,7 @@ def fix_today_frontend(page):
         "const slots=[['21:00','9:00 p. m.'],['20:00','8:00 p. m.'],"
         "['19:00','7:00 p. m.'],['18:00','6:00 p. m.'],"
         "['17:00','5:00 p. m.'],['12:00','12:00 m.'],"
-        "['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
+        "['10:00','10:00 a. m.'],['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
     )
     page = page.replace(old_slots, all_slots)
     page = page.replace(
@@ -278,7 +278,7 @@ def fix_today_frontend(page):
     page = page.replace(
         old_edition_items,
         "n.date===today()&&n.verification==='editorial_verified'&&"
-        "['21:00','20:00','19:00','18:00','17:00','12:00','09:30','08:00'].includes(n.editionSlot)",
+        "['21:00','20:00','19:00','18:00','17:00','12:00','10:00','09:30','08:00'].includes(n.editionSlot)",
     )
     page = page.replace(
         "['21:00','20:00','08:00','12:00','18:00'].indexOf(a.editionSlot)-"
@@ -315,6 +315,10 @@ def fix_today_frontend(page):
         )
         page = page.replace("const render=()=>{",
                             dynamic_nav + "const render=()=>{refreshEditionNav();", 1)
+    if "['10:00','10:00 a. m.']" not in page:
+        page = page.replace("['09:30','9:30 a. m.']", "['10:00','10:00 a. m.'],['09:30','9:30 a. m.']")
+    if "['10:00','09:30'" not in page:
+        page = page.replace("['09:30','08:00']", "['10:00','09:30','08:00']")
     # Texto honesto cuando la nueva edición aún no ha sido importada.
     page = page.replace(
         '<option value="today">Últimas noticias publicadas</option>',
@@ -346,9 +350,11 @@ def build(data, page, *, as_of=None):
         n for n in data["news"]
         if n.get("date")==today
         and n.get("verification")=="editorial_verified"
-        and n.get("editionSlot") in ("08:00","09:30","12:00","17:00","18:00","19:00","20:00","21:00")
+        and n.get("editionSlot") in ("08:00","09:30","10:00","12:00","17:00","18:00","19:00","20:00","21:00")
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
+    if any(n.get("editionSlot") == "10:00" for n in published):
+        slots=(("10:00","10:00 a. m. · Edición del día"),)+slots
     if any(n.get("editionSlot") == "09:30" for n in published):
         slots=(("09:30","9:30 a. m. · Edición corregida"),)+slots
     if any(n.get("editionSlot") == "17:00" for n in published):
