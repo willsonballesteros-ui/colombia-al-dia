@@ -87,8 +87,11 @@ def source_logo(url,directory,idx):
     if len(res.content)<200:raise ValueError("Favicon fuente demasiado pequeño")
     with Image.open(io.BytesIO(res.content)) as f:
         f.load()
-        if min(f.size)<32:raise ValueError("Logo medio demasiado pequeño")
-        f.convert("RGBA").save(directory/f"fuente-{idx+1:02d}.png")
+        if min(f.size)<16:raise ValueError("Icono de fuente no legible")
+        icon=f.convert("RGBA")
+        if min(icon.size)<96:
+            icon=ImageOps.contain(icon,(128,128),method=Image.Resampling.NEAREST)
+        icon.save(directory/f"fuente-{idx+1:02d}.png")
     return f"fuente-{idx+1:02d}.png"
 
 def frame(brand,n,credit,logo,number,mode,path,day=DAY,slot=SLOT):
