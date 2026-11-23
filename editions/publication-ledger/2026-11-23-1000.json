@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-23",
+  "slot": "10:00",
+  "timezone": "America/Bogota",
+  "status": "PUBLISHED_INSTAGRAM_FACEBOOK",
+  "source_repository": "willsonballesteros-ui/colombia-al-dia",
+  "workflow_run_url": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/45206062195",
+  "website_staged_in_git": true,
+  "website_live_cloudflare_not_independently_verified": true,
+  "published_at_note": "Acciones de publicación confirmadas por Windsor.ai. La consulta de lectura de publicaciones puede reflejar retraso.",
+  "instagram_permalink_status": "waiting_for_read_connector",
+  "facebook_permalink_status": "actions_confirm_video_ids",
+  "orbiuno": {
+    "count": 6,
+    "account": "resumen.noticias",
+    "instagram_media_id": "18109354673356577",
+    "facebook_video_id": "1740170511012537",
+    "facebook_post_id": "1516359454884058_122113582701535309",
+    "video": "media/2026-11-23/edicion-1000/ORBIUNO_2026-11-23_1000_6_NOTICIAS.mp4",
+    "caption": "media/2026-11-23/edicion-1000/orbiuno_caption.txt",
+    "duration_seconds": 65.759961,
+    "sha256": "b1fffcf6fd8cf9f3cb40b4b818c1c8d7fc560b560441c6bb217e8d3f883d405e",
+    "verification": "meta_creation_actions_returned_success"
+  },
+  "mycar": {
+    "count": 5,
+    "account": "mycar.buscoautos",
+    "instagram_media_id": "18132641902881491",
+    "facebook_video_id": "1686549953147468",
+    "facebook_post_id": "100141169648736_1159649407024269",
+    "video": "media/2026-11-23/edicion-1000/MYCAR_2026-11-23_1000_5_NOTICIAS.mp4",
+    "caption": "media/2026-11-23/edicion-1000/mycar_caption.txt",
+    "duration_seconds": 77.158659,
+    "sha256": "4f73d0c72141cc959d6ece511d710314948df85c974d2aae0640540946c099d2",
+    "verification": "meta_creation_actions_returned_success"
+  },
+  "deduplication_key": "ORBIUNO-MYCAR-2026-11-23-1000-V1"
+}
