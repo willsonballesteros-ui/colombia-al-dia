@@ -1,570 +1,490 @@
 {
   "date": "2026-11-23",
   "edition": "18:00 America/Bogota",
-  "method": "Apertura de cada URL mediante consulta web de ChatGPT; no equivale a verificar todos los artículos ni las licencias.",
   "total": 80,
-  "readable": 60,
-  "not_readable": 20,
+  "status": "PENDING_HTTP_AUDIT",
+  "note": "Inventario recuperado de Drive. Los conteos anteriores no disponían de evidencia HTTP independiente; se retiran como resultados confirmados. La nueva auditoría ejecuta GET y conserva el resultado como artefacto de GitHub Actions.",
+  "workflow": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/45289301694",
   "sources": [
     {
       "number": 1,
       "source": "AP",
       "url": "https://apnews.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 2,
       "source": "Reuters",
       "url": "https://www.reuters.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 3,
       "source": "AFP",
       "url": "https://www.afp.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 4,
       "source": "EFE",
       "url": "https://efe.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 5,
       "source": "DPA",
       "url": "https://www.dpa.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 6,
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/",
-      "result": "not_readable",
-      "detail": "no accesible"
+      "status": "pending_http_evidence"
     },
     {
       "number": 7,
       "source": "Xinhua",
       "url": "https://english.news.cn/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 8,
       "source": "TASS",
       "url": "https://tass.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 9,
       "source": "BBC",
       "url": "https://www.bbc.com/news",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 10,
       "source": "CNN",
       "url": "https://www.cnn.com/",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 11,
       "source": "Al Jazeera",
       "url": "https://www.aljazeera.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 12,
       "source": "France 24",
       "url": "https://www.france24.com/es/",
-      "result": "not_readable",
-      "detail": "403"
+      "status": "pending_http_evidence"
     },
     {
       "number": 13,
       "source": "DW",
       "url": "https://www.dw.com/es/",
-      "result": "not_readable",
-      "detail": "no accesible"
+      "status": "pending_http_evidence"
     },
     {
       "number": 14,
       "source": "The New York Times",
       "url": "https://www.nytimes.com/",
-      "result": "not_readable",
-      "detail": "no accesible"
+      "status": "pending_http_evidence"
     },
     {
       "number": 15,
       "source": "The Guardian",
       "url": "https://www.theguardian.com/international",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 16,
       "source": "Financial Times",
       "url": "https://www.ft.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 17,
       "source": "The Wall Street Journal",
       "url": "https://www.wsj.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 18,
       "source": "El País",
       "url": "https://elpais.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 19,
       "source": "El Tiempo",
       "url": "https://www.eltiempo.com/",
-      "result": "not_readable",
-      "detail": "no accesible"
+      "status": "pending_http_evidence"
     },
     {
       "number": 20,
       "source": "El Espectador",
       "url": "https://www.elespectador.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 21,
       "source": "La República",
       "url": "https://www.larepublica.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 22,
       "source": "Portafolio",
       "url": "https://www.portafolio.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 23,
       "source": "Caracol Radio",
       "url": "https://caracol.com.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 24,
       "source": "Noticias Caracol",
       "url": "https://www.noticiascaracol.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 25,
       "source": "Noticias RCN",
       "url": "https://www.noticiasrcn.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 26,
       "source": "Semana",
       "url": "https://www.semana.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 27,
       "source": "El Colombiano",
       "url": "https://www.elcolombiano.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 28,
       "source": "El Heraldo",
       "url": "https://www.elheraldo.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 29,
       "source": "Vanguardia",
       "url": "https://www.vanguardia.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 30,
       "source": "El País Cali",
       "url": "https://www.elpais.com.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 31,
       "source": "El Universal Cartagena",
       "url": "https://www.eluniversal.com.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 32,
       "source": "Cambio Colombia",
       "url": "https://cambiocolombia.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 33,
       "source": "La Silla Vacía",
       "url": "https://www.lasillavacia.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 34,
       "source": "Colombiacheck",
       "url": "https://colombiacheck.com/",
-      "result": "not_readable",
-      "detail": "403"
+      "status": "pending_http_evidence"
     },
     {
       "number": 35,
       "source": "Vorágine",
       "url": "https://voragine.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 36,
       "source": "Forbes Colombia",
       "url": "https://forbes.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 37,
       "source": "Valora Analitik",
       "url": "https://www.valoraanalitik.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 38,
       "source": "Infobae Colombia",
       "url": "https://www.infobae.com/colombia/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 39,
       "source": "Radio Nacional de Colombia",
       "url": "https://www.radionacional.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 40,
       "source": "RTVC Noticias",
       "url": "https://www.rtvcnoticias.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 41,
       "source": "Canal Capital",
       "url": "https://www.canalcapital.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 42,
       "source": "DANE",
       "url": "https://www.dane.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 43,
       "source": "Banco de la República",
       "url": "https://www.banrep.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 44,
       "source": "MinCiencias",
       "url": "https://minciencias.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 45,
       "source": "Ministerio de Educación",
       "url": "https://www.mineducacion.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 46,
       "source": "Ministerio de Salud",
       "url": "https://www.minsalud.gov.co/",
-      "result": "not_readable",
-      "detail": "429"
+      "status": "pending_http_evidence"
     },
     {
       "number": 47,
       "source": "Ministerio de Ambiente",
       "url": "https://www.minambiente.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 48,
       "source": "ProColombia",
       "url": "https://procolombia.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 49,
       "source": "Parques Nacionales",
       "url": "https://www.parquesnacionales.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 50,
       "source": "IDEAM",
       "url": "https://www.ideam.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 51,
       "source": "Instituto Humboldt",
       "url": "https://www.humboldt.org.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 52,
       "source": "UNGRD",
       "url": "https://portal.gestiondelriesgo.gov.co/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 53,
       "source": "NASA",
       "url": "https://www.nasa.gov/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 54,
       "source": "Agencia Espacial Europea",
       "url": "https://www.esa.int/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 55,
       "source": "NOAA",
       "url": "https://www.noaa.gov/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 56,
       "source": "Noticias ONU",
       "url": "https://news.un.org/es/",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 57,
       "source": "OMS",
       "url": "https://www.who.int/es",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 58,
       "source": "UNESCO",
       "url": "https://www.unesco.org/es",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 59,
       "source": "UNICEF",
       "url": "https://www.unicef.org/es",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 60,
       "source": "PNUD",
       "url": "https://www.undp.org/es",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 61,
       "source": "Nature",
       "url": "https://www.nature.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 62,
       "source": "Science",
       "url": "https://www.science.org/",
-      "result": "not_readable",
-      "detail": "403"
+      "status": "pending_http_evidence"
     },
     {
       "number": 63,
       "source": "Scientific American",
       "url": "https://www.scientificamerican.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 64,
       "source": "National Geographic",
       "url": "https://www.nationalgeographic.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 65,
       "source": "The Conversation",
       "url": "https://theconversation.com/",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 66,
       "source": "MIT News",
       "url": "https://news.mit.edu/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 67,
       "source": "CSIC",
       "url": "https://www.csic.es/es",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 68,
       "source": "World Resources Institute",
       "url": "https://www.wri.org/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 69,
       "source": "FIFA",
       "url": "https://www.fifa.com/",
-      "result": "not_readable",
-      "detail": "sin texto legible"
+      "status": "pending_http_evidence"
     },
     {
       "number": 70,
       "source": "Comité Olímpico Internacional",
       "url": "https://www.olympics.com/ioc",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 71,
       "source": "Unión Ciclista Internacional",
       "url": "https://www.uci.org/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 72,
       "source": "ESPN Deportes",
       "url": "https://espndeportes.espn.com/",
-      "result": "not_readable",
-      "detail": "reto JavaScript"
+      "status": "pending_http_evidence"
     },
     {
       "number": 73,
       "source": "Variety",
       "url": "https://variety.com/",
-      "result": "not_readable",
-      "detail": "402"
+      "status": "pending_http_evidence"
     },
     {
       "number": 74,
       "source": "Billboard",
       "url": "https://www.billboard.com/",
-      "result": "not_readable",
-      "detail": "402"
+      "status": "pending_http_evidence"
     },
     {
       "number": 75,
       "source": "Euronews",
       "url": "https://es.euronews.com/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     },
     {
       "number": 76,
       "source": "NPR",
       "url": "https://www.npr.org/",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 77,
       "source": "PBS News",
       "url": "https://www.pbs.org/newshour/",
-      "result": "not_readable",
-      "detail": "403"
+      "status": "pending_http_evidence"
     },
     {
       "number": 78,
       "source": "The Economist",
       "url": "https://www.economist.com/",
-      "result": "not_readable",
-      "detail": "402"
+      "status": "pending_http_evidence"
     },
     {
       "number": 79,
       "source": "Nikkei Asia",
       "url": "https://asia.nikkei.com/",
-      "result": "not_readable",
-      "detail": "robots.txt"
+      "status": "pending_http_evidence"
     },
     {
       "number": 80,
       "source": "ABC News Australia",
       "url": "https://www.abc.net.au/news/",
-      "result": "readable",
-      "detail": "contenido recuperado; comprobar fecha de artículo"
+      "status": "pending_http_evidence"
     }
   ]
 }
