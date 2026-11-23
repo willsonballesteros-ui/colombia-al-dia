@@ -1,0 +1,74 @@
+[
+  {
+    "file": "foto-01.jpg",
+    "title": "Students using a computer laptop.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Students_using_a_computer_laptop.jpg",
+    "license": "CC0",
+    "author": "Kwameghana(Bright Kwame Ayisi)",
+    "context": "Estudiantes con computador en otro país. Archivo ilustrativo, NO muestra Olimpiadas STEM+ Colombia.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Students_using_a_computer_laptop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-02.jpg",
+    "title": "Surfer running for the waves (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Surfer_running_for_the_waves_(Unsplash).jpg",
+    "license": "CC0",
+    "author": "Annie Spratt anniespratt",
+    "context": "Fotografía de archivo de surf, NO muestra a Freddy Marimón ni Mundial de 2026.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Surfer_running_for_the_waves_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-03.jpg",
+    "title": "Laboratory equipment.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Laboratory_equipment.jpg",
+    "license": "CC BY 4.0",
+    "author": "Belikov Maxim",
+    "context": "Equipos de laboratorio de otro país. Archivo, NO corresponde al laboratorio de EPQ.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Laboratory_equipment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-04.jpg",
+    "title": "Plastic pellets.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Plastic_pellets.jpg",
+    "license": "CC BY 2.0",
+    "author": "SuSanA Secretariat",
+    "context": "Plásticos de archivo, NO son las resinas empleadas por los científicos del CSIC.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Plastic_pellets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-05.jpg",
+    "title": "ROV JASON AT42-22.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:ROV_JASON_AT42-22.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Wünderbrot",
+    "context": "Robot submarino Jason en otra expedición, NO muestra hallazgo de 2026.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/ROV_JASON_AT42-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-06.jpg",
+    "title": "Foto no exif (3).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Foto_no_exif_(3).jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "EritreaCamel",
+    "context": "Clínica en Eritrea en 2008, NO muestra la certificación de OMS de 2026.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Foto_no_exif_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  }
+]
