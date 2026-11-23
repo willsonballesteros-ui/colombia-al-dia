@@ -1,0 +1,117 @@
+name: "ORBIUNO y MyCar | Edición real del 23NOV 10:00"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/edicion-23nov-1000-publicar.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: edicion-real-23nov-1000
+  cancel-in-progress: false
+jobs:
+  producir_y_sincronizar_web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Bloqueo de duplicados y fecha correcta
+        run: |
+          set -euo pipefail
+          test "$(TZ=America/Bogota date +%F)" = "2026-11-23"
+          test ! -e media/2026-11-23/edicion-1000/qa.json
+          python -m json.tool editions/research/2026-11-23-am-source-checked.json >/dev/null
+      - name: Instalar bibliotecas y herramientas
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --timeout 30 --retries 2 Pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/newsbin"
+            npm install --ignore-scripts --no-audit --no-fund --no-save \
+              --prefix "$RUNNER_TEMP/news-npm" \
+              @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            f="$RUNNER_TEMP/news-npm/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            p="$RUNNER_TEMP/news-npm/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            chmod +x "$f" "$p"
+            ln -sf "$f" "$RUNNER_TEMP/newsbin/ffmpeg"
+            ln -sf "$p" "$RUNNER_TEMP/newsbin/ffprobe"
+            echo "$RUNNER_TEMP/newsbin" >> "$GITHUB_PATH"
+          fi
+          python -m py_compile scripts/producir_edicion_23nov_1000.py
+      - name: Verificar fotografías Commons, logos y producir ambos MP4
+        run: PYTHONPATH=. python scripts/producir_edicion_23nov_1000.py
+      - name: Control audiovisual y editorial final
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib, subprocess
+          path=Path("media/2026-11-23/edicion-1000")
+          qa=json.loads((path/"qa.json").read_text())
+          assert qa["readyForWebSync"]
+          for brand,qty in [("orbiuno",6),("mycar",5)]:
+              manifest=json.loads((path/(brand+"_manifest.json")).read_text())
+              vid=path/manifest["video"]
+              assert manifest["newsCount"]==qty
+              assert manifest["imagesCount"]==manifest["logosCount"]==qty
+              assert manifest["audioSegments"]==qty+2
+              assert 15<manifest["duration"]<180
+              assert len(manifest["sourceUrls"])==qty
+              assert all(c["rightsVerified"] and c["author"] and c["license"] and c["source"] for c in manifest["photoCredits"])
+              assert vid.stat().st_size>200000 and hashlib.sha256(vid.read_bytes()).hexdigest()==manifest["sha256"]
+              p=subprocess.run(["ffmpeg","-v","error","-i",str(vid),"-f","null","-"],capture_output=True,text=True)
+              assert p.returncode==0,p.stderr[:1000]
+              assert len((path/(brand+"_caption.txt")).read_text())<=2200
+          print("EDITORIAL_LICENSED_MEDIA_QA_PASS_TWO_REELS")
+          PY
+      - name: Integrar noticias y audios a la web sin borrar historial
+        run: |
+          PYTHONPATH=. python scripts/sincronizar_23nov_1000_web.py
+          python scripts/build_feed.py
+          python scripts/stage_cloudflare_site.py --out site
+          python - <<'PY'
+          from pathlib import Path
+          a=Path("site/index.html").read_text()
+          assert "23/11/2026" in a and "edicion-1000" in a
+          for brand in ("orbiuno","mycar"):
+              assert (Path("site")/(brand+"-2026-11-23-1000.html")).exists()
+              assert (Path("site/media/2026-11-23/edicion-1000")/("ORBIUNO_2026-11-23_1000_6_NOTICIAS.mp4" if brand=="orbiuno" else "MYCAR_2026-11-23_1000_5_NOTICIAS.mp4")).stat().st_size>200000
+          print("SITE_SYNC_QA_OK")
+          PY
+      - name: Guardar MP4, web, voces, fotos y fuentes en main
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "media/2026-11-23" noticias.json index.html feed.xml "orbiuno-2026-11-23-1000.html" "mycar-2026-11-23-1000.html" data/mycar-noticias.json site
+          git commit -m 'ORBIUNO y MYCAR: edición 23NOV 10h, medios licenciados, audio y web'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if ! git rebase -X theirs origin/main; then
+              git rebase --abort || true; exit 1
+            fi
+            python scripts/stage_cloudflare_site.py --out site
+            git add site
+            if ! git diff --cached --quiet; then git commit -m 'reconciliar Pages ORBIUNO MyCar 23NOV'; fi
+            if git push origin HEAD:main; then echo 'PUBLIC_MP4_WEB_COMMIT_CONFIRMED'; exit 0; fi
+            sleep "$((attempt*2))"
+          done
+          exit 1
+      - name: Guardar auditoría y reportar, SIN publicar todavía en Meta
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: edicion-23nov-1000-orbiuno-mycar-preflight
+          path: |
+            media/2026-11-23/edicion-1000/qa.json
+            media/2026-11-23/edicion-1000/*_manifest.json
+            media/2026-11-23/edicion-1000/*_caption.txt
+          if-no-files-found: warn
+          retention-days: 45
