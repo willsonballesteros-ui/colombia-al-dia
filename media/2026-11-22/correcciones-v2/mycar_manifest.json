@@ -1,0 +1,21 @@
+{
+  "edition": "2026-11-22",
+  "slot": "18:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-22_1800_5_NOTICIAS_CORREGIDA_V2.mp4",
+  "sha256": "3a0d21456c2f177cf65c9079297234b946a4888d8f7672657f4a3c5a679ee35f",
+  "duration": 85.833333,
+  "sources": [
+    "https://www.elcarrocolombiano.com/lanzamientos/dongfeng-007-colombia-precio-autonomia-salon-automovil-bogota-2026/",
+    "https://noticias.autocosmos.com.co/2026/11/21/sia-2026-im-motors-presenta-en-colombia-el-im6-un-suv-electrico-premium-de-hasta-408-hp",
+    "https://www.elcarrocolombiano.com/dos-ruedas/akt-renovo-special-x-110-colombia-luces-led-tablero-digital/",
+    "https://www.elcarrocolombiano.com/noticias/lynk-co-07-gt-lanzo-barranco-demostrar-nivel-seguridad-asi-le-fue/",
+    "https://noticias.autocosmos.com.co/2026/11/11/mhero-e0-special-edition-el-suv-hibrido-de-677-hp-y-espiritu-aventurero-llega-a-colombia"
+  ],
+  "voices": 7,
+  "voice": "es-CO-SalomeNeural",
+  "tempo": 1.25,
+  "correctionVersion": 2,
+  "originalVideoUnchanged": true,
+  "publishStatus": "not_published"
+}
