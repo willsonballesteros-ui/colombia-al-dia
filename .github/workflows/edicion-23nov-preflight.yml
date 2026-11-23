@@ -1,4 +1,5 @@
 name: "ORBIUNO MyCar | Preparación editorial 23NOV, sin publicar"
+# Segunda ejecución: prueba de invitación al enlace del perfil corregida.
 on:
   push:
     branches: [main]
