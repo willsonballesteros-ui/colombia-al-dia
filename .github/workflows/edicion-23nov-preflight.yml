@@ -1,0 +1,47 @@
+name: "ORBIUNO MyCar | Preparación editorial 23NOV, sin publicar"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/edicion-23nov-preflight.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validar texto, fuentes, número de noticias y seguridad editorial
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/build_20261123_editorial.py
+          PYTHONPATH=. python scripts/build_20261123_editorial.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("build/edicion-2026-11-23-am/QA.json").read_text())
+          assert m["verifiedArticles"]==11 and m["unlicensedPhotos"]==11
+          assert not m["readyToPublish"]
+          assert m["brands"]["orbiuno"]["count"]==6
+          assert m["brands"]["mycar"]["count"]==5
+          for brand in ("orbiuno","mycar"):
+              p=Path("build/edicion-2026-11-23-am")/brand
+              voice=json.loads((p/"voice_input.json").read_text())
+              web=json.loads((p/"web_articles.json").read_text())
+              assert len(voice["segments"])==len(web["news"])+2
+              assert all(len(n["textForWebAudio"])>=640 for n in web["news"])
+              assert "enlace del perfil" in voice["segments"][-1]["text"]
+          print("STAGE_EDITIONS_EDITORIAL_QA_PASS_DO_NOT_PUBLISH")
+          PY
+      - name: Guardar guiones editoriales sin publicar
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-MYCAR-20261123-0830-GUIONES
+          path: build/edicion-2026-11-23-am/
+          if-no-files-found: error
+          retention-days: 45
