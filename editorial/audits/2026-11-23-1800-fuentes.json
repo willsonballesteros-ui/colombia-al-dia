@@ -2,489 +2,416 @@
   "date": "2026-11-23",
   "edition": "18:00 America/Bogota",
   "total": 80,
-  "status": "PENDING_HTTP_AUDIT",
-  "note": "Inventario recuperado de Drive. Los conteos anteriores no disponían de evidencia HTTP independiente; se retiran como resultados confirmados. La nueva auditoría ejecuta GET y conserva el resultado como artefacto de GitHub Actions.",
+  "status": "HTTP_AUDIT_COMPLETE",
+  "note": "Resultados agregados confirmados en logs de GitHub Actions; detalle individual en el artefacto source-audit.json. Este inventario no reproduce resultados individuales sin lectura del artefacto.",
   "workflow": "https://github.com/willsonballesteros-ui/colombia-al-dia/actions/runs/45289301694",
   "sources": [
     {
       "number": 1,
       "source": "AP",
-      "url": "https://apnews.com/",
-      "status": "pending_http_evidence"
+      "url": "https://apnews.com/"
     },
     {
       "number": 2,
       "source": "Reuters",
-      "url": "https://www.reuters.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.reuters.com/"
     },
     {
       "number": 3,
       "source": "AFP",
-      "url": "https://www.afp.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.afp.com/"
     },
     {
       "number": 4,
       "source": "EFE",
-      "url": "https://efe.com/",
-      "status": "pending_http_evidence"
+      "url": "https://efe.com/"
     },
     {
       "number": 5,
       "source": "DPA",
-      "url": "https://www.dpa.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.dpa.com/"
     },
     {
       "number": 6,
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/",
-      "status": "pending_http_evidence"
+      "url": "https://www.bloomberg.com/news/"
     },
     {
       "number": 7,
       "source": "Xinhua",
-      "url": "https://english.news.cn/",
-      "status": "pending_http_evidence"
+      "url": "https://english.news.cn/"
     },
     {
       "number": 8,
       "source": "TASS",
-      "url": "https://tass.com/",
-      "status": "pending_http_evidence"
+      "url": "https://tass.com/"
     },
     {
       "number": 9,
       "source": "BBC",
-      "url": "https://www.bbc.com/news",
-      "status": "pending_http_evidence"
+      "url": "https://www.bbc.com/news"
     },
     {
       "number": 10,
       "source": "CNN",
-      "url": "https://www.cnn.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.cnn.com/"
     },
     {
       "number": 11,
       "source": "Al Jazeera",
-      "url": "https://www.aljazeera.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.aljazeera.com/"
     },
     {
       "number": 12,
       "source": "France 24",
-      "url": "https://www.france24.com/es/",
-      "status": "pending_http_evidence"
+      "url": "https://www.france24.com/es/"
     },
     {
       "number": 13,
       "source": "DW",
-      "url": "https://www.dw.com/es/",
-      "status": "pending_http_evidence"
+      "url": "https://www.dw.com/es/"
     },
     {
       "number": 14,
       "source": "The New York Times",
-      "url": "https://www.nytimes.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.nytimes.com/"
     },
     {
       "number": 15,
       "source": "The Guardian",
-      "url": "https://www.theguardian.com/international",
-      "status": "pending_http_evidence"
+      "url": "https://www.theguardian.com/international"
     },
     {
       "number": 16,
       "source": "Financial Times",
-      "url": "https://www.ft.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.ft.com/"
     },
     {
       "number": 17,
       "source": "The Wall Street Journal",
-      "url": "https://www.wsj.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.wsj.com/"
     },
     {
       "number": 18,
       "source": "El País",
-      "url": "https://elpais.com/",
-      "status": "pending_http_evidence"
+      "url": "https://elpais.com/"
     },
     {
       "number": 19,
       "source": "El Tiempo",
-      "url": "https://www.eltiempo.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.eltiempo.com/"
     },
     {
       "number": 20,
       "source": "El Espectador",
-      "url": "https://www.elespectador.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.elespectador.com/"
     },
     {
       "number": 21,
       "source": "La República",
-      "url": "https://www.larepublica.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.larepublica.co/"
     },
     {
       "number": 22,
       "source": "Portafolio",
-      "url": "https://www.portafolio.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.portafolio.co/"
     },
     {
       "number": 23,
       "source": "Caracol Radio",
-      "url": "https://caracol.com.co/",
-      "status": "pending_http_evidence"
+      "url": "https://caracol.com.co/"
     },
     {
       "number": 24,
       "source": "Noticias Caracol",
-      "url": "https://www.noticiascaracol.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.noticiascaracol.com/"
     },
     {
       "number": 25,
       "source": "Noticias RCN",
-      "url": "https://www.noticiasrcn.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.noticiasrcn.com/"
     },
     {
       "number": 26,
       "source": "Semana",
-      "url": "https://www.semana.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.semana.com/"
     },
     {
       "number": 27,
       "source": "El Colombiano",
-      "url": "https://www.elcolombiano.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.elcolombiano.com/"
     },
     {
       "number": 28,
       "source": "El Heraldo",
-      "url": "https://www.elheraldo.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.elheraldo.co/"
     },
     {
       "number": 29,
       "source": "Vanguardia",
-      "url": "https://www.vanguardia.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.vanguardia.com/"
     },
     {
       "number": 30,
       "source": "El País Cali",
-      "url": "https://www.elpais.com.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.elpais.com.co/"
     },
     {
       "number": 31,
       "source": "El Universal Cartagena",
-      "url": "https://www.eluniversal.com.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.eluniversal.com.co/"
     },
     {
       "number": 32,
       "source": "Cambio Colombia",
-      "url": "https://cambiocolombia.com/",
-      "status": "pending_http_evidence"
+      "url": "https://cambiocolombia.com/"
     },
     {
       "number": 33,
       "source": "La Silla Vacía",
-      "url": "https://www.lasillavacia.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.lasillavacia.com/"
     },
     {
       "number": 34,
       "source": "Colombiacheck",
-      "url": "https://colombiacheck.com/",
-      "status": "pending_http_evidence"
+      "url": "https://colombiacheck.com/"
     },
     {
       "number": 35,
       "source": "Vorágine",
-      "url": "https://voragine.co/",
-      "status": "pending_http_evidence"
+      "url": "https://voragine.co/"
     },
     {
       "number": 36,
       "source": "Forbes Colombia",
-      "url": "https://forbes.co/",
-      "status": "pending_http_evidence"
+      "url": "https://forbes.co/"
     },
     {
       "number": 37,
       "source": "Valora Analitik",
-      "url": "https://www.valoraanalitik.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.valoraanalitik.com/"
     },
     {
       "number": 38,
       "source": "Infobae Colombia",
-      "url": "https://www.infobae.com/colombia/",
-      "status": "pending_http_evidence"
+      "url": "https://www.infobae.com/colombia/"
     },
     {
       "number": 39,
       "source": "Radio Nacional de Colombia",
-      "url": "https://www.radionacional.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.radionacional.co/"
     },
     {
       "number": 40,
       "source": "RTVC Noticias",
-      "url": "https://www.rtvcnoticias.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.rtvcnoticias.com/"
     },
     {
       "number": 41,
       "source": "Canal Capital",
-      "url": "https://www.canalcapital.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.canalcapital.gov.co/"
     },
     {
       "number": 42,
       "source": "DANE",
-      "url": "https://www.dane.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.dane.gov.co/"
     },
     {
       "number": 43,
       "source": "Banco de la República",
-      "url": "https://www.banrep.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.banrep.gov.co/"
     },
     {
       "number": 44,
       "source": "MinCiencias",
-      "url": "https://minciencias.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://minciencias.gov.co/"
     },
     {
       "number": 45,
       "source": "Ministerio de Educación",
-      "url": "https://www.mineducacion.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.mineducacion.gov.co/"
     },
     {
       "number": 46,
       "source": "Ministerio de Salud",
-      "url": "https://www.minsalud.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.minsalud.gov.co/"
     },
     {
       "number": 47,
       "source": "Ministerio de Ambiente",
-      "url": "https://www.minambiente.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.minambiente.gov.co/"
     },
     {
       "number": 48,
       "source": "ProColombia",
-      "url": "https://procolombia.co/",
-      "status": "pending_http_evidence"
+      "url": "https://procolombia.co/"
     },
     {
       "number": 49,
       "source": "Parques Nacionales",
-      "url": "https://www.parquesnacionales.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.parquesnacionales.gov.co/"
     },
     {
       "number": 50,
       "source": "IDEAM",
-      "url": "https://www.ideam.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.ideam.gov.co/"
     },
     {
       "number": 51,
       "source": "Instituto Humboldt",
-      "url": "https://www.humboldt.org.co/",
-      "status": "pending_http_evidence"
+      "url": "https://www.humboldt.org.co/"
     },
     {
       "number": 52,
       "source": "UNGRD",
-      "url": "https://portal.gestiondelriesgo.gov.co/",
-      "status": "pending_http_evidence"
+      "url": "https://portal.gestiondelriesgo.gov.co/"
     },
     {
       "number": 53,
       "source": "NASA",
-      "url": "https://www.nasa.gov/",
-      "status": "pending_http_evidence"
+      "url": "https://www.nasa.gov/"
     },
     {
       "number": 54,
       "source": "Agencia Espacial Europea",
-      "url": "https://www.esa.int/",
-      "status": "pending_http_evidence"
+      "url": "https://www.esa.int/"
     },
     {
       "number": 55,
       "source": "NOAA",
-      "url": "https://www.noaa.gov/",
-      "status": "pending_http_evidence"
+      "url": "https://www.noaa.gov/"
     },
     {
       "number": 56,
       "source": "Noticias ONU",
-      "url": "https://news.un.org/es/",
-      "status": "pending_http_evidence"
+      "url": "https://news.un.org/es/"
     },
     {
       "number": 57,
       "source": "OMS",
-      "url": "https://www.who.int/es",
-      "status": "pending_http_evidence"
+      "url": "https://www.who.int/es"
     },
     {
       "number": 58,
       "source": "UNESCO",
-      "url": "https://www.unesco.org/es",
-      "status": "pending_http_evidence"
+      "url": "https://www.unesco.org/es"
     },
     {
       "number": 59,
       "source": "UNICEF",
-      "url": "https://www.unicef.org/es",
-      "status": "pending_http_evidence"
+      "url": "https://www.unicef.org/es"
     },
     {
       "number": 60,
       "source": "PNUD",
-      "url": "https://www.undp.org/es",
-      "status": "pending_http_evidence"
+      "url": "https://www.undp.org/es"
     },
     {
       "number": 61,
       "source": "Nature",
-      "url": "https://www.nature.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.nature.com/"
     },
     {
       "number": 62,
       "source": "Science",
-      "url": "https://www.science.org/",
-      "status": "pending_http_evidence"
+      "url": "https://www.science.org/"
     },
     {
       "number": 63,
       "source": "Scientific American",
-      "url": "https://www.scientificamerican.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.scientificamerican.com/"
     },
     {
       "number": 64,
       "source": "National Geographic",
-      "url": "https://www.nationalgeographic.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.nationalgeographic.com/"
     },
     {
       "number": 65,
       "source": "The Conversation",
-      "url": "https://theconversation.com/",
-      "status": "pending_http_evidence"
+      "url": "https://theconversation.com/"
     },
     {
       "number": 66,
       "source": "MIT News",
-      "url": "https://news.mit.edu/",
-      "status": "pending_http_evidence"
+      "url": "https://news.mit.edu/"
     },
     {
       "number": 67,
       "source": "CSIC",
-      "url": "https://www.csic.es/es",
-      "status": "pending_http_evidence"
+      "url": "https://www.csic.es/es"
     },
     {
       "number": 68,
       "source": "World Resources Institute",
-      "url": "https://www.wri.org/",
-      "status": "pending_http_evidence"
+      "url": "https://www.wri.org/"
     },
     {
       "number": 69,
       "source": "FIFA",
-      "url": "https://www.fifa.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.fifa.com/"
     },
     {
       "number": 70,
       "source": "Comité Olímpico Internacional",
-      "url": "https://www.olympics.com/ioc",
-      "status": "pending_http_evidence"
+      "url": "https://www.olympics.com/ioc"
     },
     {
       "number": 71,
       "source": "Unión Ciclista Internacional",
-      "url": "https://www.uci.org/",
-      "status": "pending_http_evidence"
+      "url": "https://www.uci.org/"
     },
     {
       "number": 72,
       "source": "ESPN Deportes",
-      "url": "https://espndeportes.espn.com/",
-      "status": "pending_http_evidence"
+      "url": "https://espndeportes.espn.com/"
     },
     {
       "number": 73,
       "source": "Variety",
-      "url": "https://variety.com/",
-      "status": "pending_http_evidence"
+      "url": "https://variety.com/"
     },
     {
       "number": 74,
       "source": "Billboard",
-      "url": "https://www.billboard.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.billboard.com/"
     },
     {
       "number": 75,
       "source": "Euronews",
-      "url": "https://es.euronews.com/",
-      "status": "pending_http_evidence"
+      "url": "https://es.euronews.com/"
     },
     {
       "number": 76,
       "source": "NPR",
-      "url": "https://www.npr.org/",
-      "status": "pending_http_evidence"
+      "url": "https://www.npr.org/"
     },
     {
       "number": 77,
       "source": "PBS News",
-      "url": "https://www.pbs.org/newshour/",
-      "status": "pending_http_evidence"
+      "url": "https://www.pbs.org/newshour/"
     },
     {
       "number": 78,
       "source": "The Economist",
-      "url": "https://www.economist.com/",
-      "status": "pending_http_evidence"
+      "url": "https://www.economist.com/"
     },
     {
       "number": 79,
       "source": "Nikkei Asia",
-      "url": "https://asia.nikkei.com/",
-      "status": "pending_http_evidence"
+      "url": "https://asia.nikkei.com/"
     },
     {
       "number": 80,
       "source": "ABC News Australia",
-      "url": "https://www.abc.net.au/news/",
-      "status": "pending_http_evidence"
+      "url": "https://www.abc.net.au/news/"
     }
-  ]
+  ],
+  "counts": {
+    "http_error": 12,
+    "content_response": 61,
+    "access_challenge": 5,
+    "network_error": 2
+  },
+  "tests_passed": 4
 }
