@@ -6,6 +6,44 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-9291547c3e9b78ec",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "La fiebre de la inteligencia artificial revaloriza los oficios técnicos en Estados Unidos",
+      "summary": "Titular difundido por DiarioBitcoin a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "DiarioBitcoin · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQk42RlpONkl2bXZhNVJKUkM3MjZsTm9PWFMtaFl5Z2duZWZ4cktQZTVVelJYTG5ldXNxbEd2YkpsRGVRT0ZIdDRFUWs1eTMxLUR6emtZdkdDeDNoeVotZW1ZRk02Q2ctallWRnViRVE2MkQ4Z0ctRUJ3Z2V2TWRiMG5XSjdhV1RRRVN6dXZLV1F6VkZSRFpmZllnTHZoNjhQREZ0dVdyOE9weUFMVjgtQTA5ZDNyd3lYamRfYTZiUkFycEFEMzZ1R2VlM3JPS1ZZ?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T14:35-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-e07c99c57e322767",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Dassault Systèmes amplía su IA industrial con NVIDIA y Vertiv",
+      "summary": "Titular difundido por La Ecuación Digital a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "La Ecuación Digital · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQakpqZWlqT1lqZWoxVS14ZGpva3U4M3VORVVWOUJjQnpLZDlkVkl6V2pzMFR4LUFGSnZHUl9HblREQm1BbURRXzNqd1lQZWVwV2VKeG1UeVpNMjlXbzBOMHdHaHU0S2sxOHpaMl9UT3QxdGtmWXpsbVJqajlraFkzUkZpc0JFQXEwZEZJN2FydTN1Y3AtM0N4N2ozazhxaDlHM2dpa3JwSnFsTUFoZXpZX1VVVXg?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T14:12-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-323022315fe9e744",
       "date": "2026-11-22",
       "category": "Tecnología e IA",
@@ -31495,8 +31533,8 @@
       "imageAlt": "Desfile de moda realizado en Mozambique en 2025, fotografía de archivo. No corresponde a Bogotá Fashion Weekend."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-22T19:11-05:00",
-  "lastNewSourceAtBogota": "2026-11-22T19:11-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-22T19:17-05:00",
+  "lastNewSourceAtBogota": "2026-11-22T19:17-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
