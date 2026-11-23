@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-23",
+  "slot": "18:00",
+  "brand": "MyCar",
+  "status": "EDITORIAL_CANDIDATES_PHOTO_RIGHTS_AND_DEDUP_PENDING",
+  "approved_for_production": false,
+  "voice": "es-CO-SalomeNeural",
+  "speed": 1.25,
+  "news": [
+    {
+      "title": "Renault 4 eléctrico agotó las primeras 50 reservas en Colombia",
+      "source": "El Carro Colombiano",
+      "url": "https://www.elcarrocolombiano.com/resenas/renault-4-e-tech-electrico-colombia-analisis-preventa-precio/",
+      "date": "2026-11-23",
+      "say": "Según El Carro Colombiano, las cincuenta unidades de preventa del Renault cuatro eléctrico se agotaron en una semana durante el Salón de Bogotá. Es un balance de la preventa, no una cifra de entregas.",
+      "photoQuery": "Renault 4 E-Tech electric",
+      "photoRightsVerified": false,
+      "photoUrl": null
+    },
+    {
+      "title": "Ford Colombia reporta crecimiento de 37 % en matriculaciones",
+      "source": "Autocosmos Colombia",
+      "url": "https://noticias.autocosmos.com.co/2026/11/23/ford-colombia-crece-37--en-2026-ranger-y-territory-impulsan-sus-ventas",
+      "date": "2026-11-23",
+      "say": "Ford reportó siete mil novecientos veintiún vehículos matriculados en Colombia entre enero y octubre, treinta y siete por ciento más que en el mismo período del año anterior.",
+      "photoQuery": "Ford Ranger Territory Colombia",
+      "photoRightsVerified": false,
+      "photoUrl": null
+    },
+    {
+      "title": "Geely amplía su oferta electrificada en Colombia",
+      "source": "TecnoTV",
+      "url": "https://www.tecnotv.com.co/geely-amplia-la-familia-galaxy-en-colombia-con-el-estreno-de-las-suv-hibridas-starray-em-r-y-monjaro-em-i/",
+      "date": "2026-11-23",
+      "contrast": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/22/sia-2026-geely-starray-em-r-y-monjaro-em-i-se-lanzan-en-colombia-para-ampliar-la-familia-galaxy",
+      "say": "Geely incorporó al mercado colombiano dos camionetas electrificadas, Starray de rango extendido y Monjaro híbrida, ampliando su familia Galaxy.",
+      "photoQuery": "Geely Starray EM-R Monjaro EM-i",
+      "photoRightsVerified": false,
+      "photoUrl": null
+    },
+    {
+      "title": "Nissan alcanza cuatro millones de vehículos fabricados con energía libre de CO₂ en México",
+      "source": "Nissan México",
+      "url": "https://mexico.nissannews.com/es-MX/releases/nissan-se-convierte-en-la-primera-automotriz-en-mexico-en-alcanzar-4-millones-de-vehiculos-producidos-con-energia-libre-de-co",
+      "date": "2026-11-23",
+      "contrast": "https://mexicoindustry.com/noticia/nissan-produce-4-millones-de-vehiculos-con-energia-libre-de-co2-en-mexico",
+      "say": "Nissan anunció cuatro millones de vehículos producidos en México utilizando energía libre de dióxido de carbono. La cifra se refiere al suministro energético de fabricación, no a las emisiones totales de cada vehículo.",
+      "photoQuery": "Nissan Aguascalientes manufacturing plant",
+      "photoRightsVerified": false,
+      "photoUrl": null
+    },
+    {
+      "title": "Opel y Leapmotor acuerdan desarrollar un SUV eléctrico en España",
+      "source": "Electrive",
+      "url": "https://www.electrive.com/es/2026/11/23/opel-y-leapmotor-formalizan-una-alianza-para-la-fabricacion-de-suv-electricos-a-bateria/",
+      "date": "2026-11-23",
+      "contrast": "https://www.media.stellantis.com/me-en/opel/press/major-milestone-opel-and-leapmotor-sign-official-cooperation-agreement",
+      "say": "Opel y Leapmotor formalizaron un acuerdo para desarrollar un nuevo todocamino eléctrico que se fabricará en Zaragoza. Su llegada al mercado está prevista para dos mil veintiocho.",
+      "photoQuery": "Opel Leapmotor Zaragoza plant",
+      "photoRightsVerified": false,
+      "photoUrl": null
+    }
+  ],
+  "cta": "Escucha las noticias y consulta las fuentes en busco-autos.pages.dev."
+}
