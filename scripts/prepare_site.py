@@ -370,7 +370,7 @@ def build(data, page, *, as_of=None):
     active_slots=[pair for pair in slots if any(n.get("editionSlot")==pair[0] for n in published)]
     slots=tuple(active_slots)
     sections=[]
-    reel_limits={"08:00":6,"09:30":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
+    reel_limits={"08:00":6,"09:30":6,"10:00":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
