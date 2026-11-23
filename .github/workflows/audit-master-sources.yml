@@ -1,0 +1,43 @@
+name: Auditoría real de 80 fuentes
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/fuentes-maestras.json'
+      - 'scripts/audit_master_sources.py'
+      - '.github/workflows/audit-master-sources.yml'
+permissions:
+  contents: read
+concurrency:
+  group: editorial-audit-master-sources
+  cancel-in-progress: false
+jobs:
+  auditar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pruebas sin tráfico de red
+        run: python scripts/audit_master_sources.py --test
+      - name: Consultar las 80 fuentes y registrar resultados reales
+        run: python scripts/audit_master_sources.py --out dist/source-audit.json
+      - name: Verificar cobertura
+        run: |
+          python - <<'PY'
+          import json
+          with open("dist/source-audit.json", encoding="utf-8") as f:
+              report = json.load(f)
+          assert report["total"] == 80 == sum(report["counts"].values())
+          assert all(not s["editorial_verified"] for s in report["sources"])
+          print("AUDIT_80_COMPLETE", report["counts"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-fuentes-80
+          path: dist/source-audit.json
+          if-no-files-found: error
+          retention-days: 30
