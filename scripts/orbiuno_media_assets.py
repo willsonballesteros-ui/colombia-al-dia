@@ -45,16 +45,23 @@ def fetch(url: str, limit: int = 12_000_000) -> bytes:
         raise ValueError("Host multimedia no autorizado")
     request = Request(url, headers={"User-Agent": "ORBIUNO-Newsroom/1.0 (media rights audit; contact via project GitHub)"})
     response = None
-    # Un 429 indica un límite explícito: no cambiar de host, proxy ni IP.
-    # Detener inmediatamente evita multiplicar solicitudes y protege al proveedor.
-    try:
-        response = urlopen(request, timeout=38)
-    except HTTPError as exc:
-        if exc.code == 429:
+    # Respetar Retry-After una sola vez, sin rotar host, IP o identidad.
+    for attempt in range(2):
+        try:
+            response = urlopen(request, timeout=38)
+            break
+        except HTTPError as exc:
+            if exc.code != 429:
+                raise
             retry_after = (exc.headers.get("Retry-After") or "").strip()
             print("MEDIA_RATE_LIMIT_429", p.hostname, "retry_after=" + retry_after[:32], flush=True)
-            raise RuntimeError("Proveedor limita solicitudes (HTTP 429). Suspender esta edición; reintentar en la siguiente ventana autorizada.") from exc
-        raise
+            try:
+                delay = int(retry_after)
+            except ValueError:
+                delay = 0
+            if attempt == 1 or delay < 1 or delay > 300:
+                raise RuntimeError("Proveedor limita solicitudes (HTTP 429); sin evasión del límite.") from exc
+            time.sleep(delay + 2)
     with response:
         final = urlsplit(response.url)
         google_favicon_hosts = {"www.google.com", "www.gstatic.com", "t0.gstatic.com", "t1.gstatic.com",
@@ -170,15 +177,15 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
     output.mkdir(parents=True, exist_ok=True)
     entries = []
     for i, (n, credit, host, logo_credit) in enumerate(plans, 1):
-        # Preferir el original oficial alojado en upload.wikimedia.org.
-        # Si supera 12 MB o falla, usar la miniatura verificada con su misma licencia.
+        # Miniatura oficial licenciada primero: menor ancho de banda.
+        # No cambiar a otro host o archivo al recibir un 429.
         original = credit.get("original_url") or credit["url"]
         try:
-            photo = decode_image(getter(original))
-        except (HTTPError, ValueError, OSError):
+            photo = decode_image(getter(credit["url"]))
+        except (ValueError, OSError):
             if original == credit["url"]:
                 raise
-            photo = decode_image(getter(credit["url"]))
+            photo = decode_image(getter(original))
         filename = f"photo-{i:02d}.jpg"
         photo.save(output / filename, quality=88, optimize=True)
         icon_candidates = ([logo_credit["url"]] if logo_credit else [
