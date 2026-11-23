@@ -1,4 +1,5 @@
 name: "ORBIUNO y MyCar | Edición real del 23NOV 10:00"
+# Reintento único tras ventana Retry-After=120 de Wikimedia, sin cambiar IP ni host.
 on:
   push:
     branches: [main]
