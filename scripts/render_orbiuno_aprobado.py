@@ -208,7 +208,7 @@ def encode(image, audio, target, *, silent_duration=None):
         raise RuntimeError("Segmento de video vacío")
 
 
-def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
+def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path, no_cover: bool = False):
     doc = json.loads(news_file.read_text(encoding="utf-8"))
     rows = sorted((n for n in doc["news"] if n.get("date") == day and n.get("editionSlot") == slot
                    and n.get("verification") == "editorial_verified"), key=lambda n: n["priority"])
@@ -229,15 +229,16 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
     audio_folder = output / "reel_audio"
     frames.mkdir(exist_ok=True)
     audio_folder.mkdir(exist_ok=True)
-    draw_cover(rows, day, slot, frames / "portada.jpg", assets / entries[0]["photoFile"])
+    if not no_cover:
+        draw_cover(rows, day, slot, frames / "portada.jpg", assets / entries[0]["photoFile"])
     for i, (n, ent) in enumerate(zip(rows, entries), 1):
         draw_story(n, ent, assets, day, slot, i, frames / f"noticia-{i:02d}.jpg")
     draw_outro(day, slot, frames / "cierre.jpg")
-    # Apertura directa: un saludo muy breve en la primera noticia, sin resumen de titulares.
-    # No se crean subtítulos de locución ni se añaden textos ajenos a la noticia.
+    # Cuando no_cover=True, comenzar de inmediato con los hechos: sin portada ni saludo.
     inputs = {"segments": [{"id": f"n{i:02}",
-                             "text": ("Buenos días, bienvenidos a ORBIUNO Noticias. " if i == 1 and slot == "08:00"
-                                      else "Bienvenidos a ORBIUNO Noticias. " if i == 1 else "") + n["reelLine"]}
+                             "text": ("" if no_cover else
+                                      ("Buenos días, bienvenidos a ORBIUNO Noticias. " if i == 1 and slot == "08:00"
+                                       else "Bienvenidos a ORBIUNO Noticias. " if i == 1 else "")) + n["reelLine"]}
                             for i, n in enumerate(rows, 1)]}
     inputs["segments"].append({
         "id": "despedida",
@@ -254,9 +255,10 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
         or any(s["seconds"] <= 1 for s in audio_report["segments"])):
         raise RuntimeError("Voz colombiana aprobada ausente o incompleta")
     parts = []
-    first = output / "part-00.mp4"
-    encode(frames / "portada.jpg", None, first, silent_duration=1.4)
-    parts.append(first)
+    if not no_cover:
+        first = output / "part-00.mp4"
+        encode(frames / "portada.jpg", None, first, silent_duration=1.4)
+        parts.append(first)
     for i, seg in enumerate(audio_report["segments"][:6], 1):
         part = output / f"part-{i:02d}.mp4"
         encode(frames / f"noticia-{i:02d}.jpg", audio_folder / seg["file"], part)
@@ -291,7 +293,9 @@ def render(*, news_file: Path, day: str, slot: str, assets: Path, output: Path):
          "duration": round(duration, 2), "fps": 30, "sha256": hashlib.sha256(video.read_bytes()).hexdigest(),
          "video": video_name, "visualMode": "verified_real_photos", "imagesCount": 6,
          "logosCount": 6, "photoCredits": [x["credit"] for x in entries],
-         "openingStyle": "saludo_corto_directo_a_noticias", "burnedSubtitles": False,
+         "openingStyle": "noticia_directa_sin_portada" if no_cover else "saludo_corto_directo_a_noticias",
+         "openingCover": not no_cover, "openingSpeech": not no_cover,
+         "burnedSubtitles": False,
          "spokenOutro": True, "outroAudioSeconds": audio_report["segments"][6]["seconds"],
          "visualLayout": "photo_first_safe_2026_11_22",
          "sourceOnly": False, "publicationAuthorized": False,
@@ -307,9 +311,10 @@ def main():
     p.add_argument("--slot", required=True)
     p.add_argument("--assets", required=True)
     p.add_argument("--out", required=True)
+    p.add_argument("--no-cover", action="store_true", help="Sin portada ni saludo, inicio en noticia 1")
     a = p.parse_args()
     m = render(news_file=ROOT / "noticias.json", day=a.day, slot=a.slot,
-               assets=Path(a.assets), output=Path(a.out))
+               assets=Path(a.assets), output=Path(a.out), no_cover=a.no_cover)
     print("REEL_SALOME_6_PHOTOS_QA_READY", m["duration"], m["sha256"])
 
 
