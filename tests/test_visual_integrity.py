@@ -25,7 +25,7 @@ class VisualIntegrityTests(unittest.TestCase):
         self.assertTrue(all(1 <= len(notes) <= 6 for notes in by_slot.values()))
         self.assertEqual(len(editorials), len({n.get("id") for n in editorials}))
         self.assertTrue(all(not n.get("imageUrl") or image_verified(n) for n in editorials))
-        page = build(self.db, self.template)
+        page = build(self.db, self.template, as_of=self.db["editionDate"])
         preloaded = page.split('<div id="ediciones-hoy"', 1)[1].split('<div class="cards" id="cards" aria-live="polite">', 1)[0]
         self.assertEqual(preloaded.count('class="news-photo"'), sum(image_verified(n) for n in editorials))
         for n in editorials:
