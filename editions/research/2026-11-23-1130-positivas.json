@@ -10,30 +10,6 @@
   "news": [
     {
       "order": 1,
-      "category": "Deportes",
-      "title": "Freddy Marimón logra su tercer título mundial de para surf",
-      "source": "MINISTERIO DEL DEPORTE",
-      "url": "https://www.mindeporte.gov.co/sala-de-prensa/noticias/freddy-marimon-conquista-tercer-titulo-mundial-surf",
-      "corroboration": "https://isasurf.org/france-claims-fourth-consecutive-team-world-title-at-the-2026-isa-world-para-surfing-championship/",
-      "summary": "El cartagenero ganó el oro de Prone 2 en Palm Desert, California, y suma coronas mundiales en 2018, 2024 y 2026.",
-      "spoken": "El cartagenero Freddy Marimón se coronó tricampeón mundial de para surf. Ganó el oro en Palm Desert, California, y volvió a poner a Colombia en lo más alto del podio.",
-      "photo": "Surfer running for the waves (Unsplash).jpg",
-      "photoContext": "Fotografía de archivo de un surfista en Estados Unidos; no representa a Freddy Marimón ni el campeonato de 2026.",
-      "paragraphs": [
-        "El colombiano Freddy Marimón conquistó su tercer título mundial de para surf en Palm Desert, California, el domingo 22 de noviembre de 2026. El Ministerio del Deporte informó que el deportista cartagenero ganó en la categoría Prone 2 del Campeonato Mundial de Para Surfing organizado por la Asociación Internacional de Surf, ISA. El resultado también fue destacado por la federación internacional, que ratificó el tercer campeonato individual del colombiano.",
-        "La trayectoria de Marimón incluye otros dos títulos mundiales, alcanzados en 2018 y 2024. Su nueva corona llegó en un escenario inusual: una piscina de olas artificiales en pleno desierto de California. Según la ISA, la competencia de 2026 reunió a deportistas de diferentes países y permitió que atletas de varias categorías presentaran un nivel destacado. El título del colombiano se resolvió en una final muy competida.",
-        "El logro reconoce años de entrenamiento, adaptación de la técnica y perseverancia deportiva. Marimón regresa al primer plano internacional como uno de los referentes colombianos del para surf. La imagen utilizada en esta edición es ilustrativa y no muestra al deportista ni la competencia; los enlaces adjuntos conducen al Ministerio del Deporte y a la Asociación Internacional de Surf para consultar la noticia original."
-      ],
-      "verification": "editorial_verified",
-      "originalArticleReviewed": true,
-      "originalArticleSourceUrls": [
-        "https://www.mindeporte.gov.co/sala-de-prensa/noticias/freddy-marimon-conquista-tercer-titulo-mundial-surf"
-      ],
-      "originalArticleTextEs": "El colombiano Freddy Marimón conquistó su tercer título mundial de para surf en Palm Desert, California, el domingo 22 de noviembre de 2026. El Ministerio del Deporte informó que el deportista cartagenero ganó en la categoría Prone 2 del Campeonato Mundial de Para Surfing organizado por la Asociación Internacional de Surf, ISA. El resultado también fue destacado por la federación internacional, que ratificó el tercer campeonato individual del colombiano.\n\nLa trayectoria de Marimón incluye otros dos títulos mundiales, alcanzados en 2018 y 2024. Su nueva corona llegó en un escenario inusual: una piscina de olas artificiales en pleno desierto de California. Según la ISA, la competencia de 2026 reunió a deportistas de diferentes países y permitió que atletas de varias categorías presentaran un nivel destacado. El título del colombiano se resolvió en una final muy competida.\n\nEl logro reconoce años de entrenamiento, adaptación de la técnica y perseverancia deportiva. Marimón regresa al primer plano internacional como uno de los referentes colombianos del para surf. La imagen utilizada en esta edición es ilustrativa y no muestra al deportista ni la competencia; los enlaces adjuntos conducen al Ministerio del Deporte y a la Asociación Internacional de Surf para consultar la noticia original.",
-      "photoRightsStatus": "PENDING_DOWNLOAD_AND_COMMONS_METADATA"
-    },
-    {
-      "order": 2,
       "category": "Educación",
       "title": "Estudiantes de 52 municipios llevan innovación e IA a Cartagena",
       "source": "CARACOL RADIO",
@@ -54,6 +30,30 @@
         "https://caracol.com.co/2026/11/22/estudiantes-de-colegios-publicos-de-52-municipios-desarrollan-soluciones-con-inteligencia-artificial/"
       ],
       "originalArticleTextEs": "Cartagena reunió a 60 equipos finalistas de las Olimpiadas STEM+ Colombia 2026, con estudiantes de colegios públicos de 52 municipios que presentaron iniciativas de investigación, ingeniería e inteligencia artificial. Caracol Radio informó el 22 de noviembre que las soluciones buscaban responder a problemas concretos de sus comunidades, desde la prevención de inundaciones hasta el cuidado de la calidad del aire y el aprovechamiento energético.\n\nEn la segunda edición de la estrategia participaron miles de docentes y estudiantes de distintas regiones del país. Los finalistas llegaron de zonas urbanas y rurales, y desarrollaron prototipos orientados a desafíos locales. La actividad fue liderada por el Ministerio de Educación junto con UNIMINUTO y su Parque Científico de Innovación Social, que también difundió un balance del encuentro realizado en Cartagena.\n\nMás allá de competir por premios, el programa promueve la experimentación y el trabajo colectivo entre jóvenes. Las propuestas demuestran que los problemas ambientales de los territorios pueden ser una oportunidad de aprendizaje científico. La fotografía de archivo en esta noticia es ilustrativa y no corresponde a los participantes colombianos; los enlaces a Caracol Radio y UNIMINUTO permiten consultar el evento documentado.",
+      "photoRightsStatus": "PENDING_DOWNLOAD_AND_COMMONS_METADATA"
+    },
+    {
+      "order": 2,
+      "category": "Deportes",
+      "title": "Freddy Marimón logra su tercer título mundial de para surf",
+      "source": "MINISTERIO DEL DEPORTE",
+      "url": "https://www.mindeporte.gov.co/sala-de-prensa/noticias/freddy-marimon-conquista-tercer-titulo-mundial-surf",
+      "corroboration": "https://isasurf.org/france-claims-fourth-consecutive-team-world-title-at-the-2026-isa-world-para-surfing-championship/",
+      "summary": "El cartagenero ganó el oro de Prone 2 en Palm Desert, California, y suma coronas mundiales en 2018, 2024 y 2026.",
+      "spoken": "El cartagenero Freddy Marimón se coronó tricampeón mundial de para surf. Ganó el oro en Palm Desert, California, y volvió a poner a Colombia en lo más alto del podio.",
+      "photo": "Surfer running for the waves (Unsplash).jpg",
+      "photoContext": "Fotografía de archivo de un surfista en Estados Unidos; no representa a Freddy Marimón ni el campeonato de 2026.",
+      "paragraphs": [
+        "El colombiano Freddy Marimón conquistó su tercer título mundial de para surf en Palm Desert, California, el domingo 22 de noviembre de 2026. El Ministerio del Deporte informó que el deportista cartagenero ganó en la categoría Prone 2 del Campeonato Mundial de Para Surfing organizado por la Asociación Internacional de Surf, ISA. El resultado también fue destacado por la federación internacional, que ratificó el tercer campeonato individual del colombiano.",
+        "La trayectoria de Marimón incluye otros dos títulos mundiales, alcanzados en 2018 y 2024. Su nueva corona llegó en un escenario inusual: una piscina de olas artificiales en pleno desierto de California. Según la ISA, la competencia de 2026 reunió a deportistas de diferentes países y permitió que atletas de varias categorías presentaran un nivel destacado. El título del colombiano se resolvió en una final muy competida.",
+        "El logro reconoce años de entrenamiento, adaptación de la técnica y perseverancia deportiva. Marimón regresa al primer plano internacional como uno de los referentes colombianos del para surf. La imagen utilizada en esta edición es ilustrativa y no muestra al deportista ni la competencia; los enlaces adjuntos conducen al Ministerio del Deporte y a la Asociación Internacional de Surf para consultar la noticia original."
+      ],
+      "verification": "editorial_verified",
+      "originalArticleReviewed": true,
+      "originalArticleSourceUrls": [
+        "https://www.mindeporte.gov.co/sala-de-prensa/noticias/freddy-marimon-conquista-tercer-titulo-mundial-surf"
+      ],
+      "originalArticleTextEs": "El colombiano Freddy Marimón conquistó su tercer título mundial de para surf en Palm Desert, California, el domingo 22 de noviembre de 2026. El Ministerio del Deporte informó que el deportista cartagenero ganó en la categoría Prone 2 del Campeonato Mundial de Para Surfing organizado por la Asociación Internacional de Surf, ISA. El resultado también fue destacado por la federación internacional, que ratificó el tercer campeonato individual del colombiano.\n\nLa trayectoria de Marimón incluye otros dos títulos mundiales, alcanzados en 2018 y 2024. Su nueva corona llegó en un escenario inusual: una piscina de olas artificiales en pleno desierto de California. Según la ISA, la competencia de 2026 reunió a deportistas de diferentes países y permitió que atletas de varias categorías presentaran un nivel destacado. El título del colombiano se resolvió en una final muy competida.\n\nEl logro reconoce años de entrenamiento, adaptación de la técnica y perseverancia deportiva. Marimón regresa al primer plano internacional como uno de los referentes colombianos del para surf. La imagen utilizada en esta edición es ilustrativa y no muestra al deportista ni la competencia; los enlaces adjuntos conducen al Ministerio del Deporte y a la Asociación Internacional de Surf para consultar la noticia original.",
       "photoRightsStatus": "PENDING_DOWNLOAD_AND_COMMONS_METADATA"
     },
     {
@@ -152,5 +152,6 @@
       "originalArticleTextEs": "La Organización Mundial de la Salud certificó el 16 de noviembre de 2026 la eliminación del tracoma como problema de salud pública en Eritrea. El organismo explicó que el país se convirtió en el undécimo de su región africana y en el trigésimo cuarto del mundo en alcanzar este hito. El tracoma es una infección que puede causar pérdida de visión cuando no se previene o trata oportunamente.\n\nEl resultado se consiguió después de varios años de medidas sanitarias, entre ellas tratamiento con antibióticos, cirugía para las complicaciones, higiene facial y mejoras en el acceso a agua y saneamiento. La OMS señaló que los equipos locales identificaron las comunidades que requerían atención, ampliaron las intervenciones y usaron herramientas de registro para orientar los recursos disponibles.\n\nLa certificación de eliminación como problema de salud pública no significa que la bacteria desapareció por completo ni que deba suspenderse la vigilancia. Eritrea mantendrá mecanismos para detectar casos y proteger el avance logrado. La fotografía es de una clínica del país en años anteriores y no muestra la certificación, mientras que el comunicado oficial explica el alcance real del resultado.",
       "photoRightsStatus": "PENDING_DOWNLOAD_AND_COMMONS_METADATA"
     }
-  ]
+  ],
+  "editionSlot": "11:30"
 }
