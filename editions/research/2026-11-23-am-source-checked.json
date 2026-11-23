@@ -1,0 +1,128 @@
+{
+  "editionDate": "2026-11-23",
+  "editionSlot": "08:30",
+  "timezone": "America/Bogota",
+  "status": "SOURCE_CHECKED__PENDING_MEDIA_RIGHTS_AND_FINAL_QA",
+  "publicationAuthorized": false,
+  "editorialPolicy": "Seis notas ORBIUNO y cinco MyCar. Solo fuentes originales. No publicar hasta constatar fotos reales pertinentes, logos y derechos, locución Salomé a 1.25x, sincronización web, validación Meta.",
+  "orbiuno": [
+    {
+      "order": 1,
+      "category": "Colombia",
+      "title": "Gobierno solicita a X suspender la cuenta del expresidente Gustavo Petro",
+      "source": "EFE",
+      "url": "https://efe.com/mundo/2026-11-23/gobierno-colombia-pide-suspender-cuenta-x-gustavo-petro/",
+      "summary": "EFE informa de la solicitud a la plataforma X; el pedido no equivale a una suspensión confirmada.",
+      "spoken": "El Gobierno colombiano solicitó a X suspender la cuenta del expresidente Gustavo Petro. Es una petición, no una suspensión confirmada.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 2,
+      "category": "Salud",
+      "title": "Bogotá habilita puntos de vacunación este lunes 23 de noviembre",
+      "source": "ALCALDÍA DE BOGOTÁ",
+      "url": "https://bogota.gov.co/mi-ciudad/salud/2026-11/vacunacion-en-bogota-lunes-23-de-noviembre-de-2026-puntos-habilitados",
+      "summary": "La Secretaría de Salud invita a consultar el listado oficial de puntos de vacunación y completar esquemas.",
+      "spoken": "La Secretaría de Salud de Bogotá recuerda los puntos habilitados hoy para completar esquemas de vacunación.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 3,
+      "category": "Deportes",
+      "title": "Colombia Sub-17 afronta el martes a Honduras tras vencer 2-1 a Japón",
+      "source": "EL ESPECTADOR",
+      "url": "https://www.elespectador.com/deportes/seleccion-colombia/colombia-vs-japon-en-vivo-siga-el-minuto-a-minuto-de-la-seleccion-en-el-mundial-sub-17/",
+      "summary": "La selección ganó su debut del 21 de noviembre y jugará ante Honduras el martes 24, según el reporte deportivo.",
+      "spoken": "Colombia Sub diecisiete llega con tres puntos a su próximo partido ante Honduras, tras derrotar dos a uno a Japón.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 4,
+      "category": "Mundo",
+      "title": "India anuncia apoyo para reconstruir Nepal tras desastre glacial",
+      "source": "EFE",
+      "url": "https://efe.com/mundo/2026-11-23/india-ayudara-reconstruir-nepal-desastre-glaciar/",
+      "summary": "India anunció un paquete de 240.000 millones de rupias nepalíes, aproximadamente 1.625 millones de dólares, según EFE.",
+      "spoken": "India anunció apoyo económico para la reconstrucción de Nepal después de las inundaciones provocadas por un desastre glaciar.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 5,
+      "category": "Cultura",
+      "title": "Bogotá conmemora diez años del Acuerdo de Paz con música y danza",
+      "source": "EL ESPECTADOR",
+      "url": "https://www.elespectador.com/el-magazin-cultural/encuentro-de-literatura-y-danza-concierto-de-chayanne-y-otros-planes-en-bogota-para-este-fin-de-semana/",
+      "summary": "El Teatro Jorge Eliécer Gaitán tiene prevista una función de arte y danza el lunes 23, con inscripción previa y entrada libre.",
+      "spoken": "El Teatro Jorge Eliécer Gaitán acoge hoy una conmemoración artística por los diez años del Acuerdo de Paz.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 6,
+      "category": "Movilidad",
+      "title": "Pico y placa en Bogotá este lunes: pueden circular placas del 1 al 5",
+      "source": "ALCALDÍA DE BOGOTÁ",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/medida-de-pico-y-placa-en-bogota-para-el-lunes-23-de-noviembre-de-2026",
+      "summary": "La restricción para particulares rige de 6 a. m. a 9 p. m.; circulan terminadas en 1, 2, 3, 4 y 5.",
+      "spoken": "Este lunes en Bogotá pueden circular carros particulares con placas terminadas en uno, dos, tres, cuatro o cinco.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    }
+  ],
+  "mycar": [
+    {
+      "order": 1,
+      "category": "Lanzamientos",
+      "title": "Toyota anticipa la Yaris Cross híbrida para Colombia en 2027",
+      "source": "AUTOCOSMOS COLOMBIA",
+      "url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/22/sia-2026-toyota-exhibe-la-nueva-yaris-cross-hibrida-que-llegara-a-colombia-en-2027",
+      "summary": "La marca exhibió el modelo de origen brasileño en Bogotá y anunció llegada para el primer bimestre de 2027.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 2,
+      "category": "Híbridos",
+      "title": "GWM presentó en Colombia la Tank 700 Hi4-T híbrida 4x4",
+      "source": "AUTOCOSMOS COLOMBIA",
+      "url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-gwm-tank-700-hi4-t-llega-a-colombia-precio-y-caracteristicas",
+      "summary": "SUV híbrida enchufable con tracción 4x4; precio de lanzamiento anunciado de $399.900.000.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 3,
+      "category": "Eléctricos",
+      "title": "Foton presentó la eTunland, su primera pick-up totalmente eléctrica",
+      "source": "AUTOCOSMOS COLOMBIA",
+      "url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-foton-etunland-en-colombia-la-primera-pick-up-100--electrica-de-la-marca",
+      "summary": "El fabricante mostró versiones 4x2 y 4x4, autonomía anunciada hasta 412 km.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 4,
+      "category": "Novedades",
+      "title": "Nissan Kicks e-POWER llega a Colombia en dos versiones",
+      "source": "AUTOCOSMOS COLOMBIA",
+      "url": "https://noticias.autocosmos.com.co/2026/11/18/sia-2026-nissan-kicks-e-power-llega-a-colombia-caracteristicas-versiones-y-precios",
+      "summary": "Colombia fue escogida como primer mercado fuera de Japón para la versión e-POWER.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "order": 5,
+      "category": "Híbridos",
+      "title": "Citroën C3 Plus híbrido se presenta para el mercado colombiano",
+      "source": "EL CARRO COLOMBIANO",
+      "url": "https://www.elcarrocolombiano.com/novedades/citroen-c3-plus-hibrido-colombia-precio-ficha-tecnica/",
+      "summary": "La marca anunció un C3 Plus con hibridación ligera para Colombia durante el salón automotor.",
+      "photoStatus": "PENDING_RELEVANT_LICENSED_REAL_PHOTO",
+      "logoStatus": "PENDING_VERIFICATION"
+    }
+  ]
+}
