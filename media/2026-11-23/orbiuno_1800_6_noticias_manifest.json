@@ -1,0 +1,135 @@
+{
+  "edition": "2026-11-23",
+  "slot": "18:00",
+  "newsCount": 6,
+  "newsIds": [
+    "orbiuno-20261123-1800-01",
+    "orbiuno-20261123-1800-02",
+    "orbiuno-20261123-1800-03",
+    "orbiuno-20261123-1800-04",
+    "orbiuno-20261123-1800-05",
+    "orbiuno-20261123-1800-06"
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "voiceEngines": [
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts",
+    "edge-tts"
+  ],
+  "language": "es-CO",
+  "voiceAccentAudited": false,
+  "width": 1080,
+  "height": 1920,
+  "duration": 56.7,
+  "fps": 30,
+  "sha256": "6a0a8ba8dcddd1f1148a1ebeb15c848a710c4d77d68222e6165acc5d5916a8b8",
+  "video": "ORBIUNO_2026-11-23_1800_6_NOTICIAS.mp4",
+  "visualMode": "verified_real_photos",
+  "imagesCount": 6,
+  "logosCount": 6,
+  "photoCredits": [
+    {
+      "title": "File:Icetex.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Rojasyesid",
+      "page": "https://commons.wikimedia.org/wiki/File:Icetex.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Icetex.jpg/1280px-Icetex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Icetex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "Icetex Building"
+    },
+    {
+      "title": "File:Alma restaurante Cartagena.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Xemenendura",
+      "page": "https://commons.wikimedia.org/wiki/File:Alma_restaurante_Cartagena.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Alma_restaurante_Cartagena.jpg/1280px-Alma_restaurante_Cartagena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Alma_restaurante_Cartagena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "Cartagena de Indias"
+    },
+    {
+      "title": "File:Wheelchair archery at the 2004 Summer Paralympics.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Ilgar Jafarov",
+      "page": "https://commons.wikimedia.org/wiki/File:Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG/1280px-Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "Wheelchair archery at the 2004 Summer Paralympics"
+    },
+    {
+      "title": "File:Antimicrobial resistance.jpg",
+      "license": "CC BY 2.0",
+      "author": "DFID - UK Department for International Development",
+      "page": "https://commons.wikimedia.org/wiki/File:Antimicrobial_resistance.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Antimicrobial_resistance.jpg/1280px-Antimicrobial_resistance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Antimicrobial_resistance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "A variety of different bacteria - testing for antimicrobial resistance"
+    },
+    {
+      "title": "File:Main facade of the Teatro Real de Madrid, 2016 01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Benjamín Núñez González",
+      "page": "https://commons.wikimedia.org/wiki/File:Main_facade_of_the_Teatro_Real_de_Madrid,_2016_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg/1280px-Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "Fachada principal del Teatro Real"
+    },
+    {
+      "title": "File:Mercury in true color.jpg",
+      "license": "Public domain",
+      "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State University/Carnegie Institution of Washington",
+      "page": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "description": "This is a cropped bottom right image from the original four image mosaic PIA11364: Mercury's \"True\" Color is in the Eye of the Beholder. Original Caption Released with Image: Given the WAC’s ability to take images through 11 narrow-band color filters, it is na"
+    }
+  ],
+  "openingStyle": "noticia_directa_sin_portada",
+  "openingCover": false,
+  "openingSpeech": false,
+  "burnedSubtitles": false,
+  "spokenOutro": true,
+  "outroAudioSeconds": 8.75,
+  "visualLayout": "photo_first_safe_2026_11_22",
+  "sourceOnly": false,
+  "publicationAuthorized": false,
+  "news": [
+    {
+      "id": "orbiuno-20261123-1800-01",
+      "title": "Cuatro proyectos ayudarán a reconstruir oportunidades tras el terremoto",
+      "sourceUrl": "https://web.icetex.gov.co/es/-/cuatro-proyectos-impulsaran-recuperacion-regiones-afectadas-terremoto-con-inversion-1000-millones-icetex"
+    },
+    {
+      "id": "orbiuno-20261123-1800-02",
+      "title": "50 restaurantes de Cartagena terminan formación ambiental",
+      "sourceUrl": "https://caracol.com.co/2026/11/23/50-restaurantes-del-centro-historico-culminaron-formacion-ambiental-de-cocina-heroica/"
+    },
+    {
+      "id": "orbiuno-20261123-1800-03",
+      "title": "48 jóvenes paradeportistas fortalecen su preparación en Bogotá",
+      "sourceUrl": "https://mindeporte.gov.co/sala-de-prensa/noticias/encuentro-nacional-escuelas-talentos-sector-paralimpico-bogota"
+    },
+    {
+      "id": "orbiuno-20261123-1800-04",
+      "title": "Samoa impulsa un plan para conservar la eficacia de los antibióticos",
+      "sourceUrl": "https://www.who.int/guam/news/feature-stories/item/keeping-medicines-working--samoa-takes-a-one-health-approach-to-antimicrobial-resistance"
+    },
+    {
+      "id": "orbiuno-20261123-1800-05",
+      "title": "El Teatro Real de Madrid gana el premio internacional a mejor compañía de ópera",
+      "sourceUrl": "https://efe.com/espana/2026-11-22/teatro-real-de-madrid-premio-mejor-teatro-opera-mundo/"
+    },
+    {
+      "id": "orbiuno-20261123-1800-06",
+      "title": "La nave BepiColombo llega a la órbita de Mercurio tras ocho años de viaje",
+      "sourceUrl": "https://www.esa.int/et/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge"
+    }
+  ],
+  "published": false,
+  "instagramId": null,
+  "instagramPermalink": null
+}
