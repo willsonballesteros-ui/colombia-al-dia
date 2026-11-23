@@ -1,0 +1,126 @@
+name: "ORBIUNO | Edición positiva 23NOV 11:30 sin portada"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/orbiuno-positivas-23nov.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-2026-11-23-1130-positivas
+  cancel-in-progress: false
+jobs:
+  generar_validar_web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verificar fecha y evitar segunda edición con marca igual
+        run: |
+          set -euo pipefail
+          test "$(TZ=America/Bogota date +%F)" = "2026-11-23"
+          test ! -e media/2026-11-23/edicion-1130-positivas/qa.json
+          python -m json.tool editions/research/2026-11-23-1130-positivas.json > /dev/null
+      - name: Instalar renderizador, TTS y FFmpeg
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check Pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/positivas-bin"
+            npm install --ignore-scripts --no-audit --no-fund --no-save \
+              --prefix "$RUNNER_TEMP/positivas-tools" \
+              @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            f="$RUNNER_TEMP/positivas-tools/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            p="$RUNNER_TEMP/positivas-tools/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            chmod +x "$f" "$p"
+            ln -sf "$f" "$RUNNER_TEMP/positivas-bin/ffmpeg"
+            ln -sf "$p" "$RUNNER_TEMP/positivas-bin/ffprobe"
+            echo "$RUNNER_TEMP/positivas-bin" >> "$GITHUB_PATH"
+          fi
+          python -m py_compile scripts/producir_orbiuno_positivas_20261123.py scripts/sincronizar_orbiuno_positivas_2311.py
+      - name: Renderizar seis noticias + cierre, sin intro ni portada
+        run: PYTHONPATH=. python scripts/producir_orbiuno_positivas_20261123.py
+      - name: QA audiovisual, fotos, noticias, lectura web íntegra
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,subprocess,hashlib
+          from pathlib import Path
+          m=Path("media/2026-11-23/edicion-1130-positivas")
+          x=json.loads((m/"orbiuno_manifest.json").read_text())
+          q=json.loads((m/"qa.json").read_text())
+          assert x["newsCount"]==6 and x["imagesCount"]==6 and x["logosCount"]==6
+          assert x["audioSegments"]==7 and x["fullNewsAudioFiles"]==6
+          assert x["openingSpeech"] is False and x["openingCover"] is False
+          assert x["slot"]=="11:30" and q["readyForWebSync"]
+          assert all(c["rightsVerified"] and c["author"] and c["source"] and c["license"] for c in x["photoCredits"])
+          vid=m/x["video"]
+          assert vid.stat().st_size>500000
+          assert hashlib.sha256(vid.read_bytes()).hexdigest()==x["sha256"]
+          cap=(m/"orbiuno_caption.txt").read_text()
+          assert "POSITIVAS-V2" in cap and len(cap)<2200
+          assert "Gustavo Petro" not in cap and "Gobierno solicita a X" not in cap
+          assert "Estudiantes de 52 municipios" in cap
+          for i in range(1,7):
+            assert (m/f"orbiuno-noticia-{i:02d}.mp3").stat().st_size>1000
+          p=subprocess.run(["ffmpeg","-v","error","-i",str(vid),"-f","null","-"],capture_output=True,text=True)
+          assert p.returncode==0,p.stderr[:1200]
+          print("ORBIUNO_POSITIVE_SIX_QA_PASS",x["duration"])
+          PY
+      - name: Resguardar MP4, seis audios completos y licencias antes de web
+        uses: actions/upload-artifact@v4
+        with:
+          name: ORBIUNO-POSITIVAS-23NOV-1130-ARCHIVOS
+          path: media/2026-11-23/edicion-1130-positivas/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Integrar nueva edición ORBIUNO sin cambiar MyCar ni historial original
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/sincronizar_orbiuno_positivas_2311.py
+          python scripts/build_feed.py
+          python scripts/stage_cloudflare_site.py --out site
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path("site")
+          page=(root/"index.html").read_text(encoding="utf-8")
+          news=json.loads((root/"noticias.json").read_text(encoding="utf-8"))["news"]
+          assert "orbiuno-positivas-2311" in page
+          assert (root/"orbiuno-2026-11-23-1130.html").exists()
+          assert (root/"mycar-2026-11-23-1000.html").exists()
+          assert len([n for n in news if n.get("date")=="2026-11-23" and n.get("editionSlot")=="11:30" and n.get("verification")=="editorial_verified"])==6
+          assert not any(n.get("date")=="2026-11-23" and n.get("id","").startswith("orbiuno-20261123-1000-") for n in news)
+          for i in range(1,7):
+            assert (root/f"media/2026-11-23/edicion-1130-positivas/orbiuno-noticia-{i:02d}.mp3").exists()
+          assert (root/"media/2026-11-23/edicion-1130-positivas/ORBIUNO_2026-11-23_1130_6_NOTICIAS_POSITIVAS.mp4").exists()
+          print("ORBIUNO_POSITIVAS_WEB_QA_PASS")
+          PY
+      - name: Guardar nueva edición web y media en rama main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-23/edicion-1130-positivas noticias.json index.html feed.xml orbiuno-2026-11-23-1130.html site
+          git commit -m "ORBIUNO 23NOV 11:30: seis noticias positivas, voz directa y lectura completa"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort || true; exit 1; }
+            python scripts/stage_cloudflare_site.py --out site
+            git add site
+            git diff --cached --quiet || git commit -m "Reconciliar Pages edición positiva 23NOV"
+            if git push origin HEAD:main; then
+              echo "ORBIUNO_POSITIVAS_MP4_AND_WEB_ON_MAIN"
+              exit 0
+            fi
+            sleep "$((attempt*3))"
+          done
+          exit 1
