@@ -1,0 +1,70 @@
+name: ORBIUNO | Recuperar publicación de MP4 ya validado
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Fecha de edición AAAA-MM-DD, debe ser hoy en Bogotá'
+        type: string
+        required: true
+      slot:
+        description: 'Horario de la edición'
+        type: choice
+        options: ['0800', '1200', '1800']
+        default: '1800'
+      publish:
+        description: 'Publicar después de comprobar credenciales, web y duplicados'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: orbiuno-recovery-meta
+  cancel-in-progress: false
+jobs:
+  recuperar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      DAY: ${{ inputs.edition }}
+      SLOT: ${{ inputs.slot }}
+      LIVE: ${{ inputs.publish }}
+      ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verificar edición actual y disponibilidad de secretos sin mostrarlos
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          [[ "$SLOT" =~ ^(0800|1200|1800)$ ]]
+          test "$DAY" = "$(TZ=America/Bogota date +%F)"
+          test -n "$ORBIUNO_IG_ACCESS_TOKEN" || { echo "::error::Falta ORBIUNO_IG_ACCESS_TOKEN"; exit 1; }
+          test -n "$ORBIUNO_IG_USER_ID" || { echo "::error::Falta ORBIUNO_IG_USER_ID"; exit 1; }
+          manifest="media/$DAY/orbiuno_${SLOT}_6_noticias_manifest.json"
+          test -s "$manifest"
+          echo "MANIFEST=$manifest" >> "$GITHUB_ENV"
+      - name: Validar la web y los medios existentes sin volver a renderizar
+        run: python scripts/orbiuno_daily_preflight.py --manifest "$MANIFEST"
+      - name: Comprobar o publicar mediante el publicador oficial
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$LIVE" = true ]; then
+            python scripts/orbiuno_publish_6.py --manifest "$MANIFEST"
+          else
+            python scripts/orbiuno_publish_6.py --manifest "$MANIFEST" --dry-only
+          fi
+      - name: Conservar evidencia de la respuesta
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-recovery-report
+          path: media/${{ inputs.edition }}/publication_report.json
+          if-no-files-found: warn
+          retention-days: 30
