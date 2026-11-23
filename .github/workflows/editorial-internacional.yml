@@ -1,0 +1,40 @@
+name: Editorial internacional | ORBIUNO y MyCar
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/editorial/global_discovery.py'
+      - '.github/workflows/editorial-internacional.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '30 12,22 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: global-editorial-discovery
+  cancel-in-progress: false
+jobs:
+  seleccionar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pruebas de ranking, fuentes y deduplicación
+        run: |
+          python -m py_compile tools/editorial/global_discovery.py
+          python tools/editorial/global_discovery.py --test
+      - name: Consultar catálogo global y sector automotor
+        run: python tools/editorial/global_discovery.py
+      - name: Entregar candidatos ordenados y reservas para validación editorial
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-candidates
+          path: dist/global-candidates.json
+          if-no-files-found: warn
+          retention-days: 7
