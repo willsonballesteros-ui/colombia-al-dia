@@ -1,0 +1,12 @@
+{
+  "orbiuno": {
+    "video": "ORBIUNO_2026-11-22_1800_6_NOTICIAS_CORREGIDA_V2.mp4",
+    "duration": 52.566667,
+    "sha256": "48accd29a8166c0f0740694b1ee91fba4f744b858e3fbba3b70f1cdbda9b831d"
+  },
+  "mycar": {
+    "video": "MYCAR_2026-11-22_1800_5_NOTICIAS_CORREGIDA_V2.mp4",
+    "duration": 85.833333,
+    "sha256": "3a0d21456c2f177cf65c9079297234b946a4888d8f7672657f4a3c5a679ee35f"
+  }
+}

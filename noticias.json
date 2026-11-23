@@ -6,6 +6,82 @@
   "disclaimer": "El portal presenta resúmenes originales con enlaces a fuentes públicas. Los hechos se atribuyen a sus emisores; denuncias y hallazgos preliminares no equivalen a condenas.",
   "news": [
     {
+      "id": "rss-323022315fe9e744",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "China busca formar una generación nativa de Inteligencia Artificial",
+      "summary": "Titular difundido por Banca y Negocios a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "Banca y Negocios · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTjVnRmw5Q1g1RjRoN0txeURoY0NXWmcyNk5NR3NsYTdJaWxWOThrYnNLLWVRVWNlMU9ZaU1FOUVaWl9WLXVEckJyR2tMck83SUpQSXh5N2dzcHR1UWhTZTZnTXlHdzdERjBhbmdmU2RQQjVvUEhETC1odWRiZ29wVWtpUHFqS2o3VnpzMjRCSVk3b2p0NmUwQk90S19RWFFK?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T15:26-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-2a830ecc3bb31b0c",
+      "date": "2026-11-22",
+      "category": "Tecnología e IA",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Nvidia acelera la robótica humanoide con nuevas herramientas de IA",
+      "summary": "Titular difundido por DiarioBitcoin a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "DiarioBitcoin · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONndNNUVkVEhpOC1jVm9hcy1hN1I2WjFNRkZBVDFzaTNIU0x1UkFhUXZ2OFBaRDdJVlZQWjllYURMZTdqcmxhSHJvNEdUNER2Slg4OWgzd0F6S2FjcFJMTzljQ2p4TmhjdUEwMElzeG5Nc2JrS0NVS0RTa19iNzVTUHd4Qml1NDFMYTgyM05NOV9zTXQxSTJrMXNEaXZIUENpalMwRlZlZEhJMGdi?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T15:20-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-482685e20a957f46",
+      "date": "2026-11-22",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Ranking FIFA: Colombia vuelve a estar entre las 10 mejores selecciones del mundo",
+      "summary": "Titular difundido por ESPN Colombia a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "ESPN Colombia · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR1RlMFJjSk0xLU92RUlKSnlkZkdYbzJsc0d0a2oxRVFMX1ZONlJnRDBMempYWVJUV29vNWFwRG5JWUc4WjQydjREY094a3NuVmMyVTVKOC1vX3dRZDE2OWtOcVdKa0FtNEl4SXZuanJpMDRyM1NWWEpzazRwYXJxc0Y1UGxsVFRpa1lFTnJ4anVhR2kxMExaTjRXM1Vpd2VhajI5Snk3WktTX3NONldVVEVoSHZuSGpnSllJVEZkSlA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T11:02-05:00",
+      "relevanceScore": 5
+    },
+    {
+      "id": "rss-3c4f1e3cb9604393",
+      "date": "2026-11-22",
+      "category": "Colombia",
+      "level": "Titular atribuido · Pendiente de verificación editorial",
+      "title": "Conquistar Suramérica para soñar con el mundo: selección sub-17 de Colombia",
+      "summary": "Titular difundido por El Espectador a través de Google Noticias. El contenido detallado debe consultarse en el medio enlazado.",
+      "why": "Tema en seguimiento; el contexto y el impacto requieren comprobación editorial independiente.",
+      "next": "Consultar el artículo enlazado y nuevas actualizaciones del medio antes de compartir datos no verificados.",
+      "sources": [
+        {
+          "name": "El Espectador · vía Google Noticias",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNDNwZXlwMlRTb1RGUXViYUV5aWZoNDVyVUEwZXd5YzI0YUc5OTJ1ZjdUV251YWJHYUo4dnpqMkhvTzl1cWJlREREeFJEQmZZbmtNeUxKcVN3X2NlSjdJS2dkTFVkNmhXV0d2NExOM2VWOExEcU1qVE91VFFpVEVwYzRpeHZXRjI2bmFXRFhiUjRHT2FxMDhCQ25Pclpta2RONzNyeXdVdFl6Uzl2OXNzN09zRWQwV050Y3JmQWQzTmNYaGlhdjFkZ2tPNXbSAeABQVVfeXFMUDJRTmZGaHRlcjhNdlA1QmdheVJwZkpHdUNObldLMDdzdnQ1OGViaTNtaldJMnBpRVRKc1RUcG82UEpuNEtEMnN2YV8tVnZuaUdldkJnazMzNTZTUmYtaEMwdVl4TkM2TGtibVVGd0Y3Vm9rRmszY0x5bXhxRHlOdmNITHBsbjQ4WjZoZnhvUGVYSHM4dThyeTBid3VSMGJJSXU1bzl3dnY0ZHVqb2wzNElrSHZCUTdYbHdEcmFoRjRIWHZrSTRyRlFlZENncFFNa3daUTdXLTdTWXhiTmdYaVA?oc=5"
+        }
+      ],
+      "verification": "source_only",
+      "sourcePublishedAtBogota": "2026-11-22T10:00-05:00",
+      "relevanceScore": 5
+    },
+    {
       "id": "rss-48e53cffb3541268",
       "date": "2026-11-22",
       "category": "Colombia",
@@ -31419,8 +31495,8 @@
       "imageAlt": "Desfile de moda realizado en Mozambique en 2025, fotografía de archivo. No corresponde a Bogotá Fashion Weekend."
     }
   ],
-  "autoSyncCheckedAtBogota": "2026-11-22T19:09-05:00",
-  "lastNewSourceAtBogota": "2026-11-22T19:09-05:00",
+  "autoSyncCheckedAtBogota": "2026-11-22T19:11-05:00",
+  "lastNewSourceAtBogota": "2026-11-22T19:11-05:00",
   "autoSyncOkSources": 6,
   "autoSyncFailedSources": 0,
   "editorialNote": "19:00 seis noticias verificadas; tarjetas con marca de fuente grande; pendiente render web y MP4 y publicación. No republicar 08:00.",
