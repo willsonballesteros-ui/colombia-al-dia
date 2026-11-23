@@ -1,0 +1,15 @@
+{
+  "readyForWebSync": true,
+  "brands": {
+    "orbiuno": {
+      "video": "ORBIUNO_2026-11-23_1000_6_NOTICIAS.mp4",
+      "sha256": "b1fffcf6fd8cf9f3cb40b4b818c1c8d7fc560b560441c6bb217e8d3f883d405e",
+      "duration": 65.759961
+    },
+    "mycar": {
+      "video": "MYCAR_2026-11-23_1000_5_NOTICIAS.mp4",
+      "sha256": "4f73d0c72141cc959d6ece511d710314948df85c974d2aae0640540946c099d2",
+      "duration": 77.158659
+    }
+  }
+}

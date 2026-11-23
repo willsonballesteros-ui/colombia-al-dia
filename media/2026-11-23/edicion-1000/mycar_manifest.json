@@ -1,0 +1,85 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-23",
+  "slot": "10:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-23_1000_5_NOTICIAS.mp4",
+  "duration": 77.158659,
+  "sha256": "4f73d0c72141cc959d6ece511d710314948df85c974d2aae0640540946c099d2",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Toyota Yaris Cross 1.5 S HEV Hybrid 2026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Cross_1.5_S_HEV_Hybrid_2026.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Captainmorlypogi1959",
+      "context": "Toyota Yaris Cross híbrida de otro mercado; ilustrativa, NO es la versión brasileña anunciada para Colombia.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toyota_Yaris_Cross_1.5_S_HEV_Hybrid_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "Tank 700 PHEV 001.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tank_700_PHEV_001.jpg",
+      "license": "CC0",
+      "author": "JustAnotherCarDesigner",
+      "context": "GWM Tank 700 PHEV, imagen de archivo; equipamiento y versión pueden diferir de Colombia.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Tank_700_PHEV_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Foton Tunland EV 001.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Foton_Tunland_EV_001.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Jengtingchen",
+      "context": "Foton Tunland EV de 2019, ARCHIVO DE MODELO ANTERIOR; NO muestra la eTunland presentada en 2026.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Foton_Tunland_EV_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Nissan Kicks e-Power P15 FL 1.2 LE Plus Aquamarine Metallic with Black roof 01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nissan_Kicks_e-Power_P15_FL_1.2_LE_Plus_Aquamarine_Metallic_with_Black_roof_01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Ethan Llamas",
+      "context": "Nissan Kicks e-POWER de otra versión y mercado; ilustrativa, no es la unidad exhibida en Bogotá.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nissan_Kicks_e-Power_P15_FL_1.2_LE_Plus_Aquamarine_Metallic_with_Black_roof_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "Citroën C3 (4th generation) DSC 8021.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_(4th_generation)_DSC_8021.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Alexander Migl",
+      "context": "Citroën C3 europeo de cuarta generación; foto de archivo, puede diferir de la variante híbrida colombiana.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Citro%C3%ABn_C3_%284th_generation%29_DSC_8021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/22/sia-2026-toyota-exhibe-la-nueva-yaris-cross-hibrida-que-llegara-a-colombia-en-2027",
+    "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-gwm-tank-700-hi4-t-llega-a-colombia-precio-y-caracteristicas",
+    "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-foton-etunland-en-colombia-la-primera-pick-up-100--electrica-de-la-marca",
+    "https://noticias.autocosmos.com.co/2026/11/18/sia-2026-nissan-kicks-e-power-llega-a-colombia-caracteristicas-versiones-y-precios",
+    "https://www.elcarrocolombiano.com/novedades/citroen-c3-plus-hibrido-colombia-precio-ficha-tecnica/"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "audioSegments": 7,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}

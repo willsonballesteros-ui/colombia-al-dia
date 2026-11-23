@@ -5,6 +5,67 @@
   "updated_date": "2026-11-23",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-23-1000",
+      "date": "2026-11-23",
+      "slot": "10:00",
+      "title": "Toyota anticipa la Yaris Cross híbrida para Colombia en 2027",
+      "video_url": "https://raw.githubusercontent.com/willsonballesteros-ui/colombia-al-dia/main/media/2026-11-23/edicion-1000/MYCAR_2026-11-23_1000_5_NOTICIAS.mp4",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Toyota anticipa la Yaris Cross híbrida para Colombia en 2027",
+          "summary": "La marca exhibió el modelo de origen brasileño en Bogotá y anunció llegada para el primer bimestre de 2027.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/22/sia-2026-toyota-exhibe-la-nueva-yaris-cross-hibrida-que-llegara-a-colombia-en-2027",
+          "image_file_title": "Toyota Yaris Cross 1.5 S HEV Hybrid 2026.jpg",
+          "photo_credit": "Captainmorlypogi1959",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Cross_1.5_S_HEV_Hybrid_2026.jpg"
+        },
+        {
+          "title": "GWM presentó en Colombia la Tank 700 Hi4-T híbrida 4x4",
+          "summary": "SUV híbrida enchufable con tracción 4x4; precio de lanzamiento anunciado de $399.900.000.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-gwm-tank-700-hi4-t-llega-a-colombia-precio-y-caracteristicas",
+          "image_file_title": "Tank 700 PHEV 001.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Tank_700_PHEV_001.jpg"
+        },
+        {
+          "title": "Foton presentó la eTunland, su primera pick-up totalmente eléctrica",
+          "summary": "El fabricante mostró versiones 4x2 y 4x4, autonomía anunciada hasta 412 km.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/20/sia-2026-foton-etunland-en-colombia-la-primera-pick-up-100--electrica-de-la-marca",
+          "image_file_title": "Foton Tunland EV 001.jpg",
+          "photo_credit": "Jengtingchen",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Foton_Tunland_EV_001.jpg"
+        },
+        {
+          "title": "Nissan Kicks e-POWER llega a Colombia en dos versiones",
+          "summary": "Colombia fue escogida como primer mercado fuera de Japón para la versión e-POWER.",
+          "source": "AUTOCOSMOS COLOMBIA",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/18/sia-2026-nissan-kicks-e-power-llega-a-colombia-caracteristicas-versiones-y-precios",
+          "image_file_title": "Nissan Kicks e-Power P15 FL 1.2 LE Plus Aquamarine Metallic with Black roof 01.jpg",
+          "photo_credit": "Ethan Llamas",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_Kicks_e-Power_P15_FL_1.2_LE_Plus_Aquamarine_Metallic_with_Black_roof_01.jpg"
+        },
+        {
+          "title": "Citroën C3 Plus híbrido se presenta para el mercado colombiano",
+          "summary": "La marca anunció un C3 Plus con hibridación ligera para Colombia durante el salón automotor.",
+          "source": "EL CARRO COLOMBIANO",
+          "source_url": "https://www.elcarrocolombiano.com/novedades/citroen-c3-plus-hibrido-colombia-precio-ficha-tecnica/",
+          "image_file_title": "Citroën C3 (4th generation) DSC 8021.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_(4th_generation)_DSC_8021.jpg"
+        }
+      ],
+      "published_status": "WEB_PREPARED_SOCIAL_PENDING"
+    },
+    {
       "edition_id": "MYCAR-2026-11-22-PM-5",
       "date": "2026-11-22",
       "slot": "Noche",
