@@ -39,7 +39,44 @@ jobs:
               assert "enlace del perfil" in voice["segments"][-1]["text"]
           print("STAGE_EDITIONS_EDITORIAL_QA_PASS_DO_NOT_PUBLISH")
           PY
-      - name: Guardar guiones editoriales sin publicar
+      - name: Instalar Salomé y FFmpeg para generar audios de edición
+        timeout-minutes: 8
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --timeout 30 --retries 2 edge-tts
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            mkdir -p "$RUNNER_TEMP/editorial-bin"
+            npm install --ignore-scripts --no-audit --no-fund --no-save \
+              --prefix "$RUNNER_TEMP/editorial-video-tools" \
+              @ffmpeg-installer/linux-x64@4.1.0 @ffprobe-installer/linux-x64@5.2.0
+            f="$RUNNER_TEMP/editorial-video-tools/node_modules/@ffmpeg-installer/linux-x64/ffmpeg"
+            p="$RUNNER_TEMP/editorial-video-tools/node_modules/@ffprobe-installer/linux-x64/ffprobe"
+            chmod +x "$f" "$p"
+            ln -sf "$f" "$RUNNER_TEMP/editorial-bin/ffmpeg"
+            ln -sf "$p" "$RUNNER_TEMP/editorial-bin/ffprobe"
+            echo "$RUNNER_TEMP/editorial-bin" >> "$GITHUB_PATH"
+          fi
+      - name: Sintetizar borradores de voz Salomé 1.25x sin publicar
+        run: |
+          set -euo pipefail
+          python scripts/generate_voice.py \
+            --input build/edicion-2026-11-23-am/orbiuno/voice_input.json \
+            --out build/edicion-2026-11-23-am/orbiuno/audio
+          python scripts/generate_voice.py \
+            --input build/edicion-2026-11-23-am/mycar/voice_input.json \
+            --out build/edicion-2026-11-23-am/mycar/audio
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for brand,expected in (("orbiuno",8),("mycar",7)):
+              p=Path("build/edicion-2026-11-23-am")/brand/"audio"
+              r=json.loads((p/"audio_report.json").read_text())
+              assert r["status"]=="ok" and r["voice"]=="es-CO-SalomeNeural"
+              assert r["tempo"]==1.25 and len(r["segments"])==expected
+              assert (p/"full.mp3").stat().st_size>5000
+          print("BOTH_BRANDS_AUDIO_QA_OK__NOT_PUBLISHED")
+          PY
+      - name: Guardar guiones editoriales y audios sin publicar
         uses: actions/upload-artifact@v4
         with:
           name: ORBIUNO-MYCAR-20261123-0830-GUIONES
