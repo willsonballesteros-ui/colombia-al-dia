@@ -17,7 +17,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 from urllib.request import Request, urlopen
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MAX_AGE = 48
 MAX_BYTES = 2_000_000
 MOTOR = (
@@ -76,7 +76,7 @@ def same_domain(a, b):
 
 
 def date_of(value):
-    if not value:
+    if not isinstance(value,str) or not value:
         return None
     try:
         d = datetime.fromisoformat(value.replace("Z","+00:00"))
@@ -145,7 +145,7 @@ def article_nodes(obj):
             yield from article_nodes(v)
     elif isinstance(obj,dict):
         types = obj.get("@type",[])
-        types = [types] if isinstance(types,str) else types
+        types = [types] if isinstance(types,str) else (types if isinstance(types,list) else [])
         if any(t in {"NewsArticle","Article","ReportageNewsArticle","BlogPosting"} for t in types):
             u = obj.get("url") or obj.get("mainEntityOfPage") or ""
             if isinstance(u,dict):
@@ -162,7 +162,7 @@ def candidate(row, name, home, now, motor=False):
         return None
     title = " ".join(html.unescape(re.sub("<[^>]*>"," ",title)).split())
     url, dt = canonical(urljoin(home,url)), date_of(raw_date)
-    if not url or not same_domain(url,home) or not dt or not 18 <= len(title) <= 230:
+    if not url or not (same_domain(url,home) or (name=="BBC" and same_domain(url,"https://bbc.co.uk/"))) or not dt or not 18 <= len(title) <= 230:
         return None
     age = (now-dt).total_seconds()/3600
     if age < 0 or age > MAX_AGE:
