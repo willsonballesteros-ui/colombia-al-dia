@@ -35,7 +35,7 @@ def get(url,limit=4_000_000):
         return resp.read(limit)
 
 
-def site_ready(expected_ids):
+def site_ready(expected_ids, slot):
     homepage=get(SITE).decode("utf-8")
     match=re.search(r'<script[^>]*id="initial-news"[^>]*>(.*?)</script>',
                     homepage,re.S)
@@ -46,7 +46,7 @@ def site_ready(expected_ids):
     if db.get("editionDate")!=day:
         raise RuntimeError("La web pública todavía muestra otra fecha")
     rows=sorted((n for n in db.get("news",[])
-                 if n.get("date")==day and n.get("editionSlot")=="08:00" and
+                 if n.get("date")==day and n.get("editionSlot")==slot and
                  n.get("verification")=="editorial_verified"),
                 key=lambda n:n.get("priority",999))
     ids=[n["id"] for n in rows]
@@ -115,7 +115,7 @@ def publish(manifest_path, *, dry_only=False):
         # Cloudflare puede tardar tras push. No se elude la comprobación.
         for attempt in range(10):
             try:
-                report["web"]=site_ready(expected)
+                report["web"]=site_ready(expected, slot)
                 break
             except (OSError,ValueError,RuntimeError) as exc:
                 if attempt==9: raise
