@@ -1,4 +1,5 @@
 name: "ORBIUNO | Edición positiva 23NOV 11:30 sin portada"
+# Reintento QA: si no existe favicon real se muestra el nombre de la fuente, no un logo ficticio.
 on:
   push:
     branches: [main]
@@ -56,7 +57,7 @@ jobs:
           m=Path("media/2026-11-23/edicion-1130-positivas")
           x=json.loads((m/"orbiuno_manifest.json").read_text())
           q=json.loads((m/"qa.json").read_text())
-          assert x["newsCount"]==6 and x["imagesCount"]==6 and x["logosCount"]==6
+          assert x["newsCount"]==6 and x["imagesCount"]==6 and x["sourceLabelsCount"]==6
           assert x["audioSegments"]==7 and x["fullNewsAudioFiles"]==6
           assert x["openingSpeech"] is False and x["openingCover"] is False
           assert x["slot"]=="11:30" and q["readyForWebSync"]
