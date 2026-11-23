@@ -1,0 +1,117 @@
+{
+  "edition": "2026-11-23",
+  "slot": "18:00",
+  "visualMode": "verified_real_photos",
+  "photosCount": 6,
+  "logosCount": 6,
+  "entries": [
+    {
+      "id": "orbiuno-20261123-1800-01",
+      "photoFile": "photo-01.jpg",
+      "logoFile": "logo-01.png",
+      "sourceHost": "web.icetex.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=web.icetex.gov.co&sz=128",
+      "caption": "Sede del ICETEX en Bogotá en 2010. Fotografía de archivo que no documenta la recuperación de 2026.",
+      "credit": {
+        "title": "File:Icetex.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Rojasyesid",
+        "page": "https://commons.wikimedia.org/wiki/File:Icetex.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Icetex.jpg/1280px-Icetex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Icetex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "Icetex Building"
+      }
+    },
+    {
+      "id": "orbiuno-20261123-1800-02",
+      "photoFile": "photo-02.jpg",
+      "logoFile": "logo-02.png",
+      "sourceHost": "caracol.com.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=caracol.com.co&sz=128",
+      "caption": "Fachada de un restaurante de Cartagena de Indias fotografiado en 2025; imagen de archivo, no de Cocina Heroica.",
+      "credit": {
+        "title": "File:Alma restaurante Cartagena.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Xemenendura",
+        "page": "https://commons.wikimedia.org/wiki/File:Alma_restaurante_Cartagena.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Alma_restaurante_Cartagena.jpg/1280px-Alma_restaurante_Cartagena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Alma_restaurante_Cartagena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "Cartagena de Indias"
+      }
+    },
+    {
+      "id": "orbiuno-20261123-1800-03",
+      "photoFile": "photo-03.jpg",
+      "logoFile": "logo-03.png",
+      "sourceHost": "mindeporte.gov.co",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=mindeporte.gov.co&sz=128",
+      "caption": "Tiro con arco en silla de ruedas en los Juegos Paralímpicos de 2004; imagen de archivo ajena al encuentro en Bogotá.",
+      "credit": {
+        "title": "File:Wheelchair archery at the 2004 Summer Paralympics.JPG",
+        "license": "CC BY-SA 4.0",
+        "author": "Ilgar Jafarov",
+        "page": "https://commons.wikimedia.org/wiki/File:Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG/1280px-Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Wheelchair_archery_at_the_2004_Summer_Paralympics.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "Wheelchair archery at the 2004 Summer Paralympics"
+      }
+    },
+    {
+      "id": "orbiuno-20261123-1800-04",
+      "photoFile": "photo-04.jpg",
+      "logoFile": "logo-04.png",
+      "sourceHost": "www.who.int",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=www.who.int&sz=128",
+      "caption": "Laboratorio que examina bacterias para medir su resistencia a medicamentos; fotografía de archivo fuera de Samoa.",
+      "credit": {
+        "title": "File:Antimicrobial resistance.jpg",
+        "license": "CC BY 2.0",
+        "author": "DFID - UK Department for International Development",
+        "page": "https://commons.wikimedia.org/wiki/File:Antimicrobial_resistance.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Antimicrobial_resistance.jpg/1280px-Antimicrobial_resistance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Antimicrobial_resistance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "A variety of different bacteria - testing for antimicrobial resistance"
+      }
+    },
+    {
+      "id": "orbiuno-20261123-1800-05",
+      "photoFile": "photo-05.jpg",
+      "logoFile": "logo-05.png",
+      "sourceHost": "efe.com",
+      "logoCredit": null,
+      "logoSource": "https://www.google.com/s2/favicons?domain=efe.com&sz=128",
+      "caption": "Fachada del Teatro Real de Madrid en una fotografía de 2016; no muestra la entrega del premio en Viena.",
+      "credit": {
+        "title": "File:Main facade of the Teatro Real de Madrid, 2016 01.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Benjamín Núñez González",
+        "page": "https://commons.wikimedia.org/wiki/File:Main_facade_of_the_Teatro_Real_de_Madrid,_2016_01.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg/1280px-Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Main_facade_of_the_Teatro_Real_de_Madrid%2C_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "Fachada principal del Teatro Real"
+      }
+    },
+    {
+      "id": "orbiuno-20261123-1800-06",
+      "photoFile": "photo-06.jpg",
+      "logoFile": "logo-06.png",
+      "sourceHost": "www.esa.int",
+      "logoCredit": null,
+      "logoSource": "https://www.esa.int/assets/images/favicon.ico",
+      "caption": "Imagen real del planeta Mercurio tomada por la sonda MESSENGER en 2008; no muestra la nave BepiColombo.",
+      "credit": {
+        "title": "File:Mercury in true color.jpg",
+        "license": "Public domain",
+        "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State University/Carnegie Institution of Washington",
+        "page": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "description": "This is a cropped bottom right image from the original four image mosaic PIA11364: Mercury's \"True\" Color is in the Eye of the Beholder. Original Caption Released with Image: Given the WAC’s ability to take images through 11 narrow-band color filters, it is na"
+      }
+    }
+  ]
+}

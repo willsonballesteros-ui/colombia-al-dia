@@ -1,5 +1,5 @@
 {
-  "voice": "ef_dora",
+  "voice": "es-CO-SalomeNeural",
   "language": "es-CO",
   "baseRate": 1.25,
   "items": {
@@ -638,6 +638,54 @@
       "url": "./media/web-voice/fc13cb7ea740826e4290.mp3",
       "text": "El fin de semana de la moda en Bogotá abrió espacios para mostrar el trabajo de diseñadores colombianos y respaldar una iniciativa solidaria. De acuerdo con la cobertura de El Espectador, una pasarela reunió piezas donadas por veintisiete diseñadores, destinadas a una subasta cuyo recaudo apoyaría a personas afectadas por el terremoto registrado en Colombia el 10 de agosto.\n\nLa programación del encuentro también contempla actividades distribuidas en distintos espacios de la capital y mecanismos de movilidad para los asistentes. Más allá de las tendencias de temporada, el evento busca conectar la creación de moda con redes culturales y proyectos de impacto social. Los resultados finales de las subastas deben ser informados por los organizadores; no corresponde anunciar cifras no verificadas.\n\nPara el sector creativo, la feria ofrece una plataforma de visibilidad y colaboración entre marcas y públicos. La fotografía usada aquí muestra una pasarela realizada años antes en Mozambique, identificada expresamente como imagen de archivo: no representa prendas ni diseñadores de Bogotá Fashion Weekend 2026.",
       "sha256": "fc13cb7ea740826e4290f8d98b7352d5e4b3dfd4735bf05bfdbc1a384e0cde10"
+    },
+    "orbiuno-20261123-1800-01": {
+      "url": "./media/web-voice/c7c8be4bbf5bd1111f6cfb78d951.mp3",
+      "text": "El ICETEX anunció el 23 de noviembre la selección de cuatro proyectos de universidades públicas y privadas orientados a apoyar la recuperación de comunidades afectadas por el terremoto del pasado 10 de agosto. Cada iniciativa podrá recibir hasta 250 millones de pesos, para un monto conjunto de hasta mil millones.\n\nLos programas se enfocan en mantener oportunidades educativas, acompañar negocios pequeños, fortalecer capacidades productivas e impulsar actividades turísticas en Caldas, Risaralda y Valle del Cauca. El trabajo reunirá conocimientos de instituciones académicas y aliados internacionales.\n\nEl anuncio corresponde a proyectos seleccionados y financiación prevista, no a una recuperación ya concluida. hará seguimiento a su ejecución y a los resultados que reporten las comunidades beneficiadas.",
+      "sha256": "b8100c71b5a7ef8f6ba4143c4eaba782cd8a927296b6e3a2976a44a17d052a96",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261123-1800-02": {
+      "url": "./media/web-voice/b987388e3135e087c74d909d1811.mp3",
+      "text": "Cincuenta restaurantes del Centro Histórico de Cartagena culminaron su proceso de formación ambiental en el programa Cocina Heroica, de acuerdo con un reporte de Caracol Radio publicado este lunes 23 de noviembre. La iniciativa reúne establecimientos gastronómicos en torno al cuidado de los servicios públicos y los recursos urbanos de la ciudad.\n\nLa propuesta es impulsada por Aguas de Cartagena y la Universidad del Sinú. Durante su tercera edición, la formación se concentró en buenas prácticas para el manejo de grasas y aceites usados en las cocinas, un aspecto importante para prevenir obstrucciones y dificultades en las redes de alcantarillado.\n\nEl cierre de la formación es un avance concreto de capacitación, pero todavía no demuestra que se hayan eliminado los vertimientos inadecuados. Los cambios duraderos dependerán de la aplicación cotidiana de las prácticas aprendidas en cada restaurante y del seguimiento a sus resultados.",
+      "sha256": "f7a2375603419591a2a508d1e99b69356a0220e962f9bdc51e2e32e3c9a54360",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261123-1800-03": {
+      "url": "./media/web-voice/da6842cbc5eb457147fedb89b929.mp3",
+      "text": "El Ministerio del Deporte anunció un encuentro nacional del programa Escuela de Talentos del sector paralímpico en Bogotá. La actividad convoca a 48 niños y jóvenes para atletas y a 14 entrenadores de 14 escuelas pertenecientes a diez departamentos.\n\nLos participantes trabajarán en para atletismo, para natación, para tiro con arco y para bádminton, con actividades previstas en el Centro de Alto Rendimiento y otros escenarios capitalinos. La agenda busca fortalecer componentes técnicos, físicos y metodológicos.\n\nLa noticia resalta el desarrollo del deporte formativo y las oportunidades para atletas con discapacidad. El encuentro es de preparación: no debe presentarse como competencia ya concluida ni como anuncio de nuevas medallas.",
+      "sha256": "4e4c2efdf6a563abee32056c20ed8c0133d50492eb5f4d4560977e412914cbf8",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261123-1800-04": {
+      "url": "./media/web-voice/061d635159e494a0f1243899f05f.mp3",
+      "text": "La Organización Mundial de la Salud divulgó el 23 de noviembre la experiencia de Samoa frente a la resistencia a los antimicrobianos, un fenómeno que puede hacer menos eficaces tratamientos contra infecciones. El país está articulando una respuesta que no se limita a los hospitales.\n\nEl enfoque denominado Una sola salud integra trabajo de los sectores de salud humana, sanidad animal y ambiente. Las autoridades y sus aliados buscan fortalecer la vigilancia y el uso responsable de medicamentos que también se emplean en animales.\n\nEl avance está en la coordinación preventiva y en el fortalecimiento de capacidades, no en la eliminación del problema. La OMS recuerda que los microorganismos resistentes pueden circular entre personas, animales y ambientes.",
+      "sha256": "b0ea044e67db660fbf075ba23a0071f90943a93862d368e045e31358c58154b5",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261123-1800-05": {
+      "url": "./media/web-voice/1e355aceb0b300e280e9b5f50b31.mp3",
+      "text": "El Teatro Real de Madrid fue reconocido como mejor compañía de ópera en los International Opera Awards 2026, celebrados el 21 de noviembre en Viena. La noticia fue reportada por la agencia EFE y la publicación especializada Ópera Actual.\n\nEl galardón reconoce el desempeño artístico y organizativo de la institución, desde la programación y los repartos hasta la labor técnica. Su director artístico, Joan Matabosch, recibió la distinción en nombre de los equipos que hacen posibles las producciones.\n\nEl premio posiciona al teatro madrileño entre las instituciones destacadas de la escena lírica internacional. Se trata de un reconocimiento específico del certamen, no de una clasificación universal de todos los teatros.",
+      "sha256": "475059aa05a9cd6a46384fea1aa2b2b101bbbdacca8e2178a54119f7fe9b6a86",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
+    },
+    "orbiuno-20261123-1800-06": {
+      "url": "./media/web-voice/1d710983d8e71c368f49cc8e3354.mp3",
+      "text": "La Agencia Espacial Europea confirmó este lunes que la misión conjunta BepiColombo, desarrollada con la agencia espacial japonesa JAXA, consiguió entrar en órbita de Mercurio el 21 de noviembre, luego de una travesía de casi ocho años.\n\nDurante la maniobra, un problema informático interrumpió antes de tiempo el encendido de propulsores y la nave activó su modo seguro. Los equipos de misión comprobaron después que estaba estable y había logrado la captura orbital.\n\nEl hito abre una nueva etapa de preparación para los dos orbitadores científicos que estudiarán Mercurio. La ESA informó que se mantiene la hoja de ruta hacia su separación en diciembre, mientras continúa analizando el incidente.",
+      "sha256": "9223a9b6ed1b1ea4fc29beb82a96be6c802350143a082c287ecf3306b29cbbeb",
+      "voice": "es-CO-SalomeNeural",
+      "language": "es-CO",
+      "speed": 1.25
     }
   }
 }
