@@ -167,7 +167,7 @@ EDITION_TIMES = (
     ("21:00", "9:00 p. m."), ("20:00", "8:00 p. m."),
     ("19:00", "7:00 p. m."), ("18:00", "6:00 p. m."),
     ("17:00", "5:00 p. m."), ("12:00", "12:00 m."),
-    ("10:00", "10:00 a. m."), ("09:30", "9:30 a. m."), ("08:00", "8:00 a. m."),
+    ("11:30", "11:30 a. m."), ("10:00", "10:00 a. m."), ("09:30", "9:30 a. m."), ("08:00", "8:00 a. m."),
 )
 
 
@@ -259,7 +259,7 @@ def fix_today_frontend(page):
         "const slots=[['21:00','9:00 p. m.'],['20:00','8:00 p. m.'],"
         "['19:00','7:00 p. m.'],['18:00','6:00 p. m.'],"
         "['17:00','5:00 p. m.'],['12:00','12:00 m.'],"
-        "['10:00','10:00 a. m.'],['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
+        "['11:30','11:30 a. m.'],['11:30','11:30 a. m.'],['10:00','10:00 a. m.'],['09:30','9:30 a. m.'],['08:00','8:00 a. m.']];"
     )
     page = page.replace(old_slots, all_slots)
     page = page.replace(
@@ -315,10 +315,10 @@ def fix_today_frontend(page):
         )
         page = page.replace("const render=()=>{",
                             dynamic_nav + "const render=()=>{refreshEditionNav();", 1)
-    if "['10:00','10:00 a. m.']" not in page:
-        page = page.replace("['09:30','9:30 a. m.']", "['10:00','10:00 a. m.'],['09:30','9:30 a. m.']")
-    if "['10:00','09:30'" not in page:
-        page = page.replace("['09:30','08:00']", "['10:00','09:30','08:00']")
+    if "['11:30','11:30 a. m.'],['10:00','10:00 a. m.']" not in page:
+        page = page.replace("['09:30','9:30 a. m.']", "['11:30','11:30 a. m.'],['11:30','11:30 a. m.'],['10:00','10:00 a. m.'],['09:30','9:30 a. m.']")
+    if "['11:30','10:00','09:30'" not in page:
+        page = page.replace("['09:30','08:00']", "['11:30','10:00','09:30','08:00']")
     # Texto honesto cuando la nueva edición aún no ha sido importada.
     page = page.replace(
         '<option value="today">Últimas noticias publicadas</option>',
@@ -350,9 +350,11 @@ def build(data, page, *, as_of=None):
         n for n in data["news"]
         if n.get("date")==today
         and n.get("verification")=="editorial_verified"
-        and n.get("editionSlot") in ("08:00","09:30","10:00","12:00","17:00","18:00","19:00","20:00","21:00")
+        and n.get("editionSlot") in ("08:00","09:30","10:00","11:30","12:00","17:00","18:00","19:00","20:00","21:00")
     ]
     slots=(("08:00","8:00 a. m."),("12:00","12:00 m."),("18:00","6:00 p. m."))
+    if any(n.get("editionSlot") == "11:30" for n in published):
+        slots=(("11:30","11:30 a. m. · Edición positiva"),)+slots
     if any(n.get("editionSlot") == "10:00" for n in published):
         slots=(("10:00","10:00 a. m. · Edición del día"),)+slots
     if any(n.get("editionSlot") == "09:30" for n in published):
@@ -370,7 +372,7 @@ def build(data, page, *, as_of=None):
     active_slots=[pair for pair in slots if any(n.get("editionSlot")==pair[0] for n in published)]
     slots=tuple(active_slots)
     sections=[]
-    reel_limits={"08:00":6,"09:30":6,"10:00":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
+    reel_limits={"08:00":6,"09:30":6,"10:00":6,"11:30":6,"12:00":6,"17:00":6,"18:00":6,"19:00":6,"20:00":6,"21:00":6}
     for slot,label in slots:
         rows=sorted((n for n in published if n.get("editionSlot")==slot),
                     key=lambda n:n.get("priority",999))
