@@ -72,6 +72,14 @@ jobs:
               assert len((path/(brand+"_caption.txt")).read_text())<=2200
           print("EDITORIAL_LICENSED_MEDIA_QA_PASS_TWO_REELS")
           PY
+      - name: Resguardar archivos audiovisuales antes de sincronizar la web
+        uses: actions/upload-artifact@v4
+        with:
+          name: edicion-23nov-1000-mp4-audio-y-fotos
+          path: |
+            media/2026-11-23/edicion-1000/
+          if-no-files-found: error
+          retention-days: 30
       - name: Integrar noticias y audios a la web sin borrar historial
         run: |
           PYTHONPATH=. python scripts/sincronizar_23nov_1000_web.py
