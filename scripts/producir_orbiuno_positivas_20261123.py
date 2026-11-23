@@ -83,11 +83,15 @@ def source_logo(url,directory,idx):
     if not h or not re.fullmatch(r"[a-z0-9.-]+",h):raise ValueError("Fuente sin dominio")
     res=requests.get("https://www.google.com/s2/favicons",
         params={"domain":h,"sz":"256"},timeout=20,headers={"User-Agent":"ORBIUNO-media/1.0"})
+    if res.status_code==404:
+        # No inventar un logotipo; el nombre del medio queda en texto grande.
+        print("SOURCE_FAVICON_UNAVAILABLE_SHOW_NAME",h,flush=True)
+        return None
     res.raise_for_status()
-    if len(res.content)<200:raise ValueError("Favicon fuente demasiado pequeño")
+    if len(res.content)<200:return None
     with Image.open(io.BytesIO(res.content)) as f:
         f.load()
-        if min(f.size)<16:raise ValueError("Icono de fuente no legible")
+        if min(f.size)<16:return None
         icon=f.convert("RGBA")
         if min(icon.size)<96:
             icon=ImageOps.contain(icon,(128,128),method=Image.Resampling.NEAREST)
@@ -221,7 +225,8 @@ def compile_brand(brand,items):
     # Dejar audios completos, crédito y fragmentos de la web accesibles con la edición.
     for i,c in enumerate(creds):
         shutil.copyfile(folder/c["file"],OUT/c["file"].replace("foto-","foto-"+brand+"-"))
-        shutil.copyfile(folder/logos[i],OUT/f"{brand}-logo-{i+1:02d}.png")
+        if logos[i]:
+            shutil.copyfile(folder/logos[i],OUT/f"{brand}-logo-{i+1:02d}.png")
     # Narración WEB COMPLETA: redactado propio íntegro, sin leer resumen.
     full_input=folder/"full_voice_input.json"
     full_input.write_text(json.dumps({"segments":[{"id":f"full{i:02d}",
@@ -261,7 +266,7 @@ article img{{width:100%;height:auto;max-height:460px;object-fit:cover;border-rad
        "video":final.name,"duration":sec,"sha256":sha,
        "photoCredits":creds,"voice":"es-CO-SalomeNeural","voiceSpeed":1.25,
        "sourceUrls":[n["url"] for n in items],"imagesCount":len(creds),
-       "logosCount":len(logos),"audioSegments":n_expected+1,"openingSpeech":False,"openingCover":False,"fullNewsAudioFiles":n_expected,
+       "logosCount":sum(bool(x) for x in logos),"sourceLabelsCount":n_expected,"audioSegments":n_expected+1,"openingSpeech":False,"openingCover":False,"fullNewsAudioFiles":n_expected,
        "published":False,"qa":"media_licenses_and_render_verified"}
     (OUT/f"{brand}_manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("READY_TO_SYNC_WEB",brand,final.name,sec,sha,flush=True)
