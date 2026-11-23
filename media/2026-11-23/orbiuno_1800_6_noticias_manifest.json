@@ -129,7 +129,9 @@
       "sourceUrl": "https://www.esa.int/et/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge"
     }
   ],
-  "published": false,
-  "instagramId": null,
-  "instagramPermalink": null
+  "published": true,
+  "instagramId": "18123214297746022",
+  "instagramPermalink": "https://www.instagram.com/reel/DgGkbn_FWWh/",
+  "publicationMethod": "connected_instagram_api",
+  "publicationVerification": "instagram_media_query"
 }
