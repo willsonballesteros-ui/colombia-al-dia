@@ -1,0 +1,91 @@
+name: "ORBIUNO + MyCar | Regenerar correcciones 22NOV V2"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/republicar-correcciones-22nov-v2.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: corrected-22nov-v2-once
+  cancel-in-progress: false
+jobs:
+  generar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verificar que no existan versiones corregidas anteriores
+        shell: bash
+        run: |
+          set -euo pipefail
+          test ! -e media/2026-11-22/correcciones-v2/qa.json
+          test -s media/2026-11-22/1800_assets/credits.json
+          test -s media/2026-11-22/orbiuno_1800_6_noticias_manifest.json
+          test -s media/2026-11-22/mycar-pm-5/editorial.json
+      - name: Instalar dependencias y sintetizador
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check Pillow requests edge-tts
+          python -m py_compile scripts/republicar_correcciones_20261122.py scripts/render_orbiuno_aprobado.py scripts/render_mycar_22nov_1800.py scripts/generate_voice.py
+          command -v ffmpeg && command -v ffprobe
+      - name: Renderizar ORBIUNO y MyCar, fotos originales, voz con cierre
+        run: PYTHONPATH=. python scripts/republicar_correcciones_20261122.py
+      - name: QA de dos MP4 y evidencias originales
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          b=Path("media/2026-11-22/correcciones-v2")
+          m=json.loads((b/"qa.json").read_text())
+          assert set(m)=={"orbiuno","mycar"}
+          for name,info in m.items():
+              video=b/info["video"]
+              assert video.stat().st_size>500_000
+              assert hashlib.sha256(video.read_bytes()).hexdigest()==info["sha256"]
+              p=subprocess.run(["ffmpeg","-v","error","-i",str(video),"-f","null","-"],
+                               capture_output=True,text=True)
+              assert p.returncode==0,p.stderr[:500]
+              caption=(b/(name+"_caption.txt")).read_text()
+              assert "CORREGIDA-V2" in caption and "enlace del perfil" in caption
+              assert len(caption)<=2200
+              assert float(info["duration"])>15
+          print("CORRECTIONS_QA_PASS_BOTH")
+          PY
+      - name: Guardar nuevos videos sin sobrescribir los originales
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/2026-11-22/correcciones-v2
+          git commit -m 'Videos corregidos ORBIUNO y MyCar 22NOV V2, nuevos y sin alterar originales'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort || true; exit 1; }
+            if git push origin HEAD:main; then
+              echo "CORRECTIONS_V2_ON_GITHUB"
+              exit 0
+            fi
+            sleep "$((attempt*3))"
+          done
+          exit 1
+      - name: Guardar evidencia de QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-mycar-correcciones-22nov-v2
+          path: |
+            media/2026-11-22/correcciones-v2/qa.json
+            media/2026-11-22/correcciones-v2/*_manifest.json
+            media/2026-11-22/correcciones-v2/*_caption.txt
+          if-no-files-found: warn
+          retention-days: 45
