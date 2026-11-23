@@ -121,11 +121,13 @@ jobs:
       - name: Importar seis noticias originales y validar todo
         env:
           FILE: '${{ steps.edition.outputs.path }}'
+          DAY: '${{ steps.edition.outputs.day }}'
+          SLOT: '${{ steps.edition.outputs.slot }}'
         run: |
           python -m pip install Pillow
           PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'
           python scripts/orbiuno_import_daily.py --edition "$FILE"
-          python scripts/validate_news.py noticias.json
+          python scripts/validate_news.py noticias.json --day "$DAY" --slot "$SLOT"
           python -m py_compile scripts/render_orbiuno_aprobado.py scripts/orbiuno_qa_aprobado.py scripts/orbiuno_daily_preflight.py
 
       - name: Instalar voz y FFmpeg/FFprobe sin APT lento
@@ -183,7 +185,7 @@ jobs:
           SLOT: '${{ steps.edition.outputs.slot }}'
           STAMP: '${{ steps.edition.outputs.stamp }}'
         run: |
-          python scripts/render_orbiuno_aprobado.py --day "$DAY" --slot "$SLOT" --assets "media/$DAY/${STAMP}_assets" --out "dist/orbiuno-$DAY-$STAMP"
+          python scripts/render_orbiuno_aprobado.py --day "$DAY" --slot "$SLOT" --assets "media/$DAY/${STAMP}_assets" --out "dist/orbiuno-$DAY-$STAMP" --no-cover
 
       - name: BLOQUEO DURO - fotos, logos, voz, web completa, MP4 y SHA
         env:
@@ -225,7 +227,7 @@ jobs:
               echo 'MERGE_UNSAFE: no se publicó ninguna red social' >&2
               exit 1
             fi
-            python scripts/validate_news.py noticias.json
+            python scripts/validate_news.py noticias.json --day "$DAY" --slot "${{ steps.edition.outputs.slot }}"
             python scripts/prepare_site.py
             python scripts/build_feed.py
             python scripts/stage_cloudflare_site.py --out site
@@ -260,6 +262,25 @@ jobs:
           ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
         run: |
           python scripts/orbiuno_publish_6.py --manifest "media/$DAY/orbiuno_${STAMP}_6_noticias_manifest.json"
+
+      - name: Publicar 23NOV 18h en Instagram tras el preflight integral
+        if: steps.edition.outputs.day == '2026-11-23' && steps.edition.outputs.stamp == '1800'
+        env:
+          DAY: '${{ steps.edition.outputs.day }}'
+          STAMP: '${{ steps.edition.outputs.stamp }}'
+          ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+          ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+        run: |
+          python scripts/orbiuno_publish_6.py --manifest "media/$DAY/orbiuno_${STAMP}_6_noticias_manifest.json"
+
+      - name: Registrar evidencia de la publicación 23NOV 18h
+        if: always() && steps.edition.outputs.day == '2026-11-23' && steps.edition.outputs.stamp == '1800'
+        uses: actions/upload-artifact@v4
+        with:
+          name: orbiuno-20261123-1800-publicacion
+          path: media/2026-11-23/publication_report.json
+          if-no-files-found: warn
+          retention-days: 30
 
       - name: Registrar la publicación con ID y enlace verificables
         if: always() && steps.edition.outputs.day == '2026-11-21'
