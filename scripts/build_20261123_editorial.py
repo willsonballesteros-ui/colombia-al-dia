@@ -54,7 +54,7 @@ def compile_news(data):
              "photograph":None,"photoRightsVerified":False})
             captions.extend([f"{n['order']}. {n['title']}",n["url"]])
         voices.append({"id":"despedida",
-            "text":f"Gracias por acompañarnos. Escucha la lectura completa de cada noticia en el enlace de nuestro perfil, {WEBS[brand].removeprefix('https://').replace('-', ' guion ').replace('.', ' punto ')}."})
+            "text":f"Gracias por acompañarnos. Escucha la lectura completa de cada noticia en el enlace del perfil, {WEBS[brand].removeprefix('https://').replace('-', ' guion ').replace('.', ' punto ')}."})
         captions.extend(["",f"Escucha cada noticia desde el enlace del perfil {ACCOUNTS[brand]}.",WEBS[brand],
                          "Fotos reales y fuentes comprobadas antes de publicar.","#ORBIUNO #NoticiasColombia" if brand=="orbiuno" else "#MyCar #NoticiasMotor"])
         (bdir/"voice_input.json").write_text(json.dumps({"segments":voices},ensure_ascii=False,indent=2)+"\n")
