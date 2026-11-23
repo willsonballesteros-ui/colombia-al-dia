@@ -1,0 +1,235 @@
+{
+  "editionDate": "2026-11-23",
+  "editionSlot": "18:00",
+  "editionKey": "ORBIUNO-2026-11-23-1800",
+  "status": "EDITORIAL_REVISADA_MEDIOS_PENDIENTES_QA",
+  "format": "six_stories_verified_real_photos_no_intro",
+  "sourceOnly": false,
+  "news": [
+    {
+      "id": "orbiuno-20261123-1800-01",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 1,
+      "title": "Cuatro proyectos ayudarán a reconstruir oportunidades tras el terremoto",
+      "category": "Colombia · Educación y recuperación",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "ICETEX",
+          "url": "https://web.icetex.gov.co/es/-/cuatro-proyectos-impulsaran-recuperacion-regiones-afectadas-terremoto-con-inversion-1000-millones-icetex"
+        }
+      ],
+      "summary": "El ICETEX anunció el 23 de noviembre la selección de cuatro proyectos de universidades públicas y privadas orientados a apoyar la recuperación de comunidades afectadas por el terremoto del pasado 10 de agosto. Cada iniciativa podrá recibir hasta 250 millones de pesos, para un monto conjunto de hasta mil millones.",
+      "executiveSummary": "El ICETEX anunció el 23 de noviembre la selección de cuatro proyectos de universidades públicas y privadas orientados a apoyar la recuperación de comunidades afectadas por el terremoto del pasado 10 de agosto. Cada iniciativa podrá recibir hasta 250 millones de pesos, para un monto conjunto de hasta mil millones.",
+      "reelLine": "Cuatro proyectos recibirán hasta mil millones de pesos del ICETEX para apoyar la recuperación de comunidades afectadas por el terremoto de agosto.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "originalArticleTextEs": "El ICETEX anunció el 23 de noviembre la selección de cuatro proyectos de universidades públicas y privadas orientados a apoyar la recuperación de comunidades afectadas por el terremoto del pasado 10 de agosto. Cada iniciativa podrá recibir hasta 250 millones de pesos, para un monto conjunto de hasta mil millones.\n\nLos programas se enfocan en mantener oportunidades educativas, acompañar negocios pequeños, fortalecer capacidades productivas e impulsar actividades turísticas en Caldas, Risaralda y Valle del Cauca. El trabajo reunirá conocimientos de instituciones académicas y aliados internacionales.\n\nEl anuncio corresponde a proyectos seleccionados y financiación prevista, no a una recuperación ya concluida. ORBIUNO hará seguimiento a su ejecución y a los resultados que reporten las comunidades beneficiadas.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://web.icetex.gov.co/es/-/cuatro-proyectos-impulsaran-recuperacion-regiones-afectadas-terremoto-con-inversion-1000-millones-icetex"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Icetex.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Sede del ICETEX en Bogotá en 2010. Fotografía de archivo que no documenta la recuperación de 2026.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    },
+    {
+      "id": "orbiuno-20261123-1800-02",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 2,
+      "title": "50 restaurantes de Cartagena terminan formación ambiental",
+      "category": "Colombia · Medio ambiente y emprendimiento",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "CARACOL RADIO",
+          "url": "https://caracol.com.co/2026/11/23/50-restaurantes-del-centro-historico-culminaron-formacion-ambiental-de-cocina-heroica/"
+        },
+        {
+          "name": "FUENTE DE CONTRASTE",
+          "url": "https://caracol.com.co/2026/09/30/cocina-heroica-el-programa-de-aguas-de-cartagena-que-vinculo-a-50-restaurantes-del-centro-historico/"
+        }
+      ],
+      "summary": "Cincuenta restaurantes del Centro Histórico de Cartagena culminaron su proceso de formación ambiental en el programa Cocina Heroica, de acuerdo con un reporte de Caracol Radio publicado este lunes 23 de noviembre. La iniciativa reúne establecimientos gastronómicos en torno al cuidado de los servicios públicos y los recursos urbanos de la ciudad.",
+      "executiveSummary": "Cincuenta restaurantes del Centro Histórico de Cartagena culminaron su proceso de formación ambiental en el programa Cocina Heroica, de acuerdo con un reporte de Caracol Radio publicado este lunes 23 de noviembre. La iniciativa reúne establecimientos gastronómicos en torno al cuidado de los servicios públicos y los recursos urbanos de la ciudad.",
+      "reelLine": "Cincuenta restaurantes del Centro Histórico de Cartagena culminaron la formación ambiental de Cocina Heroica, un programa para mejorar el manejo de grasas y aceites usados.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "originalArticleTextEs": "Cincuenta restaurantes del Centro Histórico de Cartagena culminaron su proceso de formación ambiental en el programa Cocina Heroica, de acuerdo con un reporte de Caracol Radio publicado este lunes 23 de noviembre. La iniciativa reúne establecimientos gastronómicos en torno al cuidado de los servicios públicos y los recursos urbanos de la ciudad.\n\nLa propuesta es impulsada por Aguas de Cartagena y la Universidad del Sinú. Durante su tercera edición, la formación se concentró en buenas prácticas para el manejo de grasas y aceites usados en las cocinas, un aspecto importante para prevenir obstrucciones y dificultades en las redes de alcantarillado.\n\nEl cierre de la formación es un avance concreto de capacitación, pero todavía no demuestra que se hayan eliminado los vertimientos inadecuados. Los cambios duraderos dependerán de la aplicación cotidiana de las prácticas aprendidas en cada restaurante y del seguimiento a sus resultados.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://caracol.com.co/2026/11/23/50-restaurantes-del-centro-historico-culminaron-formacion-ambiental-de-cocina-heroica/",
+        "https://caracol.com.co/2026/09/30/cocina-heroica-el-programa-de-aguas-de-cartagena-que-vinculo-a-50-restaurantes-del-centro-historico/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Alma restaurante Cartagena.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Fachada de un restaurante de Cartagena de Indias fotografiado en 2025; imagen de archivo, no de Cocina Heroica.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    },
+    {
+      "id": "orbiuno-20261123-1800-03",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 3,
+      "title": "48 jóvenes paradeportistas fortalecen su preparación en Bogotá",
+      "category": "Colombia · Deporte",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "MINISTERIO DEL DEPORTE",
+          "url": "https://mindeporte.gov.co/sala-de-prensa/noticias/encuentro-nacional-escuelas-talentos-sector-paralimpico-bogota"
+        }
+      ],
+      "summary": "El Ministerio del Deporte anunció un encuentro nacional del programa Escuela de Talentos del sector paralímpico en Bogotá. La actividad convoca a 48 niños y jóvenes para atletas y a 14 entrenadores de 14 escuelas pertenecientes a diez departamentos.",
+      "executiveSummary": "El Ministerio del Deporte anunció un encuentro nacional del programa Escuela de Talentos del sector paralímpico en Bogotá. La actividad convoca a 48 niños y jóvenes para atletas y a 14 entrenadores de 14 escuelas pertenecientes a diez departamentos.",
+      "reelLine": "Cuarenta y ocho jóvenes paradeportistas de diez departamentos participarán esta semana en un encuentro nacional en Bogotá para fortalecer su preparación en cuatro disciplinas.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "originalArticleTextEs": "El Ministerio del Deporte anunció un encuentro nacional del programa Escuela de Talentos del sector paralímpico en Bogotá. La actividad convoca a 48 niños y jóvenes para atletas y a 14 entrenadores de 14 escuelas pertenecientes a diez departamentos.\n\nLos participantes trabajarán en para atletismo, para natación, para tiro con arco y para bádminton, con actividades previstas en el Centro de Alto Rendimiento y otros escenarios capitalinos. La agenda busca fortalecer componentes técnicos, físicos y metodológicos.\n\nLa noticia resalta el desarrollo del deporte formativo y las oportunidades para atletas con discapacidad. El encuentro es de preparación: no debe presentarse como competencia ya concluida ni como anuncio de nuevas medallas.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://mindeporte.gov.co/sala-de-prensa/noticias/encuentro-nacional-escuelas-talentos-sector-paralimpico-bogota"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Wheelchair archery at the 2004 Summer Paralympics.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Tiro con arco en silla de ruedas en los Juegos Paralímpicos de 2004; imagen de archivo ajena al encuentro en Bogotá.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    },
+    {
+      "id": "orbiuno-20261123-1800-04",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 4,
+      "title": "Samoa impulsa un plan para conservar la eficacia de los antibióticos",
+      "category": "Mundo · Salud",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "ORGANIZACIÓN MUNDIAL DE LA SALUD",
+          "url": "https://www.who.int/guam/news/feature-stories/item/keeping-medicines-working--samoa-takes-a-one-health-approach-to-antimicrobial-resistance"
+        }
+      ],
+      "summary": "La Organización Mundial de la Salud divulgó el 23 de noviembre la experiencia de Samoa frente a la resistencia a los antimicrobianos, un fenómeno que puede hacer menos eficaces tratamientos contra infecciones. El país está articulando una respuesta que no se limita a los hospitales.",
+      "executiveSummary": "La Organización Mundial de la Salud divulgó el 23 de noviembre la experiencia de Samoa frente a la resistencia a los antimicrobianos, un fenómeno que puede hacer menos eficaces tratamientos contra infecciones. El país está articulando una respuesta que no se limita a los hospitales.",
+      "reelLine": "En Samoa, la Organización Mundial de la Salud destacó un esfuerzo conjunto entre salud humana, veterinaria y ambiente para combatir la resistencia a los medicamentos contra infecciones.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "originalArticleTextEs": "La Organización Mundial de la Salud divulgó el 23 de noviembre la experiencia de Samoa frente a la resistencia a los antimicrobianos, un fenómeno que puede hacer menos eficaces tratamientos contra infecciones. El país está articulando una respuesta que no se limita a los hospitales.\n\nEl enfoque denominado Una sola salud integra trabajo de los sectores de salud humana, sanidad animal y ambiente. Las autoridades y sus aliados buscan fortalecer la vigilancia y el uso responsable de medicamentos que también se emplean en animales.\n\nEl avance está en la coordinación preventiva y en el fortalecimiento de capacidades, no en la eliminación del problema. La OMS recuerda que los microorganismos resistentes pueden circular entre personas, animales y ambientes.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.who.int/guam/news/feature-stories/item/keeping-medicines-working--samoa-takes-a-one-health-approach-to-antimicrobial-resistance"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Antimicrobial resistance.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Laboratorio que examina bacterias para medir su resistencia a medicamentos; fotografía de archivo fuera de Samoa.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    },
+    {
+      "id": "orbiuno-20261123-1800-05",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 5,
+      "title": "El Teatro Real de Madrid gana el premio internacional a mejor compañía de ópera",
+      "category": "Mundo · Cultura",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "AGENCIA EFE / ÓPERA ACTUAL",
+          "url": "https://efe.com/espana/2026-11-22/teatro-real-de-madrid-premio-mejor-teatro-opera-mundo/"
+        },
+        {
+          "name": "FUENTE DE CONTRASTE",
+          "url": "https://www.operaactual.com/noticia/el-teatro-real-nuevamente-mejor-compania-de-opera-en-los-international-opera-awards-2026/"
+        }
+      ],
+      "summary": "El Teatro Real de Madrid fue reconocido como mejor compañía de ópera en los International Opera Awards 2026, celebrados el 21 de noviembre en Viena. La noticia fue reportada por la agencia EFE y la publicación especializada Ópera Actual.",
+      "executiveSummary": "El Teatro Real de Madrid fue reconocido como mejor compañía de ópera en los International Opera Awards 2026, celebrados el 21 de noviembre en Viena. La noticia fue reportada por la agencia EFE y la publicación especializada Ópera Actual.",
+      "reelLine": "El Teatro Real de Madrid recibió el premio internacional a mejor compañía de ópera, en una ceremonia celebrada en Viena.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "es",
+      "originalArticleTextEs": "El Teatro Real de Madrid fue reconocido como mejor compañía de ópera en los International Opera Awards 2026, celebrados el 21 de noviembre en Viena. La noticia fue reportada por la agencia EFE y la publicación especializada Ópera Actual.\n\nEl galardón reconoce el desempeño artístico y organizativo de la institución, desde la programación y los repartos hasta la labor técnica. Su director artístico, Joan Matabosch, recibió la distinción en nombre de los equipos que hacen posibles las producciones.\n\nEl premio posiciona al teatro madrileño entre las instituciones destacadas de la escena lírica internacional. Se trata de un reconocimiento específico del certamen, no de una clasificación universal de todos los teatros.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://efe.com/espana/2026-11-22/teatro-real-de-madrid-premio-mejor-teatro-opera-mundo/",
+        "https://www.operaactual.com/noticia/el-teatro-real-nuevamente-mejor-compania-de-opera-en-los-international-opera-awards-2026/"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Main facade of the Teatro Real de Madrid, 2016 01.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Fachada del Teatro Real de Madrid en una fotografía de 2016; no muestra la entrega del premio en Viena.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    },
+    {
+      "id": "orbiuno-20261123-1800-06",
+      "date": "2026-11-23",
+      "editionSlot": "18:00",
+      "priority": 6,
+      "title": "La nave BepiColombo llega a la órbita de Mercurio tras ocho años de viaje",
+      "category": "Mundo · Ciencia y espacio",
+      "level": "Noticia contrastada; multimedia sujeto a QA",
+      "sources": [
+        {
+          "name": "AGENCIA ESPACIAL EUROPEA (ESA)",
+          "url": "https://www.esa.int/et/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge"
+        }
+      ],
+      "summary": "La Agencia Espacial Europea confirmó este lunes que la misión conjunta BepiColombo, desarrollada con la agencia espacial japonesa JAXA, consiguió entrar en órbita de Mercurio el 21 de noviembre, luego de una travesía de casi ocho años.",
+      "executiveSummary": "La Agencia Espacial Europea confirmó este lunes que la misión conjunta BepiColombo, desarrollada con la agencia espacial japonesa JAXA, consiguió entrar en órbita de Mercurio el 21 de noviembre, luego de una travesía de casi ocho años.",
+      "reelLine": "La misión BepiColombo entró en órbita de Mercurio tras ocho años de viaje, pese a un contratiempo informático durante la maniobra.",
+      "verification": "editorial_verified",
+      "sourceLanguage": "en",
+      "originalArticleTextEs": "La Agencia Espacial Europea confirmó este lunes que la misión conjunta BepiColombo, desarrollada con la agencia espacial japonesa JAXA, consiguió entrar en órbita de Mercurio el 21 de noviembre, luego de una travesía de casi ocho años.\n\nDurante la maniobra, un problema informático interrumpió antes de tiempo el encendido de propulsores y la nave activó su modo seguro. Los equipos de misión comprobaron después que estaba estable y había logrado la captura orbital.\n\nEl hito abre una nueva etapa de preparación para los dos orbitadores científicos que estudiarán Mercurio. La ESA informó que se mantiene la hoja de ruta hacia su separación en diciembre, mientras continúa analizando el incidente.",
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.esa.int/et/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge"
+      ],
+      "originalArticleReviewed": true,
+      "originalArticleReviewStatus": "aprobada",
+      "originalArticleIsPublisherVerbatim": false,
+      "audioIsFullPublisherArticle": false,
+      "imageUrl": null,
+      "imageRightsVerified": false,
+      "photoCommonsTitle": "File:Mercury in true color.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Imagen real del planeta Mercurio tomada por la sonda MESSENGER en 2008; no muestra la nave BepiColombo.",
+      "photoStatus": "ARCHIVO_IDENTIFICADO_LICENCIA_POR_VERIFICAR_EN_INGESTA"
+    }
+  ],
+  "approval": {
+    "editorial": true,
+    "publication": false
+  },
+  "editorialNotes": "Inicio inmediato en primera noticia; cero portada ni saludo; fuente original legible; una lámina por nota; cierre CTA web. Se reemplaza noticia STEM ya tratada a las 11:30."
+}
