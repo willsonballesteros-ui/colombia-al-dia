@@ -212,6 +212,10 @@ def replace_old_home_banners(page, data, day):
             slot=esc(slot.replace(":", "")), label=esc(label), count=count)
         for slot, label, count in slots
     )
+    if day == "2026-11-22" and (ROOT / "media/2026-11-22/correcciones-v2/ORBIUNO_2026-11-22_1800_6_NOTICIAS_CORREGIDA_V2.mp4").is_file():
+        badges += ('<p style="margin:9px 0 0;font-size:14px">'
+                   '<a style="color:#a3f7ed" href="./media/2026-11-22/correcciones-v2/ORBIUNO_2026-11-22_1800_6_NOTICIAS_CORREGIDA_V2.mp4">'
+                   '▶ Ver video ORBIUNO corregido de las 6:00 p. m.</a></p>')
     if not badges:
         badges = ('<span style="display:block;margin:8px 0;color:#e8f5fa">'
                   'Todavía no hay ediciones verificadas para hoy.</span>')
