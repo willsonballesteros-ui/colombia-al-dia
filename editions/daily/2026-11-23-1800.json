@@ -231,5 +231,10 @@
     "editorial": true,
     "publication": false
   },
-  "editorialNotes": "Inicio inmediato en primera noticia; cero portada ni saludo; fuente original legible; una lámina por nota; cierre CTA web. Se reemplaza noticia STEM ya tratada a las 11:30."
+  "editorialNotes": "Inicio inmediato en primera noticia; cero portada ni saludo; fuente original legible; una lámina por nota; cierre CTA web. Se reemplaza noticia STEM ya tratada a las 11:30.",
+  "productionRetry": {
+    "reason": "preflight-validation-legacy-and-no-cover-fix",
+    "version": 2,
+    "priorRun": 45286002439
+  }
 }
