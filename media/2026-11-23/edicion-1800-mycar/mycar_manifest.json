@@ -88,8 +88,8 @@
   "qa": "media_licenses_and_render_verified",
   "instagramId": "17877021024693335",
   "publicationMethod": "connected_instagram_api",
-  "publicationVerification": "publish_api_success_permalink_pending",
-  "instagramPermalink": null,
+  "publicationVerification": "instagram_media_query",
+  "instagramPermalink": "https://www.instagram.com/reel/DgGqdvuFaOt/",
   "webUrl": "https://colombia-al-dia.pages.dev/mycar-2026-11-23-1800.html",
   "productionRunId": 45290721228,
   "webPreflightRunId": 45295960216
