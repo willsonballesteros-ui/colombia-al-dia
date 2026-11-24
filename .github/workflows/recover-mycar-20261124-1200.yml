@@ -1,0 +1,67 @@
+name: MyCar | Recuperar video aprobado 24NOV 12h
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/recover-mycar-20261124-1200.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: mycar-news-feed
+  cancel-in-progress: false
+jobs:
+  sincronizar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 45440411317
+          name: news-20261124-1200-mycar
+          path: media/2026-11-24/edicion-1200-mycar
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Comprobar artefacto aprobado sin producir de nuevo
+        run: |
+          test "$(TZ=America/Bogota date +%F)" = "2026-11-24"
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          p=Path("media/2026-11-24/edicion-1200-mycar")
+          m=json.loads((p/"mycar_manifest.json").read_text())
+          assert m["edition"]=="2026-11-24" and m["slot"]=="12:00"
+          assert m["newsCount"]==m["imagesCount"]==m["logosCount"]==m["fullNewsAudioFiles"]==5
+          assert m["voice"]=="es-CO-SalomeNeural" and m["voiceSpeed"]==1.25
+          assert all(c["rightsVerified"] for c in m["photoCredits"])
+          assert hashlib.sha256((p/m["video"]).read_bytes()).hexdigest()==m["sha256"]=="5a761028fba508411f1e144ddae138d67e3dcd2b60351dfc3fae5dec491bff63"
+          PY
+      - name: Sincronizar exclusivamente MyCar y su feed
+        run: |
+          set -euo pipefail
+          src=media/2026-11-24/edicion-1200-mycar
+          cp "$src/mycar_edition.html" mycar-2026-11-24-1200.html
+          mkdir -p "site/$src" site/data
+          cp -a "$src/." "site/$src/"
+          cp mycar-2026-11-24-1200.html site/
+          python scripts/build_mycar_news_feed.py
+          cp data/mycar-noticias.json site/data/mycar-noticias.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          f=json.loads(Path("site/data/mycar-noticias.json").read_text())
+          rows=[x for x in f["editions"] if x["edition_id"]=="MYCAR-2026-11-24-1200"]
+          assert len(rows)==1 and len(rows[0]["items"])==5
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$src" "site/$src" mycar-2026-11-24-1200.html site/mycar-2026-11-24-1200.html data/mycar-noticias.json site/data/mycar-noticias.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'MyCar: recuperar artefacto aprobado del 24NOV mediodía'
+          git push origin HEAD:main
