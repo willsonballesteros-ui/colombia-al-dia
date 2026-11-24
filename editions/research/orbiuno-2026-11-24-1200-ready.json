@@ -100,31 +100,47 @@
       "originalArticleSourceUrls": [
         "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123"
       ],
-      "photoCommonsTitle": "File:Photo-SMDchips.jpg",
+      "photoCommonsTitle": null,
       "photoMatchReviewed": true,
-      "photoCaption": "Fotografía de distintos circuitos integrados de montaje superficial; archivo ilustrativo, no del sistema SLIC.",
+      "photoCaption": "Placa electrónica con circuitos integrados, fotografía real de archivo de 2025; no muestra los diseños SLIC del MIT.",
       "photoRightsVerified": false,
-      "photoLicenseToVerifyAtDownload": true
+      "photoLicenseToVerifyAtDownload": true,
+      "alternatePhoto": {
+        "title": "Close-up of a green circuit board with microchips",
+        "author": "Albert Stoynov",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/close-up-of-a-green-circuit-board-with-microchips-dXdr1RGvcoM",
+        "url": "https://images.unsplash.com/photo-1765256931287-e7f0e36b9ba4?auto=format&fit=crop&fm=jpg&q=85&w=1600",
+        "context": "Placa electrónica con circuitos integrados, fotografía real de archivo de 2025; no muestra los diseños SLIC del MIT."
+      }
     },
     {
       "order": 6,
-      "title": "Spielberg prepara su regreso al cine del oeste",
+      "title": "Spielberg dirigirá su primer wéstern",
       "category": "Cultura y cine",
       "source": "Variety",
-      "url": "https://au.variety.com/2026/film/global/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/",
+      "url": "https://au.variety.com/2026/film/news/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/",
       "summary": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028. La información publicada el 24 de noviembre sitúa el proyecto entre los próximos trabajos del director. El anuncio reúne nombres conocidos del cine internacional y apunta a una producción de un género de larga tradición cinematográfica.",
       "spoken": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028.",
       "originalArticleTextEs": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028.\n\nLa información publicada el 24 de noviembre sitúa el proyecto entre los próximos trabajos del director. El anuncio reúne nombres conocidos del cine internacional y apunta a una producción de un género de larga tradición cinematográfica.\n\nLa fecha es una previsión de lanzamiento y no una confirmación de que el rodaje o la película hayan concluido. El reparto definitivo, el calendario de producción y la distribución pueden cambiar. Los aficionados al cine tendrán que seguir los anuncios oficiales para conocer los detalles del proyecto.",
       "originalArticleReviewed": true,
       "originalArticleByline": "Redacción ORBIUNO",
       "originalArticleSourceUrls": [
-        "https://au.variety.com/2026/film/global/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/"
+        "https://au.variety.com/2026/film/news/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/"
       ],
-      "photoCommonsTitle": "File:MKr25413 Steven Spielberg (Berlinale 2023).jpg",
+      "photoCommonsTitle": null,
       "photoMatchReviewed": true,
-      "photoCaption": "Retrato de Steven Spielberg en la Berlinale de 2023; no corresponde al rodaje del western.",
+      "photoCaption": "Claqueta cinematográfica real de archivo, fotografiada en abril de 2026; no corresponde al rodaje de Spielberg.",
       "photoRightsVerified": false,
-      "photoLicenseToVerifyAtDownload": true
+      "photoLicenseToVerifyAtDownload": true,
+      "alternatePhoto": {
+        "title": "A clapperboard with handwritten text on a shelf",
+        "author": "Ludovic Delot",
+        "license": "Unsplash License",
+        "page": "https://unsplash.com/photos/a-clapperboard-with-handwritten-text-on-a-shelf-WIJ6x93LDv4",
+        "url": "https://images.unsplash.com/photo-1775925817151-1573de3fc954?auto=format&fit=crop&fm=jpg&q=85&w=1600",
+        "context": "Claqueta cinematográfica real de archivo, fotografiada en abril de 2026; no corresponde al rodaje de Spielberg."
+      }
     }
   ]
 }

@@ -25,7 +25,7 @@ RESEARCH=ROOT/"editions"/"research"/(BRAND+"-2026-11-24-1200-ready.json")
 BASE_FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 LINKS={"orbiuno":"https://colombia-al-dia.pages.dev/","mycar":"https://busco-autos.pages.dev/"}
 HANDLES={"orbiuno":"@resumen.noticias","mycar":"@mycar.buscoautos"}
-PHOTOS={BRAND:[[n["photoCommonsTitle"].removeprefix("File:"),n["photoCaption"]] for n in json.loads(RESEARCH.read_text(encoding="utf-8"))["news"]]}
+PHOTOS={BRAND:[[(n.get("photoCommonsTitle") or "").removeprefix("File:"),n["photoCaption"]] for n in json.loads(RESEARCH.read_text(encoding="utf-8"))["news"]]}
 
 def run(*args):
     return subprocess.run([str(a) for a in args],check=True,capture_output=True,text=True)
@@ -45,6 +45,30 @@ def lines(d,content,sz,maxwidth,maxlines=3):
     return res
 
 def photo_and_credit(brand,idx,directory):
+    from urllib.parse import urlsplit
+    from scripts.orbiuno_media_assets import decode_image
+    story=json.loads(RESEARCH.read_text(encoding="utf-8"))["news"][idx]
+    alt=story.get("alternatePhoto")
+    if alt:
+        if alt.get("license")!="Unsplash License" or urlsplit(alt["page"]).hostname!="unsplash.com" or urlsplit(alt["url"]).hostname!="images.unsplash.com":
+            raise ValueError("Proveedor o licencia alternativa inválidos")
+        if not all(alt.get(k) for k in ("title","author","context")):
+            raise ValueError("Faltan créditos")
+        with requests.get(alt["url"],timeout=(10,35),stream=True,allow_redirects=False) as r:
+            r.raise_for_status()
+            if r.status_code!=200 or not r.headers.get("Content-Type","").startswith("image/"):
+                raise RuntimeError("Foto alternativa no disponible")
+            raw=bytearray()
+            for chunk in r.iter_content(65536):
+                raw.extend(chunk)
+                if len(raw)>12000000:
+                    raise ValueError("Foto demasiado grande")
+        im=decode_image(bytes(raw))
+        name=f"foto-{idx+1:02d}.jpg"
+        im.save(directory/name,quality=87,optimize=True)
+        return {"file":name,"title":alt["title"],"source":alt["page"],"license":alt["license"],"author":alt["author"],
+                "context":alt["context"],"rightsVerified":True,"imageType":"archival_relevant_photo","originalUrl":alt["url"],"modified":True}
+
     from scripts.orbiuno_media_assets import commons_info,fetch,decode_image
     title,context=PHOTOS[brand][idx]
     meta=commons_info("File:"+title)

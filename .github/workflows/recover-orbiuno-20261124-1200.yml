@@ -2,7 +2,7 @@ name: "ORBIUNO | Recuperar edición 24NOV mediodía"
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/recover-orbiuno-20261124-1200.yml']
+    paths: ['.github/workflows/recover-orbiuno-20261124-1200.yml', 'editions/research/orbiuno-2026-11-24-1200-ready.json']
   workflow_dispatch:
 permissions:
   contents: write
