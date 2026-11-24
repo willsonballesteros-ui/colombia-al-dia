@@ -1,0 +1,110 @@
+{
+  "editionDate": "2026-11-24",
+  "editionSlot": "12:00",
+  "brand": "MYCAR",
+  "sourceOnly": false,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "news": [
+    {
+      "order": 1,
+      "title": "Pirelli lanza su neumático inteligente en EE. UU.",
+      "category": "Tecnología",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816552/pirelli-cyber-tire-launched-usa/",
+      "summary": "Pirelli presentó en Estados Unidos Cyber Tire, un sistema de sensores en neumáticos que comunica datos a la electrónica del vehículo. Motor1 informó que la tecnología se mostró en Las Vegas con un Pagani Utopia Roadster. Pirelli también prevé fabricar este producto en su planta de Georgia, dentro de un plan de ampliación industrial.",
+      "spoken": "Pirelli presentó en Estados Unidos Cyber Tire, un sistema de sensores en neumáticos que comunica datos a la electrónica del vehículo.",
+      "originalArticleTextEs": "Pirelli presentó en Estados Unidos Cyber Tire, un sistema de sensores en neumáticos que comunica datos a la electrónica del vehículo.\n\nMotor1 informó que la tecnología se mostró en Las Vegas con un Pagani Utopia Roadster. Pirelli también prevé fabricar este producto en su planta de Georgia, dentro de un plan de ampliación industrial.\n\nLa comunicación entre el neumático y los sistemas del vehículo puede facilitar el acceso a información de funcionamiento que antes no estaba disponible de la misma forma. La presentación no implica que la tecnología esté instalada en todos los automóviles ni que sea compatible con cualquier modelo; esas condiciones deberán verificarse con el fabricante.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816552/pirelli-cyber-tire-launched-usa/"
+      ],
+      "photoCommonsTitle": "File:Pagani Utopia Roadster.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Pagani Utopia Roadster fotografiado en otra ocasión; no muestra la demostración Cyber Tire de Las Vegas.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "Amazon amplía su catálogo de autos a 35 marcas",
+      "category": "Mercado",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816557/amazon-autos-35-car-brands/",
+      "summary": "Amazon Autos ya reúne vehículos de 35 marcas, según Motor1; 14 ofrecen autos nuevos y las restantes amplían la oferta de usados. El servicio arrancó en diciembre de 2024 con Hyundai y ha incorporado más fabricantes. La cifra incluye tanto inventario nuevo como usado o certificado, por lo que no significa que las 35 marcas vendan automóviles nuevos mediante la plataforma.",
+      "spoken": "Amazon Autos ya reúne vehículos de 35 marcas, según Motor1; 14 ofrecen autos nuevos y las restantes amplían la oferta de usados.",
+      "originalArticleTextEs": "Amazon Autos ya reúne vehículos de 35 marcas, según Motor1; 14 ofrecen autos nuevos y las restantes amplían la oferta de usados.\n\nEl servicio arrancó en diciembre de 2024 con Hyundai y ha incorporado más fabricantes. La cifra incluye tanto inventario nuevo como usado o certificado, por lo que no significa que las 35 marcas vendan automóviles nuevos mediante la plataforma.\n\nEl crecimiento resulta relevante para observar cómo se transforman las formas de buscar y adquirir vehículos. Para un comprador, la disponibilidad en línea no sustituye revisar el estado del auto, su precio final, los impuestos y las condiciones de entrega. La noticia se refiere al mercado cubierto por Amazon Autos, no a una expansión confirmada en Colombia.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816557/amazon-autos-35-car-brands/"
+      ],
+      "photoCommonsTitle": "File:Bob Rohrman Indy Hyundai.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Concesionario Hyundai en Indianápolis, fotografía de archivo; no se afirma que participe en Amazon Autos.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "Los eléctricos rozan el 30% del mercado europeo",
+      "category": "Mercado",
+      "source": "electrive",
+      "url": "https://www.electrive.com/2026/11/24/acea-battery-electric-cars-capture-30-per-cent-of-eu-passenger-car-market/",
+      "summary": "Los eléctricos puros alcanzaron el 29,8 por ciento de las matriculaciones de automóviles nuevos de la Unión Europea en octubre. Según electrive, que cita las estadísticas de ACEA, se registraron 279.799 unidades eléctricas de batería, un aumento interanual del 61,4 %. La participación acumulada entre enero y octubre fue de 23,4 %.",
+      "spoken": "Los eléctricos puros alcanzaron el 29,8 por ciento de las matriculaciones de automóviles nuevos de la Unión Europea en octubre.",
+      "originalArticleTextEs": "Los eléctricos puros alcanzaron el 29,8 por ciento de las matriculaciones de automóviles nuevos de la Unión Europea en octubre.\n\nSegún electrive, que cita las estadísticas de ACEA, se registraron 279.799 unidades eléctricas de batería, un aumento interanual del 61,4 %. La participación acumulada entre enero y octubre fue de 23,4 %.\n\nLas cifras corresponden a matriculaciones nuevas en la Unión Europea y no al porcentaje de todos los vehículos que circulan por sus carreteras. La distinción es importante para entender el ritmo de renovación del parque. Los datos tampoco describen por sí solos los costos de uso ni la infraestructura de recarga en cada país.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.electrive.com/2026/11/24/acea-battery-electric-cars-capture-30-per-cent-of-eu-passenger-car-market/"
+      ],
+      "photoCommonsTitle": "File:Electric Car charging.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Automóvil eléctrico recargando en Alemania; archivo ilustrativo, no prueba de las matriculaciones de octubre.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "Volkswagen inicia producción de ID. Buzz Cargo largo",
+      "category": "Lanzamientos",
+      "source": "electrive",
+      "url": "https://www.electrive.com/2026/11/24/vw-starts-production-of-the-long-wheelbase-id-buzz-cargo/",
+      "summary": "Volkswagen inició en Hannover la producción en serie del ID. Buzz Cargo de batalla larga, con mayor capacidad para transportar carga. El modelo ofrece 4,4 metros cúbicos de volumen, batería utilizable de 86 kWh y autonomía anunciada de hasta 490 kilómetros, de acuerdo con electrive. Los pedidos para esta versión se habían abierto en septiembre.",
+      "spoken": "Volkswagen inició en Hannover la producción en serie del ID. Buzz Cargo de batalla larga, con mayor capacidad para transportar carga.",
+      "originalArticleTextEs": "Volkswagen inició en Hannover la producción en serie del ID. Buzz Cargo de batalla larga, con mayor capacidad para transportar carga.\n\nEl modelo ofrece 4,4 metros cúbicos de volumen, batería utilizable de 86 kWh y autonomía anunciada de hasta 490 kilómetros, de acuerdo con electrive. Los pedidos para esta versión se habían abierto en septiembre.\n\nLa configuración alargada amplía las opciones de transporte comercial eléctrico. Para las empresas interesadas, la autonomía efectiva dependerá de las condiciones de operación, la carga y los trayectos. El comienzo de la producción no confirma fechas de entrega en todos los países ni disponibilidad para el mercado colombiano.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.electrive.com/2026/11/24/vw-starts-production-of-the-long-wheelbase-id-buzz-cargo/"
+      ],
+      "photoCommonsTitle": "File:VW ID Buzz Cargo Van1.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "ID. Buzz Cargo en Oslo en 2023; versión de archivo, no es la nueva variante de batalla larga.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "Audi patenta botones físicos ocultos tras la pantalla",
+      "category": "Innovación",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816546/audi-patent-retractable-button-bar/",
+      "summary": "Audi presentó una patente para un panel retráctil de botones físicos que puede ocultarse detrás de la pantalla del vehículo. Motor1 describió un mecanismo que despliega controles cuando el conductor los necesita y los guarda nuevamente bajo el borde de la pantalla. La marca no ha confirmado su instalación en un vehículo de producción.",
+      "spoken": "Audi presentó una patente para un panel retráctil de botones físicos que puede ocultarse detrás de la pantalla del vehículo.",
+      "originalArticleTextEs": "Audi presentó una patente para un panel retráctil de botones físicos que puede ocultarse detrás de la pantalla del vehículo.\n\nMotor1 describió un mecanismo que despliega controles cuando el conductor los necesita y los guarda nuevamente bajo el borde de la pantalla. La marca no ha confirmado su instalación en un vehículo de producción.\n\nEl concepto se inscribe en el debate sobre cómo combinar interfaces digitales y mandos físicos dentro del automóvil. Una patente muestra una posibilidad técnica, pero no garantiza que se convierta en un producto comercial. Por eso no es posible anunciar una fecha de lanzamiento, precio o modelo equipado con el sistema a partir de este documento.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816546/audi-patent-retractable-button-bar/"
+      ],
+      "photoCommonsTitle": "File:AUDI A6L C9 INTERIOR.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Interior de un Audi A6L C9 fotografiado en junio de 2026; no muestra el mecanismo patentado.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}

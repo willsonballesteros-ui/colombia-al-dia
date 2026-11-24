@@ -1,0 +1,130 @@
+{
+  "editionDate": "2026-11-24",
+  "editionSlot": "12:00",
+  "brand": "ORBIUNO",
+  "sourceOnly": false,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "news": [
+    {
+      "order": 1,
+      "title": "Descubren el cuásar más antiguo conocido",
+      "category": "Ciencia",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/science/astronomers-spot-record-setting-quasar-early-universe-2026-11-24/",
+      "summary": "Astrónomos identificaron un cuásar de hace más de 13.100 millones de años, el más antiguo conocido hasta ahora, según Reuters. El objeto existía aproximadamente 630 millones de años después del Big Bang. El telescopio espacial Euclid permitió su detección inicial y otros observatorios ayudaron a caracterizarlo. El agujero negro central tiene una masa estimada de 360 millones de veces la del Sol.",
+      "spoken": "Astrónomos identificaron un cuásar de hace más de 13.100 millones de años, el más antiguo conocido hasta ahora, según Reuters.",
+      "originalArticleTextEs": "Astrónomos identificaron un cuásar de hace más de 13.100 millones de años, el más antiguo conocido hasta ahora, según Reuters.\n\nEl objeto existía aproximadamente 630 millones de años después del Big Bang. El telescopio espacial Euclid permitió su detección inicial y otros observatorios ayudaron a caracterizarlo. El agujero negro central tiene una masa estimada de 360 millones de veces la del Sol.\n\nLa observación aporta una nueva referencia para estudiar la rapidez con que surgieron estructuras cósmicas en el universo temprano. La masa estimada no resuelve todavía cómo se formó el agujero negro: ese es precisamente uno de los interrogantes que plantea el hallazgo.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/science/astronomers-spot-record-setting-quasar-early-universe-2026-11-24/"
+      ],
+      "photoCommonsTitle": "File:Euclid Spacecraft in Cleanroom (PIA25783) (cropped).jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Telescopio Euclid antes de su lanzamiento en 2023; fotografía de archivo, no del cuásar.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "China prepara vuelo con su primer astronauta extranjero",
+      "category": "Ciencia y cooperación",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/science/china-launch-shenzhou-24-spaceship-with-first-foreign-astronaut-2026-11-24/",
+      "summary": "El piloto pakistaní Zeeshan Ali está previsto como el primer extranjero en viajar a la estación espacial china Tiangong. Reuters informó este martes que la misión Shenzhou-24 tiene previsto partir el miércoles. De completarse el viaje según lo programado, Ali también se convertiría en el primer pakistaní en alcanzar la órbita terrestre. El programa incluye investigación sobre estancias prolongadas en el espacio.",
+      "spoken": "El piloto pakistaní Zeeshan Ali está previsto como el primer extranjero en viajar a la estación espacial china Tiangong.",
+      "originalArticleTextEs": "El piloto pakistaní Zeeshan Ali está previsto como el primer extranjero en viajar a la estación espacial china Tiangong.\n\nReuters informó este martes que la misión Shenzhou-24 tiene previsto partir el miércoles. De completarse el viaje según lo programado, Ali también se convertiría en el primer pakistaní en alcanzar la órbita terrestre. El programa incluye investigación sobre estancias prolongadas en el espacio.\n\nSe trata de una misión anunciada, no de un lanzamiento ya realizado. El hito se confirmará cuando la nave llegue a su destino y las autoridades de la misión publiquen los resultados. La cooperación internacional en estaciones orbitales abre oportunidades para compartir experiencia científica.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/science/china-launch-shenzhou-24-spaceship-with-first-foreign-astronaut-2026-11-24/"
+      ],
+      "photoCommonsTitle": "File:First gathering on Tiangong.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Tripulaciones chinas reunidas en Tiangong en 2022; archivo, no muestra a Zeeshan Ali ni Shenzhou-24.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "Webb revela nuevas pistas de una estrella que explotó",
+      "category": "Astronomía",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/missions/webb/nasas-webb-shows-how-supernova-dust-chronicles-star-evolution/",
+      "summary": "El telescopio James Webb obtuvo nuevas observaciones del polvo de Cassiopeia A, que ayudan a reconstruir la evolución de una estrella antes de explotar. La NASA presentó las observaciones el 23 de noviembre. Los datos en infrarrojo medio permiten estudiar la distribución y composición del material que quedó de la explosión. El análisis respalda la posibilidad de cambios internos importantes poco antes de la muerte de la estrella.",
+      "spoken": "El telescopio James Webb obtuvo nuevas observaciones del polvo de Cassiopeia A, que ayudan a reconstruir la evolución de una estrella antes de explotar.",
+      "originalArticleTextEs": "El telescopio James Webb obtuvo nuevas observaciones del polvo de Cassiopeia A, que ayudan a reconstruir la evolución de una estrella antes de explotar.\n\nLa NASA presentó las observaciones el 23 de noviembre. Los datos en infrarrojo medio permiten estudiar la distribución y composición del material que quedó de la explosión. El análisis respalda la posibilidad de cambios internos importantes poco antes de la muerte de la estrella.\n\nLos remanentes de supernova conservan indicios de procesos que ya no pueden observarse directamente en la estrella original. La nueva investigación permite contrastar modelos de evolución estelar con observaciones, sin que ello implique conocer con certeza cada etapa de la explosión.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://science.nasa.gov/missions/webb/nasas-webb-shows-how-supernova-dust-chronicles-star-evolution/"
+      ],
+      "photoCommonsTitle": "File:Cassiopeia A (MIRI image) (weic2624a).jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Observación infrarroja real de Cassiopeia A difundida el 23 de noviembre de 2026; colores científicos asignados.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "La ciencia busca recuperar el castaño americano",
+      "category": "Medio ambiente",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/nov/24/american-chestnut-tree-restored-science-persistence-aoe",
+      "summary": "Investigadores trabajan para recuperar el castaño americano, árbol que sufrió una devastadora enfermedad fúngica, mediante nuevas técnicas de selección genética. The Guardian describe ensayos en Estados Unidos y el trabajo de la American Chestnut Foundation. Entre las alternativas se encuentra la selección genómica recurrente para mejorar la resistencia de los árboles a la enfermedad.",
+      "spoken": "Investigadores trabajan para recuperar el castaño americano, árbol que sufrió una devastadora enfermedad fúngica, mediante nuevas técnicas de selección genética.",
+      "originalArticleTextEs": "Investigadores trabajan para recuperar el castaño americano, árbol que sufrió una devastadora enfermedad fúngica, mediante nuevas técnicas de selección genética.\n\nThe Guardian describe ensayos en Estados Unidos y el trabajo de la American Chestnut Foundation. Entre las alternativas se encuentra la selección genómica recurrente para mejorar la resistencia de los árboles a la enfermedad.\n\nEl avance debe distinguirse de una restauración completa de los bosques. La resistencia de las plantas, su supervivencia en campo y la diversidad de las poblaciones son aspectos que necesitan seguimiento durante años. La recuperación de esta especie podría beneficiar ecosistemas que históricamente dependieron de ella.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.theguardian.com/environment/2026/nov/24/american-chestnut-tree-restored-science-persistence-aoe"
+      ],
+      "photoCommonsTitle": "File:Castanea dentata-foliage.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Hojas de un castaño americano en Ohio, fotografiadas en 2009; archivo, no del ensayo actual.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "Una IA pequeña ayuda a diseñar chips analógicos",
+      "category": "Tecnología",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+      "summary": "Investigadores del MIT desarrollaron SLIC, una técnica para entrenar modelos de inteligencia artificial pequeños en tareas de diseño de circuitos analógicos. El método permite trabajar con modelos que pueden ejecutarse localmente. En las pruebas descritas por el instituto, el sistema consiguió diseños competitivos frente a modelos mucho mayores. Los circuitos analógicos son componentes importantes de dispositivos que interactúan con señales físicas.",
+      "spoken": "Investigadores del MIT desarrollaron SLIC, una técnica para entrenar modelos de inteligencia artificial pequeños en tareas de diseño de circuitos analógicos.",
+      "originalArticleTextEs": "Investigadores del MIT desarrollaron SLIC, una técnica para entrenar modelos de inteligencia artificial pequeños en tareas de diseño de circuitos analógicos.\n\nEl método permite trabajar con modelos que pueden ejecutarse localmente. En las pruebas descritas por el instituto, el sistema consiguió diseños competitivos frente a modelos mucho mayores. Los circuitos analógicos son componentes importantes de dispositivos que interactúan con señales físicas.\n\nEl potencial está en reducir recursos de cálculo y facilitar el trabajo con información confidencial en el propio entorno de ingeniería. No significa que todos los diseños industriales puedan automatizarse de inmediato. Será importante evaluar el método con requisitos de fabricación y condiciones de uso reales.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123"
+      ],
+      "photoCommonsTitle": "File:Photo-SMDchips.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Fotografía de distintos circuitos integrados de montaje superficial; archivo ilustrativo, no del sistema SLIC.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 6,
+      "title": "Spielberg prepara su regreso al cine del oeste",
+      "category": "Cultura y cine",
+      "source": "Variety",
+      "url": "https://au.variety.com/2026/film/global/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/",
+      "summary": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028. La información publicada el 24 de noviembre sitúa el proyecto entre los próximos trabajos del director. El anuncio reúne nombres conocidos del cine internacional y apunta a una producción de un género de larga tradición cinematográfica.",
+      "spoken": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028.",
+      "originalArticleTextEs": "Variety informó que Steven Spielberg prepara un western con Cillian Murphy y Jessie Buckley, con un estreno previsto para 2028.\n\nLa información publicada el 24 de noviembre sitúa el proyecto entre los próximos trabajos del director. El anuncio reúne nombres conocidos del cine internacional y apunta a una producción de un género de larga tradición cinematográfica.\n\nLa fecha es una previsión de lanzamiento y no una confirmación de que el rodaje o la película hayan concluido. El reparto definitivo, el calendario de producción y la distribución pueden cambiar. Los aficionados al cine tendrán que seguir los anuncios oficiales para conocer los detalles del proyecto.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://au.variety.com/2026/film/global/steven-spielberg-western-cillian-murphy-jessie-buckley-42853/"
+      ],
+      "photoCommonsTitle": "File:MKr25413 Steven Spielberg (Berlinale 2023).jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Retrato de Steven Spielberg en la Berlinale de 2023; no corresponde al rodaje del western.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}

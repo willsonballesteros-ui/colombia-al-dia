@@ -35,7 +35,7 @@ def modern_editions():
         m=load(manifest)
         date=m.get("edition","")
         slot=m.get("slot","")
-        if m.get("brand")!="mycar" or date!=folder.parent.name or slot not in ("08:00","10:00","18:00"):
+        if m.get("brand")!="mycar" or date!=folder.parent.name or slot not in ("08:00","10:00","12:00","18:00"):
             continue
         if m.get("newsCount")!=5 or m.get("imagesCount")!=5 or m.get("fullNewsAudioFiles")!=5 or m.get("voice")!="es-CO-SalomeNeural" or m.get("voiceSpeed")!=1.25:
             raise RuntimeError("QA audiovisual incompleta: "+str(manifest))
