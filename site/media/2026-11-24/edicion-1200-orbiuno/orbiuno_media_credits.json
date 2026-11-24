@@ -1,0 +1,74 @@
+[
+  {
+    "file": "foto-01.jpg",
+    "title": "Euclid Spacecraft in Cleanroom (PIA25783) (cropped).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Euclid_Spacecraft_in_Cleanroom_(PIA25783)_(cropped).jpg",
+    "license": "Public domain",
+    "author": "NASA Jet Propulsion Laboratory",
+    "context": "Telescopio Euclid antes de su lanzamiento en 2023; fotografía de archivo, no del cuásar.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Euclid_Spacecraft_in_Cleanroom_%28PIA25783%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-02.jpg",
+    "title": "First gathering on Tiangong.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:First_gathering_on_Tiangong.jpg",
+    "license": "CC BY 4.0",
+    "author": "China Manned Space Engineering Office",
+    "context": "Tripulaciones chinas reunidas en Tiangong en 2022; archivo, no muestra a Zeeshan Ali ni Shenzhou-24.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/First_gathering_on_Tiangong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-03.jpg",
+    "title": "Cassiopeia A (MIRI image) (weic2624a).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cassiopeia_A_(MIRI_image)_(weic2624a).jpg",
+    "license": "CC BY 4.0",
+    "author": "NASA, ESA, CSA, T. Temim (Columbia University), R. Arendt (UMBC), D. Milisavljevic (Purdue University). Image Processing: J. DePasquale (STScI).",
+    "context": "Observación infrarroja real de Cassiopeia A difundida el 23 de noviembre de 2026; colores científicos asignados.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Cassiopeia_A_%28MIRI_image%29_%28weic2624a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-04.jpg",
+    "title": "Castanea dentata-foliage.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Castanea_dentata-foliage.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Jaknouse",
+    "context": "Hojas de un castaño americano en Ohio, fotografiadas en 2009; archivo, no del ensayo actual.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Castanea_dentata-foliage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "modified": true
+  },
+  {
+    "file": "foto-05.jpg",
+    "title": "Close-up of a green circuit board with microchips",
+    "source": "https://unsplash.com/photos/close-up-of-a-green-circuit-board-with-microchips-dXdr1RGvcoM",
+    "license": "Unsplash License",
+    "author": "Albert Stoynov",
+    "context": "Placa electrónica con circuitos integrados, fotografía real de archivo de 2025; no muestra los diseños SLIC del MIT.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://images.unsplash.com/photo-1765256931287-e7f0e36b9ba4?auto=format&fit=crop&fm=jpg&q=85&w=1600",
+    "modified": true
+  },
+  {
+    "file": "foto-06.jpg",
+    "title": "A clapperboard with handwritten text on a shelf",
+    "source": "https://unsplash.com/photos/a-clapperboard-with-handwritten-text-on-a-shelf-WIJ6x93LDv4",
+    "license": "Unsplash License",
+    "author": "Ludovic Delot",
+    "context": "Claqueta cinematográfica real de archivo, fotografiada en abril de 2026; no corresponde al rodaje de Spielberg.",
+    "rightsVerified": true,
+    "imageType": "archival_relevant_photo",
+    "originalUrl": "https://images.unsplash.com/photo-1775925817151-1573de3fc954?auto=format&fit=crop&fm=jpg&q=85&w=1600",
+    "modified": true
+  }
+]
