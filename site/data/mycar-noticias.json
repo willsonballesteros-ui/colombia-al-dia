@@ -5,6 +5,82 @@
   "updated_date": "2026-11-24",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-24-1200",
+      "date": "2026-11-24",
+      "slot": "12:00",
+      "title": "Pirelli lanza su neumático inteligente en EE. UU.",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/MYCAR_2026-11-24_1200_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-24-1200.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Pirelli lanza su neumático inteligente en EE. UU.",
+          "summary": "Pirelli presentó en Estados Unidos Cyber Tire, un sistema de sensores en neumáticos que comunica datos a la electrónica del vehículo. Motor1 informó que la tecnología se mostró en Las Vegas con un Pagani Utopia Roadster. Pirelli también prevé fabricar este producto en su planta de Georgia, dentro de un plan de ampliación industrial.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816552/pirelli-cyber-tire-launched-usa/",
+          "image_file_title": "Pagani Utopia Roadster.jpg",
+          "photo_credit": "Alexandre Prevot",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Pagani_Utopia_Roadster.jpg",
+          "photo_context": "Pagani Utopia Roadster fotografiado en otra ocasión; no muestra la demostración Cyber Tire de Las Vegas.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "Amazon amplía su catálogo de autos a 35 marcas",
+          "summary": "Amazon Autos ya reúne vehículos de 35 marcas, según Motor1; 14 ofrecen autos nuevos y las restantes amplían la oferta de usados. El servicio arrancó en diciembre de 2024 con Hyundai y ha incorporado más fabricantes. La cifra incluye tanto inventario nuevo como usado o certificado, por lo que no significa que las 35 marcas vendan automóviles nuevos mediante la plataforma.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816557/amazon-autos-35-car-brands/",
+          "image_file_title": "Bob Rohrman Indy Hyundai.jpg",
+          "photo_credit": "deathpallie325",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Bob_Rohrman_Indy_Hyundai.jpg",
+          "photo_context": "Concesionario Hyundai en Indianápolis, fotografía de archivo; no se afirma que participe en Amazon Autos.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Los eléctricos rozan el 30% del mercado europeo",
+          "summary": "Los eléctricos puros alcanzaron el 29,8 por ciento de las matriculaciones de automóviles nuevos de la Unión Europea en octubre. Según electrive, que cita las estadísticas de ACEA, se registraron 279.799 unidades eléctricas de batería, un aumento interanual del 61,4 %. La participación acumulada entre enero y octubre fue de 23,4 %.",
+          "source": "electrive",
+          "source_url": "https://www.electrive.com/2026/11/24/acea-battery-electric-cars-capture-30-per-cent-of-eu-passenger-car-market/",
+          "image_file_title": "Electric Car charging.jpg",
+          "photo_credit": "KEACINADO",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Electric_Car_charging.jpg",
+          "photo_context": "Automóvil eléctrico recargando en Alemania; archivo ilustrativo, no prueba de las matriculaciones de octubre.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Volkswagen inicia producción de ID. Buzz Cargo largo",
+          "summary": "Volkswagen inició en Hannover la producción en serie del ID. Buzz Cargo de batalla larga, con mayor capacidad para transportar carga. El modelo ofrece 4,4 metros cúbicos de volumen, batería utilizable de 86 kWh y autonomía anunciada de hasta 490 kilómetros, de acuerdo con electrive. Los pedidos para esta versión se habían abierto en septiembre.",
+          "source": "electrive",
+          "source_url": "https://www.electrive.com/2026/11/24/vw-starts-production-of-the-long-wheelbase-id-buzz-cargo/",
+          "image_file_title": "VW ID Buzz Cargo Van1.jpg",
+          "photo_credit": "Mod creator",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:VW_ID_Buzz_Cargo_Van1.jpg",
+          "photo_context": "ID. Buzz Cargo en Oslo en 2023; versión de archivo, no es la nueva variante de batalla larga.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Audi patenta botones físicos ocultos tras la pantalla",
+          "summary": "Audi presentó una patente para un panel retráctil de botones físicos que puede ocultarse detrás de la pantalla del vehículo. Motor1 describió un mecanismo que despliega controles cuando el conductor los necesita y los guarda nuevamente bajo el borde de la pantalla. La marca no ha confirmado su instalación en un vehículo de producción.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816546/audi-patent-retractable-button-bar/",
+          "image_file_title": "AUDI A6L C9 INTERIOR.jpg",
+          "photo_credit": "Dinkun Chen",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:AUDI_A6L_C9_INTERIOR.jpg",
+          "photo_context": "Interior de un Audi A6L C9 fotografiado en junio de 2026; no muestra el mecanismo patentado.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-24/edicion-1200-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-23-1800",
       "date": "2026-11-23",
       "slot": "18:00",

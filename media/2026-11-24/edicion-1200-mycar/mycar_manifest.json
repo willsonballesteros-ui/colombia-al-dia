@@ -1,0 +1,89 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-24",
+  "slot": "12:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-24_1200_5_NOTICIAS.mp4",
+  "duration": 38.846213,
+  "sha256": "5a761028fba508411f1e144ddae138d67e3dcd2b60351dfc3fae5dec491bff63",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Pagani Utopia Roadster.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pagani_Utopia_Roadster.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Alexandre Prevot",
+      "context": "Pagani Utopia Roadster fotografiado en otra ocasión; no muestra la demostración Cyber Tire de Las Vegas.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Pagani_Utopia_Roadster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "Bob Rohrman Indy Hyundai.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bob_Rohrman_Indy_Hyundai.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "deathpallie325",
+      "context": "Concesionario Hyundai en Indianápolis, fotografía de archivo; no se afirma que participe en Amazon Autos.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Bob_Rohrman_Indy_Hyundai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Electric Car charging.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Electric_Car_charging.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "KEACINADO",
+      "context": "Automóvil eléctrico recargando en Alemania; archivo ilustrativo, no prueba de las matriculaciones de octubre.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Electric_Car_charging.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "VW ID Buzz Cargo Van1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:VW_ID_Buzz_Cargo_Van1.jpg",
+      "license": "CC BY 4.0",
+      "author": "Mod creator",
+      "context": "ID. Buzz Cargo en Oslo en 2023; versión de archivo, no es la nueva variante de batalla larga.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/VW_ID_Buzz_Cargo_Van1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "AUDI A6L C9 INTERIOR.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:AUDI_A6L_C9_INTERIOR.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Dinkun Chen",
+      "context": "Interior de un Audi A6L C9 fotografiado en junio de 2026; no muestra el mecanismo patentado.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/AUDI_A6L_C9_INTERIOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://www.motor1.com/news/816552/pirelli-cyber-tire-launched-usa/",
+    "https://www.motor1.com/news/816557/amazon-autos-35-car-brands/",
+    "https://www.electrive.com/2026/11/24/acea-battery-electric-cars-capture-30-per-cent-of-eu-passenger-car-market/",
+    "https://www.electrive.com/2026/11/24/vw-starts-production-of-the-long-wheelbase-id-buzz-cargo/",
+    "https://www.motor1.com/news/816546/audi-patent-retractable-button-bar/"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "sourceLabelsCount": 5,
+  "audioSegments": 6,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 5,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
