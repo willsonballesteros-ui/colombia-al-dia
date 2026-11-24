@@ -2,8 +2,84 @@
   "schema_version": 1,
   "brand": "MYCAR AL DÍA",
   "website": "https://busco-autos.pages.dev/",
-  "updated_date": "2026-11-23",
+  "updated_date": "2026-11-24",
   "editions": [
+    {
+      "edition_id": "MYCAR-2026-11-23-1800",
+      "date": "2026-11-23",
+      "slot": "18:00",
+      "title": "Renault 4 eléctrico agotó las primeras 50 reservas en Colombia",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/MYCAR_2026-11-23_1800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-23-1800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Renault 4 eléctrico agotó las primeras 50 reservas en Colombia",
+          "summary": "El Renault 4 E-Tech eléctrico completó la preventa inicial de cincuenta unidades anunciada para Colombia. El Carro Colombiano informó el 23 de noviembre de 2026 que ese primer cupo se agotó en aproximadamente una semana, después de la presentación del modelo en el Salón Internacional del Automóvil de Bogotá. Es una señal de interés de los compradores por la nueva propuesta eléctrica de la marca francesa.",
+          "source": "El Carro Colombiano",
+          "source_url": "https://www.elcarrocolombiano.com/resenas/renault-4-e-tech-electrico-colombia-analisis-preventa-precio/",
+          "image_file_title": "Renault 4 E-Tech Electric - 04.jpg",
+          "photo_credit": "Y.Leclercq",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_Electric_-_04.jpg",
+          "photo_context": "Renault 4 E-Tech eléctrico, fotografía de archivo tomada fuera de esta preventa; no documenta reservas colombianas.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "Ford Colombia reporta crecimiento de 37 % en matriculaciones",
+          "summary": "Ford presentó un balance de su operación comercial en Colombia durante 2026. De acuerdo con Autocosmos Colombia, en el período comprendido entre enero y octubre se registraron siete mil novecientos veintiún vehículos matriculados de la marca. La cifra representa un crecimiento informado del treinta y siete por ciento frente al mismo intervalo del año anterior, por lo que se trata de una comparación entre períodos equivalentes.",
+          "source": "Autocosmos Colombia",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/23/ford-colombia-crece-37--en-2026-ranger-y-territory-impulsan-sus-ventas",
+          "image_file_title": "Ford Ranger 4x4 Wildtrak 2024.jpg",
+          "photo_credit": "Captainmorlypogi1959",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Ford_Ranger_4x4_Wildtrak_2024.jpg",
+          "photo_context": "Ford Ranger en Filipinas en 2024; archivo ilustrativo que no representa matriculaciones de Colombia.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Geely amplía en Colombia la familia electrificada Galaxy",
+          "summary": "Geely amplió su oferta de vehículos de nuevas energías en Colombia con la presentación de las SUV Starray EM-R y Monjaro EM-i. Según Autocosmos, ambos modelos fueron anunciados durante el Salón Internacional del Automóvil de Bogotá de noviembre de 2026. La Starray se propone como una alternativa electrificada de rango extendido y la Monjaro como una opción híbrida dentro de la misma familia comercial.",
+          "source": "Autocosmos Colombia",
+          "source_url": "https://especiales.autocosmos.com.co/salon-del-automovil/noticias/2026/11/22/sia-2026-geely-starray-em-r-y-monjaro-em-i-se-lanzan-en-colombia-para-ampliar-la-familia-galaxy",
+          "image_file_title": "2026 Geely Starray EM-R Max.jpg",
+          "photo_credit": "Chanokchon",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2026_Geely_Starray_EM-R_Max.jpg",
+          "photo_context": "Geely Starray EM-R fotografiada en Tailandia; versión distinta del lanzamiento colombiano.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Nissan alcanza cuatro millones de vehículos producidos con energía libre de CO₂ en México",
+          "summary": "Nissan Mexicana informó el 23 de noviembre de 2026 que alcanzó cuatro millones de vehículos producidos utilizando energía libre de dióxido de carbono en sus complejos de manufactura del país. La compañía presentó el resultado como un hito de su gestión energética industrial. El anuncio se refiere al tipo de energía utilizada en la producción, no a una certificación de que cada vehículo carezca de emisiones a lo largo de su vida útil.",
+          "source": "Nissan México",
+          "source_url": "https://mexico.nissannews.com/es-MX/releases/nissan-se-convierte-en-la-primera-automotriz-en-mexico-en-alcanzar-4-millones-de-vehiculos-producidos-con-energia-libre-de-co",
+          "image_file_title": "Nissan March Mexico.JPG",
+          "photo_credit": "Petruss",
+          "photo_license": "CC BY-SA 3.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_March_Mexico.JPG",
+          "photo_context": "Nissan March ensamblado en México en 2012; archivo ilustrativo que no documenta producción de 2026.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Opel y Leapmotor formalizan alianza para un nuevo SUV eléctrico en España",
+          "summary": "Opel y Leapmotor formalizaron un acuerdo de cooperación para trabajar en un nuevo vehículo eléctrico de tipo SUV dentro de la oferta de Opel. La información fue divulgada por Stellantis Media en noviembre de 2026 y sitúa el proyecto industrial en Zaragoza, España, donde existe actividad de fabricación de la marca. El anuncio es un acuerdo de desarrollo y producción previsto, no el lanzamiento comercial de un vehículo terminado.",
+          "source": "Stellantis Media",
+          "source_url": "https://www.media.stellantis.com/es-es/opel/press/hito-importante-opel-y-leapmotor-firman-un-acuerdo-oficial-de-cooperacion",
+          "image_file_title": "Opel Corsa F at IAA 2019 IMG 0693.jpg",
+          "photo_credit": "Alexander Migl",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Opel_Corsa_F_at_IAA_2019_IMG_0693.jpg",
+          "photo_context": "Opel Corsa exhibido en 2019; archivo, no del nuevo SUV proyectado con Leapmotor.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-23/edicion-1800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
     {
       "edition_id": "MYCAR-2026-11-23-1000",
       "date": "2026-11-23",
