@@ -1,4 +1,5 @@
 name: Editorial internacional | ORBIUNO y MyCar
+# Solicitud editorial de la mañana del 25 de noviembre: ejecutar catálogo completo.
 on:
   push:
     branches: [main]
