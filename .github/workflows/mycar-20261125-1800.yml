@@ -1,0 +1,80 @@
+name: MyCar | 25NOV 18h producción y web
+# Corrección de literal numérico del límite de descarga.
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/mycar-20261125-1800.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mycar-20261125-1800
+  cancel-in-progress: false
+jobs:
+  producir_y_web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      NEWS_BRAND: 'mycar'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias y verificar código
+        run: |
+          python -m pip install -q Pillow requests edge-tts
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; fi
+          python -m py_compile tools/editorial/produce_20261125_1800.py tools/editorial/sync_orbiuno_20261125_1800.py
+      - name: Renderizar y validar la edición con medios reales
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python tools/editorial/produce_20261125_1800.py
+          python - <<'PY'
+          import json,os,hashlib,subprocess
+          from pathlib import Path
+          b=os.environ["NEWS_BRAND"]; p=Path("media/2026-11-25/edicion-1800-"+b)
+          m=json.loads((p/(b+"_manifest.json")).read_text())
+          n=6 if b=="orbiuno" else 5
+          assert m["newsCount"]==m["imagesCount"]==m["logosCount"]==m["fullNewsAudioFiles"]==n
+          assert m["voice"]=="es-CO-SalomeNeural" and m["voiceSpeed"]==1.25
+          assert all(x["rightsVerified"] for x in m["photoCredits"])
+          assert hashlib.sha256((p/m["video"]).read_bytes()).hexdigest()==m["sha256"]
+          for i in range(1,n+1):
+              assert (p/f"{b}-noticia-{i:02d}.mp3").stat().st_size>1000
+          subprocess.run(["ffmpeg","-v","error","-i",str(p/m["video"]),"-f","null","-"],check=True)
+          print("MEDIA_QA_PASS",b,m["duration"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mycar-20261125-1800-approved
+          path: media/2026-11-25/edicion-1800-mycar/
+          if-no-files-found: error
+      - name: Sincronizar únicamente mycar
+        run: |
+          set -euo pipefail
+          src=media/2026-11-25/edicion-1800-mycar
+          mkdir -p "site/$src"
+          cp -a "$src/." "site/$src/"
+          cp "$src/mycar_edition.html" mycar-2026-11-25-1800.html
+          cp mycar-2026-11-25-1800.html site/
+          mkdir -p site/data
+          python scripts/build_mycar_news_feed.py
+          cp data/mycar-noticias.json site/data/mycar-noticias.json
+          git add mycar-2026-11-25-1800.html site/mycar-2026-11-25-1800.html data/mycar-noticias.json site/data/mycar-noticias.json
+          git add "$src" "site/$src"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'mycar: edición 25NOV 18h aprobada'
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+
+# Sustituir foto Porsche sin autor por archivo con autor identificado.

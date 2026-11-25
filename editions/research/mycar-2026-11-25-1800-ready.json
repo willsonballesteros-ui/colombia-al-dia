@@ -1,0 +1,111 @@
+{
+  "editionDate": "2026-11-25",
+  "editionSlot": "18:00",
+  "brand": "MYCAR",
+  "sourceOnly": false,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "discoveryRun": 45712202363,
+  "news": [
+    {
+      "order": 1,
+      "title": "Hyundai Tucson estrena versión híbrida todoterreno",
+      "category": "Lanzamientos",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816754/2027-hyundai-tucson-hybrid-xrt/",
+      "summary": "Hyundai presenta una variante híbrida XRT Pro del Tucson 2027, con tracción integral, llantas todo terreno y 233 caballos. El modelo añade equipamiento orientado a superficies de menor adherencia. Según Motor1, la versión híbrida combina un motor turbo de 1,6 litros con un sistema eléctrico y una transmisión automática de seis velocidades. Su llegada a concesionarios estadounidenses se prevé para el segundo trimestre de 2027.",
+      "spoken": "Hyundai presenta una variante híbrida XRT Pro del Tucson 2027, con tracción integral, llantas todo terreno y 233 caballos.",
+      "originalArticleTextEs": "Hyundai presenta una variante híbrida XRT Pro del Tucson 2027, con tracción integral, llantas todo terreno y 233 caballos.\n\nEl modelo añade equipamiento orientado a superficies de menor adherencia. Según Motor1, la versión híbrida combina un motor turbo de 1,6 litros con un sistema eléctrico y una transmisión automática de seis velocidades. Su llegada a concesionarios estadounidenses se prevé para el segundo trimestre de 2027.\n\nEl nuevo acabado combina la propuesta de un SUV familiar con elementos destinados a circular por vías difíciles. Las capacidades reales dependerán de las condiciones del terreno y los límites establecidos por el fabricante. La presentación corresponde al mercado estadounidense y no implica una fecha de venta o precio confirmado para Colombia.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816754/2027-hyundai-tucson-hybrid-xrt/"
+      ],
+      "photoCommonsTitle": "File:Hyundai Tucson 2.0 Plus 2024.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Hyundai Tucson de 2024, generación anterior; archivo ilustrativo, no es el XRT Pro 2027.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "El Subaru WRX manual conquista compradores en Japón",
+      "category": "Mercado",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816788/subaru-wrx-manual-popular-japan/",
+      "summary": "El nuevo Subaru WRX con caja manual recibió aproximadamente dos mil reservas en Japón durante sus primeros cinco días. Motor1 informó que el deportivo superó las mil reservas en dos días y alcanzó cerca de dos mil al terminar el puente festivo japonés del 23 de noviembre. El modelo cuenta con una transmisión manual y asistencia para ajustar el régimen del motor durante las reducciones.",
+      "spoken": "El nuevo Subaru WRX con caja manual recibió aproximadamente dos mil reservas en Japón durante sus primeros cinco días.",
+      "originalArticleTextEs": "El nuevo Subaru WRX con caja manual recibió aproximadamente dos mil reservas en Japón durante sus primeros cinco días.\n\nMotor1 informó que el deportivo superó las mil reservas en dos días y alcanzó cerca de dos mil al terminar el puente festivo japonés del 23 de noviembre. El modelo cuenta con una transmisión manual y asistencia para ajustar el régimen del motor durante las reducciones.\n\nLas reservas reflejan interés por esta configuración en su mercado de lanzamiento, pero no equivalen necesariamente a unidades entregadas o matriculadas. El desempeño comercial definitivo dependerá de los pedidos que se concreten y del ritmo de producción. La disponibilidad de esta versión fuera de Japón deberá confirmarse con la marca.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816788/subaru-wrx-manual-popular-japan/"
+      ],
+      "photoCommonsTitle": "File:2022 Subaru WRX.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Subaru WRX de 2022; archivo, no muestra la nueva versión manual japonesa.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "Volkswagen amplía la gama eléctrica ID. Cross",
+      "category": "Lanzamientos",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816752/volkswagen-id-cross-r-line/",
+      "summary": "Volkswagen anuncia el ID. Cross R-Line, con una versión inicial de 133 caballos y otra de 223 prevista para marzo de 2027. La variante de mayor potencia incorpora ajustes de suspensión y un diferencial controlado electrónicamente. La información publicada por Motor1 indica que la gama conserva espacio de carga de 475 litros en el maletero posterior y 25 litros en el compartimiento delantero.",
+      "spoken": "Volkswagen anuncia el ID. Cross R-Line, con una versión inicial de 133 caballos y otra de 223 prevista para marzo de 2027.",
+      "originalArticleTextEs": "Volkswagen anuncia el ID. Cross R-Line, con una versión inicial de 133 caballos y otra de 223 prevista para marzo de 2027.\n\nLa variante de mayor potencia incorpora ajustes de suspensión y un diferencial controlado electrónicamente. La información publicada por Motor1 indica que la gama conserva espacio de carga de 475 litros en el maletero posterior y 25 litros en el compartimiento delantero.\n\nLa ampliación de la gama busca ofrecer alternativas de estilo y desempeño dentro de un mismo vehículo eléctrico. El precio de la configuración superior todavía no ha sido comunicado, y su autonomía homologada no representa necesariamente la distancia obtenida en todas las condiciones de conducción. La oferta anunciada se refiere a Europa.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816752/volkswagen-id-cross-r-line/"
+      ],
+      "photoCommonsTitle": "File:Volkswagen ID. Cross IAA 2025 DSC 1830.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Prototipo Volkswagen ID. Cross exhibido en 2025; archivo, no es el nuevo acabado R-Line.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "Toyota convierte una Hilux en prototipo deportivo",
+      "category": "Curiosidad",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816716/toyota-hilux-hyper-z-revealed/",
+      "summary": "Toyota sorprende con la Hilux Hyper Z, un prototipo que abandona la caja de carga tradicional y apuesta por un enorme alerón trasero. La publicación de Motor1 describe un vehículo único de 5,36 metros de largo, más de dos metros de ancho y una altura de aproximadamente 1,51 metros. La propuesta se aparta de la configuración de una camioneta convencional.",
+      "spoken": "Toyota sorprende con la Hilux Hyper Z, un prototipo que abandona la caja de carga tradicional y apuesta por un enorme alerón trasero.",
+      "originalArticleTextEs": "Toyota sorprende con la Hilux Hyper Z, un prototipo que abandona la caja de carga tradicional y apuesta por un enorme alerón trasero.\n\nLa publicación de Motor1 describe un vehículo único de 5,36 metros de largo, más de dos metros de ancho y una altura de aproximadamente 1,51 metros. La propuesta se aparta de la configuración de una camioneta convencional.\n\nEl diseño experimental demuestra hasta dónde puede cambiar la apariencia de un vehículo conocido cuando se explora una finalidad deportiva. Al tratarse de un prototipo, no es posible asumir que llegará a concesionarios, que sustituirá a la Hilux habitual ni que conservará las capacidades de trabajo de la camioneta de producción. Su interés está en el ejercicio de diseño.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816716/toyota-hilux-hyper-z-revealed/"
+      ],
+      "photoCommonsTitle": "File:Toyota Hilux 2.4 G 4x2 2024.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Toyota Hilux convencional de 2024; archivo, no muestra el prototipo Hyper Z.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "Toyota vuelve a vender el Camry en Japón desde EE. UU.",
+      "category": "Industria",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/816703/toyota-camry-kentucky-built-japan-import/",
+      "summary": "El Toyota Camry regresa a Japón fabricado en Kentucky, con un sistema híbrido de 2,5 litros y volante a la derecha. Según Motor1, Toyota adaptó la berlina para el mercado japonés con cambios en mandos, navegación y sistema multimedia. El modelo recibió certificación nacional y se ofrecerá inicialmente en dos acabados, con tracción delantera.",
+      "spoken": "El Toyota Camry regresa a Japón fabricado en Kentucky, con un sistema híbrido de 2,5 litros y volante a la derecha.",
+      "originalArticleTextEs": "El Toyota Camry regresa a Japón fabricado en Kentucky, con un sistema híbrido de 2,5 litros y volante a la derecha.\n\nSegún Motor1, Toyota adaptó la berlina para el mercado japonés con cambios en mandos, navegación y sistema multimedia. El modelo recibió certificación nacional y se ofrecerá inicialmente en dos acabados, con tracción delantera.\n\nEsta decisión muestra que un vehículo fabricado fuera de su país de origen puede regresar a él con modificaciones específicas para las normas y preferencias locales. El anuncio no supone un cambio en la disponibilidad del Camry en Colombia. Las características y el precio dependerán del mercado y de las versiones que cada importador ofrezca.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/816703/toyota-camry-kentucky-built-japan-import/"
+      ],
+      "photoCommonsTitle": "File:2025 Toyota Camry.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Toyota Camry de 2025 en Estados Unidos; archivo, no es la versión homologada para Japón.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}
