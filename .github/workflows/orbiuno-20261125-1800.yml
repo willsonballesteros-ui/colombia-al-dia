@@ -83,3 +83,5 @@ jobs:
           name: orbiuno-20261125-1800-web-verified
           path: /tmp/orbiuno-preflight.json
           if-no-files-found: error
+
+# Reemplazo de foto de resolución insuficiente por imagen de archivo de 1204 x 892.
