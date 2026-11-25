@@ -76,3 +76,5 @@ jobs:
             sleep 3
           done
           exit 1
+
+# Sustituir foto Porsche sin autor por archivo con autor identificado.

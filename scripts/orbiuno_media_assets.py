@@ -22,7 +22,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 LICENSES = {"CC BY 4.0", "CC BY-SA 4.0", "CC BY 3.0", "CC BY-SA 3.0",
-            "CC BY 2.0", "CC BY-SA 2.0", "CC BY-SA 3.0 igo", "CC0", "CC0 1.0", "Public domain", "PD"}
+            "CC BY 2.5", "CC BY-SA 2.5", "CC BY 2.0", "CC BY-SA 2.0", "CC BY-SA 3.0 igo", "CC0", "CC0 1.0", "Public domain", "PD"}
 OFFICIAL_ICONS = {
     "bogota.gov.co": "https://bogota.gov.co/themes/custom/bogotema/favicon.ico",
     "www.presidencia.gov.co": "https://www.presidencia.gov.co/Style%20Library/assets/icons/favicon.ico",

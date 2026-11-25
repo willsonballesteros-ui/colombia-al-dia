@@ -92,3 +92,5 @@ jobs:
           cap=(p/"orbiuno_caption.txt").read_text().replace("[ORBIUNO-2026-11-25-0800]","").strip()
           subprocess.run(["python","scripts/publish_meta_direct.py","--video-url","https://colombia-al-dia.pages.dev/"+str(p)+"/"+m["video"],"--caption",cap,"--edition-key","ORBIUNO-2026-11-25-0800","--publish"],check=True)
           PY
+
+# Admitir licencias Creative Commons 2.5 con autoría y atribución.
