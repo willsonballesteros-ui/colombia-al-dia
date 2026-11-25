@@ -1,0 +1,89 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-25",
+  "slot": "18:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-25_1800_5_NOTICIAS.mp4",
+  "duration": 41.849206,
+  "sha256": "f3cfcffaad7c6887cccc2f4ea1eeb79abfee60db6ec5090ebae99b9ce29c7736",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Hyundai Tucson 2.0 Plus 2024.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_2.0_Plus_2024.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "RL GNZLZ",
+      "context": "Hyundai Tucson de 2024, generación anterior; archivo ilustrativo, no es el XRT Pro 2027.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Hyundai_Tucson_2.0_Plus_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "2022 Subaru WRX.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2022_Subaru_WRX.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Oleg Yunakov",
+      "context": "Subaru WRX de 2022; archivo, no muestra la nueva versión manual japonesa.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/2022_Subaru_WRX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Volkswagen ID. Cross IAA 2025 DSC 1830.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Cross_IAA_2025_DSC_1830.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Alexander-93",
+      "context": "Prototipo Volkswagen ID. Cross exhibido en 2025; archivo, no es el nuevo acabado R-Line.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Volkswagen_ID._Cross_IAA_2025_DSC_1830.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Toyota Hilux 2.4 G 4x2 2024.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Toyota_Hilux_2.4_G_4x2_2024.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Ethan Llamas",
+      "context": "Toyota Hilux convencional de 2024; archivo, no muestra el prototipo Hyper Z.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Toyota_Hilux_2.4_G_4x2_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "2025 Toyota Camry.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2025_Toyota_Camry.jpg",
+      "license": "CC BY 4.0",
+      "author": "Clock38030",
+      "context": "Toyota Camry de 2025 en Estados Unidos; archivo, no es la versión homologada para Japón.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/2025_Toyota_Camry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://www.motor1.com/news/816754/2027-hyundai-tucson-hybrid-xrt/",
+    "https://www.motor1.com/news/816788/subaru-wrx-manual-popular-japan/",
+    "https://www.motor1.com/news/816752/volkswagen-id-cross-r-line/",
+    "https://www.motor1.com/news/816716/toyota-hilux-hyper-z-revealed/",
+    "https://www.motor1.com/news/816703/toyota-camry-kentucky-built-japan-import/"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "sourceLabelsCount": 5,
+  "audioSegments": 6,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 5,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}

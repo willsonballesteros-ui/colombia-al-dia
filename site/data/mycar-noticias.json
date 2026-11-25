@@ -5,6 +5,82 @@
   "updated_date": "2026-11-25",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-25-1800",
+      "date": "2026-11-25",
+      "slot": "18:00",
+      "title": "Hyundai Tucson estrena versión híbrida todoterreno",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/MYCAR_2026-11-25_1800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-25-1800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Hyundai Tucson estrena versión híbrida todoterreno",
+          "summary": "Hyundai presenta una variante híbrida XRT Pro del Tucson 2027, con tracción integral, llantas todo terreno y 233 caballos. El modelo añade equipamiento orientado a superficies de menor adherencia. Según Motor1, la versión híbrida combina un motor turbo de 1,6 litros con un sistema eléctrico y una transmisión automática de seis velocidades. Su llegada a concesionarios estadounidenses se prevé para el segundo trimestre de 2027.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816754/2027-hyundai-tucson-hybrid-xrt/",
+          "image_file_title": "Hyundai Tucson 2.0 Plus 2024.jpg",
+          "photo_credit": "RL GNZLZ",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_2.0_Plus_2024.jpg",
+          "photo_context": "Hyundai Tucson de 2024, generación anterior; archivo ilustrativo, no es el XRT Pro 2027.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "El Subaru WRX manual conquista compradores en Japón",
+          "summary": "El nuevo Subaru WRX con caja manual recibió aproximadamente dos mil reservas en Japón durante sus primeros cinco días. Motor1 informó que el deportivo superó las mil reservas en dos días y alcanzó cerca de dos mil al terminar el puente festivo japonés del 23 de noviembre. El modelo cuenta con una transmisión manual y asistencia para ajustar el régimen del motor durante las reducciones.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816788/subaru-wrx-manual-popular-japan/",
+          "image_file_title": "2022 Subaru WRX.jpg",
+          "photo_credit": "Oleg Yunakov",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2022_Subaru_WRX.jpg",
+          "photo_context": "Subaru WRX de 2022; archivo, no muestra la nueva versión manual japonesa.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Volkswagen amplía la gama eléctrica ID. Cross",
+          "summary": "Volkswagen anuncia el ID. Cross R-Line, con una versión inicial de 133 caballos y otra de 223 prevista para marzo de 2027. La variante de mayor potencia incorpora ajustes de suspensión y un diferencial controlado electrónicamente. La información publicada por Motor1 indica que la gama conserva espacio de carga de 475 litros en el maletero posterior y 25 litros en el compartimiento delantero.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816752/volkswagen-id-cross-r-line/",
+          "image_file_title": "Volkswagen ID. Cross IAA 2025 DSC 1830.jpg",
+          "photo_credit": "Alexander-93",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Cross_IAA_2025_DSC_1830.jpg",
+          "photo_context": "Prototipo Volkswagen ID. Cross exhibido en 2025; archivo, no es el nuevo acabado R-Line.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Toyota convierte una Hilux en prototipo deportivo",
+          "summary": "Toyota sorprende con la Hilux Hyper Z, un prototipo que abandona la caja de carga tradicional y apuesta por un enorme alerón trasero. La publicación de Motor1 describe un vehículo único de 5,36 metros de largo, más de dos metros de ancho y una altura de aproximadamente 1,51 metros. La propuesta se aparta de la configuración de una camioneta convencional.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816716/toyota-hilux-hyper-z-revealed/",
+          "image_file_title": "Toyota Hilux 2.4 G 4x2 2024.jpg",
+          "photo_credit": "Ethan Llamas",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Toyota_Hilux_2.4_G_4x2_2024.jpg",
+          "photo_context": "Toyota Hilux convencional de 2024; archivo, no muestra el prototipo Hyper Z.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Toyota vuelve a vender el Camry en Japón desde EE. UU.",
+          "summary": "El Toyota Camry regresa a Japón fabricado en Kentucky, con un sistema híbrido de 2,5 litros y volante a la derecha. Según Motor1, Toyota adaptó la berlina para el mercado japonés con cambios en mandos, navegación y sistema multimedia. El modelo recibió certificación nacional y se ofrecerá inicialmente en dos acabados, con tracción delantera.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816703/toyota-camry-kentucky-built-japan-import/",
+          "image_file_title": "2025 Toyota Camry.jpg",
+          "photo_credit": "Clock38030",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2025_Toyota_Camry.jpg",
+          "photo_context": "Toyota Camry de 2025 en Estados Unidos; archivo, no es la versión homologada para Japón.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-1800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-25-0800",
       "date": "2026-11-25",
       "slot": "08:00",
