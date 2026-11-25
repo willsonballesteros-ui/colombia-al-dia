@@ -1,0 +1,16 @@
+{
+  "edition": "2026-11-25-1800",
+  "orbiuno": {
+    "state": "reserved",
+    "account": "17841438062554418",
+    "sha256": "d2a99284877d7742e7b32e91bf2625ed4407ff4a4f717001d424b17f5ae887ec",
+    "preflight_run": 45715027849,
+    "channel": "instagram",
+    "reserved_at": "2026-11-25T18:04:44-05:00"
+  },
+  "mycar": {
+    "state": "published",
+    "id": "18461265076193744",
+    "url": "https://www.instagram.com/reel/DgLmKu-vkvJ/"
+  }
+}
