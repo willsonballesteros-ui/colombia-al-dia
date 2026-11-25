@@ -1,0 +1,111 @@
+{
+  "editionDate": "2026-11-25",
+  "editionSlot": "08:00",
+  "brand": "MYCAR",
+  "sourceOnly": false,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "discoveryRun": 45615042016,
+  "news": [
+    {
+      "order": 1,
+      "title": "Suzuki presenta su nuevo Ignis eléctrico",
+      "category": "Lanzamientos",
+      "source": "Car and Driver",
+      "url": "https://www.caranddriver.com/es/coches/novedades/a74527887/suzuki-ignis-2027/",
+      "summary": "Suzuki presentó este 25 de noviembre un nuevo Ignis eléctrico urbano, con batería de 26 kilovatios hora. La información de Car and Driver describe una plataforma eléctrica denominada Heartect-e y un conjunto compacto que integra el motor, la electrónica de potencia y la transmisión. La batería emplea química LFP. El modelo está orientado a desplazamientos urbanos y se ha anunciado para Europa.",
+      "spoken": "Suzuki presentó este 25 de noviembre un nuevo Ignis eléctrico urbano, con batería de 26 kilovatios hora.",
+      "originalArticleTextEs": "Suzuki presentó este 25 de noviembre un nuevo Ignis eléctrico urbano, con batería de 26 kilovatios hora.\n\nLa información de Car and Driver describe una plataforma eléctrica denominada Heartect-e y un conjunto compacto que integra el motor, la electrónica de potencia y la transmisión. La batería emplea química LFP. El modelo está orientado a desplazamientos urbanos y se ha anunciado para Europa.\n\nAl momento de la presentación no se había comunicado una cifra definitiva de autonomía. Por eso resulta prematuro comparar su alcance con el de otros vehículos eléctricos o anticipar un precio local. Los datos de comercialización y homologación para Colombia deberán ser confirmados por Suzuki.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.caranddriver.com/es/coches/novedades/a74527887/suzuki-ignis-2027/"
+      ],
+      "photoCommonsTitle": "File:Suzuki Ignis 195303700.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Suzuki Ignis de una generación anterior; imagen de archivo, no corresponde al nuevo eléctrico.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "El Porsche 718 Boxster eléctrico entra en su etapa final",
+      "category": "Lanzamientos",
+      "source": "Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/2026/products/porsche-all-electric-718-boxster-development-43799.html",
+      "summary": "Porsche informó que su primer deportivo eléctrico de dos puertas, el 718 Boxster, está en la etapa final de desarrollo. La compañía anunció el 24 de noviembre que el programa de pruebas ha recorrido alrededor de cuatro millones de kilómetros. El vehículo emplea una configuración de batería central destinada a mantener una posición de conducción baja y características dinámicas propias de los deportivos de motor central.",
+      "spoken": "Porsche informó que su primer deportivo eléctrico de dos puertas, el 718 Boxster, está en la etapa final de desarrollo.",
+      "originalArticleTextEs": "Porsche informó que su primer deportivo eléctrico de dos puertas, el 718 Boxster, está en la etapa final de desarrollo.\n\nLa compañía anunció el 24 de noviembre que el programa de pruebas ha recorrido alrededor de cuatro millones de kilómetros. El vehículo emplea una configuración de batería central destinada a mantener una posición de conducción baja y características dinámicas propias de los deportivos de motor central.\n\nLa presentación del automóvil de producción está prevista para el primer trimestre de 2027. El anuncio describe avances del desarrollo, no una venta inmediata ni una fecha de entrega para Colombia. La autonomía, el precio y las versiones comerciales deberán verificarse cuando Porsche publique las especificaciones definitivas.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://newsroom.porsche.com/en/2026/products/porsche-all-electric-718-boxster-development-43799.html"
+      ],
+      "photoCommonsTitle": "File:Porsche 718 Boxster1.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Porsche 718 Boxster de archivo; no es el nuevo prototipo eléctrico.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "BYD negocia la adquisición de una fábrica en Francia",
+      "category": "Industria",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/chinas-byd-talks-buy-french-car-factory-ineos-automotive-2026-11-24/",
+      "summary": "BYD inició negociaciones exclusivas para comprar la fábrica de Ineos Automotive en Hambach, Francia. Reuters informó el 24 de noviembre que el fabricante chino busca ampliar su presencia industrial en Europa en un contexto de cambios en las condiciones de producción local. La conversación se refiere a una planta existente y podría modificar la estrategia de fabricación de la compañía en ese mercado.",
+      "spoken": "BYD inició negociaciones exclusivas para comprar la fábrica de Ineos Automotive en Hambach, Francia.",
+      "originalArticleTextEs": "BYD inició negociaciones exclusivas para comprar la fábrica de Ineos Automotive en Hambach, Francia.\n\nReuters informó el 24 de noviembre que el fabricante chino busca ampliar su presencia industrial en Europa en un contexto de cambios en las condiciones de producción local. La conversación se refiere a una planta existente y podría modificar la estrategia de fabricación de la compañía en ese mercado.\n\nLa apertura de negociaciones no equivale a una adquisición concluida. Antes de anunciar inversiones definitivas, modelos que saldrán de la planta o fechas de producción, será necesario conocer los acuerdos entre las empresas y los trámites correspondientes. La noticia muestra el creciente interés de fabricantes eléctricos por producir cerca de sus compradores.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.reuters.com/business/autos-transportation/chinas-byd-talks-buy-french-car-factory-ineos-automotive-2026-11-24/"
+      ],
+      "photoCommonsTitle": "File:BYD Seal EV.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Vehículo BYD Seal de archivo; no muestra la planta de Hambach.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "Chery comienza a ensamblar eléctricos Lepas en Tailandia",
+      "category": "Industria",
+      "source": "electrive",
+      "url": "https://www.electrive.com/2026/11/24/chery-group-starts-assembling-lepas-evs-in-thailand/",
+      "summary": "Chery inició el ensamblaje del eléctrico Lepas L6 en una planta de Rayong, Tailandia. De acuerdo con electrive, el vehículo se ensambla con componentes procedentes de China en una instalación que también produce modelos de otras marcas del grupo. La empresa no ha informado cuántas unidades del L6 eléctrico tiene previsto fabricar en este país.",
+      "spoken": "Chery inició el ensamblaje del eléctrico Lepas L6 en una planta de Rayong, Tailandia.",
+      "originalArticleTextEs": "Chery inició el ensamblaje del eléctrico Lepas L6 en una planta de Rayong, Tailandia.\n\nDe acuerdo con electrive, el vehículo se ensambla con componentes procedentes de China en una instalación que también produce modelos de otras marcas del grupo. La empresa no ha informado cuántas unidades del L6 eléctrico tiene previsto fabricar en este país.\n\nLa decisión permite observar la expansión industrial de marcas automotrices asiáticas fuera de sus mercados de origen. No significa que el Lepas L6 esté a la venta en todos los países ni que vaya a llegar a Colombia en una fecha determinada. El volumen efectivo de producción dependerá de los planes de la compañía y la demanda.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.electrive.com/2026/11/24/chery-group-starts-assembling-lepas-evs-in-thailand/"
+      ],
+      "photoCommonsTitle": "File:Chery Omoda 5 img1.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Chery Omoda 5 de archivo, otro modelo del grupo; no es el Lepas L6.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "Volkswagen prepara carga bidireccional para hogares",
+      "category": "Tecnología",
+      "source": "electrive",
+      "url": "https://www.electrive.com/2026/11/24/vw-and-elli-launch-e1995-v2g-bidi-wallbox/",
+      "summary": "Volkswagen y Elli anunciaron un cargador bidireccional de 1.995 euros para Alemania, previsto para diciembre. El equipo permite cargar y devolver electricidad desde vehículos compatibles, con una potencia anunciada de hasta once kilovatios. El paquete inicial estará vinculado a un servicio energético y requiere comprobar la compatibilidad del vehículo y las condiciones de instalación del hogar.",
+      "spoken": "Volkswagen y Elli anunciaron un cargador bidireccional de 1.995 euros para Alemania, previsto para diciembre.",
+      "originalArticleTextEs": "Volkswagen y Elli anunciaron un cargador bidireccional de 1.995 euros para Alemania, previsto para diciembre.\n\nEl equipo permite cargar y devolver electricidad desde vehículos compatibles, con una potencia anunciada de hasta once kilovatios. El paquete inicial estará vinculado a un servicio energético y requiere comprobar la compatibilidad del vehículo y las condiciones de instalación del hogar.\n\nLa propuesta puede dar un uso adicional a las baterías de los automóviles estacionados, pero depende de las reglas eléctricas y comerciales del mercado donde funcione. El anuncio se refiere a Alemania y no implica disponibilidad en Colombia. Los usuarios deben revisar la elegibilidad de su modelo y los costos de instalación antes de adquirirlo.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MyCar",
+      "originalArticleSourceUrls": [
+        "https://www.electrive.com/2026/11/24/vw-and-elli-launch-e1995-v2g-bidi-wallbox/"
+      ],
+      "photoCommonsTitle": "File:Stacja ładowania pojazdów Volkswagen Centrum Poznań.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Punto de recarga Volkswagen en Polonia, foto de archivo; no muestra el nuevo cargador Elli.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}
