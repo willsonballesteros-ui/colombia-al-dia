@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-25",
+  "slot": "08:00",
+  "edition_key": "ORBIUNO-2026-11-25-0800",
+  "status": "PUBLISH_RESERVED",
+  "account": "resumen.noticias",
+  "account_id": "17841438062554418",
+  "sha256": "3daeb580c8ab91f2b348fa96fcc0d46a001ca1287e5f0ee369cf5cfcdc314d69",
+  "web_preflight_run": 45616556289,
+  "duplicate_check": "Instagram read zero rows and direct workflow stopped before Meta",
+  "automatic_retry": false
+}
