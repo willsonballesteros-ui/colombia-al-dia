@@ -39,3 +39,5 @@ jobs:
           path: dist/global-candidates.json
           if-no-files-found: warn
           retention-days: 7
+
+# Edición vespertina 25NOV: consulta completa solicitada.
