@@ -1,0 +1,89 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-25",
+  "slot": "08:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-25_0800_5_NOTICIAS.mp4",
+  "duration": 34.650204,
+  "sha256": "90747f2f30b5f8d5384f805db8d6ec3addf37a4f6698958a8cdd12b65452dc5b",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Suzuki Ignis 195303700.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Suzuki_Ignis_195303700.jpg",
+      "license": "CC0",
+      "author": "Trop86",
+      "context": "Suzuki Ignis de una generación anterior; imagen de archivo, no corresponde al nuevo eléctrico.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Suzuki_Ignis_195303700.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "Porsche 718 Boxster 2025051501.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_2025051501.jpg",
+      "license": "CC BY 4.0",
+      "author": "Huangdan2060",
+      "context": "Porsche 718 Boxster fotografiado en 2025; archivo, no es el prototipo eléctrico.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Porsche_718_Boxster_2025051501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "BYD Seal EV.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:BYD_Seal_EV.jpg",
+      "license": "CC BY 4.0",
+      "author": "Corvettec6r",
+      "context": "Vehículo BYD Seal de archivo; no muestra la planta de Hambach.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/BYD_Seal_EV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Chery Omoda 5 img1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chery_Omoda_5_img1.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Dgfg5085",
+      "context": "Chery Omoda 5 de archivo, otro modelo del grupo; no es el Lepas L6.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Chery_Omoda_5_img1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "Stacja ładowania pojazdów Volkswagen Centrum Poznań.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Stacja_%C5%82adowania_pojazd%C3%B3w_Volkswagen_Centrum_Pozna%C5%84.jpg",
+      "license": "CC0",
+      "author": "Cz_ja",
+      "context": "Punto de recarga Volkswagen en Polonia, foto de archivo; no muestra el nuevo cargador Elli.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Stacja_%C5%82adowania_pojazd%C3%B3w_Volkswagen_Centrum_Pozna%C5%84.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://www.caranddriver.com/es/coches/novedades/a74527887/suzuki-ignis-2027/",
+    "https://newsroom.porsche.com/en/2026/products/porsche-all-electric-718-boxster-development-43799.html",
+    "https://www.reuters.com/business/autos-transportation/chinas-byd-talks-buy-french-car-factory-ineos-automotive-2026-11-24/",
+    "https://www.electrive.com/2026/11/24/chery-group-starts-assembling-lepas-evs-in-thailand/",
+    "https://www.electrive.com/2026/11/24/vw-and-elli-launch-e1995-v2g-bidi-wallbox/"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "sourceLabelsCount": 5,
+  "audioSegments": 6,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 5,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}

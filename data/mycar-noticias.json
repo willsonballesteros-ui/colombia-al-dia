@@ -5,6 +5,82 @@
   "updated_date": "2026-11-25",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-25-0800",
+      "date": "2026-11-25",
+      "slot": "08:00",
+      "title": "Suzuki presenta su nuevo Ignis eléctrico",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/MYCAR_2026-11-25_0800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-25-0800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Suzuki presenta su nuevo Ignis eléctrico",
+          "summary": "Suzuki presentó este 25 de noviembre un nuevo Ignis eléctrico urbano, con batería de 26 kilovatios hora. La información de Car and Driver describe una plataforma eléctrica denominada Heartect-e y un conjunto compacto que integra el motor, la electrónica de potencia y la transmisión. La batería emplea química LFP. El modelo está orientado a desplazamientos urbanos y se ha anunciado para Europa.",
+          "source": "Car and Driver",
+          "source_url": "https://www.caranddriver.com/es/coches/novedades/a74527887/suzuki-ignis-2027/",
+          "image_file_title": "Suzuki Ignis 195303700.jpg",
+          "photo_credit": "Trop86",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Suzuki_Ignis_195303700.jpg",
+          "photo_context": "Suzuki Ignis de una generación anterior; imagen de archivo, no corresponde al nuevo eléctrico.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "El Porsche 718 Boxster eléctrico entra en su etapa final",
+          "summary": "Porsche informó que su primer deportivo eléctrico de dos puertas, el 718 Boxster, está en la etapa final de desarrollo. La compañía anunció el 24 de noviembre que el programa de pruebas ha recorrido alrededor de cuatro millones de kilómetros. El vehículo emplea una configuración de batería central destinada a mantener una posición de conducción baja y características dinámicas propias de los deportivos de motor central.",
+          "source": "Porsche Newsroom",
+          "source_url": "https://newsroom.porsche.com/en/2026/products/porsche-all-electric-718-boxster-development-43799.html",
+          "image_file_title": "Porsche 718 Boxster 2025051501.jpg",
+          "photo_credit": "Huangdan2060",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_2025051501.jpg",
+          "photo_context": "Porsche 718 Boxster fotografiado en 2025; archivo, no es el prototipo eléctrico.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "BYD negocia la adquisición de una fábrica en Francia",
+          "summary": "BYD inició negociaciones exclusivas para comprar la fábrica de Ineos Automotive en Hambach, Francia. Reuters informó el 24 de noviembre que el fabricante chino busca ampliar su presencia industrial en Europa en un contexto de cambios en las condiciones de producción local. La conversación se refiere a una planta existente y podría modificar la estrategia de fabricación de la compañía en ese mercado.",
+          "source": "Reuters",
+          "source_url": "https://www.reuters.com/business/autos-transportation/chinas-byd-talks-buy-french-car-factory-ineos-automotive-2026-11-24/",
+          "image_file_title": "BYD Seal EV.jpg",
+          "photo_credit": "Corvettec6r",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:BYD_Seal_EV.jpg",
+          "photo_context": "Vehículo BYD Seal de archivo; no muestra la planta de Hambach.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Chery comienza a ensamblar eléctricos Lepas en Tailandia",
+          "summary": "Chery inició el ensamblaje del eléctrico Lepas L6 en una planta de Rayong, Tailandia. De acuerdo con electrive, el vehículo se ensambla con componentes procedentes de China en una instalación que también produce modelos de otras marcas del grupo. La empresa no ha informado cuántas unidades del L6 eléctrico tiene previsto fabricar en este país.",
+          "source": "electrive",
+          "source_url": "https://www.electrive.com/2026/11/24/chery-group-starts-assembling-lepas-evs-in-thailand/",
+          "image_file_title": "Chery Omoda 5 img1.jpg",
+          "photo_credit": "Dgfg5085",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Chery_Omoda_5_img1.jpg",
+          "photo_context": "Chery Omoda 5 de archivo, otro modelo del grupo; no es el Lepas L6.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Volkswagen prepara carga bidireccional para hogares",
+          "summary": "Volkswagen y Elli anunciaron un cargador bidireccional de 1.995 euros para Alemania, previsto para diciembre. El equipo permite cargar y devolver electricidad desde vehículos compatibles, con una potencia anunciada de hasta once kilovatios. El paquete inicial estará vinculado a un servicio energético y requiere comprobar la compatibilidad del vehículo y las condiciones de instalación del hogar.",
+          "source": "electrive",
+          "source_url": "https://www.electrive.com/2026/11/24/vw-and-elli-launch-e1995-v2g-bidi-wallbox/",
+          "image_file_title": "Stacja ładowania pojazdów Volkswagen Centrum Poznań.jpg",
+          "photo_credit": "Cz_ja",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Stacja_%C5%82adowania_pojazd%C3%B3w_Volkswagen_Centrum_Pozna%C5%84.jpg",
+          "photo_context": "Punto de recarga Volkswagen en Polonia, foto de archivo; no muestra el nuevo cargador Elli.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-25/edicion-0800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-24-1200",
       "date": "2026-11-24",
       "slot": "12:00",
