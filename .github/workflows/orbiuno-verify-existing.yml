@@ -25,7 +25,7 @@ jobs:
           python -m py_compile scripts/verify_public_edition.py
           python scripts/verify_public_edition.py --test
       - name: Confirmar sitio, video, seis fotos, logos y audios
-        run: python scripts/verify_public_edition.py --day 2026-11-25 --slot 0800
+        run: python scripts/verify_public_edition.py --day 2026-11-25 --slot 1800
       - uses: actions/upload-artifact@v4
         with:
           name: orbiuno-public-web-verification
