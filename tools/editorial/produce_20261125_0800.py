@@ -61,7 +61,7 @@ def photo_and_credit(brand,idx,directory):
             raw=bytearray()
             for chunk in r.iter_content(65536):
                 raw.extend(chunk)
-                if len(raw)>012000000:
+                if len(raw)>12000000:
                     raise ValueError("Foto demasiado grande")
         im=decode_image(bytes(raw))
         name=f"foto-{idx+1:02d}.jpg"
