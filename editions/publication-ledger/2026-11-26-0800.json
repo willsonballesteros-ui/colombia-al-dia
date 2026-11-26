@@ -21,7 +21,9 @@
     "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-orbiuno/ORBIUNO_2026-11-26_0800_6_NOTICIAS.mp4",
     "reservation": "No duplicate send: reconcile Instagram before any retry",
     "id": "17958099177298345",
-    "confirmed_by": "Windsor Instagram create_video_post successful response",
-    "permalink_pending": true
+    "confirmed_by": "Windsor Instagram create and media read",
+    "url": "https://www.instagram.com/reel/DgNysy5B0q1/",
+    "permalink": "https://www.instagram.com/reel/DgNysy5B0q1/",
+    "published_at": "2026-11-26T18:53:06Z"
   }
 }
