@@ -47,6 +47,8 @@ def select(doc, probe):
             ids.add(ident)
             urls.add(source)
         except (ValueError, OSError, RuntimeError, KeyError, TypeError, IndexError) as exc:
+            if getattr(exc, "code", None) == 429 or "HTTP 429" in str(exc):
+                raise RuntimeError("Proveedor con límite activo: detener consultas y respetar Retry-After") from exc
             failures.append({"id": item.get("id"), "reason": str(exc)[:250]})
             print("CANDIDATE_REJECTED", item.get("id"), type(exc).__name__, str(exc)[:160], flush=True)
     if len(selected) != COUNT:
@@ -62,6 +64,8 @@ def recover(edition, news, output):
     if any(n.get("date")==doc["editionDate"] and n.get("editionSlot")==doc["editionSlot"] and
            n.get("verification")=="editorial_verified" for n in base["news"]):
         raise ValueError("Franja ya registrada; recuperar publicación sin sustituir")
+    historical_ids = {n.get("id") for n in base["news"]}
+    historical_urls = {s.get("url") for n in base["news"] for s in n.get("sources", []) if isinstance(s, dict)}
     @lru_cache(maxsize=40)
     def cached(url):
         # The original getter pauses Commons metadata calls; retain this limit.
@@ -72,6 +76,8 @@ def recover(edition, news, output):
         tmp = Path(folder)
         ep, np = tmp/"edition.json", tmp/"news.json"
         def probe(single, item):
+            if item["id"] in historical_ids or item["sources"][0]["url"] in historical_urls:
+                raise ValueError("Noticia ya utilizada en el histórico")
             ep.write_text(json.dumps(single,ensure_ascii=False),encoding="utf-8")
             np.write_text(json.dumps({"news":[item]},ensure_ascii=False),encoding="utf-8")
             stage(ep,np,tmp/"assets",getter=cached,expected_count=1)
