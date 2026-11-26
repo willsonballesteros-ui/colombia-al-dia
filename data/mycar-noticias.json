@@ -5,6 +5,82 @@
   "updated_date": "2026-11-26",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-26-0800",
+      "date": "2026-11-26",
+      "slot": "08:00",
+      "title": "Porsche crea un 911 GT3 único en homenaje al GT1",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/MYCAR_2026-11-26_0800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-26-0800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Porsche crea un 911 GT3 único en homenaje al GT1",
+          "summary": "Porsche presentó un 911 GT3 único que conmemora la victoria del 911 GT1 en el circuito chino de Zhuhai hace treinta años. El automóvil fue presentado en Guangzhou el 25 de noviembre, según Motor1. El departamento Sonderwunsch trabajó en una decoración especial que recuerda los colores históricos de competición, el escudo de la época y el trazado del circuito. Mantiene el motor atmosférico de cuatro litros del GT3.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816889/porsche-911-gt3-tribute-gt1/",
+          "image_file_title": "Porsche 911 GT3 (992, 2022) (52125271840).jpg",
+          "photo_credit": "Charles from Port Chester, New York",
+          "photo_license": "CC BY 2.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_(992,_2022)_(52125271840).jpg",
+          "photo_context": "Porsche 911 GT3 de 2022; no es el ejemplar conmemorativo.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "Range Rover GT llegará primero como eléctrico",
+          "summary": "Jaguar Land Rover confirmó que el nuevo Range Rover GT llegará inicialmente con propulsión eléctrica a principios de 2027. Motor1 publicó el anuncio el 26 de noviembre. El nuevo modelo se orienta al segmento de lujo y a una conducción más enfocada en carretera. La información disponible distingue el lanzamiento de la versión eléctrica de la posible llegada posterior de opciones híbridas, que no se ofrecen como parte de la primera entrega.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816835/range-rover-gt-electric-2027/",
+          "image_file_title": "2023 Range Rover.jpg",
+          "photo_credit": "Calreyn88",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2023_Range_Rover.jpg",
+          "photo_context": "Range Rover de 2023; archivo de la marca, no es el GT.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Honda Accord cambia su diseño para China",
+          "summary": "El Honda Accord para China presenta un nuevo frontal con faros divididos, según documentos de homologación divulgados el 26 de noviembre. Motor1 informó que el rediseño corresponde al modelo previsto para 2027 en ese mercado. La documentación permite observar cambios en la apariencia del sedán, mientras el salón del automóvil de Guangzhou está previsto entre el 27 de noviembre y el 6 de diciembre.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816864/2027-honda-accord-china/",
+          "image_file_title": "2023 Honda Accord EX in Canyon River Blue Metallic, Front Left, 04-07-2023.jpg",
+          "photo_credit": "Elise240SX",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2023_Honda_Accord_EX_in_Canyon_River_Blue_Metallic,_Front_Left,_04-07-2023.jpg",
+          "photo_context": "Accord de 2023; fotografía de archivo, no muestra el frontal chino de 2027.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Bentley Torcal presenta su parrilla iluminada",
+          "summary": "Bentley reveló detalles de la iluminación del Torcal, con 76 piezas en forma de diamante y más de 260 mil microperforaciones realizadas con láser. La marca combina elementos tridimensionales de distintos tamaños con fuentes LED ocultas y nuevos proyectores Micro LED. Motor1 informó el 26 de noviembre que el frontal retoma referencias de la identidad histórica de Bentley y anticipa una nueva línea de modelos.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816846/bentley-torcal-led-grille-headlights/",
+          "image_file_title": "Bentley Continental GT front view (June 6, 2025).jpg",
+          "photo_credit": "茅野ふたば",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GT_front_view_(June_6,_2025).jpg",
+          "photo_context": "Bentley Continental GT de 2025; archivo de la marca, no muestra el Torcal.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Ram activa llamado a revisión por software de frenos",
+          "summary": "Chrysler llama a revisión a 82.843 camionetas Ram 1500 Classic de los años modelo 2022 a 2024 por un problema de software relacionado con los frenos. Motor1 informó el 24 de noviembre que el defecto afecta al módulo del sistema antibloqueo y puede producir señales incorrectas o desactivar funciones de seguridad. La notificación a distribuidores estadounidenses está prevista para el 26 de noviembre, y los propietarios podrán consultar su número de identificación en el registro de la NHTSA.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/816607/ram-1500-classic-abs-recall/",
+          "image_file_title": "2022 Ram 1500 Classic Warlock in Flame Red, front left, 2024-07-14.jpg",
+          "photo_credit": "Elise240SX",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2022_Ram_1500_Classic_Warlock_in_Flame_Red,_front_left,_2024-07-14.jpg",
+          "photo_context": "Ram 1500 Classic fotografiada en 2024; no se afirma que pertenezca al lote afectado.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-25-1800",
       "date": "2026-11-25",
       "slot": "18:00",

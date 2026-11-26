@@ -1,0 +1,89 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-26",
+  "slot": "08:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-26_0800_5_NOTICIAS.mp4",
+  "duration": 42.911224,
+  "sha256": "0a6ebe76c3492b7556023aa13c9132d7dd50cd6f8b0ade61c111f1e2653ab43f",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Porsche 911 GT3 (992, 2022) (52125271840).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_(992,_2022)_(52125271840).jpg",
+      "license": "CC BY 2.0",
+      "author": "Charles from Port Chester, New York",
+      "context": "Porsche 911 GT3 de 2022; no es el ejemplar conmemorativo.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Porsche_911_GT3_%28992%2C_2022%29_%2852125271840%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "2023 Range Rover.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_Range_Rover.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "context": "Range Rover de 2023; archivo de la marca, no es el GT.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/2023_Range_Rover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "2023 Honda Accord EX in Canyon River Blue Metallic, Front Left, 04-07-2023.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_Honda_Accord_EX_in_Canyon_River_Blue_Metallic,_Front_Left,_04-07-2023.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Elise240SX",
+      "context": "Accord de 2023; fotografía de archivo, no muestra el frontal chino de 2027.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/2023_Honda_Accord_EX_in_Canyon_River_Blue_Metallic%2C_Front_Left%2C_04-07-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Bentley Continental GT front view (June 6, 2025).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GT_front_view_(June_6,_2025).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "茅野ふたば",
+      "context": "Bentley Continental GT de 2025; archivo de la marca, no muestra el Torcal.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Bentley_Continental_GT_front_view_%28June_6%2C_2025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "2022 Ram 1500 Classic Warlock in Flame Red, front left, 2024-07-14.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2022_Ram_1500_Classic_Warlock_in_Flame_Red,_front_left,_2024-07-14.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Elise240SX",
+      "context": "Ram 1500 Classic fotografiada en 2024; no se afirma que pertenezca al lote afectado.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2022_Ram_1500_Classic_Warlock_in_Flame_Red%2C_front_left%2C_2024-07-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://www.motor1.com/news/816889/porsche-911-gt3-tribute-gt1/",
+    "https://www.motor1.com/news/816835/range-rover-gt-electric-2027/",
+    "https://www.motor1.com/news/816864/2027-honda-accord-china/",
+    "https://www.motor1.com/news/816846/bentley-torcal-led-grille-headlights/",
+    "https://www.motor1.com/news/816607/ram-1500-classic-abs-recall/"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "sourceLabelsCount": 5,
+  "audioSegments": 6,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 5,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
