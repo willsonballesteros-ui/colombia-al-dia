@@ -1,0 +1,81 @@
+name: ORBIUNO | Publicar edición web verificada
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/orbiuno-publicar-verificado.yml']
+  workflow_run:
+    workflows: ['ORBIUNO | Verificar web y MP4 existente']
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: orbiuno-meta-ORBIUNO-2026-11-26-0800
+  cancel-in-progress: false
+jobs:
+  publicar:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
+      ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Confirmar web y publicar sin duplicados
+        shell: bash
+        run: |
+          set -euo pipefail
+          day=2026-11-26
+          slot=0800
+          test "$day" = "$(TZ=America/Bogota date +%F)"
+          ledger="editions/publication-ledger/$day-$slot.json"
+          if python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state")=="published" and x.get("id") and x.get("url") else 1)' "$ledger"; then
+            echo 'ORBIUNO_ALREADY_RECORDED'
+            exit 0
+          fi
+          python scripts/verify_public_edition.py --day "$day" --slot "$slot"
+          folder="media/$day/edicion-$slot-orbiuno"
+          video="$(python -c 'import json; print(json.load(open("/tmp/orbiuno-preflight.json"))["video_url"])')"
+          caption="$(sed '/^\[ORBIUNO-2026-11-26-0800\]$/d' "$folder/orbiuno_caption.txt")"
+          python scripts/publish_meta_direct.py --video-url "$video" --caption "$caption" --edition-key "ORBIUNO-$day-$slot" --publish | tee /tmp/orbiuno-meta.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - "$ledger" <<'PY'
+          import json,sys,os
+          from pathlib import Path
+          from datetime import datetime,timezone
+          p=Path(sys.argv[1]); d=json.loads(p.read_text())
+          r=json.loads(Path('/tmp/orbiuno-meta.json').read_text().splitlines()[-1])
+          v=json.loads(Path('/tmp/orbiuno-preflight.json').read_text())
+          assert r['state'] in ('PUBLISHED','ALREADY_PUBLISHED')
+          assert str(r.get('id','')).isdigit() and r.get('url','').startswith('https://www.instagram.com/')
+          old=d.get('orbiuno',{})
+          if old.get('state')=='published':
+              assert old.get('id')==r['id']
+          else:
+              d['orbiuno']={'state':'published','id':r['id'],'url':r['url'],'permalink':r['url'],'confirmed_at':datetime.now(timezone.utc).isoformat(),'sha256':v['sha256'],'publisher_run':int(os.environ['GITHUB_RUN_ID'])}
+              p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+'\n')
+          PY
+            git add "$ledger"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'ORBIUNO: registrar publicación Meta 26NOV 0800'
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$attempt"
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: orbiuno-meta-confirmation
+          path: /tmp/orbiuno-meta.json
+          if-no-files-found: ignore
