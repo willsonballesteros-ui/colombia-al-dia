@@ -85,3 +85,5 @@ jobs:
           if-no-files-found: error
 
 # Reemplazo de foto de resolución insuficiente por imagen de archivo de 1204 x 892.
+
+# Reejecución con artículo Reuters validado y archivo actualizado.
