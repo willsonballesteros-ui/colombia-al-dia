@@ -147,14 +147,14 @@ def validate_editorial_photo(n: dict) -> str:
     return title
 
 
-def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) -> dict:
+def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch, expected_count=6) -> dict:
     edition = json.loads(edition_path.read_text(encoding="utf-8"))
     day, slot = edition["editionDate"], edition["editionSlot"]
     if edition.get("sourceOnly") is not False:
         raise ValueError("source_only no se transforma en revision editorial: BLOQUEADO")
     if day != datetime.now(ZoneInfo("America/Bogota")).date().isoformat():
         raise ValueError("No se procesa una edición de otra fecha")
-    if slot not in ("08:00", "09:30", "12:00", "17:00", "18:00", "19:00") or len(edition.get("news", [])) != 6:
+    if slot not in ("08:00", "09:30", "12:00", "17:00", "18:00", "19:00") or len(edition.get("news", [])) != expected_count:
         raise ValueError("Edición o franja incorrecta")
     db = json.loads(news_path.read_text(encoding="utf-8"))
     items = {x.get("id"): x for x in db["news"]}
@@ -232,7 +232,7 @@ def stage(edition_path: Path, news_path: Path, output: Path, *, getter=fetch) ->
                  imageCaption=ent["caption"], imageAlt=ent["caption"])
     news_path.write_text(json.dumps(db, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     result = {"edition": day, "slot": slot, "visualMode": "verified_real_photos",
-              "photosCount": 6, "logosCount": 6, "entries": entries}
+              "photosCount": expected_count, "logosCount": expected_count, "entries": entries}
     (output / "credits.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return result
 
