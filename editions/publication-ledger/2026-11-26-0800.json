@@ -10,5 +10,15 @@
     "confirmed_by": "Instagram media read via Windsor and official publisher logs",
     "production_run": 45828162111,
     "publisher_run": 45828197545
+  },
+  "orbiuno": {
+    "state": "publishing",
+    "edition_key": "ORBIUNO-2026-11-26-0800",
+    "provider": "Windsor Instagram",
+    "sha256": "696e7130b47fd990ef14ae285f1d0a24724f28043c5b0dc772dbf5819139c1c1",
+    "web_verification_run": 45878507756,
+    "direct_publisher_run": 45879087527,
+    "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-0800-orbiuno/ORBIUNO_2026-11-26_0800_6_NOTICIAS.mp4",
+    "reservation": "No duplicate send: reconcile Instagram before any retry"
   }
 }
