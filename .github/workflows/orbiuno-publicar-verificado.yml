@@ -1,8 +1,5 @@
 name: ORBIUNO | Publicar edición web verificada
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/orbiuno-publicar-verificado.yml']
   workflow_run:
     workflows: ['ORBIUNO | Verificar web y MP4 existente']
     types: [completed]
@@ -34,10 +31,10 @@ jobs:
           set -euo pipefail
           day=2026-11-26
           slot=0800
-          test "$day" = "$(TZ=America/Bogota date +%F)"
+          if [ "$day" != "$(TZ=America/Bogota date +%F)" ]; then exit 0; fi
           ledger="editions/publication-ledger/$day-$slot.json"
-          if python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state")=="published" and x.get("id") and x.get("url") else 1)' "$ledger"; then
-            echo 'ORBIUNO_ALREADY_RECORDED'
+          if python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state") in ("published","publishing") else 1)' "$ledger"; then
+            echo 'ORBIUNO_ALREADY_RECORDED_OR_RESERVED'
             exit 0
           fi
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
