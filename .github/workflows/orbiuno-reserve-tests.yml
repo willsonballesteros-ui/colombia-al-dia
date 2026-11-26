@@ -1,0 +1,25 @@
+name: ORBIUNO | Pruebas de recuperación editorial
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/orbiuno_reserve.py'
+      - 'scripts/orbiuno_media_assets.py'
+      - 'scripts/orbiuno_import_daily.py'
+      - 'tests/test_orbiuno_reserve.py'
+      - '.github/workflows/orbiuno-reserve-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow
+      - run: python -m py_compile scripts/orbiuno_reserve.py scripts/orbiuno_media_assets.py scripts/orbiuno_import_daily.py
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_orbiuno_reserve.py' -v
