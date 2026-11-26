@@ -19,7 +19,7 @@ SLOTS = {"08:00", "09:30", "12:00", "17:00", "18:00", "19:00"}
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def validated(doc: dict, today: str | None = None) -> tuple[str, str, list[dict]]:
+def validated(doc: dict, today: str | None = None, *, expected_count: int = 6) -> tuple[str, str, list[dict]]:
     day = doc.get("editionDate")
     slot = doc.get("editionSlot")
     if not isinstance(day, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day):
@@ -29,15 +29,15 @@ def validated(doc: dict, today: str | None = None) -> tuple[str, str, list[dict]
     if today is not None and day != today:
         raise ValueError("Edición de otra fecha: no se puede publicar como hoy")
     news = doc.get("news")
-    if not isinstance(news, list) or len(news) != 6:
+    if not isinstance(news, list) or len(news) != expected_count:
         raise ValueError("Se requieren exactamente seis noticias")
     if doc.get("editionKey") != "ORBIUNO-" + day + "-" + slot.replace(":", ""):
         raise ValueError("editionKey no coincide con fecha y franja")
     ids = [n.get("id") for n in news]
-    if any(not isinstance(i, str) or not i for i in ids) or len(set(ids)) != 6:
+    if any(not isinstance(i, str) or not i for i in ids) or len(set(ids)) != expected_count:
         raise ValueError("IDs faltantes o duplicados")
     priorities = [n.get("priority") for n in news]
-    if sorted(priorities) != list(range(1, 7)):
+    if sorted(priorities) != list(range(1, expected_count + 1)):
         raise ValueError("Prioridades deben ser 1..6, sin repetir")
     for item in news:
         if item.get("date") != day or item.get("editionSlot") != slot:
