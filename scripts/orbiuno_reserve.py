@@ -5,6 +5,8 @@ import argparse
 import copy
 import json
 import tempfile
+import time
+from urllib.parse import urlsplit
 from functools import lru_cache
 from pathlib import Path
 from scripts.orbiuno_import_daily import ROOT, import_edition, validated
@@ -60,7 +62,12 @@ def recover(edition, news, output):
     if any(n.get("date")==doc["editionDate"] and n.get("editionSlot")==doc["editionSlot"] and
            n.get("verification")=="editorial_verified" for n in base["news"]):
         raise ValueError("Franja ya registrada; recuperar publicación sin sustituir")
-    cached = lru_cache(maxsize=40)(fetch)
+    @lru_cache(maxsize=40)
+    def cached(url):
+        # The original getter pauses Commons metadata calls; retain this limit.
+        if urlsplit(url).hostname == 'commons.wikimedia.org':
+            time.sleep(1.4)
+        return fetch(url)
     with tempfile.TemporaryDirectory(prefix=".orbiuno-preflight-", dir=ROOT) as folder:
         tmp = Path(folder)
         ep, np = tmp/"edition.json", tmp/"news.json"
