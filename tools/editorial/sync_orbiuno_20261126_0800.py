@@ -59,7 +59,7 @@ def main():
             "imageSourceUrl":c["source"],"imageCaption":c["context"],
             "imageAlt":c["context"],"photoMatchReviewed":True,
             "instagramReelOrder":i,
-            "audioFullTextEs":n["originalArticleTextEs"]
+            "audioIsFullPublisherArticle":False,"audioFullTextEs":n["originalArticleTextEs"]
         })
     voice_path=ROOT/"media/web-voice/manifest.json"
     voice=json.loads(voice_path.read_text(encoding="utf-8")) if voice_path.exists() else {"items":{}}
