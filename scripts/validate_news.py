@@ -58,7 +58,7 @@ def check(data):
         # Protección editorial: nada generado ni sin atribución documental.
         if x.get('imageUrl') or x.get('imageType'):
             assert x.get('imageType') in {
-                'official_photo', 'licensed_press_photo', 'official_document'
+                'official_photo', 'licensed_press_photo', 'official_document', 'commons_licensed_photo', 'licensed_archival_photo'
             }, f"Tipo de imagen no editorial: {x.get('id')}"
             assert x.get('imageRightsVerified') is True, 'Derechos de imagen sin verificar'
             assert x.get('imageCredit'), 'Imagen sin crédito'
