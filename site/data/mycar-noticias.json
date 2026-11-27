@@ -5,6 +5,82 @@
   "updated_date": "2026-11-27",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-27-0800",
+      "date": "2026-11-27",
+      "slot": "08:00",
+      "title": "Volvo XC60 amplía su propuesta híbrida enchufable",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/MYCAR_2026-11-27_0800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-27-0800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Volvo XC60 amplía su propuesta híbrida enchufable",
+          "summary": "Auto Express publicó hoy su prueba del nuevo Volvo XC60 híbrido enchufable, destacando la autonomía eléctrica como una de sus ventajas para los desplazamientos cotidianos.",
+          "source": "Auto Express",
+          "source_url": "https://www.autoexpress.co.uk/volvo/xc60/371013/new-volvo-xc60-phev-2026-review-giant-range-makes-it-almost-ev",
+          "image_file_title": "Volvo XC60 RECHARGE Plug-in Hybrid T6 AWD Inscription Expression (5LA-UB420XCP2) front.jpg",
+          "photo_credit": "Tokumeigakarinoaoshima",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Volvo_XC60_RECHARGE_Plug-in_Hybrid_T6_AWD_Inscription_Expression_(5LA-UB420XCP2)_front.jpg",
+          "photo_context": "XC60 híbrido enchufable de archivo; no es la versión probada en noviembre.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "BMW iX3 gana el premio al carro del año en Escocia",
+          "summary": "El BMW iX3 fue elegido carro del año 2026 en Escocia, según informó hoy autoevolution. El reconocimiento distingue a un vehículo eléctrico en una competición en la que participan diferentes marcas y categorías.",
+          "source": "autoevolution",
+          "source_url": "https://www.autoevolution.com/news/and-scotland-s-2026-car-of-the-year-is-an-electric-crossover-it-s-a-brilliant-car-to-drive-279090.html",
+          "image_file_title": "2026 BMW iX3 50 xDrive M Sport.jpg",
+          "photo_credit": "Chanokchon",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2026_BMW_iX3_50_xDrive_M_Sport.jpg",
+          "photo_context": "BMW iX3 de 2026, fotografía de archivo del modelo.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Deepal S09 abre su preventa en Colombia",
+          "summary": "Deepal inició la preventa de su S09 en Colombia, informó Autos de Primera el 25 de noviembre. El modelo se sitúa como una alternativa de mayor tamaño y enfoque de lujo dentro de la marca.",
+          "source": "Autos de Primera",
+          "source_url": "https://autosdeprimera.com/autos-de-primera/lanzamientos/nueva-deepal-s09-colombia-preventa/",
+          "image_file_title": "Deepal S09 005.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Deepal_S09_005.jpg",
+          "photo_context": "Deepal S09 de archivo; no corresponde necesariamente a la configuración colombiana.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "IM Motors incorpora el IM6 al mercado colombiano",
+          "summary": "IM Motors presentó en Colombia su SUV eléctrico IM6 durante el Salón del Automóvil de Bogotá. Autocosmos informó que la gama contempla configuraciones con potencias de hasta 408 caballos y tracción trasera.",
+          "source": "Autocosmos",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/21/sia-2026-im-motors-presenta-en-colombia-el-im6-un-suv-electrico-premium-de-hasta-408-hp",
+          "image_file_title": "IM LS6 GIMS 2024 1X7A2002.jpg",
+          "photo_credit": "Alexander-93",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:IM_LS6_GIMS_2024_1X7A2002.jpg",
+          "photo_context": "IM LS6 de archivo, antecedente del IM6; no es la unidad presentada en Colombia.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "Nissan investiga autopartes con fibras de piña",
+          "summary": "Nissan y Food Reborn desarrollaron paneles exteriores para vehículos utilizando plástico reforzado con fibras naturales extraídas de hojas de piña. El fabricante anunció el avance en noviembre, y medios automotores lo retomaron esta semana.",
+          "source": "Nissan",
+          "source_url": "https://global.nissannews.com/en/releases/261117-01-e",
+          "image_file_title": "Pineapple fields.jpg",
+          "photo_credit": "madmack66",
+          "photo_license": "CC BY 2.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Pineapple_fields.jpg",
+          "photo_context": "Cultivo de piña de archivo; no muestra los paneles ni las fibras procesadas.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-26-1800",
       "date": "2026-11-26",
       "slot": "18:00",
