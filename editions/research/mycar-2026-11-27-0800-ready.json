@@ -2,7 +2,7 @@
   "editionDate": "2026-11-27",
   "editionSlot": "08:00",
   "brand": "MYCAR",
-  "sourceOnly": true,
+  "sourceOnly": false,
   "editorialApproved": true,
   "publicationAuthorized": true,
   "news": [
