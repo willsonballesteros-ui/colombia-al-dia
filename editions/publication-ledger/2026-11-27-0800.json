@@ -9,16 +9,26 @@
     "url": "https://www.instagram.com/reel/DgP-1V8Tz07/",
     "permalink": "https://www.instagram.com/reel/DgP-1V8Tz07/",
     "confirmed_at": "2026-11-27T15:17:56.144533+00:00",
-    "confirmed_by": "Official Meta Graph API"
+    "confirmed_by": "Official Meta Graph API",
+    "published_at": "2026-11-27T15:17:48Z"
   },
   "orbiuno": {
-    "state": "publishing",
+    "state": "published",
     "edition_key": "ORBIUNO-2026-11-27-0800",
     "provider": "Windsor Instagram",
     "sha256": "f9f49d50ae431820d6d6dc9b770b6a7df93c2287afba5fcb0ed234e0fcfdf766",
     "web_verification_run": 46025338729,
     "direct_publisher_run": 46031205995,
     "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-orbiuno/ORBIUNO_2026-11-27_0800_6_NOTICIAS.mp4",
-    "reservation": "No duplicate send; reconcile before retry"
+    "reservation": "No duplicate send; reconcile before retry",
+    "id": "18354590665284500",
+    "url": "https://www.instagram.com/reel/DgQLe1XzQjr/",
+    "permalink": "https://www.instagram.com/reel/DgQLe1XzQjr/",
+    "published_at": "2026-11-27T17:07:52Z",
+    "confirmed_by": "Instagram create and independent readback",
+    "captionSourceCorrections": [
+      "Ministerio del Deporte canonical link",
+      "VBear Media rescue story"
+    ]
   }
 }
