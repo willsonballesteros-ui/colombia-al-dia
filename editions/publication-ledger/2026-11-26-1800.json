@@ -11,13 +11,18 @@
     "publisher_run": 45925584230
   },
   "orbiuno": {
-    "state": "publishing",
+    "state": "published",
     "edition_key": "ORBIUNO-2026-11-26-1800",
     "provider": "Windsor Instagram",
     "sha256": "9b5a0df79042aaf09ca28f22ec411f0068089bd3f16fbfbfb471ada81e74745c",
     "web_verification_run": 45926515768,
     "direct_publisher_run": 45926601636,
     "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-26/edicion-1800-orbiuno/ORBIUNO_2026-11-26_1800_6_NOTICIAS.mp4",
-    "reservation": "No duplicate send: reconcile Instagram before any retry"
+    "reservation": "No duplicate send: reconcile Instagram before any retry",
+    "id": "17869703241680038",
+    "url": "https://www.instagram.com/reel/DgOkwg2KOfb/",
+    "permalink": "https://www.instagram.com/reel/DgOkwg2KOfb/",
+    "published_at": "2026-11-27T02:10:21Z",
+    "confirmed_by": "Windsor Instagram creation and independent media lookup"
   }
 }
