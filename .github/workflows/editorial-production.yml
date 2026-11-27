@@ -55,6 +55,9 @@ jobs:
           command -v ffmpeg && command -v ffprobe
           python -m py_compile tools/editorial/produce_20261126_0800.py tools/editorial/sync_orbiuno_20261126_0800.py
       - name: Generar y comprobar medios
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         if: steps.edition.outputs.run == 'true'
         run: |
           PYTHONPATH=. python tools/editorial/produce_20261126_0800.py
