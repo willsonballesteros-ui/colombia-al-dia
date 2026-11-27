@@ -4,10 +4,18 @@ on:
     workflows: ['ORBIUNO | Verificar web y MP4 existente']
     types: [completed]
   workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Franja Colombia (0800 o 1800)'
+        type: choice
+        options: ['0800', '1800']
+        required: true
+  schedule:
+    - cron: '*/15 13-23,0-4 * * *'
 permissions:
   contents: write
 concurrency:
-  group: orbiuno-meta-ORBIUNO-2026-11-26-0800
+  group: orbiuno-meta-publicacion-serial
   cancel-in-progress: false
 jobs:
   publicar:
@@ -15,6 +23,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
+      REQUESTED_SLOT: ${{ inputs.slot }}
       ORBIUNO_IG_ACCESS_TOKEN: ${{ secrets.ORBIUNO_IG_ACCESS_TOKEN }}
       ORBIUNO_IG_USER_ID: ${{ secrets.ORBIUNO_IG_USER_ID }}
     steps:
@@ -29,21 +38,42 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          day=2026-11-26
-          slot=0800
-          if [ "$day" != "$(TZ=America/Bogota date +%F)" ]; then exit 0; fi
+          day=$(TZ=America/Bogota date +%F)
+          hour=$(TZ=America/Bogota date +%H)
+          slot="${REQUESTED_SLOT:-0800}"
+          if [ -z "${REQUESTED_SLOT:-}" ] && [ "$((10#$hour))" -ge 17 ]; then slot=1800; fi
+          if [ "$((10#$hour))" -lt 8 ]; then exit 0; fi
+          if [ "$slot" = 1800 ] && [ "$((10#$hour))" -lt 17 ]; then exit 0; fi
+          if [ ! -f "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json" ]; then echo 'NO_APPROVED_MANIFEST'; exit 0; fi
           ledger="editions/publication-ledger/$day-$slot.json"
-          if python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state") in ("published","publishing") else 1)' "$ledger"; then
+          if [ -f "$ledger" ] && python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state") in ("published","publishing") else 1)' "$ledger"; then
             echo 'ORBIUNO_ALREADY_RECORDED_OR_RESERVED'
             exit 0
           fi
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
           folder="media/$day/edicion-$slot-orbiuno"
           video="$(python -c 'import json; print(json.load(open("/tmp/orbiuno-preflight.json"))["video_url"])')"
-          caption="$(sed '/^\[ORBIUNO-2026-11-26-0800\]$/d' "$folder/orbiuno_caption.txt")"
-          python scripts/publish_meta_direct.py --video-url "$video" --caption "$caption" --edition-key "ORBIUNO-$day-$slot" --publish | tee /tmp/orbiuno-meta.json
+          caption="$(grep -vFx "[ORBIUNO-$day-$slot]" "$folder/orbiuno_caption.txt")"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python scripts/publish_meta_direct.py --video-url "$video" --caption "$caption" --edition-key "ORBIUNO-$day-$slot" > /tmp/orbiuno-dry.json
+          if grep -q 'ALREADY_PUBLISHED' /tmp/orbiuno-dry.json; then
+            cp /tmp/orbiuno-dry.json /tmp/orbiuno-meta.json
+          else
+            mkdir -p "$(dirname "$ledger")"
+            python - "$ledger" "$day-$slot" <<'PY'
+          import json,sys,os
+          from pathlib import Path
+          p=Path(sys.argv[1]); d=json.loads(p.read_text()) if p.exists() else {'edition':sys.argv[2]}
+          assert d.get('orbiuno',{}).get('state') not in ('published','publishing')
+          d['orbiuno']={'state':'publishing','edition_key':'ORBIUNO-'+sys.argv[2],'run':os.environ['GITHUB_RUN_ID']}
+          p.write_text(json.dumps(d,indent=2)+'\n')
+          PY
+            git add "$ledger"
+            git commit -m "ORBIUNO: reservar envío $day $slot"
+            git push origin HEAD:main
+            python scripts/publish_meta_direct.py --video-url "$video" --caption "$caption" --edition-key "ORBIUNO-$day-$slot" --publish | tee /tmp/orbiuno-meta.json
+          fi
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
@@ -51,7 +81,7 @@ jobs:
           import json,sys,os
           from pathlib import Path
           from datetime import datetime,timezone
-          p=Path(sys.argv[1]); d=json.loads(p.read_text())
+          p=Path(sys.argv[1]); p.parent.mkdir(parents=True,exist_ok=True); d=json.loads(p.read_text()) if p.exists() else {'edition':p.stem}
           r=json.loads(Path('/tmp/orbiuno-meta.json').read_text().splitlines()[-1])
           v=json.loads(Path('/tmp/orbiuno-preflight.json').read_text())
           assert r['state'] in ('PUBLISHED','ALREADY_PUBLISHED')
@@ -63,9 +93,10 @@ jobs:
               d['orbiuno']={'state':'published','id':r['id'],'url':r['url'],'permalink':r['url'],'confirmed_at':datetime.now(timezone.utc).isoformat(),'sha256':v['sha256'],'publisher_run':int(os.environ['GITHUB_RUN_ID'])}
               p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+'\n')
           PY
+            mkdir -p "$(dirname "$ledger")"
             git add "$ledger"
             if git diff --cached --quiet; then exit 0; fi
-            git commit -m 'ORBIUNO: registrar publicación Meta 26NOV 0800'
+            git commit -m "ORBIUNO: registrar publicación Meta $day $slot"
             if git push origin HEAD:main; then exit 0; fi
             sleep "$attempt"
           done
