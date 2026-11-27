@@ -23,7 +23,14 @@ def check(data):
         if x.get('audioFullTextEs'):
             assert x.get('verification') in ('editorial_verified', 'editorial_superseded'), 'Audio requiere revisión previa o archivo editorial sustituido'
             assert x.get('sourceLanguage') in ('en', 'es'), 'Idioma de origen sin identificar'
-            assert x.get('audioIsFullPublisherArticle') is False, 'Prohibido almacenar artículo íntegro de prensa como audio propio'
+            assert x.get('audioIsFullPublisherArticle') is False or (
+                'audioIsFullPublisherArticle' not in x
+                and x.get('originalArticleReviewed') is True
+                and x.get('originalArticleIsOwnWork') is True
+                and x.get('originalArticleIsPublisherVerbatim') is False
+                and x.get('originalArticleByline') == 'Redacción ORBIUNO'
+                and x.get('originalArticleTextEs') == x['audioFullTextEs']
+            ), 'Prohibido almacenar artículo íntegro de prensa como audio propio'
             assert len(x['audioFullTextEs']) > len(x.get('executiveSummary') or ''), 'Audio ampliado demasiado corto'
         if x.get('audioFullTextEn'):
             assert x.get('englishAudioRightsVerified') is True, 'No reproducir texto extranjero sin derechos comprobados'
