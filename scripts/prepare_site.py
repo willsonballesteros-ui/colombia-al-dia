@@ -12,7 +12,7 @@ from urllib.parse import urlparse, quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VALID_IMAGE_TYPES = {"official_photo", "licensed_press_photo", "official_document", "commons_licensed_photo"}
+VALID_IMAGE_TYPES = {"official_photo", "licensed_press_photo", "official_document", "commons_licensed_photo", "licensed_archival_photo"}
 
 
 def image_verified(news):
