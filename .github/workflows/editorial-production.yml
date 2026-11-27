@@ -83,12 +83,6 @@ jobs:
           subprocess.run(['ffmpeg','-v','error','-i',str(p/m['video']),'-f','null','-'],check=True)
           print('MEDIA_QA_PASS')
           PY
-      - uses: actions/upload-artifact@v4
-        if: steps.edition.outputs.run == 'true'
-        with:
-          name: approved-${{ matrix.brand }}-${{ env.EDITION_DAY }}-${{ env.STAMP }}
-          path: media/${{ env.EDITION_DAY }}/edicion-${{ env.STAMP }}-${{ matrix.brand }}/
-          if-no-files-found: error
       - name: Sincronizar medios y web sin sobrescribir otra marca
         if: steps.edition.outputs.run == 'true'
         shell: bash
@@ -127,3 +121,10 @@ jobs:
       - name: Comprobar despliegue ORBIUNO
         if: steps.edition.outputs.run == 'true' && matrix.brand == 'orbiuno'
         run: python scripts/verify_public_edition.py --day "$EDITION_DAY" --slot "$STAMP"
+      - uses: actions/upload-artifact@v4
+        if: steps.edition.outputs.run == 'true'
+        continue-on-error: true
+        with:
+          name: approved-${{ matrix.brand }}-${{ env.EDITION_DAY }}-${{ env.STAMP }}
+          path: media/${{ env.EDITION_DAY }}/edicion-${{ env.STAMP }}-${{ matrix.brand }}/
+          if-no-files-found: error
