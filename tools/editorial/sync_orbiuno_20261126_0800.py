@@ -5,15 +5,21 @@ Las antiguas publicaciones Meta NO se borran aquí: el propietario lo hará.
 Conserva el antiguo HTML en el historial para auditoría, sin mostrarlo como hoy.
 """
 from __future__ import annotations
-import json,re,shutil
+import json,re,shutil,os
+from datetime import datetime,date
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from scripts.prepare_site import build
 
 ROOT=Path(__file__).resolve().parents[2]
-DAY="2026-11-26"; SLOT="08:00"
-MEDIA=ROOT/"media"/DAY/"edicion-0800-orbiuno"
-RESEARCH=ROOT/"editions/research/orbiuno-2026-11-26-0800-ready.json"
-PAGE="orbiuno-2026-11-26-0800.html"
+DAY=os.environ.get("EDITION_DAY",datetime.now(ZoneInfo("America/Bogota")).date().isoformat())
+SLOT=os.environ.get("EDITION_SLOT","08:00")
+assert date.fromisoformat(DAY).isoformat()==DAY and SLOT in ("08:00","18:00")
+STAMP=SLOT.replace(":",""); KEY=DAY.replace("-","")+"-"+STAMP
+LABEL=date.fromisoformat(DAY).strftime("%d/%m/%Y")+" · "+("08:00 a. m." if SLOT=="08:00" else "06:00 p. m.")+" Colombia"
+MEDIA=ROOT/"media"/DAY/f"edicion-{STAMP}-orbiuno"
+RESEARCH=MEDIA/"selected_news.json"
+PAGE=f"orbiuno-{DAY}-{STAMP}.html"
 
 def main():
     src=json.loads(RESEARCH.read_text(encoding="utf-8"))
@@ -35,7 +41,7 @@ def main():
         assert n["order"]==i and n["originalArticleReviewed"]
         assert c["rightsVerified"] and c["author"] and c["license"] and c["source"]
         db["news"].append({
-            "id":f"orbiuno-20261126-0800-{i}","date":DAY,"editionSlot":SLOT,
+            "id":f"orbiuno-{KEY}-{i}","date":DAY,"editionSlot":SLOT,
             "priority":i,"title":n["title"],"category":n["category"],
             "level":"Noticia verificada · enfoque constructivo",
             "sources":[{"name":n["source"],"url":n["url"]}],
@@ -48,19 +54,19 @@ def main():
             "originalArticleReviewStatus":"aprobada","originalArticleIsPublisherVerbatim":False,
             "originalArticleIsOwnWork":True,"imageType":"licensed_archival_photo",
             "imageRightsVerified":True,
-            "imageUrl":f"./media/2026-11-26/edicion-0800-orbiuno/foto-orbiuno-{i:02d}.jpg",
+            "imageUrl":f"./media/{DAY}/edicion-{STAMP}-orbiuno/foto-orbiuno-{i:02d}.jpg",
             "imageCredit":c["author"],"imageLicense":c["license"],
             "imageSourceUrl":c["source"],"imageCaption":c["context"],
             "imageAlt":c["context"],"photoMatchReviewed":True,
             "instagramReelOrder":i,
-            "audioFullTextEs":n["originalArticleTextEs"]
+            "audioIsFullPublisherArticle":False,"audioFullTextEs":n["originalArticleTextEs"]
         })
     voice_path=ROOT/"media/web-voice/manifest.json"
     voice=json.loads(voice_path.read_text(encoding="utf-8")) if voice_path.exists() else {"items":{}}
     for i,n in enumerate(src["news"],1):
         audio=MEDIA/f"orbiuno-noticia-{i:02d}.mp3"
         assert audio.stat().st_size>1000
-        voice.setdefault("items",{})[f"orbiuno-20261126-0800-{i}"]={"url":"./"+audio.relative_to(ROOT).as_posix(),"text":n["originalArticleTextEs"],"voice":"es-CO-SalomeNeural","tempo":1.25}
+        voice.setdefault("items",{})[f"orbiuno-{KEY}-{i}"]={"url":"./"+audio.relative_to(ROOT).as_posix(),"text":n["originalArticleTextEs"],"voice":"es-CO-SalomeNeural","tempo":1.25}
     voice_path.parent.mkdir(parents=True,exist_ok=True)
     voice_path.write_text(json.dumps(voice,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     db["editionDate"]=DAY
@@ -73,28 +79,28 @@ def main():
         r'<script>\(function\(\).*?</script>',"",template,flags=re.S)
     # Eliminar una versión previa de esta propia promoción, sin duplicarla.
     template=re.sub(
-        r'<nav id="(?:orbiuno-manana-2611|orbiuno-manana-2511|orbiuno-tarde-2511|orbiuno-positivas-2311)".*?</nav>\s*'
+        r'<nav id="(?:orbiuno-manana-2611|orbiuno-manana-2511|orbiuno-tarde-2511|orbiuno-positivas-2311|orbiuno-edicion-actual)".*?</nav>\s*'
         r'<script>\(function\(\).*?</script>',"",template,flags=re.S)
     output=build(db,template,as_of=DAY)
     bar=(
-        '<nav id="orbiuno-manana-2611" style="background:#0e344b;'
+        '<nav id="orbiuno-edicion-actual" style="background:#0e344b;'
         'padding:14px;color:white;text-align:center">'
-        '<strong>Hoy · 26/11/2026 · 08:00 a. m. Colombia</strong>'
+        '<strong>Hoy · '+LABEL+'</strong>'
         '<p><a style="color:#69ffe4;font-weight:700" href="./'+PAGE+'">'
         '▶ ORBIUNO: seis noticias positivas, fuentes y audios completos</a></p>'
-        '<p><a style="color:#ffe89b" href="./mycar-2026-11-26-0800.html">'
+        '<p><a style="color:#ffe89b" href="./mycar-'+DAY+'-'+STAMP+'.html">'
         '▶ MyCar: cinco noticias del motor</a></p>'
         '</nav>'
         '<script>(function(){var d=new Intl.DateTimeFormat("en-CA",'
         '{timeZone:"America/Bogota",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());'
-        'if(d!=="2026-11-26"){var x=document.getElementById("orbiuno-manana-2611");'
+        'if(d!=="'+DAY+'"){var x=document.getElementById("orbiuno-edicion-actual");'
         'if(x)x.remove();}})();</script>'
     )
     if "<body>" not in output:
         raise RuntimeError("Portada inválida")
     idx.write_text(output.replace("<body>","<body>"+bar,1),encoding="utf-8")
     # El feed RSS se regenera después y conserva fuentes/última edición.
-    print("ORBIUNO_WEB_POSITIVAS_20261123_0800_OK",len(db["news"]),flush=True)
+    print("ORBIUNO_WEB_SYNC_OK",len(db["news"]),flush=True)
 
 if __name__=="__main__":
     main()

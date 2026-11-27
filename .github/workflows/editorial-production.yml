@@ -1,0 +1,121 @@
+name: Editorial | Producción diaria por marca
+on:
+  push:
+    branches: [main]
+    paths: ['editions/research/*-ready.json', '.github/workflows/editorial-production.yml']
+  schedule:
+    - cron: '*/15 13,14,22,23,0-3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  producir:
+    strategy:
+      fail-fast: false
+      matrix:
+        brand: [orbiuno, mycar]
+    concurrency:
+      group: editorial-produce-${{ matrix.brand }}
+      cancel-in-progress: false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      NEWS_BRAND: ${{ matrix.brand }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Elegir franja actual sin duplicar
+        id: edition
+        shell: bash
+        run: |
+          set -euo pipefail
+          day=$(TZ=America/Bogota date +%F)
+          hour=$(TZ=America/Bogota date +%H)
+          if (( 10#$hour >= 17 )); then stamp=1800; slot=18:00
+          elif (( 10#$hour >= 8 )); then stamp=0800; slot=08:00
+          else echo 'run=false' >> "$GITHUB_OUTPUT"; exit 0; fi
+          printf 'EDITION_DAY=%s\nEDITION_SLOT=%s\nSTAMP=%s\n' "$day" "$slot" "$stamp" >> "$GITHUB_ENV"
+          src="media/$day/edicion-$stamp-$NEWS_BRAND"
+          ledger="editions/publication-ledger/$day-$stamp.json"
+          if [ -f "$ledger" ] && python -c 'import json,sys; r=json.load(open(sys.argv[1])).get(sys.argv[2],{}); sys.exit(0 if r else 1)' "$ledger" "$NEWS_BRAND"; then
+            echo 'LEDGER_EXISTS: no regenerar'; echo 'run=false' >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if [ -f "$src/qa.json" ]; then echo 'APPROVED_MEDIA_EXISTS: no regenerar'; echo 'run=false' >> "$GITHUB_OUTPUT"; exit 0; fi
+          test -f "editions/research/$NEWS_BRAND-$day-$stamp-ready.json" || { echo 'EDITORIAL_READY_MISSING'; exit 1; }
+          echo 'run=true' >> "$GITHUB_OUTPUT"
+      - name: Dependencias y pruebas
+        if: steps.edition.outputs.run == 'true'
+        run: |
+          python -m pip install --timeout 30 --retries 2 Pillow requests edge-tts
+          command -v ffmpeg && command -v ffprobe
+          python -m py_compile tools/editorial/produce_20261126_0800.py tools/editorial/sync_orbiuno_20261126_0800.py
+      - name: Generar y comprobar medios
+        if: steps.edition.outputs.run == 'true'
+        run: |
+          PYTHONPATH=. python tools/editorial/produce_20261126_0800.py
+          python - <<'PY'
+          import json,os,hashlib,subprocess
+          from pathlib import Path
+          b=os.environ['NEWS_BRAND']; p=Path('media')/os.environ['EDITION_DAY']/('edicion-'+os.environ['STAMP']+'-'+b)
+          m=json.loads((p/(b+'_manifest.json')).read_text())
+          n=6 if b=='orbiuno' else 5
+          assert m['newsCount']==m['imagesCount']==m['logosCount']==m['fullNewsAudioFiles']==n
+          assert m['voice']=='es-CO-SalomeNeural' and m['voiceSpeed']==1.25
+          assert len(m['photoCredits'])==n and all(x['rightsVerified'] and x['license'] and x['author'] and x['source'] for x in m['photoCredits'])
+          assert len(set(m['sourceUrls']))==n
+          assert hashlib.sha256((p/m['video']).read_bytes()).hexdigest()==m['sha256']
+          for i in range(1,n+1):
+              for f in (f'{b}-noticia-{i:02d}.mp3',f'foto-{b}-{i:02d}.jpg',f'{b}-logo-{i:02d}.png'):
+                  assert (p/f).stat().st_size>100
+          subprocess.run(['ffmpeg','-v','error','-i',str(p/m['video']),'-f','null','-'],check=True)
+          print('MEDIA_QA_PASS')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: steps.edition.outputs.run == 'true'
+        with:
+          name: approved-${{ matrix.brand }}-${{ env.EDITION_DAY }}-${{ env.STAMP }}
+          path: media/${{ env.EDITION_DAY }}/edicion-${{ env.STAMP }}-${{ matrix.brand }}/
+          if-no-files-found: error
+      - name: Sincronizar medios y web sin sobrescribir otra marca
+        if: steps.edition.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          day="$EDITION_DAY"; stamp="$STAMP"; b="$NEWS_BRAND"
+          src="media/$day/edicion-$stamp-$b"; page="$b-$day-$stamp.html"
+          mkdir -p "site/$src"
+          cp -a "$src/." "site/$src/"
+          if [ "$b" = orbiuno ]; then
+            PYTHONPATH=. python tools/editorial/sync_orbiuno_20261126_0800.py
+            python scripts/build_feed.py
+            mkdir -p site/media/web-voice
+            cp "$page" noticias.json index.html feed.xml site/
+            cp media/web-voice/manifest.json site/media/web-voice/manifest.json
+            git add noticias.json index.html feed.xml media/web-voice/manifest.json site/noticias.json site/index.html site/feed.xml site/media/web-voice/manifest.json
+          else
+            cp "$src/mycar_edition.html" "$page"
+            cp "$page" site/
+            mkdir -p site/data
+            python scripts/build_mycar_news_feed.py
+            cp data/mycar-noticias.json site/data/mycar-noticias.json
+            git add data/mycar-noticias.json site/data/mycar-noticias.json
+          fi
+          git add "$page" "site/$page" "$src" "site/$src"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "$b: medios aprobados $day $stamp"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$((i*2))"
+          done
+          exit 1
+      - name: Comprobar despliegue ORBIUNO
+        if: steps.edition.outputs.run == 'true' && matrix.brand == 'orbiuno'
+        run: python scripts/verify_public_edition.py --day "$EDITION_DAY" --slot "$STAMP"
