@@ -33,7 +33,12 @@ HANDLES={"orbiuno":"@resumen.noticias","mycar":"@mycar.buscoautos"}
 
 
 def run(*args):
-    return subprocess.run([str(a) for a in args],check=True,capture_output=True,text=True)
+    result=subprocess.run([str(a) for a in args],capture_output=True,text=True,timeout=600)
+    if result.returncode:
+        print(result.stdout[-3000:],flush=True)
+        print(result.stderr[-3000:],file=sys.stderr,flush=True)
+        result.check_returncode()
+    return result
 
 def font(sz,bold=True):
     return ImageFont.truetype(BASE_FONT+("-Bold" if bold else "")+".ttf",sz)
