@@ -1,0 +1,130 @@
+{
+  "editionDate": "2026-11-27",
+  "editionSlot": "08:00",
+  "brand": "ORBIUNO",
+  "sourceOnly": true,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "news": [
+    {
+      "order": 1,
+      "title": "Dos escarabajos nuevos para la ciencia en Colombia",
+      "category": "Ciencia",
+      "source": "Señal Colombia",
+      "url": "https://www.senalcolombia.tv/cultura/descubren-dos-nuevos-escarabajos-colombia",
+      "summary": "Investigadores describieron dos especies de escarabajos del género Bolax con ejemplares procedentes de Colombia. Uno de los nuevos insectos, llamado Bolax opita, fue encontrado en el Huila. El trabajo científico también incorpora registros adicionales del género para el país.",
+      "spoken": "Investigadores describieron dos especies de escarabajos del género Bolax con ejemplares procedentes de Colombia.",
+      "originalArticleTextEs": "Investigadores describieron dos especies de escarabajos del género Bolax con ejemplares procedentes de Colombia. Uno de los nuevos insectos, llamado Bolax opita, fue encontrado en el Huila. El trabajo científico también incorpora registros adicionales del género para el país.\n\nLa descripción científica se publicó en la Revista Mexicana de Biodiversidad y fue divulgada por Señal Colombia el 26 de noviembre. Es importante distinguir entre descubrir una especie para la ciencia y registrar en un territorio una especie ya descrita en otro lugar. Ambos tipos de resultados contribuyen al inventario biológico. Las colecciones de ejemplares permiten comparar características y respaldar la identificación de estos animales.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.senalcolombia.tv/cultura/descubren-dos-nuevos-escarabajos-colombia"
+      ],
+      "photoCommonsTitle": "File:Escaravelho Bolax.JPG",
+      "photoMatchReviewed": true,
+      "photoCaption": "Ejemplar del género Bolax de archivo; no corresponde a las nuevas especies.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "La UNESCO estrena una jornada mundial de ciencia",
+      "category": "Ciencia",
+      "source": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/first-international-day-engagement-science-sustainable-development",
+      "summary": "Este 27 de noviembre la UNESCO celebra por primera vez el Día Internacional de la Participación en la Ciencia para el Desarrollo Sostenible. La jornada fue proclamada por la Conferencia General de la organización.",
+      "spoken": "Este 27 de noviembre la UNESCO celebra por primera vez el Día Internacional de la Participación en la Ciencia para el Desarrollo Sostenible.",
+      "originalArticleTextEs": "Este 27 de noviembre la UNESCO celebra por primera vez el Día Internacional de la Participación en la Ciencia para el Desarrollo Sostenible. La jornada fue proclamada por la Conferencia General de la organización.\n\nLa conmemoración invita a acercar la actividad científica a la sociedad y a reconocer su contribución a los desafíos del desarrollo sostenible. La ciencia puede aportar información para decisiones sobre recursos naturales, educación y otros asuntos cotidianos. Una fecha internacional permite reunir iniciativas de divulgación y promover el intercambio entre investigadores y ciudadanía. No implica por sí sola la creación de una nueva financiación para proyectos científicos.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.unesco.org/en/articles/first-international-day-engagement-science-sustainable-development"
+      ],
+      "photoCommonsTitle": "File:Observing Bacteria with a Microscope.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Trabajo de laboratorio de archivo; no corresponde a la jornada.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "Deportistas escolares compiten por Colombia",
+      "category": "Deporte",
+      "source": "Ministerio del Deporte",
+      "url": "https://www.mindeporte.gov.co/juegosintercolegiados/sala-de-prensa/noticias/ustedes-campeones-leccion-ministra-deporte-evento-central-juegos-intercolegiados",
+      "summary": "Los Juegos Intercolegiados Nacionales entran en su etapa final. Según el Ministerio del Deporte, la competencia en Bogotá se disputa en veintidós modalidades y reúne a atletas y paradeportistas escolares.",
+      "spoken": "Los Juegos Intercolegiados Nacionales entran en su etapa final.",
+      "originalArticleTextEs": "Los Juegos Intercolegiados Nacionales entran en su etapa final. Según el Ministerio del Deporte, la competencia en Bogotá se disputa en veintidós modalidades y reúne a atletas y paradeportistas escolares.\n\nLos ganadores de las categorías correspondientes aportarán integrantes a la delegación colombiana de los Juegos Suramericanos Escolares, de acuerdo con la información del Ministerio. El certamen permite que los estudiantes representen sus instituciones y departamentos en pruebas deportivas reglamentadas. Es una oportunidad de formación competitiva y de encuentro entre delegaciones. El balance definitivo de medallas debe consultarse cuando la organización publique los resultados oficiales.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.mindeporte.gov.co/juegosintercolegiados/sala-de-prensa/noticias/ustedes-campeones-leccion-ministra-deporte-evento-central-juegos-intercolegiados"
+      ],
+      "photoCommonsTitle": "File:Dumas Basketball Game.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Baloncesto escolar de archivo en otro país; no muestra los Juegos Intercolegiados.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "Filipinas celebra su primera corona de Eurovisión Asia",
+      "category": "Farándula",
+      "source": "Eurovision",
+      "url": "https://www.eurovision.com/newsroom/release/carmelle-from-philippines-wins-inaugural-eurovision-song-contest-asia-in-bangkok/",
+      "summary": "En el balance musical de noviembre, la cantante filipina Carmelle hizo historia al ganar la primera edición de Eurovisión Asia. La final tuvo lugar el 14 de noviembre en Bangkok, Tailandia, con la canción Sobra-Sobra.",
+      "spoken": "En el balance musical de noviembre, la cantante filipina Carmelle hizo historia al ganar la primera edición de Eurovisión Asia.",
+      "originalArticleTextEs": "En el balance musical de noviembre, la cantante filipina Carmelle hizo historia al ganar la primera edición de Eurovisión Asia. La final tuvo lugar el 14 de noviembre en Bangkok, Tailandia, con la canción Sobra-Sobra.\n\nLa organización del concurso confirmó el resultado en su comunicado oficial. La nueva edición asiática reúne intérpretes de distintos países bajo un formato de competición musical internacional. La victoria representa un hito para Filipinas al tratarse del primer certamen de esta serie. El acontecimiento no ocurrió hoy: esta edición de noticias lo recupera como uno de los momentos destacados del entretenimiento de noviembre.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.eurovision.com/newsroom/release/carmelle-from-philippines-wins-inaugural-eurovision-song-contest-asia-in-bangkok/"
+      ],
+      "photoCommonsTitle": "File:Carmelle Collado with the Philippine flag at the 2026 Eurovision Song Contest Asia 01.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Carmelle Collado con la bandera filipina durante Eurovisión Asia 2026.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "Rescatan un gato de un lago helado en Pekín",
+      "category": "Viral",
+      "source": "KameraOne",
+      "url": "https://www.kameraone.com/trending-stories/8026892",
+      "summary": "Un video difundido el 26 de noviembre muestra el rescate de un gato que quedó atrapado en un lago helado de Pekín, China, según la plataforma de videos KameraOne. La grabación fue compartida por una cuenta local.",
+      "spoken": "Un video difundido el 26 de noviembre muestra el rescate de un gato que quedó atrapado en un lago helado de Pekín, China, según la plataforma de videos KameraOne.",
+      "originalArticleTextEs": "Un video difundido el 26 de noviembre muestra el rescate de un gato que quedó atrapado en un lago helado de Pekín, China, según la plataforma de videos KameraOne. La grabación fue compartida por una cuenta local.\n\nLa escena ilustra los peligros que supone el hielo delgado para animales y personas. Si un animal queda atrapado en una superficie congelada, es preferible avisar a personal de emergencias capacitado antes que intentar caminar sobre el hielo. El contenido se presenta como un video difundido por la plataforma, sin atribuir detalles no confirmados de la identidad de los rescatistas. La fotografía de esta noticia es de archivo y no reproduce el incidente.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://www.kameraone.com/trending-stories/8026892"
+      ],
+      "photoCommonsTitle": "File:Felis catus-cat on snow.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Gato en la nieve, archivo ilustrativo; no muestra el rescate de Pekín.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 6,
+      "title": "Bogotá se prepara para un encuentro de violines",
+      "category": "Cultura",
+      "source": "Alcaldía de Bogotá",
+      "url": "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-20-al-26-de-noviembre-de-2026",
+      "summary": "El sábado 28 de noviembre, el violinista chino Ruifeng Lin y el colombiano Iván Orlín ofrecerán un concierto en el Auditorio Fabio Lozano, según la agenda cultural de Bogotá. Ambos fueron reconocidos en el Concurso Internacional de Violín Ciudad de Bogotá.",
+      "spoken": "El sábado 28 de noviembre, el violinista chino Ruifeng Lin y el colombiano Iván Orlín ofrecerán un concierto en el Auditorio Fabio Lozano, según la agenda cultural de Bogotá.",
+      "originalArticleTextEs": "El sábado 28 de noviembre, el violinista chino Ruifeng Lin y el colombiano Iván Orlín ofrecerán un concierto en el Auditorio Fabio Lozano, según la agenda cultural de Bogotá. Ambos fueron reconocidos en el Concurso Internacional de Violín Ciudad de Bogotá.\n\nLa presentación está anunciada para las siete y media de la noche en el auditorio de la Universidad Jorge Tadeo Lozano. El encuentro propone un recorrido musical por China y Colombia y forma parte de las actividades vinculadas al concurso internacional. La agenda permite a los interesados conocer la programación antes de asistir. Se recomienda comprobar las condiciones de ingreso y disponibilidad directamente con el organizador, pues la programación puede cambiar.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción ORBIUNO",
+      "originalArticleSourceUrls": [
+        "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-20-al-26-de-noviembre-de-2026"
+      ],
+      "photoCommonsTitle": "File:Violinist playing in a Classic opera hall - 8175.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Violinista en una sala de conciertos de archivo; no muestra a los artistas anunciados.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}
