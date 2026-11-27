@@ -1,0 +1,102 @@
+{
+  "brand": "orbiuno",
+  "edition": "2026-11-27",
+  "slot": "08:00",
+  "newsCount": 6,
+  "video": "ORBIUNO_2026-11-27_0800_6_NOTICIAS.mp4",
+  "duration": 41.306236,
+  "sha256": "f9f49d50ae431820d6d6dc9b770b6a7df93c2287afba5fcb0ed234e0fcfdf766",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Escaravelho Bolax.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Escaravelho_Bolax.JPG",
+      "license": "Public domain",
+      "author": "Fernando.M.Soares",
+      "context": "Ejemplar del género Bolax de archivo; no corresponde a las nuevas especies.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Escaravelho_Bolax.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "Roteb garbage truck 28 march 2015.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Roteb_garbage_truck_28_march_2015.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Targje",
+      "context": "Camión de recogida de Rotterdam en 2015; archivo ilustrativo, no se afirma que lleve los versos premiados.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Roteb_garbage_truck_28_march_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Dumas Basketball Game.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dumas_Basketball_Game.jpg",
+      "license": "CC BY 4.0",
+      "author": "Foxtail1175",
+      "context": "Baloncesto escolar de archivo en otro país; no muestra los Juegos Intercolegiados.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Dumas_Basketball_Game.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Carmelle Collado with the Philippine flag at the 2026 Eurovision Song Contest Asia 01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Carmelle_Collado_with_the_Philippine_flag_at_the_2026_Eurovision_Song_Contest_Asia_01.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Quejaytee",
+      "context": "Carmelle Collado con la bandera filipina durante Eurovisión Asia 2026.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Carmelle_Collado_with_the_Philippine_flag_at_the_2026_Eurovision_Song_Contest_Asia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "Felis catus-cat on snow.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Felis_catus-cat_on_snow.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Von.grzanka",
+      "context": "Gato en la nieve, archivo ilustrativo; no muestra el rescate de Pekín.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Felis_catus-cat_on_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-06.jpg",
+      "title": "Violinist playing in a Classic opera hall - 8175.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Violinist_playing_in_a_Classic_opera_hall_-_8175.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Jorge Royan",
+      "context": "Violinista en una sala de conciertos de archivo; no muestra a los artistas anunciados.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Violinist_playing_in_a_Classic_opera_hall_-_8175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://www.senalcolombia.tv/cultura/descubren-dos-nuevos-escarabajos-colombia",
+    "https://www.positive.news/society/good-news-stories-from-week-48-of-2026/",
+    "https://www.mindeporte.gov.co/juegosintercolegiados/sala-de-prensa/noticias/ustedes-campeones-leccion-ministra-deporte-evento-central-juegos-intercolegiados",
+    "https://www.eurovision.com/newsroom/release/carmelle-from-philippines-wins-inaugural-eurovision-song-contest-asia-in-bangkok/",
+    "https://www.kameraone.com/trending-stories/8026892",
+    "https://bogota.gov.co/que-hacer/cultura/2026-11/planes-y-eventos-imperdibles-en-bogota-20-al-26-de-noviembre-de-2026"
+  ],
+  "imagesCount": 6,
+  "logosCount": 6,
+  "sourceLabelsCount": 6,
+  "audioSegments": 7,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 6,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
