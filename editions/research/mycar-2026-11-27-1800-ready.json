@@ -1,0 +1,110 @@
+{
+  "editionDate": "2026-11-27",
+  "editionSlot": "18:00",
+  "brand": "MYCAR",
+  "sourceOnly": false,
+  "editorialApproved": true,
+  "publicationAuthorized": true,
+  "news": [
+    {
+      "order": 1,
+      "title": "Volkswagen recupera el Golf GTI manual",
+      "category": "Lanzamientos",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/817023/vw-golf-gti-1976-manual-gearbox/",
+      "summary": "Volkswagen presentó en el Salón del Automóvil de Essen una edición especial denominada Golf GTI 1976, que celebra el origen del modelo e incorpora nuevamente una caja de cambios manual.",
+      "spoken": "Volkswagen presentó en el Salón del Automóvil de Essen una edición especial denominada Golf GTI 1976, que celebra el origen del modelo e incorpora nuevamente una caja de cambios manual.",
+      "originalArticleTextEs": "Volkswagen presentó en el Salón del Automóvil de Essen una edición especial denominada Golf GTI 1976, que celebra el origen del modelo e incorpora nuevamente una caja de cambios manual.\n\nLa denominación recuerda el año en que comenzó la comercialización del primer Golf GTI. La recuperación de una transmisión manual tiene especial interés para aficionados que prefieren intervenir directamente en la selección de las marchas. Se trata de una serie especial, de modo que su presentación no supone necesariamente un regreso permanente de esta configuración a toda la gama. Motor1 informó de la novedad este viernes. La disponibilidad en Colombia y las condiciones comerciales locales deberán ser confirmadas por la marca.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MYCAR",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/817023/vw-golf-gti-1976-manual-gearbox/"
+      ],
+      "photoCommonsTitle": "File:Volkswagen Golf GTI (MK1). 1982. (55035791593).jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Golf GTI de primera generación, de 1982; no es la edición especial presentada en 2026.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 2,
+      "title": "Polaris reúne a sus aficionados en Colombia",
+      "category": "Colombia",
+      "source": "Autocosmos",
+      "url": "https://noticias.autocosmos.com.co/2026/11/25/polaris-realizara-la-cuarta-edicion-del-rzr-adventure-en-colombia",
+      "summary": "Entre el 27 y el 29 de noviembre se desarrolla la cuarta edición de RZR Adventure en Colombia, un encuentro de propietarios y aficionados a vehículos recreativos de Polaris.",
+      "spoken": "Entre el 27 y el 29 de noviembre se desarrolla la cuarta edición de RZR Adventure en Colombia, un encuentro de propietarios y aficionados a vehículos recreativos de Polaris.",
+      "originalArticleTextEs": "Entre el 27 y el 29 de noviembre se desarrolla la cuarta edición de RZR Adventure en Colombia, un encuentro de propietarios y aficionados a vehículos recreativos de Polaris.\n\nAutocosmos informó que las rutas previstas abarcan territorios de Cundinamarca y Tolima. La actividad busca reunir a integrantes de la comunidad de vehículos todoterreno y ofrecer experiencias de conducción en grupo. Para este tipo de recorridos resulta importante comprobar las condiciones de los vehículos, contar con equipo de protección y respetar las indicaciones de los organizadores y las restricciones ambientales. La convocatoria no implica que las rutas estén abiertas a cualquier vehículo o al público general sin registro.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MYCAR",
+      "originalArticleSourceUrls": [
+        "https://noticias.autocosmos.com.co/2026/11/25/polaris-realizara-la-cuarta-edicion-del-rzr-adventure-en-colombia"
+      ],
+      "photoCommonsTitle": "File:24 Polaris RZR Turbo R Sport.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Polaris RZR Turbo R Sport de archivo, no corresponde al recorrido colombiano.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 3,
+      "title": "Toyota ajusta los precios de la Tacoma 2027",
+      "category": "Mercado",
+      "source": "Motor1",
+      "url": "https://www.motor1.com/news/817025/2027-toyota-tacoma-pricing-toyotacare/",
+      "summary": "Motor1 informó que Toyota ha actualizado los precios de la Tacoma para el año modelo 2027 en Estados Unidos y ha reducido las prestaciones de su programa de mantenimiento gratuito.",
+      "spoken": "Motor1 informó que Toyota ha actualizado los precios de la Tacoma para el año modelo 2027 en Estados Unidos y ha reducido las prestaciones de su programa de mantenimiento gratuito.",
+      "originalArticleTextEs": "Motor1 informó que Toyota ha actualizado los precios de la Tacoma para el año modelo 2027 en Estados Unidos y ha reducido las prestaciones de su programa de mantenimiento gratuito.\n\nEl cambio afecta la evaluación del costo de propiedad, que incluye no solo el valor de adquisición sino también las revisiones periódicas, los consumibles y otros gastos durante la vida útil del vehículo. Las versiones y opciones disponibles pueden modificar el precio final de una unidad. Para comparar ofertas, conviene revisar qué servicios se encuentran incluidos en el precio y durante cuánto tiempo se aplican. Los cambios descritos corresponden al mercado estadounidense y no constituyen información sobre las tarifas o garantías de Toyota en Colombia.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MYCAR",
+      "originalArticleSourceUrls": [
+        "https://www.motor1.com/news/817025/2027-toyota-tacoma-pricing-toyotacare/"
+      ],
+      "photoCommonsTitle": "File:Toyota Tacoma Sonoma 2024.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Toyota Tacoma de 2024; imagen de referencia, no corresponde al año modelo 2027.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 4,
+      "title": "Hyundai presenta su concepto Mercury en China",
+      "category": "Innovación",
+      "source": "autoevolution",
+      "url": "https://www.autoevolution.com/news/mercury-is-back-though-not-from-the-ford-motor-company-not-for-america-but-for-china-by-hyundai-279088.html",
+      "summary": "Hyundai participa desde este viernes en el Salón del Automóvil de Guangzhou, China, con su gama eléctrica Ioniq y un vehículo conceptual llamado Mercury, según autoevolution.",
+      "spoken": "Hyundai participa desde este viernes en el Salón del Automóvil de Guangzhou, China, con su gama eléctrica Ioniq y un vehículo conceptual llamado Mercury, según autoevolution.",
+      "originalArticleTextEs": "Hyundai participa desde este viernes en el Salón del Automóvil de Guangzhou, China, con su gama eléctrica Ioniq y un vehículo conceptual llamado Mercury, según autoevolution.\n\nLas exhibiciones internacionales permiten a los fabricantes mostrar líneas de diseño y explorar tecnologías antes de decidir si las incorporarán a automóviles de producción en serie. Un prototipo no equivale a un lanzamiento comercial: los detalles pueden cambiar y algunas soluciones no llegan al mercado. El salón está programado hasta el 6 de diciembre y reúne novedades del sector automotor. En el caso de Mercury, es necesario esperar información adicional del fabricante para conocer especificaciones definitivas, posibles mercados y fechas de disponibilidad.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MYCAR",
+      "originalArticleSourceUrls": [
+        "https://www.autoevolution.com/news/mercury-is-back-though-not-from-the-ford-motor-company-not-for-america-but-for-china-by-hyundai-279088.html"
+      ],
+      "photoCommonsTitle": "File:2024 Hyundai Ioniq 5.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Hyundai Ioniq 5 de 2024; imagen de archivo de la familia eléctrica, no es el concepto Mercury.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    },
+    {
+      "order": 5,
+      "title": "El Audi RS 5 híbrido llega a Colombia",
+      "category": "Lanzamientos",
+      "source": "Revista Diners",
+      "url": "https://revistadiners.com.co/lo-ultimo/audi-rs-5-colombia/",
+      "summary": "Audi presentó en Colombia la nueva generación del RS 5 con un sistema híbrido enchufable que entrega 630 caballos de potencia conjunta, según la información publicada esta semana por Revista Diners.",
+      "spoken": "Audi presentó en Colombia la nueva generación del RS 5 con un sistema híbrido enchufable que entrega 630 caballos de potencia conjunta, según la información publicada esta semana por Revista Diners.",
+      "originalArticleTextEs": "Audi presentó en Colombia la nueva generación del RS 5 con un sistema híbrido enchufable que entrega 630 caballos de potencia conjunta, según la información publicada esta semana por Revista Diners.\n\nLa combinación de propulsión eléctrica y motor de combustión busca conservar el carácter deportivo del modelo mientras incorpora una batería que puede recargarse externamente. El comportamiento y el consumo real dependen de las condiciones de conducción y del nivel de carga. El lanzamiento forma parte de las novedades que dejó el reciente Salón Internacional del Automóvil de Bogotá. Los interesados deben consultar las especificaciones de cada carrocería, los términos de garantía y las condiciones de entrega con el distribuidor autorizado.",
+      "originalArticleReviewed": true,
+      "originalArticleByline": "Redacción MYCAR",
+      "originalArticleSourceUrls": [
+        "https://revistadiners.com.co/lo-ultimo/audi-rs-5-colombia/"
+      ],
+      "photoCommonsTitle": "File:Audi RS 5 Avant (B10) – f 21082026.jpg",
+      "photoMatchReviewed": true,
+      "photoCaption": "Audi RS 5 Avant B10 fotografiado en agosto de 2026; no es la unidad exhibida en Colombia.",
+      "photoRightsVerified": false,
+      "photoLicenseToVerifyAtDownload": true
+    }
+  ]
+}
