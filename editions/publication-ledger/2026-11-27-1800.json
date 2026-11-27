@@ -1,0 +1,12 @@
+{
+  "edition": "2026-11-27-1800",
+  "orbiuno": {
+    "state": "publishing",
+    "edition_key": "ORBIUNO-2026-11-27-1800",
+    "provider": "Windsor Instagram",
+    "sha256": "2fcf972bb1f888a7688b1a4b5ce7719883f9f64673ac214c09d6f5cdd1957757",
+    "web_verification_run": 46079116168,
+    "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-orbiuno/ORBIUNO_2026-11-27_1800_6_NOTICIAS.mp4",
+    "reservation": "Do not retry without reconciling Instagram"
+  }
+}
