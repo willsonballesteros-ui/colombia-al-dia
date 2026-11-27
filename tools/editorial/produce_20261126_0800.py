@@ -15,17 +15,22 @@ from PIL import Image, ImageOps, ImageDraw, ImageFont
 import requests
 
 ROOT=Path(__file__).resolve().parents[2]
-DAY="2026-11-26"
-SLOT="08:00"
+from datetime import datetime, date
+from zoneinfo import ZoneInfo
+DAY=os.environ.get("EDITION_DAY", datetime.now(ZoneInfo("America/Bogota")).date().isoformat())
+SLOT=os.environ.get("EDITION_SLOT", "08:00")
+assert date.fromisoformat(DAY).isoformat()==DAY and SLOT in ("08:00","18:00")
+STAMP=SLOT.replace(":","")
+LABEL=date.fromisoformat(DAY).strftime("%d/%m/%Y")+" · "+("08:00 a. m." if SLOT=="08:00" else "06:00 p. m.")+" · Colombia"
 BRAND=os.environ["NEWS_BRAND"]
 assert BRAND in ("orbiuno","mycar")
-WORK=ROOT/"build"/"edicion-20261126-0800"/BRAND
-OUT=ROOT/"media"/DAY/("edicion-0800-"+BRAND)
-RESEARCH=ROOT/"editions"/"research"/(BRAND+"-2026-11-26-0800-ready.json")
+WORK=ROOT/"build"/f"edicion-{DAY}-{STAMP}"/BRAND
+OUT=ROOT/"media"/DAY/(f"edicion-{STAMP}-"+BRAND)
+RESEARCH=ROOT/"editions"/"research"/(f"{BRAND}-{DAY}-{STAMP}-ready.json")
 BASE_FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans"
 LINKS={"orbiuno":"https://colombia-al-dia.pages.dev/","mycar":"https://busco-autos.pages.dev/"}
 HANDLES={"orbiuno":"@resumen.noticias","mycar":"@mycar.buscoautos"}
-PHOTOS={BRAND:[[(n.get("photoCommonsTitle") or "").removeprefix("File:"),n["photoCaption"]] for n in json.loads(RESEARCH.read_text(encoding="utf-8"))["news"]]}
+
 
 def run(*args):
     return subprocess.run([str(a) for a in args],check=True,capture_output=True,text=True)
@@ -44,10 +49,9 @@ def lines(d,content,sz,maxwidth,maxlines=3):
     if len(res)>maxlines:raise ValueError("Titular no cabe: "+content)
     return res
 
-def photo_and_credit(brand,idx,directory):
+def photo_and_credit(brand,idx,directory,story):
     from urllib.parse import urlsplit
     from scripts.orbiuno_media_assets import decode_image
-    story=json.loads(RESEARCH.read_text(encoding="utf-8"))["news"][idx]
     alt=story.get("alternatePhoto")
     if alt:
         if alt.get("license")!="Unsplash License" or urlsplit(alt["page"]).hostname!="unsplash.com" or urlsplit(alt["url"]).hostname!="images.unsplash.com":
@@ -70,7 +74,7 @@ def photo_and_credit(brand,idx,directory):
                 "context":alt["context"],"rightsVerified":True,"imageType":"archival_relevant_photo","originalUrl":alt["url"],"modified":True}
 
     from scripts.orbiuno_media_assets import commons_info,fetch,decode_image
-    title,context=PHOTOS[brand][idx]
+    title,context=(story.get("photoCommonsTitle") or "").removeprefix("File:"),story["photoCaption"]
     meta=commons_info("File:"+title)
     assert meta.get("author") and meta.get("license") and meta.get("page")
     assert ("creativecommons" not in meta["license"].lower())
@@ -119,7 +123,7 @@ def frame(brand,n,credit,logo,number,mode,path,day=DAY,slot=SLOT):
     d.rectangle((0,0,W,12),fill=accent)
     d.text((52,37),"ORBIUNO" if brand=="orbiuno" else "MYCAR",font=font(60),fill="white")
     d.rounded_rectangle((54,380,905,474),radius=20,fill=(6,20,40,242))
-    d.text((74,401),"26/11/2026 · 08:00 A. M. · CO",font=font(37),fill="#FFDD85")
+    d.text((74,401),LABEL,font=font(37),fill="#FFDD85")
     if mode=="outro":
         d.rounded_rectangle((60,610,1030,1370),radius=25,fill=(5,22,45,242))
         segments=["ESCUCHA LA LECTURA","COMPLETA DE CADA NOTICIA","EN EL ENLACE DEL PERFIL",
@@ -172,21 +176,32 @@ def encode_frame(image,audio,out):
         "-vf","format=yuv420p","-c:v","libx264","-preset","veryfast","-crf","25",
         "-r","30","-c:a","aac","-b:a","128k","-movflags","+faststart","-shortest",out)
 
-def compile_brand(brand,items):
+def compile_brand(brand,items,reserves=()):
     n_expected=6 if brand=="orbiuno" else 5
     assert len(items)==n_expected
     folder=WORK/brand
     folder.mkdir(parents=True,exist_ok=True)
-    creds=[]; logos=[]
-    for i,n in enumerate(items):
-        if n.get("originalArticleReviewed") is not True or len(n.get("originalArticleTextEs",""))<640:
-            raise ValueError("Artículo no aprobado "+n["title"])
-        if not n["url"].startswith("https://") or n.get("originalArticleSourceUrls")!=[n["url"]]:
-            raise ValueError("Fuente original no aprobada")
-        creds.append(photo_and_credit(brand,i,folder))
-        logos.append(source_logo(n["url"],folder,i))
-        if not logos[-1]: raise RuntimeError("Logo de fuente no disponible: "+n["source"])
-        print("MEDIA_CHECK",brand,i+1,creds[-1]["license"],creds[-1]["author"],flush=True)
+    creds=[]; logos=[]; selected=[]; seen=set()
+    for n in list(items)+list(reserves):
+        if len(selected)==n_expected: break
+        i=len(selected)
+        if n.get("url") in seen: continue
+        try:
+            if n.get("originalArticleReviewed") is not True or len(n.get("originalArticleTextEs",""))<640:
+                raise ValueError("Artículo no aprobado")
+            if not n["url"].startswith("https://") or n.get("originalArticleSourceUrls")!=[n["url"]]:
+                raise ValueError("Fuente original no aprobada")
+            credit=photo_and_credit(brand,i,folder,n)
+            logo=source_logo(n["url"],folder,i)
+            if not logo: raise RuntimeError("Logo de fuente no disponible")
+        except (ValueError, OSError, RuntimeError, KeyError, AssertionError, requests.RequestException) as exc:
+            if getattr(getattr(exc,"response",None),"status_code",None)==429 or "429" in str(exc): raise
+            print("CANDIDATE_REJECTED",n.get("url"),type(exc).__name__,flush=True)
+            continue
+        n=dict(n,order=i+1);selected.append(n);seen.add(n["url"]);creds.append(credit);logos.append(logo)
+        print("MEDIA_CHECK",brand,i+1,credit["license"],credit["author"],flush=True)
+    if len(selected)!=n_expected: raise RuntimeError("Reservas verificadas insuficientes")
+    items=selected
     # Sin saludo de ORBIUNO, sin portada resumen; primera lámina es noticia 1.
     outro="Escucha la lectura completa de cada noticia en el enlace de nuestro perfil."
     ids=[f"n{i:02d}" for i in range(1,n_expected+1)]+["despedida"]
@@ -212,7 +227,7 @@ def compile_brand(brand,items):
         segments.append(part)
     playlist=folder/"parts.txt"
     playlist.write_text("".join("file '"+str(x.absolute())+"'\n" for x in segments),encoding="utf-8")
-    final=OUT/f"{brand.upper()}_2026-11-26_0800_{n_expected}_NOTICIAS.mp4"
+    final=OUT/f"{brand.upper()}_{DAY}_{STAMP}_{n_expected}_NOTICIAS.mp4"
     OUT.mkdir(parents=True,exist_ok=True)
     run("ffmpeg","-v","error","-y","-f","concat","-safe","0","-i",playlist,
         "-c","copy","-movflags","+faststart",final)
@@ -221,16 +236,16 @@ def compile_brand(brand,items):
     assert 15<sec<180
     sha=hashlib.sha256(final.read_bytes()).hexdigest()
     url=LINKS[brand]
-    caption=[f"{'ORBIUNO' if brand=='orbiuno' else 'MYCAR'} | Jueves 26/11/2026 · 08:00 a. m. · Colombia",
+    caption=[f"{'ORBIUNO' if brand=='orbiuno' else 'MYCAR'} | {LABEL}",
         f"{n_expected} noticias verificadas con enlaces a las fuentes originales."]
     for i,n in enumerate(items,1):
         caption.append(f"{i}. {n['title']}\n{n['url']}")
     caption.extend(["",f"Escucha la lectura completa en el enlace del perfil {HANDLES[brand]}:",url,"",
      "Fotografías de archivo ilustrativas, con autor y licencias identificados.",
      "#ORBIUNO #NoticiasColombia" if brand=="orbiuno" else "#MyCar #AutosColombia",
-     f"[{brand.upper()}-2026-11-26-0800]"])
+     f"[{brand.upper()}-{DAY}-{STAMP}]"])
     cap="\n\n".join(caption)
-    cap += "\n\nCréditos fotográficos y licencias, con recorte de imágenes: https://colombia-al-dia.pages.dev/"+brand+"-"+DAY+"-0800.html"
+    cap += "\n\nCréditos fotográficos y licencias, con recorte de imágenes: https://colombia-al-dia.pages.dev/"+brand+"-"+DAY+"-"+STAMP+".html"
     assert len(cap)<=2200
     (OUT/f"{brand}_caption.txt").write_text(cap,encoding="utf-8")
     (OUT/f"{brand}_media_credits.json").write_text(json.dumps(creds,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -257,21 +272,21 @@ def compile_brand(brand,items):
     articles=[]
     for i,(n,c) in enumerate(zip(items,creds),1):
         paragraphs="".join("<p>"+safe(p)+"</p>" for p in n["originalArticleTextEs"].split("\n\n"))
-        im=f"/media/2026-11-26/edicion-0800-{brand}/foto-"+brand+f"-{i:02d}.jpg"
-        mp3=f"/media/2026-11-26/edicion-0800-{brand}/"+brand+f"-noticia-{i:02d}.mp3"
+        im=f"/media/{DAY}/edicion-{STAMP}-{brand}/foto-"+brand+f"-{i:02d}.jpg"
+        mp3=f"/media/{DAY}/edicion-{STAMP}-{brand}/"+brand+f"-noticia-{i:02d}.mp3"
         articles.append(f'<article><img src="{im}" alt="{safe(c["context"])}" loading="lazy"><h2>{i}. {safe(n["title"])}</h2>'
              f'<p><strong>{safe(n["source"])}</strong></p><audio controls src="{mp3}"></audio>'
              +paragraphs+f'<p><a href="{safe(n["url"])}">Fuente original</a></p>'
              f'<p class="credit">Foto de archivo: {safe(c["author"])} · {safe(c["license"])} · <a href="{safe(c["source"])}">Ficha y autoría</a>. {safe(c["context"])}</p></article>')
     page=f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{brand.upper()} · 26 noviembre 2026 · 08:00 A. M.</title>
+<title>{brand.upper()} · {LABEL}</title>
 <style>body{{background:#0b2136;color:#fff;font:16px/1.55 system-ui;max-width:800px;margin:auto;padding:16px}}
 a{{color:#6ce2df}}article{{background:#15304a;border-radius:16px;margin:20px 0;padding:18px}}
 article img{{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px}}audio{{width:100%}}
 .credit{{font-size:12px;color:#c8d3e2}}video{{width:100%;max-height:580px}}
-</style></head><body><h1>{brand.upper()} Noticias · Jueves 26/11/2026 · 08:00 a. m. Colombia</h1>
+</style></head><body><h1>{brand.upper()} Noticias · {LABEL}</h1>
 <p>{n_expected} noticias verificadas, con fotos reales de archivo, créditos, lectura de cada nota y enlaces originales.</p>
-<video controls playsinline src="/media/2026-11-26/edicion-0800-{brand}/{final.name}"></video>
+<video controls playsinline src="/media/{DAY}/edicion-{STAMP}-{brand}/{final.name}"></video>
 {''.join(articles)}<p>Más noticias: <a href="{url}">{url}</a></p></body></html>'''
     (OUT/f"{brand}_edition.html").write_text(page,encoding="utf-8")
     manifest={"brand":brand,"edition":DAY,"slot":SLOT,"newsCount":n_expected,
@@ -281,6 +296,7 @@ article img{{width:100%;height:auto;max-height:460px;object-fit:cover;border-rad
        "logosCount":sum(bool(x) for x in logos),"sourceLabelsCount":n_expected,"audioSegments":n_expected+1,"openingSpeech":False,"openingCover":False,"fullNewsAudioFiles":n_expected,
        "published":False,"qa":"media_licenses_and_render_verified"}
     (OUT/f"{brand}_manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (OUT/"selected_news.json").write_text(json.dumps({"editionDate":DAY,"editionSlot":SLOT,"brand":brand.upper(),"news":items},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("READY_TO_SYNC_WEB",brand,final.name,sec,sha,flush=True)
     return manifest
 
@@ -292,7 +308,7 @@ def main():
     assert data["editionDate"]==DAY and data["editionSlot"]==SLOT
     assert data["brand"]==BRAND.upper() and data["editorialApproved"] is True
     assert not (OUT/"qa.json").exists(), "No duplicar la edición"
-    m=compile_brand(BRAND,data["news"])
+    m=compile_brand(BRAND,data["news"],data.get("reserveNews",[]))
     (OUT/"qa.json").write_text(json.dumps({"readyForWebSync":True,"brands":{BRAND:{"video":m["video"],"sha256":m["sha256"],"duration":m["duration"]}}},indent=2)+"\n",encoding="utf-8")
 
 if __name__=="__main__":
