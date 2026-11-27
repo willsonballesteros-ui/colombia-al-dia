@@ -1,0 +1,102 @@
+{
+  "brand": "orbiuno",
+  "edition": "2026-11-26",
+  "slot": "18:00",
+  "newsCount": 6,
+  "video": "ORBIUNO_2026-11-26_1800_6_NOTICIAS.mp4",
+  "duration": 44.099229,
+  "sha256": "9b5a0df79042aaf09ca28f22ec411f0068089bd3f16fbfbfb471ada81e74745c",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "BMX racing action photo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:BMX_racing_action_photo.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Fabrizio Tarizzo",
+      "context": "Competencia de BMX en Francia, foto ilustrativa; no muestra al ganador.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMX_racing_action_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "Sunly Risti asuv päikesepark.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunly_Risti_asuv_p%C3%A4ikesepark.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Liisa.Rohila",
+      "context": "Parque solar de Risti, Estonia; no es el proyecto de Lihula.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Sunly_Risti_asuv_p%C3%A4ikesepark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Main Hall of Shuri Castle.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Main_Hall_of_Shuri_Castle.JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "そらみみ",
+      "context": "Salón principal antes del incendio de 2019; fotografía histórica.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Main_Hall_of_Shuri_Castle.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Movie Theater.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Movie_Theater.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "LlDayo",
+      "context": "Sala de cine histórica; imagen de referencia, no corresponde a un estreno.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Movie_Theater.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "Diomedea exulans -Southern Ocean, Drakes Passage -flying-8.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_-Southern_Ocean,_Drakes_Passage_-flying-8.jpg",
+      "license": "CC BY 2.0",
+      "author": "Lieutenant Elizabeth Crapo, NOAA Corps: NOAA Photo Library",
+      "context": "Albatros errante de archivo, ejemplo de ave marina; no forma parte de las tres especies del estudio.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Diomedea_exulans_-Southern_Ocean%2C_Drakes_Passage_-flying-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-06.jpg",
+      "title": "Manizales-panorama.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Manizales-panorama.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Julian Choquette",
+      "context": "Vista panorámica de Manizales; fotografía de referencia de la ciudad.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Manizales-panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://centrodeinformacion.manizales.gov.co/deportista-excelencia-alcaldia-de-manizales-conquisto-oro-en-la-vi-valida-de-la-copa-de-occidente-de-bmx/",
+    "https://www.pv-magazine.com/2026/11/26/estonian-hybrid-park-energized-with-55-mw-250-mwh-battery/",
+    "https://japan-forward.com/okinawa-shuri-castle-main-hall-reopens-after-7-years/",
+    "https://apnews.com/article/f893c7191fd27cba1f8d953a20910231",
+    "https://www.washingtonpost.com/climate-environment/2026/11/26/eavesdropping-seabirds-record-audio-hidden-fishing-boats-that-threaten-them/",
+    "https://centrodeinformacion.manizales.gov.co/anos-dorados-cultura-memoria-y-encuentros-para-compartir-en-comunidad-en-el-barrio-el-carmen/"
+  ],
+  "imagesCount": 6,
+  "logosCount": 6,
+  "sourceLabelsCount": 6,
+  "audioSegments": 7,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 6,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
