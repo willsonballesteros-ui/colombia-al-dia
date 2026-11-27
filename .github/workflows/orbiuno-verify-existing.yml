@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths: ['.github/workflows/orbiuno-verify-existing.yml']
   workflow_dispatch:
+  workflow_run:
+    workflows: ['Editorial | Producción diaria por marca']
+    types: [completed]
 permissions:
   contents: read
 concurrency:
@@ -11,6 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verificar:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 8
     steps:
@@ -32,6 +36,7 @@ jobs:
           if (( 10#$hour >= 17 )); then slot=1800
           elif (( 10#$hour >= 8 )); then slot=0800
           else exit 1; fi
+          test -s "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json"
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
       - uses: actions/upload-artifact@v4
         continue-on-error: true
