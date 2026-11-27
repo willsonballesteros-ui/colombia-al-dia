@@ -5,6 +5,82 @@
   "updated_date": "2026-11-27",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-27-1800",
+      "date": "2026-11-27",
+      "slot": "18:00",
+      "title": "Volkswagen recupera el Golf GTI manual",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/MYCAR_2026-11-27_1800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-27-1800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Volkswagen recupera el Golf GTI manual",
+          "summary": "Volkswagen presentó en el Salón del Automóvil de Essen una edición especial denominada Golf GTI 1976, que celebra el origen del modelo e incorpora nuevamente una caja de cambios manual.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/817023/vw-golf-gti-1976-manual-gearbox/",
+          "image_file_title": "Volkswagen Golf GTI (MK1). 1982. (55035791593).jpg",
+          "photo_credit": "Txemari. (Navarra). from Navarra, España",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_(MK1)._1982._(55035791593).jpg",
+          "photo_context": "Golf GTI de primera generación, de 1982; no es la edición especial presentada en 2026.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "Polaris reúne a sus aficionados en Colombia",
+          "summary": "Entre el 27 y el 29 de noviembre se desarrolla la cuarta edición de RZR Adventure en Colombia, un encuentro de propietarios y aficionados a vehículos recreativos de Polaris.",
+          "source": "Autocosmos",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/25/polaris-realizara-la-cuarta-edicion-del-rzr-adventure-en-colombia",
+          "image_file_title": "24 Polaris RZR Turbo R Sport.jpg",
+          "photo_credit": "HJUdall",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:24_Polaris_RZR_Turbo_R_Sport.jpg",
+          "photo_context": "Polaris RZR Turbo R Sport de archivo, no corresponde al recorrido colombiano.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Toyota ajusta los precios de la Tacoma 2027",
+          "summary": "Motor1 informó que Toyota ha actualizado los precios de la Tacoma para el año modelo 2027 en Estados Unidos y ha reducido las prestaciones de su programa de mantenimiento gratuito.",
+          "source": "Motor1",
+          "source_url": "https://www.motor1.com/news/817025/2027-toyota-tacoma-pricing-toyotacare/",
+          "image_file_title": "Toyota Tacoma Sonoma 2024.jpg",
+          "photo_credit": "TaurusEmerald",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Toyota_Tacoma_Sonoma_2024.jpg",
+          "photo_context": "Toyota Tacoma de 2024; imagen de referencia, no corresponde al año modelo 2027.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Hyundai presenta su concepto Mercury en China",
+          "summary": "Hyundai participa desde este viernes en el Salón del Automóvil de Guangzhou, China, con su gama eléctrica Ioniq y un vehículo conceptual llamado Mercury, según autoevolution.",
+          "source": "autoevolution",
+          "source_url": "https://www.autoevolution.com/news/mercury-is-back-though-not-from-the-ford-motor-company-not-for-america-but-for-china-by-hyundai-279088.html",
+          "image_file_title": "2024 Hyundai Ioniq 5.jpg",
+          "photo_credit": "NissanSilvia375",
+          "photo_license": "CC BY 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Hyundai_Ioniq_5.jpg",
+          "photo_context": "Hyundai Ioniq 5 de 2024; imagen de archivo de la familia eléctrica, no es el concepto Mercury.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "El Audi RS 5 híbrido llega a Colombia",
+          "summary": "Audi presentó en Colombia la nueva generación del RS 5 con un sistema híbrido enchufable que entrega 630 caballos de potencia conjunta, según la información publicada esta semana por Revista Diners.",
+          "source": "Revista Diners",
+          "source_url": "https://revistadiners.com.co/lo-ultimo/audi-rs-5-colombia/",
+          "image_file_title": "Audi RS5 front.jpg",
+          "photo_credit": "Molch-Entertainment at de.wikipedia",
+          "photo_license": "CC BY-SA 3.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Audi_RS5_front.jpg",
+          "photo_context": "Audi RS5 de primera generación, fotografiado en 2010; no corresponde al nuevo híbrido presentado en Colombia.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-27-0800",
       "date": "2026-11-27",
       "slot": "08:00",
