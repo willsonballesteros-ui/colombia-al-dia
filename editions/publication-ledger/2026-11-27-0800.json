@@ -1,0 +1,24 @@
+{
+  "edition": "2026-11-27-0800",
+  "mycar": {
+    "edition": "MYCAR-2026-11-27-0800",
+    "container": "17953269027123671",
+    "state": "published",
+    "sha256": "4f919df4e6a4d70ef4296cecb63a45d65232b00641ee5ca19ac7a8cb39fb8b73",
+    "id": "18185787793425534",
+    "url": "https://www.instagram.com/reel/DgP-1V8Tz07/",
+    "permalink": "https://www.instagram.com/reel/DgP-1V8Tz07/",
+    "confirmed_at": "2026-11-27T15:17:56.144533+00:00",
+    "confirmed_by": "Official Meta Graph API"
+  },
+  "orbiuno": {
+    "state": "publishing",
+    "edition_key": "ORBIUNO-2026-11-27-0800",
+    "provider": "Windsor Instagram",
+    "sha256": "f9f49d50ae431820d6d6dc9b770b6a7df93c2287afba5fcb0ed234e0fcfdf766",
+    "web_verification_run": 46025338729,
+    "direct_publisher_run": 46031205995,
+    "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-0800-orbiuno/ORBIUNO_2026-11-27_0800_6_NOTICIAS.mp4",
+    "reservation": "No duplicate send; reconcile before retry"
+  }
+}
