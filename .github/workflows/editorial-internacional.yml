@@ -8,9 +8,9 @@ on:
       - '.github/workflows/editorial-internacional.yml'
   workflow_dispatch:
   schedule:
-    - cron: '30 12,22 * * *'
+    - cron: '0 12,22 * * *'
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: global-editorial-discovery
   cancel-in-progress: false
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -31,15 +31,26 @@ jobs:
           python tools/editorial/global_discovery.py --test
       - name: Consultar catálogo global y sector automotor
         run: python tools/editorial/global_discovery.py
-      - name: Entregar candidatos ordenados y reservas para validación editorial
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: global-candidates
-          path: dist/global-candidates.json
-          if-no-files-found: warn
-          retention-days: 7
-
-# Edición vespertina 25NOV: consulta completa solicitada.
-
-# Consulta matinal 26NOV 2026, edición actual.
+      - name: Conservar catálogo consultado y candidatos de la edición
+        shell: bash
+        run: |
+          set -euo pipefail
+          day=$(TZ=America/Bogota date +%F)
+          hour=$(TZ=America/Bogota date +%H)
+          if (( 10#$hour >= 17 )); then slot=1800; else slot=0800; fi
+          target="editions/research/$day-$slot-candidates.json"
+          test -s dist/global-candidates.json
+          python -m json.tool dist/global-candidates.json >/dev/null
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            if test -s "$target"; then exit 0; fi
+            cp dist/global-candidates.json "$target"
+            git add "$target"
+            git commit -m "Editorial: candidatos $day $slot"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep "$attempt"
+          done
+          exit 1
