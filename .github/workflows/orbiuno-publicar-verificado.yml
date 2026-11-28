@@ -11,7 +11,7 @@ on:
         options: ['0800', '1800']
         required: true
   schedule:
-    - cron: '*/15 13-23,0-4 * * *'
+    - cron: '0,15,30,45 13,14,23,0 * * *'
 permissions:
   contents: write
 concurrency:
@@ -41,15 +41,15 @@ jobs:
           day=$(TZ=America/Bogota date +%F)
           hour=$(TZ=America/Bogota date +%H)
           slot="${REQUESTED_SLOT:-0800}"
-          if [ -z "${REQUESTED_SLOT:-}" ] && [ "$((10#$hour))" -ge 17 ]; then slot=1800; fi
-          if [ "$((10#$hour))" -lt 8 ]; then exit 0; fi
-          if [ "$slot" = 1800 ] && [ "$((10#$hour))" -lt 17 ]; then exit 0; fi
-          if [ ! -f "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json" ]; then echo 'NO_APPROVED_MANIFEST'; exit 0; fi
+          case "$hour" in
+            08|09) current=0800 ;;
+            18|19) current=1800 ;;
+            *) echo 'Fuera de la ventana de publicación'; exit 1 ;;
+          esac
+          slot="${REQUESTED_SLOT:-$current}"
+          test "$slot" = "$current"
+          test -s "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json"
           ledger="editions/publication-ledger/$day-$slot.json"
-          if [ -f "$ledger" ] && python -c 'import json,sys; x=json.load(open(sys.argv[1])).get("orbiuno",{}); sys.exit(0 if x.get("state") in ("published","publishing") else 1)' "$ledger"; then
-            echo 'ORBIUNO_ALREADY_RECORDED_OR_RESERVED'
-            exit 0
-          fi
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
           folder="media/$day/edicion-$slot-orbiuno"
           video="$(python -c 'import json; print(json.load(open("/tmp/orbiuno-preflight.json"))["video_url"])')"
@@ -101,9 +101,3 @@ jobs:
             sleep "$attempt"
           done
           exit 1
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: orbiuno-meta-confirmation
-          path: /tmp/orbiuno-meta.json
-          if-no-files-found: ignore
