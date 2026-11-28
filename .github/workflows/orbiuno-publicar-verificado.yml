@@ -51,6 +51,18 @@ jobs:
           test -s "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json"
           ledger="editions/publication-ledger/$day-$slot.json"
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
+          if [ -s "$ledger" ] && python - "$ledger" <<'PY'
+          import json, re, sys
+          from pathlib import Path
+          receipt = json.loads(Path(sys.argv[1]).read_text()).get('orbiuno', {})
+          checked = json.loads(Path('/tmp/orbiuno-preflight.json').read_text())
+          valid = (receipt.get('state') == 'published'
+                   and receipt.get('sha256') == checked['sha256']
+                   and str(receipt.get('id', '')).isdigit()
+                   and re.fullmatch(r'https://www\.instagram\.com/(reel|p)/[\w-]+/', receipt.get('permalink', '')))
+          sys.exit(0 if valid else 1)
+          PY
+          then echo 'Publicación ya confirmada con ID, enlace y SHA de la edición'; exit 0; fi
           folder="media/$day/edicion-$slot-orbiuno"
           video="$(python -c 'import json; print(json.load(open("/tmp/orbiuno-preflight.json"))["video_url"])')"
           caption="$(grep -vFx "[ORBIUNO-$day-$slot]" "$folder/orbiuno_caption.txt")"
