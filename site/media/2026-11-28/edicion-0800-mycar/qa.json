@@ -1,0 +1,10 @@
+{
+  "readyForWebSync": true,
+  "brands": {
+    "mycar": {
+      "video": "MYCAR_2026-11-28_0800_5_NOTICIAS.mp4",
+      "sha256": "ac73e070c413741cf7afd0db0b4ddae446590840a3b0e75df99e82b2ce27092d",
+      "duration": 60.119206
+    }
+  }
+}

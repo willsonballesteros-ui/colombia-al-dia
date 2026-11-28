@@ -5,6 +5,82 @@
   "updated_date": "2026-11-28",
   "editions": [
     {
+      "edition_id": "MYCAR-2026-11-28-0800",
+      "date": "2026-11-28",
+      "slot": "08:00",
+      "title": "Nissan presenta su nuevo SUV híbrido NX7",
+      "video_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/MYCAR_2026-11-28_0800_5_NOTICIAS.mp4",
+      "edition_url": "https://colombia-al-dia.pages.dev/mycar-2026-11-28-0800.html",
+      "instagram_url": null,
+      "items": [
+        {
+          "title": "Nissan presenta su nuevo SUV híbrido NX7",
+          "summary": "Dongfeng Nissan anunció el 27 de noviembre el lanzamiento en China del NX7, un nuevo utilitario deportivo híbrido enchufable que amplía la familia de vehículos electrificados de la compañía.",
+          "source": "Nissan",
+          "source_url": "https://global.nissannews.com/en/releases/dongfeng-nissan-launches-the-all-new-nx7-in-china",
+          "image_file_title": "Nissan X-trail 2.5 Sense 2023.jpg",
+          "photo_credit": "RL GNZLZ",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Nissan_X-trail_2.5_Sense_2023.jpg",
+          "photo_context": "Nissan X-Trail de 2023, archivo de otro SUV de la marca; no muestra el NX7.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/mycar-noticia-01.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/foto-mycar-01.jpg"
+        },
+        {
+          "title": "Mazda aumenta sus ventas globales en octubre",
+          "summary": "Mazda informó el viernes que vendió 96.070 vehículos en octubre de 2026, un aumento del 2,8 por ciento frente al mismo mes del año anterior. Su CX-5 registró 28.419 ventas globales.",
+          "source": "Mazda",
+          "source_url": "https://newsroom.mazda.com/en/publicity/release/2026/202611/261127a.html",
+          "image_file_title": "2024 Mazda CX-5 2.5L AWD Sport.jpg",
+          "photo_credit": "Ethan Llamas",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Mazda_CX-5_2.5L_AWD_Sport.jpg",
+          "photo_context": "Mazda CX-5 de archivo; no representa todos los modelos incluidos en el reporte.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/mycar-noticia-02.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/foto-mycar-02.jpg"
+        },
+        {
+          "title": "Suzuki consigue un récord de producción mensual",
+          "summary": "Suzuki fabricó 361.916 automóviles en octubre, un incremento del 18,7 por ciento frente a octubre de 2025 y su mayor producción mensual, según el informe divulgado el viernes.",
+          "source": "Suzuki",
+          "source_url": "https://www.globalsuzuki.com/globalnews/2026/1127.html",
+          "image_file_title": "2024 Suzuki Swift.jpg",
+          "photo_credit": "Calreyn88",
+          "photo_license": "CC BY-SA 4.0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:2024_Suzuki_Swift.jpg",
+          "photo_context": "Suzuki Swift de archivo; no muestra la producción del mes informado.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/mycar-noticia-03.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/foto-mycar-03.jpg"
+        },
+        {
+          "title": "Škoda abre una nueva competición de rally virtual",
+          "summary": "Škoda Motorsport anunció su séptimo eRally Challenge, que comenzará el 29 de noviembre en la plataforma Assetto Corsa Rally, con el Fabia RS Rally2 como vehículo de competición virtual.",
+          "source": "Škoda Storyboard",
+          "source_url": "https://www.skoda-storyboard.com/en/press-releases/skoda-motorsport-launches-seventh-edition-of-erally-challenge-virtual-rally-competition/",
+          "image_file_title": "Skoda Fabia RS Rally2.jpg",
+          "photo_credit": "Vinkelok",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:Skoda_Fabia_RS_Rally2.jpg",
+          "photo_context": "Škoda Fabia RS Rally2 en una prueba real; no corresponde al videojuego.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/mycar-noticia-04.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/foto-mycar-04.jpg"
+        },
+        {
+          "title": "El deportivo eléctrico SC01 se exhibió en Bogotá",
+          "summary": "Entre las novedades del reciente Salón del Automóvil de Bogotá estuvo el JMEV SC01, un deportivo eléctrico de dos plazas con 435 caballos de potencia, según informó Autocosmos.",
+          "source": "Autocosmos",
+          "source_url": "https://noticias.autocosmos.com.co/2026/11/20/sia-2026-llega-a-colombia-el-jmev-sc01-un-cupe-deportivo-100--electrico-de-435-hp",
+          "image_file_title": "JMEV 01 005.jpg",
+          "photo_credit": "JustAnotherCarDesigner",
+          "photo_license": "CC0",
+          "photo_page": "https://commons.wikimedia.org/wiki/File:JMEV_01_005.jpg",
+          "photo_context": "JMEV SC-01 fotografiado en una presentación anterior; no corresponde al Salón de Bogotá.",
+          "audio_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/mycar-noticia-05.mp3",
+          "image_url": "https://colombia-al-dia.pages.dev/media/2026-11-28/edicion-0800-mycar/foto-mycar-05.jpg"
+        }
+      ]
+    },
+    {
       "edition_id": "MYCAR-2026-11-27-1800",
       "date": "2026-11-27",
       "slot": "18:00",

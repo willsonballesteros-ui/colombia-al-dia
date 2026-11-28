@@ -1,0 +1,89 @@
+{
+  "brand": "mycar",
+  "edition": "2026-11-28",
+  "slot": "08:00",
+  "newsCount": 5,
+  "video": "MYCAR_2026-11-28_0800_5_NOTICIAS.mp4",
+  "duration": 60.119206,
+  "sha256": "ac73e070c413741cf7afd0db0b4ddae446590840a3b0e75df99e82b2ce27092d",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Nissan X-trail 2.5 Sense 2023.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Nissan_X-trail_2.5_Sense_2023.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "RL GNZLZ",
+      "context": "Nissan X-Trail de 2023, archivo de otro SUV de la marca; no muestra el NX7.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nissan_X-trail_2.5_Sense_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "2024 Mazda CX-5 2.5L AWD Sport.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2024_Mazda_CX-5_2.5L_AWD_Sport.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Ethan Llamas",
+      "context": "Mazda CX-5 de archivo; no representa todos los modelos incluidos en el reporte.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/2024_Mazda_CX-5_2.5L_AWD_Sport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "2024 Suzuki Swift.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2024_Suzuki_Swift.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "context": "Suzuki Swift de archivo; no muestra la producción del mes informado.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2024_Suzuki_Swift.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Skoda Fabia RS Rally2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Skoda_Fabia_RS_Rally2.jpg",
+      "license": "CC0",
+      "author": "Vinkelok",
+      "context": "Škoda Fabia RS Rally2 en una prueba real; no corresponde al videojuego.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Skoda_Fabia_RS_Rally2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "JMEV 01 005.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:JMEV_01_005.jpg",
+      "license": "CC0",
+      "author": "JustAnotherCarDesigner",
+      "context": "JMEV SC-01 fotografiado en una presentación anterior; no corresponde al Salón de Bogotá.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/JMEV_01_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://global.nissannews.com/en/releases/dongfeng-nissan-launches-the-all-new-nx7-in-china",
+    "https://newsroom.mazda.com/en/publicity/release/2026/202611/261127a.html",
+    "https://www.globalsuzuki.com/globalnews/2026/1127.html",
+    "https://www.skoda-storyboard.com/en/press-releases/skoda-motorsport-launches-seventh-edition-of-erally-challenge-virtual-rally-competition/",
+    "https://noticias.autocosmos.com.co/2026/11/20/sia-2026-llega-a-colombia-el-jmev-sc01-un-cupe-deportivo-100--electrico-de-435-hp"
+  ],
+  "imagesCount": 5,
+  "logosCount": 5,
+  "sourceLabelsCount": 5,
+  "audioSegments": 6,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 5,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
