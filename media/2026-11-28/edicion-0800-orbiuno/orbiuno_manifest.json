@@ -1,0 +1,102 @@
+{
+  "brand": "orbiuno",
+  "edition": "2026-11-28",
+  "slot": "08:00",
+  "newsCount": 6,
+  "video": "ORBIUNO_2026-11-28_0800_6_NOTICIAS.mp4",
+  "duration": 62.847234,
+  "sha256": "570bb343e16cd34dee3bc27df1e5cb9738fc353bd327022abd934b42b7138170",
+  "photoCredits": [
+    {
+      "file": "foto-01.jpg",
+      "title": "Puente de Boyacá.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Puente_de_Boyac%C3%A1.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Angycarol",
+      "context": "Puente de Boyacá, fotografía histórica; no muestra el alumbrado de 2026.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Puente_de_Boyac%C3%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-02.jpg",
+      "title": "12 Etapa-Vuelta a Colombia 2018-Ciclistas en el Peloton 14.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:12_Etapa-Vuelta_a_Colombia_2018-Ciclistas_en_el_Peloton_14.jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "nuestrociclismo.com",
+      "context": "Pelotón de la Vuelta a Colombia de 2018. Fotografía de archivo de una competencia distinta.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/12_Etapa-Vuelta_a_Colombia_2018-Ciclistas_en_el_Peloton_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-03.jpg",
+      "title": "Kunstpalast.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kunstpalast.jpg",
+      "license": "CC0",
+      "author": "Nennokkk",
+      "context": "Fachada del Kunstpalast de Düsseldorf; no muestra la actividad de ejercicio.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Kunstpalast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-04.jpg",
+      "title": "Polistes fuscatus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Polistes_fuscatus.jpg",
+      "license": "CC BY-SA 2.5",
+      "author": "Bruce J. Marlin",
+      "context": "Avispa Polistes fuscatus de archivo; no corresponde a un ejemplar del experimento.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Polistes_fuscatus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-05.jpg",
+      "title": "Peter Gabriel (2023).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Peter_Gabriel_(2023).jpg",
+      "license": "CC BY 2.0",
+      "author": "Raph_PH",
+      "context": "Retrato de Peter Gabriel en 2023; no corresponde al nuevo lanzamiento.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Peter_Gabriel_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    },
+    {
+      "file": "foto-06.jpg",
+      "title": "Food in a vending machine.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Food_in_a_vending_machine.jpg",
+      "license": "CC BY 2.0",
+      "author": "artethgray",
+      "context": "Máquina expendedora de alimentos de archivo; no es la instalación de Tulsa.",
+      "rightsVerified": true,
+      "imageType": "archival_relevant_photo",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Food_in_a_vending_machine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "modified": true
+    }
+  ],
+  "voice": "es-CO-SalomeNeural",
+  "voiceSpeed": 1.25,
+  "sourceUrls": [
+    "https://956fm.boyaca.gov.co/con-mas-de-12-millones-de-luces-el-puente-de-boyaca-realiza-su-emblematico-encendido-navideno-y-le-da-la-bienvenida-a-turistas/",
+    "https://www.boyacaradio.com/noticia.php?id=65363",
+    "https://ktvz.com/entertainment/cnn-style/2026/11/27/this-museum-wants-you-to-get-sweaty-while-enjoying-its-art/",
+    "https://news.cornell.edu/stories/2026/11/paper-wasps-recognize-faces-ways-strikingly-similar-humans",
+    "https://www.universalmusic.ca/2026/11/20/peter-gabriel-announces-full-release-details-for-oi-the-follow-up-to-his-critically-acclaimed-2023-album-i-o/",
+    "https://www.goodnewsnetwork.org/vending-machine-lets-anyone-in-the-country-volunteer-to-distribute-aid-to-homeless/"
+  ],
+  "imagesCount": 6,
+  "logosCount": 6,
+  "sourceLabelsCount": 6,
+  "audioSegments": 7,
+  "openingSpeech": false,
+  "openingCover": false,
+  "fullNewsAudioFiles": 6,
+  "published": false,
+  "qa": "media_licenses_and_render_verified"
+}
