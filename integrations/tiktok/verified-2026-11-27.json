@@ -1,0 +1,31 @@
+{
+  "brand": "ORBIUNO",
+  "editionId": "ORBIUNO-2026-11-27-1800",
+  "localTime": "2026-11-27T18:00:00-05:00",
+  "videoUrl": "https://colombia-al-dia.pages.dev/media/2026-11-27/edicion-1800-orbiuno/ORBIUNO_2026-11-27_1800_6_NOTICIAS.mp4",
+  "size": 3772525,
+  "duration": 69.395215,
+  "sha256": "2fcf972bb1f888a7688b1a4b5ce7719883f9f64673ac214c09d6f5cdd1957757",
+  "rights": {
+    "tiktok": "historical_delivery_verified_rights_audit_pending"
+  },
+  "sourcesAndCreditsReference": "https://www.instagram.com/reel/DgQzBEBBosn/",
+  "sourceCaption": "ORBIUNO | 27/11/2026 · 06:00 p. m. · Colombia\n\n6 noticias verificadas con enlaces a las fuentes originales.\n\n1. Medellín celebra la Navidad con nueve culturas\nhttps://www.epm.com.co/institucional/alumbrados-epm-2026/\n\n2. Bogotá se prepara para Salsa al Parque\nhttps://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/2026-11/planes-y-eventos-imperdibles-en-bogota-noviembre-27-diciembre-3-2026\n\n3. Bogotá une deporte y videojuegos este fin de semana\nhttps://www.idrd.gov.co/noticias/bogota-recibe-el-phygital-rivals-colombia-2026-2027-el-torneo-que-une-deporte-y\n\n4. Descubren un cuásar de la infancia del universo\nhttps://www.mpia.de/news/science/2026-10-dun-aonghasa\n\n5. Londres supera su meta de viajes en bicicleta\nhttps://tfl.gov.uk/info-for/media/press-releases/2026/november/london-breaks-another-cycling-record-as-it-reaches-2030-daily-cycle-journey-target-an-unprecedented-four-years-ahead-of-schedule\n\n6. Jonathan, la tortuga que inspira estudios de longevidad\nhttps://www.cam.ac.uk/research/news/genetic-analysis-of-the-worlds-oldest-land-animal-reveals-secret-of-living-194-years\n\nEscucha la lectura completa en el enlace del perfil @resumen.noticias:\n\nhttps://colombia-al-dia.pages.dev/\n\nFotografías de archivo ilustrativas, con autor y licencias identificados.\n\n#ORBIUNO #NoticiasColombia\n\n[ORBIUNO-2026-11-27-1800]\n\nCréditos fotográficos y licencias, con recorte de imágenes: https://colombia-al-dia.pages.dev/orbiuno-2026-11-27-1800.html",
+  "platforms": {
+    "instagram": {
+      "status": "completed",
+      "id": "18122224537974796",
+      "url": "https://www.instagram.com/reel/DgQzBEBBosn/"
+    },
+    "tiktok": {
+      "status": "completed",
+      "postId": "2340961b-8a19-42fe-a6de-dfa7acd3fcbb",
+      "publicationId": "d512a8df-98b8-410a-a70b-ebda651554f8",
+      "revision": "13535fbf",
+      "public": true,
+      "creditsUsed": 0,
+      "url": "https://www.tiktok.com/@orbiuno.noticias/video/7713148819529190677",
+      "caption": "ORBIUNO Noticias | 27 de noviembre de 2026, edición 6:00 p. m. (Colombia). Seis noticias y sus fuentes originales en https://colombia-al-dia.pages.dev/ #ORBIUNO #NoticiasColombia"
+    }
+  }
+}
