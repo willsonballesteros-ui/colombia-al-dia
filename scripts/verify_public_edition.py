@@ -86,20 +86,22 @@ def main():
     if args.test:
         return 0 if unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(Tests)).wasSuccessful() else 1
     require(args.day == datetime.now(ZoneInfo("America/Bogota")).date().isoformat(), "Edition expired")
-    for attempt in range(3):
+    # Pages may still serve the previous site while a new deployment propagates.
+    attempts = 8
+    for attempt in range(attempts):
         try:
             result=verify(args.day,args.slot)
             break
         except HTTPError as e:
             print("HTTP",e.code,e.url,flush=True)
-            if e.code in (401,403,429) or attempt==2:
+            if e.code in (401,403,429) or attempt == attempts - 1:
                 raise
-            time.sleep(15)
+            time.sleep(min(10 * (attempt + 1), 40))
         except (ValueError,OSError) as e:
             print(type(e).__name__,str(e),flush=True)
-            if attempt==2:
+            if attempt == attempts - 1:
                 raise
-            time.sleep(15)
+            time.sleep(min(10 * (attempt + 1), 40))
     args.report.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(result),flush=True)
     return 0
