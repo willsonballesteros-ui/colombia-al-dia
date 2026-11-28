@@ -1,0 +1,10 @@
+{
+  "edition": "2026-11-28-0800",
+  "orbiuno": {
+    "state": "publishing",
+    "edition_key": "ORBIUNO-2026-11-28-0800",
+    "sha256": "570bb343e16cd34dee3bc27df1e5cb9738fc353bd327022abd934b42b7138170",
+    "channel": "Windsor Instagram",
+    "web_qa_run": 46151539861
+  }
+}
