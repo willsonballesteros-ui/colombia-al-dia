@@ -1,0 +1,1506 @@
+{
+  "generatedAt": "2026-11-28T13:48:35.823674+00:00",
+  "method": "Recency and feed position proxy; no measured views or country quota",
+  "publicationAuthorized": false,
+  "sourcesAttempted": 95,
+  "sourcesWithCurrentCandidates": 24,
+  "sourceResults": [
+    {
+      "source": "AP",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Reuters",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "AFP",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "EFE",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "DPA",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Bloomberg",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Xinhua",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "TASS",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "BBC",
+      "count": 23,
+      "errors": []
+    },
+    {
+      "source": "CNN",
+      "count": 0,
+      "errors": [
+        "ValueError",
+        "URLError"
+      ]
+    },
+    {
+      "source": "Al Jazeera",
+      "count": 25,
+      "errors": []
+    },
+    {
+      "source": "France 24",
+      "count": 24,
+      "errors": []
+    },
+    {
+      "source": "DW",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "The New York Times",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "The Guardian",
+      "count": 40,
+      "errors": []
+    },
+    {
+      "source": "Financial Times",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "The Wall Street Journal",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "El País",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "El Tiempo",
+      "count": 77,
+      "errors": [
+        "ParseError"
+      ]
+    },
+    {
+      "source": "El Espectador",
+      "count": 10,
+      "errors": []
+    },
+    {
+      "source": "La República",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Portafolio",
+      "count": 0,
+      "errors": [
+        "ParseError"
+      ]
+    },
+    {
+      "source": "Caracol Radio",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Noticias Caracol",
+      "count": 40,
+      "errors": [
+        "ParseError"
+      ]
+    },
+    {
+      "source": "Noticias RCN",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Semana",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "El Colombiano",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "El Heraldo",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Vanguardia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "El País Cali",
+      "count": 0,
+      "errors": [
+        "ValueError"
+      ]
+    },
+    {
+      "source": "El Universal Cartagena",
+      "count": 0,
+      "errors": [
+        "ValueError"
+      ]
+    },
+    {
+      "source": "Cambio Colombia",
+      "count": 19,
+      "errors": []
+    },
+    {
+      "source": "La Silla Vacía",
+      "count": 10,
+      "errors": []
+    },
+    {
+      "source": "Colombiacheck",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Vorágine",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Forbes Colombia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Valora Analitik",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Infobae Colombia",
+      "count": 40,
+      "errors": []
+    },
+    {
+      "source": "Radio Nacional de Colombia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "RTVC Noticias",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Canal Capital",
+      "count": 10,
+      "errors": []
+    },
+    {
+      "source": "DANE",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Banco de la República",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "MinCiencias",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Ministerio de Educación",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Ministerio de Salud",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Ministerio de Ambiente",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "ProColombia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Parques Nacionales",
+      "count": 5,
+      "errors": []
+    },
+    {
+      "source": "IDEAM",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Instituto Humboldt",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "UNGRD",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "NASA",
+      "count": 10,
+      "errors": []
+    },
+    {
+      "source": "Agencia Espacial Europea",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "NOAA",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Noticias ONU",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "OMS",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "UNESCO",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "UNICEF",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "PNUD",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Nature",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Science",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Scientific American",
+      "count": 5,
+      "errors": []
+    },
+    {
+      "source": "National Geographic",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "The Conversation",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "MIT News",
+      "count": 1,
+      "errors": []
+    },
+    {
+      "source": "CSIC",
+      "count": 0,
+      "errors": [
+        "URLError"
+      ]
+    },
+    {
+      "source": "World Resources Institute",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "FIFA",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Comité Olímpico Internacional",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Unión Ciclista Internacional",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "ESPN Deportes",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Variety",
+      "count": 20,
+      "errors": []
+    },
+    {
+      "source": "Billboard",
+      "count": 20,
+      "errors": []
+    },
+    {
+      "source": "Euronews",
+      "count": 40,
+      "errors": []
+    },
+    {
+      "source": "NPR",
+      "count": 20,
+      "errors": []
+    },
+    {
+      "source": "PBS News",
+      "count": 20,
+      "errors": []
+    },
+    {
+      "source": "The Economist",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Nikkei Asia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "ABC News Australia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Motor1",
+      "count": 14,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "InsideEVs",
+      "count": 4,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Electrek",
+      "count": 24,
+      "errors": []
+    },
+    {
+      "source": "Autocar",
+      "count": 0,
+      "errors": [
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Car and Driver",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Carscoops",
+      "count": 35,
+      "errors": []
+    },
+    {
+      "source": "Auto Express",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "El Carro Colombiano",
+      "count": 0,
+      "errors": [
+        "HTTPError",
+        "HTTPError"
+      ]
+    },
+    {
+      "source": "Autocosmos México",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Autocosmos Colombia",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Stellantis Media",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Toyota Global",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Nissan Global",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "BMW PressClub",
+      "count": 0,
+      "errors": []
+    },
+    {
+      "source": "Hyundai News",
+      "count": 0,
+      "errors": []
+    }
+  ],
+  "orbiuno": {
+    "target": 6,
+    "candidates": [
+      {
+        "title": "Salario mínimo 2027: Dane revela que trabajadores que ganan dicho ingreso cayeron a la mitad este año, un dato que enciende la negociación",
+        "url": "https://www.eltiempo.com/economia/finanzas-personales/salario-minimo-2027-dane-revela-que-trabajadores-que-ganan-dicho-ingreso-cayo-a-la-mitad-este-ano-un-dato-que-enciende-la-negociacion-3605131",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T13:34:59+00:00",
+        "ageHours": 0.23,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 99.48,
+        "rank": 1,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Nuevo atentado contra la Policía en Cúcuta: lanzaron explosivo contra subestación en zona rural",
+        "url": "https://www.eltiempo.com/colombia/nuevo-atentado-contra-la-policia-en-cucuta-lanzaron-explosivo-contra-subestacion-en-zona-rural-3605127",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T13:19:22+00:00",
+        "ageHours": 0.49,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 98.89,
+        "rank": 2,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "El abogado que logró abrir un nuevo frente de investigación del caso Palacio en la justicia internacional: 'El presidente debe escucharnos'",
+        "url": "https://www.eltiempo.com/justicia/paz-y-derechos-humanos/el-abogado-que-logro-abrir-un-nuevo-frente-de-investigacion-del-caso-palacio-en-la-justicia-internacional-el-presidente-debe-escucharnos-3605039",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T12:01:00+00:00",
+        "ageHours": 1.79,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 96.05,
+        "rank": 3,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Jennifer Pedraza denunció que una de las mejores amigas de la primera dama, Ana Lucia Pineda, recibió millonario contrato en Presidencia, pese a un conflicto de intereses",
+        "url": "https://www.infobae.com/colombia/2026/11/28/jennifer-pedraza-denuncio-que-una-de-las-mejores-amigas-de-la-primera-dama-ana-lucia-pineda-recibio-millonario-contrato-en-presidencia-pese-a-un-conflicto-de-intereses",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T13:18:43+00:00",
+        "ageHours": 0.5,
+        "position": 3,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 89.49,
+        "rank": 4,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Taiwan opposition party wins re-election in Taipei mayoral race",
+        "url": "https://www.aljazeera.com/news/2026/11/28/taiwan-opposition-party-wins-re-election-in-taipei-mayoral-race?traffic_source=rss",
+        "source": "Al Jazeera",
+        "publishedAt": "2026-11-28T12:36:19+00:00",
+        "ageHours": 1.2,
+        "position": 3,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 87.94,
+        "rank": 5,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Super Astro Luna hoy, viernes 27 de noviembre de 2026: revisa el número y signo ganador",
+        "url": "https://www.infobae.com/colombia/2026/11/28/super-astro-luna-hoy-viernes-27-de-noviembre-de-2026-revisa-el-numero-y-signo-ganador",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 4,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 87.06,
+        "rank": 6,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "José Félix Lafaurie volvió a pronunciarse y explicó la presencia de Iván Cepeda en medio del Congreso Nacional de Ganaderos",
+        "url": "https://www.eltiempo.com/economia/sectores/jose-felix-lafaurie-volvio-a-pronunciarse-y-explico-la-presencia-de-ivan-cepeda-en-medio-del-congreso-nacional-de-ganaderos-3605118",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T06:40:44+00:00",
+        "ageHours": 7.13,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 85.86,
+        "rank": 7,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Sorteo Chontico Noche hoy, viernes 27 de noviembre de 2026: verifica aquí el resultado ganador",
+        "url": "https://www.infobae.com/colombia/2026/11/28/resultado-chontico-noche-numeros-ganadores-del-ultimo-sorteo-hoy-viernes-27-de-noviembre-de-2026",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 5,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 85.67,
+        "rank": 8,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Manchester United vs Brentford LIVE: Premier League",
+        "url": "https://www.aljazeera.com/sports/liveblog/2026/11/28/manchester-united-vs-brentford-live-premier-league?traffic_source=rss",
+        "source": "Al Jazeera",
+        "publishedAt": "2026-11-28T12:06:46+00:00",
+        "ageHours": 1.7,
+        "position": 5,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 83.74,
+        "rank": 9,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Dólar va en subida desde agosto, pero ¿alcanza ese repunte para que los sectores exportadores golpeados este año puedan recuperarse?",
+        "url": "https://www.eltiempo.com/economia/dolar-va-en-subida-desde-agosto-pero-alcanza-ese-repunte-para-que-los-sectores-exportadores-golpeados-este-ano-puedan-recuperarse-3604929",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T03:39:45+00:00",
+        "ageHours": 10.15,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 81.03,
+        "rank": 10,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Mejora la calidad del aire en Bogotá, pero se mantiene la alerta ambiental en el suroccidente: ¿qué impide levantarla?",
+        "url": "https://www.eltiempo.com/bogota/mejora-la-calidad-del-aire-en-bogota-pero-se-mantiene-la-alerta-ambiental-en-el-suroccidente-que-impide-levantarla-3605099",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T03:09:36+00:00",
+        "ageHours": 10.65,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 80.29,
+        "rank": 11,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Victorian election 2026: Coalition wins majority government as Labor suffers historic defeat",
+        "url": "https://www.theguardian.com/australia-news/2026/nov/28/victoria-election-2026-winner-announced-who-won-poll-win-coalition-labor-victorian-state-results",
+        "source": "The Guardian",
+        "publishedAt": "2026-11-28T13:06:42+00:00",
+        "ageHours": 0.7,
+        "position": 14,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 80.0,
+        "rank": 12,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Comentario en Gustavo Petro denuncia el retiro de su retrato presidencial de la Casa de Nariño por Julio César",
+        "url": "https://www.elespectador.com/politica/gustavo-petro-denuncia-el-retiro-de-su-retrato-presidencial-de-la-casa-de-narino",
+        "source": "El Espectador",
+        "publishedAt": "2026-11-28T13:45:54+00:00",
+        "ageHours": 0.04,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.91,
+        "rank": 13,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Álvaro Uribe y Andrés Julián Rendón dieron los motivos por los que apoyan consulta popular que busca crear una nueva área metropolitana en Antioquia: “Gran oportunidad”",
+        "url": "https://www.infobae.com/colombia/2026/11/28/alvaro-uribe-y-andres-julian-rendon-dieron-los-motivos-por-los-que-apoyan-consulta-popular-que-busca-crear-una-nueva-area-metropolitana-en-antioquia-gran-oportunidad",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T13:42:39+00:00",
+        "ageHours": 0.1,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.77,
+        "rank": 14,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Harbinger scores $340M in latest funding rounds [update]",
+        "url": "https://electrek.co/2026/11/28/harbinger-scores-another-240m-in-latest-investment-round",
+        "source": "Electrek",
+        "publishedAt": "2026-11-28T13:40:00+00:00",
+        "ageHours": 0.14,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.68,
+        "rank": 15,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Argentina's bid to stop Falklands oil drilling rejected",
+        "url": "https://www.bbc.co.uk/news/articles/c84gnq3qq9rno?at_medium=RSS&at_campaign=rss",
+        "source": "BBC",
+        "publishedAt": "2026-11-28T13:36:36+00:00",
+        "ageHours": 0.2,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.54,
+        "rank": 16,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Pedro Sánchez: ¿qué balance deja la izquierda en España?",
+        "url": "https://www.france24.com/es/programas/una-semana-en-el-mundo/20261128-pedro-s%C3%A1nchez-qu%C3%A9-balance-deja-la-izquierda-en-espa%C3%B1a",
+        "source": "France 24",
+        "publishedAt": "2026-11-28T13:30:54+00:00",
+        "ageHours": 0.29,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.34,
+        "rank": 17,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Court rejects Argentina’s request to stop UK oil activity near Falklands",
+        "url": "https://www.aljazeera.com/news/2026/11/28/court-rejects-argentinas-request-to-stop-uk-oil-activity-near-falklands?traffic_source=rss",
+        "source": "Al Jazeera",
+        "publishedAt": "2026-11-28T13:24:24+00:00",
+        "ageHours": 0.4,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.09,
+        "rank": 18,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "S&P rebaja la perspectiva de la nota soberana de Francia y Lescure habla de 'aviso'",
+        "url": "https://es.euronews.com/2026/11/28/sp-rebaja-la-perspectiva-de-la-nota-soberana-de-francia-y-lescure-habla-de-aviso",
+        "source": "Euronews",
+        "publishedAt": "2026-11-28T13:23:08+00:00",
+        "ageHours": 0.42,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.05,
+        "rank": 19,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Las seis nuevas especies de ranas descubiertas en Panamá que resuelven un misterio de un siglo: participaron científicos colombianos",
+        "url": "https://www.eltiempo.com/vida/ciencia/las-seis-nuevas-especies-de-ranas-descubiertas-en-panama-que-resuelven-un-misterio-de-un-siglo-participaron-cientificos-colombianos-3605124",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T13:16:22+00:00",
+        "ageHours": 0.54,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.78,
+        "rank": 20,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "I've Driven Dozens Of Chinese Cars. Americans Are Missing Out On These 4 Features",
+        "url": "https://insideevs.com/news/816685/chinese-ev-features-wild-four",
+        "source": "InsideEVs",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 21,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "5 Reliable Used Cars Cheaper Than A Family Trip To Disney",
+        "url": "https://www.carscoops.com/2325130/reliable-used-cars-cheaper-than-disney-trip",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 22,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Colombia: ni negacionista ni protagonista en una COP31 poco célebre y otras noticias",
+        "url": "https://www.lasillavacia.com/en-vivo/colombia-ni-negacionista-ni-protagonista-en-una-cop31-poco-celebre-y-otras-noticias",
+        "source": "La Silla Vacía",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 23,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Perspective: A hero's name lives on",
+        "url": "https://www.npr.org/2026/11/28/nx-s1-6045586/perspective-a-heros-name-lives-on",
+        "source": "NPR",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 24,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "How a fungus that survived Chernobyl could help trap and destroy toxic chemicals",
+        "url": "https://www.scientificamerican.com/article/how-a-fungus-that-survived-chernobyl-could-help-trap-and-destroy-toxic-chemicals",
+        "source": "Scientific American",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 25,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Dólar en Colombia: las razones por las que está aumentando de precio y lo que viene en su cotización",
+        "url": "https://www.eltiempo.com/economia/finanzas-personales/dolar-en-colombia-las-razones-por-las-que-esta-aumentando-de-precio-y-lo-que-viene-en-su-cotizacion-3605125",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T12:56:51+00:00",
+        "ageHours": 0.86,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.06,
+        "rank": 26,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Inter Miami de Lionel Messi quedó eliminado de los playoffs de la MLS tras caer ante Columbus Crew",
+        "url": "https://www.eltiempo.com/deportes/futbol-internacional/inter-miami-de-lionel-messi-quedo-eliminado-de-los-playoffs-de-la-mls-tras-caer-ante-columbus-crew-3605123",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-28T12:51:17+00:00",
+        "ageHours": 0.96,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 77.84,
+        "rank": 27,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Ataque con explosivos contra subestación de Policía en Agua Clara, zona rural de Cúcuta",
+        "url": "https://www.noticiascaracol.com/colombia/ataque-con-explosivos-contra-subestacion-de-policia-en-agua-clara-zona-rural-de-cucuta-rg10",
+        "source": "Noticias Caracol",
+        "publishedAt": "2026-11-28T12:44:06+00:00",
+        "ageHours": 1.07,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 77.6,
+        "rank": 28,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "A Demon Baby and a Contract-Killing Company Anchor Indonesian Dark Comedy ‘Gokill’ at JAFF Market",
+        "url": "https://variety.com/2026/film/markets-festivals/demon-baby-contract-killers-indonesian-dark-comedy-gokill-1236959976",
+        "source": "Variety",
+        "publishedAt": "2026-11-28T12:19:48+00:00",
+        "ageHours": 1.48,
+        "position": 0,
+        "motor": false,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 76.71,
+        "rank": 29,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Two visions of Spain collide as voters weigh PM Sanchez’s record",
+        "url": "https://www.aljazeera.com/news/2026/11/28/two-visions-of-spain-collide-as-voters-weigh-sanchez-record?traffic_source=rss",
+        "source": "Al Jazeera",
+        "publishedAt": "2026-11-28T10:36:41+00:00",
+        "ageHours": 3.2,
+        "position": 10,
+        "motor": false,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 76.47,
+        "rank": 30,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      }
+    ]
+  },
+  "mycar": {
+    "target": 5,
+    "candidates": [
+      {
+        "title": "Harbinger scores $340M in latest funding rounds [update]",
+        "url": "https://electrek.co/2026/11/28/harbinger-scores-another-240m-in-latest-investment-round",
+        "source": "Electrek",
+        "publishedAt": "2026-11-28T13:40:00+00:00",
+        "ageHours": 0.14,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 79.68,
+        "rank": 1,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "I've Driven Dozens Of Chinese Cars. Americans Are Missing Out On These 4 Features",
+        "url": "https://insideevs.com/news/816685/chinese-ev-features-wild-four",
+        "source": "InsideEVs",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 2,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "5 Reliable Used Cars Cheaper Than A Family Trip To Disney",
+        "url": "https://www.carscoops.com/2325130/reliable-used-cars-cheaper-than-disney-trip",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-28T13:00:00+00:00",
+        "ageHours": 0.81,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 78.17,
+        "rank": 3,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Reportaron balacera la madrugada del sábado en Bogotá tras intento de hurto de camioneta de alta gama: escolta dio de baja a dos de los presuntos ladrones",
+        "url": "https://www.infobae.com/colombia/2026/11/28/reportaron-balacera-la-madrugada-del-sabado-en-bogota-tras-presunto-intento-de-hurto-de-camioneta-de-alta-gama-dos-de-los-presuntos-ladrones-fueron-abatidos",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T13:36:49+00:00",
+        "ageHours": 0.2,
+        "position": 1,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 75.38,
+        "rank": 4,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Volvo celebrates a half century of electric cars as Elbil turns 50",
+        "url": "https://electrek.co/2026/11/28/volvo-celebrates-a-half-century-of-electric-cars-as-elbil-turns-50",
+        "source": "Electrek",
+        "publishedAt": "2026-11-28T12:58:18+00:00",
+        "ageHours": 0.84,
+        "position": 1,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 73.94,
+        "rank": 5,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "This Dual-Winged Mid-Engine C5 Corvette Is Real And Will Haunt Your Nightmares",
+        "url": "https://www.carscoops.com/2327663/pikes-peak-mid-engine-corvette-c5-double-wing",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T23:00:00+00:00",
+        "ageHours": 14.81,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": true,
+        "verification": "source_only",
+        "attentionProxy": 54.67,
+        "rank": 6,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "El SOAT de estos vehículos cambiará desde el 1 de diciembre: habrá ajustes en los trámites para las aseguradoras, no en el precio del seguro",
+        "url": "https://www.eltiempo.com/justicia/servicios/el-soat-de-estos-vehiculos-cambiara-desde-el-1-de-diciembre-habra-ajustes-en-los-tramites-de-las-aseguradoras-no-en-el-precio-del-seguro-3604809",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-27T18:55:22+00:00",
+        "ageHours": 18.89,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 50.03,
+        "rank": 7,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "IONNA’s got a 50% discount off EV charging over Thanksgiving weekend",
+        "url": "https://electrek.co/2026/11/27/ionnas-got-a-50-discount-off-ev-charging-over-thanksgiving-weekend",
+        "source": "Electrek",
+        "publishedAt": "2026-11-28T00:20:41+00:00",
+        "ageHours": 13.47,
+        "position": 2,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 49.23,
+        "rank": 8,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Watch In Horror As A Ferrari 499P Slams Into A Legendary F1 Car",
+        "url": "https://www.carscoops.com/2326248/ferrari-499p-crash-into-f1-car",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T21:00:00+00:00",
+        "ageHours": 16.81,
+        "position": 1,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 48.13,
+        "rank": 9,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Asaltantes del director de Medicina Legal usaron placa de camioneta de alta gama: habla propietario del vehículo",
+        "url": "https://www.eltiempo.com/unidad-investigativa/asaltantes-del-director-de-medicina-legal-usaron-placa-de-camioneta-de-alta-gama-habla-propietario-del-vehiculo-3604817",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-27T13:47:39+00:00",
+        "ageHours": 24.02,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 45.22,
+        "rank": 10,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Michael Schumacher’s Porsche Carrera GT Is Going to Auction With A Remarkable Paper Trail",
+        "url": "https://www.motor1.com/news/817030/michael-schumacher-porsche-carrera-gt",
+        "source": "Motor1",
+        "publishedAt": "2026-11-27T12:36:58+00:00",
+        "ageHours": 25.19,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 44.25,
+        "rank": 11,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Podcast: Tesla FSD v15, Volvo XC60/90 PHEVs, Porsche Boxster EV, and more",
+        "url": "https://electrek.co/2026/11/27/podcast-tesla-fsd-v15-volvo-xc60-90-phevs-porsche-boxster-ev-and-more",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T20:58:02+00:00",
+        "ageHours": 16.84,
+        "position": 3,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 42.89,
+        "rank": 12,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "EVs Outsold Gas And Diesel Cars Combined In The EU In October",
+        "url": "https://insideevs.com/news/817061/eu-ev-sales-october-jump",
+        "source": "InsideEVs",
+        "publishedAt": "2026-11-27T15:15:52+00:00",
+        "ageHours": 22.55,
+        "position": 1,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 42.33,
+        "rank": 13,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Volvo A40 Electric articulated haul trucks get to work in the UK",
+        "url": "https://electrek.co/2026/11/27/volvo-a40-electric-articulated-haul-trucks-get-to-work-in-the-uk",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T20:51:59+00:00",
+        "ageHours": 16.94,
+        "position": 4,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 41.04,
+        "rank": 14,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Can-Am's X3 And Maverick R Made Me Rethink Buying An Off-Road Truck",
+        "url": "https://www.carscoops.com/2326609/can-am-maverick-side-by-side-review",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T19:00:00+00:00",
+        "ageHours": 18.81,
+        "position": 3,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 40.74,
+        "rank": 15,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Vehículo con seis universitarios se salió de la carretera y cayó en aguas residuales de Córdoba: un estudiante falleció",
+        "url": "https://www.infobae.com/colombia/2026/11/28/vehiculo-con-seis-universitarios-se-salio-de-la-carretera-y-cayo-en-aguas-residuales-de-cordoba-un-estudiante-fallecio",
+        "source": "Infobae Colombia",
+        "publishedAt": "2026-11-28T03:43:22+00:00",
+        "ageHours": 10.09,
+        "position": 29,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 39.8,
+        "rank": 16,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Toyota Raises 2027 Tacoma Prices And Slashes Its Free Maintenance Program",
+        "url": "https://www.motor1.com/news/817025/2027-toyota-tacoma-pricing-toyotacare",
+        "source": "Motor1",
+        "publishedAt": "2026-11-27T11:42:37+00:00",
+        "ageHours": 26.1,
+        "position": 1,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 39.37,
+        "rank": 17,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Volkswagen’s new ID. Buzz Beach electric camper goes on sale, starting at over $70,000",
+        "url": "https://electrek.co/2026/11/27/vw-id-buzz-beach-ev-camper-goes-on-sale-starting-over-70000",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T20:28:58+00:00",
+        "ageHours": 17.33,
+        "position": 5,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 39.22,
+        "rank": 18,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Scout Wants To Build 90 Workshops And Retail Outlets Across The Country",
+        "url": "https://www.carscoops.com/2328666/scout-build-90-workshops",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T15:00:00+00:00",
+        "ageHours": 22.81,
+        "position": 2,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 39.12,
+        "rank": 19,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Zoomlion shows off SIXTY electrified, AI equipment assets at bauma 2026",
+        "url": "https://electrek.co/2026/11/27/zoomlion-shows-off-sixty-electrified-ai-equipment-assets-at-bauma-2026",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T20:13:56+00:00",
+        "ageHours": 17.58,
+        "position": 6,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 37.8,
+        "rank": 20,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "This Audi E-Tron EV Has 125,000 Miles. Replacing Its Battery Was A Huge Pain",
+        "url": "https://insideevs.com/news/817033/audi-e-tron-battery-replacement-video",
+        "source": "InsideEVs",
+        "publishedAt": "2026-11-27T12:40:52+00:00",
+        "ageHours": 25.13,
+        "position": 2,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 37.16,
+        "rank": 21,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "New York Just Restricted Subscriptions For Features Already Built Into Your Car",
+        "url": "https://www.carscoops.com/2328758/new-york-restricted-in-car-subscription-services",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T15:00:00+00:00",
+        "ageHours": 22.81,
+        "position": 3,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 36.89,
+        "rank": 22,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Surprise! Volkswagen Brings Back The Manual Golf GTI, But Not For Long",
+        "url": "https://www.motor1.com/news/817023/vw-golf-gti-1976-manual-gearbox",
+        "source": "Motor1",
+        "publishedAt": "2026-11-27T11:37:40+00:00",
+        "ageHours": 26.18,
+        "position": 2,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 36.33,
+        "rank": 23,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "World’s largest electric bulk cargo shop packs MASSIVE 23.5 MWh battery",
+        "url": "https://electrek.co/2026/11/27/worlds-largest-electric-bulk-cargo-shop-packs-massive-23-5-mwh-battery",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T19:22:01+00:00",
+        "ageHours": 18.44,
+        "position": 7,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 35.92,
+        "rank": 24,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Velotric e-bikes hit new Black Friday lows $760 off, EGO 8-inch cordless auger $449, Greenworks cordless snow blowers, more",
+        "url": "https://electrek.co/2026/11/27/velotric-final-black-friday-phase-e-bike-lows-ego-8-inch-cordless-auger-greenworks-snow-blowers-more",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T19:00:00+00:00",
+        "ageHours": 18.81,
+        "position": 8,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 34.73,
+        "rank": 25,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "La Dian tiene nueva subasta de carros y motos en Colombia: hay vehículos desde $1.500.000",
+        "url": "https://www.eltiempo.com/economia/finanzas-personales/la-dian-tiene-nueva-subasta-de-carros-y-motos-en-colombia-hay-vehiculos-desde-1-500-000-pesos-3604616",
+        "source": "El Tiempo",
+        "publishedAt": "2026-11-26T19:41:40+00:00",
+        "ageHours": 42.12,
+        "position": 0,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 34.51,
+        "rank": 26,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "BYD’s flagship electric minivan debuts with a new style and 559 miles of range",
+        "url": "https://electrek.co/2026/11/27/byd-whale-flagship-electric-minivan-debuts-559-miles-range",
+        "source": "Electrek",
+        "publishedAt": "2026-11-27T18:40:39+00:00",
+        "ageHours": 19.13,
+        "position": 9,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 33.71,
+        "rank": 27,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Porsche Patents A Steering Wheel That Changes Shape In Sport Mode",
+        "url": "https://www.motor1.com/news/817004/porsche-shapeshifting-sport-steering-wheel",
+        "source": "Motor1",
+        "publishedAt": "2026-11-27T10:48:44+00:00",
+        "ageHours": 27.0,
+        "position": 3,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 33.48,
+        "rank": 28,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Jaguar Type 01 Was All About Drama, The Type 02 Will Bring Back Practicality",
+        "url": "https://www.carscoops.com/2329355/jaguar-type-02-suv-rendering",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T13:00:00+00:00",
+        "ageHours": 24.81,
+        "position": 4,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 33.45,
+        "rank": 29,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      },
+      {
+        "title": "Not Even An Octa Is As Cool As This Bronze Defender 90",
+        "url": "https://www.carscoops.com/2327638/helderburg-land-rover-defender-90",
+        "source": "Carscoops",
+        "publishedAt": "2026-11-27T13:00:00+00:00",
+        "ageHours": 24.81,
+        "position": 5,
+        "motor": true,
+        "positiveSignal": false,
+        "verification": "source_only",
+        "attentionProxy": 32.06,
+        "rank": 30,
+        "views": null,
+        "requiresEditorialVerification": true,
+        "requiresPhotoRights": true
+      }
+    ]
+  }
+}
