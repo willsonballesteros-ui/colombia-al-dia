@@ -168,7 +168,7 @@ def frame(brand,n,credit,logo,number,mode,path,day=DAY,slot=SLOT):
     for i,l in enumerate(title_lines):d.text((60,1517+i*(size+13)),l,font=font(size),fill="white")
     # Crédito reducido con procedencia exacta en descripción y web
     d.rounded_rectangle((54,1810,935,1875),radius=12,fill=(5,22,45,237))
-    d.text((67,1825),("IMAGEN ILUSTRATIVA · " if brand=="mycar" else "FOTO DE ARCHIVO · ")+credit["author"][:35],font=font(18),fill="white")
+    d.text((67,1825),"FOTO DE ARCHIVO · "+credit["author"][:35],font=font(18),fill="white")
     img.save(path,quality=91)
 
 def duration(file):
@@ -201,7 +201,7 @@ def compile_brand(brand,items,reserves=()):
             if not logo: raise RuntimeError("Logo de fuente no disponible")
         except (ValueError, OSError, RuntimeError, KeyError, AssertionError, requests.RequestException) as exc:
             if getattr(getattr(exc,"response",None),"status_code",None)==429 or "429" in str(exc): raise
-            print("CANDIDATE_REJECTED",n.get("url"),type(exc).__name__,flush=True)
+            print("CANDIDATE_REJECTED", n.get("url"), type(exc).__name__, str(exc)[:120] if isinstance(exc, ValueError) else "", flush=True)
             continue
         n=dict(n,order=i+1);selected.append(n);seen.add(n["url"]);creds.append(credit);logos.append(logo)
         print("MEDIA_CHECK",brand,i+1,credit["license"],credit["author"],flush=True)
