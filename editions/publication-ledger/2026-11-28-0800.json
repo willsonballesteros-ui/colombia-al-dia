@@ -1,12 +1,15 @@
 {
   "edition": "2026-11-28-0800",
   "orbiuno": {
-    "state": "publishing",
+    "state": "published",
     "edition_key": "ORBIUNO-2026-11-28-0800",
     "sha256": "570bb343e16cd34dee3bc27df1e5cb9738fc353bd327022abd934b42b7138170",
     "channel": "Windsor Instagram",
     "web_qa_run": 46151539861,
     "id": "18190859341410979",
-    "receipt": "Instagram create_video_post confirmed; awaiting permalink"
+    "receipt": "Verified by reading Instagram media_id and media_permalink",
+    "url": "https://www.instagram.com/reel/DgSZ7vohEkf/",
+    "permalink": "https://www.instagram.com/reel/DgSZ7vohEkf/",
+    "confirmed_at": "2026-11-28T13:53:38.778Z"
   }
 }
