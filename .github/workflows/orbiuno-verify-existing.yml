@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
     paths: ['.github/workflows/orbiuno-verify-existing.yml']
+  schedule:
+    - cron: '45 12,22 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: ['Editorial | Producción diaria por marca']
@@ -33,13 +35,7 @@ jobs:
           day=$(TZ=America/Bogota date +%F)
           hour=$(TZ=America/Bogota date +%H)
           if (( 10#$hour >= 17 )); then slot=1800
-          elif (( 10#$hour >= 8 )); then slot=0800
+          elif (( 10#$hour >= 7 )); then slot=0800
           else exit 1; fi
           test -s "media/$day/edicion-$slot-orbiuno/orbiuno_manifest.json"
           python scripts/verify_public_edition.py --day "$day" --slot "$slot"
-      - uses: actions/upload-artifact@v4
-        continue-on-error: true
-        with:
-          name: orbiuno-public-web-verification
-          path: /tmp/orbiuno-preflight.json
-          if-no-files-found: error
