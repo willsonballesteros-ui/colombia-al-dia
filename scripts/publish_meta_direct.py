@@ -113,9 +113,9 @@ def main():
     if len(re.findall(r"(?<!\w)#[\w]+", args.caption)) > 30:
         sys.exit("El pie de foto supera 30 hashtags")
     token = os.getenv("ORBIUNO_IG_ACCESS_TOKEN")
-    user_id = os.getenv("ORBIUNO_IG_USER_ID")
-    if not token or not user_id:
-        sys.exit("Faltan GitHub Secrets ORBIUNO_IG_ACCESS_TOKEN / ORBIUNO_IG_USER_ID")
+    user_id = (os.getenv("ORBIUNO_IG_USER_ID") or EXPECTED_IG_ID)
+    if not token:
+        sys.exit("Falta GitHub Secret ORBIUNO_IG_ACCESS_TOKEN")
     if user_id != EXPECTED_IG_ID:
         sys.exit("La cuenta no coincide con ORBIUNO, se bloquea")
     profile = api("GET", "/" + user_id, token, {"fields": "id,username"})
